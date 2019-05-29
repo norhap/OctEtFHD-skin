@@ -1,0 +1,42 @@
+<skin>
+	<!-- CLOCK TEMPLATES -->
+	<!-- ClockBg -->
+    <!-- <panel name="ClockBg" /> -->
+	<screen name="ClockBg">
+      <eLabel backgroundColor="OE_NewBg2" position="1520,70" size="400,74" transparent="0" zPosition="-20" foregroundColor="white" />
+      <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
+      <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+        <convert type="ClockToText">Format:%H:%M</convert>
+      </widget>
+      <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
+        <convert type="ClockToText">Format:%e. %b</convert>
+      </widget>
+      <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
+        <convert type="ClockToText">Format:%A</convert>
+      </widget>
+	</screen>
+
+	<!-- MainMenu -->
+    <!-- <panel name="MainMenu" /> -->
+	<screen name="MainMenu">
+      <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="150,850" zPosition="-10" />
+      <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="920,770" zPosition="-15" />
+      <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="center,230" size="680,2" zPosition="-9" />
+      <!-- Widget -->
+      <widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" foregroundColor="white" position="center,160" size="680,58" transparent="1" halign="left" />
+      <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="center,255" size="680,650" transparent="1">
+        <convert type="TemplatedMultiContent">
+                   {"template": [ MultiContentEntryText(pos = (15, 5), size = (800, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
+                   "fonts": [gFont("FHD", 38)], 
+                   "itemHeight": 65
+                   }
+		</convert>
+      </widget>
+      <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/setting1.png" position="475,182" size="100,100" transparent="1" zPosition="10" />
+      <!-- Button -->
+      <ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="505,840" size="40,40" />
+      <eLabel text="MenuSort" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="white" halign="center" position="445,885" size="160,40" transparent="1" zPosition="1" />
+      <!-- Clock -->
+      <panel name="ClockBg" />
+	</screen>
+</skin>
