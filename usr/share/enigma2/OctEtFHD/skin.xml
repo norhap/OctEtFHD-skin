@@ -619,7 +619,7 @@
     <!-- other -->
     <eLabel backgroundColor="OE_Background" font="Regular; 26" foregroundColor="OE_Foreground" halign="left" position="80,345" size="280,40" text="Support for OpenEight" transparent="1" valign="center" zPosition="1" />
     <eLabel backgroundColor="OE_Background" font="Regular; 27" foregroundColor="OE_Foreground" halign="left" position="80,190" size="280,40" text="octagon-forum.eu" transparent="1" valign="center" zPosition="1" />
-    <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/oe8.png" position="81,310" size="187,35" transparent="1" zPosition="10" />
+    <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/ov.png" position="81,310" size="187,35" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/logo.png" position="80,155" size="160,35" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/prev.png" position="75,650" size="280,210" transparent="1" zPosition="10" />
     <eLabel backgroundColor="white" name="" position="80,950" size="275,2" zPosition="-9" />
