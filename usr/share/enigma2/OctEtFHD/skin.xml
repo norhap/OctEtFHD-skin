@@ -1,9 +1,7 @@
 <?xml version="1.0"?>
 <skin>
-  <!-- OctEtFHD Skin v7.70 for Octagon image, by SkinMania -->
-  <!-- OctEtFHD Skin is only for www.octagon-forum.eu -->
+  <!-- OctEtFHD Skin 7.70 by SkinMania -->
   <!-- Recommended to use with XPicons (220x132) -->
-  <!-- You are NOT allowed to modify and redistribute OctEtFHD Skin and all graphics -->
   <output id="0">
     <resolution bpp="32" xres="1920" yres="1080" />
   </output>
@@ -617,8 +615,8 @@
       <convert type="LayoutInfo">UsbInfo,Short</convert>
     </widget>
     <!-- other -->
-    <eLabel backgroundColor="OE_Background" font="Regular; 26" foregroundColor="OE_Foreground" halign="left" position="80,345" size="280,40" text="Support for OpenEight" transparent="1" valign="center" zPosition="1" />
-    <eLabel backgroundColor="OE_Background" font="Regular; 27" foregroundColor="OE_Foreground" halign="left" position="80,190" size="280,40" text="octagon-forum.eu" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="OE_Background" font="Regular; 26" foregroundColor="OE_Foreground" halign="left" position="80,345" size="280,40" text="Lets define enigma2 once more" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="OE_Background" font="Regular; 27" foregroundColor="OE_Foreground" halign="left" position="80,190" size="280,40" text="https://openvision.tech" transparent="1" valign="center" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/ov.png" position="81,310" size="187,35" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/logo.png" position="80,155" size="160,35" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/prev.png" position="75,650" size="280,210" transparent="1" zPosition="10" />
@@ -1412,8 +1410,8 @@
       <convert type="LayoutInfo">UsbInfo,Short</convert>
     </widget>
     <!-- other1 -->
-    <eLabel backgroundColor="OE_Background" font="Regular; 26" foregroundColor="OE_Foreground" halign="left" position="80,345" size="280,40" text="Support for OpenEight" transparent="1" valign="center" zPosition="1" />
-    <eLabel backgroundColor="OE_Background" font="Regular; 27" foregroundColor="OE_Foreground" halign="left" position="80,190" size="280,40" text="octagon-forum.eu" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="OE_Background" font="Regular; 26" foregroundColor="OE_Foreground" halign="left" position="80,345" size="280,40" text="Lets define enigma2 once more" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="OE_Background" font="Regular; 27" foregroundColor="OE_Foreground" halign="left" position="80,190" size="280,40" text="https://openvision.tech" transparent="1" valign="center" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/open_vision.png" position="81,300" size="240,45" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/openvision.png" position="80,140" size="240,53" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/prev.png" position="75,650" size="280,210" transparent="1" zPosition="10" />
@@ -1429,7 +1427,7 @@
     <!-- Clock -->
     <panel name="ClockBg" />
   </screen>
-  <screen name="CommitInfoSetup" title="OpenEight Commit Info Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="CommitInfoSetup" title="Open Vision Commit Info Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
     <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15" />
     <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center" />
     <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9" />
@@ -4191,13 +4189,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="390,405" size="705,2" zPosition="-9" />
     <!-- Widget -->
     <eLabel text="Skin Info" font="FHD; 34" backgroundColor="OE_Background" position="390,348" size="705,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" />
-    <eLabel text="OctagonEight FHD" font="RegularBold; 26" backgroundColor="OE_Background" halign="center" position="80,348" size="280,50" transparent="1" foregroundColor="white" valign="center" />
-    <eLabel text="style by SkinMania" font="RegularBold; 26" backgroundColor="OE_Background" halign="center" position="80,650" size="280,45" transparent="1" />
+    <eLabel text="OctEtFHD" font="RegularBold; 26" backgroundColor="OE_Background" halign="center" position="80,348" size="280,50" transparent="1" foregroundColor="white" valign="center" />
+    <eLabel text="Skin by SkinMania" font="RegularBold; 26" backgroundColor="OE_Background" halign="center" position="80,650" size="280,45" transparent="1" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/prev.png" position="80,center" size="280,210" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/picon_default.png" position="870,639" size="220,132" transparent="1" zPosition="10" />
-    <eLabel text="OPEN SOURCE" font="RegularBold; 36" backgroundColor="OE_Background" halign="center" position="390,470" size="705,50" transparent="1" />
-    <eLabel text="https://github.com/Openeight" font="Regular; 28" backgroundColor="OE_Background" halign="center" position="390,525" size="705,45" transparent="1" />
-    <eLabel text="https://github.com/oe-alliance" font="Regular; 28" backgroundColor="OE_Background" halign="center" position="390,575" size="705,45" transparent="1" />
+    <eLabel text="Open Source" font="RegularBold; 36" backgroundColor="OE_Background" halign="center" position="390,470" size="705,50" transparent="1" />
+    <eLabel text="https://github.com/OpenVisionE2" font="Regular; 28" backgroundColor="OE_Background" halign="center" position="390,525" size="705,45" transparent="1" />
     <!-- others-->
     <ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_exit.png" position="294,736" size="64,43" />
   </screen>
@@ -4877,7 +4874,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center" />
     <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9" />
     <!-- Widget -->
-    <eLabel text="QuickMenu - OpenEight Panel" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1" />
+    <eLabel text="QuickMenu - Open Vision Panel" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1" />
     <widget name="list" itemHeight="75" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="630,675" transparent="1" />
     <widget name="sublist" itemHeight="75" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="835,155" size="630,675" transparent="1" />
     <eLabel backgroundColor="white" name="" position="816,155" size="2,675" zPosition="-9" foregroundColor="white" />
