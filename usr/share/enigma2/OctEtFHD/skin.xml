@@ -526,10 +526,10 @@
     </widget>
     <!-- System INFO2  -->
     <widget source="session.CurrentService" render="Label" position="75,760" size="380,45" font="RegularBold; 28" halign="left" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
-      <convert type="LayoutInfo">FleshInfo,Short</convert>
+      <convert type="OE_LayoutInfo">FleshInfo,Short</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="75,808" size="380,45" font="RegularBold; 28" halign="left" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
-      <convert type="LayoutInfo">MemTotal,Short</convert>
+      <convert type="OE_LayoutInfo">MemTotal,Short</convert>
     </widget>
     <!-- CryptoInfo -->
     <eLabel backgroundColor="white" position="75,955" size="380,2" transparent="0" zPosition="-1" foregroundColor="white" />
@@ -603,19 +603,19 @@
     <widget name="AboutScrollLabel" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" foregroundColor="white" backgroundColor="OE_Background" position="390,140" size="1080,800" halign="left" transparent="1" />
     <!-- SystemInfo -->
     <widget source="session.CurrentService" render="Label" position="75,480" size="290,38" font="RegularBold; 28" halign="left" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
-      <convert type="LayoutInfo">FleshInfo,Short</convert>
+      <convert type="OE_LayoutInfo">FleshInfo,Short</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="75,518" size="290,38" font="RegularBold; 28" halign="left" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
-      <convert type="LayoutInfo">MemTotal,Short</convert>
+      <convert type="OE_LayoutInfo">MemTotal,Short</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="75,556" size="290,38" font="RegularBold; 28" halign="left" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
-      <convert type="LayoutInfo">HddInfo,Short</convert>
+      <convert type="OE_LayoutInfo">HddInfo,Short</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="75,594" size="290,38" font="RegularBold; 28" halign="left" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
-      <convert type="LayoutInfo">UsbInfo,Short</convert>
+      <convert type="OE_LayoutInfo">UsbInfo,Short</convert>
     </widget>
     <!-- other -->
-    <eLabel backgroundColor="OE_Background" font="Regular; 26" foregroundColor="OE_Foreground" halign="left" position="80,345" size="280,40" text="Lets define enigma2 once more" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="OE_Background" font="Regular; 24" foregroundColor="OE_Foreground" halign="left" position="80,345" size="280,40" text="Lets define enigma2 once more" transparent="1" valign="center" zPosition="1" />
     <eLabel backgroundColor="OE_Background" font="Regular; 27" foregroundColor="OE_Foreground" halign="left" position="80,190" size="280,40" text="https://openvision.tech" transparent="1" valign="center" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/ov.png" position="81,310" size="187,35" transparent="1" zPosition="10" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/logo.png" position="80,155" size="160,35" transparent="1" zPosition="10" />
