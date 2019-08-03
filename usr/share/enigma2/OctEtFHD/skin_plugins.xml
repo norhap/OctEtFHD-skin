@@ -380,21 +380,21 @@
     <widget name="status2" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="450,295" size="270,45" transparent="1" />
     <widget name="picons" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,345" size="270,45" transparent="1" halign="right" />
     <widget name="piconstyle" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="450,345" size="270,45" transparent="1" />
-    <widget name="orderingcheck" position="220,465" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="orderingcheck" position="220,465" size="35,35" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,skin_default/icons/lock_on.png" />
     <widget name="ordering" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="268,460" size="250,45" transparent="1" />
-    <widget name="numcheck" position="602,465" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="numcheck" position="602,465" size="35,35" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,skin_default/icons/lock_on.png" />
     <widget name="num" position="650,460" size="250,45" font="FHD; 30" halign="left" zPosition="2" transparent="1" />
-    <widget name="otherextra" position="220,530" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="otherextra" position="220,530" size="35,35" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,skin_default/icons/lock_on.png" />
     <widget name="otherx" position="268,525" size="250,45" font="FHD; 30" halign="left" zPosition="2" transparent="1" />
-    <widget name="parentalcheck" position="602,530" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="parentalcheck" position="602,530" size="35,35" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,skin_default/icons/lock_on.png" />
     <widget name="parental" position="650,525" size="250,45" font="FHD; 30" halign="left" zPosition="2" transparent="1" />
-    <widget name="nitcheck" position="220,595" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="nitcheck" position="220,595" size="35,35" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,skin_default/icons/lock_on.png" />
     <widget name="nit" position="268,590" size="250,45" font="FHD; 30" halign="left" zPosition="2" transparent="1" />
-    <widget name="scriptcheck" position="602,595" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="scriptcheck" position="602,595" size="35,35" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,skin_default/icons/lock_on.png" />
     <widget name="scriptc" position="650,590" size="250,45" font="FHD; 30" halign="left" zPosition="2" transparent="1" />
-    <widget name="placehcheck" position="220,660" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="placehcheck" position="220,660" size="35,35" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,skin_default/icons/lock_on.png" />
     <widget name="placeh" position="268,655" size="250,45" font="FHD; 30" halign="left" zPosition="2" transparent="1" />
-    <widget name="defcheck" position="602,660" size="35,35" alphatest="blend" zPosition="1" pixmaps="skin_default/icons/lock_off.png,skin_default/icons/lock_on.png" />
+    <widget name="defcheck" position="602,660" size="35,35" alphatest="blend" zPosition="1" pixmaps="icons/lock_off.png,skin_default/icons/lock_on.png" />
     <widget name="def" position="650,655" size="250,45" font="FHD; 30" halign="left" zPosition="2" transparent="1" />
     <!-- Buttons-->
     <ePixmap position="78,960" size="64,43" pixmap="OctEtFHD/buttons/key_menu.png" transparent="1" alphatest="blend" />
@@ -6446,7 +6446,7 @@
 	</convert>
     </widget>
     <ePixmap position="1406,960" size="64,43" pixmap="OctEtFHD/buttons/key_menu.png" transparent="1" alphatest="blend" />
-    <widget name="HelpWindow" position="700,750" size="1,1" zPosition="5" pixmap="skin_default/vkey_icon.png" transparent="1" alphatest="on" />
+    <widget name="HelpWindow" position="700,750" size="1,1" zPosition="5" pixmap="vkey_icon.png" transparent="1" alphatest="on" />
     <!-- Buttons-->
     <eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40" />

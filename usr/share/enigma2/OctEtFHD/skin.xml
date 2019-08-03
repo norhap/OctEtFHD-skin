@@ -1469,7 +1469,7 @@
     <widget source="session.CurrentService" render="Label" font="RegularBold; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="824,585" size="648,45" halign="center" valign="center" transparent="1">
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
-    <widget name="Timeline" pointer="skin_default/position_arrow.png:3,5" backgroundColor="OE_Background" foregroundColor="grey" position="824,640" size="648,20" />
+    <widget name="Timeline" pointer="position_arrow.png:3,5" backgroundColor="OE_Background" foregroundColor="grey" position="824,640" size="648,20" />
     <ePixmap pixmap="OctEtFHD/mmp/dvr.png" position="984,735" size="323,66" alphatest="blend" />
     <widget name="SeekState" font="RegularBold; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="1055,834" zPosition="20" size="180,45" halign="center" valign="center" transparent="1" />
     <!-- Clock -->
@@ -1995,7 +1995,7 @@
     <!-- Widget -->
     <eLabel text="help..." font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="230,73" size="1240,50" transparent="1" />
     <widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="230,165" size="1240,800" transparent="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="75,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="75,center" size="125,500" zPosition="10" />
     <widget alphatest="on" name="arrowdown" pixmap="OctEtFHD/skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11" />
     <widget alphatest="on" name="arrowdown2" pixmap="OctEtFHD/skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11" />
     <widget alphatest="on" name="arrowup" pixmap="OctEtFHD/skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11" />
@@ -3494,7 +3494,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <panel name="ClockBg" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2">
-    <widget name="RassLogo" pixmap="skin_default/icons/rass_logo.png" position="150,840" size="150,85" />
+    <widget name="RassLogo" pixmap="icons/rass_logo.png" position="150,840" size="150,85" />
     <widget backgroundColor="OE_NewBg2" font="RegularBold; 28" name="RadioText" noWrap="1" position="150,930" shadowColor="transpBlack" shadowOffset="-2,-2" size="1620,45" foregroundColor="white" />
     <widget backgroundColor="OE_NewBg2" font="RegularBold; 28" halign="right" name="RtpText" noWrap="1" position="150,975" shadowColor="transpBlack" shadowOffset="-2,-2" size="1620,45" foregroundColor="white" />
   </screen>
@@ -4428,7 +4428,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4465,7 +4465,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4502,7 +4502,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4539,7 +4539,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4576,7 +4576,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4616,7 +4616,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4653,7 +4653,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4690,7 +4690,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4727,7 +4727,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,skin_default/rcold.png" position="152,center" size="125,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
