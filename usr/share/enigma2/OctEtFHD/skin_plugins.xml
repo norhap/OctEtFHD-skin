@@ -3504,7 +3504,7 @@
     <widget backgroundColor="OE_Background" font="FHD; 34" foregroundColor="OE_Foreground" halign="left" position="680,85" render="Label" size="750,50" source="Service" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget alphatest="blend" position="80,865" render="XPicon" size="220,132" source="Service" transparent="1" zPosition="5">
+    <widget alphatest="blend" position="80,865" render="Picon" size="220,132" source="Service" transparent="1" zPosition="5">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget name="list" itemHeight="50" setEventItemFont="Regular; 28" setEventTimeFont="Regular;28" setColWidths="120,220" setColGap="40" setIconDistance="10" setPiconSize="50,30" setPiconDistance="0" setPboxDistance="80" scrollbarMode="showOnDemand" position="680,158" size="1160,750" backgroundColor="OE_Background" transparent="1" />
