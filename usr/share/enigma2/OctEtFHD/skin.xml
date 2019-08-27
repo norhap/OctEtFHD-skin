@@ -108,7 +108,7 @@
     <alias name="ServiceInfo" font="FHD" size="30" height="45"/>
     <alias name="SelectionList" font="FHD" size="30" height="50"/>
     <alias name="PiconManagerList" font="Regular" size="28" height="45"/>
-    <alias name="VirtualKeyboard" font="Regular" size="42" height="68"/>
+    <alias name="VirtualKeyBoard" font="Regular" size="42" height="68"/>
     <alias name="HelpMenuList" font="FHD" size="30" height="45"/>
     <alias name="HelpMenuListExt0" font="FHD" size="30" height="75"/>
     <alias name="HelpMenuListExt1" font="FHD" size="30"/>
