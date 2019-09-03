@@ -44,11 +44,11 @@
     </widget>
     <widget backgroundColor="OE_NewBg2" font="RegularBold; 30" foregroundColor="white" halign="left" position="75,908" render="Label" size="95,45" source="Service" transparent="1" text="22:00">
       <convert type="EMCServiceTime">StartTime</convert>
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_NewBg2" font="RegularBold; 30" foregroundColor="white" halign="right" position="149,908" render="Label" size="110,45" source="Service" transparent="1" text="- 22:00">
       <convert type="EMCServiceTime">EndTime</convert>
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_NewBg2" font="RegularBold; 30" foregroundColor="white" halign="left" position="75,955" render="Label" size="210,45" source="Service" transparent="1">
       <convert type="EMCServiceTime">Duration</convert>
@@ -76,13 +76,13 @@
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
     <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
 
@@ -286,13 +286,13 @@
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
     <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
 
@@ -330,13 +330,13 @@
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
     <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
 
@@ -363,13 +363,13 @@
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
     <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
 
@@ -386,13 +386,13 @@
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
     <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
 
@@ -445,13 +445,13 @@
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
     <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
 
@@ -486,13 +486,13 @@
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
     <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
     <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"/>
+      <convert type="ClockToText"></convert>
     </widget>
   </screen>
 </skin>
