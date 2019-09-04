@@ -75,15 +75,7 @@
     <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1515,950" size="260,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
-    <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
+    <panel name="ClockBg" />
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EMCMediaCenter" position="0,0" size="1920,1080" title="InfoBar">
@@ -285,15 +277,7 @@
     <widget name="Manage Cover" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="1340,950" size="300,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
-    <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
+    <panel name="ClockBg" />
   </screen>
 
   <screen name="imdbSetup" title="EMC Cover search setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -329,15 +313,7 @@
     <ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_ok.png" position="655,950" size="64,43" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
-    <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
+    <panel name="ClockBg" />
   </screen>
 
   <screen name="DownloadMovieInfo" title="Movie Information Download (TMDb)" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -362,15 +338,7 @@
     <widget name="movieinfo" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1413,950" size="300,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
-    <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
+    <panel name="ClockBg" />
   </screen>
 
   <screen name="MovieInfoPreview" title="Movie Information Preview" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -385,15 +353,7 @@
     <widget name="poster" position="170,70" size="290,420" zPosition="4" alphatest="on" backgroundColor="EL_Background" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
-    <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
+    <panel name="ClockBg" />
   </screen>
 
   <screen name="MovieInfoSetup" title="Movie Information Download Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -444,15 +404,7 @@
     <widget name="save" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="630,950" size="350,40" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
-    <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
+    <panel name="ClockBg" />
   </screen>
 
   <screen name="IMDB" title="Internet Movie Database Details Plugin" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -485,14 +437,6 @@
     <widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1575,950" size="260,40" name="key_blue" transparent="1" zPosition="1" />
     <!-- Clock -->
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
-    <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
-    <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-      <convert type="ClockToText"></convert>
-    </widget>
+    <panel name="ClockBg" />
   </screen>
 </skin>

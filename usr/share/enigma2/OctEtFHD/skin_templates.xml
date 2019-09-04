@@ -8,11 +8,11 @@
       <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
         <convert type="ClockToText"></convert>
       </widget>
-      <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-        <convert type="ClockToText"></convert>
-      </widget>
       <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,70" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-        <convert type="ClockToText"></convert>
+        <convert type="ClockToText">Date</convert>
+      </widget>
+      <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
+        <convert type="ClockToText">Full</convert>
       </widget>
 	</screen>
 
