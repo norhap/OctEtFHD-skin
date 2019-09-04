@@ -12,7 +12,7 @@
         <convert type="ClockToText">Date</convert>
       </widget>
       <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1525,109" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-        <convert type="ClockToText">Full</convert>
+        <convert type="ClockToText">FullDate</convert>
       </widget>
 	</screen>
 
