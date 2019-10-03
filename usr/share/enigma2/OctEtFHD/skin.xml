@@ -2323,7 +2323,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="OE_NewBg2" font="RegularBold; 38" foregroundColor="green_light" halign="right" noWrap="1" position="1620,827" render="Label" size="210,55" source="session.CurrentService" transparent="1" zPosition="2">
       <convert type="ServicePosition">Length,ShowHours</convert>
     </widget>
-    <widget pixmap="OctEtFHD/colors/000F6EB2.png" backgroundColor="OE_Background" foregroundColor="xtRed" position="830,890" render="Progress" size="1000,6" source="session.CurrentService" transparent="1" zPosition="1">
+    <widget pixmap="OctEtFHD/colors/000F6EB2.png" backgroundColor="OE_Background" foregroundColor="white" position="830,890" render="Progress" size="1000,6" source="session.CurrentService" transparent="1" zPosition="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <!-- Clock -->
