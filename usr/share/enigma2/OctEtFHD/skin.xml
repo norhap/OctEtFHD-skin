@@ -2554,11 +2554,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Title" render="Label" position="170,73" size="900,50" font="FHD; 34" backgroundColor="OE_Background" transparent="1" foregroundColor="white" />
     <widget source="IF" render="Label" font="RegularBold; 32" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="170,150" size="500,50" transparent="1" />
     <widget source="Statustext" render="Label" font="RegularBold; 32" foregroundColor="white" backgroundColor="OE_Background" position="645,150" size="370,50" transparent="1" halign="right" />
-    <widget name="statuspic" alphatest="blend" pixmaps="OctEtFHD/skin_default/lock_on.png,OctEtFHD/skin_default/lock_off.png" position="1035,158" size="35,35" transparent="1" />
+    <widget name="devicepic" alphatest="blend" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" position="1035,158" size="54,54" transparent="1" />
     <eLabel name="" foregroundColor="white" backgroundColor="grey" position="170,210" size="900,5" zPosition="-9" />
     <widget name="menulist" itemHeight="50" font="RegularBold; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,230" size="900,550" transparent="1" />
     <eLabel backgroundColor="white" name="" position="170,810" size="900,2" zPosition="-9" />
     <widget source="description" render="Label" backgroundColor="OE_Background" font="EL_Standard; 28" foregroundColor="white" halign="left" position="170,820" size="900,120" transparent="1" valign="top" />
+    <!-- Buttons-->
+    <eLabel backgroundColor="white" name="" position="170,945" size="900,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40" />
+    <widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" transparent="1" zPosition="1" />
+    <!-- Clock -->
+    <panel name="ClockBg" />
+  </screen>
+  <screen name="SystemNetworkInfo" title="System Network Info..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+    <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1060,940" zPosition="-15" />
+    <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center" />
+    <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="900,2" zPosition="-9" />
+    <!-- Widget -->
+    <widget source="Title" render="Label" position="170,73" size="900,50" font="FHD; 34" backgroundColor="OE_Background" transparent="1" foregroundColor="white" />
+    <widget name="devicepic" position="961,847" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
+    <widget source="IF" position="163,850" size="400,40" render="Label" font="Regular; 28" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1" />
+    <widget name="lab1" position="278,896" size="585,40" font="Regular;28" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+    <widget name="AboutScrollLabel" position="170,147" size="900,680" font="Regular;20" backgroundColor="OE_Background" transparent="1"/>
+    <widget source="IFtext" render="Label" position="882,901" size="120,25" font="Regular;28" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+    <widget source="Statustext" position="576,850" size="300,40" render="Label" font="Regular; 28" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1" />
+    <widget name="statuspic" position="901,856" size="35,25" transparent="1" alphatest="on" pixmaps="iFlatFHD/icons/buttons/key_green.png,iFlatFHD/icons/buttons/key_grey.png" />
     <!-- Buttons-->
     <eLabel backgroundColor="white" name="" position="170,945" size="900,2" zPosition="-9" />
     <ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40" />
