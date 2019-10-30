@@ -2799,7 +2799,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			MultiContentEntryPixmapAlphaBlend(pos = (80, 2), size = (72, 72), png = 5), # index 5 is the nfs/cifs icon
 			MultiContentEntryPixmapAlphaBlend(pos = (158, 2), size = (72, 72), png = 6), # index 6 is the isMounted icon
                     ],
-                "fonts": [gFont("RgularBold",30),gFont("Regular",24),gFont("FHD",28)],
+                "fonts": [gFont("RegularBold",30),gFont("Regular",24),gFont("FHD",28)],
                 "itemHeight": 78
                 }
             </convert>

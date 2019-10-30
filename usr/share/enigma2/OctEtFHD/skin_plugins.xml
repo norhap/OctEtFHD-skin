@@ -3822,7 +3822,7 @@
     <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="35,60" size="800,2" zPosition="-9" />
     <!-- Widget -->
     <widget source="Title" render="Label" font="RegularBold; 24" backgroundColor="OE_Background" foregroundColor="white" position="35,20" size="900,40" transparent="1" halign="left" />
-    <widget name="menu" font="RgularBold; 22" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="white" transparent="1" position="130,120" size="1120,540" zPosition="1" />
+    <widget name="menu" font="RegularBold; 22" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="white" transparent="1" position="130,120" size="1120,540" zPosition="1" />
     <widget name="pic1" position="35,120" size="90,90" alphatest="blend" zPosition="1" />
     <widget name="pic2" position="35,210" size="90,90" alphatest="blend" zPosition="1" />
     <widget name="pic3" position="35,300" size="90,90" alphatest="blend" zPosition="1" />
