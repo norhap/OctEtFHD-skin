@@ -5,7 +5,7 @@
   <output id="0">
     <resolution bpp="32" xres="1920" yres="1080" />
   </output>
-  <include filename="/usr/share/enigma2/OctEtFHD/skin_media.xml" />  
+  <include filename="/usr/share/enigma2/OctEtFHD/skin_media.xml" />
   <include filename="/usr/share/enigma2/OctEtFHD/skin_plugins.xml" />
   <include filename="/usr/share/enigma2/OctEtFHD/skin_templates.xml" />
   <colors>
@@ -99,7 +99,7 @@
     <font filename="/usr/share/enigma2/OctEtFHD/fonts/OpenSans-Regular.ttf" name="EL_Standard" scale="100" />
     <font filename="/usr/share/enigma2/OctEtFHD/fonts/XHD.ttf" name="FHD" scale="100" />
     <font filename="/usr/share/enigma2/OctEtFHD/fonts/FHDBold.ttf" name="RegularBold" scale="100" />
-    <alias name="ChoiceList" font="FHD" size="30" height="50" />    
+    <alias name="ChoiceList" font="FHD" size="30" height="50" />
     <alias name="Body" font="FHD" size="30" height="50" />
     <alias name="TextNormal" font="FHD" size="30" height="50" />
     <alias name="FileList" font="FHD" size="30" height="50"/>
@@ -215,7 +215,7 @@
     </widget>
     <widget source="session.CurrentService" render="Label" font="RegularBold; 24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="696,856" size="570,28" transparent="1" halign="right" valign="center" zPosition="1">
   <convert type="ServiceName2">%s %F %p %Y %f %M %b</convert>
-</widget>    
+</widget>
 <widget source="session.CurrentService" render="Label" position="458,880" size="770,28" backgroundColor="OE_Background" font="RegularBold; 26" foregroundColor="blue_light" transparent="1" zPosition="21" halign="center">
       <convert type="CaidInfo2" />
   </widget>
@@ -605,8 +605,8 @@
     <widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" foregroundColor="white" position="center,160" size="680,58" transparent="1" halign="left" />
     <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="620,255" size="730,650" transparent="1">
       <convert type="TemplatedMultiContent">
-                   {"template": [ MultiContentEntryText(pos = (15, 5), size = (800, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
-                   "fonts": [gFont("FHD", 38)], 
+                   {"template": [ MultiContentEntryText(pos = (15, 5), size = (800, 60), flags = RT_HALIGN_LEFT, text = 0) ],
+                   "fonts": [gFont("FHD", 38)],
                    "itemHeight": 65
                    }
 		</convert>
@@ -690,14 +690,14 @@
     <widget position="170,385" render="Listbox" scrollbarMode="showOnDemand" size="1060,550" source="streams" transparent="1" zPosition="3">
       <convert type="TemplatedMultiContent">
                                {"templates":
-                               {"default": (50, [ 
+                               {"default": (50, [
                           MultiContentEntryText(pos = (0, 5), size = (55, 40),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
                           MultiContentEntryText(pos = (60, 5), size = (70, 40),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
                           MultiContentEntryText(pos = (160, 5), size = (360, 40),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
                           MultiContentEntryText(pos = (430, 5), size = (450, 40), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
                           MultiContentEntryText(pos = (1000, 5), size = (25, 40),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
                           ], True, "showNever"),
-                          "notselected": (50, [ 
+                          "notselected": (50, [
                           MultiContentEntryText(pos = (0, 5),   size = (55, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
                           MultiContentEntryText(pos = (60, 5),  size = (70, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
                           MultiContentEntryText(pos = (160, 5), size = (360, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
@@ -2153,7 +2153,7 @@
       <convert type="TemplatedMultiContent">
             {"template":[
             MultiContentEntryText(pos=(150,8),size=(870,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
-            MultiContentEntryPixmap(pos=(20,2),size=(90,60),png=2),# index 2 is the pixmap 
+            MultiContentEntryPixmap(pos=(20,2),size=(90,60),png=2),# index 2 is the pixmap
             ],
             "fonts":[gFont("RegularBold",32) ],"itemHeight":65}
               </convert>
@@ -2195,8 +2195,8 @@
     <widget render="Label" source="Title" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="400,73" size="720,50" transparent="1" />
     <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="400,160" size="720,780" transparent="1">
       <convert type="TemplatedMultiContent">
-                   {"template": [ MultiContentEntryText(pos = (15, 5), size = (800, 60), flags = RT_HALIGN_LEFT, text = 0) ], 
-                   "fonts": [gFont("FHD", 38)], 
+                   {"template": [ MultiContentEntryText(pos = (15, 5), size = (800, 60), flags = RT_HALIGN_LEFT, text = 0) ],
+                   "fonts": [gFont("FHD", 38)],
                    "itemHeight": 65
                    }
 		</convert>
@@ -4197,8 +4197,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel text="Softwaremanager" font="FHD; 34" backgroundColor="OE_Background" position="490,223" size="870,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" />
     <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="490,290" size="870,495" transparent="1">
       <convert type="TemplatedMultiContent">
-                   {"template": [ MultiContentEntryText(pos = (15, 2), size = (600, 55), flags = RT_HALIGN_LEFT, text = 1) ], 
-                   "fonts": [gFont("FHD", 32)], 
+                   {"template": [ MultiContentEntryText(pos = (15, 2), size = (600, 55), flags = RT_HALIGN_LEFT, text = 1) ],
+                   "fonts": [gFont("FHD", 32)],
                    "itemHeight": 55
                    }
 		</convert>
@@ -4209,7 +4209,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="TemplatedMultiContent">
                    {"template": [ MultiContentEntryText(pos = (15, 5), size = (350, 500), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2),# index 2 is the Description,
                    ],
-                   "fonts": [gFont("RegularBold", 28)], 
+                   "fonts": [gFont("RegularBold", 28)],
                    "itemHeight": 500
                    }
 		</convert>
@@ -4405,7 +4405,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4434,7 +4434,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4463,7 +4463,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4492,7 +4492,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4521,7 +4521,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4547,13 +4547,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="TemplatedMultiContent">
                 {"template":[
                 MultiContentEntryText(pos=(150,8),size=(870,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
-                MultiContentEntryPixmap(pos=(20,2),size=(90,60),png=2),# index 2 is the pixmap 
+                MultiContentEntryPixmap(pos=(20,2),size=(90,60),png=2),# index 2 is the pixmap
                 ],
                 "fonts":[gFont("RegularBold",32) ],"itemHeight":65}
       </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4582,7 +4582,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4611,7 +4611,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4640,7 +4640,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
             </convert>
     </widget>
     <widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1" />
-    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="125,500" zPosition="10" />
+    <widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10" />
     <widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
     <widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11" />
@@ -4846,19 +4846,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
     <panel name="ClockBg" />
   </screen>
-	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder"> 
-	      <eLabel position="0,810" size="1920,270" backgroundColor="#20000000" zPosition="-1" /> 
-	      <eLabel position="0,810" size="1920,1" backgroundColor="#1b3c85" zPosition="-1" /> 
-	      <widget name="title" position="555,780" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#ffffff" backgroundColor="#00000000" font="RegularBold; 46" transparent="1" /> 
+	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
+	      <eLabel position="0,810" size="1920,270" backgroundColor="#20000000" zPosition="-1" />
+	      <eLabel position="0,810" size="1920,1" backgroundColor="#1b3c85" zPosition="-1" />
+	      <widget name="title" position="555,780" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#ffffff" backgroundColor="#00000000" font="RegularBold; 46" transparent="1" />
 	      <widget source="label1" render="Label" position="50,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
 	      <widget source="label2" render="Label" position="425,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
 	      <widget source="label3" render="Label" position="800,850" size="320,200" font="RegularBold;50" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#008cff" backgroundColor="#00000000" transparent="1" />
-	      <widget source="label4" render="Label" position="1175,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
-	      <widget source="label5" render="Label" position="1550,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+	      <widget source="label4" render="Label" position="1175,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+	      <widget source="label5" render="Label" position="1550,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
 	</screen>
-	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder"> 
+	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
 	        <eLabel position="0,787" size="1920,55" backgroundColor="#1b3c85" zPosition="-1"/>
-		<widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="#00000000" font="RegularBold; 46" transparent="1" /> 
+		<widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="#00000000" font="RegularBold; 46" transparent="1" />
 		<widget source="label1" render="Label" position="15,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
 		<widget source="label1s" render="Label" position="15,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
 		<widget name="pixmap1" position="15,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
@@ -4868,13 +4868,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="label3" render="Label" position="635,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
 		<widget source="label3s" render="Label" position="635,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
 		<widget name="pixmap3" position="635,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
-		<widget source="label4" render="Label" position="985,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
-		<widget source="label4s" render="Label" position="985,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" /> 
+		<widget source="label4" render="Label" position="985,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+		<widget source="label4s" render="Label" position="985,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
 		<widget name="pixmap4" position="985,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
-		<widget source="label5" render="Label" position="1295,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
-		<widget source="label5s" render="Label" position="1295,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" /> 
+		<widget source="label5" render="Label" position="1295,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
+		<widget source="label5s" render="Label" position="1295,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
 		<widget name="pixmap5" position="1295,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
-		<widget source="label6" render="Label" position="1605,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" /> 
+		<widget source="label6" render="Label" position="1605,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1" />
 		<widget source="label6s" render="Label" position="1605,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1" />
 		<widget name="pixmap6" position="1605,850" size="300,200" zPosition="1" transparent="1" alphatest="on" />
 	</screen>
