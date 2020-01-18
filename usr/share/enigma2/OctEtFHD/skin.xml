@@ -164,8 +164,8 @@
 	<color color="OE_Foreground" name="WindowTitleForeground" />
   </windowstyle>
   <parameters>
-	<parameter name="AllowUserDatesAndTimes" value="1,1"/>
-	<parameter name="AllowUseOnlyIcon" value="1"/>
+	<parameter name="AllowUserDatesAndTimes" value="1,1" />
+	<parameter name="AllowUseOnlyIcon" value="1" />
 	<parameter name="ConfigListSeperator" value="320" />
 	<parameter name="ChoicelistDash" value="0,3,1000,50" />
 	<parameter name="ChoicelistName" value="85,3,1000,50" />
