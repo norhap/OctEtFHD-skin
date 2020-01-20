@@ -1019,12 +1019,12 @@
 	  <convert type="EventName">Name</convert>
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="left" position="80,200" render="Label" size="85,40" source="ServiceEvent" transparent="1">
-	  <convert type="EventTime">NextStartTime</convert>
+	  <convert type="EventTime">StartTime</convert>
 	  <convert type="ClockToText"></convert>
 	</widget>
 	<eLabel backgroundColor="OE_Background" font="RegularBold; 32" halign="center" position="156,198" size="30,40" text="-" transparent="1" valign="center" />
 	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="176,200" render="Label" size="85,40" source="ServiceEvent" transparent="1">
-	  <convert type="EventTime">NextEndTime</convert>
+	  <convert type="EventTime">EndTime</convert>
 	  <convert type="ClockToText"></convert>
 	</widget>
 	<widget source="Event" render="Label" backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="493,200" size="157,40" transparent="1">
