@@ -3773,9 +3773,33 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	  <convert type="FrontendInfo">LOCK</convert>
 	  <convert type="ConditionalShowHide">Invert</convert>
 	</widget>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,369" size="1300,550" transparent="1" />
+	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,555" size="1300,550" transparent="1" />
+		<eLabel text="TSID:" position="175,365" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
+		<widget source="tsid" render="Label" position="350,365" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+		<eLabel text="ONID:" position="175,430" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
+		<widget source="onid" render="Label" position="350,430" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+		<eLabel text="Orb Pos:" position="160,495" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
+		<widget source="pos" render="Label" position="350,495" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 	<eLabel backgroundColor="white" name="" position="170,930" size="1300,2" zPosition="-9" />
 	<widget name="introduction" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" position="170,945" size="1300,45" transparent="1" />
+		<ePixmap objectTypes="key_yellow,Button,Label" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40" alphatest="blend" transparent="1"/>
+		<widget source="key_yellow" objectTypes="key_yellow,StaticText" render="Pixmap" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40" alphatest="blend" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="1095,950" size="200,40" font="Regular;21" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<!-- Clock -->
+	<panel name="ClockBg" />
+  </screen>
+  <screen name="ServicesFound" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<eLabel backgroundColor="OE_Blue" foregroundColor="OE_Background" name="" position="0,0" size="1920,1080" zPosition="-99" valign="center" />
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15" />
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center" />
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9" />
+	<!-- Widget -->
+	<widget name="legend" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,185" size="1300,45" transparent="1" />
+	<eLabel backgroundColor="white" name="" position="170,930" size="1300,2" zPosition="-9" />
+	<widget name="servicesfound" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" position="170,369" size="1300,550" transparent="1" />
+	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1095,950" size="200,40" name="key_yellow" transparent="1" zPosition="1" />
 	<!-- Clock -->
 	<panel name="ClockBg" />
   </screen>
