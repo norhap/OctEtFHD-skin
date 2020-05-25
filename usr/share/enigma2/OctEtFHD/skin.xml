@@ -3773,7 +3773,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	  <convert type="FrontendInfo">LOCK</convert>
 	  <convert type="ConditionalShowHide">Invert</convert>
 	</widget>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,555" size="1300,550" transparent="1" />
+	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,555" size="1300,350" transparent="1" />
 		<eLabel text="TSID:" position="175,365" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
 		<widget source="tsid" render="Label" position="350,365" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 		<eLabel text="ONID:" position="175,430" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
