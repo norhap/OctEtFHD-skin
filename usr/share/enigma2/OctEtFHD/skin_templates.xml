@@ -39,4 +39,7 @@
 	  <!-- Clock -->
 	  <panel name="ClockBg" />
 	</screen>
+	<screen name="autoresize" position="fill" flags="wfNoBorder">
+		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
+	</screen>
 </skin>
