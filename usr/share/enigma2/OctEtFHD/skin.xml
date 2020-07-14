@@ -2225,8 +2225,8 @@
 	<!-- Widget -->
 	<widget name="minutes" position="center,center" size="200,45" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" foregroundColor="white" />
   </screen>
-  <screen name="MessageBox" title="Message" position="center,200" size="850,650">
-	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="780,180" position="85,15" />
+  <screen name="MessageBox" title="Message" position="center,200" size="900,650">
+	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="750,220" position="85,15" />
 	<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,20" size="80,80" alphatest="blend" />
 	<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,20" size="80,80" alphatest="blend" />
 	<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,20" size="80,80" alphatest="blend" />
