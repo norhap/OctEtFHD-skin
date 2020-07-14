@@ -2225,16 +2225,17 @@
 	<!-- Widget -->
 	<widget name="minutes" position="center,center" size="200,45" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" foregroundColor="white" />
   </screen>
-  <screen name="MessageBox" title="Message" position="center,400" size="850,10" flags="wfBorder">
+  <screen name="MessageBox" title="Message" position="center,200" size="650,650" flags="wfBorder">
 	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="850,0" position="80,22" />
 	<widget name="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="0,20" size="80,80" alphatest="blend" transparent="1" />
-	<widget name="list" itemHeight="45" font="RegularBold; 30" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="57,56" size="703,375" transparent="1" />
+	<widget name="list" itemHeight="45" font="RegularBold; 30" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="90,56" size="703,375" transparent="1" />
 	<applet type="onLayoutFinish">
-# this should be factored out into some helper code,but currently demonstrates applets.
-from enigma import eSize,ePoint,gFont
+# this should be factored out into some helper code, but currently demonstrates applets.
+from enigma import eSize, ePoint, gFont
 orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
-textsize = self["text"].getSize()
+textsize = self[&quot;text&quot;].getSize()
+# y size still must be fixed in font stuff...
 textsize = (textsize[0] + 40,textsize[1] + 40)
 offset = 45
 if self.type == self.TYPE_YESNO:
@@ -2243,12 +2244,13 @@ wsizex = textsize[0] + 80
 wsizey = textsize[1] + offset
 if (850 &gt; wsizex):
 	wsizex = 1000
-wsize = (wsizex,wsizey)
+wsize = (wsizex,wsizey))
 # resize
 self.instance.resize(eSize(*wsize))
 # resize label
 self["text"].instance.resize(eSize(*textsize))
 # move list
+listsize = (wsizex - 30, 96)
 listsize = (wsizex - 30, 96)
 self["list"].instance.move(ePoint(15,textsize[1] + 41))
 self["list"].instance.resize(eSize(*listsize))
