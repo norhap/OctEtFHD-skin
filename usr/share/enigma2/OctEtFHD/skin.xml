@@ -2251,7 +2251,6 @@ self.instance.resize(eSize(*wsize))
 self["text"].instance.resize(eSize(*textsize))
 # move list
 listsize = (wsizex - 30, 96)
-listsize = (wsizex - 30, 96)
 self["list"].instance.move(ePoint(15,textsize[1] + 41))
 self["list"].instance.resize(eSize(*listsize))
 self["list"].instance.setFont(gFont("RegularBold", 30))
