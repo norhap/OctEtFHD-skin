@@ -203,6 +203,13 @@
 	<parameter name="PiconManagerList" value="10,3,1920,50" />
 	<parameter name="RSList" value="40,0,1200,50,10,12,50,50" />
   </parameters>
+  <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
+	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend" />
+	<widget alphatest="blend" position="825,150" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+	  <convert type="ServiceName2">Reference</convert>
+	</widget>
+	<widget name="text" position="600,420" size="720,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center" />
+  </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="1920,1080" title="InfoBar">
 	<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="30,852" size="1850,200" zPosition="-11" />
 	<eLabel backgroundColor="blue_light" name="" position="336,910" size="1510,1" zPosition="20" foregroundColor="white" />
@@ -214,12 +221,12 @@
 	<widget source="session.CurrentService" render="Label" position="458,856" size="750,28" font="RegularBold; 27" noWrap="1" backgroundColor="background" transparent="1" halign="left" valign="center" foregroundColor="white">
 	  <convert type="ServiceName">Name</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" font="RegularBold; 24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="696,856" size="570,28" transparent="1" halign="right" valign="center" zPosition="1">
+	<!--widget source="session.CurrentService" render="Label" font="RegularBold; 24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="696,856" size="570,28" transparent="1" halign="right" valign="center" zPosition="1">
   <convert type="ServiceName2">%s %F %p %Y %f %M %b</convert>
 </widget>
 <widget source="session.CurrentService" render="Label" position="458,880" size="770,28" backgroundColor="OE_Background" font="RegularBold; 26" foregroundColor="blue_light" transparent="1" zPosition="21" halign="center">
 	  <convert type="CaidInfo2" />
-  </widget>
+  </widget-->
 	<widget alphatest="blend" position="80,870" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 	  <convert type="ServiceName">Reference</convert>
 	</widget>
