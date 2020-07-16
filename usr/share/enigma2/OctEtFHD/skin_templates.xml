@@ -45,7 +45,8 @@
 	<screen name="titleScreenAll">
 	<widget source="Title" render="Label" position="170,47" foregroundColor="white" backgroundColor="OE_Background" size="850,55" zPosition="2" transparent="1" font="RegularBold; 42" halign="center" valign="center"/>
 	</screen>
-	<screen name="SRGYB" position="fill" flags="wfNoBorder">
+	  <!-- KEYS SOURCES RGYB-->
+	<screen name="S_RGYB" position="fill" flags="wfNoBorder">
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="500,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40"/>
@@ -55,7 +56,18 @@
 	<widget source="key_yellow" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_blue" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
-	<screen name="SRGY" position="fill" flags="wfNoBorder">
+	  <!-- KEYS NAMES RGYB-->
+	<screen name="N_RGYB" position="fill" flags="wfNoBorder">
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="500,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="1160,960" size="40,40"/>
+	<widget name="key_red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget name="key_green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	</screen>
+	<screen name="S_RGY" position="fill" flags="wfNoBorder">
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="390,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="705,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="975,960" size="40,40"/>
