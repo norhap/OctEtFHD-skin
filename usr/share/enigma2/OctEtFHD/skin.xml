@@ -552,7 +552,7 @@
   <widget source="session.CurrentService" render="Label" font="FHD; 24" position="460,960" size="420,45" zPosition="50" backgroundColor="OE_Background" transparent="1" noWrap="1" valign="center" halign="left" foregroundColor="white">
 	<convert type="CaidInfo2" />
   </widget>
-  <widget source="session.CurrentService" render="Label" backgroundColor="OE_Background" position="75,815" size="380,45" zPosition="6" font="RegularBold; 22" transparent="1" alphatest="on" >
+  <widget source="session.CurrentService" render="Label" backgroundColor="OE_Background" position="75,815" size="380,45" zPosition="6" font="RegularBold; 22" transparent="1" >
 	  <convert type="PliExtraInfo">CryptoBar</convert>
 	</widget>
   <!-- TEST -->
