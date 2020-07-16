@@ -42,8 +42,9 @@
 	<screen name="autoresize" position="fill" flags="wfNoBorder">
 		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
 	</screen>
-	<screen name="titleScreenAll">
-	<widget source="Title" render="Label" position="170,47" foregroundColor="white" backgroundColor="OE_Background" size="850,55" zPosition="2" transparent="1" font="RegularBold; 42" halign="center" valign="center"/>
+	  <!-- TITLES -->
+	<screen name="TitleScreenAll">
+	<widget source="Title" render="Label" position="170,70" foregroundColor="white" backgroundColor="OE_Background" size="850,55" zPosition="2" transparent="1" font="RegularBold; 42" halign="center" valign="center"/>
 	</screen>
 	  <!-- KEYS SOURCES RGYB-->
 	<screen name="S_RGYB" position="fill" flags="wfNoBorder">
@@ -67,6 +68,7 @@
 	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
+	  <!-- KEYS SOURCES SRGY-->
 	<screen name="S_RGY" position="fill" flags="wfNoBorder">
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="390,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="705,960" size="40,40"/>
