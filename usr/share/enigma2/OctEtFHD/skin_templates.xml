@@ -1,10 +1,10 @@
 <skin>
 	<!-- CLOCK TEMPLATES -->
 	<!-- ClockBg -->
-	<!-- <panel name="ClockBg" /> -->
+	<!-- <panel name="ClockBg"/> -->
 	<screen name="ClockBg">
-	  <eLabel backgroundColor="OE_NewBg2" position="1520,70" size="400,74" transparent="0" zPosition="-20" foregroundColor="white" />
-	  <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10" />
+	  <eLabel backgroundColor="OE_NewBg2" position="1520,70" size="400,74" transparent="0" zPosition="-20" foregroundColor="white"/>
+	  <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	  <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1715,76" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 		<convert type="ClockToText"></convert>
 	  </widget>
@@ -17,13 +17,13 @@
 	</screen>
 
 	<!-- MainMenu -->
-	<!-- <panel name="MainMenu" /> -->
+	<!-- <panel name="MainMenu"/> -->
 	<screen name="MainMenu">
-	  <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="150,850" zPosition="-10" />
-	  <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="920,770" zPosition="-15" />
-	  <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="center,230" size="680,2" zPosition="-9" />
+	  <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="150,850" zPosition="-10"/>
+	  <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="920,770" zPosition="-15"/>
+	  <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="center,230" size="680,2" zPosition="-9"/>
 	  <!-- Widget -->
-	  <widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" foregroundColor="white" position="center,160" size="680,58" transparent="1" halign="left" />
+	  <widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" foregroundColor="white" position="center,160" size="680,58" transparent="1" halign="left"/>
 	  <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="center,255" size="680,650" transparent="1">
 		<convert type="TemplatedMultiContent">
 				   {"template": [ MultiContentEntryText(pos = (15, 5), size = (800, 60), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -32,14 +32,35 @@
 				   }
 		</convert>
 	  </widget>
-	  <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/setting1.png" position="475,182" size="100,100" transparent="1" zPosition="10" />
+	  <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/setting1.png" position="475,182" size="100,100" transparent="1" zPosition="10"/>
 	  <!-- Button -->
-	  <ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="505,840" size="40,40" />
-	  <eLabel text="MenuSort" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="white" halign="center" position="445,885" size="160,40" transparent="1" zPosition="1" />
+	  <ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="505,840" size="40,40"/>
+	  <eLabel text="MenuSort" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="white" halign="center" position="445,885" size="160,40" transparent="1" zPosition="1"/>
 	  <!-- Clock -->
-	  <panel name="ClockBg" />
+	  <panel name="ClockBg"/>
 	</screen>
 	<screen name="autoresize" position="fill" flags="wfNoBorder">
 		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
+	</screen>
+	<screen name="titleScreenAll">
+	<widget source="Title" render="Label" position="170,47" foregroundColor="white" backgroundColor="OE_Background" size="850,55" zPosition="2" transparent="1" font="RegularBold; 42" halign="center" valign="center"/>
+	</screen>
+	<screen name="SRGYB" position="fill" flags="wfNoBorder">
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="500,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="1160,960" size="40,40"/>
+	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_yellow" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	</screen>
+	<screen name="SRGY" position="fill" flags="wfNoBorder">
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="390,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="705,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="975,960" size="40,40"/>
+	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="435,960" size="260,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="750,960" size="220,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_yellow" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1020,960" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 </skin>
