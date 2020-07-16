@@ -205,9 +205,7 @@
   </parameters>
   <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
 	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend" />
-	<widget alphatest="blend" position="825,150" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
-	  <convert type="ServiceName2">Reference</convert>
-	</widget>
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10" />
 	<widget name="text" position="600,420" size="720,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="1920,1080" title="InfoBar">
