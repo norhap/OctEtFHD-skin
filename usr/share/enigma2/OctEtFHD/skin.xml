@@ -745,7 +745,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="detailtext" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -765,7 +765,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="detailtext" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -785,7 +785,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,600" transparent="1"/>
 	<eLabel backgroundColor="white" position="170,760" size="1300,2"/>
 	<widget source="help" render="Label" position="170,780" size="1300,150" font="EL_Standard; 28" foregroundColor="white" backgroundColor="OE_Background" transparent="1" halign="left" valign="center" zPosition="1"/>
@@ -807,7 +807,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="entries" itemHeight="80" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- others -->
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_menu.png" position="78,960" size="64,43"/>
@@ -829,7 +829,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,600" transparent="1"/>
 	<eLabel backgroundColor="white" position="170,760" size="1300,2"/>
 	<widget source="help" render="Label" position="170,780" size="1300,150" font="EL_Standard; 28" foregroundColor="white" backgroundColor="OE_Background" transparent="1" halign="left" valign="center" zPosition="1"/>
@@ -847,7 +847,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -867,7 +867,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="80" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -887,7 +887,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="80" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -907,7 +907,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -941,7 +941,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,850" transparent="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
@@ -951,7 +951,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="checkList" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -971,7 +971,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="menu" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,850" transparent="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
@@ -981,7 +981,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="menu" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,850" transparent="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
@@ -991,7 +991,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="passwd" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -1082,7 +1082,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" name="list" position="170,center" scrollbarMode="showNever" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" size="1300,800" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 	<!-- others -->
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_menu.png" position="78,960" size="64,43"/>
@@ -1165,7 +1165,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" name="list" position="170,center" scrollbarMode="showNever" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" size="1300,800" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 	<!-- others -->
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_menu.png" position="78,960" size="64,43"/>
@@ -1208,7 +1208,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="autostart" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,240" size="400,45" transparent="1"/>
 	<widget name="labdisabled" font="RegularBold; 30" backgroundColor="OE_Red" foregroundColor="OE_Foreground" position="580,240" size="280,45" valign="center" halign="center" zPosition="1"/>
 	<widget name="labactive" font="RegularBold; 30" backgroundColor="un1f771f" foregroundColor="OE_Foreground" position="580,240" size="280,45" valign="center" halign="center" zPosition="2"/>
@@ -1240,7 +1240,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -1451,7 +1451,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -1467,7 +1467,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget source="cutlist" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,140" size="640,850" transparent="1">
 	  <convert type="TemplatedMultiContent">
 					   {"template": [
@@ -1540,7 +1540,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="filelist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -1754,7 +1754,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="filelist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -1770,7 +1770,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="list_left" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="640,750" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="817,center" size="5,600" zPosition="-9"/>
 	<widget name="list_right" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="830,center" size="640,750" transparent="1"/>
@@ -1792,7 +1792,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -1892,7 +1892,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -1908,7 +1908,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="hddlist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -1987,7 +1987,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,center" size="650,750" transparent="1"/>
 	<widget name="choosen" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="830,center" size="640,750" transparent="1" foregroundColor="green_light" valign="top"/>
 	<!-- others-->
@@ -2007,7 +2007,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,center" size="650,750" transparent="1"/>
 	<widget name="choosen" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="830,center" size="640,750" transparent="1" foregroundColor="green_light" valign="top"/>
 	<!-- Buttons-->
@@ -2172,7 +2172,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="text" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,145" size="1300,45" transparent="1"/>
 	<widget name="target" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,195" size="1300,45" transparent="1"/>
 	<widget name="filelist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,245" size="1300,300" transparent="1"/>
@@ -2460,7 +2460,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget source="menu" render="Listbox" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,145" size="1300,850" transparent="1">
 	  <convert type="StringList"/>
 	</widget>
@@ -2482,7 +2482,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -2498,7 +2498,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="detailtext" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -2714,7 +2714,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,165" size="1300,680" transparent="1">
 	  <convert type="TemplatedMultiContent">
 					{"template": [
@@ -2798,7 +2798,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,150" size="1300,702" transparent="1">
 	  <convert type="TemplatedMultiContent">
 				{"template": [
@@ -3013,7 +3013,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="label1" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="170,140" size="400,45" transparent="1"/>
 	<widget name="label2" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="170,190" size="1300,50" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,245" size="1300,2" zPosition="-9"/>
@@ -3038,7 +3038,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="info" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,140" size="1300,50" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,195" size="1300,2" zPosition="-9"/>
 	<widget source="list" render="Listbox" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" position="170,210" size="1300,700" backgroundColor="OE_Background" foregroundColor="OE_Foreground" zPosition="3" transparent="1">
@@ -3060,7 +3060,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -3074,7 +3074,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="about" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,145" size="1300,850" transparent="1" foregroundColor="white"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
@@ -3140,7 +3140,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,150" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -3272,7 +3272,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,750" transparent="1">
 	  <convert type="TemplatedMultiContent">
 				{"template": [
@@ -3313,7 +3313,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="list" font="Regular; 28" itemHeight="75" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,750" transparent="1" zPosition="5"/>
 	<widget name="text" position="170,890" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1" foregroundColor="green_light"/>
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -3459,7 +3459,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,800" transparent="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
@@ -3552,7 +3552,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,800" transparent="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
@@ -3586,7 +3586,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,700" transparent="1"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="white" position="170,880" size="1300,2" zPosition="-9"/>
 	<widget name="introduction" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="white" halign="center" position="170,890" size="1300,45" transparent="1" valign="center"/>
@@ -3656,7 +3656,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="list" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -3676,7 +3676,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="list" itemHeight="50" font="FHD; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,700" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,875" size="1300,2" zPosition="-9"/>
 	<widget source="hint" render="Label" font="EL_Standard; 28" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="170,887" size="1300,45" transparent="1"/>
@@ -3839,7 +3839,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="header" position="170,145" size="1300,45" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,200" size="1300,2" zPosition="-9"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,650" transparent="1"/>
@@ -3928,7 +3928,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<widget name="HelpWindow" position="400,712" size="1,1" zPosition="10"/>
 	<!-- Buttons-->
@@ -3977,7 +3977,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,145" size="1300,650" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,800" size="1300,2" zPosition="-9"/>
 	<widget name="description" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="170,807" size="1300,135" transparent="1" valign="top"/>
@@ -4063,7 +4063,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="timerlist" itemHeight="90" font="RegularBold; 30" iconMargin="8" rowSplit="45" setEventNameFont="RegularBold; 30" setServiceNameFont="RegularBold;30" setFont="RegularBold;28" satPosLeft="300" backgroundColor="OE_Background" foregroundColor="white" position="170,145" size="1300,630" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,790" size="1300,2" zPosition="-9"/>
 	<widget name="description" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="170,807" size="1300,135" transparent="1" valign="top"/>
@@ -4087,7 +4087,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -4278,7 +4278,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionDisabled="0" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,750" transparent="1">
 	  <convert type="TemplatedMultiContent">
 		{"template": [
@@ -4411,7 +4411,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,700" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,875" size="1300,2" zPosition="-9" foregroundColor="white"/>
 	<widget source="status" render="Label" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,890" size="1300,45" transparent="1"/>
@@ -4789,7 +4789,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="AboutScrollLabel" font="Console; 28" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/skin_default/buttons/key_left.png" position="1195,960" size="64,43"/>
@@ -4810,7 +4810,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
@@ -4849,7 +4849,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="TitleScreenAll"/>
 	<widget source="devicelist" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1">
 	  <convert type="TemplatedMultiContent">
 		{"template": [

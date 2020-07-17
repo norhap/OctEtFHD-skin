@@ -44,7 +44,7 @@
 	</screen>
 	  <!-- TITLES -->
 	<screen name="TitleScreenAll">
-	<widget source="Title" render="Label" position="170,70" foregroundColor="white" backgroundColor="OE_Background" size="850,55" zPosition="2" transparent="1" font="RegularBold; 42" halign="center" valign="center"/>
+	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
 	</screen>
 	  <!-- KEYS SOURCES RGYB-->
 	<screen name="S_RGYB" position="fill" flags="wfNoBorder">
