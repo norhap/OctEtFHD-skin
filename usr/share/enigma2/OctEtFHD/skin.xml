@@ -547,9 +547,9 @@
   </widget>
   <!-- CryptoInfo -->
   <eLabel backgroundColor="white" position="75,865" size="380,2" transparent="0" zPosition="-1" foregroundColor="white"/>
-  <widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1042,967" size="63,32" alphatest="blend" zPosition="3"/>
-  <widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="939,967" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
-  <widget source="session.CurrentService" render="Label" font="FHD; 24" position="460,960" size="420,45" zPosition="50" backgroundColor="OE_Background" transparent="1" noWrap="1" valign="center" halign="left" foregroundColor="white">
+  <!--widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1622,1010" size="63,32" alphatest="blend" zPosition="3"/-->
+  <widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1476,1015" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
+  <widget source="session.CurrentService" render="Label" font="FHD; 24" position="465,1007" size="1000,45" zPosition="50" backgroundColor="OE_Background" transparent="1" noWrap="1" valign="center" halign="left" foregroundColor="white">
 	<convert type="CaidInfo2"/>
   </widget>
   <widget source="session.CurrentService" render="Label" backgroundColor="OE_Background" position="75,815" size="380,45" zPosition="6" font="RegularBold; 22" transparent="1" >
