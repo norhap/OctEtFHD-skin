@@ -2237,7 +2237,7 @@
 	<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="WarningPixmap" pixmap="icons/input_warning.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold; 30" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="90,220" size="703,400" transparent="1"/>
+	<widget name="list" itemHeight="45" font="RegularBold; 26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="90,220" size="703,400" transparent="1"/>
 	<panel name="autoresize"/>
 	<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
@@ -2274,7 +2274,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="WarningPixmap" pixmap="icons/input_warning.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold; 30" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="45,160" size="703,100" transparent="1"/>
+	<widget name="list" itemHeight="45" font="RegularBold; 26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="45,160" size="703,100" transparent="1"/>
 	<panel name="autoresize"/>
 	<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
