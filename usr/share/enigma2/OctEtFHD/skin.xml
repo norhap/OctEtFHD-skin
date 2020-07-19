@@ -3787,19 +3787,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	  <convert type="ConditionalShowHide">Invert</convert>
 	</widget>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,555" size="1300,350" transparent="1"/>
-		<eLabel text="TSID:" position="175,365" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
-		<widget source="tsid" render="Label" position="350,365" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-		<eLabel text="ONID:" position="175,430" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
-		<widget source="onid" render="Label" position="350,430" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-		<eLabel text="Orb Pos:" position="160,495" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
-		<widget source="pos" render="Label" position="350,495" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel text="TSID:" position="175,365" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
+	<widget source="tsid" render="Label" position="350,365" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel text="ONID:" position="175,430" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
+	<widget source="onid" render="Label" position="350,430" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel text="Orb Pos:" position="160,495" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
+	<widget source="pos" render="Label" position="350,495" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 	<eLabel backgroundColor="white" name="" position="170,930" size="1300,2" zPosition="-9"/>
 	<widget name="introduction" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" position="170,945" size="1300,45" transparent="1"/>
-		<ePixmap objectTypes="key_yellow,Button,Label" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40" alphatest="blend" transparent="1"/>
-		<widget source="key_yellow" objectTypes="key_yellow,StaticText" render="Pixmap" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40" alphatest="blend" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" position="1095,950" size="200,40" font="Regular;21" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget source="key_yellow" objectTypes="key_yellow,StaticText" render="Pixmap" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40" alphatest="blend" transparent="1">
+	<convert type="ConditionalShowHide"/>
+	</widget>
+	<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
