@@ -549,9 +549,10 @@
   <eLabel backgroundColor="white" position="75,865" size="380,2" transparent="0" zPosition="-1" foregroundColor="white"/>
   <!--widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1622,1010" size="63,32" alphatest="blend" zPosition="3"/-->
   <widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1476,1015" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
-  <widget source="session.CurrentService" render="Label" font="FHD; 24" position="465,1007" size="1000,45" zPosition="50" backgroundColor="OE_Background" transparent="1" noWrap="1" valign="center" halign="left" foregroundColor="white">
+  <widget source="session.CurrentService" render="Label" font="FHD; 24" position="465,1007" size="1000,45" zPosition="50" backgroundColor="OE_ListBackground" transparent="0" noWrap="1" valign="center" halign="left" foregroundColor="white">
 	<convert type="CaidInfo2"/>
   </widget>
+  <eLabel backgroundColor="OE_ListBackground" position="1465,1007" size="255,45"/>
   <widget source="session.CurrentService" render="Label" backgroundColor="OE_Background" position="75,815" size="380,45" zPosition="6" font="RegularBold; 22" transparent="1" >
 	  <convert type="PliExtraInfo">CryptoBar</convert>
 	</widget>
@@ -4933,15 +4934,43 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<widget name="lab1" position="170,150" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="labdisabled" position="355,150" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
-	<widget name="labactive" position="355,150" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
-	<widget name="lab2" position="170,215" size="210,50" font="FHD; 32" backgroundColor="OE_Background" valign="center" transparent="1"/>
-	<widget name="labstop" position="355,215" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red"/>
-	<widget name="labrun" position="355,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
+	<widget name="labdisabled" position="405,150" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labactive" position="405,150" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
+	<widget name="lab2" position="170,215" size="300,50" font="FHD; 32" backgroundColor="OE_Background" valign="center" transparent="1"/>
+	<widget name="labstop" position="405,215" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red"/>
+	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="170,275" size="718,380" font="FHD; 32" transparent="1">
 	  <convert type="StringList"/>
 	</widget>
 	<widget name="key" position="170,900" size="900,50" font="FHD; 32" transparent="1" backgroundColor="OE_Background"/>
+  </screen>
+	<!-- SAMBA -->
+  <screen name="NetworkSamba" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="N_RGYB"/>
+	<panel name="ClockBg"/>
+	<panel name="TitleScreenAll"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
+	<widget name="lab1" position="170,150" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labactive" position="405,150" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" transparent="1"/>
+	<widget name="lab2" position="170,215" size="300,50" font="FHD; 32" backgroundColor="OE_Background" valign="center" transparent="1"/>
+	<widget name="labstop" position="405,215" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red"/>
+	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
+  </screen>
+	<!-- FTP TELNET -->
+  <screen name="NetworkServiceSetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="N_GY"/>
+	<panel name="ClockBg"/>
+	<panel name="TitleScreenAll"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
+	<widget name="lab1" position="170,150" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labactive" position="405,150" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" transparent="1"/>
+	<widget name="lab2" position="170,215" size="300,50" font="FHD; 32" backgroundColor="OE_Background" valign="center" transparent="1"/>
+	<widget name="labstop" position="405,215" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red"/>
+	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
   </screen>
 	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
 		  <eLabel position="0,810" size="1920,270" backgroundColor="#20000000" zPosition="-1"/>

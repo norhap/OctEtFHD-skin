@@ -57,8 +57,8 @@
 	<widget source="key_yellow" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_blue" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
-	  <!-- KEYS NAMES RGYB-->
-	<screen name="N_RGYB" position="fill" flags="wfNoBorder">
+	  <!-- KEYS NAMES RED GREEN YELLOW BLUE-->
+	<screen name="N_RGYB">
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="500,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40"/>
@@ -68,8 +68,15 @@
 	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
-	  <!-- KEYS SOURCES SRGY-->
-	<screen name="S_RGY" position="fill" flags="wfNoBorder">
+	  <!-- KEYS NAMES GREEN YELLOW-->
+	<screen name="N_GY">
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="500,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40"/>
+	<widget name="key_green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	</screen>
+	  <!-- KEYS SOURCES RED GREEN YELLOW-->
+	<screen name="S_RGY">
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="390,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="705,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="975,960" size="40,40"/>
