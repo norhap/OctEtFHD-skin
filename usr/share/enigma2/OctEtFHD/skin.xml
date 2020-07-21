@@ -2577,25 +2577,63 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
-  <screen name="SystemNetworkInfo" title="System Network Info..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<!-- ABOUT NETWORK STB -->
+  <screen name="SystemNetworkInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="ClockBg"/>
+	<panel name="S_R"/>
+	<panel name="TitleScreenAll"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1060,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="900,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" position="170,73" size="900,50" font="FHD; 34" backgroundColor="OE_Background" transparent="1" foregroundColor="white"/>
-	<widget name="devicepic" position="961,847" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
-	<widget source="IF" position="163,850" size="400,40" render="Label" font="Regular; 28" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="lab1" position="278,896" size="585,40" font="Regular;28" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="AboutScrollLabel" position="170,147" size="900,680" font="Regular;20" backgroundColor="OE_Background" transparent="1"/>
-	<widget source="IFtext" render="Label" position="882,901" size="120,25" font="Regular;28" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget source="Statustext" position="576,850" size="300,40" render="Label" font="Regular; 28" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="statuspic" position="901,856" size="35,25" transparent="1" alphatest="on" pixmaps="iFlatFHD/icons/buttons/key_green.png,iFlatFHD/icons/buttons/key_grey.png"/>
-	<!-- Buttons-->
+	<widget name="devicepic" position="961,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
+	<widget name="AboutScrollLabel" position="170,147" size="900,680" font="Regular;28" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="IFtext" render="Label" position="170,901" size="120,40" font="Regular;28" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="IF" position="300,901" size="400,40" render="Label" font="Regular; 28" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="Statustext" position="576,901" size="300,40" render="Label" font="Regular; 28" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="statuspic" position="882,905" size="35,25" transparent="1" alphatest="on" pixmaps="icons/lock_on.png,icons/lock_error.png"/>
 	<eLabel backgroundColor="white" name="" position="170,945" size="900,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
+  </screen>
+	<!-- ABOUT DEVICES STB -->
+  <screen name="Devices" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="ClockBg"/>
+	<panel name="N_R"/>
+	<panel name="TitleScreenAll"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1060,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="900,2" zPosition="-9"/>
+	<widget source="TunerHeader" render="Label" position="170,147" size="785,40" font="Regular;30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
+	<widget source="nims" render="Label" position="170,190" size="785,390" font="Regular;28" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top" zPosition="1"/>
+	<widget source="HDDHeader" render="Label" position="170,585" size="785,40" font="Regular;30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
+	<widget source="hdd" render="Label" position="170,630" size="890,102" font="Regular;28" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top"/>
+	<widget source="MountsHeader" render="Label" position="170,750" size="785,40" font="Regular;30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
+	<widget source="mounts" render="Label" position="170,800" size="785,150" font="Regular;28" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" zPosition="1"/>
+	<eLabel backgroundColor="white" name="" position="170,945" size="900,2" zPosition="-9"/>
+  </screen>
+	<!-- ABOUT MEMORY STB -->
+  <screen name="SystemMemoryInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="ClockBg"/>
+	<panel name="N_R"/>
+	<panel name="TitleScreenAll"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1060,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="900,2" zPosition="-9"/>
+	<widget source="lab1" render="Label" position="380,150" size="400,50" font="Regular;30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget source="lab2" render="Label" position="390,185" size="400,50" font="Regular;30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget source="lab3" render="Label" position="350,215" size="500,50" font="Regular;30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="AboutScrollLabel" position="170,280" size="802,500" font="Regular;28" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1"/>
+	<eLabel backgroundColor="white" name="" position="170,945" size="900,2" zPosition="-9"/>
+  </screen>
+	<!-- STREAMING CLIENTS INFO -->
+  <screen name="StreamingClientsInfo" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+	<panel name="ClockBg"/>
+	<panel name="S_RGY"/>
+	<panel name="TitleScreenAll"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
+	<widget name="menu" font="FHD; 32" itemHeight="50" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,750" transparent="1"/>
+	<eLabel backgroundColor="white" name="" position="170,940" size="1300,2" zPosition="-9"/>
+	<widget name="info" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="170,900" size="1300,45" transparent="1" valign="top"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoMountEdit" position="center,center" size="1920,1080" title="MountEdit" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -3997,18 +4035,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- Widget -->
 	<eLabel text="Subtitle selection" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,145" size="1300,850" transparent="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
-  </screen>
-  <screen name="StreamingClientsInfo" title="" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Streaming Clients Info" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
-	<widget name="menu" font="FHD; 32" itemHeight="50" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,750" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="170,940" size="1300,2" zPosition="-9"/>
-	<widget name="info" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="170,950" size="1300,45" transparent="1" valign="top"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
