@@ -44,7 +44,7 @@
 	</screen>
 	  <!-- TITLES -->
 	<screen name="TitleScreenAll">
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,20" size="1300,80" halign="center" valign="center" transparent="1"/>
 	</screen>
 	  <!-- SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE-->
 	<screen name="CONDITIONAL_RGYB">
