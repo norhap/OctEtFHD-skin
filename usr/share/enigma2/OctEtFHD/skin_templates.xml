@@ -56,19 +56,19 @@
 	<widget objectTypes="key_green,Label,Button" name="key_green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget objectTypes="key_yellow,Label,Button" name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget objectTypes="key_blue,Label,Button" name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" objectTypes="key_red,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="170,960" size="40,40" halign="left" valign="center" transparent="1" zPosition="1">
+	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" objectTypes="key_red,StaticText" backgroundColor="OE_Background" position="170,960" size="40,40" transparent="1" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
 	<widget source="key_red" render="Label" objectTypes="key_red,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" objectTypes="key_green,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="500,960" size="40,40" halign="left" valign="center" transparent="1" zPosition="1">
+	<widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" objectTypes="key_green,StaticText" backgroundColor="OE_Background" position="500,960" size="40,40" transparent="1" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
 	<widget source="key_green" render="Label" objectTypes="key_green,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" objectTypes="key_yellow,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="830,960" size="40,40" halign="left" valign="center" transparent="1" zPosition="1">
+	<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" objectTypes="key_yellow,StaticText" backgroundColor="OE_Background" position="830,960" size="40,40" transparent="1" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white"  position="1160,960" size="40,40" halign="left" valign="center" transparent="1" zPosition="1">
+	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background"  position="1160,960" size="40,40" transparent="1" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
 	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
