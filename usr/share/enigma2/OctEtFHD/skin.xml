@@ -630,10 +630,6 @@
   <screen name="ServiceInfo" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="infolist" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,750" transparent="1"/>
-	<widget name="red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
 	<!-- INFO ABOUT -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="0,0" size="1920,1080" title="">
@@ -3635,14 +3631,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<panel name="ClockBg"/>
   </screen>
   <screen name="Satfinder" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="CONDITIONAL_RGYB"/>
-	<panel name="ClockBg"/>
-	<eLabel backgroundColor="OE_Blue" foregroundColor="OE_Background" name="" position="0,0" size="1920,1080" zPosition="-99" valign="center"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Satfinder" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
+	<panel name="StanDardScreen"/>
 	<widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="left" position="1310,185" render="Label" size="180,45" source="Frontend" transparent="1" zPosition="2">
 	  <convert type="FrontendInfo">SNRdB</convert>
 	</widget>
@@ -3680,17 +3669,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget name="introduction" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" position="170,890" size="1300,45" transparent="1"/>
   </screen>
   <screen name="ServicesFound" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="CONDITIONAL_RGYB"/>
-	<panel name="ClockBg"/>
-	<eLabel backgroundColor="OE_Blue" foregroundColor="OE_Background" name="" position="0,0" size="1920,1080" zPosition="-99" valign="center"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
+	<panel name="StanDardScreen"/>
 	<!-- Widget -->
 	<widget name="legend" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,185" size="1300,45" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="170,930" size="1300,2" zPosition="-9"/>
 	<widget name="servicesfound" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" position="170,369" size="1300,550" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1095,950" size="200,40" name="key_yellow" transparent="1" zPosition="1"/>
   </screen>
   <screen name="ScanSetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
