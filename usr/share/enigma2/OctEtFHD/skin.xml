@@ -4702,7 +4702,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget source="description" render="Label" font="FHD; 30" position="420,550" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- AUTO BACKUP -->
-  <screen name="Config" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="Config" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,center" size="650,750" transparent="1"/>
 	<widget name="status" font="FHD; 32" backgroundColor="OE_Background" position="185,550" size="640,300" transparent="1" valign="top"/>
@@ -4710,7 +4710,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_menu.png" position="78,960" size="64,43"/>
   </screen>
 	<!-- CRON TIMERS -->
-  <screen name="CronTimers" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="CronTimers" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="lab1" position="170,150" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labdisabled" position="405,150" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
@@ -4724,7 +4724,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget name="key" position="170,900" size="900,50" font="FHD; 32" transparent="1" backgroundColor="OE_Background"/>
   </screen>
 	<!-- SAMBA -->
-  <screen name="NetworkSamba" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="NetworkSamba" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="lab1" position="170,150" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labactive" position="405,150" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" transparent="1"/>
@@ -4733,13 +4733,29 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
   </screen>
 	<!-- FTP TELNET -->
-  <screen name="NetworkServiceSetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="NetworkServiceSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="lab1" position="170,150" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labactive" position="405,150" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" transparent="1"/>
 	<widget name="lab2" position="170,215" size="300,50" font="FHD; 32" backgroundColor="OE_Background" valign="center" transparent="1"/>
 	<widget name="labstop" position="405,215" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red"/>
 	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
+  </screen>
+	<!-- INETD RECOVERY NETWORK -->
+  <screen name="InetdRecovery" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="config" position="170,140" size="1300,800" scrollbarMode="showOnDemand" font="Regular; 28" backgroundColor="OE_Background" transparent="1"/>
+  </screen>
+	<!-- NETWORK PASSWORD-->
+  <screen name="NetworkPassword" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="config" position="170,140" size="1300,800" scrollbarMode="showOnDemand" font="Regular; 28" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="description" font="FHD; 30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="footnote" position="420,610" size="400,50" zPosition="1" font="FHD; 30" foregroundColor="blue_light" backgroundColor="OE_Background"  halign="center" valign="center"  transparent="1"/>
+	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="75,700" zPosition="1" size="64,43" transparent="1" alphatest="on">
+	  <convert type="ConditionalShowHide"/>
+	</widget>
   </screen>
 	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
 		  <eLabel position="0,810" size="1920,270" backgroundColor="#20000000" zPosition="-1"/>
