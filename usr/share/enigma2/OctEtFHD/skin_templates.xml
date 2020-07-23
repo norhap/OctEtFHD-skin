@@ -32,7 +32,7 @@
 				   }
 		</convert>
 	  </widget>
-	  <ePixmap alphatest="blend" pixmap="OctEtFHD/colors/setting1.png" position="475,182" size="100,100" transparent="1" zPosition="10"/>
+	  <ePixmap alphatest="blend" pixmap="colors/setting1.png" position="475,182" size="100,100" transparent="1" zPosition="10"/>
 	  <!-- Button -->
 	  <ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="505,840" size="40,40"/>
 	  <eLabel text="MenuSort" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="white" halign="center" position="445,885" size="160,40" transparent="1" zPosition="1"/>
