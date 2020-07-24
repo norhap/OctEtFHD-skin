@@ -208,6 +208,22 @@
 	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10"/>
 	<widget name="text" position="600,420" size="720,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center"/>
   </screen>
+	<!-- SETUP -->
+  <screen name="Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Setup">
+	<panel name="StanDardScreen"/>
+	<!--ePixmap pixmap="icons/input_info.png" position="1650,150" size="80,80" alphatest="blend"/-->
+	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_Background" position="1505,105" size="380,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" halign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1505,145" size="400,2" zPosition="2"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="1460,115" size="460,920" zPosition="-16"/>
+	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showAlways" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
+	<widget name="description" objectTypes="description,Button,Label" position="1475,150" size="435,770" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="description" position="1475,150" size="435,770" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="77,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	  <convert type="ConditionalShowHide"/>
+	</widget>
+	<widget name="introduction" conditional="introduction" position="0,0" size="0,0"/>
+  </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="1920,1080" title="InfoBar">
 	<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="30,852" size="1850,200" zPosition="-11"/>
 	<eLabel backgroundColor="blue_light" name="" position="336,910" size="1510,1" zPosition="20" foregroundColor="white"/>
@@ -670,9 +686,6 @@
 	<widget name="key_green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="750,960" size="220,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1020,960" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1270,960" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<eLabel backgroundColor="OE_NewBg2" position="1520,70" size="400,74" transparent="0" zPosition="-20" foregroundColor="white"/>
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
   </screen>
 	<!-- INFO OPENVISION -->
   <screen name="OpenVisionInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -826,7 +839,7 @@
 	<panel name="StanDardScreen"/>
 	<widget name="config" itemHeight="80" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
 	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="75,700" zPosition="1" size="64,43" transparent="1" alphatest="on">
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="77,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	  <convert type="ConditionalShowHide"/>
 	</widget>
   </screen>
@@ -861,7 +874,7 @@
 	<widget name="stepslider" backgroundColor="OE_Background" position="380,900" size="245,40" transparent="1" zPosition="1"/>
 	<widget name="wizard" pixmap="picon_default.png" position="105,20" size="220,132" alphatest="blend" zPosition="1"/>
 	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="75,700" zPosition="1" size="64,43" transparent="1" alphatest="on">
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="77,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	  <convert type="ConditionalShowHide"/>
 	</widget>
 	<!-- Clock -->
@@ -2165,79 +2178,12 @@
 	<!-- Widget -->
 	<widget name="minutes" position="center,center" size="200,45" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" foregroundColor="white"/>
   </screen>
-  <screen name="MessageBox" title="Message" position="center,200" size="900,650">
-	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="750,220" position="85,15"/>
-	<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="WarningPixmap" pixmap="icons/input_warning.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold; 26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="90,220" size="703,400" transparent="1"/>
-	<panel name="autoresize"/>
-	<applet type="onLayoutFinish">
-# this should be factored out into some helper code, but currently demonstrates applets.
-from enigma import eSize, ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self[&quot;text&quot;].getSize()
-# y size still must be fixed in font stuff...
-textsize = (textsize[0] + 40, textsize[1] + 40)
-offset = 45
-if self.type == self.TYPE_YESNO:
-	offset = 161
-wsizex = textsize[0] + 80
-wsizey = textsize[1] + offset
-if (850 &gt; wsizex):
-	wsizex = 1000
-wsize = (wsizex, wsizey)
-# resize
-#self.instance.resize(eSize(*wsize))
-# resize label
-self[&quot;text&quot;].instance.resize(eSize(*textsize))
-# move list
-listsize = (wsizex - 30, 420)
-self[&quot;list&quot;].instance.move(ePoint(25, textsize[1] + 41))
-self[&quot;list&quot;].instance.resize(eSize(*listsize))
-# center window
-#newwidth = wsize[0]
-#self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
-	</applet>
+	<!-- MESSAGEBOX -->
+  <screen name="MessageBox" title="Message" position="center,200" size="1100,650">
+	<panel name="MessageBoxTemplate"/>
   </screen>
-  <screen name="MessageBoxSimple" title="Message" position="center,200" size="900,650">
-	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="780,180" position="85,15"/>
-	<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="WarningPixmap" pixmap="icons/input_warning.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold; 26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="45,160" size="703,100" transparent="1"/>
-	<panel name="autoresize"/>
-	<applet type="onLayoutFinish">
-# this should be factored out into some helper code, but currently demonstrates applets.
-from enigma import eSize, ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self[&quot;text&quot;].getSize()
-# y size still must be fixed in font stuff...
-textsize = (textsize[0] + 40, textsize[1] + 40)
-offset = 45
-if self.type == self.TYPE_YESNO:
-	offset = 161
-wsizex = textsize[0] + 80
-wsizey = textsize[1] + offset
-if (850 &gt; wsizex):
-	wsizex = 1000
-wsize = (wsizex, wsizey)
-# resize
-#self.instance.resize(eSize(*wsize))
-# resize label
-self[&quot;text&quot;].instance.resize(eSize(*textsize))
-# move list
-listsize = (wsizex - 30, 420)
-self[&quot;list&quot;].instance.move(ePoint(25, textsize[1] + 41))
-self[&quot;list&quot;].instance.resize(eSize(*listsize))
-# center window
-#newwidth = wsize[0]
-#self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
-	</applet>
+  <screen name="MessageBoxSimple" title="Message" position="center,200" size="1100,600">
+	<panel name="MessageBoxTemplate"/>
   </screen>
   <screen backgroundColor="transparent" borderColor="transparent" borderWidth="0" flags="wfNoBorder" name="MediaPlayer" position="center,center" size="1920,1080" title="MediaPlayer" transparent="0">
 	<eLabel backgroundColor="OE_Blue" foregroundColor="OE_Background" name="" position="0,0" size="1920,1080" zPosition="-99" valign="center"/>
@@ -3799,25 +3745,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="Setup" position="center,center" size="1920,1080" title="Setup">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<panel name="TitleScreenAll"/>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,140" size="1300,800" transparent="1"/>
-	<widget name="HelpWindow" position="400,712" size="1,1" zPosition="10"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="490,960" size="40,40"/>
-	<widget name="key_red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="260,40" halign="left" transparent="1" zPosition="1"/>
-	<widget name="key_green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="540,960" size="260,40" halign="left" transparent="1" zPosition="1"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="260,40" halign="left" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="540,960" size="260,40" halign="left" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
-  </screen>
   <screen name="SkinSelector" title="Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="340,1080" zPosition="-11" valign="center"/>
@@ -4776,7 +4703,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget name="description" font="FHD; 30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="footnote" position="420,610" size="400,50" zPosition="1" font="FHD; 30" foregroundColor="blue_light" backgroundColor="OE_Background"  halign="center" valign="center"  transparent="1"/>
 	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="75,700" zPosition="1" size="64,43" transparent="1" alphatest="on">
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="77,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	  <convert type="ConditionalShowHide"/>
 	</widget>
   </screen>
