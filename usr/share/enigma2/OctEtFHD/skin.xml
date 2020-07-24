@@ -4411,7 +4411,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,40" size="220,132" transparent="1" zPosition="10"/>
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
@@ -4440,7 +4440,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,40" size="220,132" transparent="1" zPosition="10"/>
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
@@ -4456,27 +4456,46 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD; 34" position="380,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="380,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="85,142" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<widget name="text" font="FHD; 30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="1300,300" transparent="1"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" size="1300,500" transparent="1">
+	<widget name="text" font="FHD; 30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="1300,50" transparent="1"/>
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" size="1500,500" transparent="1">
 	  <convert type="TemplatedMultiContent">
-				{"template":[ MultiContentEntryText(pos=(20,2),size=(1220,45),flags=RT_HALIGN_LEFT,text=0) ],
+				{"template":[ MultiContentEntryText(pos=(20,2),size=(1420,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("FHD",30) ],"itemHeight":50}
 			</convert>
 	</widget>
-	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
-		<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
+	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1500,500" zPosition="1"/>
+	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,40" size="220,132" transparent="1" zPosition="10"/>
+	<eLabel text="Progress Wizard :" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="380,420" size="300,50" transparent="1"/>
+	<widget name="stepslider" position="700,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<eLabel position="700,418" size="450,2" backgroundColor="white" zPosition="16"/>
+	<eLabel position="700,418" size="2,40" backgroundColor="white" zPosition="16"/>
+	<eLabel position="700,458" size="452,2" backgroundColor="white" zPosition="16"/>
+	<eLabel position="1150,418" size="2,40" backgroundColor="white" zPosition="16"/>
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
+	<eLabel backgroundColor="white" name="" position="380,470" size="1500,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
 	<widget name="languagetext" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
+  </screen>
+	<!-- OPKG UPDATER -->
+  <screen name="InstallWizardOpkgUpdater" position="fill" flags="wfNoBorder">
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10"/>
+	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend"/>
+	<widget source="statusbar" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="600,420" size="720,150" transparent="1" halign="center"/>
+  </screen>
+	<!-- AUTO DISEQC -->
+  <screen name="AutoDiseqc" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="185,250" size="650,750" transparent="1"/>
+	<widget source="statusbar" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="185,180" size="640,50" transparent="1" valign="top"/>
+	<widget source="tunerstatusbar" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="840,180" size="640,50" transparent="1" foregroundColor="green_light" valign="top"/>
   </screen>
   <screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1680,940" zPosition="-15"/>
@@ -4493,12 +4512,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>
 	</widget>
 	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
-		<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
+	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,40" size="220,132" transparent="1" zPosition="10"/>
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
