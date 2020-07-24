@@ -577,8 +577,6 @@
 	<convert type="Audio">AudioCodec</convert>
   </widget>
   <!-- Clock -->
-  <eLabel backgroundColor="OE_NewBg2" position="1520,70" size="400,74" transparent="0" zPosition="-20" foregroundColor="white"/>
-  <eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
   <panel name="ClockBg"/>
 	 <!-- MSNWeather -->
 	<widget alphatest="blend" render="MSNWeatherPixmap" position="75,882" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
@@ -1029,7 +1027,6 @@
 	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1225,950" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1475,950" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelContextMenu" position="0,center" size="1920,1080" title="" transparent="0">
@@ -1105,7 +1102,6 @@
 	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1225,950" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1475,950" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen name="ChannelSelectionRadio" title="ChannelSelectionRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -1599,7 +1595,6 @@
 	<widget backgroundColor="OE_Background" font="Regular; 28" position="1085,950" size="280,40" render="Label" source="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="Regular; 28" position="1415,950" size="280,40" render="Label" source="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EPGSelection" position="center,center" size="1920,1080" title="EPG Selection">
@@ -1638,7 +1633,6 @@
 	<widget backgroundColor="OE_Background" font="Regular; 28" position="1305,950" size="240,40" render="Label" source="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="Regular; 28" position="1595,950" size="240,40" render="Label" source="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen name="EPGSelectionMulti" title="EPG Selection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -1684,7 +1678,6 @@
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1005,950" size="240,40" render="Label" source="key_yellow" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1295,950" size="240,40" render="Label" source="key_blue" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen name="ExtensionsList" title="ExtensionsList" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -1799,7 +1792,6 @@
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="805,950" size="240,40" name="key_yellow" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1095,950" size="240,40" name="key_blue" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen name="GraphMultiEPGList" title="Electronic Program Guide" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
@@ -1832,7 +1824,6 @@
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="805,950" size="240,40" name="key_yellow" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1095,950" size="240,40" name="key_blue" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen name="GraphMultiEpgSetup" title="Electronic Program Guide Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2218,7 +2209,6 @@
 	  <convert type="ServicePosition">Position</convert>
 	</widget>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="0,0" size="1920,1080" title="InfoBar">
@@ -2333,7 +2323,6 @@
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1305,950" size="240,40" name="key_yellow" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1595,950" size="240,40" name="key_blue" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen name="MovieMenu" title="MovieMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -4642,7 +4631,6 @@
 	<widget backgroundColor="OE_Background" font="Regular; 28" position="1205,950" size="240,40" source="key_yellow" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="Regular; 28" position="1495,950" size="240,40" source="key_blue" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
 	<!-- IMAGE FLASH MULTIBOOT SELECT IMAGE -->
