@@ -269,15 +269,17 @@
 	<widget source="session.Event_Next" font="RegularBold; 32" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="575,980" size="1100,48" transparent="1" valign="top">
 	  <convert type="EventName">Name</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="335,1030" size="1510,35" backgroundColor="OE_Background" font="RegularBold; 23" foregroundColor="blue_light" transparent="1" halign="left">
-	  <convert type="CaidInfo2"/>
-	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 32" halign="right" position="1681,982" render="Label" size="165,45" source="session.Event_Next" transparent="1">
 	  <convert type="EventTime">Duration</convert>
 	  <convert type="ClockToText">InMinutes</convert>
 	</widget>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="336,977" size="1510,2"/>
 	<!-- CryptoInfo -->
+	<widget source="session.CurrentService" render="Label" position="335,1030" size="1325,35" backgroundColor="OE_Background" font="RegularBold; 23" foregroundColor="blue_light" transparent="1" halign="left">
+	  <convert type="CaidInfo2"/>
+	</widget>
+	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1670,1030" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
+	<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1780,1030" size="63,32" alphatest="blend" zPosition="3"/>
 	<!-- Icons -->
 	<widget alphatest="blend" pixmap="my_icons/hbbtv_on.png" position="1564,865" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="10">
 	  <convert type="ServiceInfo">HasHBBTV</convert>
@@ -559,12 +561,12 @@
 	<convert type="ProgressDiskSpaceInfo">MemTotal,Short</convert>
   </widget>
   <!-- CryptoInfo -->
-  <eLabel backgroundColor="white" position="75,865" size="380,2" transparent="0" zPosition="-1" foregroundColor="white"/>
-  <!--widget source="session.CurrentService" render="PicCript" path="cript" position="1622,1010" size="63,32" alphatest="blend" zPosition="3"/-->
-  <widget source="session.CurrentService" render="PicEmu2" path="emu" position="1476,1015" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
-  <widget source="session.CurrentService" render="Label" font="FHD; 24" position="465,1007" size="1000,45" zPosition="50" backgroundColor="OE_ListBackground" transparent="0" noWrap="1" valign="center" halign="left" foregroundColor="white">
+  <widget source="session.CurrentService" render="Label" font="FHD; 24" position="465,1007" size="1135,45" zPosition="50" backgroundColor="OE_ListBackground" transparent="0" noWrap="1" valign="center" halign="left" foregroundColor="white">
 	<convert type="CaidInfo2"/>
   </widget>
+  <eLabel backgroundColor="white" position="75,865" size="380,2" transparent="0" zPosition="-1" foregroundColor="white"/>
+  <widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="465,965" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
+  <widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="575,965" size="63,32" alphatest="blend" zPosition="3"/>
   <eLabel backgroundColor="OE_ListBackground" position="1465,1007" size="255,45"/>
   <widget source="session.CurrentService" render="Label" backgroundColor="OE_Background" position="75,815" size="380,45" zPosition="6" font="RegularBold; 22" transparent="1" >
 	  <convert type="PliExtraInfo">CryptoBar</convert>
