@@ -699,6 +699,11 @@
 	<panel name="StanDardScreen"/>
 	<widget name="AboutScrollLabel" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="1300,700" transparent="1"/>
   </screen>
+	<!-- INFO BENCHMARK -->
+  <screen name="BenchmarkInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<widget name="AboutScrollLabel" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="1300,780" transparent="1"/>
+	<panel name="StanDardScreen"/>
+  </screen>
 	<!-- INFO NETWORK STB -->
   <screen name="SystemNetworkInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
