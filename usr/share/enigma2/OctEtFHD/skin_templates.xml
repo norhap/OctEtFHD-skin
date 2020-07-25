@@ -3,51 +3,45 @@
 	<!-- ClockBg -->
 	<!-- <panel name="ClockBg"/> -->
 	<screen name="ClockBg">
-	  <eLabel backgroundColor="OE_NewBg2" position="1505,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
-	  <eLabel backgroundColor="white" position="1510,80" size="180,2" transparent="0" zPosition="2"/>
-	  <widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1705,45" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-		<convert type="ClockToText"></convert>
-	  </widget>
-	  <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1510,45" zPosition="3" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-		<convert type="ClockToText">Date</convert>
-	  </widget>
-	  <widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1510,82" zPosition="3" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
-		<convert type="ClockToText">FullDate</convert>
-	  </widget>
+	<eLabel backgroundColor="OE_NewBg2" position="1505,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
+	<eLabel backgroundColor="white" position="1510,80" size="180,2" transparent="0" zPosition="2"/>
+	<widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1705,45" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<convert type="ClockToText"></convert>
+	</widget>
+	<widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1510,45" zPosition="3" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
+	<convert type="ClockToText">Date</convert>
+	</widget>
+	<widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1510,82" zPosition="3" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
+	<convert type="ClockToText">FullDate</convert>
+	</widget>
 	</screen>
 
 	<!-- MainMenu -->
 	<!-- <panel name="MainMenu"/> -->
 	<screen name="MainMenu">
-	  <eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="150,850" zPosition="-10"/>
-	  <eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="920,770" zPosition="-15"/>
-	  <eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="center,230" size="680,2" zPosition="-9"/>
-	  <!-- Widget -->
-	  <widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" foregroundColor="white" position="center,160" size="680,58" transparent="1" halign="left"/>
-	  <widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="center,255" size="680,650" transparent="1">
+	<panel name="ClockBg"/>
+	<panel name="Conditional_MenuSort"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="270,850" zPosition="-10"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="1200,770" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="750,230" size="840,2" zPosition="-9"/>
+	<!--  Widget -->
+	<widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" foregroundColor="white" position="750,160" size="680,58" transparent="1" halign="left"/>
+	<widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="750,255" size="840,650" transparent="1">
 		<convert type="TemplatedMultiContent">
-				   {"template": [ MultiContentEntryText(pos = (15, 5), size = (800, 60), flags = RT_HALIGN_LEFT, text = 0) ],
-				   "fonts": [gFont("FHD", 38)],
-				   "itemHeight": 65
-				   }
+				  {"template": [ MultiContentEntryText(pos = (15, 5), size = (840, 60), flags = RT_HALIGN_LEFT, text = 0) ],
+				  "fonts": [gFont("FHD", 38)],
+				  "itemHeight": 65
+				  }
 		</convert>
-	  </widget>
-	  <ePixmap alphatest="blend" pixmap="colors/setting1.png" position="475,182" size="100,100" transparent="1" zPosition="10"/>
-	  <!-- Button -->
-	  <ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="505,840" size="40,40"/>
-	  <eLabel text="MenuSort" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="white" halign="center" position="445,885" size="160,40" transparent="1" zPosition="1"/>
-	  <!-- Clock -->
-	  <panel name="ClockBg"/>
+	</widget>
+	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="530,182" size="100,100" transparent="1" zPosition="10"/>
 	</screen>
-	<screen name="autoresize" position="fill" flags="wfNoBorder">
-		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
-	</screen>
-	  <!-- TITLES -->
+	<!-- TITLES -->
 	<screen name="TitleScreenAll">
 	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,40" size="1300,90" halign="center" valign="center" transparent="1"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,45" size="1460,70" zPosition="-16"/>
 	</screen>
-	  <!-- SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE-->
+	<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE-->
 	<screen name="CONDITIONAL_RGYB">
 	<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="170,990" size="40,40"/>
 	<ePixmap objectTypes="key_green,Button,Label" alphatest="blend" pixmap="buttons/key_green.png" position="500,990" size="40,40"/>
@@ -66,14 +60,20 @@
 	</widget>
 	<widget source="key_green" render="Label" objectTypes="key_green,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" objectTypes="key_yellow,StaticText" backgroundColor="OE_Background" position="830,990" size="40,40"  alphatest="blend" zPosition="1">
+	<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" objectTypes="key_yellow,StaticText" backgroundColor="OE_Background" position="830,990" size="40,40" alphatest="blend" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background"  position="1160,990" size="40,40" alphatest="blend" zPosition="1">
+	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="1160,990" size="40,40" alphatest="blend" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
 	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
+	<!-- MENU SORT -->
+	<screen name="Conditional_MenuSort">
+	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_blue.png" position="450,865" size="40,40"/>
+	<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" font="Regular; 28" backgroundColor="OE_NewBg2" position="500,855" size="240,70" transparent="1" zPosition="2" halign="left" valign="center"/>
+	</screen>
+	<!-- STANDARD SCREEN -->
 	<screen name="StanDardScreen">
 	<panel name="ClockBg"/>
 	<panel name="TitleScreenAll"/>
@@ -84,8 +84,8 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,145" size="1300,2" zPosition="-9"/>
 	<eLabel backgroundColor="white" name="" position="170,975" size="1300,2" zPosition="-9"/>
 	</screen>
-	  <!-- MESSAGEBOX TEMPLATE-->
-  <screen name="MessageBoxTemplate">
+	 <!-- MESSAGEBOX TEMPLATE-->
+	<screen name="MessageBoxTemplate">
 	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="980,180" position="85,15" valign="center" halign="center"/>
 	<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,20" size="80,80" alphatest="blend"/>
@@ -121,5 +121,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 #newwidth = wsize[0]
 #self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</applet>
-  </screen>
+	</screen>
+	 <!-- AutoResize-->
+	<screen name="autoresize" position="fill" flags="wfNoBorder">
+		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
+	</screen>
 </skin>
