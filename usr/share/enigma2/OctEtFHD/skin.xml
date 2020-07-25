@@ -699,11 +699,6 @@
 	<panel name="StanDardScreen"/>
 	<widget name="AboutScrollLabel" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="1300,700" transparent="1"/>
   </screen>
-	<!-- INFO BENCHMARK -->
-  <screen name="BenchmarkInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<widget name="AboutScrollLabel" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="1300,780" transparent="1"/>
-	<panel name="StanDardScreen"/>
-  </screen>
 	<!-- INFO NETWORK STB -->
   <screen name="SystemNetworkInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2128,10 +2123,10 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="830,960" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1160,960" size="40,40"/>
-	<widget name="key_red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget name="key_green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" transparent="1" zPosition="1"/>
+	<widget name="key_red" font="Regularbold; 26" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" transparent="1" zPosition="1"/>
+	<widget name="key_green" font="Regularbold; 26" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" transparent="1" zPosition="1"/>
+	<widget name="key_yellow" font="Regularbold; 26" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" transparent="1" zPosition="1"/>
+	<widget name="key_blue" font="Regularbold; 26" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>

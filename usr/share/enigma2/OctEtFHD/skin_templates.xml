@@ -21,6 +21,7 @@
 	<screen name="MainMenu">
 	<panel name="ClockBg"/>
 	<panel name="Conditional_MenuSort"/>
+	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="530,182" size="100,100" transparent="1" zPosition="10"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="270,850" zPosition="-10"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="1200,770" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="750,230" size="840,2" zPosition="-9"/>
@@ -34,7 +35,6 @@
 				  }
 		</convert>
 	</widget>
-	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="530,182" size="100,100" transparent="1" zPosition="10"/>
 	</screen>
 	<!-- TITLES -->
 	<screen name="TitleScreenAll">
@@ -70,9 +70,13 @@
 	</screen>
 	<!-- MENU SORT -->
 	<screen name="Conditional_MenuSort">
-	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_blue.png" position="450,865" size="40,40"/>
-	<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" font="Regular; 28" backgroundColor="OE_NewBg2" position="500,855" size="240,70" transparent="1" zPosition="2" halign="left" valign="center"/>
+	<ePixmap alphatest="blend" objectTypes="key_blue,Button,Label" backgroundColor="OE_NewBg2" pixmap="buttons/key_blue.png" position="450,865" size="40,40"/>
+	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="450,865" size="40,40" alphatest="blend" zPosition="1">
+	<convert type="ConditionalShowHide"/>
+	</widget>
+	<widget source="key_blue" render="Label" font="Regularbold; 26" backgroundColor="OE_NewBg2" position="500,850" size="240,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
+
 	<!-- STANDARD SCREEN -->
 	<screen name="StanDardScreen">
 	<panel name="ClockBg"/>
