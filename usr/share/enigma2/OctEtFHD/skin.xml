@@ -203,10 +203,39 @@
 	<parameter name="PiconManagerList" value="10,3,1920,50"/>
 	<parameter name="RSList" value="40,0,1200,50,10,12,50,50"/>
   </parameters>
+	<!-- RESTART GUI -->
   <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
 	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend"/>
 	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10"/>
 	<widget name="text" position="600,420" size="720,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center"/>
+  </screen>
+	<!-- MAIN MENU -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<panel name="MainMenu"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<panel name="MainMenu"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_system" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<panel name="MainMenu"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<panel name="MainMenu"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_setup" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<panel name="MainMenu"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_scan" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<panel name="MainMenu"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_information" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<panel name="MainMenu"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_timermenu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<panel name="MainMenu"/>
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_harddisk" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<panel name="MainMenu"/>
   </screen>
 	<!-- SETUP -->
   <screen name="Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Setup">
@@ -222,6 +251,19 @@
 	  <convert type="ConditionalShowHide"/>
 	</widget>
 	<widget name="introduction" conditional="introduction" position="0,0" size="0,0"/>
+  </screen>
+	<!-- MENU SORT -->
+  <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+	<panel name="MainMenu"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="350,505" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="400,505" size="64,43"/>
+	<eLabel text="Up | Down" position="470,505" size="240,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="Regularbold; 26" halign="left"/>
+	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="350,595" size="40,40"/>
+	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="350,685" size="40,40"/>
+	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="350,775" size="40,40"/>
+	<widget source="key_red" render="Label" font="Regularbold; 26" backgroundColor="OE_NewBg2" position="400,580" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_green" render="Label" font="Regularbold; 26" backgroundColor="OE_NewBg2" position="400,670" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_yellow" render="Label" font="Regularbold; 26" backgroundColor="OE_NewBg2" position="400,760" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="1920,1080" title="InfoBar">
 	<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="30,852" size="1850,215" zPosition="-11"/>
@@ -593,51 +635,6 @@
 	<eLabel text="Humidity :" position="204,977" size="160,35" zPosition="5" halign="center" font="RegularBold; 27" backgroundColor="background" transparent="1"/>
 	<eLabel text="%" position="417,971" size="30,50" zPosition="5" halign="center" font="RegularBold; 30" backgroundColor="background" transparent="1"/>
 </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
-	<panel name="MainMenu"/>
-  </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
-	<panel name="MainMenu"/>
-  </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_system" position="0,0" size="1920,1080" title="Main menu" transparent="0">
-	<panel name="MainMenu"/>
-  </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1920,1080" title="Main menu" transparent="0">
-	<panel name="MainMenu"/>
-  </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_setup" position="0,0" size="1920,1080" title="Main menu" transparent="0">
-	<panel name="MainMenu"/>
-  </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_scan" position="0,0" size="1920,1080" title="Main menu" transparent="0">
-	<panel name="MainMenu"/>
-  </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_information" position="0,0" size="1920,1080" title="Main menu" transparent="0">
-	<panel name="MainMenu"/>
-  </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_timermenu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
-	<panel name="MainMenu"/>
-  </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_harddisk" position="0,0" size="1920,1080" title="Main menu" transparent="0">
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="150,850" zPosition="-10"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="970,770" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="620,230" size="730,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" position="center,160" size="680,58" transparent="1" halign="left"/>
-	<widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" position="620,255" size="730,650" transparent="1">
-	  <convert type="TemplatedMultiContent">
-				   {"template": [ MultiContentEntryText(pos = (15, 5), size = (800, 60), flags = RT_HALIGN_LEFT, text = 0) ],
-				   "fonts": [gFont("FHD", 38)],
-				   "itemHeight": 65
-				   }
-		</convert>
-	</widget>
-	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="475,182" size="100,100" transparent="1" zPosition="10"/>
-	<!-- Button -->
-	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="505,840" size="40,40"/>
-	<eLabel text="MenuSort" font="RegularBold; 28" backgroundColor="OE_Background" halign="center" position="445,885" size="160,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
-  </screen>
 	<!-- MAIN MENU INFORMATION -->
 	<!-- INFO SERVICE -->
   <screen name="ServiceInfo" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -652,7 +649,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="300,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="un5678a4" backgroundColor="blue_light" position="80,130" size="275,2" zPosition="-9"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="390,130" size="1080,2" zPosition="-9"/>
-	<widget name="AboutScrollLabel" font="FHD; 30" foregroundColor="white" backgroundColor="OE_Background" position="390,140" size="1080,800" halign="left" transparent="1"/>
+	<widget name="AboutScrollLabel" font="FHD; 30" foregroundColor="white" backgroundColor="OE_Background" scrollbarMode="showAlways" scrollbarSliderForegroundColor="blue_light" position="390,140" size="1080,800" halign="left" transparent="1"/>
 	<widget source="session.CurrentService" render="Label" position="75,480" size="290,38" font="RegularBold; 21" halign="left" valign="center" foregroundColor="OE_Foreground" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">FleshInfo,Short</convert>
 	</widget>
@@ -686,7 +683,7 @@
   </screen>
 	<!-- INFO OPENVISION -->
   <screen name="OpenVisionInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<widget name="AboutScrollLabel" font="FHD; 30" backgroundColor="OE_Background" position="170,155" size="1300,780" transparent="1"/>
+	<widget name="AboutScrollLabel" scrollbarMode="showAlways" scrollbarSliderForegroundColor="blue_light" font="FHD; 30" backgroundColor="OE_Background" position="170,155" size="1300,780" transparent="1"/>
 	<panel name="StanDardScreen"/>
   </screen>
 	<!-- INFO DVB -->
@@ -2135,18 +2132,6 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
-  <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
-	<panel name="MainMenu"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="470,290" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="635,290" size="64,43"/>
-	<!-- Buttons-->
-	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="450,595" size="40,40"/>
-	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="450,685" size="40,40"/>
-	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="450,775" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_NewBg2" position="500,580" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
-	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_NewBg2" position="500,670" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
-	<widget source="key_yellow" render="Label" font="Regular; 28" backgroundColor="OE_NewBg2" position="500,760" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
-  </screen>
   <screen name="MinuteInput" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<!-- Back -->
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="780,center" size="300,75" zPosition="-15"/>
@@ -2155,14 +2140,14 @@
 	<widget name="minutes" position="center,center" size="200,45" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" foregroundColor="white"/>
   </screen>
 	<!-- MESSAGEBOX -->
-  <screen name="MessageBox" title="Message" position="center,200" size="1100,250">
+  <screen name="MessageBox" title="Message" position="center,200" size="1100,270">
  	<panel name="autoresize"/>
-	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="980,180" position="85,15" valign="center" halign="center"/>
+	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="980,180" position="85,0" valign="center" halign="center"/>
 	<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="WarningPixmap" pixmap="icons/input_warning.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold; 26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="45,160" size="1000,100" transparent="1"/>
+	<widget name="list" itemHeight="45" font="RegularBold; 26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="45,180" size="1000,120" transparent="1"/>
   </screen>
   <screen name="MessageBoxSimple" title="Message" position="center,200" size="1100,600">
 	<panel name="MessageBoxTemplate"/>

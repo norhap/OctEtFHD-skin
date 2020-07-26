@@ -21,15 +21,15 @@
 	<screen name="MainMenu">
 	<panel name="ClockBg"/>
 	<panel name="Conditional_MenuSort"/>
-	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="530,182" size="100,100" transparent="1" zPosition="10"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="270,850" zPosition="-10"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="1200,770" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="750,230" size="840,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="430,182" size="100,100" transparent="1" zPosition="10"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="350,center" size="270,850" zPosition="-10"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="310,center" size="1205,770" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="650,230" size="840,2" zPosition="-9"/>
 	<!--  Widget -->
-	<widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" foregroundColor="white" position="750,160" size="680,58" transparent="1" halign="left"/>
-	<widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="750,255" size="840,650" transparent="1">
+	<widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" foregroundColor="white" position="650,160" size="865,58" transparent="1" halign="left"/>
+	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="650,255" size="865,650" transparent="1">
 		<convert type="TemplatedMultiContent">
-				  {"template": [ MultiContentEntryText(pos = (15, 5), size = (840, 60), flags = RT_HALIGN_LEFT, text = 0) ],
+				  {"template": [ MultiContentEntryText(pos = (15, 5), size = (865, 60), flags = RT_HALIGN_LEFT, text = 0) ],
 				  "fonts": [gFont("FHD", 38)],
 				  "itemHeight": 65
 				  }
@@ -70,11 +70,11 @@
 	</screen>
 	<!-- MENU SORT -->
 	<screen name="Conditional_MenuSort">
-	<ePixmap alphatest="blend" objectTypes="key_blue,Button,Label" backgroundColor="OE_NewBg2" pixmap="buttons/key_blue.png" position="450,865" size="40,40"/>
-	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="450,865" size="40,40" alphatest="blend" zPosition="1">
+	<ePixmap alphatest="blend" objectTypes="key_blue,Button,Label" backgroundColor="OE_NewBg2" pixmap="buttons/key_blue.png" position="350,865" size="40,40"/>
+	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="350,865" size="40,40" alphatest="blend" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Label" font="Regularbold; 26" backgroundColor="OE_NewBg2" position="500,850" size="240,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" font="Regularbold; 26" backgroundColor="OE_NewBg2" position="400,850" size="240,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 
 	<!-- STANDARD SCREEN -->
