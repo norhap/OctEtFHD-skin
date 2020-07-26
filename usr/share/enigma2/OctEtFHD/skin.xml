@@ -240,8 +240,8 @@
 	<!-- SETUP -->
   <screen name="Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Setup">
 	<panel name="StanDardScreen"/>
-	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_Background" position="1505,105" size="380,50" transparent="1" valign="center" zPosition="2" foregroundColor="white" halign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1475,145" size="400,2" zPosition="2"/>
+	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_Background" position="1475,95" size="380,50" transparent="1" valign="center" zPosition="2" foregroundColor="white" halign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1475,135" size="400,2" zPosition="2"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1440,45" size="480,990" zPosition="1"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,140" size="1300,800" transparent="1"/>
 	<widget name="description" objectTypes="description,Button,Label" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
@@ -1778,7 +1778,7 @@
   </screen>
   <screen name="HotkeySetup" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,center" size="650,750" transparent="1"/>
+	<widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="170,center" size="650,750" transparent="1"/>
 	<widget name="choosen" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="830,center" size="640,750" transparent="1" foregroundColor="green_light" valign="top"/>
 	<!-- others-->
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="835,985" size="64,43"/>
@@ -1786,7 +1786,7 @@
   </screen>
   <screen name="HotkeySetupSelect" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,center" size="650,750" transparent="1"/>
+	<widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="170,center" size="650,750" transparent="1"/>
 	<widget name="choosen" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="830,center" size="640,750" transparent="1" foregroundColor="green_light" valign="top"/>
   </screen>
   <screen name="InputBox" title="Input" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
