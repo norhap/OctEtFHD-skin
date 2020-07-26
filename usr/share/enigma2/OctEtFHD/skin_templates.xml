@@ -3,9 +3,9 @@
 	<!-- ClockBg -->
 	<!-- <panel name="ClockBg"/> -->
 	<screen name="ClockBg">
-	<eLabel backgroundColor="OE_NewBg2" position="1505,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
-	<eLabel backgroundColor="white" position="1510,80" size="180,2" transparent="0" zPosition="2"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1705,45" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<eLabel backgroundColor="OE_NewBg2" position="1475,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
+	<eLabel backgroundColor="white" position="1480,80" size="180,2" transparent="0" zPosition="2"/>
+	<widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1675,45" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	<convert type="ClockToText"></convert>
 	</widget>
 	<widget backgroundColor="OE_Background" font="Regular; 26" halign="center" position="1510,45" zPosition="3" render="Label" size="180,35" source="global.CurrentTime" transparent="1">
@@ -26,8 +26,8 @@
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="310,center" size="1205,770" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="650,230" size="840,2" zPosition="-9"/>
 	<!--  Widget -->
-	<widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" foregroundColor="white" position="650,160" size="865,58" transparent="1" halign="left"/>
-	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="650,255" size="865,650" transparent="1">
+	<widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" position="650,160" size="865,58" transparent="1" halign="left"/>
+	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="650,255" size="865,650" transparent="1">
 		<convert type="TemplatedMultiContent">
 				  {"template": [ MultiContentEntryText(pos = (15, 5), size = (865, 60), flags = RT_HALIGN_LEFT, text = 0) ],
 				  "fonts": [gFont("FHD", 38)],
@@ -38,35 +38,34 @@
 	</screen>
 	<!-- TITLES -->
 	<screen name="TitleScreenAll">
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,40" size="1300,90" halign="center" valign="center" transparent="1"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,45" size="1460,70" zPosition="-16"/>
+	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="170,40" size="1300,90" halign="center" valign="center" transparent="1"/>
 	</screen>
 	<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE-->
 	<screen name="CONDITIONAL_RGYB">
-	<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="170,990" size="40,40"/>
-	<ePixmap objectTypes="key_green,Button,Label" alphatest="blend" pixmap="buttons/key_green.png" position="500,990" size="40,40"/>
-	<ePixmap objectTypes="key_yellow,Button,Label" alphatest="blend" pixmap="buttons/key_yellow.png" position="830,990" size="40,40"/>
-	<ePixmap objectTypes="key_blue,Button,Label" alphatest="blend" pixmap="buttons/key_blue.png" position="1160,990" size="40,40"/>
-	<widget objectTypes="key_red,Label,Button" name="key_red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget objectTypes="key_green,Label,Button" name="key_green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget objectTypes="key_yellow,Label,Button" name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget objectTypes="key_blue,Label,Button" name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" objectTypes="key_red,StaticText" backgroundColor="OE_Background" position="170,990" size="40,40" alphatest="blend" zPosition="1">
+	<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="170,985" size="40,40"/>
+	<ePixmap objectTypes="key_green,Button,Label" alphatest="blend" pixmap="buttons/key_green.png" position="500,985" size="40,40"/>
+	<ePixmap objectTypes="key_yellow,Button,Label" alphatest="blend" pixmap="buttons/key_yellow.png" position="830,985" size="40,40"/>
+	<ePixmap objectTypes="key_blue,Button,Label" alphatest="blend" pixmap="buttons/key_blue.png" position="1160,985" size="40,40"/>
+	<widget objectTypes="key_red,Label,Button" name="key_red" font="RegularBold; 24" backgroundColor="OE_Background" position="220,970" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget objectTypes="key_green,Label,Button" name="key_green" font="RegularBold; 24" backgroundColor="OE_Background" position="550,970" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget objectTypes="key_yellow,Label,Button" name="key_yellow" font="RegularBold; 24" backgroundColor="OE_Background" position="880,970" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget objectTypes="key_blue,Label,Button" name="key_blue" font="RegularBold; 24" backgroundColor="OE_Background" position="1210,970" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" objectTypes="key_red,StaticText" backgroundColor="OE_Background" position="170,985" size="40,40" alphatest="blend" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_red" render="Label" objectTypes="key_red,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" objectTypes="key_green,StaticText" backgroundColor="OE_Background" position="500,990" size="40,40" alphatest="blend" zPosition="1">
+	<widget source="key_red" render="Label" objectTypes="key_red,StaticText" font="RegularBold; 24" backgroundColor="OE_Background" position="220,970" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" objectTypes="key_green,StaticText" backgroundColor="OE_Background" position="500,985" size="40,40" alphatest="blend" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_green" render="Label" objectTypes="key_green,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" objectTypes="key_yellow,StaticText" backgroundColor="OE_Background" position="830,990" size="40,40" alphatest="blend" zPosition="1">
+	<widget source="key_green" render="Label" objectTypes="key_green,StaticText" font="RegularBold; 24" backgroundColor="OE_Background" position="550,970" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" font="RegularBold; 24" backgroundColor="OE_Background" position="880,970" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" objectTypes="key_yellow,StaticText" backgroundColor="OE_Background" position="830,985" size="40,40" alphatest="blend" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="1160,990" size="40,40" alphatest="blend" zPosition="1">
+	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="1160,985" size="40,40" alphatest="blend" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,990" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="RegularBold; 24" backgroundColor="OE_Background" position="1210,970" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- MENU SORT -->
 	<screen name="Conditional_MenuSort">
@@ -74,7 +73,7 @@
 	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="350,865" size="40,40" alphatest="blend" zPosition="1">
 	<convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Label" font="Regularbold; 26" backgroundColor="OE_NewBg2" position="400,850" size="240,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="400,850" size="240,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 
 	<!-- STANDARD SCREEN -->
@@ -82,11 +81,11 @@
 	<panel name="ClockBg"/>
 	<panel name="TitleScreenAll"/>
 	<panel name="CONDITIONAL_RGYB"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,115" size="1460,920" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="72,55" size="75,75" transparent="1" zPosition="1"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,145" size="1300,2" zPosition="-9"/>
-	<eLabel backgroundColor="white" name="" position="170,975" size="1300,2" zPosition="-9"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1475,990" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="40,center" size="80,1080" zPosition="-11" valign="center"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="42,30" size="75,75" transparent="1" zPosition="1"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="140,135" size="1300,2" zPosition="-9"/>
+	<eLabel backgroundColor="white" name="" position="140,970" size="1300,2" zPosition="-9"/>
 	</screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
@@ -95,7 +94,7 @@
 	<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,20" size="80,80" alphatest="blend"/>
 	<widget name="WarningPixmap" pixmap="icons/input_warning.png" position="0,20" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold; 26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="45,160" size="1000,100" transparent="1"/>
+	<widget name="list" itemHeight="45" font="RegularBold; 24" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="45,160" size="1000,100" transparent="1"/>
 	<panel name="autoresize"/>
 	<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
