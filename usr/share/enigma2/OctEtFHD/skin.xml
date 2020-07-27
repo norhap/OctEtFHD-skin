@@ -787,7 +787,7 @@
 	<widget source="IFtext" render="Label" position="170,901" size="120,40" font="FHD; 30" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="IF" position="300,901" size="400,40" render="Label" font="FHD; 30" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="Statustext" position="576,901" size="300,40" render="Label" font="FHD; 30" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="statuspic" position="882,910" size="35,25" transparent="1" alphatest="on" pixmaps="icons/lock_on.png,icons/lock_error.png"/>
+	<widget name="statuspic" position="882,910" size="35,25" transparent="1" alphatest="on" pixmaps="extensions/lock_on.png,extensions/lock_off.png"/>
   </screen>
 	<!-- INFO DEVICES STB -->
   <screen name="Devices" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -1168,11 +1168,11 @@
 	<widget name="status" font="RegularBold; 30" backgroundColor="OE_Background" position="171,300" size="400,45" transparent="1"/>
 	<widget name="labstop" font="RegularBold; 30" backgroundColor="OE_Red" foregroundColor="OE_Foreground" position="580,300" size="280,45" valign="center" halign="center" zPosition="1"/>
 	<widget name="labrun" font="RegularBold; 30" backgroundColor="un1f771f" foregroundColor="OE_Foreground" position="580,300" size="280,45" valign="center" halign="center" zPosition="2"/>
-	<widget name="ci0active" alphatest="blend" pixmap="skin_default/lock_on.png" position="170,455" size="35,35" zPosition="1"/>
-	<widget name="ci0inactive" alphatest="blend" pixmap="skin_default/lock_off.png" position="170,455" size="35,35" zPosition="2"/>
+	<widget name="ci0active" alphatest="blend" pixmap="extensions/lock_on.png" position="170,455" size="35,35" zPosition="1"/>
+	<widget name="ci0inactive" alphatest="blend" pixmap="extensions/lock_off.png" position="170,455" size="35,35" zPosition="2"/>
 	<widget name="ci0" font="RegularBold; 30" backgroundColor="OE_Background" position="220,450" size="450,45" transparent="1"/>
-	<widget name="ci1active" alphatest="blend" pixmap="skin_default/lock_on.png" position="170,560" size="35,35" zPosition="1"/>
-	<widget name="ci1inactive" alphatest="blend" pixmap="skin_default/lock_off.png" position="170,560" size="35,35" zPosition="2"/>
+	<widget name="ci1active" alphatest="blend" pixmap="extensions/lock_on.png" position="170,560" size="35,35" zPosition="1"/>
+	<widget name="ci1inactive" alphatest="blend" pixmap="extensions/lock_off.png" position="170,560" size="35,35" zPosition="2"/>
 	<widget name="ci1" font="RegularBold; 30" backgroundColor="OE_Background" position="220,555" size="450,45" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="78,960" size="64,43"/>
   </screen>
@@ -2532,7 +2532,7 @@
 	<eLabel text="W-LAN Status" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
 	<widget source="IF" render="Label" font="RegularBold; 32" backgroundColor="OE_Background" halign="left" position="170,150" size="500,50" transparent="1"/>
 	<widget source="Statustext" render="Label" font="RegularBold; 32" foregroundColor="white" backgroundColor="OE_Background" position="645,150" size="370,50" transparent="1" halign="right"/>
-	<widget name="statuspic" alphatest="blend" pixmaps="skin_default/lock_on.png,skin_default/lock_off.png" position="1035,158" size="35,35" transparent="1"/>
+	<widget name="statuspic" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png" position="1035,158" size="35,35" transparent="1"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="grey" position="170,210" size="900,5" zPosition="-9"/>
 	<widget source="LabelBSSID" render="Label" backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="170,230" size="495,45" transparent="1"/>
 	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="170,280" render="Label" size="495,45" source="LabelESSID" transparent="1"/>
@@ -3086,7 +3086,7 @@
 	<panel name="StanDardScreen"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="48,960" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="48,900" size="64,43"/>
-	<widget name="list" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="140,150" size="1300,500" transparent="1"/>
+	<widget name="list" itemHeight="50" font="FHD; 30" backgroundColor="black" foregroundColor="OE_Foreground" position="140,150" size="1300,500" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="140,710" size="1300,2" zPosition="-9"/>
 	<widget name="SNR" position="170,720" size="110,45" backgroundColor="OE_Background" font="FHD; 30" transparent="1"/>
 	<widget name="snr_bar" foregroundColor="green_light" borderColor="OE_Selection" borderWidth="2" position="290,730" size="500,25" transparent="1"/>
@@ -3098,12 +3098,12 @@
 	<widget name="BER" position="170,820" size="110,45" font="FHD; 30" backgroundColor="black" transparent="1"/>
 	<widget name="ber_bar" borderColor="OE_Selection" borderWidth="2" backgroundColor="OE_Background" foregroundColor="blue_light" position="290,830" size="500,25" transparent="1"/>
 	<widget name="ber_value" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="blue_light" position="800,820" size="120,45" transparent="1"/>
-	<widget name="Lock" position="170,670" size="210,45" font="FHD; 30" backgroundColor="black" transparent="1"/>
-	<widget name="lock_state" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="black" position="400,670" size="100,45" transparent="1"/>
-	<widget name="lock_on" position="525,670" size="120,45" backgroundColor="black" transparent="1"/>
-	<widget name="lock_off" position="670,670" size="200,45" backgroundColor="black" transparent="1"/>
-	<widget name="rotorstatus" position="900,670" size="320,45" halign="center" transparent="1"/>
-	<widget name="status_bar" position="1240,670" size="320,45" halign="center" transparent="1"/>
+	<widget name="Lock" position="170,665" size="210,45" font="FHD; 30" backgroundColor="black" transparent="1"/>
+	<widget name="lock_on" position="380,665" pixmap="extensions/lock_on.png" size="35,35" transparent="1"/>
+	<widget name="lock_off" position="380,665" size="35,35" transparent="1"/>
+	<widget name="lock_state" font="FHD; 30" backgroundColor="black" position="455,665" size="400,45" transparent="1"/>
+	<widget name="rotorstatus" position="875,665" size="320,45" font="FHD; 30" backgroundColor="black" transparent="1"/>
+	<widget name="status_bar" position="1215,665" size="50,45" halign="center" transparent="1"/>
 	<widget name="Frequency" position="170,915" size="185,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="frequency_value" backgroundColor="OE_Background" font="FHD; 30" position="360,915" size="200,45" transparent="1"/>
 	<widget name="Symbolrate" position="600,915" size="350,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1"/>
@@ -3119,7 +3119,7 @@
 	<eLabel backgroundColor="white" name="" position="140,945" size="1300,2" zPosition="-9"/>
   </screen>
 	<!-- DISH-->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="Dish" position="105,75" size="600,500" title="Dish" zPosition="100">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="Dish" position="105,75" size="500,400" title="Dish" zPosition="2">
 	<widget alphatest="off" name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="256,256"/>
 	<widget name="turnTime" position="230,20" size="150,30" zPosition="1" font="RegularBold;24" halign="right" transparent="1"/>
 	<widget name="From" position="230,60" size="50,30" zPosition="1" font="RegularBold;22" halign="right" transparent="1"/>
@@ -3159,11 +3159,11 @@
 	  <convert type="FrontendInfo">BER</convert>
 	</widget>
 	<eLabel backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" name="lock" position="170,315" size="120,45" text="Lock:" transparent="1"/>
-	<widget alphatest="on" pixmap="skin_default/icons/lock_on.png" position="310,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
+	<widget alphatest="on" pixmap="extensions/lock_on.png" position="310,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
 	  <convert type="FrontendInfo">LOCK</convert>
 	  <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="on" pixmap="skin_default/icons/lock_off.png" position="310,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
+	<widget alphatest="on" pixmap="extensions/lock_off.png" position="310,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
 	  <convert type="FrontendInfo">LOCK</convert>
 	  <convert type="ConditionalShowHide">Invert</convert>
 	</widget>
