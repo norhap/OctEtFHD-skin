@@ -1,8 +1,8 @@
 <skin>
   <!-- AutoBouquetsMaker -->
-	<screen name="AutoBouquetsMaker" position="0,5" size="1920,100" backgroundColor="OE_NewBg2" flags="wfNoBorder">
-		<panel name="DownloadBar"/>
-	</screen>
+  <screen name="AutoBouquetsMaker" position="0,5" size="1920,100" backgroundColor="OE_NewBg2" flags="wfNoBorder">
+	<panel name="DownloadBar"/>
+  </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Setup" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<widget name="config" font="FHD; 32" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,600" transparent="1"/>
@@ -1968,6 +1968,9 @@
   </screen>
 
   <!-- Cross EPG -->
+  <screen name="downloader" position="0,5" size="1920,100" backgroundColor="OE_NewBg2" flags="wfNoBorder">
+	<panel name="DownloadBar"/>
+  </screen>
   <screen name="CrossEPG_Menu" title="CrossEPG" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>

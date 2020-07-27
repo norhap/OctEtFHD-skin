@@ -261,9 +261,9 @@
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="350,595" size="40,40"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="350,685" size="40,40"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="350,775" size="40,40"/>
-	<widget source="key_red" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="400,580" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
-	<widget source="key_green" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="400,670" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
-	<widget source="key_yellow" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="400,760" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_red" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="390,580" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_green" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="390,670" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_yellow" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="390,760" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="1920,1080" title="InfoBar">
 	<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="30,852" size="1850,215" zPosition="-11"/>
