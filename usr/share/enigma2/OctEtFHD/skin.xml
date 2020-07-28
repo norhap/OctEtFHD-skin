@@ -4132,6 +4132,12 @@
 	<widget name="config" position="140,150" size="1330,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="description" font="FHD; 30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
+	<!-- E2IPLAYER SETUP-->
+  <screen name="ConfigMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="config" position="140,150" size="1330,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 22" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="key_ok" position="420,400" size="0,0" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
+  </screen>
 	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
 			<eLabel position="0,787" size="1920,55" backgroundColor="#1b3c85" zPosition="-1"/>
 		<widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="#00000000" font="RegularBold; 46" transparent="1"/>

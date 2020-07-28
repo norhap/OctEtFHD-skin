@@ -16,7 +16,7 @@
 	</widget>
 	</screen>
 
-	<!-- MainMenu -->
+	<!-- MAINMENU -->
 	<!-- <panel name="MainMenu"/> -->
 	<screen name="MainMenu">
 	<panel name="ClockBg"/>
@@ -125,7 +125,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 #self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	</applet>
 	</screen>
-	 <!-- AutoResize-->
+	 <!-- AUTORESIZE-->
 	<screen name="autoresize" position="fill" flags="wfNoBorder">
 		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
 	</screen>
@@ -151,7 +151,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="message" position="fill" flags="wfNoBorder">
 	<widget name="message" position="0,0" size="0,0" transparent="1"/>
 	</screen>
-	<!-- ####### ChoiceBox ####### -->
+	<!-- ####### CHOICEBOX ####### -->
 	<screen name="description" position="fill" flags="wfNoBorder">
 	<panel name="autoresize"/>
 	<widget name="description" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
@@ -166,37 +166,37 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget name="list" scrollbarMode="showNever" backgroundColor="OE_Background" position="140,140" size="820,800" transparent="1" zPosition="3"/>
 	<widget name="text" position="1455,100" size="450,380" font="FHD; 30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="description" position="1455,150" size="450,380" font="FHD; 30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget source="session.CurrentService" render="Progress" position="1450,495" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" transparent="1" borderWidth="1" zPosition="6">
+	<widget source="session.CurrentService" render="Progress" position="1450,495" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" transparent="1" borderWidth="2" zPosition="6">
 	<convert type="CpuUsage">$0</convert>
 	</widget>
 	<widget source="session.Event_Now" render="Label" position="1450,510" size="480,70" backgroundColor="OE_NewBg2" font="RegularBold; 24" transparent="1" zPosition="6">
 	<convert type="CpuUsage">CPU Used:$0 (Core #1: $1 Core #2: $2 Core #3: $3 Core #4: $4)</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,580" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="1" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1450,580" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Label" position="1450,595" size="440,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,665" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="1" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1450,665" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Label" position="1450,680" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,750" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="1" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1450,750" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">SwapTotal</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Label" position="1450,765" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">SwapTotal</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,835" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="1" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1450,835" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Label" position="1450,850" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,920" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="1" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1450,920" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Label" position="1450,935" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
