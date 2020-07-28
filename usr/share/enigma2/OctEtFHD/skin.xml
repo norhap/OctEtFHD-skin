@@ -3104,7 +3104,7 @@
 	<eLabel backgroundColor="white" name="" position="140,945" size="1300,2" zPosition="-9"/>
   </screen>
 	<!-- DISH-->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="Dish" position="105,75" size="500,400" title="Dish" zPosition="2">
+  <screen name="Dish" backgroundColor="transparent" flags="wfNoBorder" position="105,75" size="500,250" title="Dish" zPosition="2">
 	<widget alphatest="off" name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="256,256"/>
 	<widget name="turnTime" position="230,20" size="150,30" zPosition="1" font="RegularBold;24" halign="right" transparent="1"/>
 	<widget name="From" position="230,60" size="50,30" zPosition="1" font="RegularBold;22" halign="right" transparent="1"/>
