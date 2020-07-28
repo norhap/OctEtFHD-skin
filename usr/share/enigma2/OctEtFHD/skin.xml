@@ -265,6 +265,13 @@
 	<widget source="key_green" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="390,670" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
 	<widget source="key_yellow" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="390,760" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
   </screen>
+	<!-- CHOICEBOX -->
+  <screen name="ChoiceBox" position="fill" flags="wfNoBorder">
+  <panel name="choicebox"/>
+  </screen>
+  <screen name="ExtensionsList" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+	<panel name="choicebox"/>
+  </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="center,center" size="1920,1080" title="InfoBar">
 	<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="30,852" size="1850,215" zPosition="-11"/>
 	<eLabel backgroundColor="blue_light" name="" position="336,910" size="1510,1" zPosition="20" foregroundColor="white"/>
@@ -948,7 +955,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
 	<widget name="languagetext" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<widget name="step" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="380,850" size="245,40" transparent="1" zPosition="1"/>
-	<widget name="stepslider" backgroundColor="OE_Background" position="380,900" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="stepslider" position="380,900" size="245,40" foregroundColor="blue_light" backgroundColor="OE_Background" borderWidth="1" transparent="1" zPosition="1"/>
 	<widget name="wizard" pixmap="picon_default.png" position="105,20" size="220,132" alphatest="blend" zPosition="1"/>
 	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="77,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
@@ -1147,18 +1154,6 @@
 	<!-- Widget -->
 	<widget name="chapter" position="2,2" size="280,45" font="RegularBold; 28" backgroundColor="OE_NewBg2" transparent="1" valign="center" halign="center" foregroundColor="white"/>
 	<widget name="number" position="2,49" size="280,45" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" foregroundColor="white"/>
-  </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="ChoiceBox" title="ChoiceBox" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-10"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1110,940" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="950,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=100,startdelay=4000,wrap,always=0" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="950,50" transparent="1" halign="left"/>
-	<widget name="list" scrollbarMode="showNever" backgroundColor="OE_Background" position="170,140" size="950,700" transparent="1" zPosition="3"/>
-	<eLabel backgroundColor="white" name="" position="170,845" size="950,2" zPosition="-9" foregroundColor="white"/>
-	<widget name="text" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,855" size="950,150" transparent="1" valign="top" zPosition="3" halign="left"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
   </screen>
   <screen name="CIHelper" title="CIHelper Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -1590,16 +1585,6 @@
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="715,950" size="240,40" render="Label" source="key_green" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1005,950" size="240,40" render="Label" source="key_yellow" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="1295,950" size="240,40" render="Label" source="key_blue" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
-  </screen>
-  <screen name="ExtensionsList" title="ExtensionsList" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-10"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="980,940" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="820,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=100,startdelay=4000,wrap,always=0" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="820,50" transparent="1" halign="left"/>
-	<widget name="list" scrollbarMode="showNever" backgroundColor="OE_Background" position="170,165" size="820,800" transparent="1" zPosition="3"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
@@ -3128,7 +3113,7 @@
 	<widget name="posGoto" position="300,100" size="270,30" zPosition="1" font="RegularBold;24" foregroundColor="green_light" halign="left" transparent="1"/>
 	<widget name="tunerName" position="230,140" size="400,30" zPosition="2" font="RegularBold;24" foregroundColor="blue_light" halign="left" transparent="1"/>
 	<widget name="turnSpeed" position="230,180" size="270,30" zPosition="2" font="RegularBold;24" halign="left" transparent="1"/>
-	<widget source="session.FrontendStatus" render="Progress" position="230,210" size="200,20" foregroundColor="blue_light" zPosition="2">
+	<widget source="session.FrontendStatus" render="Progress" position="230,210" size="200,20" borderWidth="1" foregroundColor="blue_light" zPosition="2">
 	<convert type="FrontendInfo">SNR</convert>
 	</widget>
   </screen>
@@ -3901,11 +3886,7 @@
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<eLabel text="Progress Wizard :" font="FHD; 34" backgroundColor="OE_Background" position="380,420" size="300,50" transparent="1"/>
-	<widget name="stepslider" position="700,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
-	<eLabel position="700,418" size="450,2" backgroundColor="white" zPosition="16"/>
-	<eLabel position="700,418" size="2,40" backgroundColor="white" zPosition="16"/>
-	<eLabel position="700,458" size="452,2" backgroundColor="white" zPosition="16"/>
-	<eLabel position="1150,418" size="2,40" backgroundColor="white" zPosition="16"/>
+	<widget name="stepslider" render="Progress" borderWidth="1" position="700,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="380,470" size="1500,2" zPosition="-9"/>
