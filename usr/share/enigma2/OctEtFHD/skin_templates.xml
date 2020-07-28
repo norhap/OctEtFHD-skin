@@ -80,7 +80,7 @@
 	<panel name="ClockBg"/>
 	<panel name="TitleScreenAll"/>
 	<panel name="CONDITIONAL_RGYB"/>
-	<widget name="description" objectTypes="description,Button,Label" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="170,810" size="1300,150" transparent="1" valign="top"/>
+	<!--widget name="description" objectTypes="description,Button,Label" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="170,810" size="1300,150" transparent="1" valign="top"/-->
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1475,990" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="40,center" size="80,1080" zPosition="-11" valign="center"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="42,30" size="75,75" transparent="1" zPosition="1"/>
