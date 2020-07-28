@@ -3104,15 +3104,15 @@
 	<eLabel backgroundColor="white" name="" position="140,945" size="1300,2" zPosition="-9"/>
   </screen>
 	<!-- DISH-->
-  <screen name="Dish" backgroundColor="transparent" flags="wfNoBorder" position="105,75" size="500,250" title="Dish" zPosition="2">
+  <screen name="Dish" backgroundColor="transparent" flags="wfNoBorder" position="105,75" size="550,250" title="Dish" zPosition="2">
 	<widget alphatest="off" name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="256,256"/>
-	<widget name="turnTime" position="230,20" size="150,30" zPosition="1" font="RegularBold;24" halign="right" transparent="1"/>
-	<widget name="From" position="230,60" size="50,30" zPosition="1" font="RegularBold;22" halign="right" transparent="1"/>
-	<widget name="posFrom" position="300,60" size="270,30" zPosition="1" font="RegularBold;24" halign="left" transparent="1"/>
-	<widget name="Goto" position="230,100" size="50,30" zPosition="1" font="RegularBold;22" foregroundColor="green_light" halign="right" transparent="1"/>
-	<widget name="posGoto" position="300,100" size="270,30" zPosition="1" font="RegularBold;24" foregroundColor="green_light" halign="left" transparent="1"/>
-	<widget name="tunerName" position="230,140" size="400,30" zPosition="2" font="RegularBold;24" foregroundColor="blue_light" halign="left" transparent="1"/>
-	<widget name="turnSpeed" position="230,180" size="270,30" zPosition="2" font="RegularBold;24" halign="left" transparent="1"/>
+	<widget name="turnTime" position="260,20" size="150,30" zPosition="1" font="RegularBold;24" transparent="1"/>
+	<widget name="From" position="260,60" size="110,30" zPosition="1" font="RegularBold;22" transparent="1"/>
+	<widget name="posFrom" position="390,60" size="160,30" zPosition="1" font="RegularBold;24" transparent="1"/>
+	<widget name="Goto" position="260,100" size="110,30" zPosition="1" font="RegularBold;22" foregroundColor="green_light" transparent="1"/>
+	<widget name="posGoto" position="390,100" size="160,30" zPosition="1" font="RegularBold;24" foregroundColor="green_light" transparent="1"/>
+	<widget name="tunerName" position="230,140" size="220,30" zPosition="2" font="RegularBold;24" foregroundColor="blue_light" halign="left" transparent="1"/>
+	<widget name="turnSpeed" position="230,180" size="220,30" zPosition="2" font="RegularBold;24" halign="left" transparent="1"/>
 	<widget source="session.FrontendStatus" render="Progress" position="230,210" size="200,20" borderWidth="1" foregroundColor="blue_light" zPosition="2">
 	<convert type="FrontendInfo">SNR</convert>
 	</widget>
@@ -3571,10 +3571,11 @@
 	</convert>
 	</widget>
   </screen>
+	<!-- KEY NO USED -->
   <screen name="UnhandledKey" title="UnhandledKey" backgroundColor="transparent" flags="wfNoBorder" position="50,0" size="120,155" transparent="0" zPosition="10">
 	<eLabel backgroundColor="white" foregroundColor="white" name="" position="10,65" size="100,3" zPosition="-45"/>
 	<eLabel backgroundColor="OE_NewBg2" position="0,0" size="120,155" zPosition="-50" foregroundColor="white"/>
-	<widget name="UnhandledKeyPixmap" pixmap="icons/UnhandledKey.png" position="0,0" size="70,70" alphatest="blend"/>
+	<widget name="UnhandledKeyPixmap" pixmap="icons/UnhandledKey.png" position="25,0" size="70,70" alphatest="blend"/>
 	<!-- Widget -->
 	<ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="my_icons/unhandled_key.png" position="22,77" size="75,75" transparent="1" zPosition="-1"/>
   </screen>
@@ -4138,6 +4139,25 @@
 	<widget name="config" position="140,150" size="1330,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 22" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="key_ok" position="420,400" size="0,0" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
+	<!-- ####### SKIN SELECTOR ####### -->
+	<screen name="SkinSelector" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="48,960" size="64,43"/>
+	<widget name="preview" position="1470,300" size="440,440" alphatest="blend"/>
+	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,155" zPosition="10" size="1300,850" transparent="1"/>
+	<widget source="description" render="Label" font="FHD; 30" position="200,550" size="1050,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
+	<widget source="skins" render="Listbox" position="140,140" size="1300,800" enableWrapAround="1" scrollbarMode="showOnDemand">
+	<convert type="TemplatedMultiContent">
+	{
+	"template": [
+	MultiContentEntryText(pos = (22, 0), size = (1300, 50), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 7)
+	],
+	"fonts": [gFont("RegularBold",30)],
+	"itemHeight": 50
+	}
+	</convert>
+	</widget>
+	</screen>
 	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
 			<eLabel position="0,787" size="1920,55" backgroundColor="#1b3c85" zPosition="-1"/>
 		<widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="#00000000" font="RegularBold; 46" transparent="1"/>
