@@ -3647,7 +3647,7 @@
 			</convert>
 	</widget>
 	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
-		<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
+	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
@@ -3676,7 +3676,7 @@
 			</convert>
 	</widget>
 	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
-		<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
+	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
@@ -3705,7 +3705,7 @@
 			</convert>
 	</widget>
 	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
-		<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
+	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
@@ -3734,7 +3734,7 @@
 			</convert>
 	</widget>
 	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
-		<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
+	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
@@ -3766,7 +3766,7 @@
 	  </convert>
 	</widget>
 	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
-		<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
+	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
@@ -3795,7 +3795,7 @@
 			</convert>
 	</widget>
 	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
-		<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
+	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
@@ -3970,6 +3970,28 @@
 	<ePixmap name="new ePixmap" pixmap="buttons/key_ok.png" position="170,957" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_exit.png" position="253,957" size="64,43" alphatest="blend"/>
   </screen>
+	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
+	<eLabel position="0,787" size="1920,55" backgroundColor="#1b3c85" zPosition="-1"/>
+	<widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="#00000000" font="RegularBold; 46" transparent="1"/>
+	<widget source="label1" render="Label" position="15,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label1s" render="Label" position="15,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
+	<widget name="pixmap1" position="15,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
+	<widget source="label2" render="Label" position="325,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label2s" render="Label" position="325,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
+	<widget name="pixmap2" position="325,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
+	<widget source="label3" render="Label" position="635,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label3s" render="Label" position="635,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
+	<widget name="pixmap3" position="635,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
+	<widget source="label4" render="Label" position="985,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label4s" render="Label" position="985,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
+	<widget name="pixmap4" position="985,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
+	<widget source="label5" render="Label" position="1295,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label5s" render="Label" position="1295,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
+	<widget name="pixmap5" position="1295,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
+	<widget source="label6" render="Label" position="1605,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label6s" render="Label" position="1605,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
+	<widget name="pixmap6" position="1605,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
+  </screen>
 	<!-- IMAGE FLASH MULTIBOOT SELECT IMAGE -->
   <screen name="SelectImage" position="0,0" size="1920,1080" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
@@ -4102,31 +4124,16 @@
 	</widget>
 	</screen>
 	<!-- SOFTCAMSETUP-->
-	<screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
+  <screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<widget name="config" itemHeight="50" position="140,150" size="1300,300" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="info" position="160,450" size="1300,510" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
-	</screen>
-	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
-			<eLabel position="0,787" size="1920,55" backgroundColor="#1b3c85" zPosition="-1"/>
-		<widget name="title" position="555,783" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="#00000000" font="RegularBold; 46" transparent="1"/>
-		<widget source="label1" render="Label" position="15,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-		<widget source="label1s" render="Label" position="15,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
-		<widget name="pixmap1" position="15,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label2" render="Label" position="325,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-		<widget source="label2s" render="Label" position="325,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
-		<widget name="pixmap2" position="325,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label3" render="Label" position="635,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-		<widget source="label3s" render="Label" position="635,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
-		<widget name="pixmap3" position="635,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label4" render="Label" position="985,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-		<widget source="label4s" render="Label" position="985,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
-		<widget name="pixmap4" position="985,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label5" render="Label" position="1295,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-		<widget source="label5s" render="Label" position="1295,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
-		<widget name="pixmap5" position="1295,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label6" render="Label" position="1605,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-		<widget source="label6s" render="Label" position="1605,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00ff4a3c" backgroundColor="#00000000" transparent="1"/>
-		<widget name="pixmap6" position="1605,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
-	</screen>
+  </screen>
+	<!-- PE SPEED UP-->
+  <screen name="PESpeedUp" position="fill" title="PE Speed Up">
+	<panel name="StanDardScreen"/>
+	<widget name="config" itemHeight="50" position="140,140" size="1300,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="lab1" position="140,910" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
+	<eLabel backgroundColor="blue_light" position="140,900" size="1300,2" zPosition="-9"/>
+  </screen>
 </skin>
