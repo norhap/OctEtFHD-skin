@@ -202,6 +202,11 @@
 	<parameter name="fstabMenuList" value="0,10,300,50,400,10,500,50"/>
 	<parameter name="PiconManagerList" value="10,3,1920,50"/>
 	<parameter name="RSList" value="40,0,1200,50,10,12,50,50"/>
+	<parameter name="FcFileListIcon" value="10,4,30,30"/>
+	<parameter name="FcFileListMultiIcon" value="45,4,30,30"/>
+	<parameter name="FcFileListMultiLock" value="2,0,30,30"/>
+	<parameter name="FcFileListMultiName" value="90,3,1000,32"/>
+	<parameter name="FcFileListName" value="68,4,1000,34"/>
   </parameters>
 	<!-- RESTART GUI -->
   <screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
@@ -4135,5 +4140,46 @@
 	<widget name="config" itemHeight="50" position="140,140" size="1300,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="lab1" position="140,910" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="140,900" size="1300,2" zPosition="-9"/>
+  </screen>
+	<!-- FileCommanderScreen-->
+ <screen name="FileCommanderScreen" position="fill">
+	<panel name="StanDardScreen"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,960" size="64,43"/>
+	<widget name="list_left_head1" position="140,140" size="580,50" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold; 22" transparent="1" valign="center"/>
+	<widget source="list_left_head2" render="Listbox" position="140,200" size="580,50" backgroundColor="OE_Background" selectionDisabled="1" transparent="1" >
+	<convert type="TemplatedMultiContent">
+	{"template": [
+	MultiContentEntryText(pos = (0, 0), size = (150, 50), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
+    MultiContentEntryText(pos = (165, 0), size = (120, 50), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
+	MultiContentEntryText(pos = (365, 0), size = (260, 50), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
+	],
+	"fonts": [gFont("RegularBold", 26)],
+	"itemHeight": 50,
+	"selectionEnabled": False
+	}
+	</convert>
+	</widget>
+	<widget name="list_right_head1" position="950,140" size="580,40" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold; 22" transparent="1" valign="center"/>
+	<widget source="list_right_head2" render="Listbox" position="800,200" size="580,50" backgroundColor="OE_Background" font="RegularBold; 20" selectionDisabled="1" transparent="1" >
+    <convert type="TemplatedMultiContent">
+	{"template": [
+	MultiContentEntryText(pos = (0, 0), size = (150, 50), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
+    MultiContentEntryText(pos = (165, 0), size = (120, 50), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
+	MultiContentEntryText(pos = (365, 0), size = (260, 50), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
+	],
+	"fonts": [gFont("RegularBold", 26)],
+	"itemHeight": 50,
+	"selectionEnabled": False
+	}
+
+	</convert>
+	</widget>
+	<widget name="list_left" position="140,300" size="650,500" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="0"/>
+	<widget name="list_right" position="800,300" size="630,500" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" transparent="0"/>
+	<widget name="sort_left" position="400,420" size="830,2" backgroundColor="OE_Background" transparent="0"/>
+	<widget name="sort_left" position="140,850" size="150,50" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list_left_free" position="340,850" size="150,50" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
+	<widget name="sort_right" position="950,850" size="250,50" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list_right_free" position="1150,850" size="250,50" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>				
   </screen>
 </skin>
