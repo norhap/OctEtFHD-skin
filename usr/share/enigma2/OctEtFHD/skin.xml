@@ -3544,12 +3544,9 @@
 	</widget>
   </screen>
 	<!-- KEY NO USED -->
-  <screen name="UnhandledKey" title="UnhandledKey" backgroundColor="transparent" flags="wfNoBorder" position="50,0" size="120,155" transparent="0" zPosition="10">
-	<eLabel backgroundColor="white" foregroundColor="white" name="" position="10,65" size="100,3" zPosition="-45"/>
+  <screen name="UnhandledKey" title="UnhandledKey" backgroundColor="transparent" flags="wfNoBorder" position="20,0" size="120,135" transparent="0" zPosition="10">
 	<eLabel backgroundColor="OE_NewBg2" position="0,0" size="120,155" zPosition="-50" foregroundColor="white"/>
-	<widget name="UnhandledKeyPixmap" pixmap="icons/UnhandledKey.png" position="25,0" size="70,70" alphatest="blend"/>
-	<!-- Widget -->
-	<ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="my_icons/unhandled_key.png" position="22,77" size="75,75" transparent="1" zPosition="-1"/>
+	<widget name="UnhandledKeyPixmap" pixmap="my_icons/unhandled_key.png" position="22,20" size="75,75" alphatest="blend"/>
   </screen>
   <screen name="Volume" title="Volume" backgroundColor="transparent" flags="wfNoBorder" position="50,0" size="120,155" transparent="0" zPosition="10">
 	<eLabel backgroundColor="white" foregroundColor="white" name="" position="10,93" size="100,4" zPosition="-45"/>
@@ -4093,7 +4090,7 @@
 	<widget name="config" position="140,150" size="1330,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 22" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="key_ok" position="420,400" size="0,0" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
-	<!-- ####### SKIN SELECTOR ####### -->
+	<!-- SKIN SELECTOR-->
 	<screen name="SkinSelector" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="48,960" size="64,43"/>
@@ -4111,6 +4108,12 @@
 	}
 	</convert>
 	</widget>
+	</screen>
+	<!-- SOFTCAMSETUP-->
+	<screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="config" itemHeight="50" position="140,150" size="1300,300" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="info" position="160,450" size="1300,500" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
 	</screen>
 	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
 			<eLabel position="0,787" size="1920,55" backgroundColor="#1b3c85" zPosition="-1"/>
