@@ -206,7 +206,7 @@
 	<parameter name="FcFileListMultiIcon" value="45,4,30,30"/>
 	<parameter name="FcFileListMultiLock" value="2,0,30,30"/>
 	<parameter name="FcFileListMultiName" value="90,3,1000,32"/>
-	<parameter name="FcFileListName" value="68,4,1000,34"/>
+	<parameter name="FcFileListName" value="68,4,1000,40"/>
   </parameters>
 	<!-- RESTART GUI -->
   <screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
@@ -1882,13 +1882,11 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
+	<!-- LANGUAJE SELECTION -->
   <screen name="LanguageSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-10"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="880,940" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="720,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Language selection" backgroundColor="OE_Background" font="FHD; 34" position="170,73" size="720,50" transparent="1" halign="left" foregroundColor="white"/>
-	<widget source="languages" render="Listbox" scrollbarMode="showNever" backgroundColor="OE_Background" position="170,150" size="720,845" transparent="1">
+	<panel name="SlimScreen"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="10,925" size="64,43"/>
+	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="100,135" size="685,825" transparent="1">
 	  <convert type="TemplatedMultiContent">
 			{"template":[
 			MultiContentEntryText(pos=(150,8),size=(870,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
@@ -1897,8 +1895,6 @@
 			"fonts":[gFont("RegularBold",32) ],"itemHeight":65}
 			  </convert>
 	</widget>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
   </screen>
   <screen name="MinuteInput" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<!-- Back -->
@@ -2743,22 +2739,17 @@
 			</convert>
 	</widget>
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowser" position="0,0" size="1920,1080" title="Plugin browser" transparent="0">
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-10"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="980,940" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="820,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Plugin browser" backgroundColor="OE_Background" font="FHD; 34" position="170,73" size="820,50" transparent="1" halign="left" foregroundColor="white"/>
-	<widget name="list" itemHeight="75" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" position="170,160" size="820,750" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="820,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="78,960" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="555,960" size="40,40"/>
-	<widget name="red" render="Label" font="Regular; 28" backgroundColor="OE_Background" halign="left" position="215,960" size="330,40" transparent="1" zPosition="1"/>
-	<widget name="green" render="Label" font="Regular; 28" backgroundColor="OE_Background" halign="left" position="600,960" size="340,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<!-- PLUGIN BROWSER -->
+  <screen name="PluginBrowser" backgroundColor="transparent" flags="wfNoBorder"  position="0,0" size="1920,1080" transparent="0">
+	<panel name="SlimScreen"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="10,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="10,1025" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1025" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="145,1025" size="64,43"/>
+	<eLabel text="Up | Down" position="210,1010" size="270,70" halign="left" valign="center"  backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold; 26"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="420,1025" size="64,43"/>
+	<eLabel text="Default" position="480,1010" size="270,70" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" transparent="1" zPosition="1"/> 
+	<widget name="list" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="100,135" size="685,825" transparent="1"/>
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<!-- Widget -->
@@ -3846,10 +3837,10 @@
 	<panel name="ClockBg"/>
   </screen>
 	<!-- OPKG UPDATER -->
-  <screen name="InstallWizardOpkgUpdater" position="fill" flags="wfNoBorder">
+  <screen name="InstallWizardOpkgUpdater" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
 	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10"/>
 	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend"/>
-	<widget source="statusbar" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="600,420" size="720,150" transparent="1" halign="center"/>
+	<widget source="statusbar" render="Label" font="RegularBold; 27" backgroundColor="OE_Background" position="600,420" size="720,150" transparent="1" halign="center"/>
   </screen>
 	<!-- AUTO DISEQC -->
   <screen name="AutoDiseqc" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -4141,7 +4132,7 @@
 	<widget name="lab1" position="140,910" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="140,900" size="1300,2" zPosition="-9"/>
   </screen>
-	<!-- FileCommanderScreen-->
+	<!-- FILE COMMANDER-->
  <screen name="FileCommanderScreen" position="fill">
 	<panel name="StanDardScreen"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,960" size="64,43"/>
@@ -4177,9 +4168,9 @@
 	<widget name="list_left" position="140,300" size="650,500" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="0"/>
 	<widget name="list_right" position="800,300" size="630,500" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" transparent="0"/>
 	<widget name="sort_left" position="400,420" size="830,2" backgroundColor="OE_Background" transparent="0"/>
-	<widget name="sort_left" position="140,850" size="150,50" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="list_left_free" position="340,850" size="150,50" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
-	<widget name="sort_right" position="950,850" size="250,50" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="list_right_free" position="1150,850" size="250,50" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>				
+	<widget name="sort_left" position="300,850" size="150,50" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list_left_free" position="500,850" size="150,50" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
+	<widget name="sort_right" position="980,850" size="250,50" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list_right_free" position="1180,850" size="250,50" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>				
   </screen>
 </skin>
