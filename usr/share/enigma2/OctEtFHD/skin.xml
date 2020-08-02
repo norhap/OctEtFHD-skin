@@ -3745,14 +3745,14 @@
 	<panel name="ClockBg"/>
   </screen>
   <screen name="LanguageWizard" title="Language Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1680,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1850,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="-11" valign="center"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD; 34" position="380,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="380,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="85,142" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget name="text" font="FHD; 30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="1300,300" transparent="1"/>
-	<widget source="languages" render="Listbox" scrollbarMode="showNever" backgroundColor="OE_Background" position="380,480" size="1300,520" transparent="1">
+	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="380,480" size="1300,520" transparent="1">
 	  <convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos=(150,8),size=(870,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
@@ -3790,7 +3790,7 @@
 				"fonts":[gFont("FHD",30) ],"itemHeight":50}
 			</convert>
 	</widget>
-	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
+	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
 	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
@@ -3806,20 +3806,20 @@
 	<panel name="ClockBg"/>
   </screen>
   <screen name="StartWizard" title="Start Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1680,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1850,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="-11" valign="center"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD; 34" position="380,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="380,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="85,142" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget name="text" font="FHD; 30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="1300,50" transparent="1"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" size="1500,500" transparent="1">
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1500,500" transparent="1">
 	  <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,2),size=(1420,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("FHD",30) ],"itemHeight":50}
 			</convert>
 	</widget>
-	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1500,500" zPosition="1"/>
+	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1500,500" zPosition="1"/>
 	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
@@ -3850,20 +3850,20 @@
 	<widget source="tunerstatusbar" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="840,180" size="640,50" transparent="1" foregroundColor="green_light" valign="top"/>
   </screen>
   <screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1680,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1850,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="-11" valign="center"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD; 34" position="380,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="380,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="85,142" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget name="text" font="FHD; 30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="1300,300" transparent="1"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" size="1300,500" transparent="1">
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1300,500" transparent="1">
 	  <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,2),size=(1220,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("FHD",30) ],"itemHeight":50}
 			</convert>
 	</widget>
-	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
+	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1300,500" zPosition="1"/>
 	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
 	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
