@@ -4238,7 +4238,7 @@
 	<!-- VISION IMAGE MANAGER-->
 	<screen name="VISIONImageManager" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget source="lab1" render="Label" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget source="lab1" render="Label" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
   <applet type="onLayoutFinish">
@@ -4248,7 +4248,7 @@
 	<!-- OPKG INSTALL-->
   <screen name="VISIONIPKInstaller" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget source="lab1" render="Label" position="580,150" size="400,150" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget source="lab1" render="Label" position="580,150" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,350" zPosition="10" size="1300,630" transparent="1"/>
 	<applet type="onLayoutFinish">
 	self["list"].instance.setItemHeight(50)
@@ -4284,9 +4284,9 @@
   </screen>
   <screen name="VISIONSoftcamManager" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget name="lab2" position="60,275" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
-	<widget name="activecam" position="350,275" size="350,75" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="green_light" transparent="1" noWrap="1"/>
-	<widget source="lab1" render="Label" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab2" position="60,275" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<widget name="activecam" position="350,275" size="350,75" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
+	<widget source="lab1" render="Label" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,350" zPosition="10" size="1300,600" transparent="1"/>
 	<!--ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/-->
 	<ePixmap pixmap="buttons/key_info.png" position="48,900" size="64,43" alphatest="blend"/>
