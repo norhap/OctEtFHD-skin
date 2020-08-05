@@ -5,13 +5,13 @@
 	<screen name="ClockBg">
 	<eLabel backgroundColor="OE_NewBg2" position="1475,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
 	<eLabel backgroundColor="white" position="1480,80" size="230,2" transparent="0" zPosition="2"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1730,45" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<widget backgroundColor="OE_NewBg" font="RegularBold; 45" halign="left" position="1750,45" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	<convert type="ClockToText"></convert>
 	</widget>
 	<widget backgroundColor="OE_NewBg2" font="RegularBold; 26" halign="center" position="1480,45" zPosition="3" render="Label" size="230,35" source="global.CurrentTime" transparent="1">
 	<convert type="ClockToText">Date</convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold; 26" halign="center" position="1480,80" zPosition="3" render="Label" size="230,35" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold; 26" halign="center" position="1480,80" zPosition="3" render="Label" size="250,35" source="global.CurrentTime" transparent="1">
 	<convert type="ClockToText">FullDate</convert>
 	</widget>
 	</screen>

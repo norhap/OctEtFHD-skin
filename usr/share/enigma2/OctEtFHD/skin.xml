@@ -4037,12 +4037,12 @@
 	<!-- INETD RECOVERY NETWORK -->
   <screen name="InetdRecovery" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" position="140,150" size="1330,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- NETWORK PASSWORD-->
   <screen name="NetworkPassword" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" position="140,150" size="1330,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="description" font="FHD; 30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="footnote" position="420,610" size="400,50" zPosition="1" font="FHD; 30" foregroundColor="blue_light" backgroundColor="OE_Background"  halign="center" valign="center"  transparent="1"/>
 	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
@@ -4085,19 +4085,19 @@
 	<!-- NETWORK MAC SETUP-->
   <screen name="NetworkMacSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" position="140,150" size="1330,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="description" font="FHD; 30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- NETWORK IPV6 SETUP-->
   <screen name="IPv6Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" position="140,150" size="1330,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="description" font="FHD; 30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- E2IPLAYER SETUP-->
   <screen name="ConfigMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" position="140,150" size="1330,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 22" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 22" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="key_ok" position="420,400" size="0,0" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- SKIN SELECTOR-->
@@ -4197,22 +4197,87 @@
 	</convert>
 	</widget>
 	</screen>
+	<!-- MOUNT MANAGER-->
+	<screen name="VISIONDevicesPanel" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="list" render="Listbox" position="140,145" size="1300,650" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" transparent="1" scrollbarMode="showOnDemand">
+	<convert type="TemplatedMultiContent">
+	{"template": [
+	MultiContentEntryText(pos = (160, 10), size = (1280, 50), font=0, text = 0),
+	MultiContentEntryText(pos = (165, 45), size = (1280, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+	MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (80, 80), png = 2),
+	],
+	"fonts": [gFont("RegularBold", 26),gFont("RegularBold", 26)],
+	"itemHeight": 85
+	}
+	</convert>
+	</widget>
+	<widget name="lab1" position="80,145" size="670,50" backgroundColor="OE_Background" font="Regular;21" zPosition="2" transparent="1" halign="center"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
+	</screen>
+	<screen name="VISIONDevicePanelConf" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 22" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="Linconn" backgroundColor="OE_Background" foregroundColor="blue_light" position="185,850" size="640,50" transparent="1" valign="top"/>
+	</screen>
+	<screen name="VISIONBackupManager" position="fill"  flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="lab1" position="125,130" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,280" zPosition="10" size="1300,550" transparent="1"/>
+	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
+	<applet type="onLayoutFinish">
+		self["list"].instance.setItemHeight(50)
+	</applet>
+  </screen>
 	<!-- VISION BACKUP MANAGER MENU-->
   <screen name="VISIONBackupManagerMenu" position="fill" flags="wfNoBorder">
-  <panel name="StanDardScreen"/>
-  <panel name="description-info"/>
-		<!--widget name="config" position="60,155" size="742,425" font="Regular;19" backgroundColor="#00030303" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/-->
+	<panel name="StanDardScreen"/>
+	<panel name="description-info"/>
+		<!--widget name="config" position="60,155" size="742,425" font="Regular;19" backgroundColor="OE_Background" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/-->
   </screen>
 	<!-- VISION IMAGE MANAGER-->
 	<screen name="VISIONImageManager" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget source="lab1" render="Label" position="630,150" size="400,50" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,155" zPosition="10" size="1300,850" transparent="1"/>
-	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" position="185,550" size="640,300" transparent="1" valign="top"/>
+	<widget source="lab1" render="Label" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
+	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
   <applet type="onLayoutFinish">
   self["list"].instance.setItemHeight(50)
   </applet>
   </screen>
+	<!-- OPKG INSTALL-->
+  <screen name="VISIONIPKInstaller" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="lab1" render="Label" position="580,150" size="400,150" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="140,350" zPosition="10" size="1300,600" transparent="1"/>
+	<applet type="onLayoutFinish">
+	self["list"].instance.setItemHeight(30)
+  </applet>
+	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
+	</screen>
+	<!-- SCRIPT RUNNER-->
+  <screen name="VISIONScriptRunner" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="140,140" zPosition="10" size="1300,600" transparent="1"/>
+	<applet type="onLayoutFinish">
+	self["list"].instance.setItemHeight(30)
+  </applet>
+	</screen>
+	<!-- SWAP MANAGER-->
+	<screen name="VISIONSwap" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
+	<widget name="autostart_off" position="140,190" zPosition="1" pixmap="extensions/lock_off.png" size="35,35" alphatest="blend"/>
+	<widget name="autostart_on" position="140,190" zPosition="2" pixmap="extensions/lock_on.png" size="35,35" alphatest="blend"/>
+	<widget name="lab1" position="190,180" size="600,50" font="RegularBold;26" valign="center" transparent="1" backgroundColor="OE_Background"/>
+	<widget name="lab2" position="140,280" size="350,50" backgroundColor="OE_Background" font="RegularBold;26" valign="center" transparent="1"/>
+	<widget name="labplace" position="340,280" size="350,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
+	<widget name="lab3" position="140,380" size="350,50" backgroundColor="OE_Background" font="RegularBold;26" valign="center" transparent="1"/>
+	<widget name="labsize" position="340,380" size="350,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
+	<widget name="lab4" position="140,480" size="350,50" backgroundColor="OE_Background" font="RegularBold;26" valign="center" transparent="1"/>
+	<widget name="inactive" position="340,480" size="350,50" font="RegularBold;26" valign="center" halign="center" backgroundColor="red"/>
+	<widget name="active" position="340,480" size="350,50" zPosition="1" font="RegularBold;26" valign="center" halign="center" backgroundColor="green"/>
+	</screen>
 	<!-- SOFTCAM VISION-->
   <screen name="VISIONSoftcamMenu" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
@@ -4222,7 +4287,7 @@
 	<widget name="lab2" position="60,275" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
 	<widget name="activecam" position="350,275" size="350,75" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="green_light" transparent="1" noWrap="1"/>
 	<widget source="lab1" render="Label" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="140,350" zPosition="10" size="1300,600" transparent="1"/>
+	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,350" zPosition="10" size="1300,600" transparent="1"/>
 	<!--ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/-->
 	<ePixmap pixmap="buttons/key_info.png" position="48,900" size="64,43" alphatest="blend"/>
 	<applet type="onLayoutFinish">
