@@ -3991,7 +3991,7 @@
 	<!-- IMAGE FLASH MULTIBOOT SELECT IMAGE -->
   <screen name="SelectImage" position="0,0" size="1920,1080" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="140,155" zPosition="10" size="1300,850" transparent="1"/>
+	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
 	<widget source="description" render="Label" font="FHD; 30" position="200,550" size="1200,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
   </screen>
 	<!-- AUTO BACKUP -->
@@ -4037,7 +4037,7 @@
 	<!-- INETD RECOVERY NETWORK -->
   <screen name="InetdRecovery" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
   </screen>
 	<!-- NETWORK PASSWORD-->
   <screen name="NetworkPassword" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -4091,7 +4091,7 @@
 	<!-- NETWORK IPV6 SETUP-->
   <screen name="IPv6Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="description" font="FHD; 30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- E2IPLAYER SETUP-->
@@ -4223,7 +4223,7 @@
 	<screen name="VISIONBackupManager" position="fill"  flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<widget name="lab1" position="125,130" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,280" zPosition="10" size="1300,550" transparent="1"/>
+	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,280" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
 	<applet type="onLayoutFinish">
 		self["list"].instance.setItemHeight(50)
@@ -4239,7 +4239,7 @@
 	<screen name="VISIONImageManager" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<widget source="lab1" render="Label" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
+	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
   <applet type="onLayoutFinish">
   self["list"].instance.setItemHeight(50)
@@ -4249,18 +4249,18 @@
   <screen name="VISIONIPKInstaller" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<widget source="lab1" render="Label" position="580,150" size="400,150" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="140,350" zPosition="10" size="1300,600" transparent="1"/>
+	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,350" zPosition="10" size="1300,630" transparent="1"/>
 	<applet type="onLayoutFinish">
-	self["list"].instance.setItemHeight(30)
+	self["list"].instance.setItemHeight(50)
   </applet>
 	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
 	</screen>
 	<!-- SCRIPT RUNNER-->
   <screen name="VISIONScriptRunner" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="140,140" zPosition="10" size="1300,600" transparent="1"/>
+	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" zPosition="10" size="1300,630" transparent="1"/>
 	<applet type="onLayoutFinish">
-	self["list"].instance.setItemHeight(30)
+	self["list"].instance.setItemHeight(50)
   </applet>
 	</screen>
 	<!-- SWAP MANAGER-->
