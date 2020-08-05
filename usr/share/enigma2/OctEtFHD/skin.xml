@@ -2748,7 +2748,7 @@
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="145,1025" size="64,43"/>
 	<eLabel text="Up | Down" position="210,1010" size="270,70" halign="left" valign="center"  backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold; 26"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="420,1025" size="64,43"/>
-	<eLabel text="Default" position="480,1010" size="270,70" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" transparent="1" zPosition="1"/> 
+	<eLabel text="Default" position="480,1010" size="270,70" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="list" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="100,135" size="685,825" transparent="1"/>
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -4171,43 +4171,62 @@
 	<widget name="sort_left" position="300,850" size="150,50" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="list_left_free" position="500,850" size="150,50" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
 	<widget name="sort_right" position="980,850" size="250,50" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="list_right_free" position="1180,850" size="250,50" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>				
+	<widget name="list_right_free" position="1180,850" size="250,50" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
   </screen>
-	<screen name="VISIONMenu" position="fill" flags="wfNoBorder">
+	<!-- VISION MENU-->
+  <screen name="VISIONMenu" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-		<widget source="menu" render="Listbox" position="140,140" zPosition="2" size="400,960" backgroundColor="OE_Background" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (51,2), size = (820,70), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
-				],
-				"fonts": [gFont("RegularBold",33)],
-				"itemHeight": 80
-				}
-			</convert>
-		</widget>
-		<widget source="menu" render="Listbox" position="650,140" size="800,960" backgroundColor="OE_Background" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (0,0),size = (820,70),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 2),# index 0 is the MenuText,
-				],
-				"fonts": [gFont("RegularBold",33)],
-				"itemHeight": 80
-				}
-			</convert>
-		</widget>
+	<widget source="menu" render="Listbox" position="140,140" zPosition="2" size="400,960" backgroundColor="OE_Background" scrollbarMode="showOnDemand" transparent="1">
+	<convert type="TemplatedMultiContent">
+	{"template": [
+	MultiContentEntryText(pos = (51,2), size = (820,70), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
+	],
+	"fonts": [gFont("RegularBold",33)],
+	"itemHeight": 80
+	}
+	</convert>
+	</widget>
+	<widget source="menu" render="Listbox" position="650,140" size="800,960" backgroundColor="OE_Background" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+	<convert type="TemplatedMultiContent">
+	{"template": [
+	MultiContentEntryText(pos = (0,0),size = (820,70),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 2),# index 0 is the MenuText,
+	],
+	"fonts": [gFont("RegularBold",33)],
+	"itemHeight": 80
+	}
+	</convert>
+	</widget>
 	</screen>
-	<screen name="VISIONBackupManagerMenu" position="fill" flags="wfNoBorder">
-	<panel name="StanDardScreen"/>
-		<panel name="description-info"/>
+	<!-- VISION BACKUP MANAGER MENU-->
+  <screen name="VISIONBackupManagerMenu" position="fill" flags="wfNoBorder">
+  <panel name="StanDardScreen"/>
+  <panel name="description-info"/>
 		<!--widget name="config" position="60,155" size="742,425" font="Regular;19" backgroundColor="#00030303" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/-->
-	</screen>
+  </screen>
+	<!-- VISION IMAGE MANAGER-->
 	<screen name="VISIONImageManager" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<widget source="lab1" render="Label" position="630,150" size="400,50" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,155" zPosition="10" size="1300,850" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" position="185,550" size="640,300" transparent="1" valign="top"/>
-		<applet type="onLayoutFinish">
-			self["list"].instance.setItemHeight(30)
-		</applet>
-	</screen>
+  <applet type="onLayoutFinish">
+  self["list"].instance.setItemHeight(50)
+  </applet>
+  </screen>
+	<!-- SOFTCAM VISION-->
+  <screen name="VISIONSoftcamMenu" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+  </screen>
+  <screen name="VISIONSoftcamManager" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="lab2" position="60,275" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
+	<widget name="activecam" position="350,275" size="350,75" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="green_light" transparent="1" noWrap="1"/>
+	<widget source="lab1" render="Label" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="140,350" zPosition="10" size="1300,600" transparent="1"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_info.png" position="48,900" size="64,43" alphatest="blend"/>
+	<applet type="onLayoutFinish">
+  self["list"].instance.setItemHeight(50)
+  </applet>
+  </screen>
 </skin>
