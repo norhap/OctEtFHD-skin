@@ -4186,10 +4186,10 @@
 	}
 	</convert>
 	</widget>
-	<widget source="menu" render="Listbox" position="650,140" size="800,960" backgroundColor="OE_Background" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+	<widget source="menu" render="Listbox" position="650,140" size="800,960" backgroundColor="OE_Background" foregroundColor="blue_light" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" selectionDisabled="1" transparent="1">
 	<convert type="TemplatedMultiContent">
 	{"template": [
-	MultiContentEntryText(pos = (0,0),size = (820,70),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 2),# index 0 is the MenuText,
+	MultiContentEntryText(pos = (0,0),size = (820,75),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 2),# index 0 is the MenuText,
 	],
 	"fonts": [gFont("RegularBold",33)],
 	"itemHeight": 80
