@@ -4220,8 +4220,11 @@
 	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 22" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="Linconn" backgroundColor="OE_Background" foregroundColor="blue_light" position="185,850" size="640,50" transparent="1" valign="top"/>
 	</screen>
+	<!--VISION BACKUP MANAGER -->
 	<screen name="VISIONBackupManager" position="fill"  flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="48,910" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_exit.png" position="48,960" size="64,43" alphatest="blend"/>
 	<widget name="lab1" position="125,130" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,280" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
@@ -4229,21 +4232,27 @@
 		self["list"].instance.setItemHeight(50)
 	</applet>
   </screen>
-	<!-- VISION BACKUP MANAGER MENU-->
   <screen name="VISIONBackupManagerMenu" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<panel name="description-info"/>
 		<!--widget name="config" position="60,155" size="742,425" font="Regular;19" backgroundColor="OE_Background" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/-->
   </screen>
 	<!-- VISION IMAGE MANAGER-->
 	<screen name="VISIONImageManager" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget source="lab1" render="Label" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="48,910" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_exit.png" position="48,960" size="64,43" alphatest="blend"/>
+	<widget name="lab1" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
   <applet type="onLayoutFinish">
   self["list"].instance.setItemHeight(50)
   </applet>
+  </screen>
+	<screen name="VISIONImageManagerMenu" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="48,910" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_exit.png" position="48,960" size="64,43" alphatest="blend"/>
+	<widget name="config" font="RegularBold; 25" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
   </screen>
 	<!-- OPKG INSTALL-->
   <screen name="VISIONIPKInstaller" position="fill" flags="wfNoBorder">
