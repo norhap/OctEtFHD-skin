@@ -4234,7 +4234,7 @@
   </screen>
   <screen name="VISIONBackupManagerMenu" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-		<!--widget name="config" position="60,155" size="742,425" font="Regular;19" backgroundColor="OE_Background" scrollbarMode="showAlways" scrollbarSliderForegroundColor="#00030303"/-->
+	<widget name="config" font="RegularBold; 25" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
   </screen>
 	<!-- VISION IMAGE MANAGER-->
 	<screen name="VISIONImageManager" position="fill" flags="wfNoBorder">
