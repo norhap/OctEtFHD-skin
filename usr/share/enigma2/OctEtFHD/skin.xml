@@ -4300,20 +4300,27 @@
 	<widget name="active" position="340,480" size="350,50" zPosition="1" font="RegularBold;26" valign="center" halign="center" backgroundColor="green"/>
 	</screen>
 	<!-- SOFTCAM VISION-->
-  <screen name="VISIONSoftcamMenu" position="fill" flags="wfNoBorder">
-	<panel name="StanDardScreen"/>
-  </screen>
   <screen name="VISIONSoftcamManager" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<widget name="lab2" position="60,275" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 	<widget name="activecam" position="350,275" size="350,75" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
 	<widget name="lab1" position="580,150" size="400,50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,350" zPosition="10" size="1300,600" transparent="1"/>
-	<!--ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/-->
+	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_info.png" position="48,900" size="64,43" alphatest="blend"/>
 	<applet type="onLayoutFinish">
   self["list"].instance.setItemHeight(50)
   </applet>
+  </screen>
+  <screen name="VISIONSoftcamMenu" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="config" font="RegularBold; 25" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
+  </screen>
+  <screen name="VISIONSoftcamLog" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="list" font="RegularBold; 25" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="140,140" zPosition="10" size="1300,820" transparent="1"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,900" size="64,43"/>
   </screen>
 	<screen name="VISIONStopCam" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
