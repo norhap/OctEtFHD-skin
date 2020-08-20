@@ -4201,8 +4201,8 @@
 	<widget source="list" render="Listbox" position="140,145" size="1300,650" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" transparent="1" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 	{"template": [
-	MultiContentEntryText(pos = (160, 10), size = (1280, 50), font=0, text = 0),
-	MultiContentEntryText(pos = (165, 45), size = (1280, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+	MultiContentEntryText(pos = (160, 10), size = (1160, 50), font=0, text = 0),
+	MultiContentEntryText(pos = (165, 45), size = (1160, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
 	MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (80, 80), png = 2),
 	],
 	"fonts": [gFont("RegularBold", 26),gFont("RegularBold", 26)],
@@ -4210,7 +4210,7 @@
 	}
 	</convert>
 	</widget>
-	<widget name="lab1" position="80,145" size="670,50" backgroundColor="OE_Background" font="Regular;21" zPosition="2" transparent="1" halign="center"/>
+	<widget name="lab1" position="80,145" size="670,50" backgroundColor="OE_Background" font="RegularBold;26" zPosition="2" transparent="1" halign="center"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
 	</screen>
 	<screen name="VISIONDevicePanelConf" position="fill" flags="wfNoBorder">
@@ -4223,7 +4223,7 @@
 	<panel name="StanDardScreen"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="48,910" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="48,960" size="64,43" alphatest="blend"/>
-	<widget name="lab1" position="580,120" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab1" position="580,140" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,280" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
 	<applet type="onLayoutFinish">
@@ -4246,7 +4246,7 @@
 	<panel name="StanDardScreen"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="48,910" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="48,960" size="64,43" alphatest="blend"/>
-	<widget name="lab1" position="580,120" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab1" position="580,140" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,280" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
 	<applet type="onLayoutFinish">
@@ -4269,7 +4269,7 @@
 	<!-- OPKG INSTALL-->
   <screen name="VISIONIPKInstaller" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget name="lab1" position="580,120" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab1" position="580,140" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,350" zPosition="10" size="1300,580" transparent="1"/>
 	<applet type="onLayoutFinish">
 	self["list"].instance.setItemHeight(50)
