@@ -4174,6 +4174,7 @@
 	<!-- VISION MENU-->
   <screen name="VISIONMenu" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,900" size="64,43"/>
 	<widget source="menu" render="Listbox" position="140,140" zPosition="2" size="400,960" backgroundColor="OE_Background" scrollbarMode="showOnDemand" transparent="1">
 	<convert type="TemplatedMultiContent">
 	{"template": [
@@ -4331,6 +4332,13 @@
 	<panel name="StanDardScreen"/>
 	<widget name="connect" position="260,235" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy24.png" transparent="1" alphatest="blend"/>
 	<widget name="lab1" position="300,255" halign="center" size="503,80" zPosition="1" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" valign="top" transparent="1"/>
+  </screen>
+	<!-- CLIENT MODE BOX SETUP-->
+  <screen name="ClientModeBoxMenu" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,900" size="64,43"/>
+	<widget name="config" itemHeight="60" position="140,150" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="text" backgroundColor="OE_Background" foregroundColor="blue_light" position="185,850" size="640,50" transparent="1" valign="top"/>
   </screen>
 	<!-- MULTI TRANSCODING SETUP-->
   <screen name="TranscodingSetup" position="fill" flags="wfNoBorder">
