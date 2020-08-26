@@ -4338,7 +4338,15 @@
 	<panel name="StanDardScreen"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,900" size="64,43"/>
 	<widget name="config" itemHeight="60" position="140,150" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 26" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="text" backgroundColor="OE_Background" foregroundColor="blue_light" position="185,850" size="640,50" transparent="1" valign="top"/>
+	<widget source="text" render="Label" position="140,850" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="2" size="1300,50" transparent="1" valign="top"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,450" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	  <convert type="ConditionalShowHide"/>
+	</widget>
+  </screen>
+  <screen name="ClientModeBoxAbout" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,900" size="64,43"/>
+	<widget name="about" position="140,150" size="1300,800" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- MULTI TRANSCODING SETUP-->
   <screen name="TranscodingSetup" position="fill" flags="wfNoBorder">
