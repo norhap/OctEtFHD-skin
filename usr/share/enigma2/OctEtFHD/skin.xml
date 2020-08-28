@@ -4348,6 +4348,30 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,900" size="64,43"/>
 	<widget name="about" position="140,150" size="1300,800" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1"/>
   </screen>
+  <screen name="ClientModeBoxWizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1850,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="-11" valign="center"/>
+	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD; 34" position="380,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="85,142" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<widget name="text" font="FHD; 30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="900,150" transparent="1"/>
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1500,500" transparent="1">
+	  <convert type="TemplatedMultiContent">
+				{"template":[ MultiContentEntryText(pos=(20,2),size=(1420,45),flags=RT_HALIGN_LEFT,text=0) ],
+				"fonts":[gFont("FHD",30) ],"itemHeight":50}
+			</convert>
+	</widget>
+	<widget name="config" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1500,500" zPosition="1"/>
+	<eLabel text="Progress Wizard :" font="FHD; 34" backgroundColor="OE_Background" position="380,420" size="300,50" transparent="1"/>
+	<widget name="stepslider" borderWidth="1" position="700,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<widget name="step" borderWidth="1" position="700,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,10" size="220,132" transparent="1" zPosition="10"/>
+	<eLabel backgroundColor="white" name="" position="380,470" size="1500,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
+	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
+	<panel name="ClockBg"/>
+  </screen>
 	<!-- MULTI TRANSCODING SETUP-->
   <screen name="TranscodingSetup" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
