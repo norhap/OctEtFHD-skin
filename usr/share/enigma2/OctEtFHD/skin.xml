@@ -4023,6 +4023,15 @@
 	<widget name="labstop" position="405,215" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red"/>
 	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
   </screen>
+	<!-- NFS -->
+  <screen name="NetworkNfs" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="lab1" position="170,150" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labactive" position="405,150" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" transparent="1"/>
+	<widget name="lab2" position="170,215" size="300,50" font="FHD; 32" backgroundColor="OE_Background" valign="center" transparent="1"/>
+	<widget name="labstop" position="405,215" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red"/>
+	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
+  </screen>
 	<!-- FTP TELNET -->
   <screen name="NetworkServiceSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
