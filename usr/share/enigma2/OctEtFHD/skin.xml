@@ -4057,6 +4057,12 @@
 	  <convert type="ConditionalShowHide"/>
 	</widget>
   </screen>
+	<!-- NETWORK SERVICES LOG-->
+  <screen name="NetworkServiceLog" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="infotext" position="140,140" size="1300,250" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,960" size="64,43"/>
+  </screen>
 	<!-- MOUNT MANAGER-->
   <screen name="DevicesMountPanel" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
