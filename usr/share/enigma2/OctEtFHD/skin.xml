@@ -4042,7 +4042,7 @@
 	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
   </screen>
 	<!-- MINIDLNA -->
-	<screen name="NetworkMiniDLNA" position="fill" flags="wfNoBorder">
+  <screen name="NetworkMiniDLNA" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<widget name="autostart" position="140,140" size="300,50" font="FHD; 32" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labdisabled" position="300,140" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
@@ -4069,7 +4069,16 @@
 	<widget name="tivo" position="140,900" size="250,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="tivoinactive" position="370,915" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
 	<widget name="tivoactive" position="370,915" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
-	</screen>
+  </screen>
+	<!-- OPENVPN-->
+  <screen name="NetworkOpenvpn" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="lab1" position="140,140" size="300,50" font="FHD; 32" foregroundColor="blue_light" valign="center" transparent="1" zPosition="2"/>
+	<widget name="labactive" position="320,140" size="530,50" font="FHD; 32" halign="center" valign="center" transparent="0" backgroundColor="OE_Background" zPosition="2"/>
+	<widget name="lab2" position="140,250" size="300,50" font="FHD; 32" foregroundColor="blue_light" valign="center" transparent="1" zPosition="2"/>
+	<widget name="labstop" position="450,250" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labrun" position="450,250" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
+  </screen>
 	<!-- INETD RECOVERY NETWORK -->
   <screen name="InetdRecovery" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
