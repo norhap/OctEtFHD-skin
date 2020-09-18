@@ -4070,6 +4070,38 @@
 	<widget name="tivoinactive" position="370,915" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
 	<widget name="tivoactive" position="370,915" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
   </screen>
+	<!-- USHARE-->
+  <screen name="NetworkuShare" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="autostart" position="140,140" size="300,50" font="FHD; 32" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labdisabled" position="300,140" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labactive" position="300,140" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
+	<widget name="status" position="140,190" size="200,50" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<widget name="labstop" position="650,140" size="350,50" font="FHD; 32" halign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labrun" position="650,140" size="350,50" font="FHD; 32" halign="center" backgroundColor="green" zPosition="2"/>
+	<widget name="username" position="140,240" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labuser" position="450,240" size="550,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="iface" position="140,340" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labiface" position="450,340" size="550,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="port" position="140,440" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labport" position="450,440" size="550,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="telnetport" position="140,540" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labtelnetport" position="450,540" size="550,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="sharedir" position="140,640" size="300,60" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labsharedir" position="450,640" size="550,50" font="FHD; 32" valign="top" backgroundColor="#4D5375"/>
+	<widget name="web" position="140,740" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="webinactive" position="450,755" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
+	<widget name="webactive" position="450,755" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
+	<widget name="dlna" position="140,840" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="dlnainactive" position="450,855" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
+	<widget name="dlnaactive" position="450,855" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
+	<widget name="xbox" position="500,740" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="xboxinactive" position="770,755" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
+	<widget name="xboxactive" position="770,755" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
+	<widget name="telnet" position="500,840" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="telnetinactive" position="770,855" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
+	<widget name="telnetactive" position="770,855" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
+  </screen>
 	<!-- OPENVPN-->
   <screen name="NetworkOpenvpn" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
