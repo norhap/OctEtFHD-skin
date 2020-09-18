@@ -4041,6 +4041,35 @@
 	<widget name="labstop" position="405,215" size="210,50" font="FHD; 32" valign="center" halign="center" backgroundColor="red"/>
 	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD; 32" valign="center" halign="center" backgroundColor="green"/>
   </screen>
+	<!-- MINIDLNA -->
+	<screen name="NetworkMiniDLNA" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="autostart" position="140,140" size="300,50" font="FHD; 32" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labdisabled" position="300,140" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labactive" position="300,140" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
+	<widget name="status" position="140,190" size="200,50" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<widget name="labstop" position="650,140" size="350,50" font="FHD; 32" halign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labrun" position="650,140" size="350,50" font="FHD; 32" halign="center" backgroundColor="green" zPosition="2"/>
+	<widget name="username" position="140,240" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labuser" position="350,240" size="410,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="iface" position="140,340" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labiface" position="350,340" size="410,50" font="Regular;21" valign="center" backgroundColor="#4D5375"/>
+	<widget name="port" position="140,440" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labport" position="350,440" size="410,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="serialno" position="140,540" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labserialno" position="350,540" size="410,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="sharedir" position="140,640" size="300,60" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labsharedir" position="350,640" size="410,50" font="FHD; 32" valign="top" backgroundColor="#4D5375"/>
+	<widget name="inotify" position="140,740" size="200,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="inotifyinactive" position="370,755" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
+	<widget name="inotifyactive" position="370,755" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
+	<widget name="dlna" position="140,820" size="250,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="dlnainactive" position="370,835" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
+	<widget name="dlnaactive" position="370,835" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
+	<widget name="tivo" position="140,900" size="250,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="tivoinactive" position="370,915" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
+	<widget name="tivoactive" position="370,915" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
+	</screen>
 	<!-- INETD RECOVERY NETWORK -->
   <screen name="InetdRecovery" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
