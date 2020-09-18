@@ -4106,6 +4106,15 @@
 	<widget name="system" position="180,650" size="250,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labsys" position="510,650" size="490,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
   </screen>
+	<!-- SABNZBD-->
+  <screen name="NetworkSABnzbd" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="lab1" position="140,140" size="300,50" font="FHD; 32" foregroundColor="blue_light" valign="center" transparent="1" zPosition="2"/>
+	<widget name="labactive" position="320,140" size="530,50" font="FHD; 32" halign="center" valign="center" transparent="0" backgroundColor="OE_Background" zPosition="2"/>
+	<widget name="lab2" position="140,250" size="300,50" font="FHD; 32" foregroundColor="blue_light" valign="center" transparent="1" zPosition="2"/>
+	<widget name="labstop" position="450,250" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labrun" position="450,250" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
+  </screen>
 	<!-- NETWORK PASSWORD-->
   <screen name="NetworkPassword" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
