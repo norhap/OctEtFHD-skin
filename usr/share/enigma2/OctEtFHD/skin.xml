@@ -4084,6 +4084,28 @@
 	<panel name="StanDardScreen"/>
 	<widget name="config" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
   </screen>
+	<!--INADYN-->
+  <screen name="NetworkInadyn" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="autostart" position="140,140" size="300,50" font="FHD; 32" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labdisabled" position="300,140" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labactive" position="300,140" size="300,50" font="FHD; 32" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
+	<widget name="status" position="140,190" size="200,50" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<widget name="labstop" position="650,140" size="350,50" font="FHD; 32" halign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labrun" position="650,140" size="350,50" font="FHD; 32" halign="center" backgroundColor="green" zPosition="2"/>
+	<widget name="time" position="140,250" size="400,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labtime" position="510,250" size="490,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="username" position="140,350" size="300,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labuser" position="510,350" size="490,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="password" position="140,450" size="230,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labpass" position="510,450" size="490,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="alias" position="140,550" size="150,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labalias" position="510,550" size="490,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+	<widget name="sinactive" position="140,665" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
+	<widget name="sactive" position="140,665" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
+	<widget name="system" position="180,650" size="250,50" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="labsys" position="510,650" size="490,50" font="FHD; 32" valign="center" backgroundColor="#4D5375"/>
+  </screen>
 	<!-- NETWORK PASSWORD-->
   <screen name="NetworkPassword" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
