@@ -4498,4 +4498,9 @@
 	<widget name="HelpTextHeader2" position="140,830" size="1300,50" backgroundColor="OE_Background" font="RegularBold; 22" foregroundColor="blue_light" halign="center" valign="center"/>
 	<widget name="HelpText2" position="140,800" size="1300,210" backgroundColor="OE_Background" font="RegularBold; 22" halign="center" valign="center"/>
   </screen>
+	<!-- LED GB-->
+  <screen name="LED_GigaSetup" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="config" itemHeight="50" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
+  </screen>
 </skin>
