@@ -4503,4 +4503,9 @@
 	<panel name="StanDardScreen"/>
 	<widget name="config" itemHeight="50" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
   </screen>
+	<!-- SERVICE HISILICON SETUP-->
+  <screen name="HisiSetup" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="config" itemHeight="50" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
+  </screen>
 </skin>
