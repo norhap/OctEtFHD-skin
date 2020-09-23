@@ -247,4 +247,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	  <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
 	</widget>
 	</screen>
+	<!-- XTRAEVENT POSTER -->
+  <screen name="poster_firstinfobar">
+    <widget source="session.Event_Now" render="xtraPoster" position="100,490" size="185,278" zPosition="-10"/>
+  </screen>
+  <screen name="poster_secondinfobar">
+    <widget source="session.Event_Now" render="xtraPoster" position="475,223" size="185,278" zPosition="-10"/>
+    <widget source="session.Event_Next" render="xtraPoster" position="475,622" size="185,278" zPosition="-10"/>
+  </screen>
 </skin>
