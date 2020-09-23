@@ -460,7 +460,7 @@
 	<convert type="ServiceName2">Reference</convert>
   </widget>
   <eLabel backgroundColor="OE_Foreground" foregroundColor="OE_Background" name="" position="155,224" size="220,2" zPosition="-15"/>
-  <widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" backgroundColor="OE_Background" font="RegularBold; 34" halign="left" noWrap="1" position="775,170" size="710,48" transparent="1">
+  <widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_Background" font="RegularBold; 34" halign="left" noWrap="1" position="775,170" size="710,48" transparent="1">
 	<convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="OE_Background" font="RegularBold; 34" halign="left" position="665,170" render="Label" size="110,48" source="session.Event_Now" transparent="1">
@@ -478,7 +478,7 @@
 	<convert type="EventTime">StartTime</convert>
 	<convert type="ClockToText"></convert>
   </widget>
-  <widget source="session.Event_Next" font="RegularBold; 30" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" backgroundColor="OE_Background" halign="left" position="775,635" size="1015,48" transparent="1" valign="top">
+  <widget source="session.Event_Next" font="RegularBold; 30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_Background" halign="left" position="775,635" size="730,48" transparent="1" valign="top">
 	<convert type="EventName">Name</convert>
   </widget>
   <widget backgroundColor="OE_Background" font="RegularBold; 30" halign="right" position="1521,635" render="Label" size="165,48" source="session.Event_Next" transparent="1">
