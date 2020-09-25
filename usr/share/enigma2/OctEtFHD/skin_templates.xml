@@ -252,7 +252,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <widget source="session.Event_Now" render="xtraPoster" position="100,490" size="185,278" zPosition="-10"/>
   </screen>
   <screen name="poster_secondinfobar">
-    <widget source="session.Event_Now" render="xtraPoster" position="475,225" size="185,278" zPosition="-10"/>
-    <widget source="session.Event_Next" render="xtraPoster" position="475,630" size="185,278" zPosition="-10"/>
+    <widget source="session.Event_Now" render="xtraPoster" position="470,225" size="185,278" zPosition="-10"/>
+    <widget source="session.Event_Next" render="xtraPoster" position="470,630" size="185,278" zPosition="-10"/>
+  </screen>
+  <screen name="poster_channelselection">
+    <widget source="ServiceEvent" render="xtraPoster" position="80,50" size="185,278" zPosition="-10"/>
   </screen>
 </skin>
