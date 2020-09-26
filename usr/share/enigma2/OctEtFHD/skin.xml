@@ -2216,15 +2216,13 @@
   </screen>
   <screen name="NameserverSetup" title="NameserverSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="introduction_standard"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,700" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="140,877" size="1300,2" zPosition="-9"/>
-	<widget source="introduction" render="Label" font="RegularBold; 30" foregroundColor="green_light" backgroundColor="OE_Background" position="170,895" size="1300,50" transparent="1" halign="left" valign="center"/>
   </screen>
   <screen name="NetworkMountsMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="menulist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,155" size="1300,700" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="140,877" size="1300,2" zPosition="-9"/>
-	<widget source="introduction" render="Label" font="RegularBold; 30" foregroundColor="green_light" backgroundColor="OE_Background" position="170,887" size="1300,50" transparent="1" halign="left" valign="center"/>
+	<panel name="introduction_standard"/>
+	<widget name="menulist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,700" transparent="1"/>
   </screen>
 	<!-- MENU NETWORK -->
   <screen name="NetworkAdapterSelection" title="NetworkAdapterSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3197,27 +3195,6 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
-  <screen name="SkinSelector" title="Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="340,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="430,130" size="1040,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Choose your Skin" font="FHD; 34" backgroundColor="OE_Background" position="430,73" size="1040,50" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="85,130" size="310,2" zPosition="-9" foregroundColor="white"/>
-	<widget render="Label" source="introduction" position="430,895" size="1040,45" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1" valign="center" halign="left" foregroundColor="green_light"/>
-	<widget name="SkinList" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="430,160" size="1040,700" transparent="1"/>
-	<eLabel text="Preview" font="FHD; 34" backgroundColor="OE_Background" position="85,70" size="310,50" transparent="1" halign="center" valign="center"/>
-	<widget alphatest="blend" name="Preview" position="100,160" size="280,210" transparent="1"/>
-	<!-- ohters-->
-	<ePixmap alphatest="blend" pixmap="buttons/key_ok.png" position="1332,960" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="1406,960" size="64,43"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="430,945" size="1040,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="430,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="480,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
-  </screen>
   <screen backgroundColor="black" flags="wfNoBorder" name="Standby" position="0,0" size="1920,1080" title="Standby"/>
 	<!-- ####### Subtitle Display ####### -->
   <screen name="SubtitleDisplay" position="fill" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
@@ -4167,8 +4144,9 @@
 	<panel name="StanDardScreen"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="48,960" size="64,43"/>
 	<widget name="preview" position="1470,300" size="440,440" alphatest="blend"/>
+	<eLabel backgroundColor="blue_light" name="" position="140,877" size="1300,2" zPosition="2"/>
 	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,155" zPosition="10" size="1300,850" transparent="1"/>
-	<widget source="description" render="Label" font="FHD; 30" position="200,550" size="1050,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
+	<widget source="description" render="Label" font="FHD; 30" position="170,820" size="1050,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
 	<widget source="skins" render="Listbox" position="140,140" size="1300,800" enableWrapAround="1" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 	{

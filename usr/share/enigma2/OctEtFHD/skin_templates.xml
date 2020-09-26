@@ -192,6 +192,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="message" position="fill" flags="wfNoBorder">
 	<widget name="message" position="0,0" size="0,0" transparent="1"/>
 	</screen>
+	<!-- INTRODUCTION STANDARD -->
+	<screen name="introduction_standard">
+	<eLabel backgroundColor="blue_light" name="" position="140,877" size="1300,2" zPosition="2"/>
+	<widget source="introduction" render="Label" font="RegularBold; 30" foregroundColor="green_light" backgroundColor="OE_Background" position="170,895" size="1300,50" transparent="1" halign="left" valign="center"/>
+	</screen>
 	<!-- ####### CHOICEBOX ####### -->
 	<screen name="description" position="fill" flags="wfNoBorder">
 	<panel name="autoresize"/>
