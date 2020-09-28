@@ -390,20 +390,20 @@
 	<ePixmap alphatest="blend" pixmap="my_icons/sub_off.png" position="1491,865" size="63,32" zPosition="1"/>
     <eLabel text="SNR" position="35,778" zPosition="2" size="40,25" font="Regular; 22" halign="center" backgroundColor="OE_NewBg" transparent="1" valign="center"/>
 	<widget source="session.FrontendStatus" render="Progress" foregroundColor="blue_light" position="80,785" size="145,15" zPosition="2" borderWidth="2" borderColor="blue_light">
-		<convert type="FrontendInfo">SNR</convert>
+	  <convert type="FrontendInfo">SNR</convert>
 	</widget>
 	<widget source="session.FrontendStatus" render="Label" position="215,772" size="115,40" backgroundColor="OE_Background" transparent="1" halign="center" font="RegularBold; 23" valign="center" zPosition="3" foregroundColor="un56c856">
 	  <convert type="FrontendInfo">SNR</convert>
 	</widget>
     <eLabel text="AGC" position="35,819" zPosition="2" size="45,25" font="Regular; 22" halign="center" backgroundColor="OE_NewBg" transparent="1" valign="center"/>
 	<widget source="session.FrontendStatus" render="Progress" foregroundColor="blue_light" position="80,825" size="145,15" zPosition="2" borderWidth="2" borderColor="blue_light">
-		<convert type="FrontendInfo">AGC</convert>
+	  <convert type="FrontendInfo">AGC</convert>
 	</widget>
 	<widget source="session.FrontendStatus" render="Label" position="215,812" size="115,40" backgroundColor="OE_Background" transparent="1" halign="center" font="RegularBold; 23" valign="center" zPosition="3" foregroundColor="blue_light">
 	  <convert type="FrontendInfo">AGC</convert>
 	</widget>
 	<widget source="session.FrontendInfo" render="Label" position="35,845" size="250,45" font="RegularBold; 22" valign="left" noWrap="1" zPosition="2" backgroundColor="OE_NewBg" transparent="1">
-		<convert type="FrontendInfo">STRING</convert>
+	  <convert type="FrontendInfo">STRING</convert>
 	</widget>
 	<widget alphatest="blend" position="65,895" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 	  <convert type="ServiceName">Reference</convert>
@@ -2914,41 +2914,40 @@
 	<!-- SATFINDER -->
   <screen name="Satfinder" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="left" position="1310,185" render="Label" size="180,45" source="Frontend" transparent="1" zPosition="2">
+	<panel name="introduction_standard"/>
+	<widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="left" position="1280,185" render="Label" size="180,45" source="Frontend" transparent="1" zPosition="2">
 	  <convert type="FrontendInfo">SNRdB</convert>
 	</widget>
-	<eLabel backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" name="snr" position="170,185" size="120,45" text="SNR:" transparent="1"/>
-	<widget borderColor="grey" borderWidth="2" pixmap="colors/00A4C400.png" position="310,198" render="Progress" size="850,20" source="Frontend" transparent="1">
+	<eLabel backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" name="snr" position="140,185" size="120,45" text="SNR:" transparent="1"/>
+	<widget borderColor="grey" borderWidth="2" pixmap="colors/00A4C400.png" position="280,198" render="Progress" size="850,20" source="Frontend" transparent="1">
 	  <convert type="FrontendInfo">SNR</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" position="1180,185" render="Label" size="120,45" source="Frontend" transparent="1">
+	<widget backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" position="1150,185" render="Label" size="120,45" source="Frontend" transparent="1">
 	  <convert type="FrontendInfo">SNR</convert>
 	</widget>
-	<eLabel backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" name="ber" position="170,250" size="120,45" text="BER:" transparent="1"/>
-	<widget borderColor="grey" borderWidth="2" pixmap="colors/000F6EB2.png" position="310,263" render="Progress" size="850,20" source="Frontend" transparent="1">
+	<eLabel backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" name="ber" position="140,250" size="120,45" text="BER:" transparent="1"/>
+	<widget borderColor="grey" borderWidth="2" pixmap="colors/000F6EB2.png" position="280,263" render="Progress" size="850,20" source="Frontend" transparent="1">
 	  <convert type="FrontendInfo">BER</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="FHD; 30" position="1180,250" render="Label" size="120,45" source="Frontend" transparent="1">
+	<widget backgroundColor="OE_Background" font="FHD; 30" position="1150,250" render="Label" size="120,45" source="Frontend" transparent="1">
 	  <convert type="FrontendInfo">BER</convert>
 	</widget>
-	<eLabel backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" name="lock" position="170,315" size="120,45" text="Lock:" transparent="1"/>
-	<widget alphatest="on" pixmap="extensions/lock_on.png" position="310,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
+	<eLabel backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="right" name="lock" position="140,315" size="120,45" text="Lock:" transparent="1"/>
+	<widget alphatest="on" pixmap="extensions/lock_on.png" position="280,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
 	  <convert type="FrontendInfo">LOCK</convert>
 	  <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="on" pixmap="extensions/lock_off.png" position="310,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
+	<widget alphatest="on" pixmap="extensions/lock_off.png" position="280,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
 	  <convert type="FrontendInfo">LOCK</convert>
 	  <convert type="ConditionalShowHide">Invert</convert>
 	</widget>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,555" size="1300,350" transparent="1"/>
-	<eLabel text="TSID:" position="175,365" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
+	<eLabel text="TSID:" position="145,365" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
 	<widget source="tsid" render="Label" position="350,365" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-	<eLabel text="ONID:" position="175,430" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
-	<widget source="onid" render="Label" position="350,430" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-	<eLabel text="Orb Pos:" position="160,495" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
-	<widget source="pos" render="Label" position="350,495" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-	<eLabel backgroundColor="white" name="" position="170,930" size="1300,2" zPosition="-9"/>
-	<widget name="introduction" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" position="170,890" size="1300,45" transparent="1"/>
+	<eLabel text="ONID:" position="145,430" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
+	<widget source="onid" render="Label" position="320,430" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel text="Orb Pos:" position="130,495" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
+	<widget source="pos" render="Label" position="320,495" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,555" size="1300,315" transparent="1"/>
   </screen>
 	<!-- SERVICES FOUND -->
   <screen name="ServicesFound" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2959,10 +2958,9 @@
   </screen>
 	<!-- SCAN -->
   <screen name="ScanSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,155" size="1300,700" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="140,880" size="1300,2" zPosition="-9"/>
-	<widget name="introduction" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" position="170,890" size="1300,45" transparent="1"/>
 	<panel name="StanDardScreen"/>
+	<panel name="introduction_standard"/>
+	<widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,155" size="1300,700" transparent="1"/>
   </screen>
 	<!-- AUTOMATIC SCANING -->
   <screen name="ScanSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2970,8 +2968,8 @@
 	<widget name="header" position="140,145" size="1300,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="140,200" size="1300,2" zPosition="-9"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,center" size="1300,650" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="140,880" size="1300,2" zPosition="-9"/>
-	<widget name="footer" position="170,890" size="1300,45" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="140,880" size="1300,2" zPosition="-9"/>
+	<widget name="footer" position="140,890" size="1300,45" valign="center" halign="center" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
   </screen>
 	<!-- MANUAL SCANING -->
   <screen name="ServiceScan" title="Service Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3001,9 +2999,8 @@
 	<!-- FAST SCANING -->
   <screen name="FastScanScreen" title="Fast Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="introduction_standard"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,160" size="1300,700" transparent="1"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="white" position="140,880" size="1300,2" zPosition="-9"/>
-	<widget name="introduction" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="140,890" size="1300,45" transparent="1" valign="center"/>
   </screen>
   <screen name="FastScanStatus" title="Fast Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
