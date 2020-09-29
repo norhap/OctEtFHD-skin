@@ -2387,23 +2387,12 @@
 	<panel name="StanDardScreen"/>
 	<widget name="about" font="FHD; 30" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,145" size="1300,850" transparent="1" foregroundColor="white"/>
   </screen>
+	<!-- OPENWEBIF -->
   <screen name="OpenWebifConfig" title="OpenWebif Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="OpenWebif Configuration" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget name="lab1" font="FHD; 30" backgroundColor="OE_Background" halign="left" position="170,140" size="1300,50" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="170,195" size="1300,2" zPosition="-9"/>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,215" size="1300,700" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
-	<widget name="key_red" font="Regular; 28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget name="key_green" font="Regular; 28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="StanDardScreen"/>
+	<eLabel backgroundColor="blue_light" position="140,910" size="1300,2" zPosition="2"/>
+	<widget name="lab1" font="RegularBold; 30" foregroundColor="green_light" position="140,910" size="1300,50" transparent="1" halign="center" valign="center"/>
+	<widget name="config" itemHeight="50" font="FHD; 32" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" size="1300,760" transparent="1"/>
   </screen>
   <screen name="OscamInfoMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -2529,28 +2518,9 @@
 	<panel name="ClockBg"/>
   </screen>
   <screen name="picshow" title="Picture player" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="380,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="470,130" size="1000,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="470,73" size="1000,50" transparent="1"/>
-	<widget name="filelist" itemHeight="50" font="Regular; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="469,160" size="1000,750" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="80,320" size="360,2" zPosition="-9"/>
-	<widget source="label" render="Label" font="FHD; 30" backgroundColor="OE_NewBg2" foregroundColor="white" position="80,330" size="360,600" transparent="1" halign="left" valign="top"/>
+	<panel name="StanDardScreen"/>
+	<widget name="filelist" itemHeight="50" font="Regular; 28" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="140,150" size="1300,810" transparent="1"/>
 	<widget name="thn" position="80,70" size="360,240" alphatest="blend"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="470,945" size="1000,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="470,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="800,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1130,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="520,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="850,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="1180,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget name="key_red" font="Regular; 28" backgroundColor="OE_Background" position="520,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget name="key_green" font="Regular; 28" backgroundColor="OE_Background" position="850,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" position="1180,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
   </screen>
   <screen name="Pic_Exif" title="Info" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -4043,7 +4013,7 @@
   <screen name="PESpeedUp" position="fill" title="PE Speed Up">
 	<panel name="StanDardScreen"/>
 	<widget name="config" itemHeight="50" position="140,140" size="1300,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="lab1" position="140,910" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
+	<widget name="lab1" position="140,910" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" halign="center" valign="center"/>
 	<eLabel backgroundColor="blue_light" position="140,900" size="1300,2" zPosition="-9"/>
   </screen>
 	<!-- FILE COMMANDER-->
