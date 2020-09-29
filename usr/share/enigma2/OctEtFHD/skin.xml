@@ -2789,7 +2789,7 @@
 						MultiContentEntryText(pos = (10,5),size = (1250,50),flags = RT_HALIGN_LEFT,text = 1),# index 1 is the nim name,
 						MultiContentEntryText(pos = (50,45),size = (1250,100),font = 1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is a description of the nim settings,
 						],
-						"fonts": [gFont("FHD",32),gFont("Regular",26)],
+						"fonts": [gFont("FHD",32),gFont("RegularBold",26)],
 						"itemHeight": 150
 						}
 		</convert>
@@ -2937,17 +2937,17 @@
 	<!-- MANUAL SCANING -->
   <screen name="ServiceScan" title="Service Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget alphatest="blend" pixmap="icons/scan-s.png" position="25,175" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-s.png" position="1290,190" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	  <convert type="FrontendInfo">TYPE</convert>
 	  <convert type="ValueRange">0,0</convert>
 	  <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="icons/scan-c.png" position="25,175" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-c.png" position="1290,190" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	  <convert type="FrontendInfo">TYPE</convert>
 	  <convert type="ValueRange">1,1</convert>
 	  <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="icons/scan-t.png" position="25,175" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-t.png" position="1290,190" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	  <convert type="FrontendInfo">TYPE</convert>
 	  <convert type="ValueRange">2,2</convert>
 	  <convert type="ConditionalShowHide"/>
@@ -2969,7 +2969,7 @@
 	<panel name="StanDardScreen"/>
 	<widget name="scan_state" position="220,520" size="1050,45" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1"/>
 	<widget name="scan_progress" borderColor="grey" borderWidth="1" backgroundColor="OE_Background" foregroundColor="green_light" position="220,585" size="1050,25" transparent="1"/>
-	<widget name="frontend" pixmap="icons/scan-s.png" alphatest="blend" position="25,175" size="110,110" zPosition="1"/>
+	<widget name="frontend" pixmap="icons/scan-s.png" alphatest="blend" position="1290,190" size="110,110" zPosition="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_ok.png" position="48,980" size="64,43"/>
   </screen>
 	<!-- CABLE SCANING -->
