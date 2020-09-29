@@ -2004,6 +2004,34 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
+	<!-- MOVIESELECTIONSLIM -->
+	<screen name="MovieSelectionSlim" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+	<panel name="SlimScreen"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,0" size="1020,1080" zPosition="-15"/>	
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="100,965" size="915,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="100,125" size="915,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_menu.png" position="10,935" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_info.png" position="10,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="10,1025" size="64,43"/>
+	<widget name="chosenletter" position="350,530" size="380,185" font="Regular;50" foregroundColor="green_light" halign="center" valign="center" transparent="1" zPosition="4"/>
+	<widget name="TrashcanSize" position="550,0" size="300,35" font="RegularBold; 21" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" zPosition="2" transparent="1"/>
+	<widget name="freeDiskSpace" position="100,0" size="430,35" font="RegularBold; 22" halign="left" transparent="1" backgroundColor="OE_Background"/>
+	<widget name="waitingtext" position="110,90" size="503,35" font="RegularBold; 21" halign="center" valign="center" transparent="1" backgroundColor="OE_Background" zPosition="4"/>
+	<widget name="list" position="100,135" size="915,805" zPosition="3" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1" enableWrapAround="1"/>
+	<widget name="DescriptionBorder" position="10,400" size="503,95" zPosition="3" transparent="1"/>
+	<widget source="Service" render="Label" position="550,90" size="420,25" zPosition="1" backgroundColor="OE_Background" font="RegularBold; 21" noWrap="1" transparent="1" valign="top">
+	  <convert type="MovieInfo">RecordServiceName</convert>
+	</widget>
+	<widget source="Service" render="Label" position="50,90" zPosition="1" size="100,25" transparent="1" backgroundColor="OE_Background" font="RegularBold; 21" halign="right">
+	  <convert type="ServiceTime">Duration</convert>
+	  <convert type="ClockToText"/>
+	</widget>
+	<widget backgroundColor="OE_Background" font="RegularBold; 22" halign="left" position="100,840" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="925,125" source="Service" transparent="1" valign="top">
+	  <convert type="EventName">ExtendedDescription</convert>
+	</widget>
+	<widget name="movie_sort" pixmaps="/usr/share/enigma2/skin_default/icons/az.png,/usr/share/enigma2/skin_default/icons/newtop.png,/usr/share/enigma2/skin_default/icons/shuffle.png,/usr/share/enigma2/skin_default/icons/za.png,/usr/share/enigma2/skin_default/icons/oldtop.png,/usr/share/enigma2/skin_default/icons/faz.png,/usr/share/enigma2/skin_default/icons/fza.png,/usr/share/enigma2/skin_default/icons/default.png" position="25,890" size="35,20" transparent="1" alphatest="on"/>
+	<widget name="movie_off" pixmaps="/usr/share/enigma2/skin_default/icons/ask.png,/usr/share/enigma2/skin_default/icons/movielist.png,/usr/share/enigma2/skin_default/icons/quit.png,/usr/share/enigma2/skin_default/icons/pause.png,/usr/share/enigma2/skin_default/icons/playlist.png,/usr/share/enigma2/skin_default/icons/playlistquit.png,/usr/share/enigma2/skin_default/icons/loop.png,/usr/share/enigma2/skin_default/icons/rep.png" position="25,910" size="35,20" transparent="1" alphatest="on"/>
+  </screen>
   <screen name="MovieMenu" title="MovieMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget source="menu" render="Listbox" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,145" size="1300,850" transparent="1">
