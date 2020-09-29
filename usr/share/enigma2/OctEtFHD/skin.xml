@@ -1019,8 +1019,7 @@
 	  <convert type="EventTime">Remaining</convert>
 	  <convert type="RemainingToText">InMinutes</convert>
 	</widget>
-	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="80,367" size="570,1"/>
-	<widget backgroundColor="OE_PreBlack2" borderWidth="0" pixmap="colors/00A4C400.png" position="80,365" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
+	<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="80,365" render="Progress" size="570,5" source="ServiceEvent" transparent="0" zPosition="1">
 	  <convert type="EventTime">Progress</convert>
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" position="80,375" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="570,553" source="ServiceEvent" transparent="1" valign="top">
