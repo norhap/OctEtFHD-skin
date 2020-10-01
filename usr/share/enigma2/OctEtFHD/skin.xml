@@ -1467,6 +1467,7 @@
 	<widget backgroundColor="OE_Background" font="RegularBold; 23" halign="center" name="duration" position="115,210" size="195,45" transparent="1"/>
 	<!-- others -->
 	<eLabel backgroundColor="white" name="" position="80,535" size="267,2" zPosition="-9"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_info.png" position="1624,950" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_ok.png" position="1700,950" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_exit.png" position="1776,950" size="64,43" alphatest="blend"/>
 	<!-- Button -->
@@ -1522,8 +1523,8 @@
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="-11" valign="center"/>
 	<!-- Widget -->
-	<eLabel text="Multi EPG" font="RegularBold; 30" backgroundColor="OE_NewBg2" foregroundColor="white" position="80,85" size="160,50" halign="left" valign="center" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="380,142" size="850,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<widget source="Title" render="Label" font="RegularBold; 30" backgroundColor="OE_NewBg2" foregroundColor="white" position="80,15" size="300,50" halign="left" valign="center" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,142" size="1460,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,142" size="270,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget source="Service" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="380,85" size="830,50" transparent="1">
 	  <convert type="ServiceName">Name</convert>
@@ -1533,9 +1534,12 @@
 	<widget name="more_text" text="MORE" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="white" halign="center" position="104,476" size="223,43" transparent="1"/>
 	<widget name="date" backgroundColor="OE_Background" font="RegularBold; 30" foregroundColor="blue_light" halign="center" position="65,670" size="300,43" transparent="1"/>
 	<widget alphatest="blend" name="now_button_sel" pixmap="colors/epg_label.png" position="101,175" size="229,49" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="now_button" pixmap="colors/epg_label.png" position="101,175" size="0,0" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="next_button" pixmap="colors/epg_label.png" position="101,324" size="0,0" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="next_button_sel" pixmap="colors/epg_label.png" position="101,324" size="229,49" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="more_button" pixmap="colors/epg_label.png" position="101,473" size="0,0" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="more_button_sel" pixmap="colors/epg_label.png" position="101,473" size="229,49" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" position="250,77" render="Picon" size="100,60" source="Service" transparent="1" zPosition="5">
+	<widget alphatest="blend" position="150,77" render="Picon" size="100,60" source="Service" transparent="1" zPosition="5">
 	  <convert type="ServiceName2">Reference</convert>
 	</widget>
 	<widget name="list" font="RegularBold;28" itemHeight="50" setEventItemFont="FHD;32" setEventTimeFont="RegularBold;26" setColWidths="290,180" setColGap="20" setTimeWidth="155" setIconDistance="10" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="380,155" size="1460,550" transparent="1"/>
@@ -1543,23 +1547,23 @@
 	  <convert type="EventName">FullDescription</convert>
 	</widget>
 	<eLabel backgroundColor="blue_light" name="" position="380,715" size="1460,2" zPosition="-9" foregroundColor="white"/>
-	<eLabel backgroundColor="white" name="" position="80,715" size="270,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="80,715" size="270,2" zPosition="-9"/>
 	<!-- others -->
-	<eLabel backgroundColor="white" name="" position="80,930" size="270,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="80,930" size="270,2" zPosition="-9"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="80,950" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_info.png" position="184,950" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_ok.png" position="286,950" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_exit.png" position="1776,950" size="64,43" alphatest="blend"/>
 	<!-- Button -->
-	<eLabel backgroundColor="white" name="" position="380,930" size="1460,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,930" size="1460,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="380,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="670,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="960,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1250,950" size="40,40"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="425,950" size="240,40" render="Label" source="key_red" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="715,950" size="240,40" render="Label" source="key_green" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="1005,950" size="240,40" render="Label" source="key_yellow" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="1295,950" size="240,40" render="Label" source="key_blue" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="425,950" size="240,40" name="key_red" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="715,950" size="240,40" name="key_green" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="1005,950" size="240,40" name="key_yellow" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="1295,950" size="240,40" name="key_blue" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
