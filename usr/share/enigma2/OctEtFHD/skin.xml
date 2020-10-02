@@ -4034,7 +4034,6 @@
 	<panel name="description_standard"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="48,960" size="64,43"/>
 	<widget name="preview" position="1470,300" size="440,440" alphatest="blend"/>
-	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,155" zPosition="10" size="1300,850" transparent="1"/>
 	<widget source="skins" render="Listbox" position="140,140" size="1300,800" enableWrapAround="1" scrollbarMode="showOnDemand">
 	<convert type="TemplatedMultiContent">
 	{
