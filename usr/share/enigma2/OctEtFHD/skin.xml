@@ -935,10 +935,11 @@
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
-	<widget name="languagetext" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<widget name="step" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="380,850" size="245,40" transparent="1" zPosition="1"/>
 	<widget name="stepslider" position="380,900" size="245,40" foregroundColor="blue_light" backgroundColor="OE_Background" borderWidth="1" transparent="1" zPosition="1"/>
-	<widget name="wizard" pixmap="picon_default.png" position="105,20" size="220,132" alphatest="blend" zPosition="1"/>
+	<widget name="step" borderWidth="1" position="700,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="1"/>
 	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="77,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	  <convert type="ConditionalShowHide"/>
@@ -1844,14 +1845,14 @@
   <screen name="LanguageSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="SlimScreen"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="10,925" size="64,43"/>
-	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="100,135" size="685,825" transparent="1">
+	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="100,130" size="685,845" transparent="1">
 	  <convert type="TemplatedMultiContent">
 			{"template":[
-			MultiContentEntryText(pos=(150,8),size=(870,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
-			MultiContentEntryPixmap(pos=(20,2),size=(90,60),png=2),# index 2 is the pixmap
+			MultiContentEntryText(pos=(120,8),size=(870,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
+			MultiContentEntryPixmapAlphaBlend(pos=(20,0),size=(64,64),png=2),# index 2 is the pixmap
 			],
 			"fonts":[gFont("RegularBold",32) ],"itemHeight":65}
-			  </convert>
+	  </convert>
 	</widget>
   </screen>
   <screen name="MinuteInput" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2025,7 +2026,7 @@
 	<screen name="MovieSelectionSlim" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
 	<panel name="SlimScreen"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,0" size="1020,1080" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="100,965" size="915,2" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="100,975" size="915,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="100,125" size="915,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_menu.png" position="10,935" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_info.png" position="10,980" size="64,43"/>
@@ -2034,7 +2035,7 @@
 	<widget name="TrashcanSize" position="550,0" size="300,35" font="RegularBold; 21" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" zPosition="2" transparent="1"/>
 	<widget name="freeDiskSpace" position="100,0" size="430,35" font="RegularBold; 22" halign="left" transparent="1" backgroundColor="OE_Background"/>
 	<widget name="waitingtext" position="110,90" size="503,35" font="RegularBold; 21" halign="center" valign="center" transparent="1" backgroundColor="OE_Background" zPosition="4"/>
-	<widget name="list" position="100,135" size="915,805" zPosition="3" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1" enableWrapAround="1"/>
+	<widget name="list" position="100,135" size="915,795" zPosition="3" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1" enableWrapAround="1"/>
 	<widget name="DescriptionBorder" position="10,400" size="503,95" zPosition="3" transparent="1"/>
 	<widget source="Service" render="Label" position="550,90" size="420,25" zPosition="1" backgroundColor="OE_Background" font="RegularBold; 21" noWrap="1" transparent="1" valign="top">
 	  <convert type="MovieInfo">RecordServiceName</convert>
@@ -2043,7 +2044,7 @@
 	  <convert type="ServiceTime">Duration</convert>
 	  <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold; 22" halign="left" position="100,840" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="925,125" source="Service" transparent="1" valign="top">
+	<widget backgroundColor="OE_Background" font="RegularBold; 22" halign="left" position="100,845" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="925,125" source="Service" transparent="1" valign="top">
 	  <convert type="EventName">ExtendedDescription</convert>
 	</widget>
 	<widget name="movie_sort" pixmaps="/usr/share/enigma2/skin_default/icons/az.png,/usr/share/enigma2/skin_default/icons/newtop.png,/usr/share/enigma2/skin_default/icons/shuffle.png,/usr/share/enigma2/skin_default/icons/za.png,/usr/share/enigma2/skin_default/icons/oldtop.png,/usr/share/enigma2/skin_default/icons/faz.png,/usr/share/enigma2/skin_default/icons/fza.png,/usr/share/enigma2/skin_default/icons/default.png" position="25,890" size="35,20" transparent="1" alphatest="on"/>
@@ -3462,11 +3463,11 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,40" size="220,132" transparent="1" zPosition="10"/>
+	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
-	<widget name="languagetext" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
@@ -3491,11 +3492,11 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,40" size="220,132" transparent="1" zPosition="10"/>
+	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
-	<widget name="languagetext" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
@@ -3520,11 +3521,11 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,40" size="220,132" transparent="1" zPosition="10"/>
+	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
-	<widget name="languagetext" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
@@ -3549,11 +3550,11 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,40" size="220,132" transparent="1" zPosition="10"/>
+	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
-	<widget name="languagetext" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
@@ -3562,15 +3563,15 @@
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1850,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="-11" valign="center"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD; 34" position="380,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" name="" position="380,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="85,142" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD; 34" position="380,95" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,152" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="85,152" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget name="text" font="FHD; 30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="1300,300" transparent="1"/>
 	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="380,480" size="1300,520" transparent="1">
 	  <convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryText(pos=(150,8),size=(870,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
-				MultiContentEntryPixmap(pos=(20,2),size=(90,60),png=2),# index 2 is the pixmap
+				MultiContentEntryText(pos=(120,8),size=(870,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
+				MultiContentEntryPixmapAlphaBlend(pos=(20,0),size=(64,64),png=2),# index 2 is the pixmap
 				],
 				"fonts":[gFont("RegularBold",32) ],"itemHeight":65}
 	  </convert>
@@ -3580,12 +3581,11 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="wizard" pixmap="picon_default.png" position="105,20" size="220,132" alphatest="blend" zPosition="1"/>
+	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="1"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <screen name="NetworkWizard" title="Network Wizard..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -3608,11 +3608,11 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
+	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
-	<widget name="languagetext" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
@@ -3622,8 +3622,8 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="-11" valign="center"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD; 34" position="380,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" name="" position="380,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="85,142" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,152" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="85,152" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget name="text" font="FHD; 30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="1300,50" transparent="1"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1500,500" transparent="1">
 	  <convert type="TemplatedMultiContent">
@@ -3638,14 +3638,13 @@
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<eLabel text="Progress Wizard :" font="FHD; 34" backgroundColor="OE_Background" position="380,420" size="300,50" transparent="1"/>
-	<widget name="stepslider" render="Progress" borderWidth="1" position="700,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
+	<widget name="stepslider" borderWidth="1" position="700,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="380,470" size="1500,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,470" size="1500,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
-	<widget name="languagetext" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
 	<!-- OPKG UPDATER -->
@@ -3666,8 +3665,8 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="-11" valign="center"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD; 34" position="380,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" name="" position="380,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="85,142" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,152" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="85,152" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget name="text" font="FHD; 30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="1300,300" transparent="1"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1300,500" transparent="1">
 	  <convert type="TemplatedMultiContent">
@@ -3681,13 +3680,13 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
+	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="1"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="380,470" size="1300,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,470" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
-	<widget name="languagetext" render="Label" backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
+	<widget name="portpic" position="1700,450" zPosition="10" size="150,150" transparent="1" alphatest="blend"/>
 	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
   </screen>
   <!-- OpenEight Screens -->
