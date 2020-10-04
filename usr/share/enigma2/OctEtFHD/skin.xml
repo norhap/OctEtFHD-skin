@@ -1763,7 +1763,7 @@
 	<panel name="introduction_standard"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,700" transparent="1">
 	  <convert type="TemplatedMultiContent">
-					   {"template": [ MultiContentEntryPixmapAlphaTest(pos = (5, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
+					   {"template": [ MultiContentEntryPixmapAlphaBlend(pos = (5, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
 					   MultiContentEntryText(pos = (70, 6), size = (1000, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
 					   ],
 					   "fonts": [gFont("FHD", 30),gFont("Regular", 28)],
@@ -1809,37 +1809,15 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
+	<!-- OPKGMENU -->
   <screen name="OPKGMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="OPKGMenu" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget name="filelist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,center" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="StanDardScreen"/>
+	<widget name="filelist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,750" transparent="1"/>
   </screen>
+	<!-- OPKGSOURCE -->
   <screen name="OPKGSource" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="OPKG feed source..." font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget name="text" font="FHD; 30" backgroundColor="OE_Background" position="170,center" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="StanDardScreen"/>
+	<widget name="text" font="FHD; 30" backgroundColor="OE_Background" position="140,155" size="1300,50" transparent="1"/>
   </screen>
 	<!-- LANGUAJE SELECTION -->
   <screen name="LanguageSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2115,7 +2093,7 @@
 	<widget source="Statustext" render="Label" font="RegularBold; 32" foregroundColor="white" backgroundColor="OE_Background" position="645,150" size="370,50" transparent="1" halign="right"/>
 	<widget name="devicepic" alphatest="blend" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" position="1075,150" size="54,54" transparent="1"/>
 	<widget name="statuspic" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png" position="1035,158" size="35,35" transparent="1"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="grey" position="170,210" size="900,5" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,210" size="900,5" zPosition="-9"/>
 	<widget name="menulist" itemHeight="50" font="RegularBold; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,230" size="900,550" transparent="1"/>
 	<widget source="description" render="Label" objectTypes="description,Button,Label" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
 	<widget source="description" render="Label" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
@@ -2131,8 +2109,8 @@
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="140,165" size="1300,680" transparent="1">
 	  <convert type="TemplatedMultiContent">
 					{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (10,1),size = (80,80),png = 3),# index 3 is the interface pixmap
-					MultiContentEntryPixmapAlphaTest(pos = (71,46),size = (15,16),png = 4),# index 4 is the default pixmap
+					MultiContentEntryPixmapAlphaBlend(pos = (10,1),size = (80,80),png = 3),# index 3 is the interface pixmap
+					MultiContentEntryPixmapAlphaBlend(pos = (71,46),size = (15,16),png = 4),# index 4 is the default pixmap
 					MultiContentEntryText(pos = (100,0),size = (1200,45),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
 					MultiContentEntryText(pos = (100,42),size = (1200,38),font=1,flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM,text = 2,color=0x81840c,color_sel=0xffffff),# index 2 is the description
 					],
@@ -2362,7 +2340,7 @@
 	  <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (100,20),size = (1100,80),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
-						MultiContentEntryPixmapAlphaTest(pos = (10,6),size = (72,72),png = 3),# index 4 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (10,6),size = (72,72),png = 3),# index 4 is the status pixmap
 						],
 						"fonts": [gFont("FHD",30)],
 						"itemHeight": 85
@@ -2373,7 +2351,7 @@
   <screen name="UserDialog" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="introduction_standard"/>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,155" size="1300,700" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,700" transparent="1"/>
 	<widget name="HelpWindow" position="320,630" size="1,1" zPosition="10"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,630" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	  <convert type="ConditionalShowHide"/>
@@ -2482,32 +2460,20 @@
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,150" size="1300,750" transparent="1"/>
   </screen>
   <screen name="PacketManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="PacketManager" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,155" size="1300,765" transparent="1">
+	<panel name="StanDardScreen"/>
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="140,155" size="1300,765" transparent="1">
 	  <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaBlend(pos = (5,4),size = (72,72),png = 4),# index 4 is the status pixmap
 						MultiContentEntryText(pos = (100,1),size = (1300,45),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
 						MultiContentEntryText(pos = (100,45),size = (1300,38),font=1,flags = RT_HALIGN_LEFT,text = 2,color=0xbf9217,color_sel=0xffffff),# index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (5,82),size = (1300,2),png = 5),# index 4 is the div pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (5,82),size = (1300,2),png = 5),# index 4 is the div pixmap
 					],
-				"fonts": [gFont("FHD",30),gFont("Regular",26)],
+				"fonts": [gFont("FHD",30),gFont("RegularBold",26)],
 				"itemHeight": 85
 				}
 			</convert>
 	</widget>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
   </screen>
   <screen name="ParentalControlChangePin" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -2594,9 +2560,9 @@
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<!-- Widget -->
 	<panel name="StanDardScreen"/>
-	<widget name="list" font="Regular; 28" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="170,160" size="1300,750" transparent="1" zPosition="5"/>
-	<widget name="text" position="170,910" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1" foregroundColor="green_light"/>
-	<widget source="session.CurrentService" render="Label" position="170,995" size="1300,45" font="FHD; 30" halign="left" valign="center" foregroundColor="blue_light" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
+	<widget name="list" font="Regular; 28" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,160" size="1300,750" transparent="1" zPosition="5"/>
+	<widget name="text" position="140,915" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1" foregroundColor="green_light"/>
+	<widget source="session.CurrentService" render="Label" position="140,970" size="1300,45" font="FHD; 30" halign="left" valign="center" foregroundColor="blue_light" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">FleshInfo,Full</convert>
 	</widget>
   </screen>
@@ -2622,45 +2588,29 @@
 	<panel name="ClockBg"/>
   </screen>
   <screen name="PluginManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Plugin manager" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,150" size="1300,696" transparent="1">
+	<panel name="StanDardScreen"/>
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,150" size="1300,696" transparent="1">
 	  <convert type="TemplatedMultiContent">
 			{"templates":
 				{"default": (87,[
-						MultiContentEntryPixmapAlphaTest(pos = (18,16),size = (48,48),png = 5),# index 5 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (18,16),size = (48,48),png = 5),# index 5 is the status pixmap
 						MultiContentEntryText(pos = (90,5),size = (1080,40),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
 						MultiContentEntryText(pos = (100,40),size = (1070,38),font=1,flags = RT_HALIGN_LEFT,text = 2,color=0xbf9217,color_sel=0xffffff),# index 2 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (0,82), size = (1110,3), png = 3), # index 3 is the div pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (0,82), size = (1110,3), png = 3), # index 3 is the div pixmap
 					]),
 				"category": (87,[
 						MultiContentEntryText(pos = (15,3),size = (1060,40),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
 						MultiContentEntryText(pos = (15,40),size = (1060,38),font=1,flags = RT_HALIGN_LEFT,text = 1,color=0xbf9217,color_sel=0xffffff),# index 1 is the description
-						MultiContentEntryPixmapAlphaTest(pos = (0,82), size = (1110,3), png = 3), # index 3 is the div pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (0,82), size = (1110,3), png = 3), # index 3 is the div pixmap
 					])
 				},
-				"fonts": [gFont("FHD",30),gFont("Regular",26)],
+				"fonts": [gFont("FHD",30),gFont("RegularBold",26)],
 				"itemHeight": 105
 			}
 			</convert>
 	</widget>
-	<eLabel name="" foregroundColor="white" backgroundColor="white" position="170,875" size="1300,2" zPosition="-9"/>
-	<widget source="status" render="Label" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="170,885" size="1300,50" transparent="1" valign="center"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="830,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1160,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="880,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_blue" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="1210,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<eLabel backgroundColor="blue_light" position="140,877" size="1300,2" zPosition="2"/>
+	<widget source="status" render="Label" font="FHD; 28" foregroundColor="green_light" backgroundColor="OE_Background" valign="center" halign="center" position="140,900" size="1300,45" transparent="1"/>
   </screen>
   <screen name="PluginManagerInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -2671,7 +2621,7 @@
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,145" size="1300,595" transparent="1">
 	  <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (18,14),size = (48,48),png = 2),# index 2 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (18,14),size = (48,48),png = 2),# index 2 is the status pixmap
 						MultiContentEntryText(pos = (90,5),size = (1080,46),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
 						MultiContentEntryText(pos = (90,54),size = (1080,38),font=1,flags = RT_HALIGN_LEFT,text = 1,color=0x8A8787,color_sel=0x8A8787),# index 1 is the state
 					],
@@ -2702,7 +2652,7 @@
 				{"template": [
 						MultiContentEntryText(pos = (90,5),size = (1080,42),font=0,flags = RT_HALIGN_LEFT,text = 0),# index 0 is the name
 						MultiContentEntryText(pos = (90,46),size = (1080,38),font=1,flags = RT_HALIGN_LEFT,text = 1),# index 1 is the state
-						MultiContentEntryPixmapAlphaTest(pos = (15,5),size = (48,48),png = 2),# index 2 is the status pixmap
+						MultiContentEntryPixmapAlphaBlend(pos = (15,5),size = (48,48),png = 2),# index 2 is the status pixmap
 					],
 				"fonts": [gFont("FHD",30),gFont("Regular",26)],
 				"itemHeight": 85
@@ -2805,7 +2755,7 @@
 	  <convert type="TemplatedMultiContent">
 		{"template": [
 		MultiContentEntryText(pos = (50, 0), size = (1200, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-		MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (24, 24), png = 1),
+		MultiContentEntryPixmapAlphaBlend(pos = (5, 5), size = (24, 24), png = 1),
 		],
 		"fonts": [gFont("FHD", 30), gFont("Regular", 26)],
 		"itemHeight": 50
@@ -2870,7 +2820,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="48,960" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="48,900" size="64,43"/>
 	<widget name="list" itemHeight="50" font="FHD; 30" backgroundColor="black" foregroundColor="OE_Foreground" position="140,150" size="1300,500" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="140,710" size="1300,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="140,710" size="1300,2" zPosition="-9"/>
 	<widget name="SNR" position="170,720" size="110,45" backgroundColor="OE_Background" font="FHD; 30" transparent="1"/>
 	<widget name="snr_bar" foregroundColor="green_light" borderColor="OE_Selection" borderWidth="2" position="290,730" size="500,25" transparent="1"/>
 	<widget name="snr_percentage" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="green_light" position="800,720" size="120,45" transparent="1"/>
@@ -2952,7 +2902,7 @@
 	  <convert type="ConditionalShowHide">Invert</convert>
 	</widget>
 	<eLabel text="TSID:" position="145,365" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
-	<widget source="tsid" render="Label" position="350,365" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<widget source="tsid" render="Label" position="320,365" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 	<eLabel text="ONID:" position="145,430" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
 	<widget source="onid" render="Label" position="320,430" size="150,35" font="FHD; 30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 	<eLabel text="Orb Pos:" position="130,495" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD; 30" transparent="1" halign="right"/>
@@ -2975,8 +2925,7 @@
 	<!-- AUTOMATIC SCANING -->
   <screen name="ScanSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<eLabel backgroundColor="white" name="" position="140,200" size="1300,2" zPosition="-9"/>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,center" size="1300,650" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" size="1300,730" transparent="1"/>
 	<eLabel backgroundColor="blue_light" name="" position="140,880" size="1300,2" zPosition="-9"/>
 	<widget name="footer" position="140,890" size="1300,45" valign="center" halign="center" font="FHD; 28" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
   </screen>
@@ -3288,10 +3237,10 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="400,800" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="490,280" size="870,2" zPosition="-9"/>
 	<!-- Widget -->
-	<eLabel text="Softwaremanager" font="FHD; 34" backgroundColor="OE_Background" position="490,223" size="870,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
+	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="490,223" size="870,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
 	<widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" position="490,290" size="870,495" transparent="1">
 	  <convert type="TemplatedMultiContent">
-				   {"template": [ MultiContentEntryText(pos = (15, 2), size = (600, 55), flags = RT_HALIGN_LEFT, text = 1) ],
+				   {"template": [ MultiContentEntryText(pos = (15, 2), size = (800, 55), flags = RT_HALIGN_LEFT, text = 1) ],
 				   "fonts": [gFont("FHD", 32)],
 				   "itemHeight": 55
 				   }
@@ -3309,9 +3258,9 @@
 		</convert>
 	</widget>
 	<!-- /*Buttons-->
-	<eLabel backgroundColor="white" name="" position="490,795" size="870,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="490,795" size="870,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="490,812" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" halign="left" valign="center" position="540,812" size="320,40" transparent="1" zPosition="1"/>
+	<widget source="key_red" render="Label" font="RegularBold; 26" backgroundColor="OE_Background" halign="left" valign="center" position="540,812" size="320,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
@@ -3803,7 +3752,7 @@
   <screen name="SelectImage" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="description_standard"/>
-	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
+	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,155" zPosition="10" size="1300,675" transparent="1"/>
   </screen>
 	<!-- AUTO BACKUP -->
   <screen name="Config" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3927,7 +3876,7 @@
 	<!-- INETD RECOVERY NETWORK -->
   <screen name="InetdRecovery" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
+	<widget name="config" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,155" zPosition="10" size="1300,630" transparent="1"/>
   </screen>
 	<!--INADYN-->
   <screen name="NetworkInadyn" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3980,12 +3929,12 @@
 	<!-- MOUNT MANAGER-->
   <screen name="DevicesMountPanel" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="lab1" position="170,140" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
-	<widget name="key_menu" position="155,920" size="400,50" font="FHD; 30" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
+	<widget name="lab1" position="140,140" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
+	<widget name="key_menu" position="140,920" size="400,50" font="FHD; 30" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="47,930" size="64,43" alphatest="blend"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="170,155" size="1300,720" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,720" transparent="1">
 	  <convert type="TemplatedMultiContent">
-		{"template": [ MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (110, 110), png = 2), # index 3 is the interface pixmap
+		{"template": [ MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (110, 110), png = 2), # index 3 is the interface pixmap
 		MultiContentEntryText(pos = (90, 10), size = (1000, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
 		],
 		"fonts": [gFont("FHD", 30),gFont("Regular", 28)],
@@ -4139,7 +4088,7 @@
 	}
 	</convert>
 	</widget>
-	<widget name="lab1" position="80,145" size="670,50" backgroundColor="OE_Background" font="RegularBold;26" zPosition="2" transparent="1" halign="center"/>
+	<widget name="lab1" position="80,145" size="670,50" backgroundColor="OE_Background" font="RegularBold; 26" zPosition="2" transparent="1" halign="center"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
 	</screen>
 	<screen name="VISIONDevicePanelConf" position="fill" flags="wfNoBorder">
@@ -4326,7 +4275,7 @@
 	<widget source="list" render="Listbox" position="140,150" size="1300,800" scrollbarMode="showOnDemand">
 	  <convert type="TemplatedMultiContent">
 		{"template": [
-			MultiContentEntryPixmapAlphaTest(pos=(10,15), size=(100,72), png=3), # Thumbnail
+			MultiContentEntryPixmapAlphaBlend(pos=(10,15), size=(100,72), png=3), # Thumbnail
 			MultiContentEntryText(pos=(115,1), size=(800,100), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1)],
 			"fonts": [gFont("RegularBold",26)],
 		"itemHeight": 100}
