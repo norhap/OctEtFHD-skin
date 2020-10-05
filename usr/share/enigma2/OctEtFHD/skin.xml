@@ -3713,8 +3713,8 @@
 	</widget>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_ok.png" position="170,957" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_exit.png" position="253,957" size="64,43" alphatest="blend"/>
-	<!-- MENU HORIZONTAL -->
   </screen>
+	<!-- MENU HORIZONTAL -->
 	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="transparent" flags="wfNoBorder">
 	<eLabel position="0,790" size="1920,290" backgroundColor="#20000000" zPosition="-1"/>
 	<eLabel position="0,780" size="1920,2" backgroundColor="blue_light" zPosition="-1"/>
