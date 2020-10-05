@@ -199,8 +199,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- DESCRIPTION STANDARD -->
 	<screen name="description_standard">
-	<eLabel backgroundColor="blue_light" position="140,877" size="1300,2" zPosition="2"/>
-	<widget source="description" render="Label" font="FHD; 30" position="140,895" size="1300,50" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
+	<eLabel backgroundColor="blue_light" position="140,857" size="1300,2" zPosition="2"/>
+	<widget source="description" render="Label" font="FHD; 30" position="140,875" size="1300,75" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
+	<widget name="description" font="FHD; 30" position="140,875" size="1300,75" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
 
 	</screen>
 	<!-- ####### CHOICEBOX ####### -->

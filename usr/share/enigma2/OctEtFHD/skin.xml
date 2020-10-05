@@ -1299,15 +1299,10 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
-  <screen name="Console" title="Command execution..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Command execution..." font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget name="text" font="Console;27" backgroundColor="OE_Background" position="170,160" size="1300,800" transparent="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<!-- CONSOLE -->
+  <screen name="Console" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="text" font="Console;27" backgroundColor="OE_Background" position="140,160" size="1300,800" transparent="1"/>
   </screen>
   <screen name="CommitInfoSetup" title="Open Vision Commit Info Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2316,11 +2311,11 @@
 	<widget source="legend1" render="Label" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="center" position="170,150" size="325,95" transparent="1" valign="center"/>
 	<widget source="legend2" render="Label" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="center" position="495,150" size="650,95" transparent="1" valign="center"/>
 	<widget source="legend3" render="Label" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="OE_Foreground" halign="center" position="1145,150" size="325,95" transparent="1" valign="center"/>
-	<eLabel backgroundColor="white" name="" position="140,250" size="1300,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="140,250" size="1300,2" zPosition="-9"/>
 	<widget source="config" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,260" size="1300,680" transparent="1">
 	  <convert type="TemplatedMultiContent">
 						{"template": [
-						MultiContentEntryPixmapAlphaBlend(pos = (10, 2), size = (68, 68), png = 0), # index 0 is the isMounted pixmap
+			MultiContentEntryPixmapAlphaBlend(pos = (10, 2), size = (68, 68), png = 0), # index 0 is the isMounted pixmap
 			MultiContentEntryText(pos = (100, 0), size = (390, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the sharename
 			MultiContentEntryText(pos = (500, 15), size = (350, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the IPdescription
 			MultiContentEntryText(pos = (100, 40), size = (450, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 3 is the DIRdescription
@@ -3651,6 +3646,7 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
+	<!-- JOBVIEW -->
   <screen name="JobView" title="JobView" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1300,600" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="150,680" zPosition="-11" valign="center"/>
@@ -3663,16 +3659,14 @@
 	<widget source="job_progress" render="Label" font="RegularBold; 32" backgroundColor="OE_Background" halign="center" position="1050,center" size="250,50" transparent="1" zPosition="2" foregroundColor="white">
 	  <convert type="ProgressToText"/>
 	</widget>
-	<widget source="job_status" render="Label" font="FHD; 32" backgroundColor="OE_Background" enableWrapAround="1" foregroundColor="OE_Foreground" position="240,607" size="1060,50" transparent="1" zPosition="4"/>
-	<widget name="config" font="FHD; 32" backgroundColor="OE_Background" enableWrapAround="1" foregroundColor="OE_Foreground" position="240,662" size="1060,50" transparent="1" zPosition="4"/>
+	<widget source="job_status" render="Label" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,607" size="1060,50" transparent="1" zPosition="4"/>
+	<widget name="config" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,662" size="1060,50" transparent="1" zPosition="4"/>
 	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="95,256" size="100,100" transparent="1" zPosition="10"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="107,center" size="78,75" zPosition="4"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="240,770" size="1060,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="240,770" size="1060,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="240,785" size="40,40"/>
-	<widget source="cancelable" render="FixedLabel" text="Cancel" backgroundColor="OE_Background" font="Regular; 28" halign="left" position="290,785" size="320,40" transparent="1" zPosition="1">
-	  <convert type="ConditionalShowHide"/>
-	</widget>
+	<eLabel text="Exit" font="RegularBold; 24" backgroundColor="OE_Background" position="300,770" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
@@ -3907,11 +3901,11 @@
 	<!-- NETWORK PASSWORD-->
   <screen name="NetworkPassword" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="description" font="FHD; 30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<panel name="description_standard"/>
+	<widget name="config" position="140,150" size="1300,700" scrollbarMode="showOnDemand" font="RegularBold; 23" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="footnote" position="420,610" size="400,50" zPosition="1" font="FHD; 30" foregroundColor="blue_light" backgroundColor="OE_Background"  halign="center" valign="center"  transparent="1"/>
-	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,400" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,400" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	  <convert type="ConditionalShowHide"/>
 	</widget>
   </screen>
@@ -3944,14 +3938,14 @@
 	<widget name="Linconn" position="500,880" size="550,50" font="FHD; 30" backgroundColor="#9f1313"/>
   </screen>
 	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
-		  <eLabel position="0,810" size="1920,270" backgroundColor="#20000000" zPosition="-1"/>
-		  <eLabel position="0,810" size="1920,1" backgroundColor="#1b3c85" zPosition="-1"/>
-		  <widget name="title" position="555,780" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#ffffff" backgroundColor="#00000000" font="RegularBold; 46" transparent="1"/>
-		  <widget source="label1" render="Label" position="50,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-		  <widget source="label2" render="Label" position="425,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-		  <widget source="label3" render="Label" position="800,850" size="320,200" font="RegularBold;50" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#008cff" backgroundColor="#00000000" transparent="1"/>
-		  <widget source="label4" render="Label" position="1175,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-		  <widget source="label5" render="Label" position="1550,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<eLabel position="0,810" size="1920,270" backgroundColor="#20000000" zPosition="-1"/>
+	<eLabel position="0,810" size="1920,1" backgroundColor="#1b3c85" zPosition="-1"/>
+	<widget name="title" position="555,780" size="800,50" zPosition="3" halign="center" valign="top" foregroundColor="#ffffff" backgroundColor="#00000000" font="RegularBold; 46" transparent="1"/>
+	<widget source="label1" render="Label" position="50,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label2" render="Label" position="425,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label3" render="Label" position="800,850" size="320,200" font="RegularBold;50" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#008cff" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label4" render="Label" position="1175,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
+	<widget source="label5" render="Label" position="1550,850" size="320,200" font="RegularBold;28" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
 	</screen>
 	<!-- NETWORK MAC SETUP-->
   <screen name="NetworkMacSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3962,8 +3956,7 @@
 	<!-- NETWORK IPV6 SETUP-->
   <screen name="IPv6Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,630" transparent="1"/>
-	<widget name="description" font="FHD; 30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" font="RegularBold; 25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" zPosition="10" size="1300,630" transparent="1"/>
   </screen>
 	<!-- E2IPLAYER SETUP-->
   <screen name="ConfigMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3977,7 +3970,7 @@
 	<panel name="description_standard"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="48,960" size="64,43"/>
 	<widget name="preview" position="1470,300" size="440,440" alphatest="blend"/>
-	<widget source="skins" render="Listbox" position="140,140" size="1300,800" enableWrapAround="1" scrollbarMode="showOnDemand">
+	<widget source="skins" render="Listbox" position="140,140" size="1300,710" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	<convert type="TemplatedMultiContent">
 	{
 	"template": [
