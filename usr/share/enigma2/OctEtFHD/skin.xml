@@ -817,14 +817,15 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
+	<!-- AUDIOSELECTION -->
   <screen name="AudioSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1230,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1060,2" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="165,130" size="1065,2" zPosition="-9"/>
 	<!-- Widget -->
-	<eLabel text="AudioSelection" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1060,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold; 30" position="170,155" scrollbarMode="showOnDemand" size="1060,200" transparent="1" zPosition="3"/>
-	<widget position="170,385" render="Listbox" scrollbarMode="showOnDemand" size="1060,550" source="streams" transparent="1" zPosition="3">
+	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1060,50" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold; 30" position="150,155" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1060,250" transparent="1" zPosition="3"/>
+	<widget position="170,435" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1060,500" source="streams" transparent="1" zPosition="3">
 	  <convert type="TemplatedMultiContent">
 							   {"templates":
 							   {"default": (50, [
@@ -848,8 +849,9 @@
 		  </convert>
 	</widget>
 	<!-- other -->
-	<eLabel backgroundColor="white" position="170,365" size="1060,5"/>
-	<eLabel backgroundColor="white" position="170,950" size="1060,2"/>
+	<eLabel backgroundColor="blue_light" position="165,415" size="1065,5"/>
+	<eLabel backgroundColor="blue_light" position="165,950" size="1065,2"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="72,30" size="75,75" transparent="1" zPosition="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="78,960" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_ok.png" position="336,960" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="420,960" size="64,43"/>
@@ -3715,7 +3717,7 @@
 	<ePixmap name="new ePixmap" pixmap="buttons/key_exit.png" position="253,957" size="64,43" alphatest="blend"/>
   </screen>
 	<!-- MENU HORIZONTAL -->
-	<screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="Animmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="transparent" flags="wfNoBorder">
 	<eLabel position="0,790" size="1920,290" backgroundColor="#20000000" zPosition="-1"/>
 	<eLabel position="0,780" size="1920,2" backgroundColor="blue_light" zPosition="-1"/>
 	<eLabel position="0,782" size="1920,8" backgroundColor="OE_NewBg2" zPosition="-1"/>
@@ -3724,17 +3726,17 @@
 	<widget name="red" objectTypes="red,Label,Button" position="20,795" size="150,40" font="RegularBold;22" backgroundColor="red"/>
 	<widget name="green" objectTypes="green,Label,Button" position="180,795" size="150,40" font="RegularBold;22" backgroundColor="green"/>
 	<widget name="yellow" objectTypes="yellow,Label,Button" position="340,795" size="150,40" font="RegularBold;22" backgroundColor="yellow"/>
-	<widget name="title" position="555,780" size="800,80" zPosition="3" halign="center" valign="top" backgroundColor="blue_light" font="RegularBold; 40" transparent="0"/>
+	<widget name="title" position="545,780" size="800,80" zPosition="3" halign="center" valign="top" backgroundColor="blue_light" font="RegularBold; 40" transparent="0"/>
 	<widget source="label1" render="Label" position="0,850" size="320,200" font="RegularBold;30" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
 	<widget source="label2" render="Label" position="375,850" size="320,200" font="RegularBold;30" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
 	<widget source="label3" render="Label" position="760,850" size="370,200" font="RegularBold;34" halign="center" valign="center" zPosition="2" noWrap="1" backgroundColor="OE_NewBg2" transparent="0"/>
 	<widget source="label4" render="Label" position="1225,850" size="320,200" font="RegularBold;30" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
 	<widget source="label5" render="Label" position="1600,850" size="320,200" font="RegularBold;30" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
-	</screen>
+  </screen>
 	<!-- MENU HORIZONTAL ICONS-->
-	<screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
-	<eLabel position="0,787" size="1920,55" backgroundColor="blue_light" zPosition="-1"/>
-	<widget name="title" position="555,780" size="800,60" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="#00000000" font="RegularBold; 46" transparent="1"/>
+  <screen name="Iconmain" position="0,0" size="1920,1080" title="Mainmenu" backgroundColor="#ffffffff" flags="wfNoBorder">
+	<eLabel position="0,787" size="1920,55" backgroundColor="OE_NewBg2" zPosition="-1"/>
+	<widget name="title" position="555,780" size="800,60" zPosition="3" halign="center" valign="top" foregroundColor="#00f0f0f0" backgroundColor="OE_NewBg2" font="RegularBold; 46" transparent="1"/>
 	<widget name="pointer" position="555,780" size="1,1" pixmap="buttons/blank.png" alphatest="blend"/>
 	<widget name="red" objectTypes="red,Label,Button" position="20,795" size="150,40" font="RegularBold;22" backgroundColor="red"/>
 	<widget name="green" objectTypes="green,Label,Button" position="180,795" size="150,40" font="RegularBold;22" backgroundColor="green"/>
