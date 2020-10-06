@@ -3725,7 +3725,7 @@
 	<eLabel position="0,1052" size="1920,8" backgroundColor="OE_NewBg2" zPosition="-1"/>
 	<widget name="red" objectTypes="red,Label,Button" position="20,795" size="150,40" font="RegularBold;22" backgroundColor="red"/>
 	<widget name="green" objectTypes="green,Label,Button" position="180,795" size="150,40" font="RegularBold;22" backgroundColor="green"/>
-	<widget name="yellow" objectTypes="yellow,Label,Button" position="340,795" size="150,40" font="RegularBold;22" backgroundColor="yellow"/>
+	<widget name="yellow" objectTypes="yellow,Label,Button" position="340,795" size="0,0" font="RegularBold;22" backgroundColor="yellow"/>
 	<widget name="title" position="545,780" size="800,80" zPosition="3" halign="center" valign="top" backgroundColor="blue_light" font="RegularBold; 40" transparent="0"/>
 	<widget source="label1" render="Label" position="0,850" size="320,200" font="RegularBold;30" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
 	<widget source="label2" render="Label" position="375,850" size="320,200" font="RegularBold;30" halign="center" valign="center" zPosition="2" noWrap="1" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
@@ -3740,7 +3740,7 @@
 	<widget name="pointer" position="555,780" size="1,1" pixmap="buttons/blank.png" alphatest="blend"/>
 	<widget name="red" objectTypes="red,Label,Button" position="20,795" size="150,40" font="RegularBold;22" backgroundColor="red"/>
 	<widget name="green" objectTypes="green,Label,Button" position="180,795" size="150,40" font="RegularBold;22" backgroundColor="green"/>
-	<widget name="yellow" objectTypes="yellow,Label,Button" position="340,795" size="150,40" font="RegularBold;22" backgroundColor="yellow"/>
+	<widget name="yellow" objectTypes="yellow,Label,Button" position="340,795" size="0,0" font="RegularBold;22" backgroundColor="yellow"/>
 	<widget source="label1" render="Label" position="15,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="#00f0f0f0" backgroundColor="#00000000" transparent="1"/>
 	<widget source="label1s" render="Label" position="15,850" size="300,200" font="RegularBold;40" halign="center" valign="center" zPosition="2" foregroundColor="green_light" backgroundColor="#00000000" transparent="1"/>
 	<widget name="pixmap1" position="15,850" size="300,200" zPosition="1" transparent="1" alphatest="on"/>
