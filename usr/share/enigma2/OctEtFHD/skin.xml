@@ -3544,10 +3544,10 @@
   <screen name="InstallWizardOpkgUpdater" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
 	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10"/>
 	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend"/>
-	<widget source="statusbar" render="Label" font="RegularBold; 27" backgroundColor="OE_Background" position="580,420" size="720,150" transparent="1" halign="center"/>
+	<widget source="statusbar" render="Label" font="RegularBold; 27" backgroundColor="OE_Background" position="585,420" size="720,150" transparent="1" halign="center" valign="center"/>
   </screen>
 	<!-- AUTO DISEQC -->
-  <screen name="AutoDiseqc" title="Auto DiSeqC" backgroundColor="transparent" position="center,center" size="1920,1080">
+  <screen name="AutoDiseqc" title="Auto DiSEqC" backgroundColor="transparent" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="185,250" size="650,750" transparent="1"/>
 	<widget source="statusbar" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="185,180" size="640,50" transparent="1" valign="top"/>
