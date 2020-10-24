@@ -158,11 +158,11 @@ wsize = (wsizex, wsizey)
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
 # move list
 listsize = (wsizex - 30, 420)
-self[&quot;list&quot;].instance.move(ePoint(25, textsize[1] + 41))
+self[&quot;list&quot;].instance.move(ePoint(25, int(textsize[1] + 41)))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 # center window
 #newwidth = wsize[0]
-#self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+#self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgpos.y())))
 	</applet>
 	</screen>
 	 <!-- AUTORESIZE-->

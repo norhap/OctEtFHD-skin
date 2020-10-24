@@ -214,7 +214,7 @@
   <screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
 	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend"/>
 	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10"/>
-	<widget name="text" position="580,420" size="720,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center"/>
+	<widget name="text" position="585,420" size="720,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center" valign="center"/>
   </screen>
 	<!-- MAIN MENU -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
