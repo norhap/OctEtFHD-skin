@@ -214,7 +214,7 @@
   <screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
 	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend"/>
 	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10"/>
-	<widget name="text" position="585,420" size="720,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center" valign="center"/>
+	<widget name="text" position="485,380" size="920,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center" valign="center"/>
   </screen>
 	<!-- MAIN MENU -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
@@ -402,16 +402,16 @@
 	<widget source="session.FrontendStatus" render="Label" position="215,812" size="115,40" backgroundColor="OE_Background" transparent="1" halign="center" font="RegularBold; 23" valign="center" zPosition="3" foregroundColor="blue_light">
 	  <convert type="FrontendInfo">AGC</convert>
 	</widget>
-	<widget source="session.FrontendInfo" render="Label" position="35,845" size="250,45" font="RegularBold; 22" halign="left" noWrap="1" zPosition="2" backgroundColor="OE_NewBg" transparent="1">
+	<widget source="session.FrontendInfo" render="Label" position="35,845" size="280,30" font="RegularBold; 22" halign="left" noWrap="1" zPosition="2" backgroundColor="OE_NewBg" transparent="1">
 	  <convert type="FrontendInfo">STRING</convert>
 	</widget>
-	<widget alphatest="blend" position="60,895" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+	<widget alphatest="blend" position="60,880" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 	  <convert type="ServiceName">Reference</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Label" zPosition="4" position="45,1030" size="255,40" halign="center" valign="center" font="RegularBold; 28" backgroundColor="OE_NewBg" transparent="1">
 	  <convert type="PliExtraInfo">ResolutionString</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv.png" alphatest="blend" position="65,778" zPosition="20" size="250,90" transparent="1">
+	<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv.png" alphatest="blend" position="45,1015" zPosition="20" size="250,90" transparent="1">
 	  <convert type="ServiceInfo">IsStream</convert>
 	  <convert type="ConditionalShowHide">
 	  </convert>
@@ -419,7 +419,7 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1920,1080" title="InfoBar">
+  <screen name="SecondInfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
   <panel name="poster_secondinfobar"/>
   <eLabel backgroundColor="blue_light" name="" position="475,955" size="1210,1" zPosition="20" foregroundColor="white"/>
   <eLabel backgroundColor="OE_NewBg" position="65,center" size="400,1080" transparent="0" zPosition="-20" foregroundColor="white"/>
@@ -561,7 +561,7 @@
 	<convert type="ServiceInfo">VideoHeight</convert>
   </widget>
   <widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv2.png" alphatest="blend" position="65,457" zPosition="20" size="400,200" transparent="1">
-	<convert type="ServiceInfoEX">IsStream</convert>
+	<convert type="ServiceInfo">IsStream</convert>
 	<convert type="ConditionalShowHide">
 	</convert>
   </widget>
