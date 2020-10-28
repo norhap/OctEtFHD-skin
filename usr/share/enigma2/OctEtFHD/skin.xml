@@ -214,7 +214,7 @@
   <screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
 	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend"/>
 	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10"/>
-	<widget name="text" position="485,380" size="920,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center" valign="center"/>
+	<widget name="text" position="440,380" size="1020,150" zPosition="2" transparent="1" font="RegularBold; 27" halign="center" valign="center"/>
   </screen>
 	<!-- MAIN MENU -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
@@ -262,15 +262,15 @@
 	<!-- MENU SORT -->
   <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="MainMenu"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="50,505" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="100,505" size="64,43"/>
-	<eLabel text="Up | Down" position="170,505" size="240,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold; 26" halign="left"/>
-	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="50,595" size="40,40"/>
-	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="50,685" size="40,40"/>
-	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="50,775" size="40,40"/>
-	<widget source="key_red" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="90,580" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
-	<widget source="key_green" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="90,670" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
-	<widget source="key_yellow" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="90,760" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="20,505" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="70,505" size="64,43"/>
+	<eLabel text="Up | Down" position="140,505" size="240,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold; 26" halign="left"/>
+	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="20,595" size="40,40"/>
+	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="20,685" size="40,40"/>
+	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="20,775" size="40,40"/>
+	<widget source="key_red" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="60,580" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_green" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="60,670" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_yellow" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="60,760" size="240,70" transparent="1" zPosition="1" halign="left" valign="center"/>
   </screen>
 	<!-- CHOICEBOX -->
   <screen name="ChoiceBox" position="fill" flags="wfNoBorder">
@@ -4004,10 +4004,10 @@
 	}
 	</convert>
 	</widget>
-		<widget source="menu" render="Listbox" position="630,350" size="820,75" backgroundColor="OE_Background" foregroundColor="blue_light" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+		<widget source="menu" render="Listbox" position="570,350" size="870,75" backgroundColor="OE_Background" foregroundColor="blue_light" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (0,0),size = (820,75),flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER,text = 2),# index 0 is the MenuText,
+				MultiContentEntryText(pos = (0,0),size = (870,75),flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER,text = 2),# index 0 is the MenuText,
 				],
 				"fonts": [gFont("RegularBold",33)],
 				"itemHeight": 75
