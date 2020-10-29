@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <skin>
   <!-- AutoBouquetsMaker -->
   <screen name="AutoBouquetsMaker" position="0,5" size="1920,100" backgroundColor="OE_NewBg2" flags="wfNoBorder">
@@ -785,7 +786,7 @@
 	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
 	<widget name="label" position="170,145" size="1300,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" foregroundColor="white"/>
 	<eLabel backgroundColor="white" name="" position="170,200" size="1300,2" zPosition="-9" foregroundColor="white"/>
-	<widget ame="filelist" itemHeight="90" font="FHD; 30" backgroundColor="OE_Background" position="171,215" size="1300,700" transparent="1" foregroundColor="white"/>
+	<widget name="filelist" itemHeight="90" font="FHD; 30" backgroundColor="OE_Background" position="171,215" size="1300,700" transparent="1" foregroundColor="white"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40"/>
@@ -1036,7 +1037,7 @@
 	<widget name="rmemvalue" font="Regular; 26" position="1300,center" size="210,1000" zPosition="2" valign="top" halign="right" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="pfree" position="980,40" size="150,40" font="Regular; 28" zPosition="3" halign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="pused" position="980,1000" size="150,40" font="Regular; 28" zPosition="3" halign="center" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="slide" render="Progress" position="1040,center" size="30,900" zPosition="3" borderWidth="1" orientation="orBottomToTop"/>
+	<widget name="slide" render="Progress" position="1040,center" size="30,900" zPosition="3" borderWidth="1"/>
 	<!-- Buttons-->
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="90,145" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="90,205" size="40,40"/>
@@ -3393,7 +3394,7 @@
 	<!-- Widget -->
 	<eLabel text="Download Update..." font="FHD; 34" backgroundColor="OE_Background" position="240,308" size="1060,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
 	<ePixmap position="240,375" size="530,50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Facebook/pic/logoUpdate.png" alphatest="blend" zPosition="1"/>
-	<widget ame="name" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,435" size="1060,200" transparent="1"/>
+	<widget name="name" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,435" size="1060,200" transparent="1"/>
 	<widget name="size" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,645" size="1060,50" transparent="1"/>
 	<widget name="slider" position="240,705" size="1000,30" transparent="0" zPosition="2"/>
 	<!-- Clock -->

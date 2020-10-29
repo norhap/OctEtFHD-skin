@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <skin>
   <!-- OctEtFHD Skin 7.70 by SkinMania -->
   <!-- Recommended to use with XPicons (220x132) -->
@@ -164,51 +164,51 @@
 	<color color="OE_Foreground" name="WindowTitleForeground"/>
   </windowstyle>
   <parameters>
-	<parameter name="AllowUserDatesAndTimes" value="1,1"/>
-	<parameter name="AllowUseOnlyIcon" value="1"/>
-	<parameter name="ConfigListSeperator" value="320"/>
-	<parameter name="ChoicelistDash" value="0,3,1000,50"/>
-	<parameter name="ChoicelistName" value="85,3,1000,50"/>
-	<parameter name="ChoicelistIcon" value="10,4,64,50"/>
-	<parameter name="FileListName" value="68,4,1000,50"/>
-	<parameter name="FileListIcon" value="7,4,52,50"/>
-	<parameter name="FileListMultiName" value="125,3,1000,50"/>
+	<parameter name="AllowUserDatesAndTimes" value="1, 1"/>
+	<parameter name="AllowUseOnlyIcon" value="1, 1"/>
+<!--	<parameter name="ConfigListSeperator" value="320"/> -->
+	<parameter name="ChoicelistDash" value="0, 3, 1000, 50"/>
+	<parameter name="ChoicelistName" value="85, 3, 1000, 50"/>
+	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
+	<parameter name="FileListName" value="68, 4, 1000, 50"/>
+	<parameter name="FileListIcon" value="7, 4, 52, 50"/>
+	<parameter name="FileListMultiName" value="125, 3, 1000, 50"/>
 	<parameter name="FileListMultiIcon" value="55, 0, 50, 50"/>
-	<parameter name="FileListMultiLock" value="5,5,50,50"/>
-	<parameter name="PluginBrowserName" value="180,1,45"/>
-	<parameter name="PluginBrowserDescr" value="180,43,34"/>
-	<parameter name="PluginBrowserIcon" value="15,8,150,60"/>
-	<parameter name="PluginBrowserDownloadName" value="90,1,45"/>
-	<parameter name="PluginBrowserDownloadDescr" value="90,43,34"/>
-	<parameter name="PluginBrowserDownloadIcon" value="10,5,60,71"/>
-	<parameter name="ServiceInfo" value="0,0,450,50"/>
-	<parameter name="ServiceInfoLeft" value="0,0,450,45"/>
-	<parameter name="ServiceInfoRight" value="450,0,1000,45"/>
+	<parameter name="FileListMultiLock" value="5, 5, 50, 50"/>
+	<parameter name="PluginBrowserName" value="180, 1, 45"/>
+	<parameter name="PluginBrowserDescr" value="180, 43, 34"/>
+	<parameter name="PluginBrowserIcon" value="15, 8, 150, 60"/>
+	<parameter name="PluginBrowserDownloadName" value="90, 1, 45"/>
+	<parameter name="PluginBrowserDownloadDescr" value="90, 43, 34"/>
+	<parameter name="PluginBrowserDownloadIcon" value="10, 5, 60, 71"/>
+	<parameter name="ServiceInfo" value="0, 0, 450, 50"/>
+	<parameter name="ServiceInfoLeft" value="0, 0, 450, 45"/>
+	<parameter name="ServiceInfoRight" value="450, 0, 1000, 45"/>
 	<parameter name="SelectionListDescr" value="55, 3, 1000, 50"/>
 	<parameter name="SelectionListLock" value="10, 7, 50, 50"/>
 	<parameter name="VirtualKeyboard" value="68, 68"/>
-	<parameter name="PiconManagerList" value="10,2,1410,45"/>
-	<parameter name="PiconManagerListFont" value="Regular;28"/>
-	<parameter name="PiconManagerListItemHeight" value="45"/>
+	<parameter name="PiconManagerList" value="10, 2, 1410, 45"/>
+	<parameter name="PiconManagerListFont" value="Regular; 28"/>
+<!--	<parameter name="PiconManagerListItemHeight" value="45"/> -->
 	<parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
 	<parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
 	<parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30"/>
-	<parameter name="AboutHddSplit" value="1"/>
+	<parameter name="AboutHddSplit" value="1, 1"/>
 	<parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
 	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
 	<parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25"/>
-	<parameter name="PlayListName" value="65,2,1000,50"/>
-	<parameter name="PlayListIcon" value="10,0,50,50"/>
-	<parameter name="fstabMenuList" value="0,10,300,50,400,10,500,50"/>
-	<parameter name="PiconManagerList" value="10,3,1920,50"/>
-	<parameter name="RSList" value="40,0,1200,50,10,12,50,50"/>
-	<parameter name="FcFileListIcon" value="10,4,30,30"/>
-	<parameter name="FcFileListMultiIcon" value="45,4,30,30"/>
-	<parameter name="FcFileListMultiLock" value="2,0,30,30"/>
-	<parameter name="FcFileListMultiName" value="90,3,1000,32"/>
-	<parameter name="FcFileListName" value="68,4,1000,40"/>
-	<parameter name="ExpandableListIcon" value="0,0,55,38"/>
-	<parameter name="ExpandableListDescr" value="55,2,1000,45"/>
+	<parameter name="PlayListName" value="65, 2, 1000, 50"/>
+	<parameter name="PlayListIcon" value="10, 0, 50, 50"/>
+	<parameter name="fstabMenuList" value="0, 10, 300, 50, 400, 10, 500, 50"/>
+	<parameter name="PiconManagerList" value="10, 3, 1920, 50"/>
+	<parameter name="RSList" value="40, 0, 1200, 50, 10, 12, 50, 50"/>
+	<parameter name="FcFileListIcon" value="10, 4, 30, 30"/>
+	<parameter name="FcFileListMultiIcon" value="45, 4, 30, 30"/>
+	<parameter name="FcFileListMultiLock" value="2, 0, 30, 30"/>
+	<parameter name="FcFileListMultiName" value="90, 3, 1000, 32"/>
+	<parameter name="FcFileListName" value="68, 4, 1000, 40"/>
+	<parameter name="ExpandableListIcon" value="0, 0, 55, 38"/>
+	<parameter name="ExpandableListDescr" value="55, 2, 1000, 45"/>
   </parameters>
 	<!-- RESTART GUI -->
   <screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
@@ -298,7 +298,7 @@
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 32" halign="center" position="320,925" render="Label" size="110,48" source="session.Event_Now" transparent="1">
 	  <convert type="EventTime">StartTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 32" halign="center" position="420,925" render="Label" size="110,48" source="session.Event_Now" transparent="1">
 	  <convert type="EventTime">EndTime</convert>
@@ -313,7 +313,7 @@
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 32" halign="center" noWrap="1" position="320,980" render="Label" size="110,48" source="session.Event_Next" transparent="1" valign="top">
 	  <convert type="EventTime">StartTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 32" halign="center" noWrap="1" position="420,980" render="Label" size="110,48" source="session.Event_Next" transparent="1" valign="top">
 	  <convert type="EventTime">EndTime</convert>
@@ -439,7 +439,7 @@
   </widget>
   <widget backgroundColor="OE_Background" font="RegularBold; 34" halign="left" position="665,170" render="Label" size="110,48" source="session.Event_Now" transparent="1">
 	<convert type="EventTime">StartTime</convert>
-	<convert type="ClockToText"></convert>
+	<convert type="ClockToText"/>
   </widget>
   <widget backgroundColor="OE_Background" font="RegularBold; 34" halign="right" position="1500,170" render="Label" size="185,48" source="session.Event_Now" transparent="1">
 	<convert type="EventTime">Remaining</convert>
@@ -450,7 +450,7 @@
   </widget>
   <widget backgroundColor="OE_Background" font="RegularBold; 30" halign="left" noWrap="1" position="665,635" render="Label" size="110,48" source="session.Event_Next" transparent="1" valign="top">
 	<convert type="EventTime">StartTime</convert>
-	<convert type="ClockToText"></convert>
+	<convert type="ClockToText"/>
   </widget>
   <widget source="session.Event_Next" font="RegularBold; 30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_Background" halign="left" position="775,635" size="730,48" transparent="1" valign="top">
 	<convert type="EventName">Name</convert>
@@ -708,7 +708,7 @@
 	<widget name="params" rowsincolumn="25"/>
 	<widget name="lmemtext" position="595,140" backgroundColor="OE_NewBg2" foregroundColor="white" size="225,855" zPosition="7" font="FHD; 24" halign="right" transparent="1"/>
 	<widget name="lmemvalue" position="830,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="230,855" zPosition="8" font="FHD; 24" halign="left" transparent="1"/>
-	<widget name="slide" orientation="orBottomToTop" borderWidth="2" borderColor="OE_Blue" backgroundColor="OE_Background" foregroundColor="green_light" position="410,160" zPosition="4" size="40,750" transparent="1"/>
+	<widget name="slide" borderWidth="2" borderColor="OE_Blue" backgroundColor="OE_Background" foregroundColor="green_light" position="410,160" zPosition="4" size="40,750" transparent="1"/>
 	<widget name="pfree" shadowColor="black" shadowOffset="2,1" position="455,160" zPosition="5" size="120,40" font="RegularBold; 30" backgroundColor="OE_Background" halign="left" transparent="1"/>
 	<widget name="pused" shadowColor="black" shadowOffset="2,1" position="455,870" zPosition="5" size="120,40" font="RegularBold; 28" backgroundColor="OE_Background" transparent="1" halign="left"/>
 	<widget name="rmemtext" position="1090,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="225,675" zPosition="7" font="FHD; 24" halign="right" transparent="1"/>
@@ -946,7 +946,7 @@
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="left" position="275,295" render="Label" size="85,40" source="ServiceEvent" transparent="1">
 	  <convert type="EventTime">StartTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="345,295" render="Label" size="85,40" source="ServiceEvent" transparent="1">
 	  <convert type="EventTime">EndTime</convert>
@@ -1015,12 +1015,12 @@
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="left" position="80,200" render="Label" size="85,40" source="ServiceEvent" transparent="1">
 	  <convert type="EventTime">StartTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<eLabel backgroundColor="OE_Background" font="RegularBold; 32" halign="center" position="156,198" size="30,40" text="-" transparent="1" valign="center"/>
 	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="176,200" render="Label" size="85,40" source="ServiceEvent" transparent="1">
 	  <convert type="EventTime">EndTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<widget source="Event" render="Label" backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="493,200" size="157,40" transparent="1">
 	  <convert type="EventTime">Remaining</convert>
@@ -1324,7 +1324,7 @@
 	<eLabel backgroundColor="blue_light" name="" position="380,142" size="1460,2" zPosition="-9" foregroundColor="white"/>
 	<widget source="Event" render="Label" font="RegularBold; 30" position="125,160" size="90,45" zPosition="2" halign="left" backgroundColor="OE_Background" transparent="1">
 	  <convert type="EventTime">StartTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<widget source="Event" render="Label" font="RegularBold; 30" position="200,160" size="90,45" zPosition="2" halign="right" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1">
 	  <convert type="EventTime">EndTime</convert>
@@ -1535,11 +1535,11 @@
 	</widget>
 	<widget source="Event" render="Label" font="RegularBold; 28" backgroundColor="OE_NewBg2" foregroundColor="white" position="65,90" size="100,45" halign="center" transparent="1">
 	  <convert type="EventTime">StartTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<widget source="Event" render="Label" font="RegularBold; 28" backgroundColor="OE_NewBg2" foregroundColor="white" position="65,151" size="100,45" halign="center" transparent="1">
 	  <convert type="EventTime">EndTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="180,140" render="Progress" size="1180,6" source="Event" transparent="0" zPosition="1">
 	  <convert type="EventTime">Progress</convert>
@@ -1579,11 +1579,11 @@
 	</widget>
 	<widget source="Event" render="Label" font="RegularBold; 28" backgroundColor="OE_NewBg2" foregroundColor="white" position="65,90" size="100,45" halign="center" transparent="1">
 	  <convert type="EventTime">StartTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<widget source="Event" render="Label" font="RegularBold; 28" backgroundColor="OE_NewBg2" foregroundColor="white" position="65,151" size="100,45" halign="center" transparent="1">
 	  <convert type="EventTime">EndTime</convert>
-	  <convert type="ClockToText"></convert>
+	  <convert type="ClockToText"/>
 	</widget>
 	<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="180,142" render="Progress" size="1180,6" source="Event" transparent="0" zPosition="1">
 	  <convert type="EventTime">Progress</convert>
@@ -4047,7 +4047,7 @@
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,280" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
 	<applet type="onLayoutFinish">
-	self["list"].instance.setItemHeight(50)
+	self[&quot;list&quot;].instance.setItemHeight(50)
 	</applet>
   </screen>
   <screen name="VISIONBackupManagerMenu" position="fill" flags="wfNoBorder">
@@ -4070,7 +4070,7 @@
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,280" zPosition="10" size="1300,630" transparent="1"/>
 	<widget name="backupstatus" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,850" size="640,50" transparent="1" valign="top"/>
 	<applet type="onLayoutFinish">
-	self["list"].instance.setItemHeight(50)
+	self[&quot;list&quot;].instance.setItemHeight(50)
 	</applet>
   </screen>
 	<screen name="VISIONImageManagerMenu" position="fill" flags="wfNoBorder">
@@ -4083,7 +4083,7 @@
 	<panel name="StanDardScreen"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" zPosition="10" size="1300,820" transparent="1"/>
 	<applet type="onLayoutFinish">
-	self["list"].instance.setItemHeight(50)
+	self[&quot;list&quot;].instance.setItemHeight(50)
   </applet>
 	</screen>
 	<!-- OPKG INSTALL-->
@@ -4092,7 +4092,7 @@
 	<widget name="lab1" position="580,140" size="400,150" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,350" zPosition="10" size="1300,580" transparent="1"/>
 	<applet type="onLayoutFinish">
-	self["list"].instance.setItemHeight(50)
+	self[&quot;list&quot;].instance.setItemHeight(50)
   </applet>
 	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
 	</screen>
@@ -4101,7 +4101,7 @@
 	<panel name="StanDardScreen"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" zPosition="10" size="1300,630" transparent="1"/>
 	<applet type="onLayoutFinish">
-	self["list"].instance.setItemHeight(50)
+	self[&quot;list&quot;].instance.setItemHeight(50)
   </applet>
 	</screen>
 	<!-- SWAP MANAGER-->
@@ -4129,7 +4129,7 @@
 	<ePixmap pixmap="buttons/key_menu.png" position="48,960" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_info.png" position="48,900" size="64,43" alphatest="blend"/>
 	<applet type="onLayoutFinish">
-  self["list"].instance.setItemHeight(50)
+  self[&quot;list&quot;].instance.setItemHeight(50)
   </applet>
   </screen>
   <screen name="VISIONSoftcamMenu" position="fill" flags="wfNoBorder">

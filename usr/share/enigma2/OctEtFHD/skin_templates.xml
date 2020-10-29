@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <skin>
 	<!-- CLOCK TEMPLATES -->
 	<!-- ClockBg -->
@@ -217,7 +218,7 @@ if (1100 &gt; wsizex):
 	wsizex = 1100
 wsize = (wsizex, wsizey)
 # resize
-#self.instance.resize(eSize(*wsize))
+self.instance.resize(eSize(*wsize))
 # resize label
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
 # move list
@@ -225,8 +226,8 @@ listsize = (wsizex - 30, 420)
 self[&quot;list&quot;].instance.move(ePoint(25, int(textsize[1] + 41)))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 # center window
-#newwidth = wsize[0]
-#self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgpos.y())))
+newwidth = wsize[0]
+self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgpos.y())))
 	</applet>
 	</screen>
 	 <!-- AUTORESIZE-->

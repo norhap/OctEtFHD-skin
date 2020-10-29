@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <skin>
   <!-- EnhancedMovieCenter -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EnhancedMovieCenterMenu" title="EnhancedMovieCenterMenu" position="center,center" size="1920,1080">
