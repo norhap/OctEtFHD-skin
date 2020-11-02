@@ -3994,20 +3994,21 @@
   <screen name="VISIONMenu" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,900" size="64,43"/>
-	<widget source="menu" render="Listbox" position="140,140" zPosition="2" size="400,960" backgroundColor="OE_Background" scrollbarMode="showOnDemand" transparent="1">
+	<eLabel backgroundColor="blue_light" position="140,857" size="1300,2" zPosition="2"/>
+	<widget source="menu" render="Listbox" position="140,140" zPosition="2" size="1300,960" backgroundColor="OE_Background" scrollbarMode="showOnDemand" transparent="1">
 	<convert type="TemplatedMultiContent">
 	{"template": [
-	MultiContentEntryText(pos = (51,2), size = (820,70), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
+	MultiContentEntryText(pos = (51,2), size = (1300,70), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	),
 	],
 	"fonts": [gFont("RegularBold",33)],
 	"itemHeight": 80
 	}
 	</convert>
 	</widget>
-		<widget source="menu" render="Listbox" position="570,350" size="870,75" backgroundColor="OE_Background" foregroundColor="blue_light" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+		<widget source="menu" render="Listbox" position="140,875" size="1300,75" backgroundColor="OE_Background" foregroundColor="blue_light" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (0,0),size = (870,75),flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER,text = 2),# index 0 is the MenuText,
+				MultiContentEntryText(pos = (0,0),size = (1300,75),flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER,text = 2),# index 0 is the MenuText,
 				],
 				"fonts": [gFont("RegularBold",33)],
 				"itemHeight": 75
