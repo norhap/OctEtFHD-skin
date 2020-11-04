@@ -180,17 +180,17 @@
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1980,990" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="400,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="un5678a4" backgroundColor="blue_light" position="60,130" size="275,2" zPosition="-9"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="410,130" size="1550,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="90,150" size="220,132" transparent="1" zPosition="10"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="410,130" size="1505,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="85,150" size="220,132" transparent="1" zPosition="10"/>
 	<widget source="lab1" render="Label" position="0,330" size="400,50" font="RegularBold; 40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab2" render="Label" position="15,405" size="500,50" font="RegularBold; 23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="left" valign="center" transparent="1" zPosition="3"/>
+	<widget source="lab2" render="Label" position="22,405" size="500,50" font="RegularBold; 23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="left" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab3" render="Label" position="0,550" size="400,30" font="RegularBold; 23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab4" render="Label" position="70,590" size="500,30" font="RegularBold; 23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab5" render="Label" position="0,735" size="400,30" font="RegularBold; 23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab6" render="Label" position="5,775" size="520,35" font="RegularBold; 23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
+	<widget source="lab6" render="Label" position="8,775" size="520,35" font="RegularBold; 23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
 	<eLabel backgroundColor="blue_light" name="" position="60,950" size="275,2" zPosition="-9"/>
 	<!-- Button -->
-	<eLabel backgroundColor="blue_light" name="" position="410,950" size="1550,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="410,950" size="1505,2" zPosition="-9"/>
 	</screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
