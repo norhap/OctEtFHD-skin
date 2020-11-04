@@ -2573,12 +2573,12 @@
 	<!-- Widget -->
 	<widget name="state" position="70,12" size="200,50" font="RegularBold; 34" backgroundColor="OE_Background" transparent="1" valign="center" halign="center"/>
   </screen>
-  <screen name="QuickSubtitlesConfigMenu" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="398,225" size="1000,300">
-	<!-- Back -->
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="2,2" size="996,296" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" position="10,0" size="80,300" zPosition="-5" foregroundColor="white"/>
-	<!-- Widget -->
-	<widget name="config" itemHeight="45" font="RegularBold; 28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="105,15" size="870,270" transparent="1"/>
+	<!-- QUICK SUBTITLES CONFI GMENU -->
+  <screen name="QuickSubtitlesConfigMenu" title="Subtitle settings" backgroundColor="OE_Background" position="40,70" size="1000,400">
+	<eLabel backgroundColor="OE_NewBg2" position="10,10" size="80,450" zPosition="-5" foregroundColor="white"/>
+	<widget name="config" itemHeight="45" font="RegularBold; 26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="105,15" size="920,450" transparent="1"/>
+	<widget name="videofps" position="105,290" size="910,40" backgroundColor="OE_Background" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="12,30" size="75,75" transparent="1" zPosition="1"/>
   </screen>
   <screen name="QuickSubtitlesClearRests" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>

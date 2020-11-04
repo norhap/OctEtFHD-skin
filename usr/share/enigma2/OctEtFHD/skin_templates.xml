@@ -39,10 +39,10 @@
 	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="100,182" size="100,100" transparent="1" zPosition="10"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="20,center" size="270,850" zPosition="-10"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1380,770" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="10,154" size="1380,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="10,924" size="1380,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="8,154" size="2,772" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1390,154" size="2,772" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="10,154" size="1380,1" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="10,924" size="1380,1" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="9,154" size="1,771" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1390,154" size="1,771" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="290,230" size="1100,2" zPosition="-9"/>
 	<!--  Widget -->
 	<widget source="title" render="Label" font="RegularBold; 42" backgroundColor="OE_Background" position="300,160" size="1080,58" transparent="1" halign="left"/>
