@@ -717,26 +717,13 @@
   </screen>
 	<!-- STREAMING CLIENTS INFO -->
   <screen name="StreamingClientsInfo" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<panel name="ClockBgAbout"/>
-	<panel name="TitleAbout"/>
-	<panel name="CONDITIONAL_RGYB_ABOUT"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1920,990" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="400,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="un5678a4" backgroundColor="blue_light" position="60,130" size="275,2" zPosition="-9"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="410,130" size="1505,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="85,150" size="220,132" transparent="1" zPosition="10"/>
-	<eLabel text="OpenVision" position="0,330" size="400,50" font="RegularBold; 40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="Lets define enigma2 once more" position="15,405" size="500,50" font="RegularBold; 23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="left" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="Report problems to:" position="0,550" size="400,30" font="RegularBold; 23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="https://openvision.tech" position="70,590" size="500,30" font="RegularBold; 23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="Sources are available at:" position="0,735" size="400,30" font="RegularBold; 23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel text="https://github.com/OpenVisionE2" position="5,775" size="520,35" font="RegularBold; 23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
+	<panel name="ScreenOpenVision"/>
 	<eLabel backgroundColor="blue_light" name="" position="60,950" size="275,2" zPosition="-9"/>
 	<!-- Button -->
 	<eLabel backgroundColor="blue_light" name="" position="410,950" size="1505,2" zPosition="-9"/>
 	<widget name="menu" font="FHD; 32" itemHeight="50" backgroundColor="OE_Background" position="410,160" size="1505,710" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="410,877" size="1505,2" zPosition="2"/>
-	<widget name="info" font="FHD; 28" foregroundColor="green_light" backgroundColor="OE_Background" valign="center" halign="center" position="410,890" size="1505,45" transparent="1"/>
+	<widget name="info" font="FHD; 28" foregroundColor="blue_light" backgroundColor="OE_Background" valign="center" halign="center" position="410,890" size="1505,45" transparent="1"/>
   </screen>
   <screen name="ModelPic" title="ModelPic" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-10"/>
@@ -3703,9 +3690,18 @@
   </screen>
 	<!-- IMAGE FLASH MULTIBOOT SELECT IMAGE -->
   <screen name="SelectImage" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="StanDardScreen"/>
-	<panel name="description_standard"/>
-	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,155" zPosition="10" size="1300,675" transparent="1"/>
+	<panel name="ScreenOpenVision"/>
+	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1505,670" transparent="1"/>
+	<eLabel backgroundColor="blue_light" position="410,830" size="1505,2" zPosition="2"/>
+	<widget source="description" render="Label" font="RegularBold; 30" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1505,85" transparent="1" halign="center" valign="center"/>
+  </screen>
+	<!-- FLASHIMAGE -->
+  <screen name="FlashImage" position="fill" zPosition="10" flags="wfNoBorder">
+	<panel name="ScreenOpenVision"/>
+	<widget name="header" position="410,155" size="1505,85" zPosition="10" font="RegularBold;30" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="progress" backgroundColor="OE_Background" position="410,270" size="1505,85" zPosition="10" transparent="1"/>
+	<eLabel backgroundColor="blue_light" position="410,830" size="1505,2" zPosition="2"/>
+	<widget name="info" font="RegularBold; 30" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1505,85" transparent="1" zPosition="10" halign="center" valign="center"/>
   </screen>
 	<!-- AUTO BACKUP -->
   <screen name="Config" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
