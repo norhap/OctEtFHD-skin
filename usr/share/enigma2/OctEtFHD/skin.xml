@@ -99,7 +99,7 @@
 	<font filename="/usr/share/fonts/OpenSans-Regular.ttf" name="EL_Standard" scale="100"/>
 	<font filename="/usr/share/fonts/segoe-ui-bold.ttf" name="FHD" scale="100"/>
 	<font filename="/usr/share/fonts/OpenSans-Bold.ttf" name="RegularBold" scale="100"/>
-	<alias name="ChoiceList" font="FHD" size="25" height="45"/>
+	<alias name="ChoiceList" font="RegularBold" size="25" height="45"/>
 	<alias name="Body" font="FHD" size="30" height="50"/>
 	<alias name="TextNormal" font="FHD" size="30" height="50"/>
 	<alias name="FileList" font="FHD" size="30" height="50"/>
