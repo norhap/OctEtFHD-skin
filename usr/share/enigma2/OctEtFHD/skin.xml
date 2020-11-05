@@ -169,7 +169,7 @@
 <!--	<parameter name="ConfigListSeperator" value="320"/> -->
 	<parameter name="ChoicelistDash" value="0, 3, 1000, 50"/>
 	<parameter name="ChoicelistName" value="85, 3, 1000, 50"/>
-	<parameter name="ChoicelistNameSingle" value="5, 5, 1400, 50"/>	
+	<parameter name="ChoicelistNameSingle" value="5, 5, 1400, 50"/>
 	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
 	<parameter name="FileListName" value="68, 4, 1000, 50"/>
 	<parameter name="FileListIcon" value="7, 4, 52, 50"/>
@@ -2279,15 +2279,18 @@
 	  <convert type="ConditionalShowHide"/>
 	</widget>
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZap" position="0,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="730,115" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="120,180" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="200,540" size="550,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Kanal :" font="FHD; 34" backgroundColor="OE_Background" position="200,483" size="270,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" halign="right"/>
-	<widget name="number" font="FHD; 36" backgroundColor="OE_Background" position="480,483" size="270,50" transparent="1" valign="center" zPosition="3" foregroundColor="white" halign="left"/>
-	<widget name="servicename" font="FHD; 30" backgroundColor="OE_Background" position="200,540" size="550,50" transparent="1" halign="center" valign="center" foregroundColor="white"/>
-	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="91,center" size="78,75" zPosition="4"/>
+	<!-- NUMBER ZAP PICON-->
+  <screen name="NumberZapPicon" position="center,30" size="625,110" flags="wfNoBorder" backgroundColor="OE_NewBg2">
+	<eLabel position="0,0" size="625,2" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,0" size="2,110" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,108" size="625,2" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="623,0" size="2,110" backgroundColor="blue_light" zPosition="1"/>
+	<widget name="number" position="205,0" size="200,30" zPosition="1" font="RegularBold;24" halign="center" transparent="1"/>
+	<widget source="Service" render="Picon" position="2,20" size="100,60" zPosition="10" transparent="1" alphatest="blend">
+	  <convert type="ServiceName">Reference</convert>
+	</widget>
+	<widget name="channel" position="115,35" size="100,50" zPosition="1" halign="left" font="RegularBold;24" backgroundColor="OE_NewBg2"/>
+	<widget name="servicename" position="220,35" size="405,50" zPosition="1" halign="left" font="RegularBold;24" backgroundColor="OE_NewBg2" foregroundColor="blue_light"/>
   </screen>
   <screen backgroundColor="white" flags="wfNoBorder" name="NumericalTextInputHelpDialog" position="300,700" size="912,240" zPosition="8">
 	<widget font="RegularBold;30" halign="center" name="key1" position="3,3" size="300,55" valign="center" foregroundColor="white" backgroundColor="OE_NewBg2"/>
