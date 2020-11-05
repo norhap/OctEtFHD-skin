@@ -2279,18 +2279,27 @@
 	  <convert type="ConditionalShowHide"/>
 	</widget>
   </screen>
+	<!-- NUMBER ZAP-->
+  <screen name="NumberZap" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080">
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="730,115" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="120,180" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="200,540" size="550,2" zPosition="-9"/>
+	<widget name="channel" position="200,500" size="150,50" zPosition="1" halign="left" font="RegularBold; 30" transparent="1"/>
+	<widget name="number" font="RegularBold; 30" backgroundColor="OE_Background" position="350,495" size="270,50" transparent="1" valign="center" zPosition="3" halign="left"/>
+	<widget name="servicename" font="RegularBold; 30" backgroundColor="OE_Background" position="200,540" size="550,50" transparent="1" halign="center" valign="center"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="91,center" size="78,75" zPosition="4"/>
+  </screen>
 	<!-- NUMBER ZAP PICON-->
-  <screen name="NumberZapPicon" position="center,30" size="625,110" flags="wfNoBorder" backgroundColor="OE_NewBg2">
-	<eLabel position="0,0" size="625,2" backgroundColor="blue_light" zPosition="1"/>
-	<eLabel position="0,0" size="2,110" backgroundColor="blue_light" zPosition="1"/>
-	<eLabel position="0,108" size="625,2" backgroundColor="blue_light" zPosition="1"/>
-	<eLabel position="623,0" size="2,110" backgroundColor="blue_light" zPosition="1"/>
-	<widget name="number" position="205,0" size="200,30" zPosition="1" font="RegularBold;24" halign="center" transparent="1"/>
-	<widget source="Service" render="Picon" position="2,20" size="100,60" zPosition="10" transparent="1" alphatest="blend">
+  <screen name="NumberZapPicon" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080">
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="730,115" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="120,180" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="200,540" size="550,2" zPosition="-9"/>
+	<widget name="channel" position="200,500" size="150,50" zPosition="1" halign="left" font="RegularBold; 30" transparent="1"/>
+	<widget name="number" font="RegularBold; 30" backgroundColor="OE_Background" position="350,495" size="270,50" transparent="1" valign="center" zPosition="3" halign="left"/>
+	<widget name="servicename" font="RegularBold; 30" backgroundColor="OE_Background" position="200,540" size="550,50" transparent="1" halign="center" valign="center"/>
+	<widget source="Service" render="Picon" position="80,center" size="100,60" zPosition="4" transparent="1" alphatest="blend">
 	  <convert type="ServiceName">Reference</convert>
 	</widget>
-	<widget name="channel" position="115,35" size="100,50" zPosition="1" halign="left" font="RegularBold;24" backgroundColor="OE_NewBg2"/>
-	<widget name="servicename" position="220,35" size="405,50" zPosition="1" halign="left" font="RegularBold;24" backgroundColor="OE_NewBg2" foregroundColor="blue_light"/>
   </screen>
   <screen backgroundColor="white" flags="wfNoBorder" name="NumericalTextInputHelpDialog" position="300,700" size="912,240" zPosition="8">
 	<widget font="RegularBold;30" halign="center" name="key1" position="3,3" size="300,55" valign="center" foregroundColor="white" backgroundColor="OE_NewBg2"/>
@@ -2577,7 +2586,7 @@
 	<!-- Widget -->
 	<widget name="state" position="70,12" size="200,50" font="RegularBold; 34" backgroundColor="OE_Background" transparent="1" valign="center" halign="center"/>
   </screen>
-	<!-- QUICK SUBTITLES CONFI GMENU -->
+	<!-- QUICK SUBTITLES CONFIG MENU -->
   <screen name="QuickSubtitlesConfigMenu" title="Subtitle settings" backgroundColor="OE_Background" position="40,70" size="1000,400">
 	<eLabel backgroundColor="OE_NewBg2" position="10,10" size="80,450" zPosition="-5" foregroundColor="white"/>
 	<widget name="config" itemHeight="45" font="RegularBold; 26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="105,15" size="920,450" transparent="1"/>
