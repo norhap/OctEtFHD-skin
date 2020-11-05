@@ -169,6 +169,7 @@
 <!--	<parameter name="ConfigListSeperator" value="320"/> -->
 	<parameter name="ChoicelistDash" value="0, 3, 1000, 50"/>
 	<parameter name="ChoicelistName" value="85, 3, 1000, 50"/>
+	<parameter name="ChoicelistNameSingle" value="5, 5, 1400, 50"/>	
 	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
 	<parameter name="FileListName" value="68, 4, 1000, 50"/>
 	<parameter name="FileListIcon" value="7, 4, 52, 50"/>
