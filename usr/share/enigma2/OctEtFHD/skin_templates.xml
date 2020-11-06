@@ -218,11 +218,11 @@
 	 <!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
 	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="1015,180" position="85,0" valign="center" halign="center"/>
-	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="0,50" size="80,80" alphatest="blend"/>
-	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="0,50" size="80,80" alphatest="blend"/>
-	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="0,50" size="80,80" alphatest="blend"/>
-	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="0,50" size="80,80" alphatest="blend"/>
-	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="0,50" size="80,80" alphatest="blend"/>
+	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="0,30" size="80,80" alphatest="blend"/>
+	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="0,30" size="80,80" alphatest="blend"/>
+	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="0,30" size="80,80" alphatest="blend"/>
+	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="0,30" size="80,80" alphatest="blend"/>
+	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="0,30" size="80,80" alphatest="blend"/>
 	<widget name="list" itemHeight="45" font="RegularBold; 26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="20,185" size="1080,100" transparent="1"/>
 	<panel name="autoresize"/>
 	<applet type="onLayoutFinish">
@@ -232,7 +232,7 @@ orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self[&quot;text&quot;].getSize()
 # y size still must be fixed in font stuff...
-textsize = (textsize[0] + 60, textsize[1] + 60)
+textsize = (textsize[0] + 20, textsize[1] + 20)
 offset = 20
 if self.type == self.TYPE_YESNO:
 	offset = 60
