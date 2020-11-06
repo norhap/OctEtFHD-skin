@@ -932,18 +932,22 @@
 	<widget alphatest="blend" position="550,07" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
 	  <convert type="ServiceName2">Reference</convert>
 	</widget>
+	<widget source="ServiceEvent" render="Label" font="RegularBold; 20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="270,70" size="265,50" transparent="1" zPosition="1">
+	  <convert type="TransponderInfo">
+	  </convert>
+	</widget>
 	<widget source="ServiceEvent" font="RegularBold; 30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="80,320" size="570,45" transparent="1" valign="center">
 	  <convert type="EventName">Name</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="left" position="275,295" render="Label" size="85,40" source="ServiceEvent" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="left" position="275,165" render="Label" size="85,40" source="ServiceEvent" transparent="1">
 	  <convert type="EventTime">StartTime</convert>
 	  <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="345,295" render="Label" size="85,40" source="ServiceEvent" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="345,165" render="Label" size="85,40" source="ServiceEvent" transparent="1">
 	  <convert type="EventTime">EndTime</convert>
 	  <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget source="Event" render="Label" backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="493,295" size="157,40" transparent="1">
+	<widget source="Event" render="Label" backgroundColor="OE_Background" font="RegularBold; 28" halign="right" position="493,165" size="157,40" transparent="1">
 	  <convert type="EventTime">Remaining</convert>
 	  <convert type="RemainingToText">InMinutes</convert>
 	</widget>
@@ -953,15 +957,11 @@
 	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" position="80,375" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="570,553" source="ServiceEvent" transparent="1" valign="top">
 	  <convert type="EventName">ExtendedDescription</convert>
 	</widget>
-	<widget source="ServiceEvent" render="NextEvents" position="80,935" size="570,110" noWrap="1" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1" zPosition="5">
+	<widget source="ServiceEvent" render="NextEvents" position="80,935" size="570,150" noWrap="1" font="RegularBold; 26" backgroundColor="OE_Background"  foregroundColor="blue_light"  transparent="1" zPosition="5">
 	  <convert type="ServiceName">Reference</convert>
 	</widget>
 	<eLabel backgroundColor="blue_light" name="" position="680,142" size="1160,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="80,930" size="570,2" zPosition="-9" foregroundColor="white"/>
-	<widget source="ServiceEvent" render="Label" font="RegularBold; 28" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="80,1033" size="570,45" transparent="1" zPosition="1">
-	  <convert type="TransponderInfo">
-	  </convert>
-	</widget>
+	<eLabel backgroundColor="blue_light" name="" position="80,930" size="570,5" zPosition="-9" foregroundColor="white"/>
 	<!-- Button -->
 	<ePixmap alphatest="blend" pixmap="buttons/key_text.png" position="1665,950" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="1730,950" size="64,43"/>
