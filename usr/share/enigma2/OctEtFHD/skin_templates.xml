@@ -159,8 +159,12 @@
 	<panel name="ClockBg"/>
 	<panel name="TitleScreenAll"/>
 	<panel name="CONDITIONAL_RGYB"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1475,990" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="20,45" size="1455,990" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="40,0" size="80,1080" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="20,45" size="1455,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="20,1033" size="1455,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="20,45" size="2,990" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1474,45" size="2,990" zPosition="-15"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="42,30" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="140,135" size="1300,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="140,965" size="1300,2" zPosition="-9"/>
@@ -307,8 +311,8 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<eLabel text="Move Up | Down" position="250,985" size="240,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold; 26" halign="left"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1440,45" size="480,990" zPosition="1"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1475,135" size="400,2" zPosition="2"/>
-	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_NewBg2" position="1475,125" size="380,50" transparent="1" valign="center" zPosition="2" halign="center"/>
-	<widget name="list" scrollbarMode="showNever" backgroundColor="OE_Background" position="140,140" size="820,800" transparent="1" zPosition="3"/>
+	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_NewBg2" position="1475,130" size="380,50" transparent="1" valign="center" zPosition="2" halign="center"/>
+	<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" size="1300,820" transparent="1" zPosition="3"/>
 	<widget name="text" position="1455,100" size="450,380" font="FHD; 30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="description" position="1455,150" size="450,380" font="FHD; 30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget source="session.CurrentService" render="Progress" position="1450,495" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" transparent="1" borderWidth="2" zPosition="6">
