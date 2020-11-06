@@ -329,8 +329,11 @@
 	</widget>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="336,977" size="1510,2"/>
 	<!-- CryptoInfo -->
-	<widget source="session.CurrentService" render="Label" position="335,1030" size="1325,35" backgroundColor="OE_Background" font="RegularBold; 23" foregroundColor="blue_light" transparent="1" halign="left">
-	  <convert type="CaidInfo2"/>
+	<widget source="session.CurrentService" render="Label" position="335,1030" size="600,35" backgroundColor="OE_Background" font="RegularBold; 23" foregroundColor="blue_light" transparent="1" halign="left">
+	  <convert type="CryptoInfo">VerboseInfo</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="940,1030" size="600,35" font="RegularBold; 23" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
+	  <convert type="PliExtraInfo">CryptoSpecial</convert>
 	</widget>
 	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1670,1030" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
 	<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1780,1030" size="63,32" alphatest="blend" zPosition="3"/>
@@ -661,7 +664,7 @@
   <screen name="SystemNetworkInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="About_standard"/>
 	<widget name="devicepic" position="1231,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
-	<widget name="AboutScrollLabel" position="410,147" size="1185,680" font="FHD; 30" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="AboutScrollLabel" position="410,147" size="1505,680" font="FHD; 30" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="IFtext" render="Label" position="410,901" size="120,40" font="FHD; 30" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="IF" position="540,901" size="400,40" render="Label" font="FHD; 30" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="Statustext" position="846,901" size="300,40" render="Label" font="FHD; 30" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
@@ -671,11 +674,11 @@
   <screen name="Devices" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="About_standard"/>
 	<widget source="TunerHeader" render="Label" position="410,147" size="1055,40" font="FHD; 30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
-	<widget source="nims" render="Label" position="410,180" size="1185,400" font="FHD; 30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top" zPosition="1"/>
+	<widget source="nims" render="Label" position="410,180" size="1505,400" font="FHD; 30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top" zPosition="1"/>
 	<widget source="HDDHeader" render="Label" position="410,585" size="1055,40" font="FHD; 30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
-	<widget source="hdd" render="Label" position="410,620" size="1185,125" font="FHD; 30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top"/>
+	<widget source="hdd" render="Label" position="410,620" size="1505,125" font="FHD; 30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top"/>
 	<widget source="MountsHeader" render="Label" position="410,750" size="1055,40" font="FHD; 30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
-	<widget source="mounts" render="Label" position="410,780" size="1185,170" font="FHD; 30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" zPosition="1"/>
+	<widget source="mounts" render="Label" position="410,780" size="1505,170" font="FHD; 30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" zPosition="1"/>
   </screen>
 	<!-- INFO MEMORY STB -->
   <screen name="SystemMemoryInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -1974,36 +1977,22 @@
 	<panel name="StanDardScreen"/>
 	<widget name="detailtext" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" position="170,155" size="1300,750" transparent="1"/>
   </screen>
-  <screen name="AdapterSetup" title="Network Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<!-- NETWORK -->
+  <screen name="NetworkAdapterSelection" title="NetworkAdapterSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,145" size="1300,400" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="140,560" size="1300,2" zPosition="-9"/>
-	<widget source="introduction" render="Label" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="405,570" size="400,45" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,620" render="Label" size="255,45" source="IPtext" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,670" render="Label" size="255,45" source="Netmasktext" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,720" render="Label" size="255,45" source="Gatewaytext" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,780" render="Label" size="255,45" source="DNS1text" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,830" render="Label" size="255,45" source="DNS2text" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,620" render="Label" size="255,45" source="IP" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,670" render="Label" size="255,45" source="Mask" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,720" render="Label" size="255,45" source="Gateway" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,780" render="Label" size="255,45" source="DNS1" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,830" render="Label" size="255,45" source="DNS2" transparent="1"/>
-	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="830,570" render="Label" size="570,45" source="Adapter" transparent="1" halign="left"/>
-	<widget font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" halign="center" position="140,900" render="Label" size="1300,45" source="introduction2" transparent="1"/>
-	<eLabel text=":" position="798,620" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<eLabel text=":" position="798,670" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<eLabel text=":" position="798,720" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<eLabel text=":" position="798,780" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<eLabel text=":" position="798,830" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<eLabel backgroundColor="blue_light" name="" position="140,880" size="1300,2" zPosition="-9"/>
-	<widget name="HelpWindow" position="150,712" size="1,1" zPosition="10"/>
-	<!-- others-->
-	<widget alphatest="blend" pixmap="buttons/key_text.png" position="1332,958" render="Pixmap" size="64,43" source="VKeyIcon" transparent="1">
-	  <convert type="ConditionalShowHide"/>
-	</widget>
-	<widget alphatest="blend" pixmap="my_icons/key_board.png" position="1406,958" render="Pixmap" size="64,43" source="VKeyIcon" transparent="1">
-	  <convert type="ConditionalShowHide"/>
+	<panel name="introduction_standard"/>
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="140,165" size="1300,680" transparent="1">
+	  <convert type="TemplatedMultiContent">
+					{"template": [
+					MultiContentEntryPixmapAlphaBlend(pos = (10,1),size = (80,80),png = 3),# index 3 is the interface pixmap
+					MultiContentEntryPixmapAlphaBlend(pos = (71,46),size = (15,16),png = 4),# index 4 is the default pixmap
+					MultiContentEntryText(pos = (100,0),size = (1200,45),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
+					MultiContentEntryText(pos = (100,42),size = (1200,38),font=1,flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM,text = 2,color=0x44a2ff,color_sel=0xffffff),# index 2 is the description
+					],
+					"fonts": [gFont("FHD",32),gFont("RegularBold",26)],
+					"itemHeight": 85
+					}
+			</convert>
 	</widget>
   </screen>
   <screen name="AdapterSetupConfiguration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2012,38 +2001,15 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1475,135" size="400,2" zPosition="2"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1440,45" size="480,990" zPosition="1"/>
 	<widget source="IF" render="Label" font="RegularBold; 32" backgroundColor="OE_Background" halign="left" position="170,150" size="500,50" transparent="1"/>
-	<widget source="Statustext" render="Label" font="RegularBold; 32" foregroundColor="white" backgroundColor="OE_Background" position="645,150" size="370,50" transparent="1" halign="right"/>
-	<widget name="devicepic" alphatest="blend" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" position="1075,150" size="54,54" transparent="1"/>
-	<widget name="statuspic" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png" position="1035,158" size="35,35" transparent="1"/>
+	<widget source="Statustext" render="Label" font="RegularBold; 32" foregroundColor="white" backgroundColor="OE_Background" position="575,150" size="370,50" transparent="1" halign="right"/>
+	<widget name="statuspic" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png" position="965,158" size="35,35" transparent="1"/>
+	<widget name="devicepic" alphatest="blend" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" position="1020,150" size="54,54"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,210" size="900,5" zPosition="-9"/>
 	<widget name="menulist" itemHeight="50" font="RegularBold; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,230" size="900,550" transparent="1"/>
 	<widget source="description" render="Label" objectTypes="description,Button,Label" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
 	<widget source="description" render="Label" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
   </screen>
-  <screen name="NameserverSetup" title="NameserverSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,700" transparent="1"/>
-  </screen>
-	<!-- MENU NETWORK -->
-  <screen name="NetworkAdapterSelection" title="NetworkAdapterSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="StanDardScreen"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="140,165" size="1300,680" transparent="1">
-	  <convert type="TemplatedMultiContent">
-					{"template": [
-					MultiContentEntryPixmapAlphaBlend(pos = (10,1),size = (80,80),png = 3),# index 3 is the interface pixmap
-					MultiContentEntryPixmapAlphaBlend(pos = (71,46),size = (15,16),png = 4),# index 4 is the default pixmap
-					MultiContentEntryText(pos = (100,0),size = (1200,45),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
-					MultiContentEntryText(pos = (100,42),size = (1200,38),font=1,flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM,text = 2,color=0x81840c,color_sel=0xffffff),# index 2 is the description
-					],
-					"fonts": [gFont("FHD",32),gFont("Regular",26)],
-					"itemHeight": 85
-					}
-			</convert>
-	</widget>
-	<eLabel backgroundColor="white" name="" position="140,877" size="1300,2" zPosition="-9"/>
-	<widget source="introduction" render="Label" font="EL_Standard; 28" backgroundColor="OE_Background" foregroundColor="green_light" position="140,887" size="1300,50" transparent="1" halign="left" valign="center"/>
-  </screen>
+	<!-- NETWORK ADAPTER TEST -->
   <screen name="NetworkAdapterTest" title="Network test..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="InfoText" backgroundColor="OE_Background" font="RegularBold; 29" foregroundColor="white" halign="center" position="1020,center" size="450,800" transparent="1" valign="center" zPosition="25"/>
@@ -2081,6 +2047,45 @@
 	<eLabel backgroundColor="white" name="" position="170,725" size="750,2" zPosition="9"/>
 	<eLabel backgroundColor="white" name="" position="170,875" size="750,2" zPosition="-9" foregroundColor="white"/>
   </screen>
+	<!-- NETWORK ADAPTER SETUP -->
+  <screen name="AdapterSetup" title="Network Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,145" size="1300,400" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="140,560" size="1300,2" zPosition="-9"/>
+	<widget source="introduction" render="Label" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="405,570" size="400,45" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,620" render="Label" size="255,45" source="IPtext" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,670" render="Label" size="255,45" source="Netmasktext" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,720" render="Label" size="255,45" source="Gatewaytext" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,780" render="Label" size="255,45" source="DNS1text" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,830" render="Label" size="255,45" source="DNS2text" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,620" render="Label" size="255,45" source="IP" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,670" render="Label" size="255,45" source="Mask" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,720" render="Label" size="255,45" source="Gateway" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,780" render="Label" size="255,45" source="DNS1" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,830" render="Label" size="255,45" source="DNS2" transparent="1"/>
+	<widget font="FHD; 30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="830,570" render="Label" size="570,45" source="Adapter" transparent="1" halign="left"/>
+	<widget font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" position="140,900" render="Label" size="1300,45" source="introduction2" transparent="1"/>
+	<eLabel text=":" position="798,620" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<eLabel text=":" position="798,670" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<eLabel text=":" position="798,720" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<eLabel text=":" position="798,780" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<eLabel text=":" position="798,830" size="25,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<eLabel backgroundColor="blue_light" name="" position="140,880" size="1300,2" zPosition="-9"/>
+	<widget name="HelpWindow" position="150,712" size="1,1" zPosition="10"/>
+	<!-- others-->
+	<widget alphatest="blend" pixmap="buttons/key_text.png" position="1332,958" render="Pixmap" size="64,43" source="VKeyIcon" transparent="1">
+	  <convert type="ConditionalShowHide"/>
+	</widget>
+	<widget alphatest="blend" pixmap="my_icons/key_board.png" position="1406,958" render="Pixmap" size="64,43" source="VKeyIcon" transparent="1">
+	  <convert type="ConditionalShowHide"/>
+	</widget>
+  </screen>
+	<!-- NETWORK NAMESERVER SETUP -->
+  <screen name="NameserverSetup" title="NameserverSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<panel name="introduction_standard"/>
+	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,700" transparent="1"/>
+  </screen>
   <screen name="RestartNetwork" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1070,270" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="100,340" zPosition="-11" valign="center"/>
@@ -2092,6 +2097,7 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
+	<!-- SCAN IP -->
   <screen name="ScanIP" title="Scan IP" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1070,270" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,340" zPosition="-11" valign="center"/>
@@ -2104,35 +2110,19 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,620" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="460,620" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="750,620" size="40,40"/>
-	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" source="key_red" render="Label" position="215,620" size="240,40" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" source="key_green" render="Label" position="505,620" size="240,40" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" valign="center" source="key_yellow" render="Label" position="795,620" size="280,40" transparent="1" zPosition="1"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="73,420" size="75,75" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" source="key_red" render="Label" position="215,620" size="240,40" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" source="key_green" render="Label" position="505,620" size="240,40" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" source="key_yellow" render="Label" position="795,620" size="280,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
-  <screen name="Wlanstatus" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Wireless Network Status..." font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget source="status" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="170,155" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
-  </screen>
+	<!-- WLANSCAN -->
   <screen name="WlanScan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="Wireless Network AP Scan..." font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget source="info" render="Label" font="FHD; 30" backgroundColor="OE_Background" halign="left" position="170,140" size="1300,45" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="170,195" size="1300,2" zPosition="-9"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,220" size="1300,680" transparent="1" zPosition="3">
+	<panel name="StanDardScreen"/>
+	<widget source="info" render="Label" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="140,158" size="1300,45" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="140,215" size="1300,2" zPosition="-9"/>
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,220" size="1300,680" transparent="1" zPosition="3">
 	  <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 3), size = (750, 45), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
@@ -2141,50 +2131,35 @@
 						MultiContentEntryText(pos = (750, 3), size = (350, 45), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
 						MultiContentEntryText(pos = (750, 45), size = (350, 40), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
 					],
-				"fonts": [gFont("FHD", 30),gFont("Regular", 26)],
+				"fonts": [gFont("FHD", 30),gFont("RegularBold", 26)],
 				"itemHeight": 85
 				}
 			</convert>
 	</widget>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="830,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="880,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="WlanStatus" position="center,center" size="1920,1080" title="Wireless Network State">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="W-LAN Status" font="FHD; 34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget source="IF" render="Label" font="RegularBold; 32" backgroundColor="OE_Background" halign="left" position="170,150" size="500,50" transparent="1"/>
+	<!-- WLANSTATUS -->
+  <screen name="Wlanstatus" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget source="status" render="Label" font="FHD; 30" backgroundColor="OE_Background" position="140,155" size="1300,750" transparent="1"/>
+  </screen>
+  <screen name="WlanStatus" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Wireless Network State">
+	<panel name="StanDardScreen"/>
+	<widget source="IF" render="Label" font="RegularBold; 32" backgroundColor="OE_Background" halign="left" position="140,150" size="500,50" transparent="1"/>
 	<widget source="Statustext" render="Label" font="RegularBold; 32" foregroundColor="white" backgroundColor="OE_Background" position="645,150" size="370,50" transparent="1" halign="right"/>
 	<widget name="statuspic" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png" position="1035,158" size="35,35" transparent="1"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="grey" position="170,210" size="900,5" zPosition="-9"/>
-	<widget source="LabelBSSID" render="Label" backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="170,230" size="495,45" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="170,280" render="Label" size="495,45" source="LabelESSID" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="170,330" render="Label" size="495,45" source="LabelQuality" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="170,380" render="Label" size="495,45" source="LabelSignal" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="170,430" render="Label" size="495,45" source="LabelBitrate" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="170,480" render="Label" size="495,45" source="LabelEnc" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,230" render="Label" size="495,45" source="BSSID" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,280" render="Label" size="495,45" source="ESSID" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,330" render="Label" size="495,45" source="quality" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,380" render="Label" size="495,45" source="signal" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,430" render="Label" size="495,45" source="bitrate" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,480" render="Label" size="495,45" source="enc" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="140,210" size="930,5" zPosition="-9"/>
+	<widget source="LabelBSSID" render="Label" backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="140,230" size="495,45" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="140,280" render="Label" size="495,45" source="LabelESSID" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="140,330" render="Label" size="495,45" source="LabelQuality" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="140,380" render="Label" size="495,45" source="LabelSignal" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="140,430" render="Label" size="495,45" source="LabelBitrate" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="140,480" render="Label" size="495,45" source="LabelEnc" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,230" render="Label" size="490,45" source="BSSID" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,280" render="Label" size="490,45" source="ESSID" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,330" render="Label" size="490,45" source="quality" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,380" render="Label" size="490,45" source="signal" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,430" render="Label" size="490,45" source="bitrate" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="FHD; 32" foregroundColor="OE_Foreground" halign="left" position="670,480" render="Label" size="490,45" source="enc" transparent="1"/>
   </screen>
 	<!-- MOUNTS -->
   <screen name="NetworkMountsMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2226,7 +2201,7 @@
 			</convert>
 	</widget>
 	<eLabel backgroundColor="blue_light" name="" position="140,877" size="1300,2" zPosition="-9"/>
-	<widget source="infotext" render="Label" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="green_light" position="140,895" size="1300,50" transparent="1" halign="center" valign="center"/>
+	<widget source="infotext" render="Label" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,895" size="1300,50" transparent="1" halign="center" valign="center"/>
   </screen>
   <screen name="AutoMountEdit" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
