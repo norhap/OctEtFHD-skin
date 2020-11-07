@@ -932,7 +932,7 @@
 	<widget alphatest="blend" position="550,07" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
 	  <convert type="ServiceName2">Reference</convert>
 	</widget>
-	<widget source="ServiceEvent" render="Label" font="RegularBold; 20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="270,70" size="265,50" transparent="1" zPosition="1">
+	<widget source="ServiceEvent" render="Label" font="RegularBold; 20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="275,70" size="265,95" transparent="1" zPosition="1">
 	  <convert type="TransponderInfo">
 	  </convert>
 	</widget>
@@ -2167,7 +2167,7 @@
 	<panel name="introduction_standard"/>
 	<widget name="menulist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,700" transparent="1"/>
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoMountManager" position="center,center" size="1920,1080" transparent="0">
+  <screen name="AutoMountManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
 	<panel name="StanDardScreen"/>
 	<panel name="introduction_standard"/>
 	<widget source="config" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="140,160" size="1300,700" transparent="1">
@@ -2180,7 +2180,7 @@
 						"fonts": [gFont("FHD",30),gFont("Regular",26)],
 						"itemHeight": 90
 						}
-			</convert>
+	  </convert>
 	</widget>
   </screen>
   <screen name="NetworkBrowser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2188,7 +2188,7 @@
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,150" size="1300,702" transparent="1">
 	  <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (72, 72), png = 1), # index 1 is the expandable/expanded/verticalline icon
+			MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (72, 72), png = 1), # index 1 is the expandable/expanded/verticalline icon
 			MultiContentEntryText(pos = (100, 4), size = (800, 40), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the Hostname
 			MultiContentEntryText(pos = (240, 5), size = (800, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 3 is the sharename
 			MultiContentEntryText(pos = (240, 42), size = (800, 38), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # index 4 is the sharedescription
@@ -2242,7 +2242,7 @@
 						"fonts": [gFont("FHD",30)],
 						"itemHeight": 85
 				}
-			</convert>
+	  </convert>
 	</widget>
   </screen>
   <screen name="UserDialog" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2709,9 +2709,9 @@
 	<widget name="list" itemHeight="50" font="FHD; 30" backgroundColor="black" foregroundColor="OE_Foreground" position="140,150" size="1300,500" transparent="1"/>
 	<eLabel backgroundColor="blue_light" name="" position="140,710" size="1300,2" zPosition="-9"/>
 	<widget name="SNR" position="170,720" size="110,45" backgroundColor="OE_Background" font="FHD; 30" transparent="1"/>
-	<widget name="snr_bar" foregroundColor="green_light" borderColor="OE_Selection" borderWidth="2" position="290,730" size="500,25" transparent="1"/>
-	<widget name="snr_percentage" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="green_light" position="800,720" size="120,45" transparent="1"/>
-	<widget name="snr_db" position="925,720" size="300,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="green_light"/>
+	<widget name="snr_bar" foregroundColor="un56c856" borderColor="OE_Selection" borderWidth="2" position="290,730" size="500,25" transparent="1"/>
+	<widget name="snr_percentage" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="un56c856" position="800,720" size="120,45" transparent="1"/>
+	<widget name="snr_db" position="925,720" size="300,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="un56c856"/>
 	<widget name="AGC" position="170,770" size="110,45" backgroundColor="OE_Background" font="FHD; 30" transparent="1"/>
 	<widget name="agc_bar" position="290,780" size="500,25" borderWidth="1" foregroundColor="blue_light" transparent="1"/>
 	<widget name="agc_percentage" position="800,770" size="120,45" font="FHD; 30" backgroundColor="black" foregroundColor="blue_light" transparent="1"/>
@@ -2721,9 +2721,9 @@
 	<widget name="Lock" position="170,665" size="210,45" font="FHD; 30" backgroundColor="black" transparent="1"/>
 	<widget name="lock_on" position="380,665" pixmap="extensions/lock_on.png" size="35,35" transparent="1"/>
 	<widget name="lock_off" position="380,665" size="35,35" transparent="1"/>
-	<widget name="lock_state" font="FHD; 30" backgroundColor="black" position="455,665" size="400,45" transparent="1"/>
-	<widget name="rotorstatus" position="875,665" size="320,45" font="FHD; 30" backgroundColor="black" transparent="1"/>
-	<widget name="status_bar" position="1215,665" size="50,45" halign="center" transparent="1"/>
+	<widget name="lock_state" font="FHD; 30" backgroundColor="black" position="455,665" size="250,45" transparent="1"/>
+	<widget name="rotorstatus" position="715,665" size="530,45" font="FHD; 30" backgroundColor="black" transparent="1"/>
+	<widget name="status_bar" position="1250,665" size="50,45" halign="center" transparent="1"/>
 	<widget name="Frequency" position="170,915" size="185,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="frequency_value" backgroundColor="OE_Background" font="FHD; 30" position="360,915" size="200,45" transparent="1"/>
 	<widget name="Symbolrate" position="600,915" size="350,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1"/>
@@ -2731,12 +2731,10 @@
 	<widget name="FEC" position="1275,915" size="80,45" font="FHD; 30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="fec_value" backgroundColor="OE_Background" font="FHD; 30" foregroundColor="white" position="1355,915" size="115,45" transparent="1"/>
   </screen>
-  <screen name="PositionerSetupLog" title="Positioner Setup Log" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<!-- Widget -->
+	<!-- POSITIONER LOG -->
+  <screen name="PositionerSetupLog" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="list" font="FHD; 30" backgroundColor="OE_Background" position="170,160" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="140,945" size="1300,2" zPosition="-9"/>
   </screen>
 	<!-- DISH-->
   <screen name="Dish" backgroundColor="transparent" flags="wfNoBorder" position="20,75" size="550,250" title="Dish" zPosition="2">
