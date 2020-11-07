@@ -282,8 +282,8 @@
   </screen>
   <screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="InfoBar">
 	<panel name="poster_firstinfobar"/>
-	<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="30,852" size="1850,215" zPosition="-11"/>
-	<eLabel backgroundColor="blue_light" name="" position="336,910" size="1510,1" zPosition="20" foregroundColor="white"/>
+	<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="15,852" size="1865,215" zPosition="-11"/>
+	<eLabel backgroundColor="blue_light" name="" position="336,910" size="1510,2" zPosition="20" foregroundColor="OE_ListBackground"/>
 	<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="30,775" size="285,305" zPosition="-10"/>
 	<!-- Widget -->
 	<widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="RegularBold; 37" position="320,854" size="110,55" transparent="1" halign="right" valign="center" zPosition="1"/>
@@ -393,17 +393,17 @@
 	</widget>
 	<ePixmap alphatest="blend" pixmap="my_icons/sub_off.png" position="1491,865" size="63,32" zPosition="1"/>
     <eLabel text="SNR" position="35,778" zPosition="2" size="40,25" font="Regular; 22" halign="center" backgroundColor="OE_NewBg" transparent="1" valign="center"/>
-	<widget source="session.FrontendStatus" render="Progress" foregroundColor="blue_light" position="80,785" size="145,15" zPosition="2" borderWidth="2" borderColor="blue_light">
+	<widget source="session.FrontendStatus" render="Progress" backgroundColor="OE_NewBg" foregroundColor="un56c856" position="80,785" size="145,15" zPosition="2" borderWidth="2" borderColor="blue_light">
 	  <convert type="FrontendInfo">SNR</convert>
 	</widget>
-	<widget source="session.FrontendStatus" render="Label" position="215,772" size="115,40" backgroundColor="OE_Background" transparent="1" halign="center" font="RegularBold; 23" valign="center" zPosition="3" foregroundColor="un56c856">
+	<widget source="session.FrontendStatus" render="Label" position="215,772" size="115,40" backgroundColor="OE_NewBg" transparent="1" halign="center" font="RegularBold; 23" valign="center" zPosition="3" foregroundColor="un56c856">
 	  <convert type="FrontendInfo">SNR</convert>
 	</widget>
     <eLabel text="AGC" position="35,819" zPosition="2" size="45,25" font="Regular; 22" halign="center" backgroundColor="OE_NewBg" transparent="1" valign="center"/>
-	<widget source="session.FrontendStatus" render="Progress" foregroundColor="blue_light" position="80,825" size="145,15" zPosition="2" borderWidth="2" borderColor="blue_light">
+	<widget source="session.FrontendStatus" render="Progress" foregroundColor="blue_light" backgroundColor="OE_NewBg" position="80,825" size="145,15" zPosition="2" borderWidth="2" borderColor="blue_light">
 	  <convert type="FrontendInfo">AGC</convert>
 	</widget>
-	<widget source="session.FrontendStatus" render="Label" position="215,812" size="115,40" backgroundColor="OE_Background" transparent="1" halign="center" font="RegularBold; 23" valign="center" zPosition="3" foregroundColor="blue_light">
+	<widget source="session.FrontendStatus" render="Label" position="215,812" size="115,40" backgroundColor="OE_NewBg" transparent="1" halign="center" font="RegularBold; 23" valign="center" zPosition="3" foregroundColor="blue_light">
 	  <convert type="FrontendInfo">AGC</convert>
 	</widget>
 	<widget source="session.FrontendInfo" render="Label" position="35,845" size="280,30" font="RegularBold; 22" halign="left" noWrap="1" zPosition="2" backgroundColor="OE_NewBg" transparent="1">
@@ -3908,7 +3908,7 @@
 	<panel name="StanDardScreen"/>
 	<panel name="description_standard"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="48,960" size="64,43"/>
-	<widget name="preview" position="1470,300" size="440,440" alphatest="blend"/>
+	<widget name="preview" position="1480,300" size="440,440" alphatest="blend"/>
 	<widget source="skins" render="Listbox" position="140,140" size="1300,710" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	<convert type="TemplatedMultiContent">
 	{
