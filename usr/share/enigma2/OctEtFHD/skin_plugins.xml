@@ -6,29 +6,25 @@
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Setup" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
-	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_Background" position="1475,125" size="380,50" transparent="1" valign="center" zPosition="2" foregroundColor="white" halign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1475,135" size="400,2" zPosition="2"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1440,45" size="480,990" zPosition="1"/>
-	<widget name="description" objectTypes="description,Button,Label" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
-	<widget name="description" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<panel name="setup_standard"/>
+	<widget name="description" objectTypes="description,Button,Label" position="1465,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget name="description" position="1465,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
 	<widget name="config" font="FHD; 32" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="140,160" size="1300,800" transparent="1"/>
-	<widget name="pleasewait" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,50" transparent="1" zPosition="2"/>
+	<widget name="pleasewait" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="white" position="140,160" size="1300,50" transparent="1" zPosition="2"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_ProvidersSetup" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
-	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_Background" position="1475,125" size="380,50" transparent="1" valign="center" zPosition="2" foregroundColor="white" halign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1475,135" size="400,2" zPosition="2"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1440,45" size="480,990" zPosition="1"/>
-	<widget name="description" objectTypes="description,Button,Label" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
-	<widget name="description" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<panel name="setup_standard"/>
+	<widget name="description" objectTypes="description,Button,Label" position="1465,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget name="description" position="1465,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
 	<widget name="config" font="FHD; 32" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="140,160" size="1300,800" transparent="1"/>
-	<widget name="pleasewait" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1300,50" transparent="1" zPosition="2"/>
+	<widget name="pleasewait" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="white" position="140,160" size="1300,50" transparent="1" zPosition="2"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Menu" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,800" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="140,165" size="1300,800" transparent="1">
 	  <convert type="TemplatedMultiContent">
 							 {"template": [
 							 MultiContentEntryText(pos = (10, 0), size = (1300, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
@@ -42,7 +38,7 @@
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Ordering" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,800" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="140,165" size="1300,800" transparent="1">
 	  <convert type="TemplatedMultiContent">
 							 {"template": [
 							 MultiContentEntryText(pos = (10, 5), size = (1300, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
@@ -56,22 +52,18 @@
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Log" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
-	<widget name="list" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,800" transparent="1"/>
+	<widget name="list" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="white" position="140,165" size="1300,800" transparent="1"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_About" position="center,center" size="1920,1080" title="">
-	<widget name="about" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,750" transparent="1"/>
-	<widget name="oealogo" position="170,800" size="177,130" alphatest="blend"/>
+	<widget name="about" font="FHD; 32" backgroundColor="OE_Background" foregroundColor="white" position="140,165" size="1300,750" transparent="1"/>
+	<widget name="oealogo" position="140,800" size="177,130" alphatest="blend"/>
 	<panel name="StanDardScreen"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_HideSections" position="center,center" size="1920,1080" title="">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="AutoBouquetsMaker HideSections" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,750" transparent="1">
+	<panel name="StanDardScreen"/>
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="140,165" size="1300,750" transparent="1">
 	  <convert type="TemplatedMultiContent">
 							 {"template": [
 							 MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (35, 35), png = 0),
@@ -83,14 +75,6 @@
 							 }
 	  </convert>
 	</widget>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="500,960" size="40,40"/>
-	<widget source="key_red" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Label" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="550,960" size="270,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
   </screen>
 
   <!-- Add Stream Url -->

@@ -60,7 +60,7 @@
 	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="130,40" size="1300,90" halign="center" valign="center" transparent="1"/>
 	</screen>
 	<screen name="TitleAbout">
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="370,40" size="1580,90" halign="center" valign="center" transparent="1"/>
+	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="370,40" size="1545,90" halign="center" valign="center" transparent="1"/>
 	</screen>
 	<screen name="TitleSlim">
 	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="100,0" size="720,120" halign="top" valign="center" transparent="1"/>
@@ -159,12 +159,12 @@
 	<panel name="ClockBg"/>
 	<panel name="TitleScreenAll"/>
 	<panel name="CONDITIONAL_RGYB"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="20,45" size="1455,990" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="20,45" size="1445,990" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="40,0" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="20,45" size="1455,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="20,1033" size="1455,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="20,45" size="1445,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="20,1033" size="1445,2" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="20,45" size="2,990" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1474,45" size="2,990" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1464,45" size="2,990" zPosition="-15"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="42,30" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="140,135" size="1300,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="140,965" size="1300,2" zPosition="-9"/>
@@ -204,7 +204,9 @@
 	<panel name="ClockBgAbout"/>
 	<panel name="TitleAbout"/>
 	<panel name="CONDITIONAL_RGYB_ABOUT"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1980,990" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1920,990" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="0,45" size="1920,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="0,1035" size="1920,2" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="400,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="un5678a4" backgroundColor="blue_light" position="60,130" size="275,2" zPosition="-9"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="410,130" size="1505,2" zPosition="-9"/>
@@ -290,6 +292,12 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<widget source="introduction" render="Label" font="RegularBold; 30" foregroundColor="blue_light" backgroundColor="OE_Background" position="140,895" size="1300,50" transparent="1" halign="center" valign="center"/>
 	<widget name="introduction" font="RegularBold; 30" foregroundColor="blue_light" backgroundColor="OE_Background" position="140,895" size="1300,50" transparent="1" halign="center" valign="center"/>
 	</screen>
+	<!-- SETUP STANDARD -->
+	<screen name="setup_standard">
+	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_NewBg2" position="1485,130" size="380,50" transparent="1" valign="center" zPosition="2" halign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1480,135" size="420,2" zPosition="2"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1435,45" size="485,990" zPosition="-16"/>
+	</screen>
 	<!-- DESCRIPTION STANDARD -->
 	<screen name="description_standard">
 	<eLabel backgroundColor="blue_light" position="140,857" size="1300,2" zPosition="2"/>
@@ -301,54 +309,51 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<screen name="description" position="fill" flags="wfNoBorder">
 	<panel name="autoresize"/>
 	<widget name="description" position="1455,150" size="450,820" font="FHD; 34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
-	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_NewBg2" position="1475,125" size="380,50" transparent="1" valign="center" zPosition="2" halign="center"/>
 	</screen>
 	<screen name="choicebox">
 	<panel name="StanDardScreen"/>
+	<panel name="setup_standard"/>
 	<panel name="description"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="145,980" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="195,980" size="64,43"/>
 	<eLabel text="Move Up | Down" position="250,985" size="240,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold; 26" halign="left"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1440,45" size="480,990" zPosition="1"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1475,135" size="400,2" zPosition="2"/>
-	<eLabel text="Info" font="FHD; 30" backgroundColor="OE_NewBg2" position="1475,130" size="380,50" transparent="1" valign="center" zPosition="2" halign="center"/>
 	<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" size="1300,820" transparent="1" zPosition="3"/>
 	<widget name="text" position="1455,100" size="450,380" font="FHD; 30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="description" position="1455,150" size="450,380" font="FHD; 30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget source="session.CurrentService" render="Progress" position="1450,495" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" transparent="1" borderWidth="2" zPosition="6">
+	<widget source="session.CurrentService" render="Progress" position="1470,495" size="430,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" transparent="1" borderWidth="2" zPosition="6">
 	<convert type="CpuUsage">$0</convert>
 	</widget>
-	<widget source="session.Event_Now" render="Label" position="1450,510" size="480,70" backgroundColor="OE_NewBg2" font="RegularBold; 24" transparent="1" zPosition="6">
+	<widget source="session.Event_Now" render="Label" position="1468,510" size="480,70" backgroundColor="OE_NewBg2" font="RegularBold; 24" transparent="1" zPosition="6">
 	<convert type="CpuUsage">CPU Used:$0 (Core #1: $1 Core #2: $2 Core #3: $3 Core #4: $4)</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,580" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1470,580" size="430,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1450,595" size="440,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1470,595" size="440,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,665" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1470,665" size="430,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1450,680" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1470,680" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,750" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1470,750" size="430,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">SwapFree</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1450,765" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1470,765" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">SwapFree</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,835" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1470,835" size="430,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1450,850" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1470,850" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1450,920" size="450,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1470,920" size="430,15" backgroundColor="OE_NewBg2" foregroundColor="#004ccbde" borderWidth="2" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1450,935" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1470,935" size="460,70" backgroundColor="OE_NewBg2" font="RegularBold; 21" transparent="1" zPosition="5">
 	  <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
 	</widget>
 	</screen>
