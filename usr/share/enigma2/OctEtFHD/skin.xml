@@ -211,6 +211,11 @@
 	<parameter name="ExpandableListIcon" value="0, 0, 55, 38"/>
 	<parameter name="ExpandableListDescr" value="55, 2, 1000, 45"/>
   </parameters>
+	<!-- GRAPHIC SWITCH -->
+  <switchpixmap>
+	<pixmap name="menu_on" filename="icons/menu_on.png"/>
+	<pixmap name="menu_off" filename="icons/menu_off.png"/>
+  </switchpixmap>
 	<!-- RESTART GUI -->
   <screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
 	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend"/>
@@ -1717,7 +1722,7 @@
 	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="0,80" size="80,80" alphatest="blend"/>
 	<widget name="list" itemHeight="45" font="RegularBold; 26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="25,235" size="1020,90" transparent="1"/>
   </screen>
-  <screen name="MessageBoxSimple" title="Message" position="center,200" size="1200,600">
+  <screen name="MessageBoxSimple" title="Message" position="300,200" size="1200,600">
 	<panel name="MessageBoxTemplate"/>
   </screen>
   <screen backgroundColor="transparent" borderColor="transparent" borderWidth="0" flags="wfNoBorder" name="MediaPlayer" position="center,center" size="1920,1080" title="MediaPlayer" transparent="0">
