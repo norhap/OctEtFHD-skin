@@ -3067,14 +3067,15 @@
 	<panel name="ClockBg"/>
   </screen>
 
-  <!-- EPG Import -->
+  <!-- EPG IMPORT -->
   <screen name="EPGImportConfig" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<widget name="config" itemHeight="50" font="RegularBold; 26" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="140,140" size="1300,600" transparent="1"/>
-	<widget name="status" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="white" position="170,755" size="1300,120" transparent="1"/>
-	<widget name="statusbar" font="Regular;28" borderWidth="1" position="170,880" size="1300,45" transparent="1" foregroundColor="white" backgroundColor="OE_Background"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_menu.png" position="48,905" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_info.png" position="48,960" size="64,43"/>
+	<eLabel backgroundColor="blue_light" position="140,857" size="1300,2" zPosition="2"/>
+	<widget name="status" font="RegularBold; 28" backgroundColor="OE_Background" foregroundColor="blue_light" position="150,770" size="600,85" transparent="1"/>
+	<widget name="statusbar" font="RegularBold;28" borderWidth="1" position="450,890" size="740,45" valign="center" halign="center" transparent="1" foregroundColor="blue_light" backgroundColor="OE_Background"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_menu.png" position="48,865" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_info.png" position="48,920" size="64,43"/>
   </screen>
 
   <screen name="EPGImportSources" position="fill" flags="wfNoBorder">
@@ -3083,41 +3084,13 @@
   </screen>
 
   <screen name="EPGImportProfile" title="EPGImportProfile" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="500,960" size="40,40"/>
-	<widget name="key_red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="key_green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="StanDardScreen"/>
+	<widget name="config" itemHeight="50" font="RegularBold; 26" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="140,140" size="1300,600" transparent="1"/>
   </screen>
 
   <screen name="EPGImportLog" title="EPG Import Log" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
-	<widget name="list" itemHeight="50" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="500,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="830,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="1160,960" size="40,40"/>
-	<widget name="key_red" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="key_green" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="key_yellow" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="key_blue" font="Regular; 28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="StanDardScreen"/>
+	<widget name="list" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="white" position="140,140" size="1300,600" transparent="1"/>	
   </screen>
 
   <!-- EPGSearch -->
