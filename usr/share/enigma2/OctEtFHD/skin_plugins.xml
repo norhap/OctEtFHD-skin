@@ -3090,43 +3090,43 @@
 
   <screen name="EPGImportLog" title="EPG Import Log" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="list" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="white" position="140,140" size="1300,600" transparent="1"/>	
+	<widget name="list" font="RegularBold; 26" backgroundColor="OE_Background" foregroundColor="white" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="140,140" size="1300,820" transparent="1"/>
   </screen>
 
-  <!-- EPGSearch -->
+  <!-- EPG SEARCH -->
   <screen name="EPGSearch" title="EPG Search" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
-	<eLabel backgroundColor="white" name="" position="680,930" size="1160,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="680,930" size="1160,2" zPosition="-9"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="600,1080" zPosition="-11" valign="center"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="RegularBold; 30" backgroundColor="OE_NewBg2" foregroundColor="white" position="80,85" size="570,50" halign="left" valign="center" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="680,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<widget source="Title" render="Label" font="RegularBold; 30" backgroundColor="OE_NewBg2" position="80,85" size="250,50" halign="left" valign="center" transparent="1" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="680,142" size="1160,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,142" size="570,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<widget backgroundColor="OE_Background" font="FHD; 34" foregroundColor="OE_Foreground" halign="left" position="680,85" render="Label" size="750,50" source="Service" transparent="1">
+	<widget source="Service" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="680,85" size="830,50" transparent="1">
 	    <convert type="ServiceName">Name</convert>
 	</widget>
-	<widget alphatest="blend" position="80,865" render="Picon" size="220,132" source="Service" transparent="1" zPosition="5">
+	<widget alphatest="blend" position="500,77" render="Picon" size="100,60" source="Service" transparent="1" zPosition="5">
 	    <convert type="ServiceName">Reference</convert>
 	</widget>
-	<widget name="list" itemHeight="50" setEventItemFont="Regular; 28" setEventTimeFont="Regular;28" setColWidths="120,220" setColGap="40" setIconDistance="10" setPiconSize="50,30" setPiconDistance="0" setPboxDistance="80" scrollbarMode="showOnDemand" position="680,158" size="1160,750" backgroundColor="OE_Background" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="FHD; 28" foregroundColor="OE_Foreground" halign="center" position="80,154" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" size="570,610" source="Event" transparent="1" valign="top">
+	<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 26" setEventTimeFont="RegularBold; 26" setColWidths="120,220" setColGap="40" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="680,160" size="1160,750" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="Event" font="RegularBold; 26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="80,149" size="570,770" transparent="1" halign="left" valign="top">
 	    <convert type="EventName">FullDescription</convert>
 	</widget>
+	<!-- others -->
+	<eLabel backgroundColor="blue_light" name="" position="80,930" size="570,2" zPosition="-9"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="205,950" size="64,43" alphatest="blend"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_info.png" position="289,950" size="64,43" alphatest="blend"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_ok.png" position="373,950" size="64,43" alphatest="blend"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_exit.png" position="458,950" size="64,43" alphatest="blend"/>
 	<!-- Button -->
-	<ePixmap name="new ePixmap" pixmap="OctEtFHD/buttons/key_menu.png" position="500,950" size="64,43" alphatest="blend"/>
-	<ePixmap name="new ePixmap" pixmap="OctEtFHD/buttons/key_info.png" position="580,950" size="64,43" alphatest="blend"/>
-	<!-- Button -->
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="680,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="970,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="1260,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="1550,950" size="40,40"/>
-	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="725,950" size="240,40" name="key_red" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1015,950" size="240,40" name="key_green" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1305,950" size="240,40" name="key_yellow" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="Regular; 28" halign="left" position="1595,950" size="240,40" name="key_blue" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
-	<panel name="ClockBg"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="680,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="970,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1260,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1550,950" size="40,40"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="725,950" size="240,40" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1015,950" size="240,40" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1305,950" size="240,40" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1595,950" size="240,40" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
 
   <screen name="EPGSearchSetup" title="EPGSearch Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
