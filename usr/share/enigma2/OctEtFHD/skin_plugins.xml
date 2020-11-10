@@ -3119,14 +3119,14 @@
 	<ePixmap name="new ePixmap" pixmap="buttons/key_ok.png" position="373,950" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_exit.png" position="458,950" size="64,43" alphatest="blend"/>
 	<!-- Button -->
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="680,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="970,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1260,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1550,950" size="40,40"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="725,950" size="240,40" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1015,950" size="240,40" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1305,950" size="240,40" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1595,950" size="240,40" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="680,955" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="970,955" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1260,955" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1550,955" size="40,40"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="725,945" size="240,70" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1015,945" size="240,70" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1305,945" size="240,70" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1595,945" size="240,70" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
 
   <screen name="EPGSearchSetup" title="EPGSearch Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">

@@ -931,7 +931,7 @@
 	<!-- CHANNELSELECTION MENU -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelContextMenu" position="0,center" size="1920,1080" transparent="0">
 	<panel name="StanDardScreen"/>
-	<widget name="menu" itemHeight="50" font="FHD; 30" position="140,160" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" size="1300,800" transparent="1" zPosition="3"/>
+	<widget name="menu" itemHeight="50" font="FHD; 30" position="140,160" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" size="1300,800" transparent="1" zPosition="3"/>
   </screen>
   <screen name="SimpleChannelSelection" title="SimpleChannelSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -1372,7 +1372,7 @@
 	<widget alphatest="blend" position="500,77" render="Picon" size="100,60" source="Service" transparent="1" zPosition="5">
 	    <convert type="ServiceName">Reference</convert>
 	</widget>
-	<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 30" setColWidths="120,220" setColGap="40" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="680,160" size="1160,750" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 29" setColWidths="120,220" setColGap="40" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="680,160" size="1160,750" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="Event" font="RegularBold; 26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="80,149" size="570,770" transparent="1" halign="left" valign="top">
 	    <convert type="EventName">FullDescription</convert>
 	</widget>
@@ -1383,14 +1383,14 @@
 	<ePixmap name="new ePixmap" pixmap="buttons/key_ok.png" position="373,950" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_exit.png" position="458,950" size="64,43" alphatest="blend"/>
 	<!-- Button -->
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="680,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="970,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1260,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1550,950" size="40,40"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="725,950" size="240,40" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1015,950" size="240,40" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1305,950" size="240,40" render="Label" source="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1595,950" size="240,40" render="Label" source="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="680,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="970,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1260,960" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1550,960" size="40,40"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="725,945" size="240,70" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1015,945" size="240,70" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1305,945" size="240,70" render="Label" source="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1595,945" size="240,70" render="Label" source="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
@@ -2532,10 +2532,10 @@
 	<panel name="StanDardScreen"/>
 	<widget name="text" font="FHD; 30" backgroundColor="OE_Background" position="170,145" size="1300,45" transparent="1"/>
 	<widget name="target" font="FHD; 30" backgroundColor="OE_Background" position="170,195" size="1300,45" transparent="1"/>
-	<widget name="filelist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,245" size="1300,300" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="140,560" size="1300,2" zPosition="-9"/>
-	<widget name="textbook" font="FHD; 30" backgroundColor="OE_Background" position="140,580" size="1300,45" transparent="1"/>
-	<widget name="booklist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="140,630" size="1300,300" transparent="1"/>
+	<widget name="filelist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,245" size="1300,450" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="140,710" size="1300,2" zPosition="-9"/>
+	<widget name="textbook" font="FHD; 30" backgroundColor="OE_Background" position="140,710" size="1300,45" transparent="1"/>
+	<widget name="booklist" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,760" size="1300,205" transparent="1"/>
 	<widget name="red" position="170,980" size="40,40" pixmap="buttons/key_red.png" alphatest="blend"/>
 	<widget name="green" position="500,980" size="40,40" pixmap="buttons/key_green.png" alphatest="blend"/>
 	<widget name="yellow" position="830,980" size="0,0" pixmap="buttons/key_yellow.png" alphatest="blend"/>
