@@ -154,6 +154,21 @@
 	</widget>
 	<widget source="key_blue" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="60,850" size="240,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
+	<!-- SOURCES NAMES EVENTVIEW -->
+	<screen name="key_evenview">
+	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="380,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="710,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1040,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1370,950" size="40,40"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="425,950" size="280,40" source="key_red" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="755,950" size="280,40" source="key_green" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1085,950" size="280,40" source="key_yellow" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1415,950" size="280,40" source="key_blue" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="425,950" size="280,40" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="755,950" size="280,40" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1085,950" size="280,40" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold; 26" position="1415,950" size="280,40" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
+	</screen>
 	<!-- STANDARD SCREEN -->
 	<screen name="StanDardScreen">
 	<panel name="ClockBg"/>
