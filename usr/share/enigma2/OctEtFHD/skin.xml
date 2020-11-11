@@ -1586,14 +1586,20 @@
 	<widget source="current_address" render="Label" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="green_light" position="140,915" size="640,45" transparent="1"/>
 	<widget source="fixed_address" render="Label" font="FHD; 30" backgroundColor="OE_Background" foregroundColor="blue_light" position="790,915" size="640,45" transparent="1"/>
   </screen>
+	<!-- HELP MENU -->
   <screen name="HelpMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="135,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="230,130" size="1240,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="help..." font="FHD; 34" backgroundColor="OE_Background" position="230,73" size="1240,50" transparent="1"/>
-	<widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="230,165" size="1240,800" transparent="1"/>
-	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="75,center" size="125,500" zPosition="10"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="30,70" size="1460,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="30,center" size="2,940" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1490,center" size="2,940" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="30,1010" size="1462,2" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="60,center" size="145,1080" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="230,140" size="1240,2" zPosition="-9"/>
+	<widget source="Title" render="Label" font="FHD; 34" backgroundColor="OE_Background" position="230,80" size="1010,50" transparent="1"/>
+	<widget name="list" itemHeight="50" font="FHD; 30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="230,155" size="1240,800" transparent="1"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="95,85" size="75,75" transparent="1" zPosition="1"/>
+	<widget name="rc" alphatest="blend" backgroundColor="transparent" pixmaps="rc.png,rcold.png" position="75,center" size="130,500" zPosition="10"/>
+	<widget name="long_key" position="230,965" size="375,40" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold;26"/>
 	<widget alphatest="on" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowup" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
