@@ -266,9 +266,9 @@
 	<!-- MENU SORT -->
   <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="MainMenu"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="20,505" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="70,505" size="64,43"/>
-	<eLabel text="Up | Down" position="140,505" size="240,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold; 26" halign="left"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="15,505" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="230,505" size="64,43"/>
+	<eLabel text="[move mode]" position="20,435" size="270,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold; 24" halign="center" valign="center"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="20,595" size="40,40"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="20,685" size="40,40"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="20,775" size="40,40"/>
@@ -2388,9 +2388,9 @@
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="10,1025" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1025" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="145,1025" size="64,43"/>
-	<eLabel text="Up | Down" position="210,1010" size="270,70" halign="left" valign="center"  backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold; 26"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="420,1025" size="64,43"/>
-	<eLabel text="Default" position="480,1010" size="270,70" backgroundColor="OE_Background" font="RegularBold; 26" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<eLabel text="[move mode]" position="210,1010" size="270,70" halign="left" valign="center"  backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold; 24"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="460,1025" size="64,43"/>
+	<eLabel text="Default" position="520,1010" size="270,70" backgroundColor="OE_Background" font="RegularBold; 24" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="list" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="100,135" size="685,825" transparent="1"/>
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
