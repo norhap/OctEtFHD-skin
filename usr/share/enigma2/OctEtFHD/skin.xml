@@ -1182,7 +1182,7 @@
 	<!-- CONSOLE -->
   <screen name="Console" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="text" font="Console;27" backgroundColor="OE_Background" position="140,160" size="1300,800" transparent="1"/>
+	<widget name="text" font="Console;27" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="140,160" size="1300,800" transparent="1"/>
   </screen>
   <screen name="CommitInfoSetup" title="Open Vision Commit Info Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2122,7 +2122,7 @@
 	<widget source="config" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="140,160" size="1300,700" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (15, 0), size = (1100, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Title
+			MultiContentEntryText(pos = (15, 0), size = (1100, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the Menu Title
 			MultiContentEntryText(pos = (25, 45), size = (1100, 38), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 3 is the Description
 			MultiContentEntryPixmapAlphaBlend(pos = (1200, 2), size = (68, 68), png = 3), # index 4 is the pixmap
 						],
@@ -2425,7 +2425,7 @@
   </screen>
   <screen name="PluginManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,150" size="1300,696" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,150" size="1300,696" transparent="1">
 	    <convert type="TemplatedMultiContent">
 			{"templates":
 				{"default": (87,[
@@ -3800,7 +3800,7 @@
 	<widget name="infotext" position="140,140" size="1300,250" font="FHD; 32" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,960" size="64,43"/>
   </screen>
-	<!-- MOUNT MANAGER-->
+	<!-- MOUNT MANAGER DIMA73-->
   <screen name="DevicesMountPanel" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="lab1" position="140,140" size="210,50" font="FHD; 32" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
@@ -3821,6 +3821,68 @@
 	<panel name="StanDardScreen"/>
 	<widget name="config" itemHeight="50" position="140,160" size="1300,700" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="FHD; 30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="Linconn" position="500,880" size="550,50" font="FHD; 30" backgroundColor="#9f1313"/>
+  </screen>
+	<!-- 	DEVICEMANAGER DIMA73 -->
+  <screen name="HddSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,160" size="1300,700" transparent="1">
+	    <convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryPixmapAlphaBlend(pos = (5, 15), size = (110, 110), png = 0),
+		MultiContentEntryText(pos = (90, 15), size = (400, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+		MultiContentEntryText(pos = (520, 15), size = (640, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+		],
+		"fonts": [gFont("FHD", 30),gFont("Regular", 28)],
+		"itemHeight": 80
+		}
+	    </convert>
+	</widget>
+  </screen>
+  <screen name="HddPartitions" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
+	<panel name="StanDardScreen"/>
+	<widget name="label_disk" position="140,160" zPosition="1" size="1300,40" font="RegularBold; 26" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,210" size="1300,720" transparent="1">
+	    <convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryPixmapAlphaBlend(pos = (5, 20), size = (110, 110), png = 0),
+		MultiContentEntryText(pos = (90, 20), size = (400, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+		MultiContentEntryText(pos = (520, 20), size = (640, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+		],
+		"fonts": [gFont("FHD", 30),gFont("Regular", 28)],
+		"itemHeight": 80
+		}
+	    </convert>
+	</widget>
+  </screen>
+  <screen name="HddMountDevice" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="menu" itemHeight="50" font="RegularBold; 25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,200" zPosition="10" size="1300,720" transparent="1"/>
+  </screen>
+  <screen name="HddInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget font="RegularBold; 26" halign="left" name="model" position="140,140" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold; 26" halign="left" name="serial" position="140,190" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold; 26" halign="left" name="firmware" position="140,240" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold; 26" halign="left" name="cylinders" position="140,290" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold; 26" halign="left" name="heads" position="140,340" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold; 26" halign="left" name="sectors" position="140,390" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold; 26" halign="left" name="readDisk" position="140,440" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold; 26" halign="left" name="readCache" position="140,490" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold; 26" halign="left" name="temp" position="140,540" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget name="config" position="140,600" size="1300,205" backgroundColor="OE_Background" transparent="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light"/>
+  </screen>
+  <screen name="ExtraMessageBox"  backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="ExtraMessageBox">
+	<panel name="StanDardScreen"/>
+	<widget name="message" position="140,145" size="840,35" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold; 26" />
+	<widget source="menu" render="Listbox" position="140,200" size="1300,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+		{"template": [
+			MultiContentEntryPixmapAlphaBlend(pos=(10,25), size=(100,72), png=0), # Thumbnail
+			MultiContentEntryText(pos=(115,0), size=(750,100), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1)],
+			"fonts": [gFont("RegularBold",26)],
+		"itemHeight": 100}
+	    </convert>
+	</widget>
   </screen>
 	<!-- NETWORK MAC SETUP-->
   <screen name="NetworkMacSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3867,7 +3929,7 @@
   <screen name="PESpeedUp" position="fill" title="PE Speed Up">
 	<panel name="StanDardScreen"/>
 	<widget name="config" itemHeight="50" position="140,140" size="1300,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold; 30" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="lab1" position="140,910" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" halign="center" valign="center"/>
+	<widget name="lab1" position="140,910" size="1300,50" font="RegularBold; 30" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1" halign="center" valign="center"/>
 	<eLabel backgroundColor="blue_light" position="140,900" size="1300,2" zPosition="-9"/>
   </screen>
 	<!-- FILE COMMANDER-->
