@@ -148,11 +148,11 @@
 	</screen>
 	<!-- MENU SORT -->
 	<screen name="Conditional_MenuSort">
-	<ePixmap alphatest="blend" objectTypes="key_blue,Button,Label" backgroundColor="OE_NewBg2" pixmap="buttons/key_blue.png" position="20,865" size="40,40"/>
-	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_NewBg2" position="20,865" size="40,40" alphatest="blend" zPosition="1">
+	<ePixmap alphatest="blend" objectTypes="key_blue,Button,Label" backgroundColor="OE_NewBg2" pixmap="buttons/key_blue.png" position="20,835" size="40,40"/>
+	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_NewBg2" position="20,835" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="60,850" size="240,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" font="RegularBold; 24" backgroundColor="OE_NewBg2" position="60,820" size="240,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- SOURCES NAMES EVENTVIEW -->
 	<screen name="key_evenview">
