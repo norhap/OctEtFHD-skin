@@ -240,13 +240,13 @@
 	</screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
-	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="1015,180" position="85,0" valign="center" halign="center"/>
-	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="0,10" size="80,80" alphatest="blend"/>
-	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="0,10" size="80,80" alphatest="blend"/>
-	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="0,10" size="80,80" alphatest="blend"/>
-	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="0,10" size="80,80" alphatest="blend"/>
-	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="0,10" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="20,185" size="1080,100" transparent="1"/>
+	<widget name="text" font="Regular;35" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" size="1010,180" position="90,0" valign="center" halign="center"/>
+	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="5,10" size="80,80" alphatest="blend"/>
+	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="5,10" size="80,80" alphatest="blend"/>
+	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="5,10" size="80,80" alphatest="blend"/>
+	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="5,10" size="80,80" alphatest="blend"/>
+	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="5,10" size="80,80" alphatest="blend"/>
+	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" position="20,185" size="1080,100" transparent="1"/>
 	<panel name="autoresize"/>
 	<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.

@@ -284,6 +284,7 @@
   <screen name="ExtensionsList" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="choicebox"/>
   </screen>
+	<!-- INFOBAR -->
   <screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="InfoBar">
 	<panel name="poster_firstinfobar"/>
 	<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="15,852" size="1865,215" zPosition="-11"/>
@@ -333,10 +334,10 @@
 	</widget>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="336,977" size="1510,2"/>
 	<!-- CryptoInfo -->
-	<widget source="session.CurrentService" render="Label" position="335,1030" size="600,35" backgroundColor="OE_Background" font="RegularBold;23" foregroundColor="blue_light" transparent="1" halign="left">
+	<widget source="session.CurrentService" render="Label" position="335,1030" size="905,35" backgroundColor="OE_Background" font="RegularBold;23" foregroundColor="blue_light" transparent="1" halign="left">
 	    <convert type="CryptoInfo">VerboseInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="940,1030" size="600,35" font="RegularBold;23" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
+	<widget source="session.CurrentService" render="Label" position="1260,1030" size="400,35" font="RegularBold;23" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
 	    <convert type="PliExtraInfo">CryptoSpecial</convert>
 	</widget>
 	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1670,1030" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
@@ -1734,17 +1735,26 @@
 	<widget name="minutes" position="center,center" size="200,45" font="RegularBold;30" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" foregroundColor="white"/>
   </screen>
 	<!-- MESSAGEBOX -->
-  <screen name="MessageBox" title="Message" position="center,200" size="1100,320">
+  <screen name="MessageBox" title="Message" position="center,200" backgroundColor="OE_NewBg2" size="1100,320">
  	<panel name="autoresize"/>
-	<widget name="text" font="Regular;35" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" size="1015,230" position="85,0" valign="center" halign="center"/>
-	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="0,80" size="80,80" alphatest="blend"/>
-	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="0,80" size="80,80" alphatest="blend"/>
-	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="0,80" size="80,80" alphatest="blend"/>
-	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="0,80" size="80,80" alphatest="blend"/>
-	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="0,80" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_ListBackground" foregroundColor="OE_Foreground" position="25,235" size="1020,90" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="0,0" size="2,325" zPosition="1" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="0,318" size="1100,2" zPosition="20" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="1020,325" size="2,325" zPosition="20" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="0,0" size="1100,2" zPosition="20" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="1098,0" size="2,325" zPosition="20" foregroundColor="white"/>
+	<widget name="text" font="Regular;35" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" size="1010,230" position="90,0" valign="center" halign="center"/>
+	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="5,80" size="80,80" alphatest="blend"/>
+	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="5,80" size="80,80" alphatest="blend"/>
+	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="5,80" size="80,80" alphatest="blend"/>
+	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="5,80" size="80,80" alphatest="blend"/>
+	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="5,80" size="80,80" alphatest="blend"/>
+	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" position="25,235" size="1020,90" transparent="1"/>
   </screen>
-  <screen name="MessageBoxSimple" title="Message" position="300,200" size="1200,600">
+  <screen name="MessageBoxSimple" title="Message" backgroundColor="OE_NewBg2" position="300,200" size="1200,600">
+	<eLabel backgroundColor="blue_light" name="" position="0,0" size="2,605" zPosition="1" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="0,598" size="1200,2" zPosition="20" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="1198,0" size="2,605" zPosition="20" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="0,0" size="1200,2" zPosition="20" foregroundColor="OE_NewBg2"/>
 	<panel name="MessageBoxTemplate"/>
   </screen>
   <screen backgroundColor="transparent" borderColor="transparent" borderWidth="0" flags="wfNoBorder" name="MediaPlayer" position="center,center" size="1920,1080" title="MediaPlayer" transparent="0">
