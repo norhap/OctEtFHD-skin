@@ -575,7 +575,7 @@
 	    <convert type="MSNWeather">humidity</convert>
 	</widget>
 	<eLabel text="Humidity :" position="115,905" size="155,35" zPosition="5" font="RegularBold; 28" transparent="1"/>
-	<eLabel text="%" position="340,905" size="30,50" zPosition="5" halign="center" font="RegularBold; 28" transparent="1"/>
+	<eLabel text="%" position="330,905" size="30,50" zPosition="5" halign="center" font="RegularBold; 28" transparent="1"/>
   </screen>
 	<!-- MAIN MENU INFORMATION -->
 	<!-- INFO SERVICE -->
@@ -2933,7 +2933,7 @@
   <screen name="TimerEditList" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="48,960" size="64,43"/>
-	<widget name="timerlist" itemHeight="95" setEventNameFont="RegularBold; 21" setServiceNameFont="RegularBold; 22" setFont="RegularBold; 23" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="140,140" size="1300,820" transparent="1"/>
+	<widget name="timerlist" itemHeight="95" setEventNameFont="RegularBold; 21" setServiceNameFont="RegularBold; 22" setFont="RegularBold; 23" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="140,140" satPosLeft="400" rowSplit="45" size="1300,820" transparent="1"/>
 	<widget name="key_info" conditional="key_info" position="48,960" size="0,0" zPosition="-20"/>
 	<panel name="setup_standard"/>
 	<widget name="description" objectTypes="description,Button,Label" position="1465,200" size="450,810" font="FHD; 26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
