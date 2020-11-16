@@ -438,10 +438,10 @@
 	<eLabel backgroundColor="blue_light" name="" position="8,158" size="2,899" zPosition="-22" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="1700,158" size="2,899" zPosition="-22" foregroundColor="white"/>
 	<eLabel backgroundColor="OE_NewBg" position="25,center" size="440,1080" transparent="0" zPosition="-20" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" position="55,625" size="380,1" transparent="0" zPosition="-1" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" position="55,955" size="380,1" transparent="0" zPosition="-1" foregroundColor="blue_light"/>
+	<eLabel backgroundColor="blue_light" foregroundColor="OE_Background" name="" position="55,159" size="380,2" zPosition="-15"/>
+	<eLabel backgroundColor="blue_light" position="55,625" size="380,2" transparent="0" zPosition="-1" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" position="55,955" size="380,2" transparent="0" zPosition="-1" foregroundColor="blue_light"/>
 	<eLabel backgroundColor="blue_light" name="" position="465,955" size="1235,2" zPosition="-22" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" foregroundColor="OE_Background" name="" position="55,159" size="380,1" zPosition="-15"/>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="665,683" size="1020,2"/>
 	<widget alphatest="blend" position="135,10" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 	    <convert type="ServiceName2">Reference</convert>
@@ -2416,7 +2416,7 @@
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="10,1025" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1025" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="145,1025" size="64,43"/>
-	<eLabel text="[move mode]" position="210,1010" size="270,70" halign="left" valign="center"  backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold;24"/>
+	<eLabel text="[move mode]" position="210,1010" size="270,70" halign="left" valign="center" backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold;24"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="460,1025" size="64,43"/>
 	<eLabel text="Default" position="520,1010" size="270,70" backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="list" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="100,135" size="685,825" transparent="1"/>

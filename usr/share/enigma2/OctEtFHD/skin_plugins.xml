@@ -3090,7 +3090,7 @@
 
   <screen name="EPGImportLog" title="EPG Import Log" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="list" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="140,140" size="1300,820" transparent="1"/>
+	<widget name="list" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" position="140,140" size="1300,820" transparent="1"/>
   </screen>
 
   <!-- EPG SEARCH -->
@@ -3146,17 +3146,24 @@
 	<panel name="ClockBg"/>
   </screen>
 
-  <!-- EPG Refresh -->
+  <!-- EPG REFRESH -->
   <screen name="EPGRefreshConfiguration" title="Configure EPGRefresh" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="140,160" size="1300,650" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="140,825" size="1300,1" zPosition="-9" foregroundColor="white"/>
-	<widget source="help" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="140,840" size="1300,95" transparent="1"/>
+	<panel name="setup_standard"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,160" size="1300,800" transparent="1"/>
+	<widget source="help" render="Label" position="1465,150" size="450,780" font="FHD;34" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+  </screen>
+  <screen name="EPGSaveLoadConfiguration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<panel name="setup_standard"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,160" size="1300,820" transparent="1"/>
+	<widget source="help" render="Label" position="1465,150" size="450,780" font="FHD;34" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="epgcachelocation" render="Label" position="1465,780" size="450,200" font="FHD;30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 
   <screen name="EPGRefreshServiceEditor" title="Edit Services to refresh" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="140,160" size="1300,650" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,160" size="1300,650" transparent="1"/>
   </screen>
 
   <!-- ET-Portal -->
