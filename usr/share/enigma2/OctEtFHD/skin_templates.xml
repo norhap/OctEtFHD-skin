@@ -240,13 +240,13 @@
 	</screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
-	<widget name="text" font="Regular;35" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" size="1010,180" position="90,0" valign="center" halign="center"/>
-	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="5,10" size="80,80" alphatest="blend"/>
-	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="5,10" size="80,80" alphatest="blend"/>
-	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="5,10" size="80,80" alphatest="blend"/>
-	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="5,10" size="80,80" alphatest="blend"/>
-	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="5,10" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" position="20,185" size="1080,100" transparent="1"/>
+	<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" position="210,195" size="1005,225" valign="center" halign="center"/>
+	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="75,220" size="80,80" alphatest="blend"/>
+	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="75,220" size="80,80" alphatest="blend"/>
+	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="75,220" size="80,80" alphatest="blend"/>
+	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="75,220" size="80,80" alphatest="blend"/>
+	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="75,220" size="80,80" alphatest="blend"/>
+	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="205,0" size="1080,420" transparent="1"/>
 	<panel name="autoresize"/>
 	<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
@@ -261,8 +261,8 @@ if self.type == self.TYPE_YESNO:
 	offset = 60
 wsizex = textsize[0] + 60
 wsizey = textsize[1] + offset
-if (1200 &gt; wsizex):
-	wsizex = 1200
+if (1100 &gt; wsizex):
+	wsizex = 1100
 wsize = (wsizex, wsizey)
 # resize
 #self.instance.resize(eSize(*wsize))
@@ -270,7 +270,7 @@ wsize = (wsizex, wsizey)
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
 # move list
 listsize = (wsizex - 30, 420)
-self[&quot;list&quot;].instance.move(ePoint(15, int(textsize[1] + 40)))
+self[&quot;list&quot;].instance.move(ePoint(205, int(textsize[1] + 320)))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 # center window
 newwidth = wsize[0]
