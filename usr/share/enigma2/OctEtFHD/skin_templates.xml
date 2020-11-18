@@ -38,12 +38,12 @@
 	<panel name="Conditional_MenuSort"/>
 	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="100,182" size="100,100" transparent="1" zPosition="10"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="20,center" size="270,850" zPosition="-10"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1380,770" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="10,154" size="1380,1" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="10,924" size="1380,1" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="9,154" size="1,771" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1390,154" size="1,771" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="290,230" size="1100,2" zPosition="-9"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="15,center" size="1380,770" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="15,154" size="1380,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="15,924" size="1380,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="15,154" size="2,771" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1395,154" size="2,771" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="295,230" size="1100,2" zPosition="-9"/>
 	<!--  Widget -->
 	<widget source="title" render="Label" font="RegularBold;42" backgroundColor="OE_Background" position="300,160" size="1080,58" transparent="1" halign="left"/>
 	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="300,255" size="1085,650" transparent="1">
@@ -240,13 +240,13 @@
 	</screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
-	<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" position="210,195" size="1005,225" valign="center" halign="center"/>
-	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="75,220" size="80,80" alphatest="blend"/>
-	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="75,220" size="80,80" alphatest="blend"/>
-	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="75,220" size="80,80" alphatest="blend"/>
-	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="75,220" size="80,80" alphatest="blend"/>
-	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="75,220" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="205,0" size="1080,420" transparent="1"/>
+	<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" position="190,25" size="1005,150" valign="center" halign="center"/>
+	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="55,50" size="80,80" alphatest="blend"/>
+	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="55,50" size="80,80" alphatest="blend"/>
+	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="55,50" size="80,80" alphatest="blend"/>
+	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="55,50" size="80,80" alphatest="blend"/>
+	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="55,50" size="80,80" alphatest="blend"/>
+	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_Background" position="0,0" size="1080,100" transparent="1"/>
 	<panel name="autoresize"/>
 	<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
@@ -269,8 +269,8 @@ wsize = (wsizex, wsizey)
 # resize label
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
 # move list
-listsize = (wsizex - 30, 420)
-self[&quot;list&quot;].instance.move(ePoint(205, int(textsize[1] + 320)))
+listsize = (wsizex - 30, 605)
+self[&quot;list&quot;].instance.move(ePoint(185, int(textsize[1] + 180)))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 # center window
 newwidth = wsize[0]
