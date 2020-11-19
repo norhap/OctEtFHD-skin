@@ -1735,21 +1735,21 @@
 	<widget name="minutes" position="center,center" size="200,45" font="RegularBold;30" backgroundColor="OE_Background" transparent="1" valign="center" halign="center" foregroundColor="white"/>
   </screen>
 	<!-- MESSAGEBOX -->
-  <screen name="MessageBox" backgroundColor="transparent" position="350,100" size="1220,520">
+  <screen name="MessageBox" backgroundColor="transparent" position="400,100" size="1120,420">
  	<panel name="autoresize"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="10,20" size="150,495" zPosition="-10"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,center" size="1220,520" zPosition="-15"/>
-	<eLabel backgroundColor="blue_light" name="" position="10,20" size="2,495" zPosition="20" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" name="" position="10,20" size="1195,2" zPosition="-9" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" name="" position="1205,20" size="2,495" zPosition="20" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" name="" position="10,515" size="1197,2" zPosition="-15" foregroundColor="white"/>
-	<widget name="text" font="RegularBold;30" backgroundColor="OE_Background" position="190,30" size="1010,265" valign="center" halign="center"/>
-	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="40,125" size="80,80" alphatest="blend"/>
-	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="40,125" size="80,80" alphatest="blend"/>
-	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="40,125" size="80,80" alphatest="blend"/>
-	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="40,125" size="80,80" alphatest="blend"/>
-	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="40,125" size="80,80" alphatest="blend"/>
-	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="190,300" size="990,210" transparent="1"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="10,20" size="95,395" zPosition="-10"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,center" size="1120,520" zPosition="-15"/>
+	<eLabel backgroundColor="blue_light" name="" position="10,20" size="2,395" zPosition="20" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="10,20" size="1095,2" zPosition="-9" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="1105,20" size="2,395" zPosition="20" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="10,415" size="1097,2" zPosition="-15" foregroundColor="white"/>
+	<widget name="text" font="RegularBold;30" backgroundColor="OE_Background" position="110,25" size="990,295" valign="center" halign="center"/>
+	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="20,125" size="80,80" alphatest="blend"/>
+	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="20,125" size="80,80" alphatest="blend"/>
+	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="20,125" size="80,80" alphatest="blend"/>
+	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="20,125" size="80,80" alphatest="blend"/>
+	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="20,125" size="80,80" alphatest="blend"/>
+	<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="140,320" size="930,95" transparent="1"/>
   </screen>
 	<!-- MESSAGEBOX SIMPLE-->
   <screen name="MessageBoxSimple" backgroundColor="transparent" position="200,center" size="1290,800">
@@ -4257,17 +4257,17 @@
 	<widget name="list" position="140,150" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
   </screen>
 	<!-- PERSIAN PALACE AND PICTURE PLAYER -->
-  <screen name="TextOut" backgroundColor="transparent" title="TextOut..." position="0,center" size="1920,1080">
+  <screen name="TextOut" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="ScreenOpenVision"/>
 	<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="410,160" size="1505,965" transparent="1"/>
   </screen>
-  <screen name="PersianPalace" backgroundColor="transparent" title="PersianPalace" position="0,center" size="1920,1080">
+  <screen name="PersianPalace" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="ScreenOpenVision"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1505,670" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="410,830" size="1505,2" zPosition="2"/>
 	<widget name="help" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1505,85" transparent="1" halign="center" valign="center"/>
   </screen>
-  <screen name="PictureLoader" backgroundColor="transparent" title="Picture Loader For Persian Palace" position="0,center" size="1920,1080">
+  <screen name="PictureLoader" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="ScreenOpenVision"/>
 	<widget name="Picture" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1280,720" alphatest="blend"/>
 	<eLabel backgroundColor="blue_light" position="410,830" size="1505,2" zPosition="2"/>
