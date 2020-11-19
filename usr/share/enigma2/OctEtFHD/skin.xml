@@ -4271,4 +4271,354 @@
 	<widget name="Picture" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1280,720" alphatest="blend"/>
 	<widget name="State" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,948" size="1505,85" transparent="1" halign="center" valign="center"/>
   </screen>
+	<!-- HISTORY ZAP SELECTOR -->
+	<!-- ******************** ZAP PIP ******************** -->
+  <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="OE_NewBg2" position="20,25" size="180,39" title="PiPZap" zPosition="2">
+	<eLabel position="0,0" size="180,1" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,0" size="1,39" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,38" size="180,1" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="179,0" size="1,39" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel text="Zapear-PiP" position="30,8" size="250,39" backgroundColor="OE_NewBg2" transparent="1" font="RegularBold;21"/>
+  </screen>
+	<!-- ******************** MOVE  PIP ******************** -->
+  <screen name="PiPSetup" position="360,500" size="560,200" backgroundColor="OE_NewBg2" zPosition="1" flags="wfNoBorder">
+	<eLabel position="0,0" size="560,1" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,0" size="1,200" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,199" size="560,1" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="559,0" size="1,200" backgroundColor="blue_light" zPosition="1"/>
+	<widget name="text" position="0,0" size="550,190" backgroundColor="OE_NewBg2" font="RegularBold;21" valign="center" halign="center"/>
+  </screen>
+	<!-- **********PREVIEW HISTORY ZAP SELECTOR********** -->
+  <screen name="PreviewZap" position="center,25" size="250,75" backgroundColor="OE_NewBg2" flags="wfNoBorder" zPosition="2">
+	<eLabel position="0,0" size="250,1" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,0" size="1,75" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,74" size="250,1" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="249,0" size="1,75" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel text="Preview" position="0,0" size="250,75" valign="center" halign="center" backgroundColor="OE_NewBg2" transparent="1" font="RegularBold;22"/>
+	  </screen>
+  <screen name="FullEntryNumber" position="center,center" size="720,420" title=" " zPosition="-1">
+	<widget name="text" font="RegularBold;19" position="5,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1"/>
+	<widget name="text1" font="RegularBold;19" position="240,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1"/>
+	<widget name="text2" font="RegularBold;19" position="475,10" size="225,400" zPosition="2" halign="left" backgroundColor="#31000000" transparent="1"/>
+  </screen>
+	<!-- **********HISTORY ZAP SELECTOR DEFAULT********** -->
+  <screen name="HistoryZapDefaultSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (10, 14), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x0000baff, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (40, 7), size = (800, 45), font = 1, flags = RT_HALIGN_LEFT, text = 2),
+					],
+					"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 26), gFont("RegularBold", 21)],
+					"itemHeight": 50
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="160,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="285,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="425,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+EVENT********** -->
+  <screen name="HistoryZapEventSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (10, 14), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (40, 7), size = (400, 45), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (315, 11), size = (985, 45), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00ffffff),
+					],
+					"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 26), gFont("RegularBold", 21)],
+					"itemHeight": 50
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+PICON+EVENT********** -->
+  <screen name="HistoryZapEventPiconSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (85, 25), size = (30, 20), font = 2,	 color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (120, 20), size = (400, 45), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (520, 20), size = (775, 75), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffffff, color_sel = 0x00a4c400),
+					MultiContentEntryPixmapAlphaBlend(pos=(0, 0), size=(80, 80), png=6)
+					],
+					"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 24), gFont("RegularBold", 21)],
+					"itemHeight": 80
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+EVENT+MINUTES REMAININGS********** -->
+  <screen name="HistoryZapEventDurationSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (430, 0), size = (870, 80), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00999999, color_sel = 0x00ffc000),
+					MultiContentEntryText(pos = (30, 35), size = (260, 30), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff),
+					],
+					"fonts": [gFont("RegularBold", 25), gFont("RegularBold", 23), gFont("RegularBold", 20)],
+					"itemHeight": 80
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+EVENT+REMAINING-BARPROGRESS********** -->
+  <screen name="HistoryZapEventDurationBarSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (435, 0), size = (865, 70), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffffff, color_sel = 0x00ffc000),
+					MultiContentEntryProgress(pos = (30, 40), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
+					MultiContentEntryText(pos = (240, 33), size = (50, 30), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x009999ff, color_sel = 0x00ffffff),
+					],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 24), gFont("RegularBold", 19), gFont("RegularBold", 18)],
+					"itemHeight": 80
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+PICON+EVENT+TIME REMAINING********** -->
+  <screen name="HistoryZapEventDurationPiconSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (80, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (110, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (490, 0), size = (790, 70), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffc000),
+					MultiContentEntryText(pos = (110, 35), size = (260, 25), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff),
+					MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(80, 80), png=6)
+					],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19)],
+					"itemHeight": 80
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+PICON+EVENT+BAR PROGRESS+PERCENTAGE SKIN FHD********** -->
+  <screen name="HistoryZapEventDurationPiconBarSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (80, 2), size = (25, 40), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (120, 5), size = (495, 40), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (620, 5), size = (680, 70), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffffff),
+					MultiContentEntryProgress(pos = (120, 55), size = (280, 20), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0058bcff),
+					MultiContentEntryText(pos = (440, 48), size = (50, 30), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x009999ff, color_sel = 0x00ffffff),
+					MultiContentEntryPixmapAlphaBlend(pos=(0, 15), size=(80, 80), png=6)
+					],
+					"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 26), gFont("RegularBold", 23), gFont("RegularBold", 22)],
+					"itemHeight": 80
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+EVENT+DESCRIPTION********** -->
+  <screen name="HistoryZapDescriptionSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0, 10), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (430, 0), size = (820, 25), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
+					MultiContentEntryText(pos = (30, 45), size = (1265, 365), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19)],
+					"itemHeight": 410
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+EVENT+DESCRIPTION+TIME REMAINING********** -->
+  <screen name="HistoryZapDescriptionDurationSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0, 10), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (430, 0), size = (870, 25), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
+					MultiContentEntryText(pos = (30, 45), size = (200, 25), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00ffc000),
+					MultiContentEntryText(pos = (30, 70), size = (1265, 365), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
+					"itemHeight": 435
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+EVENT+BAR PROGRESS+PERCENTAGE+DESCRIPTION********** -->
+  <screen name="HistoryZapDescriptionDurationBarSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (60, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (0, 50), size = (1300, 385), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (355, 0), size = (345, 25), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
+					MultiContentEntryProgress(pos = (60, 35), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0058bcff),
+					MultiContentEntryText(pos = (300, 28), size = (50, 20), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x0000ffff),
+					],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
+					"itemHeight": 435
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+PICON+EVENT+DESCRIPTION********** -->
+  <screen name="HistoryZapDescriptionPiconSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (90, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (495, 5), size = (805, 25), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
+					MultiContentEntryText(pos = (80, 100), size = (1215, 395), font = 2, flags = RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryPixmapAlphaBlend(pos=(0, 20), size=(80, 80), png=6)
+					],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19)],
+					"itemHeight": 495
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- **********CHANNEL+EVENT+REMAINING+DESCRIPTION+PICON********** -->
+  <screen name="HistoryZapDescriptionDurationPiconSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (60, 0), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (100, 0), size = (400, 30), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (100, 35), size = (300, 25), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (505, 5), size = (795, 25), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
+					MultiContentEntryText(pos = (0, 110), size = (1295, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+					MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(80, 80), png=6)
+					],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
+					"itemHeight": 505
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** CHANNEL+PICON+EVENT+BAR PROGRESS+PERCENTAGE+DESCRIPTION********** -->
+  <screen name="HistoryZapDescriptionDurationBarPiconSkinFullHD" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget source="menu" render="Listbox" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (57, 5), size = (25, 20), font = 2, color =0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (90, 0), size = (450, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (545, 5), size = (750, 25), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
+					MultiContentEntryProgress(pos = (95, 35), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0058bcff),
+					MultiContentEntryText(pos = (310, 28), size = (50, 20), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (0, 110), size = (1295, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+					MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(80, 80), png=6)
+					],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
+					"itemHeight": 505
+				}
+		</convert>
+	</widget>
+	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
+  </screen>
+	<!-- ********** ####### SETUP HISTORY ZAP ####### ********** -->
+  <screen name="SetupZapSelectorScreen" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<widget name="config" itemHeight="50" position="140,140" size="1300,800" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget position="220,965" size="270,70" name="cancel" font="RegularBold;24" halign="left" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget position="550,965" size="270,70" name="ok" font="RegularBold;24" halign="left" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget position="880,965" size="270,70" name="clear" font="RegularBold;24" halign="left" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="170,980" size="40,40"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="500,980" size="40,40"/>
+	<ePixmap pixmap="buttons/key_blue.png" alphatest="blend" position="830,980" size="40,40"/>
+  </screen>
 </skin>
