@@ -4264,13 +4264,11 @@
   <screen name="PersianPalace" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="ScreenOpenVision"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1505,670" transparent="1"/>
-	<eLabel backgroundColor="blue_light" position="410,830" size="1505,2" zPosition="2"/>
-	<widget name="help" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1505,85" transparent="1" halign="center" valign="center"/>
+	<widget name="help" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,948" size="1505,85" transparent="1" halign="center" valign="center"/>
   </screen>
   <screen name="PictureLoader" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="ScreenOpenVision"/>
 	<widget name="Picture" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1280,720" alphatest="blend"/>
-	<eLabel backgroundColor="blue_light" position="410,830" size="1505,2" zPosition="2"/>
-	<widget name="State" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1505,85" transparent="1" halign="center" valign="center"/>
+	<widget name="State" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,948" size="1505,85" transparent="1" halign="center" valign="center"/>
   </screen>
 </skin>
