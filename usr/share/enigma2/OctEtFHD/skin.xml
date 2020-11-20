@@ -4308,7 +4308,7 @@
 	    <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (10, 14), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x0000baff, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (40, 7), size = (1000, 45), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x0000ffff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (50, 7), size = (1000, 45), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x0000ffff, color_sel = 0x00ffffff),
 					],
 					"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 26), gFont("RegularBold", 21)],
 					"itemHeight": 50
@@ -4316,21 +4316,21 @@
 		</convert>
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
-	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="160,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="285,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="425,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
 	<!-- ********** EVENT********** -->
   <screen name="HistoryZapEventSkinFullHD" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget source="menu" render="Listbox" position="140,140" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
+	<widget source="menu" render="Listbox" position="140,140" size="1300,780" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 14), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (40, 7), size = (400, 45), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
-					MultiContentEntryText(pos = (315, 5), size = (960, 60), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x0000ffff),
+					MultiContentEntryText(pos = (10, 11), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (50, 7), size = (400, 45), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (455, 5), size = (820, 60), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x0000ffff),
 					],
 					"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 22), gFont("RegularBold", 21)],
 					"itemHeight": 65
@@ -4339,8 +4339,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4353,17 +4353,17 @@
 					MultiContentEntryText(pos = (85, 25), size = (30, 20), font = 2,	 color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (120, 20), size = (400, 45), font = 1, flags = RT_HALIGN_LEFT, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (520, 20), size = (755, 80), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffffff, color_sel = 0x00a4c400),
-					MultiContentEntryPixmapAlphaBlend(pos=(0, 0), size=(80, 80), png=6)
+					MultiContentEntryPixmapAlphaBlend(pos=(0, 15), size=(80, 80), png=6)
 					],
 					"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 24), gFont("RegularBold", 21)],
-					"itemHeight": 80
+					"itemHeight": 95
 				}
 		</convert>
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4385,8 +4385,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4409,8 +4409,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4424,17 +4424,17 @@
 					MultiContentEntryText(pos = (110, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (490, 0), size = (785, 60), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffc000),
 					MultiContentEntryText(pos = (110, 35), size = (260, 25), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff),
-					MultiContentEntryPixmapAlphaBlend(pos=(0, 6), size=(80, 80), png=6)
+					MultiContentEntryPixmapAlphaBlend(pos=(0, 10), size=(80, 80), png=6)
 					],
 					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19)],
-					"itemHeight": 80
+					"itemHeight": 90
 				}
 		</convert>
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4458,8 +4458,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4481,8 +4481,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4505,8 +4505,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4530,8 +4530,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4554,8 +4554,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4565,11 +4565,11 @@
 	<widget source="menu" render="Listbox" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (60, 0), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (60, 3), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (100, 0), size = (400, 30), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
 					MultiContentEntryText(pos = (100, 35), size = (300, 25), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (505, 0), size = (770, 100), font = 1, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
-					MultiContentEntryText(pos = (5, 110), size = (1280, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (5, 110), size = (1270, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(80, 80), png=6)
 					],
 					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
@@ -4579,8 +4579,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
@@ -4595,7 +4595,7 @@
 					MultiContentEntryText(pos = (545, 5), size = (720, 100), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
 					MultiContentEntryProgress(pos = (95, 35), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0058bcff),
 					MultiContentEntryText(pos = (310, 28), size = (50, 20), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x00ffffff),
-					MultiContentEntryText(pos = (5, 110), size = (1275, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (5, 110), size = (1270, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(80, 80), png=6)
 					],
 					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
@@ -4605,8 +4605,8 @@
 	</widget>
 	<widget name="text_buttons" position="140,965" size="1000,35" zPosition="5" font="RegularBold;20" transparent="1"/>
 	<ePixmap pixmap="buttons/key_red.png" alphatest="blend" position="190,994" size="40,40" zPosition="4"/>
-	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="350,994" size="40,40" zPosition="4"/>
-	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="535,994" size="40,40" zPosition="4"/>
+	<ePixmap pixmap="buttons/key_green.png" alphatest="blend" position="380,994" size="40,40" zPosition="4"/>
+	<widget name="menu_buttons" alphatest="blend" pixmap="buttons/key_blue.png" position="585,994" size="40,40" zPosition="4"/>
 	<ePixmap pixmap="buttons/key_help.png" position="50,940" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="50,990" size="64,43" alphatest="blend"/>
   </screen>
