@@ -1761,30 +1761,38 @@
 	<eLabel backgroundColor="blue_light" name="" position="1270,20" size="2,770" zPosition="20" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="20,790" size="1252,2" zPosition="-10" foregroundColor="white"/>
   </screen>
-  <screen backgroundColor="transparent" borderColor="transparent" borderWidth="0" flags="wfNoBorder" name="MediaPlayer" position="center,center" size="1920,1080" title="MediaPlayer" transparent="0">
+	<!-- MEDIAPLAYER-->
+  <screen name="MediaPlayer" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="MediaPlayer" transparent="0">
 	<eLabel backgroundColor="OE_Blue" foregroundColor="OE_Background" name="" position="0,0" size="1920,1080" zPosition="-99" valign="center"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
-	<eLabel backgroundColor="white" name="" position="830,810" size="1000,4" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="830,810" size="1000,4" zPosition="-9"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="750,1080" zPosition="-11" valign="center"/>
 	<eLabel backgroundColor="blue_light" name="" position="830,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,142" size="720,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<!-- Widget -->
 	<eLabel text="MEDIA PLAYER" position="80,85" size="445,50" font="FHD;34" backgroundColor="OE_Background" transparent="1" foregroundColor="white"/>
 	<eLabel text="PLAYLIST" position="830,85" size="245,50" font="FHD;34" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="white"/>
-	<eLabel backgroundColor="white" position="830,892" size="1000,2" zPosition="-9"/>
+	<widget name="coverArt" position="930,415" size="120,110" pixmap="no_coverArt.png" transparent="1" alphatest="blend"/>
+	<eLabel backgroundColor="blue_light" position="830,892" size="1000,2" zPosition="-9"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="1626,960" size="64,43" alphatest="blend"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_help.png" position="1700,960" size="64,43" alphatest="blend"/>
-	<widget name="filelist" itemHeight="50" font="Regular;24" backgroundColor="OE_Background" enableWrapAround="1" position="80,154" scrollbarMode="showNever" size="720,650" transparent="1"/>
-	<widget name="playlist" itemHeight="50" font="Regular;26" backgroundColor="OE_Background" selectionDisabled="1" position="830,153" scrollbarMode="showNever" size="1000,650" transparent="1"/>
+	<widget name="filelist" itemHeight="50" font="Regular;24" backgroundColor="OE_NewBg2" enableWrapAround="1" position="80,154" scrollbarMode="showNever" size="720,650" transparent="1"/>
+	<widget name="playlist" itemHeight="50" font="RegularBold;26" backgroundColor="OE_Background" selectionDisabled="1" position="830,153" scrollbarMode="showNever" size="1000,650" transparent="1"/>
+	<widget name="PositionGauge" position="377,628" size="0,0" pointer="skin_default/position_pointer.png:13,3" seek_pointer="skin_default/position_pointer.png:13,3" zPosition="3" transparent="1"/>
 	<widget alphatest="blend" name="coverArt" pixmap="mmp/media_player.png" position="594,825" size="200,200" transparent="1"/>
 	<widget alphatest="blend" name="repeat" pixmaps="mmp/repeat_off.png,mmp/repeat_on.png" position="1770,960" size="60,43" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="80,810" size="720,4" zPosition="-9"/>
-	<widget backgroundColor="OE_Background" font="Regular;28" foregroundColor="white" name="year" position="80,915" size="500,45" transparent="1" valign="center" halign="left"/>
-	<widget backgroundColor="OE_Background" font="Regular;28" foregroundColor="white" name="artist" position="80,825" size="500,45" transparent="1" valign="center" halign="left"/>
-	<widget backgroundColor="OE_Background" font="Regular;28" foregroundColor="white" name="album" position="80,870" size="500,45" transparent="1" valign="center" halign="left"/>
-	<widget backgroundColor="OE_Background" font="Regular;28" foregroundColor="white" name="genre" position="80,960" size="500,45" transparent="1" valign="center" halign="left"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="white" halign="left" name="title" position="830,902" size="1000,45" transparent="1" valign="center"/>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="left" noWrap="1" position="830,830" render="Label" size="150,50" source="session.CurrentService" transparent="1" zPosition="2">
+	<eLabel backgroundColor="blue_light" name="" position="80,810" size="720,4" zPosition="-9"/>
+	<widget backgroundColor="OE_Background" font="Regular;28" name="year" position="80,915" size="500,45" transparent="1" valign="center" halign="left"/>
+	<widget backgroundColor="OE_Background" font="Regular;28" name="artist" position="80,825" size="500,45" transparent="1" valign="center" halign="left"/>
+	<widget backgroundColor="OE_Background" font="Regular;28" name="album" position="80,870" size="500,45" transparent="1" valign="center" halign="left"/>
+	<widget backgroundColor="OE_Background" font="Regular;28" name="genre" position="80,960" size="500,45" transparent="1" valign="center" halign="left"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;30" halign="left" name="title" position="830,902" size="1000,45" transparent="1" valign="center"/>
+	<widget name="yeartext" position="154,950" size="0,0" font="RegularBold;24" valign="top" transparent="1"/>
+	<widget name="artisttext" position="154,900" size="0,0" font="RegularBold;24" valign="top" transparent="1"/>
+	<widget name="albumtext" position="154,925" size="0,0" font="RegularBold;24" valign="top" transparent="1"/>
+	<widget name="currenttext" position="154,120" size="0,0"/>
+	<widget name="genretext" position="154,975" size="0,0" font="RegularBold;24" valign="top" transparent="1"/>
+	<widget name="titletext" position="154,120" size="0,0"/>
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;30" halign="left" noWrap="1" position="830,830" render="Label" size="150,50" source="session.CurrentService" transparent="1" zPosition="2">
 	    <convert type="ServicePosition">Position,ShowHours</convert>
 	</widget>
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;38" foregroundColor="green_light" halign="right" noWrap="1" position="1620,827" render="Label" size="210,55" source="session.CurrentService" transparent="1" zPosition="2">
@@ -4375,7 +4383,7 @@
 				{"template": [
 					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
-					MultiContentEntryText(pos = (430, 0), size = (845, 80), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00999999, color_sel = 0x00ffc000),
+					MultiContentEntryText(pos = (430, 0), size = (845, 80), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffffff, color_sel = 0x00ffc000),
 					MultiContentEntryText(pos = (30, 35), size = (260, 30), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff),
 					],
 					"fonts": [gFont("RegularBold", 25), gFont("RegularBold", 23), gFont("RegularBold", 20)],
@@ -4398,11 +4406,11 @@
 				{"template": [
 					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00999999, color_sel = 0x00ffffff),
-					MultiContentEntryText(pos = (435, 0), size = (840, 80), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffffff, color_sel = 0x00ffc000),
-					MultiContentEntryProgress(pos = (30, 40), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0058bcff),
+					MultiContentEntryText(pos = (435, 0), size = (840, 60), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffffff, color_sel = 0x00ffc000),
+					MultiContentEntryProgress(pos = (30, 40), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x0056c856, foreColorSelected = 0x0000fafa),
 					MultiContentEntryText(pos = (240, 33), size = (50, 30), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x009999ff, color_sel = 0x00ffffff),
 					],
-					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 24), gFont("RegularBold", 19), gFont("RegularBold", 18)],
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19)],
 					"itemHeight": 80
 				}
 		</convert>
@@ -4422,7 +4430,7 @@
 				{"template": [
 					MultiContentEntryText(pos = (80, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (110, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x00ffffff),
-					MultiContentEntryText(pos = (490, 0), size = (785, 60), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffc000),
+					MultiContentEntryText(pos = (490, 0), size = (785, 80), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffc000),
 					MultiContentEntryText(pos = (110, 35), size = (260, 25), font = 2, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x0000ffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 10), size=(80, 80), png=6)
 					],
@@ -4444,10 +4452,10 @@
 	<widget source="menu" render="Listbox" position="140,140" size="1300,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (80, 2), size = (25, 40), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (80, 3), size = (25, 40), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (120, 5), size = (495, 40), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
-					MultiContentEntryText(pos = (620, 5), size = (655, 60), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffffff),
-					MultiContentEntryProgress(pos = (120, 55), size = (280, 20), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0058bcff),
+					MultiContentEntryText(pos = (620, 5), size = (655, 65), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffffff),
+					MultiContentEntryProgress(pos = (120, 55), size = (280, 20), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0000fafa),
 					MultiContentEntryText(pos = (440, 48), size = (50, 30), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x009999ff, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 15), size=(80, 80), png=6)
 					],
@@ -4472,7 +4480,7 @@
 					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
 					MultiContentEntryText(pos = (430, 0), size = (845, 50), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
-					MultiContentEntryText(pos = (30, 50), size = (1255, 395), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (5, 50), size = (1270, 395), font = 2, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
 					],
 					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19)],
 					"itemHeight": 445
@@ -4495,8 +4503,8 @@
 					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (30, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
 					MultiContentEntryText(pos = (430, 0), size = (845, 55), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
-					MultiContentEntryText(pos = (30, 35), size = (200, 25), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00ffc000),
-					MultiContentEntryText(pos = (30, 60), size = (1255, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (30, 35), size = (400, 25), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00999999, color_sel = 0x00ffc000),
+					MultiContentEntryText(pos = (30, 60), size = (1245, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
 					],
 					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
 					"itemHeight": 455
@@ -4518,7 +4526,7 @@
 				{"template": [
 					MultiContentEntryText(pos = (0, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (60, 0), size = (400, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
-					MultiContentEntryText(pos = (5, 60), size = (1280, 395), font = 3, flags = RT_HALIGN_LEFT| RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (5, 60), size = (1270, 395), font = 3, flags = RT_HALIGN_LEFT| RT_WRAP, text = 4, color = 0x00999999, color_sel = 0x00ffffff),
 					MultiContentEntryText(pos = (355, 0), size = (920, 55), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
 					MultiContentEntryProgress(pos = (60, 35), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0058bcff),
 					MultiContentEntryText(pos = (300, 28), size = (50, 20), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x0000ffff),
@@ -4565,15 +4573,15 @@
 	<widget source="menu" render="Listbox" position="140,140" size="1300,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (60, 3), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (60, 5), size = (25, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (100, 0), size = (400, 30), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
-					MultiContentEntryText(pos = (100, 35), size = (300, 25), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x00ffffff),
-					MultiContentEntryText(pos = (505, 0), size = (770, 100), font = 1, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
-					MultiContentEntryText(pos = (5, 110), size = (1270, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (100, 35), size = (400, 30), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (505, 0), size = (770, 90), font = 1, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffc000),
+					MultiContentEntryText(pos = (5, 110), size = (1270, 405), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(80, 80), png=6)
 					],
-					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
-					"itemHeight": 505
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 22), gFont("RegularBold", 20)],
+					"itemHeight": 515
 				}
 		</convert>
 	</widget>
@@ -4592,14 +4600,14 @@
 				{"template": [
 					MultiContentEntryText(pos = (57, 5), size = (25, 20), font = 2, color =0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 					MultiContentEntryText(pos = (90, 0), size = (450, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x0000ffff),
-					MultiContentEntryText(pos = (545, 5), size = (720, 100), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00ffc000, color_sel = 0x00a4c400),
+					MultiContentEntryText(pos = (545, 5), size = (730, 90), font = 2, flags = RT_HALIGN_LEFT | RT_WRAP, text = 3, color = 0x00a4c400, color_sel = 0x00ffc000),
 					MultiContentEntryProgress(pos = (95, 35), size = (200, 15), percent = -5, borderWidth = 1, foreColor = 0x000064c7, foreColorSelected = 0x0058bcff),
 					MultiContentEntryText(pos = (310, 28), size = (50, 20), font = 3, flags = RT_HALIGN_LEFT, text = 7, color = 0x00999999, color_sel = 0x00ffffff),
-					MultiContentEntryText(pos = (5, 110), size = (1270, 395), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+					MultiContentEntryText(pos = (5, 110), size = (1270, 400), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
 					MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(80, 80), png=6)
 					],
-					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 19), gFont("RegularBold", 18)],
-					"itemHeight": 505
+					"fonts": [gFont("RegularBold", 24), gFont("RegularBold", 22), gFont("RegularBold", 22), gFont("RegularBold", 18)],
+					"itemHeight": 510
 				}
 		</convert>
 	</widget>
