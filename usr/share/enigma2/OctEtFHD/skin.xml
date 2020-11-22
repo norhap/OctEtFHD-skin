@@ -3429,8 +3429,8 @@
 	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<eLabel text="Progress Wizard :" font="FHD;34" backgroundColor="OE_Background" position="445,420" size="300,50" transparent="1"/>
-	<widget name="stepslider" borderWidth="1" position="765,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<eLabel text="Progress:" font="FHD;34" backgroundColor="OE_Background" position="445,420" size="215,50" transparent="1"/>
+	<widget name="stepslider" borderWidth="1" position="665,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
 	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="blue_light" name="" position="445,470" size="1435,2" zPosition="-9"/>
