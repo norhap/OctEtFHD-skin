@@ -572,11 +572,11 @@
 	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,830" size="440,40" source="session.MSNWeather" zPosition="3" halign="center" valign="center" transparent="1" foregroundColor="yellow">
 	    <convert type="MSNWeather">city</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="255,905" size="80,50" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="blue_light">
+	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="270,905" size="60,50" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="blue_light">
 	    <convert type="MSNWeather">humidity</convert>
 	</widget>
 	<eLabel text="Humidity :" position="115,905" size="155,35" zPosition="5" font="RegularBold;28" transparent="1"/>
-	<eLabel text="%" position="330,905" size="30,50" zPosition="5" halign="center" font="RegularBold;28" transparent="1"/>
+	<eLabel text="%" position="325,905" size="30,50" zPosition="5" halign="center" font="RegularBold;28" transparent="1"/>
   </screen>
 	<!-- MAIN MENU INFORMATION -->
 	<!-- INFO SERVICE -->
@@ -1649,7 +1649,7 @@
 	<widget name="text" font="FHD;30" backgroundColor="OE_Background" position="170,center" size="800,50" transparent="1" halign="left" valign="center" foregroundColor="white"/>
 	<eLabel backgroundColor="white" name="" position="170,570" size="800,2" zPosition="-9"/>
 	<widget name="input" font="FHD;30" backgroundColor="OE_Background" position="170,575" size="800,50" transparent="1" halign="left" valign="center" foregroundColor="white"/>
-	<ePixmap alphatest="blend" pixmap="icons/input_info.png" position="65,center" size="80,80" zPosition="4"/>
+	<ePixmap alphatest="blend" pixmap="icons/input_info.png" position="35,center" size="80,80" zPosition="4"/>
   </screen>
 	<!-- INPUT DEVICE SELECTION -->
   <screen name="InputDeviceSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
