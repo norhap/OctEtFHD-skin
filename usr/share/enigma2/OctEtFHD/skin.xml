@@ -2696,24 +2696,24 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="48,900" size="64,43"/>
 	<widget name="list" itemHeight="50" font="FHD;30" backgroundColor="black" foregroundColor="OE_Foreground" position="140,150" size="1300,500" transparent="1"/>
 	<eLabel backgroundColor="blue_light" name="" position="140,710" size="1300,2" zPosition="-9"/>
-	<widget name="SNR" position="170,720" size="110,45" backgroundColor="OE_Background" font="FHD;30" transparent="1"/>
+	<widget name="SNR" position="140,720" size="140,45" backgroundColor="OE_Background" font="FHD;30" transparent="1"/>
 	<widget name="snr_bar" foregroundColor="un56c856" borderColor="OE_Selection" borderWidth="2" position="290,730" size="500,25" transparent="1"/>
-	<widget name="snr_percentage" backgroundColor="OE_Background" font="FHD;30" foregroundColor="un56c856" position="800,720" size="120,45" transparent="1"/>
-	<widget name="snr_db" position="925,720" size="300,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="un56c856"/>
-	<widget name="AGC" position="170,770" size="110,45" backgroundColor="OE_Background" font="FHD;30" transparent="1"/>
+	<widget name="snr_percentage" backgroundColor="OE_Background" font="FHD;30" foregroundColor="un56c856" position="870,720" size="120,45" transparent="1"/>
+	<widget name="snr_db" position="995,720" size="300,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="un56c856"/>
+	<widget name="AGC" position="140,770" size="140,45" backgroundColor="OE_Background" font="FHD;30" transparent="1"/>
 	<widget name="agc_bar" position="290,780" size="500,25" borderWidth="1" foregroundColor="blue_light" transparent="1"/>
-	<widget name="agc_percentage" position="800,770" size="120,45" font="FHD;30" backgroundColor="black" foregroundColor="blue_light" transparent="1"/>
-	<widget name="BER" position="170,820" size="110,45" font="FHD;30" backgroundColor="black" transparent="1"/>
+	<widget name="agc_percentage" position="870,770" size="120,45" font="FHD;30" backgroundColor="black" foregroundColor="blue_light" transparent="1"/>
+	<widget name="BER" position="140,820" size="140,45" font="FHD;30" backgroundColor="black" transparent="1"/>
 	<widget name="ber_bar" borderColor="OE_Selection" borderWidth="2" backgroundColor="OE_Background" foregroundColor="blue_light" position="290,830" size="500,25" transparent="1"/>
-	<widget name="ber_value" backgroundColor="OE_Background" font="FHD;30" foregroundColor="blue_light" position="800,820" size="120,45" transparent="1"/>
-	<widget name="Lock" position="170,665" size="210,45" font="FHD;30" backgroundColor="black" transparent="1"/>
+	<widget name="ber_value" backgroundColor="OE_Background" font="FHD;30" foregroundColor="blue_light" position="870,820" size="120,45" transparent="1"/>
+	<widget name="Lock" position="140,665" size="210,45" font="FHD;30" backgroundColor="black" transparent="1"/>
 	<widget name="lock_on" position="380,665" pixmap="extensions/lock_on.png" size="35,35" transparent="1"/>
 	<widget name="lock_off" position="380,665" size="35,35" transparent="1"/>
 	<widget name="lock_state" font="FHD;30" backgroundColor="black" position="455,665" size="250,45" transparent="1"/>
 	<widget name="rotorstatus" position="715,665" size="530,45" font="FHD;30" backgroundColor="black" transparent="1"/>
 	<widget name="status_bar" position="1250,665" size="50,45" halign="center" transparent="1"/>
-	<widget name="Frequency" position="170,915" size="185,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="frequency_value" backgroundColor="OE_Background" font="FHD;30" position="360,915" size="200,45" transparent="1"/>
+	<widget name="Frequency" position="140,915" size="255,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="frequency_value" backgroundColor="OE_Background" font="FHD;30" position="400,915" size="200,45" transparent="1"/>
 	<widget name="Symbolrate" position="600,915" size="350,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="symbolrate_value" backgroundColor="OE_Background" font="FHD;30" position="940,915" size="340,45" transparent="1"/>
 	<widget name="FEC" position="1275,915" size="80,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
