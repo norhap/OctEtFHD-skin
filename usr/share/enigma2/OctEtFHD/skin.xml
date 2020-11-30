@@ -1628,9 +1628,9 @@
   </screen>
   <screen name="HotkeySetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="description" objectTypes="description,Button,Label" font="FHD;28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="850,400" size="600,150" transparent="1" valign="top"/>
+	<widget name="description" objectTypes="description,Button,Label" font="FHD;28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="840,400" size="460,150" transparent="1" valign="top"/>
 	<widget name="list" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,center" size="680,750" transparent="1"/>
-	<widget name="choosen" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="820,180" size="640,350" transparent="1" foregroundColor="blue_light"/>
+	<widget name="choosen" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="840,180" size="600,350" transparent="1" foregroundColor="blue_light"/>
 	<!-- others-->
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="835,985" size="64,43"/>
 	<eLabel text="Default" backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="900,985" size="200,40" transparent="1" zPosition="1"/>
@@ -1638,8 +1638,9 @@
   <screen name="HotkeySetupSelect" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget name="list" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,center" size="680,750" transparent="1"/>
-	<widget name="choosen" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="820,180" size="640,350" transparent="1" foregroundColor="blue_light"/>
+	<widget name="choosen" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="840,180" size="600,350" transparent="1" foregroundColor="blue_light"/>
   </screen>
+	<!-- INPUTBOX -->
   <screen name="InputBox" title="Input" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="960,180" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="150,240" zPosition="-11" valign="center"/>
@@ -2312,7 +2313,7 @@
   <screen name="OpenWebifConfig" title="OpenWebif Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<eLabel backgroundColor="blue_light" position="140,910" size="1300,2" zPosition="2"/>
-	<widget name="lab1" font="RegularBold;30" foregroundColor="green_light" position="140,910" size="1300,50" transparent="1" halign="center" valign="center"/>
+	<widget name="lab1" font="RegularBold;30" foregroundColor="blue_light" backgroundColor="OE_Background" position="140,910" size="1300,50" transparent="1" halign="center" valign="center"/>
 	<widget name="config" itemHeight="50" font="FHD;32" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" size="1300,760" transparent="1"/>
   </screen>
 	<!-- OSCAMINFO -->
@@ -3843,9 +3844,9 @@
 	<!-- MOUNT MANAGER DIMA73-->
   <screen name="DevicesMountPanel" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="lab1" position="140,140" size="210,50" font="FHD;32" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
-	<widget name="key_menu" position="140,920" size="400,50" font="FHD;30" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="47,930" size="64,43" alphatest="blend"/>
+	<widget name="lab1" position="140,140" size="210,50" font="FHD;32" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<widget name="key_menu" position="140,915" size="400,50" font="FHD;30" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="47,925" size="64,43" alphatest="blend"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,155" size="1300,720" transparent="1">
 	    <convert type="TemplatedMultiContent">
 		{"template": [ MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (110, 110), png = 2), # index 3 is the interface pixmap
