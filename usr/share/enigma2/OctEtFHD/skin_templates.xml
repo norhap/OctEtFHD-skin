@@ -283,8 +283,8 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	</screen>
 	 <!-- DOWNLOADBAR-->
 	<screen name="DownloadBar">
-	<widget name="action" position="35,35" size="400,50" font="RegularBold;26" backgroundColor="OE_NewBg2"/>
-	<widget name="status" position="450,35" size="635,50" font="RegularBold;26" halign="center" backgroundColor="OE_NewBg2"/>
+	<widget name="action" position="35,30" size="400,50" font="RegularBold;26" backgroundColor="OE_NewBg2"/>
+	<widget name="status" position="450,15" size="635,70" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="1100,10" size="75,75" transparent="1" zPosition="1"/>
 	<widget name="background" position="365,7" size="0,0" backgroundColor="OE_NewBg2"/>
 	<widget name="progress" position="1400,27" size="370,50" foregroundColor="blue_light" backgroundColor="OE_NewBg2"/>
