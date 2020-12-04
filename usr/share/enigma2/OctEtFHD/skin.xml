@@ -2576,10 +2576,10 @@
 	<eLabel backgroundColor="blue_light" name="" position="140,710" size="1300,2" zPosition="-9"/>
 	<widget name="textbook" font="FHD;30" backgroundColor="OE_Background" position="140,710" size="1300,45" transparent="1"/>
 	<widget name="booklist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,760" size="1300,205" transparent="1"/>
-	<widget name="red" position="170,980" size="40,40" pixmap="buttons/key_red.png" alphatest="blend"/>
-	<widget name="green" position="500,980" size="40,40" pixmap="buttons/key_green.png" alphatest="blend"/>
-	<widget name="yellow" position="830,980" size="0,0" pixmap="buttons/key_yellow.png" alphatest="blend"/>
-	<widget name="blue" position="1160,980" size="40,40" pixmap="buttons/key_blue.png" alphatest="blend"/>
+	<widget name="red" pixmap="buttons/key_red.png" position="130,980" size="40,40" alphatest="blend"/>
+	<widget name="green" pixmap="buttons/key_green.png" position="460,980" size="40,40" alphatest="blend"/>
+	<widget name="yellow" pixmap="buttons/key_yellow.png" position="790,980" size="40,40" alphatest="blend"/>
+	<widget name="blue" pixmap="buttons/key_blue.png" position="1120,980" size="40,40" alphatest="blend"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2">
 	<widget name="RassLogo" pixmap="icons/rass_logo.png" position="150,840" size="150,85"/>
