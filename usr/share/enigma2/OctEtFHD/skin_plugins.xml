@@ -6198,13 +6198,13 @@
 	    <convert type="TemplatedMultiContent">
 					{"templates":
 					{"default": (50, [
-					 MultiContentEntryPixmapAlphaBlend(pos = (5,7),	  size = (36,36), png=0), # key,
-					 MultiContentEntryText(pos = (45,2),   size = (200,45),	 font = 0, flags = RT_HALIGN_LEFT,	text = 1), # language,
-					 MultiContentEntryText(pos = (255,2),  size = (1040,45),  font = 0, flags = RT_HALIGN_LEFT,	 text = 2), # filename,
-					 MultiContentEntryText(pos = (1300,2), size = (220,45), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # size,
-					 MultiContentEntryPixmapAlphaBlend(pos = (1525,2),	 size = (75,45), png=4), # syncPng,
-					 ], True, "showOnDemand"),
-					 },
+					MultiContentEntryPixmapAlphaBlend(pos = (5,7),	  size = (36,36), png=0), # key,
+					MultiContentEntryText(pos = (45,2),   size = (200,45),	 font = 0, flags = RT_HALIGN_LEFT,	text = 1), # language,
+					MultiContentEntryText(pos = (255,2),  size = (1040,45),  font = 0, flags = RT_HALIGN_LEFT,	 text = 2), # filename,
+					MultiContentEntryText(pos = (1300,2), size = (220,45), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # size,
+					MultiContentEntryPixmapAlphaBlend(pos = (1525,2),	 size = (75,45), png=4), # syncPng,
+					], True, "showOnDemand"),
+					},
 					"fonts": [gFont("FHD", 28), gFont("Regular", 26)],
 					"itemHeight": 50
 					}
@@ -6237,23 +6237,23 @@
 	<widget source="header_lang" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="475,470" size="1000,45" transparent="1"/>
 	<widget source="header_state" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="1480,470" size="300,45" transparent="1"/>
 	<eLabel backgroundColor="blue_light" name="" position="170,520" size="1610,2" zPosition="-9" foregroundColor="white"/>
-	<widget source="subtitles" conditional="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="170,530" size="1610,400" transparent="1" zPosition="3">
+	<widget source="providers" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="170,530" size="1610,400" transparent="1" zPosition="3">
 	    <convert type="TemplatedMultiContent">
 					{"templates":
-					{"default": (50, [
-					MultiContentEntryText(pos = (0,0),	 size = (300,45),  font = 0, flags = RT_HALIGN_LEFT,  text = 0), # name,
-					MultiContentEntryText(pos = (305,0),  size = (1000,45),	 font = 0, flags = RT_HALIGN_LEFT,	text = 1), # lang,
-					MultiContentEntryText(pos = (1310,0), size = (300,45), font = 0, flags = RT_HALIGN_RIGHT, text = 2, color=0xc0f000) # enabled,
-					], True, "showOnDemand"),
-					"notselected": (50, [
-					MultiContentEntryText(pos = (0,0),	 size = (300,45),  font = 0, flags = RT_HALIGN_LEFT,  text = 0), # name,
-					MultiContentEntryText(pos = (305,0),  size = (1000,45),	 font = 0, flags = RT_HALIGN_LEFT,	text = 1), # lang,
-					MultiContentEntryText(pos = (1310,0), size = (300,45), font = 0, flags = RT_HALIGN_RIGHT,  text = 2, color=0xc0f000) # enabled,
-					], False, "showOnDemand")
-					},
-					"fonts": [gFont("FHD", 30)],
-					"itemHeight": 50
-					}
+					{"default": (37, [
+                    MultiContentEntryText(pos = (0,0),   size = (257,32),  font = 0, flags = RT_HALIGN_LEFT,  text = 0), # name,
+                    MultiContentEntryText(pos = (310,0),  size = (431,32),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # lang,
+                    MultiContentEntryText(pos = (1185,0), size = (257,32), font = 0, flags = RT_HALIGN_RIGHT, text = 2, color=0xFF000003) # enabled,
+                    ], True, "showOnDemand"),
+                    "notselected": (37, [
+                    MultiContentEntryText(pos = (0,0),   size = (257,32),  font = 0, flags = RT_HALIGN_LEFT,  text = 0), # name,
+                    MultiContentEntryText(pos = (310,0),  size = (431,32),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # lang,
+                    MultiContentEntryText(pos = (1185,0), size = (257,32), font = 0, flags = RT_HALIGN_RIGHT,  text = 2, color=0xFF000003) # enabled,
+                    ], False, "showOnDemand")
+                    },
+                    "fonts": [gFont("RegularBold", 26)],
+                    "itemHeight": 37
+                    }
 		</convert>
 	</widget>
 	<!-- Buttons-->
