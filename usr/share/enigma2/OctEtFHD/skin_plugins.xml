@@ -6145,27 +6145,21 @@
   </screen>
 
   <screen name="SubsSearchContextMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
-	<widget source="subtitle_release" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,145" size="1300,45" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="170,200" size="1300,2" zPosition="-9" foregroundColor="white"/>
-	<widget source="context_menu" render="Listbox" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="white" position="170,215" size="1300,750" transparent="1">
+	<panel name="StanDardScreen"/>
+	<widget source="subtitle_release" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="140,145" size="1300,45" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="140,200" size="1300,2" zPosition="-9" foregroundColor="white"/>
+	<widget source="context_menu" render="Listbox" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="white" position="140,215" size="1300,750" transparent="1">
 	    <convert type="TemplatedMultiContent">
-				{"templates":
-				{"default": (50, [
-				MultiContentEntryText(pos = (5,5),	 size = (1300,50),	font = 0, color = 0xffffff, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 0), # langname,
-				], True, "showOnDemand"),
-				},
-				"fonts": [gFont("Regular", 30)],
-				"itemHeight":50,
-				}
+					{"templates":
+					{"default": (50, [
+					MultiContentEntryText(pos = (5,5),	 size = (1300,50),	font = 0, color = 0xffffff, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 0), # langname,
+					], True, "showOnDemand"),
+					},
+					"fonts": [gFont("RegularBold", 26)],
+					"itemHeight":50,
+					}
 		</convert>
 	</widget>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
   </screen>
 
   <screen name="SubsSearch" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -6192,9 +6186,9 @@
 	<widget source="header_provider" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="1470,470" size="220,45" transparent="1"/>
 	<widget source="header_sync" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="1695,470" size="85,45" transparent="1"/>
 	<eLabel backgroundColor="blue_light" name="" position="170,520" size="1610,2" zPosition="-9" foregroundColor="white"/>
-	<widget name="loadmessage" font="FHD;34" backgroundColor="OE_Background" foregroundColor="white" halign="center" valign="center" position="170,530" size="1610,400" transparent="1" zPosition="5"/>
-	<widget name="errormessage" font="FHD;34" backgroundColor="OE_Background" foregroundColor="white" halign="center" valign="center" position="170,530" size="1610,400" transparent="1" zPosition="4"/>
-	<widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,530" size="1610,400" transparent="1" zPosition="3">
+	<widget name="loadmessage" font="FHD;34" backgroundColor="OE_Background" foregroundColor="white" halign="center" valign="center" position="500,100" size="1610,400" transparent="1" zPosition="5"/>
+	<widget name="errormessage" font="FHD;34" backgroundColor="OE_Background" foregroundColor="white" halign="center" valign="center" position="500,100" size="1610,400" transparent="1" zPosition="4"/>
+	<widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" foregroundColor="white" position="170,530" size="1610,400" transparent="1" zPosition="3">
 	    <convert type="TemplatedMultiContent">
 					{"templates":
 					{"default": (50, [
@@ -6205,7 +6199,7 @@
 					MultiContentEntryPixmapAlphaBlend(pos = (1525,2),	 size = (75,45), png=4), # syncPng,
 					], True, "showOnDemand"),
 					},
-					"fonts": [gFont("FHD", 28), gFont("Regular", 26)],
+					"fonts": [gFont("RegularBold", 26), gFont("RegularBold", 26)],
 					"itemHeight": 50
 					}
 		</convert>
@@ -6286,27 +6280,32 @@
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,140" size="1300,800" transparent="1"/>
   </screen>
 
+  <screen name="SubsDownloadedSubtitlesMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,140" size="1300,800" transparent="1"/>
+  </screen>
+
   <screen name="SubsDownloadedSelection" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
-	<widget source="header_name" render="Label" position="140,145" size="360,35" font="RegularBold;26" backgroundColor="OE_Background"/>
-	<widget source="header_provider" render="Label" position="500,145" size="300,35" font="RegularBold;26" backgroundColor="OE_Background"/>
-	<widget source="header_date" render="Label" position="860,145" size="400,35" font="RegularBold;26" backgroundColor="OE_Background"/>
-	<widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="80,190" size="725,410" zPosition="3" transparent="1">
+	<widget source="header_name" render="Label" position="140,145" size="360,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
+	<widget source="header_provider" render="Label" position="620,145" size="300,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
+	<widget source="header_date" render="Label" position="1060,145" size="400,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
+	<widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="140,190" size="1300,700" zPosition="3" transparent="1">
 	    <convert type="TemplatedMultiContent">
-			{"templates":
-			{"default": (50, [
-			MultiContentEntryPixmapAlphaBlend(pos = (0, 15),   size = (24, 24), png=0), # key,
-			MultiContentEntryText(pos = (105, 0),	size = (425, 50),  font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text=1, color=0xFF000004), # name,
-			MultiContentEntryText(pos = (540, 0),  size = (265, 50),  font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 2, color=0xFF000004), # provider,
-			MultiContentEntryText(pos = (705, 0), size = (270, 50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,	text = 3, color=0xFF000004), # date,
-			], True, "showOnDemand"),
-			},
-			"fonts": [gFont("RegularBold", 26), gFont("RegularBold", 22)],
-			"itemHeight": 50
-			}
+					{"templates":
+					{"default": (50, [
+					MultiContentEntryPixmapAlphaBlend(pos = (0, 15),   size = (24, 24), png=0), # key,
+					MultiContentEntryText(pos = (35, 0),	size = (425, 50),  font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1, color=0xFF000004), # name,
+					MultiContentEntryText(pos = (480, 0),  size = (430, 50),  font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 2, color=0xFF000004), # provider,
+					MultiContentEntryText(pos = (920, 0), size = (380, 50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,	text = 3, color=0xFF000004), # date,
+					], True, "showOnDemand"),
+					},
+					"fonts": [gFont("RegularBold", 26), gFont("RegularBold", 22)],
+					"itemHeight": 50
+					}
 		</convert>
 	</widget>
-	<widget source="entries_sum" render="Label" position="140,850" size="380,160" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="entries_sum" render="Label" position="140,900" size="380,160" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- TMBD SETTINGS-->
   <screen name="TMBDSettings" position="fill" flags="wfNoBorder">
