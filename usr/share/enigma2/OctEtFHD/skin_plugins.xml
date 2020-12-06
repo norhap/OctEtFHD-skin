@@ -5941,53 +5941,6 @@
 	<panel name="ClockBg"/>
   </screen>
 
-  <!-- SubTitelScreens -->
-  <screen name="SubsChooser" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1300,50" transparent="1"/>
-	<widget name="file_list" itemHeight="50" font="Regular;28" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1300,750" transparent="1"/>
-	<widget name="menu_list" font="Regular;28" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="0,0" size="1,1" transparent="1"/>
-	<!-- others-->
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_exit.png" position="78,960" size="64,43"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1300,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="700,960" size="40,40"/>
-	<eLabel text="Choose from downloaded subtitels" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="220,960" size="470,40" transparent="1" zPosition="1"/>
-	<eLabel text="Choose from web subtitles" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="750,960" size="470,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
-  </screen>
-
-  <screen name="SubsSupportSettings" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="150,850" zPosition="-10"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="920,770" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="center,230" size="680,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="SubsSupport Settings" font="RegularBold;38" backgroundColor="OE_Background" foregroundColor="white" position="center,165" size="680,52" transparent="1"/>
-	<widget source="menuList" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="620,250" size="680,650" transparent="1">
-	    <convert type="TemplatedMultiContent">
-					  {"templates":
-					  {"default": (50, [
-					  MultiContentEntryText(pos=(10, 0), size=(680, 50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0, color=0xFFFFFF)
-					  ], True, "showOnDemand"),
-					  },
-					  "fonts": [gFont("RegularBold", 28)],
-					  "itemHeight": 50
-						}
-		</convert>
-	</widget>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/colors/setting1.png" position="475,182" size="100,100" transparent="1" zPosition="10"/>
-	<!-- others-->
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_ok.png" position="455,870" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_exit.png" position="531,870" size="64,43"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
-  </screen>
-
   <screen name="MyLanguageSelection" title="Language selection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-10"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="880,940" zPosition="-15"/>
@@ -6022,6 +5975,50 @@
 	    <convert type="ValueToPixmap">LanguageCode</convert>
 	</widget>
 	<widget name="captcha" position="170,935" size="1300,70" alphatest="blend" zPosition="-1" backgroundColor="OE_Background" foregroundColor="white" font="Regular;28"/>
+	<!-- Clock -->
+	<panel name="ClockBg"/>
+  </screen>
+
+  <!-- SUBTITLES SUBSUPPORT -->
+  <screen name="SubsChooser" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget name="file_list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="140,140" size="1300,740" transparent="1"/>
+	<widget name="menu_list" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="140,970" size="1300,75" transparent="1"/>
+	<!-- others-->
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_exit.png" position="48,980" size="64,43"/>
+  </screen>
+
+  <screen name="SubsSearchParamsMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<widget source="sourceTitleInfo" render="Label" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" position="140,140" size="1300,50" transparent="1"/>
+	<widget source="sourceTitle" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" position="140,210" size="1300,50" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="140,280" size="1300,670" transparent="1"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="140,980" size="40,40"/>
+	<eLabel text="Choose subtitles" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="190,980" size="470,40" transparent="1" zPosition="1"/>
+  </screen>
+
+  <screen name="SubsSupportSettings" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="450,center" size="150,850" zPosition="-10"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="410,center" size="920,770" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="center,230" size="680,2" zPosition="-9"/>
+	<!-- Widget -->
+	<eLabel text="SubsSupport Settings" font="RegularBold;38" backgroundColor="OE_Background" foregroundColor="white" position="center,165" size="680,52" transparent="1"/>
+	<widget source="menuList" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="620,250" size="680,650" transparent="1">
+	    <convert type="TemplatedMultiContent">
+					{"templates":
+					{"default": (50, [
+					MultiContentEntryText(pos=(10, 0), size=(680, 50), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0, color=0xFFFFFF)
+					], True, "showOnDemand"),
+					},
+					"fonts": [gFont("RegularBold", 28)],
+					"itemHeight": 50
+					}
+		</convert>
+	</widget>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/colors/setting1.png" position="475,182" size="100,100" transparent="1" zPosition="10"/>
+	<!-- others-->
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_ok.png" position="455,870" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="OctEtFHD/buttons/key_exit.png" position="531,870" size="64,43"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
@@ -6215,6 +6212,9 @@
 	<widget source="key_green" render="Label" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_yellow" render="Label" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_blue" render="Label" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_menu_img" render="Pixmap" pixmap="buttons/key_menu.png" position="75,690" size="64,43" transparent="1" alphatest="blend" >
+		<convert type="ConditionalShowHide"/>
+	</widget>
 	<!-- Clock -->
 	<eLabel backgroundColor="blue_light" position="1475,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="ClockBg"/>
