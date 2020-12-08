@@ -4643,6 +4643,7 @@
 	<widget source="session.VideoPicture" render="Pig" position="1360,100" size="480,265" zPosition="1" backgroundColor="#df0b1300"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" name="" position="45,center" size="1830,940" zPosition="-15"/>
 	<eLabel backgroundColor="blue" foregroundColor="OE_Background" name="" position="0,0" size="1920,1080" zPosition="-16"/>
+	<eLabel text="Weather Forecast" position="780,10" size="400,65" backgroundColor="blue" foregroundColor="green_light" zPosition="5" font="RegularBold;40" transparent="1"/>
 	<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="45,65" size="1830,5" zPosition="-16"/>
 	<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="40,65" size="5,945" zPosition="-16"/>
 	<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="40,1005" size="1835,5" zPosition="-15"/>
@@ -4661,6 +4662,7 @@
 	<widget render="Label" source="wind_condition" position="1350,550" zPosition="1" size="480,35" font="RegularBold;25" transparent="1" halign="right"/>
 	<widget render="Label" source="humidity" position="1350,591" zPosition="1" size="480,35" font="RegularBold;25" valign="bottom" transparent="1" halign="right"/>
 	<widget render="Label" source="weekday1" position="235,700" zPosition="1" size="0,0" halign="center" valign="center" font="RegularBold;28" transparent="1"/>
+	<widget name="weekday1_icon" position="60,215" zPosition="1" size="0,0" alphatest="blend"/>
 	<widget render="Label" source="weekday1_temp" position="235,919" zPosition="1" size="0,0" halign="center" valign="bottom" font="RegularBold;32" transparent="1"/>
 	<widget render="Label" source="weekday2" position="235,700" zPosition="1" size="250,80" halign="center" valign="center" font="RegularBold;28" transparent="1"/>
 	<widget name="weekday2_icon" position="280,215" zPosition="1" size="0,0" alphatest="blend"/>
@@ -4689,5 +4691,17 @@
 	<widget render="Label" source="weekday5_temp" position="1565,919" zPosition="1" size="250,80" halign="center" valign="bottom" font="RegularBold;32" transparent="1"/>
 	<widget render="Label" source="statustext" position="center,-2" size="1739,1041" font="RegularBold;20" halign="center" valign="center" transparent="1"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="105,930" size="64,43" alphatest="blend"/>
+  </screen>
+  <screen name="MSNWeatherPluginEntriesListConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<widget name="entrylist" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,160" size="1300,800" transparent="1"/>
+  </screen>
+  <screen name="MSNWeatherPluginEntryConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,160" size="1300,800" transparent="1"/>
+  </screen>
+  <screen name="MSNWeatherPluginSearch" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<widget name="entrylist" font="RegularBold;26" itemHeight="70" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,160" size="1300,430" transparent="1"/>
   </screen>
 </skin>
