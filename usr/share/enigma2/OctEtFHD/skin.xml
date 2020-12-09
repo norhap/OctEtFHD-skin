@@ -288,7 +288,11 @@
   <screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="InfoBar">
 	<panel name="poster_firstinfobar"/>
 	<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="15,852" size="1865,215" zPosition="-11"/>
-	<eLabel backgroundColor="blue_light" name="" position="336,910" size="1510,2" zPosition="20" foregroundColor="OE_ListBackground"/>
+	<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="1865,2" zPosition="-11"/>
+	<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="2,215" zPosition="-11"/>
+	<eLabel backgroundColor="blue_light" name="InfoBar" position="15,1065" size="1865,2" zPosition="-11"/>
+	<eLabel backgroundColor="blue_light" name="InfoBar" position="1880,850" size="2,217" zPosition="-11"/>
+	<eLabel backgroundColor="OE_NewBg" name="" position="336,910" size="1510,4" zPosition="20" transparent="0" foregroundColor="OE_ListBackground"/>
 	<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="30,775" size="285,305" zPosition="-10"/>
 	<!-- Widget -->
 	<widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="RegularBold;37" position="320,854" size="110,55" transparent="1" halign="right" valign="center" zPosition="1"/>
@@ -314,7 +318,7 @@
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">InMinutes</convert>
 	</widget>
-	<widget source="session.Event_Now" render="Progress" pixmap="colors/00A4C400.png" position="336,975" size="1510,6" transparent="1" zPosition="7">
+	<widget source="session.Event_Now" render="Progress" backgroundColor="OE_NewBg" pixmap="colors/00A4C400.png" position="336,975" size="1510,4" transparent="0" zPosition="7">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold;32" halign="center" noWrap="1" position="320,980" render="Label" size="110,48" source="session.Event_Next" transparent="1" valign="top">
