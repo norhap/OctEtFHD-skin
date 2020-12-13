@@ -292,15 +292,15 @@
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="2,215" zPosition="-11"/>
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="15,1065" size="1865,2" zPosition="-11"/>
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="1880,850" size="2,217" zPosition="-11"/>
-	<eLabel backgroundColor="OE_NewBg" name="" position="336,910" size="1510,4" zPosition="20" transparent="0" foregroundColor="OE_ListBackground"/>
+	<eLabel backgroundColor="OE_NewBg" name="" position="336,915" size="1510,4" zPosition="20" transparent="0" foregroundColor="OE_ListBackground"/>
 	<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="30,775" size="285,305" zPosition="-10"/>
 	<!-- Widget -->
 	<widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="RegularBold;37" position="320,854" size="110,55" transparent="1" halign="right" valign="center" zPosition="1"/>
 	<eLabel backgroundColor="OE_Background" font="Regular;52" halign="center" position="430,849" size="30,60" text="l" transparent="1"/>
-	<widget source="session.CurrentService" render="Label" position="458,850" size="750,28" font="RegularBold;27" noWrap="1" backgroundColor="background" transparent="1" halign="left" valign="center" foregroundColor="white">
+	<widget source="session.CurrentService" render="Label" position="458,850" size="750,35" font="RegularBold;27" noWrap="1" backgroundColor="background" transparent="1" halign="left" valign="center" foregroundColor="white">
 	    <convert type="ServiceName">Name</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="458,880" size="700,28" transparent="1" zPosition="1">
+	<widget source="session.CurrentService" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="458,885" size="700,28" transparent="1" zPosition="1">
 	    <convert type="PliExtraInfo">TransponderInfo</convert>
 	</widget>
 	<widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" font="RegularBold;32" halign="left" noWrap="1" position="575,925" size="1100,64" transparent="1">
@@ -3568,8 +3568,8 @@
 	<widget source="job_progress" render="Label" font="RegularBold;32" backgroundColor="OE_Background" halign="center" position="1050,center" size="250,50" transparent="1" zPosition="2" foregroundColor="white">
 	    <convert type="ProgressToText"/>
 	</widget>
-	<widget source="job_status" render="Label" font="FHD;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,607" size="1060,50" transparent="1" zPosition="4"/>
-	<widget name="config" font="FHD;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,662" size="1060,50" transparent="1" zPosition="4"/>
+	<widget source="job_status" render="Label" font="FHD;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,570" size="1060,50" transparent="1" zPosition="4"/>
+	<widget name="config" itemHeight="50" font="FHD;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,625" size="1060,50" transparent="1" zPosition="4"/>
 	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="95,256" size="100,100" transparent="1" zPosition="10"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="107,center" size="78,75" zPosition="4"/>
 	<!-- Buttons-->
