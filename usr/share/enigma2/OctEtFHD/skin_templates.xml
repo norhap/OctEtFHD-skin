@@ -331,9 +331,9 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<panel name="StanDardScreen"/>
 	<panel name="setup_standard"/>
 	<panel name="description"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="145,980" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="195,980" size="64,43"/>
-	<eLabel text="[move mode]" position="255,983" size="400,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="150,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="200,980" size="64,43"/>
+	<eLabel text="[move mode]" position="260,983" size="400,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
 	<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" size="1300,820" transparent="1" zPosition="3"/>
 	<widget name="text" position="1455,100" size="450,380" font="FHD;30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="description" position="1455,150" size="450,380" font="FHD;30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
