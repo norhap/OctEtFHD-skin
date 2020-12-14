@@ -294,6 +294,10 @@
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="1880,850" size="2,217" zPosition="-11"/>
 	<eLabel backgroundColor="OE_NewBg" name="" position="336,915" size="1510,4" zPosition="20" transparent="0" foregroundColor="OE_ListBackground"/>
 	<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="30,775" size="285,305" zPosition="-10"/>
+	<eLabel backgroundColor="blue_light" name="InfoBar" position="28,775" size="2,305" zPosition="-11"/>
+	<eLabel backgroundColor="blue_light" name="InfoBar" position="28,773" size="289,2" zPosition="-11"/>
+	<eLabel backgroundColor="blue_light" name="InfoBar" position="315,775" size="2,305" zPosition="-11"/>
+	<eLabel backgroundColor="blue_light" name="InfoBar" position="28,1078" size="289,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="RegularBold;37" position="320,854" size="110,55" transparent="1" halign="right" valign="center" zPosition="1"/>
 	<eLabel backgroundColor="OE_Background" font="Regular;52" halign="center" position="430,849" size="30,60" text="l" transparent="1"/>
