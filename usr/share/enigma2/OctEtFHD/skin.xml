@@ -477,7 +477,7 @@
 	<widget source="session.CurrentService" render="Label" font="RegularBold;21" backgroundColor="OE_NewBg" position="25,535" size="440,90" valign="center" halign="center" transparent="1" zPosition="1">
 	    <convert type="PliExtraInfo">TransponderInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv2.png" alphatest="blend" position="65,425" zPosition="20" size="400,200" transparent="1">
+	<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv.png" alphatest="blend" position="125,958" zPosition="20" size="250,90" transparent="1">
 	    <convert type="ServiceInfo">IsStream</convert>
 	    <convert type="ConditionalShowHide">
 	    </convert>
