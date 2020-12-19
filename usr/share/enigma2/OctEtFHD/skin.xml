@@ -164,52 +164,18 @@
 	<color color="OE_Foreground" name="WindowTitleForeground"/>
   </windowstyle>
   <parameters>
-	<parameter name="AllowUserDatesAndTimes" value="1, 1"/>
-	<parameter name="AllowUseOnlyIcon" value="1, 1"/>
-<!--	<parameter name="ConfigListSeperator" value="320"/> -->
 	<parameter name="ChoicelistDash" value="0, 3, 1000, 50"/>
 	<parameter name="ChoicelistName" value="85, 3, 1000, 50"/>
 	<parameter name="ChoicelistNameSingle" value="5, 5, 1400, 50"/>
 	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
-	<parameter name="FileListName" value="68, 4, 1000, 50"/>
-	<parameter name="FileListIcon" value="7, 4, 52, 50"/>
-	<parameter name="FileListMultiName" value="125, 3, 1000, 50"/>
-	<parameter name="FileListMultiIcon" value="55, 0, 50, 50"/>
-	<parameter name="FileListMultiLock" value="5, 5, 50, 50"/>
-	<parameter name="PluginBrowserName" value="180, 1, 45"/>
-	<parameter name="PluginBrowserDescr" value="180, 43, 34"/>
-	<parameter name="PluginBrowserIcon" value="15, 8, 150, 60"/>
-	<parameter name="PluginBrowserDownloadName" value="90, 1, 45"/>
-	<parameter name="PluginBrowserDownloadDescr" value="90, 43, 34"/>
-	<parameter name="PluginBrowserDownloadIcon" value="10, 5, 60, 71"/>
-	<parameter name="ServiceInfo" value="0, 0, 450, 50"/>
-	<parameter name="ServiceInfoLeft" value="0, 0, 450, 45"/>
-	<parameter name="ServiceInfoRight" value="450, 0, 1000, 45"/>
-	<parameter name="SelectionListDescr" value="55, 3, 1000, 50"/>
-	<parameter name="SelectionListLock" value="10, 7, 50, 50"/>
-	<parameter name="VirtualKeyboard" value="68, 68"/>
-	<parameter name="PiconManagerList" value="10, 2, 1410, 45"/>
-	<parameter name="PiconManagerListFont" value="Regular; 28"/>
-<!--	<parameter name="PiconManagerListItemHeight" value="45"/> -->
-	<parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
-	<parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
-	<parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30"/>
-	<parameter name="AboutHddSplit" value="1, 1"/>
-	<parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
-	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
-	<parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25"/>
-	<parameter name="PlayListName" value="65, 2, 1000, 50"/>
-	<parameter name="PlayListIcon" value="10, 0, 50, 50"/>
-	<parameter name="fstabMenuList" value="0, 10, 300, 50, 400, 10, 500, 50"/>
-	<parameter name="PiconManagerList" value="10, 3, 1920, 50"/>
-	<parameter name="RSList" value="40, 0, 1200, 50, 10, 12, 50, 50"/>
+	<parameter name="ExpandableListIcon" value="0, 0, 55, 38"/>
+	<parameter name="ExpandableListDescr" value="55, 2, 1000, 45"/>
 	<parameter name="FcFileListIcon" value="10, 4, 30, 30"/>
 	<parameter name="FcFileListMultiIcon" value="45, 4, 30, 30"/>
 	<parameter name="FcFileListMultiLock" value="2, 0, 30, 30"/>
 	<parameter name="FcFileListMultiName" value="90, 3, 1000, 32"/>
 	<parameter name="FcFileListName" value="68, 4, 1000, 40"/>
-	<parameter name="ExpandableListIcon" value="0, 0, 55, 38"/>
-	<parameter name="ExpandableListDescr" value="55, 2, 1000, 45"/>
+	<parameter name="VirtualKeyboard" value="68, 68"/>
   </parameters>
 	<!-- GRAPHIC SWITCH -->
   <switchpixmap>
