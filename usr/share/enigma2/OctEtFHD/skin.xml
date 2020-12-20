@@ -1019,7 +1019,7 @@
 	<panel name="StanDardScreen"/>
 	<widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" name="list" position="140,center" scrollbarMode="showNever" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" size="1300,800" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 	<!-- others -->
-	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="78,960" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="48,960" size="64,43"/>
   </screen>
   <screen name="ChapterZap" title="ChapterZap" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="284,96" zPosition="8">
 	<!-- Back -->
