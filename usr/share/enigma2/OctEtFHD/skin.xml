@@ -1882,19 +1882,19 @@
 	<!-- Widget -->
 	<widget source="Title" render="Label" position="680,85" size="820,50" font="FHD;34" backgroundColor="OE_Background" transparent="1" foregroundColor="white"/>
 	<widget name="list" zPosition="1" position="515,160" size="1345,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="0"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="80,900" size="180,45" render="Label" source="Service" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="80,885" size="180,45" render="Label" source="Service" transparent="1">
 	    <convert type="ServiceTime">Duration</convert>
 	    <convert type="ClockToText">AsLength</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="265,900" render="Label" size="200,45" source="Service" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="265,885" render="Label" size="200,45" source="Service" transparent="1">
 	    <convert type="MovieInfo">FileSize</convert>
 	</widget>
-	<widget name="chosenletter" position="300,900" size="100,50" font="RegularBold;26" backgroundColor="OE_NewBg2" transparent="1"/>
+	<widget name="chosenletter" position="300,885" size="100,50" font="RegularBold;26" backgroundColor="OE_NewBg2" transparent="1"/>
 	<widget name="TrashcanSize" position="80,940" size="305,50" font="RegularBold;26" backgroundColor="OE_NewBg2" transparent="1"/>
 	<widget name="freeDiskSpace" position="80,990" size="440,100" font="RegularBold;26" backgroundColor="OE_NewBg2" transparent="1"/>
 	<widget name="movie_sort" pixmaps="/usr/share/enigma2/skin_default/icons/az.png,/usr/share/enigma2/skin_default/icons/newtop.png,/usr/share/enigma2/skin_default/icons/shuffle.png,/usr/share/enigma2/skin_default/icons/za.png,/usr/share/enigma2/skin_default/icons/oldtop.png,/usr/share/enigma2/skin_default/icons/faz.png,/usr/share/enigma2/skin_default/icons/fza.png,/usr/share/enigma2/skin_default/icons/default.png" position="420,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
 	<widget name="movie_off" pixmaps="/usr/share/enigma2/skin_default/icons/ask.png,/usr/share/enigma2/skin_default/icons/movielist.png,/usr/share/enigma2/skin_default/icons/quit.png,/usr/share/enigma2/skin_default/icons/pause.png,/usr/share/enigma2/skin_default/icons/playlist.png,/usr/share/enigma2/skin_default/icons/playlistquit.png,/usr/share/enigma2/skin_default/icons/loop.png,/usr/share/enigma2/skin_default/icons/rep.png" position="470,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;28" halign="left" position="80,410" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="440,490" source="Service" transparent="1" valign="top">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" halign="left" position="80,410" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="440,465" source="Service" transparent="1" valign="top">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
 	<widget name="DescriptionBorder" position="0,0" size="0,0"/>
