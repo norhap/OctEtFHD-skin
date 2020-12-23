@@ -4297,10 +4297,10 @@
   </screen>
 	<!-- **********PREVIEW HISTORY ZAP SELECTOR********** -->
   <screen name="PreviewZap" position="center,25" size="250,75" backgroundColor="OE_NewBg2" flags="wfNoBorder" zPosition="2">
-	<eLabel position="0,0" size="250,1" backgroundColor="blue_light" zPosition="1"/>
-	<eLabel position="0,0" size="1,75" backgroundColor="blue_light" zPosition="1"/>
-	<eLabel position="0,74" size="250,1" backgroundColor="blue_light" zPosition="1"/>
-	<eLabel position="249,0" size="1,75" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,0" size="250,2" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,0" size="2,75" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="0,73" size="250,2" backgroundColor="blue_light" zPosition="1"/>
+	<eLabel position="248,0" size="2,75" backgroundColor="blue_light" zPosition="1"/>
 	<eLabel text="Preview" position="0,0" size="250,75" valign="center" halign="center" backgroundColor="OE_NewBg2" transparent="1" font="RegularBold;22"/>
 	  </screen>
   <screen name="FullEntryNumber" position="center,center" size="720,420" title=" " zPosition="-1">
