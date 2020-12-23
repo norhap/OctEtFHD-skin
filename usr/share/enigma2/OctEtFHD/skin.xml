@@ -559,11 +559,11 @@
 	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,830" size="440,40" source="session.MSNWeather" zPosition="3" halign="center" valign="center" transparent="1" foregroundColor="yellow">
 	    <convert type="MSNWeather">city</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="270,905" size="60,50" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="blue_light">
+	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="290,905" size="60,50" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="blue_light">
 	    <convert type="MSNWeather">humidity</convert>
 	</widget>
-	<eLabel text="Humidity :" position="115,905" size="155,35" zPosition="5" font="RegularBold;28" transparent="1"/>
-	<eLabel text="%" position="325,905" size="30,50" zPosition="5" halign="center" font="RegularBold;28" transparent="1"/>
+	<eLabel text="Humidity :" position="135,905" size="155,35" zPosition="5" font="RegularBold;28" transparent="1"/>
+	<eLabel text="%" position="345,905" size="30,50" zPosition="5" halign="center" font="RegularBold;28" transparent="1"/>
 	<ePixmap pixmap="/usr/share/enigma2/OctEtFHD/WeatherIcon/wind.png" position="52,630" size="60,60" alphatest="blend"/>
 	<widget source="session.MSNWeather" render="Label" position="145,620" size="220,40" font="RegularBold;24" halign="center" valign="center" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
 	    <convert type="MSNWeather">winddisplay</convert>
