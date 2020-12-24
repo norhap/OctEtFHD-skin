@@ -175,6 +175,10 @@
 	<parameter name="FcFileListMultiLock" value="2, 0, 30, 30"/>
 	<parameter name="FcFileListMultiName" value="90, 3, 1000, 32"/>
 	<parameter name="FcFileListName" value="68, 4, 1000, 40"/>
+	<parameter name="PluginBrowserDescr" value="180, 43, 34"/>
+	<parameter name="PluginBrowserDownloadDescr" value="90, 43, 34"/>
+	<parameter name="PluginBrowserDownloadName" value="90, 1, 45"/>
+	<parameter name="PluginBrowserName" value="180, 1, 45"/>
 	<parameter name="VirtualKeyboard" value="68, 68"/>
   </parameters>
 	<!-- GRAPHIC SWITCH -->
