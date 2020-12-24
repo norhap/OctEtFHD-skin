@@ -175,6 +175,9 @@
 	<parameter name="FcFileListMultiLock" value="2, 0, 30, 30"/>
 	<parameter name="FcFileListMultiName" value="90, 3, 1000, 32"/>
 	<parameter name="FcFileListName" value="68, 4, 1000, 40"/>
+	<parameter name="FileListIcon" value="7, 4, 52, 50"/>
+	<parameter name="FileListMultiName" value="125, 3, 1000, 50"/>
+	<parameter name="FileListName" value="68, 4, 1000, 50"/>
 	<parameter name="PluginBrowserDescr" value="180, 43, 34"/>
 	<parameter name="PluginBrowserDownloadDescr" value="90, 43, 34"/>
 	<parameter name="PluginBrowserDownloadName" value="90, 1, 45"/>
@@ -2407,10 +2410,10 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
-  <screen name="picshow" title="Picture player" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="picshow" position="fill">
 	<panel name="StanDardScreen"/>
 	<widget name="filelist" itemHeight="50" font="Regular;28" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="140,150" size="1300,810" transparent="1"/>
-	<widget name="thn" position="80,70" size="360,240" alphatest="blend"/>
+	<widget name="thn" position="1480,300" size="440,300" alphatest="blend"/>
   </screen>
   <screen name="Pic_Exif" title="Info" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
