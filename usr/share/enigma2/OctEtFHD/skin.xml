@@ -4708,14 +4708,14 @@
 	<widget font="RegularBold;26" name="title" position="30,30" size="1140,42" backgroundColor="OE_NewBg2" transparent="1" valign="center"/>
 	<widget alphatest="blend" name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_empty.png" position="1185,15" size="315,31" zPosition="2"/>
 	<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TMBD/starsbar_filled.png" position="1185,15"  size="315,31" transparent="1" zPosition="3"/>
-	<widget font="RegularBold;26" halign="left" name="ratinglabel" backgroundColor="OE_NewBg2" position="1185,51" size="315,34" transparent="1"/>
-	<widget font="RegularBold;26" name="voteslabel" halign="left" position="1185,85" size="435,34" backgroundColor="OE_NewBg2" transparent="1"/>
+	<widget font="RegularBold;26" halign="left" name="ratinglabel" backgroundColor="OE_NewBg2" position="1185,51" size="315,35" transparent="1"/>
+	<widget font="RegularBold;26" name="voteslabel" halign="left" position="1185,85" size="435,35" backgroundColor="OE_NewBg2" transparent="1"/>
 	<widget alphatest="blend" name="poster" position="45,90" size="427,597"/>
 	<widget name="detailslabel" position="487,88" size="855,52" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_NewBg2" transparent="1"/>
 	<widget name="menu" itemHeight="50" position="487,150" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_NewBg2" size="1125,195" zPosition="3"/>
 	<widget font="RegularBold;26" name="castlabel" position="480,367" size="1140,360" backgroundColor="OE_NewBg2" transparent="1"/>
 	<widget font="RegularBold;26" name="extralabel" position="480,115" size="1140,270" backgroundColor="OE_NewBg2" transparent="1"/>
-	<widget font="RegularBold;26" name="statusbar" position="15,735" size="1620,30" backgroundColor="OE_NewBg2" transparent="1"/>
+	<widget font="RegularBold;26" name="statusbar" position="15,735" size="1620,35" backgroundColor="OE_NewBg2" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="0,777" size="1650,3"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="75,798" size="40,40" zPosition="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="435,798" size="40,40" zPosition="1"/>
