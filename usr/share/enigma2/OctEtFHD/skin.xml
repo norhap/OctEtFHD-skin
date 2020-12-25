@@ -184,7 +184,7 @@
 	<parameter name="PluginBrowserDownloadDescr" value="90, 43, 34"/>
 	<parameter name="PluginBrowserDownloadName" value="90, 1, 45"/>
 	<parameter name="PluginBrowserName" value="180, 1, 45"/>
-	<parameter name="SelectionListLock" value="10, 15, 45, 45"/>
+	<parameter name="SelectionListLock" value="5, 15, 45, 45"/>
 	<parameter name="VirtualKeyboard" value="68, 68"/>
   </parameters>
 	<!-- GRAPHIC SWITCH -->
@@ -2748,9 +2748,9 @@
   </screen>
   <screen name="SelectSatsEntryScreen" title="Select Sats Entry" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="list" itemHeight="50" font="FHD;28" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="140,165" size="1300,700" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="140,875" size="1300,2" zPosition="-9"/>
-	<widget source="hint" render="Label" font="EL_Standard;28" backgroundColor="OE_Background" halign="left" position="170,887" size="1300,45" transparent="1"/>
+	<widget name="list" itemHeight="50" font="FHD;28" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,165" size="1300,700" transparent="1"/>
+	<eLabel backgroundColor="blue_light" position="140,870" size="1300,2" zPosition="2"/>
+	<widget name="hint" font="FHD;30" position="140,875" size="1300,85" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
   </screen>
 	<!-- SATFINDER -->
   <screen name="Satfinder" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
