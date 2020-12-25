@@ -176,12 +176,15 @@
 	<parameter name="FcFileListMultiName" value="90, 3, 1000, 32"/>
 	<parameter name="FcFileListName" value="68, 4, 1000, 40"/>
 	<parameter name="FileListIcon" value="7, 4, 52, 50"/>
+	<parameter name="FileListMultiIcon" value="55, 0, 50, 50"/>
+	<parameter name="FileListMultiLock" value="5, 13, 50, 50"/>
 	<parameter name="FileListMultiName" value="125, 3, 1000, 50"/>
 	<parameter name="FileListName" value="68, 4, 1000, 50"/>
 	<parameter name="PluginBrowserDescr" value="180, 43, 34"/>
 	<parameter name="PluginBrowserDownloadDescr" value="90, 43, 34"/>
 	<parameter name="PluginBrowserDownloadName" value="90, 1, 45"/>
 	<parameter name="PluginBrowserName" value="180, 1, 45"/>
+	<parameter name="SelectionListLock" value="10, 15, 45, 45"/>
 	<parameter name="VirtualKeyboard" value="68, 68"/>
   </parameters>
 	<!-- GRAPHIC SWITCH -->
@@ -3948,7 +3951,7 @@
 	<widget name="key_ok" position="420,400" size="0,0" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- SKIN SELECTOR-->
-	<screen name="SkinSelector" position="fill" flags="wfNoBorder">
+  <screen name="SkinSelector" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="description_standard"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="48,960" size="64,43"/>
@@ -3964,7 +3967,7 @@
 	}
 	    </convert>
 	</widget>
-	</screen>
+  </screen>
 	<!-- SOFTCAMSETUP-->
   <screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
@@ -3979,7 +3982,7 @@
 	<eLabel backgroundColor="blue_light" position="140,900" size="1300,2" zPosition="-9"/>
   </screen>
 	<!-- FILE COMMANDER-->
- <screen name="FileCommanderScreen" position="fill">
+  <screen name="FileCommanderScreen" position="fill">
 	<panel name="StanDardScreen"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="48,960" size="64,43"/>
 	<widget name="list_left_head1" position="140,140" size="580,50" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold;22" transparent="1" valign="center"/>
@@ -4043,9 +4046,9 @@
 				}
 		</convert>
 	</widget>
-	</screen>
+  </screen>
 	<!-- MOUNT MANAGER-->
-	<screen name="VISIONDevicesPanel" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="VISIONDevicesPanel" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<widget source="list" render="Listbox" position="410,145" size="1505,650" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" transparent="1" scrollbarMode="showOnDemand">
 	    <convert type="TemplatedMultiContent">
@@ -4062,13 +4065,13 @@
 	<widget name="lab7" position="950,130" size="0,0" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="160,900" size="64,43" alphatest="blend"/>
 	</screen>
-	<screen name="VISIONDevicePanelConf" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="VISIONDevicePanelConf" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<widget name="config" itemHeight="60" position="410,150" size="1400,740" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;22" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="Linconn" backgroundColor="OE_Background" foregroundColor="blue_light" position="455,850" size="640,50" transparent="1" valign="top"/>
-	</screen>
+  </screen>
 	<!--VISION BACKUP MANAGER -->
-	<screen name="VISIONBackupManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="VISIONBackupManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="95,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="165,900" size="64,43" alphatest="blend"/>
@@ -4080,7 +4083,7 @@
 	self[&quot;list&quot;].instance.setItemHeight(50)
 	</applet>
   </screen>
-	<screen name="VISIONBackupManagerLogView" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="VISIONBackupManagerLogView" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="165,900" size="64,43" alphatest="blend"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1505,820" transparent="1"/>
@@ -4089,7 +4092,7 @@
 	<panel name="About_standard"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,940" transparent="1"/>
   </screen>
-	<screen name="XtraPluginsSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="XtraPluginsSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="130,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
@@ -4097,7 +4100,7 @@
 	<widget name="checkList" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1505,800" transparent="1"/>
   </screen>
 	<!-- VISION IMAGE MANAGER-->
-	<screen name="VISIONImageManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="VISIONImageManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="130,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
@@ -4108,7 +4111,7 @@
 	self[&quot;list&quot;].instance.setItemHeight(50)
 	</applet>
   </screen>
-	<screen name="VISIONImageManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="VISIONImageManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="130,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
@@ -4121,7 +4124,7 @@
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
   </applet>
-	</screen>
+  </screen>
 	<!-- OPKG INSTALL-->
   <screen name="VISIONIPKInstaller" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
@@ -4138,10 +4141,10 @@
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1505,800" transparent="1"/>
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
-  </applet>
-	</screen>
+	</applet>
+  </screen>
 	<!-- SWAP MANAGER-->
-	<screen name="VISIONSwap" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="VISIONSwap" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="160,900" size="64,43" alphatest="blend"/>
 	<widget name="autostart_off" position="410,190" zPosition="1" pixmap="extensions/lock_off.png" size="35,35" alphatest="blend"/>
@@ -4154,7 +4157,7 @@
 	<widget name="lab10" position="410,480" size="350,50" backgroundColor="OE_Background" font="RegularBold;26" valign="center" transparent="1"/>
 	<widget name="inactive" position="610,480" size="350,50" font="RegularBold;26" valign="center" halign="center" backgroundColor="red"/>
 	<widget name="active" position="610,480" size="350,50" zPosition="1" font="RegularBold;26" valign="center" halign="center" backgroundColor="green"/>
-	</screen>
+  </screen>
 	<!-- SOFTCAM VISION-->
   <screen name="VISIONSoftcamManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
@@ -4166,7 +4169,7 @@
 	<ePixmap pixmap="buttons/key_info.png" position="200,900" size="64,43" alphatest="blend"/>
 	<applet type="onLayoutFinish">
   self[&quot;list&quot;].instance.setItemHeight(50)
-  </applet>
+	</applet>
   </screen>
   <screen name="VISIONSoftcamMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
@@ -4178,12 +4181,12 @@
 	<widget name="list" font="RegularBold;25" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="410,140" zPosition="10" size="1505,800" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="160,900" size="64,43"/>
   </screen>
-	<screen name="VISIONStopCam" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="VISIONStopCam" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<widget name="connect" position="530,235" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy24.png" transparent="1" alphatest="blend"/>
 	<widget name="lab7" position="570,255" halign="center" size="503,80" zPosition="1" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" valign="top" transparent="1"/>
   </screen>
-	<screen name="VISIONStartCam" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="VISIONStartCam" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<widget name="connect" position="530,235" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy24.png" transparent="1" alphatest="blend"/>
 	<widget name="lab7" position="570,255" halign="center" size="503,80" zPosition="1" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" valign="top" transparent="1"/>
