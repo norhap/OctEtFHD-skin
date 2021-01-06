@@ -563,7 +563,7 @@
 	<widget alphatest="blend" render="MSNWeatherPixmap" position="55,700" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
 	    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
 	</widget>
-	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;40" render="Label" position="170,750" size="170,87" source="session.MSNWeather" transparent="1" zPosition="8" halign="center" foregroundColor="red">
+	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;40" render="Label" position="170,720" size="170,87" source="session.MSNWeather" transparent="1" zPosition="8" halign="center" foregroundColor="red">
 	    <convert type="MSNWeather">temperature_current</convert>
 	</widget>
 	<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,830" size="440,40" source="session.MSNWeather" zPosition="3" halign="center" valign="center" transparent="1" foregroundColor="yellow">
@@ -3799,7 +3799,7 @@
 	<!-- INETD RECOVERY NETWORK -->
   <screen name="InetdRecovery" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,155" zPosition="10" size="1300,630" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,155" zPosition="10" size="1300,630" transparent="1"/>
   </screen>
 	<!--INADYN-->
   <screen name="NetworkInadyn" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3936,13 +3936,13 @@
 	<!-- NETWORK MAC SETUP-->
   <screen name="NetworkMacSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" position="140,150" size="1300,800" scrollbarMode="showOnDemand" font="RegularBold;23" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" itemHeight="50" position="140,150" size="1300,800" scrollbarMode="showOnDemand" font="RegularBold;23" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="description" font="FHD;30" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- NETWORK IPV6 SETUP-->
   <screen name="IPv6Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" font="RegularBold;25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" zPosition="10" size="1300,630" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" zPosition="10" size="1300,630" transparent="1"/>
   </screen>
 	<!-- E2IPLAYER SETUP-->
   <screen name="ConfigMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
