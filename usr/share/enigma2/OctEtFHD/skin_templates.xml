@@ -305,15 +305,45 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	</screen>
 	<!-- INTRODUCTION STANDARD -->
 	<screen name="introduction_standard">
-	<eLabel backgroundColor="blue_light" position="140,877" size="1300,2" zPosition="2"/>
-	<widget source="introduction" render="Label" font="RegularBold;30" foregroundColor="blue_light" backgroundColor="OE_Background" position="140,895" size="1300,50" transparent="1" halign="center" valign="center"/>
-	<widget name="introduction" font="RegularBold;30" foregroundColor="blue_light" backgroundColor="OE_Background" position="140,895" size="1300,50" transparent="1" halign="center" valign="center"/>
+	<eLabel text="Info" font="FHD;32" backgroundColor="OE_NewBg2" position="1615,135" size="150,50" transparent="1" valign="center" zPosition="2" halign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1615,185" size="150,2" zPosition="2"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1480,135" size="420,2" zPosition="2"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1435,45" size="485,990" zPosition="-16"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="300,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	    <convert type="ConditionalShowHide"/>
+	</widget>
+	<widget source="introduction" render="Label" position="1465,100" size="450,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="introduction" position="1465,100" size="450,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- SETUP STANDARD -->
 	<screen name="setup_standard">
-	<eLabel text="Info" font="FHD;30" backgroundColor="OE_NewBg2" position="1485,130" size="380,50" transparent="1" valign="center" zPosition="2" halign="center"/>
+	<eLabel text="Info" font="FHD;32" backgroundColor="OE_NewBg2" position="1615,135" size="150,50" transparent="1" valign="center" zPosition="2" halign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1615,185" size="150,2" zPosition="2"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1480,135" size="420,2" zPosition="2"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1435,45" size="485,990" zPosition="-16"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="300,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	    <convert type="ConditionalShowHide"/>
+	</widget>
+	<widget name="introduction" conditional="introduction" position="1465,675" size="450,305" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	</screen>
+	<!-- HELP WINDOW EXTERNAL CODE -->
+	<screen name="help_window_v_core">
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="410,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="330,900" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	    <convert type="ConditionalShowHide"/>
+	</widget>
+	</screen>
+	<screen name="help_window_standard">
+	<eLabel text="Info" font="FHD;32" backgroundColor="OE_NewBg2" position="1615,135" size="150,50" transparent="1" valign="center" zPosition="2" halign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1615,185" size="150,2" zPosition="2"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1480,135" size="420,2" zPosition="2"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1435,45" size="485,990" zPosition="-16"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="300,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	    <convert type="ConditionalShowHide"/>
+	</widget>
 	</screen>
 	<!-- DESCRIPTION STANDARD -->
 	<screen name="description_standard">

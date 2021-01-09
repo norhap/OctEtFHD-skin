@@ -229,13 +229,9 @@
 	<!-- SETUP -->
   <screen name="Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Setup">
 	<panel name="StanDardScreen"/>
-	<panel name="setup_standard"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,140" size="1300,800" transparent="1"/>
-	<widget name="description" objectTypes="description,Button,Label" position="1465,150" size="450,780" font="FHD;34" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="300,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
-	    <convert type="ConditionalShowHide"/>
-	</widget>
+	<panel name="help_window_standard"/>
+	<widget name="config" itemHeight="50" font="RegularBold;27" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,140" size="1300,800" transparent="1"/>
+	<widget name="description" objectTypes="description,Button,Label" position="1465,150" size="450,780" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="introduction" conditional="introduction" position="0,0" size="0,0"/>
 	<widget name="footnote" conditional="footnote" position="1465,785" halign="center" valign="center" size="480,40"/>
   </screen>
@@ -2004,8 +2000,8 @@
 	<widget name="devicepic" alphatest="blend" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" position="1020,150" size="54,54"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,210" size="900,5" zPosition="-9"/>
 	<widget name="menulist" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,230" size="900,550" transparent="1"/>
-	<widget source="description" render="Label" objectTypes="description,Button,Label" position="1465,150" size="450,820" font="FHD;34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
-	<widget source="description" render="Label" position="1465,150" size="450,820" font="FHD;34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget source="description" render="Label" objectTypes="description,Button,Label" position="1465,150" size="450,820" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget source="description" render="Label" position="1465,150" size="450,820" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
   </screen>
 	<!-- NETWORK ADAPTER TEST -->
   <screen name="NetworkAdapterTest" title="Network test..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2693,9 +2689,10 @@
 	<!-- NIMSETUP RECEPTION SETTINGS -->
   <screen name="NimSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="setup_standard"/>
+	<panel name="help_window_standard"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,140" size="1300,800" transparent="1"/>
-	<widget name="description" position="1465,150" size="450,650" font="FHD;34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget name="description" position="1465,150" size="450,650" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="47,980" size="64,43"/>
   </screen>
 	<!-- POSITIONERSETUP -->
   <screen name="PositionerSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2788,7 +2785,7 @@
 	<widget source="onid" render="Label" position="320,430" size="150,35" font="FHD;30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 	<eLabel text="Orb Pos:" position="130,495" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
 	<widget source="pos" render="Label" position="320,495" size="150,35" font="FHD;30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,555" size="1300,315" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,555" size="1300,400" transparent="1"/>
   </screen>
 	<!-- SERVICES FOUND -->
   <screen name="ServicesFound" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2797,7 +2794,7 @@
 	<widget name="legend" font="FHD;30" backgroundColor="OE_Background" position="140,185" size="1300,45" transparent="1"/>
 	<widget name="servicesfound" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="green_light" position="140,369" size="1300,550" transparent="1"/>
   </screen>
-	<!-- SCAN -->
+	<!-- SCAN MANUAL-->
   <screen name="ScanSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="introduction_standard"/>
@@ -2806,9 +2803,9 @@
 	<!-- AUTOMATIC SCANING -->
   <screen name="ScanSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="help_window_standard"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,140" size="1300,730" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="140,880" size="1300,2" zPosition="-9"/>
-	<widget name="footer" font="RegularBold;30" foregroundColor="blue_light" backgroundColor="OE_Background" position="140,895" size="1300,50" transparent="1" halign="center" valign="center"/>
+	<widget name="footer" position="1465,100" size="450,555" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 	<!-- MANUAL SCANING -->
   <screen name="ServiceScan" title="Service Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2838,7 +2835,7 @@
 	<!-- FAST SCANING -->
   <screen name="FastScanScreen" title="Fast Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="setup_standard"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,160" size="1300,700" transparent="1"/>
   </screen>
   <screen name="FastScanStatus" title="Fast Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2878,12 +2875,13 @@
 	<panel name="StanDardScreen"/>
 	<panel name="setup_standard"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,140" size="1300,800" transparent="1"/>
-	<widget text="LOCK" source="Frontend" render="FixedLabel" position="1635,170" size="300,70" zPosition="10" font="FHD;32" valign="center" foregroundColor="green" backgroundColor="OE_NewBg2" transparent="1">
+	<widget text="LOCK" source="Frontend" render="FixedLabel" position="1655,170" size="300,70" zPosition="10" font="FHD;32" valign="center" foregroundColor="green" backgroundColor="OE_NewBg2" transparent="1">
 	    <convert type="FrontendInfo">LOCK</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget name="description" position="1465,150" size="450,650" font="FHD;34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
-	<widget name="footnote" position="420,900" size="400,50" zPosition="1" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background"  halign="center" valign="center"  transparent="1"/>
+	<widget name="rotorstatus" conditional="rotorstatus" position="1465,190" size="450,100" font="RegularBold;26" zPosition="2" transparent="1" backgroundColor="OE_NewBg2" valign="center" halign="center"/>
+	<widget name="description" position="1465,150" size="450,650" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="footnote" conditional="footnote" position="140,900" size="1300,50" zPosition="1" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background"  halign="center" valign="center"  transparent="1"/>
   </screen>
   <screen name="BlindscanState" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2897,7 +2895,7 @@
 	<panel name="StanDardScreen"/>
 	<panel name="setup_standard"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="140,140" size="1300,800" transparent="1"/>
-	<widget name="description" position="1465,150" size="450,650" font="FHD;34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget name="description" position="1465,150" size="450,650" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
   </screen>
   <screen name="ServiceInfoSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -4090,6 +4088,7 @@
   </screen>
   <screen name="VISIONBackupManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
+	<panel name="help_window_v_core"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,940" transparent="1"/>
   </screen>
   <screen name="XtraPluginsSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
@@ -4113,6 +4112,7 @@
   </screen>
   <screen name="VISIONImageManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
+	<panel name="help_window_v_core"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="130,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,630" transparent="1"/>
@@ -4173,6 +4173,7 @@
   </screen>
   <screen name="VISIONSoftcamMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
+	<panel name="help_window_v_core"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,740" transparent="1"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="160,900" size="64,43" alphatest="blend"/>
   </screen>
