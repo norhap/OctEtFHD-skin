@@ -1980,8 +1980,8 @@
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="140,165" size="1300,680" transparent="1">
 	    <convert type="TemplatedMultiContent">
 					{"template": [
-					MultiContentEntryPixmapAlphaBlend(pos = (10,1),size = (80,80),png = 3),# index 3 is the interface pixmap
-					MultiContentEntryPixmapAlphaBlend(pos = (71,46),size = (15,16),png = 4),# index 4 is the default pixmap
+					MultiContentEntryPixmapAlphaBlend(pos = (10,20),size = (80,80),png = 3),# index 3 is the interface pixmap
+					MultiContentEntryPixmapAlphaBlend(pos = (75,65),size = (15,16),png = 4),# index 4 is the default pixmap
 					MultiContentEntryText(pos = (100,0),size = (1200,45),font=0,flags = RT_HALIGN_LEFT|RT_VALIGN_TOP,text = 1),# index 1 is the interfacename
 					MultiContentEntryText(pos = (100,42),size = (1200,38),font=1,flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM,text = 2,color=0x44a2ff,color_sel=0xffffff),# index 2 is the description
 					],
