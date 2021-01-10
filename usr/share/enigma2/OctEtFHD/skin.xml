@@ -2753,39 +2753,39 @@
   <screen name="Satfinder" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="introduction_standard"/>
-	<widget backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" halign="left" position="1280,185" render="Label" size="180,45" source="Frontend" transparent="1" zPosition="2">
+	<widget backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" halign="left" position="1280,135" render="Label" size="180,45" source="Frontend" transparent="1" zPosition="2">
 	    <convert type="FrontendInfo">SNRdB</convert>
 	</widget>
-	<eLabel backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" halign="right" name="snr" position="140,185" size="120,45" text="SNR:" transparent="1"/>
-	<widget borderColor="grey" borderWidth="2" backgroundColor="OE_Foreground" foregroundColor="un56c856" position="280,198" render="Progress" size="850,20" source="Frontend" transparent="1">
+	<eLabel backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" halign="right" name="snr" position="140,135" size="120,45" text="SNR:" transparent="1"/>
+	<widget borderColor="grey" borderWidth="2" backgroundColor="OE_Foreground" foregroundColor="un56c856" position="280,148" render="Progress" size="850,20" source="Frontend" transparent="1">
 	    <convert type="FrontendInfo">SNR</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" position="1150,185" render="Label" size="120,45" source="Frontend" transparent="1">
+	<widget backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" position="1150,135" render="Label" size="120,45" source="Frontend" transparent="1">
 	    <convert type="FrontendInfo">SNR</convert>
 	</widget>
-	<eLabel backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" halign="right" name="ber" position="140,250" size="120,45" text="BER:" transparent="1"/>
-	<widget borderColor="grey" borderWidth="2" pixmap="colors/000F6EB2.png" position="280,263" render="Progress" size="850,20" source="Frontend" transparent="1">
+	<eLabel backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" halign="right" name="ber" position="140,190" size="120,45" text="BER:" transparent="1"/>
+	<widget borderColor="grey" borderWidth="2" pixmap="colors/000F6EB2.png" position="280,203" render="Progress" size="850,20" source="Frontend" transparent="1">
 	    <convert type="FrontendInfo">BER</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="FHD;30" position="1150,250" render="Label" size="120,45" source="Frontend" transparent="1">
+	<widget backgroundColor="OE_Background" font="FHD;30" position="1150,190" render="Label" size="120,45" source="Frontend" transparent="1">
 	    <convert type="FrontendInfo">BER</convert>
 	</widget>
-	<eLabel backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" halign="right" name="lock" position="140,315" size="120,45" text="Lock:" transparent="1"/>
-	<widget alphatest="on" pixmap="extensions/lock_on.png" position="280,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
+	<eLabel text="TSID:" position="140,225" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
+	<widget source="tsid" render="Label" position="280,225" size="150,35" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel text="ONID:" position="490,225" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
+	<widget source="onid" render="Label" position="635,225" size="150,35" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel text="Orb Pos:" position="800,225" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
+	<widget source="pos" render="Label" position="975,225" size="150,35" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" name="lock" position="1200,220" size="200,45" text="Lock:" transparent="1"/>
+	<widget alphatest="on" pixmap="extensions/lock_on.png" position="1405,220" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
 	    <convert type="FrontendInfo">LOCK</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="on" pixmap="extensions/lock_off.png" position="280,320" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
+	<widget alphatest="on" pixmap="extensions/lock_off.png" position="1405,220" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
 	    <convert type="FrontendInfo">LOCK</convert>
 	    <convert type="ConditionalShowHide">Invert</convert>
 	</widget>
-	<eLabel text="TSID:" position="145,365" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
-	<widget source="tsid" render="Label" position="320,365" size="150,35" font="FHD;30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-	<eLabel text="ONID:" position="145,430" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
-	<widget source="onid" render="Label" position="320,430" size="150,35" font="FHD;30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-	<eLabel text="Orb Pos:" position="130,495" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
-	<widget source="pos" render="Label" position="320,495" size="150,35" font="FHD;30" foregroundColor="OE_Foreground" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,555" size="1300,400" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="140,265" size="1300,705" transparent="1"/>
   </screen>
 	<!-- SERVICES FOUND -->
   <screen name="ServicesFound" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
