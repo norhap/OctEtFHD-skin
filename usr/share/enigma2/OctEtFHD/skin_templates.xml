@@ -178,7 +178,7 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="25,0" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,45" size="1460,2" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1033" size="1460,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,45" size="3,990" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,45" size="2,990" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1464,45" size="2,990" zPosition="-15"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="27,55" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="125,135" size="1315,2" zPosition="-9"/>
@@ -310,7 +310,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1480,135" size="420,2" zPosition="2"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1435,45" size="485,990" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="300,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
 	<widget source="introduction" render="Label" position="1465,100" size="450,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
@@ -323,7 +323,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1480,135" size="420,2" zPosition="2"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1435,45" size="485,990" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="300,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
 	<widget name="introduction" conditional="introduction" position="1465,675" size="450,305" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
@@ -341,7 +341,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1480,135" size="420,2" zPosition="2"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1435,45" size="485,990" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="300,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="47,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
 	</screen>

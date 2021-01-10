@@ -233,7 +233,7 @@
 	<widget name="config" itemHeight="50" font="RegularBold;27" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1315,800" transparent="1"/>
 	<widget name="description" objectTypes="description,Button,Label" position="1465,150" size="450,780" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="introduction" conditional="introduction" position="0,0" size="0,0"/>
-	<widget name="footnote" conditional="footnote" position="1465,785" halign="center" valign="center" size="480,40"/>
+	<widget name="footnote" conditional="footnote" position="1465,785" halign="center" valign="center" size="480,40" backgroundColor="OE_NewBg2" transparent="1"/>
   </screen>
 	<!-- MENU SORT -->
   <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -1576,6 +1576,7 @@
   </screen>
   <screen name="GraphMultiEpgSetup" title="Electronic Program Guide Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="help_window_standard"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,center" size="1315,750" transparent="1"/>
   </screen>
   <screen name="HarddiskSelection" title="Select HDD" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2987,6 +2988,7 @@
 	<!-- TIMERENTRY -->
   <screen name="TimerEntry" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="help_window_standard"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1315,820" transparent="1"/>
 	<widget name="cancel" conditional="cancel" position="170,980" size="0,0" backgroundColor="OE_Background"/>
 	<widget name="canceltext" conditional="canceltext" position="220,965" size="0,0" backgroundColor="OE_Background"/>
@@ -2996,6 +2998,7 @@
 	<!-- POWERTIMERENTRY -->
   <screen name="PowerTimerEntry" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="help_window_standard"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1315,820" transparent="1"/>
 	<widget name="cancel" pixmap="buttons/key_green.png" position="500,980" size="0,0" alphatest="blend" backgroundColor="OE_Background"/>
 	<widget name="ok" position="410,635" size="0,0" backgroundColor="OE_Background"/>
