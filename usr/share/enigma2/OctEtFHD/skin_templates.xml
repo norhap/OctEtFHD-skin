@@ -63,7 +63,7 @@
 	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" position="390,40" size="1530,90" halign="center" valign="center" transparent="1"/>
 	</screen>
 	<screen name="TitleSlim">
-	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" position="100,0" size="720,120" halign="block" valign="center" transparent="1"/>
+	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" position="100,0" size="950,120" halign="block" valign="center" transparent="1"/>
 	</screen>
 	<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE-->
 	<screen name="CONDITIONAL_RGYB">
@@ -74,7 +74,7 @@
 	<widget objectTypes="key_red,Label,Button" name="key_red" font="RegularBold;24" backgroundColor="OE_Background" position="160,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget objectTypes="key_green,Label,Button" name="key_green" font="RegularBold;24" backgroundColor="OE_Background" position="460,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget objectTypes="key_yellow,Label,Button" name="key_yellow" font="RegularBold;24" backgroundColor="OE_Background" position="790,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget objectTypes="key_blue,Label,Button" name="key_blue" font="RegularBold;24" backgroundColor="OE_Background" position="1120,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget objectTypes="key_blue,Label,Button" name="key_blue" font="RegularBold;24" backgroundColor="OE_Background" position="1120,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" objectTypes="key_red,StaticText" backgroundColor="OE_Background" position="105,980" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
@@ -90,7 +90,7 @@
 	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="1070,980" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="1120,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="1120,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE SCREENS ABOUT-->
 	<screen name="CONDITIONAL_RGYB_ABOUT">
@@ -124,11 +124,11 @@
 	<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="100,975" size="40,40"/>
 	<ePixmap objectTypes="key_green,Button,Label" alphatest="blend" pixmap="buttons/key_green.png" position="560,975" size="40,40"/>
 	<ePixmap objectTypes="key_yellow,Button,Label" alphatest="blend" pixmap="buttons/key_yellow.png" position="100,1015" size="40,40"/>
-	<ePixmap objectTypes="key_blue,Button,Label" alphatest="blend" pixmap="buttons/key_blue.png" position="510,1015" size="40,40"/>
+	<ePixmap objectTypes="key_blue,Button,Label" alphatest="blend" pixmap="buttons/key_blue.png" position="560,1015" size="40,40"/>
 	<widget objectTypes="key_red,Label,Button" name="key_red" font="RegularBold;24" backgroundColor="OE_Background" position="150,960" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget objectTypes="key_green,Label,Button" name="key_green" font="RegularBold;24" backgroundColor="OE_Background" position="610,960" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget objectTypes="key_green,Label,Button" name="key_green" font="RegularBold;24" backgroundColor="OE_Background" position="610,960" size="335,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget objectTypes="key_yellow,Label,Button" name="key_yellow" font="RegularBold;24" backgroundColor="OE_Background" position="150,1000" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget objectTypes="key_blue,Label,Button" name="key_blue" font="RegularBold;24" backgroundColor="OE_Background" position="610,1000" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget objectTypes="key_blue,Label,Button" name="key_blue" font="RegularBold;24" backgroundColor="OE_Background" position="610,1000" size="335,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" objectTypes="key_red,StaticText" backgroundColor="OE_Background" position="100,975" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
@@ -136,7 +136,7 @@
 	<widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" objectTypes="key_green,StaticText" backgroundColor="OE_Background" position="560,975" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_green" render="Label" objectTypes="key_green,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="610,960" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_green" render="Label" objectTypes="key_green,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="610,960" size="335,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="150,1000" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" objectTypes="key_yellow,StaticText" backgroundColor="OE_Background" position="100,1015" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
@@ -144,7 +144,7 @@
 	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="560,1015" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="610,1000" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="610,1000" size="335,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- MENU SORT -->
 	<screen name="Conditional_MenuSort">
@@ -175,12 +175,12 @@
 	<panel name="TitleScreenAll"/>
 	<panel name="CONDITIONAL_RGYB"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="5,0" size="1400,1080" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="25,2" size="80,1076" zPosition="-11" valign="center"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="25,2" size="80,1073" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="1400,2" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="105,1033" size="1300,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1078" size="1400,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="2,1080" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1404,0" size="2,1080" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1075" size="1401,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="2,1075" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1404,0" size="2,1075" zPosition="-15"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="27,55" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="125,135" size="1255,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="125,965" size="1255,2" zPosition="-9"/>
@@ -307,23 +307,23 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<!-- TEMPLATE NOT PIP -->
 	<screen name="Template_not_Pip">
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1450,135" size="420,2" zPosition="2"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
-	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="260,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1075" zPosition="-16"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget name="introduction" conditional="introduction" position="1415,425" size="500,305" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="introduction" conditional="introduction" position="1410,600" size="500,305" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- TEMPLATE PIP -->
 	<screen name="Template_Pip">
 	<widget source="session.VideoPicture" render="Pig" position="1407,100" size="540,295" zPosition="1" backgroundColor="#df0b1300"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
-	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="260,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1075" zPosition="-16"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget name="introduction" conditional="introduction" position="1415,290" size="500,780" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="description" conditional="description" position="1415,290" size="500,780" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="introduction" conditional="introduction" position="1410,290" size="500,780" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="description" conditional="description" position="1410,290" size="500,780" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- TEMPLATE VISION CORE -->
 	<screen name="setup_v_core">
@@ -335,14 +335,14 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<!-- INTRODUCTION STANDARD -->
 	<screen name="introduction_standard">
 	<widget source="session.VideoPicture" render="Pig" position="1407,100" size="540,295" zPosition="1" backgroundColor="#df0b1300"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
-	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="260,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1075" zPosition="-16"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="introduction" render="Label" position="1415,290" size="500,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget source="introduction2" render="Label" conditional="introduction2" position="1415,365" size="500,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="introduction" conditional="introduction" position="1415,290" size="500,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="introduction" render="Label" position="1410,290" size="500,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="introduction2" render="Label" conditional="introduction2" position="1410,365" size="500,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="introduction" conditional="introduction" position="1410,290" size="500,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- DESCRIPTION STANDARD -->
 	<screen name="description_standard">
@@ -358,13 +358,13 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<screen name="choicebox">
 	<panel name="StanDardScreen"/>
 	<panel name="description"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1075" zPosition="-16"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="140,980" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="190,980" size="64,43"/>
 	<eLabel text="[move mode]" position="260,983" size="400,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
 	<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,140" size="1255,820" transparent="1" zPosition="3"/>
-	<widget name="text" position="1415,100" size="500,380" font="FHD;30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="description" position="1415,150" size="500,380" font="FHD;30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="text" position="1410,100" size="500,380" font="FHD;30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="description" position="1410,150" size="500,380" font="FHD;30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget source="session.CurrentService" render="Progress" position="1420,495" size="470,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" transparent="1" borderWidth="2" zPosition="6">
 	    <convert type="CpuUsage">$0</convert>
 	</widget>

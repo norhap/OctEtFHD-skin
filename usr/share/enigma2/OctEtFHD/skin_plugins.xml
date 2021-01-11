@@ -48,13 +48,15 @@
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Log" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="list" font="FHD;32" backgroundColor="OE_Background" foregroundColor="white" position="125,165" size="1255,800" transparent="1"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_About" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="about" font="FHD;32" backgroundColor="OE_Background" foregroundColor="white" position="125,165" size="1255,750" transparent="1"/>
 	<widget name="oealogo" position="125,800" size="177,130" alphatest="blend"/>
-	<panel name="StanDardScreen"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_HideSections" position="center,center" size="1920,1080" title="">
@@ -1762,6 +1764,7 @@
   </screen>
   <screen name="CrossEPG_Menu" title="CrossEPG" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="white" position="125,140" size="1255,800" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[
@@ -1777,12 +1780,13 @@
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="125,140" size="1255,665" transparent="1"/>
-	<widget name="information" position="1435,100" size="450,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="information" position="1435,290" size="450,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 
   <screen name="CrossEPG_Providers" title="CrossEPG - Providers" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="125,140" size="1255,820" transparent="1">
+	<panel name="Template_Pip"/>
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="125,140" size="1255,820" transparent="1">
 	    <convert type="TemplatedMultiContent">
 			{"template":[
 			MultiContentEntryText(pos=(12,7),size=(1100,40),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_TOP,text=0),
@@ -1795,6 +1799,7 @@
 
   <screen name="CrossEPG_Ordering" title="CrossEPG - Providers" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="125,140" size="1255,820" transparent="1">
 	    <convert type="TemplatedMultiContent">
 			{"template":[
@@ -1808,6 +1813,7 @@
 
   <screen name="CrossEPG_Info" title="CrossEPG - Info" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget backgroundColor="OE_Background" font="FHD;32" foregroundColor="white" name="version" position="125,145" size="1255,50" transparent="1"/>
 	<widget backgroundColor="OE_Background" font="FHD;32" foregroundColor="white" name="create" position="125,200" size="1255,50" transparent="1"/>
 	<widget backgroundColor="OE_Background" font="FHD;32" foregroundColor="white" name="last_update" position="125,255" size="1255,50" transparent="1"/>
@@ -1823,6 +1829,7 @@
 
   <screen name="CrossEPG_About" title="CrossEPG - About" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="about" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" position="125,140" size="1255,660" transparent="1"/>
 	<widget name="rytec_pix" position="125,810" size="140,100" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="rytec_text" position="285,810" size="140,100" backgroundColor="OE_Background" transparent="1"/>
