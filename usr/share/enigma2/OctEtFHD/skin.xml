@@ -2588,16 +2588,17 @@
 	<!-- LOCATIONBOX -->
   <screen name="LocationBox" title="Location Box" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="text" font="FHD;30" backgroundColor="OE_Background" position="170,145" size="1255,45" transparent="1"/>
 	<widget name="target" font="FHD;30" backgroundColor="OE_Background" position="170,195" size="1255,45" transparent="1"/>
 	<widget name="filelist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,245" size="1255,450" transparent="1"/>
 	<eLabel backgroundColor="blue_light" name="" position="125,710" size="1255,2" zPosition="-9"/>
 	<widget name="textbook" font="FHD;30" backgroundColor="OE_Background" position="125,710" size="1255,45" transparent="1"/>
 	<widget name="booklist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,760" size="1255,205" transparent="1"/>
-	<widget name="red" pixmap="buttons/key_red.png" position="125,980" size="40,40" alphatest="blend"/>
-	<widget name="green" pixmap="buttons/key_green.png" position="460,980" size="40,40" alphatest="blend"/>
+	<widget name="red" pixmap="buttons/key_red.png" position="125,980" size="0,0" alphatest="blend"/>
+	<widget name="green" pixmap="buttons/key_green.png" position="460,980" size="0,0" alphatest="blend"/>
 	<widget name="yellow" pixmap="buttons/key_yellow.png" position="790,980" size="40,40" alphatest="blend"/>
-	<widget name="blue" pixmap="buttons/key_blue.png" position="1120,980" size="40,40" alphatest="blend"/>
+	<widget name="blue" pixmap="buttons/key_blue.png" position="1120,980" size="0,0" alphatest="blend"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2">
 	<widget name="RassLogo" pixmap="icons/rass_logo.png" position="150,840" size="150,85"/>
@@ -4000,6 +4001,7 @@
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" position="125,150" size="1255,300" font="RegularBold;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="info" position="160,450" size="1255,510" font="RegularBold;30" backgroundColor="OE_Background" transparent="1"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="33,980" size="64,43" alphatest="blend"/>
   </screen>
 	<!-- PE SPEED UP-->
   <screen name="PESpeedUp" position="fill" title="PE Speed Up">
