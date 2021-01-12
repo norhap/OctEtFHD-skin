@@ -164,10 +164,13 @@
 	<color color="OE_Foreground" name="WindowTitleForeground"/>
   </windowstyle>
   <parameters>
+	<parameter name="AboutHddSplit" value="1, 1"/>
 	<parameter name="ChoicelistDash" value="0, 3, 1000, 50"/>
 	<parameter name="ChoicelistName" value="85, 3, 1000, 50"/>
 	<parameter name="ChoicelistNameSingle" value="5, 5, 1400, 50"/>
 	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
+	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
+	<parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
 	<parameter name="ExpandableListIcon" value="0, 12, 30, 38"/>
 	<parameter name="ExpandableListDescr" value="55, 2, 1000, 45"/>
 	<parameter name="FcFileListIcon" value="10, 4, 30, 30"/>
@@ -180,11 +183,24 @@
 	<parameter name="FileListMultiLock" value="5, 13, 50, 50"/>
 	<parameter name="FileListMultiName" value="125, 3, 1000, 50"/>
 	<parameter name="FileListName" value="68, 4, 1000, 50"/>
+	<parameter name="fstabMenuList" value="0, 10, 300, 50, 400, 10, 500, 50"/>
+	<parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
+	<parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
+	<parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30"/>
+	<parameter name="PiconManagerList" value="10, 2, 1410, 45"/>
+	<parameter name="PiconManagerListFont" value="Regular; 28"/>
+	<parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25"/>
+	<parameter name="PlayListName" value="65, 2, 1000, 50"/>
+	<parameter name="PlayListIcon" value="10, 0, 50, 50"/>
 	<parameter name="PluginBrowserDescr" value="180, 43, 34"/>
 	<parameter name="PluginBrowserDownloadDescr" value="90, 43, 34"/>
 	<parameter name="PluginBrowserDownloadName" value="90, 1, 45"/>
 	<parameter name="PluginBrowserName" value="180, 1, 45"/>
+	<parameter name="RSList" value="40, 0, 1200, 50, 10, 12, 50, 50"/>
 	<parameter name="SelectionListLock" value="5, 15, 45, 45"/>
+	<parameter name="ServiceInfo" value="0, 0, 450, 50"/>
+	<parameter name="ServiceInfoLeft" value="0, 0, 450, 45"/>
+	<parameter name="ServiceInfoRight" value="450, 0, 1000, 45"/>
 	<parameter name="VirtualKeyboard" value="68, 68"/>
   </parameters>
 	<!-- GRAPHIC SWITCH -->
@@ -3753,7 +3769,7 @@
 	<widget name="username" position="125,240" size="300,50" font="FHD;32" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labuser" position="350,240" size="410,50" font="FHD;32" valign="center" backgroundColor="#4D5375"/>
 	<widget name="iface" position="125,340" size="300,50" font="FHD;32" valign="center" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="labiface" position="350,340" size="410,50" font="Regular;21" valign="center" backgroundColor="#4D5375"/>
+	<widget name="labiface" position="350,340" size="410,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
 	<widget name="port" position="125,440" size="300,50" font="FHD;32" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labport" position="350,440" size="410,50" font="FHD;32" valign="center" backgroundColor="#4D5375"/>
 	<widget name="serialno" position="125,540" size="300,50" font="FHD;32" valign="center" backgroundColor="OE_Background" transparent="1"/>
@@ -3890,6 +3906,34 @@
 	<widget name="config" itemHeight="50" position="125,160" size="1255,700" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="Linconn" position="500,880" size="550,50" font="FHD;30" backgroundColor="#9f1313"/>
   </screen>
+	<!-- EDIT FSTAB-->
+  <screen name="fstabViewerScreen" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
+	<widget name="menulist" itemHeight="250" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" position="125,155" size="1255,740" transparent="1"/>
+	<widget name="cancelist" position="125,980" size="250,35" font="RegularBold;26" halign="center" valign="center" transparent="1" zPosition="2"/>
+	<widget name="addentry" position="400,980" size="250,35" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
+	<widget name="restore" position="670,980" size="250,35" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
+	<widget name="run" position="670,980" size="205,35" font="RegularBold;26" halign="center" valign="center" transparent="1" zPosition="2"/>
+	<ePixmap pixmap="buttons/key_ok.png" position="1000,980" size="64,43" transparent="1" alphatest="on"/>
+	<widget name="edit" position="1000,980" size="250,35" font="RegularBold;26" halign="center" valign="center" transparent="1" zPosition="2"/>
+	<widget name="entryinfo" position="700,930" size="220,35" foregroundColor="blue_light" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
+	<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/MountManager/icons/fstabEditor.png" position="670,1035" size="100,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="33,980" size="64,43"/>
+  </screen>
+	<screen name="fstabEditorScreen" position="fill" flags="wfNoBorder">
+	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="105,980" size="40,40"/>
+	<widget name="cansel" position="95,980" size="270,45" font="RegularBold;26" halign="center" valign="center" transparent="1" zPosition="2"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="460,980" size="40,40"/>
+	<widget name="save" position="450,980" size="270,45" font="RegularBold;26" halign="center" valign="center" transparent="1" zPosition="2"/>
+	<widget name="config" itemHeight="50" position="125,150" size="1255,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
+	<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/MountManager/icons/fstabEditor.png" position="670,1035" size="100,40"/>
+	<widget name="ButtonBlue" position="825,980" zPosition="1" alphatest="blend" size="40,40" pixmap="buttons/key_blue.png"/>
+	<widget name="ButtonBlueText" position="890,985" size="270,70" zPosition="1" transparent="1" font="RegularBold;26"/>
+	<widget name="ButtonOK" pixmap="icons/key_ok.png" position="1120,555" size="40,22" transparent="1" alphatest="on"/>
+  </screen>
 	<!-- 	DEVICEMANAGER DIMA73 -->
   <screen name="HddSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
 	<panel name="StanDardScreen"/>
@@ -3998,7 +4042,7 @@
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" position="125,150" size="1255,300" font="RegularBold;30" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="info" position="160,450" size="1255,510" font="RegularBold;30" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="info" position="140,450" size="1255,510" font="RegularBold;30" backgroundColor="OE_Background" transparent="1"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="33,980" size="64,43" alphatest="blend"/>
   </screen>
 	<!-- PE SPEED UP-->
@@ -4062,9 +4106,9 @@
 	<widget source="list" render="Listbox" position="125,210" size="1255,800" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" selectionDisabled="1" transparent="1">
 	    <convert type="TemplatedMultiContent">
 	{"template": [
-	MultiContentEntryText(pos = (0, 0), size = (150, 50), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
-    MultiContentEntryText(pos = (165, 0), size = (240, 50), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
-	MultiContentEntryText(pos = (435, 0), size = (400, 50), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
+	MultiContentEntryText(pos = (0, 0), size = (400, 50), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
+    MultiContentEntryText(pos = (420, 0), size = (400, 50), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
+	MultiContentEntryText(pos = (840, 0), size = (405, 50), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
 	],
 	"fonts": [gFont("RegularBold", 26)],
 	"itemHeight": 50,
@@ -4072,9 +4116,9 @@
 	}
  		</convert>
  	</widget>
-	<widget name="link_sep"  position="125,820" size="830,2" transparent="1"/>
+	<widget name="link_sep"  position="125,800" size="830,2" transparent="1"/>
 	<widget name="link_label" position="125,825" size="830,35" font="RegularBold;26"/>
-	<widget name="link_value" position="125,870" size="830,70" font="RegularBold;26"/>
+	<widget name="link_value" position="125,890" size="830,70" font="RegularBold;26"/>
   </screen>
 	<!-- VISION MENU-->
   <screen name="VISIONMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">

@@ -174,13 +174,13 @@
 	<panel name="ClockBg"/>
 	<panel name="TitleScreenAll"/>
 	<panel name="CONDITIONAL_RGYB"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="5,0" size="1400,1080" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="25,2" size="80,1073" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="1400,2" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,0" size="1405,1080" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="25,3" size="80,1074" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="1400,3" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="105,1033" size="1300,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1075" size="1401,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="2,1075" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1404,0" size="2,1075" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1077" size="1400,3" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="3,1078" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1402,0" size="3,1078" zPosition="-15"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="27,55" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="125,135" size="1255,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="125,965" size="1255,2" zPosition="-9"/>
@@ -307,7 +307,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<!-- TEMPLATE NOT PIP -->
 	<screen name="Template_not_Pip">
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1450,135" size="420,2" zPosition="2"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1075" zPosition="-16"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
@@ -316,8 +316,8 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	</screen>
 	<!-- TEMPLATE PIP -->
 	<screen name="Template_Pip">
-	<widget source="session.VideoPicture" render="Pig" position="1407,100" size="540,295" zPosition="1" backgroundColor="#df0b1300"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1075" zPosition="-16"/>
+	<widget source="session.VideoPicture" render="Pig" position="1405,100" size="540,295" zPosition="1" backgroundColor="#df0b1300"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
@@ -334,8 +334,8 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	</screen>
 	<!-- INTRODUCTION STANDARD -->
 	<screen name="introduction_standard">
-	<widget source="session.VideoPicture" render="Pig" position="1407,100" size="540,295" zPosition="1" backgroundColor="#df0b1300"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1075" zPosition="-16"/>
+	<widget source="session.VideoPicture" render="Pig" position="1405,100" size="540,295" zPosition="1" backgroundColor="#df0b1300"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
@@ -358,7 +358,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<screen name="choicebox">
 	<panel name="StanDardScreen"/>
 	<panel name="description"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1075" zPosition="-16"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1450,135" size="420,2" zPosition="2"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="140,980" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="190,980" size="64,43"/>
