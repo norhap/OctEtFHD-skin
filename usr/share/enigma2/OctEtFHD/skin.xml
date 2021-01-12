@@ -4063,9 +4063,9 @@
 	<widget source="list_left_head2" render="Listbox" position="125,200" size="520,50" backgroundColor="OE_Background" selectionDisabled="1" transparent="1" >
 	    <convert type="TemplatedMultiContent">
 	{"template": [
-	MultiContentEntryText(pos = (0, 0), size = (150, 50), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
+    MultiContentEntryText(pos = (0, 0), size = (150, 50), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a symbolic mode
     MultiContentEntryText(pos = (165, 0), size = (120, 50), font = 0, flags = RT_HALIGN_RIGHT, text = 11), # index 11 is the scaled size
-	MultiContentEntryText(pos = (365, 0), size = (260, 50), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
+    MultiContentEntryText(pos = (365, 0), size = (260, 50), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is the modification time
 	],
 	"fonts": [gFont("RegularBold", 26)],
 	"itemHeight": 50,
