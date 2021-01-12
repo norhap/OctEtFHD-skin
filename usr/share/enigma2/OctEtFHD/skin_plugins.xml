@@ -20,6 +20,7 @@
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Menu" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="125,165" size="1255,800" transparent="1">
 	    <convert type="TemplatedMultiContent">
 							 {"template": [
@@ -5917,6 +5918,7 @@
   <!-- SUBTITLES SUBSUPPORT -->
   <screen name="SubsChooser" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="file_list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="125,140" size="1255,740" transparent="1"/>
 	<widget name="menu_list" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="125,970" size="1255,75" transparent="1"/>
 	<!-- others-->
@@ -5925,6 +5927,7 @@
 
   <screen name="SubsSearchParamsMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget source="sourceTitleInfo" render="Label" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" position="125,140" size="1255,50" transparent="1"/>
 	<widget source="sourceTitle" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" position="125,210" size="1255,50" transparent="1"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="125,280" size="1255,670" transparent="1"/>
@@ -6202,29 +6205,34 @@
 
   <screen name="SubsSetupGeneral" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="125,140" size="1255,800" transparent="1"/>
   </screen>
 
   <screen name="SubsSetupExternal" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="125,140" size="1255,800" transparent="1"/>
   </screen>
 
   <screen name="SubsSetupDVBPlayer" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1255,800" transparent="1"/>
   </screen>
 
   <screen name="SubsDownloadedSubtitlesMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1255,800" transparent="1"/>
   </screen>
 
   <screen name="SubsDownloadedSelection" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget source="header_name" render="Label" position="125,145" size="360,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
 	<widget source="header_provider" render="Label" position="620,145" size="300,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
-	<widget source="header_date" render="Label" position="1060,145" size="400,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
+	<widget source="header_date" render="Label" position="1060,145" size="340,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
 	<widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="125,190" size="1255,700" zPosition="3" transparent="1">
 	    <convert type="TemplatedMultiContent">
 					{"templates":
@@ -6232,7 +6240,7 @@
 					MultiContentEntryPixmapAlphaBlend(pos = (0, 15),   size = (24, 24), png=0), # key,
 					MultiContentEntryText(pos = (35, 0),	size = (425, 50),  font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1, color=0xFF000004), # name,
 					MultiContentEntryText(pos = (480, 0),  size = (430, 50),  font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 2, color=0xFF000004), # provider,
-					MultiContentEntryText(pos = (920, 0), size = (380, 50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,	text = 3, color=0xFF000004), # date,
+					MultiContentEntryText(pos = (920, 0), size = (330, 50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,	text = 3, color=0xFF000004), # date,
 					], True, "showOnDemand"),
 					},
 					"fonts": [gFont("RegularBold", 26), gFont("RegularBold", 22)],

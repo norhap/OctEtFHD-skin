@@ -2815,20 +2815,21 @@
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,140" size="1255,730" transparent="1"/>
 	<widget name="footer" position="1410,290" size="500,555" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
-	<!-- MANUAL SCANING -->
+	<!-- MANUAL or AUTOMATIC SCANING -->
   <screen name="ServiceScan" title="Service Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget alphatest="blend" pixmap="icons/scan-s.png" position="1290,190" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<panel name="Template_Pip"/>
+	<widget alphatest="blend" pixmap="icons/scan-s.png" position="1290,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	    <convert type="FrontendInfo">TYPE</convert>
 	    <convert type="ValueRange">0,0</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="icons/scan-c.png" position="1290,190" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-c.png" position="1290,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	    <convert type="FrontendInfo">TYPE</convert>
 	    <convert type="ValueRange">1,1</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="icons/scan-t.png" position="1290,190" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-t.png" position="1290,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	    <convert type="FrontendInfo">TYPE</convert>
 	    <convert type="ValueRange">2,2</convert>
 	    <convert type="ConditionalShowHide"/>
