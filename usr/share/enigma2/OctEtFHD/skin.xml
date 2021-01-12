@@ -4275,7 +4275,7 @@
 	<panel name="About_standard"/>
 	<panel name="setup_v_core"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,740" transparent="1"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="160,900" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="165,900" size="64,43" alphatest="blend"/>
   </screen>
   <screen name="VISIONSoftcamLog" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
