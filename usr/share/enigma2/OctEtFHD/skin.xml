@@ -2069,21 +2069,21 @@
 	<panel name="introduction_standard"/>
 	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" position="650,140" render="Label" size="570,45" source="Adapter" transparent="1" halign="left"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,190" size="1255,400" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,620" render="Label" size="255,45" source="IPtext" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,670" render="Label" size="255,45" source="Netmasktext" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,720" render="Label" size="255,45" source="Gatewaytext" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,780" render="Label" size="255,45" source="DNS1text" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="540,830" render="Label" size="255,45" source="DNS2text" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,620" render="Label" size="255,45" source="IP" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,670" render="Label" size="255,45" source="Mask" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,720" render="Label" size="255,45" source="Gateway" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,780" render="Label" size="255,45" source="DNS1" transparent="1"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="830,830" render="Label" size="255,45" source="DNS2" transparent="1"/>
-	<eLabel text=":" position="798,620" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<eLabel text=":" position="798,670" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<eLabel text=":" position="798,720" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<eLabel text=":" position="798,780" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<eLabel text=":" position="798,830" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="480,620" render="Label" size="255,45" source="IPtext" transparent="1"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="480,670" render="Label" size="255,45" source="Netmasktext" transparent="1"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="480,720" render="Label" size="255,45" source="Gatewaytext" transparent="1"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="480,780" render="Label" size="255,45" source="DNS1text" transparent="1"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="480,830" render="Label" size="255,45" source="DNS2text" transparent="1"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="770,620" render="Label" size="255,45" source="IP" transparent="1"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="770,670" render="Label" size="255,45" source="Mask" transparent="1"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="770,720" render="Label" size="255,45" source="Gateway" transparent="1"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="770,780" render="Label" size="255,45" source="DNS1" transparent="1"/>
+	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="770,830" render="Label" size="255,45" source="DNS2" transparent="1"/>
+	<eLabel text=":" position="738,620" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<eLabel text=":" position="738,670" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<eLabel text=":" position="738,720" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<eLabel text=":" position="738,780" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
+	<eLabel text=":" position="738,830" size="25,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left"/>
 	<!-- others-->
 	<widget alphatest="blend" pixmap="buttons/key_text.png" position="1332,958" render="Pixmap" size="64,43" source="VKeyIcon" transparent="1">
 	    <convert type="ConditionalShowHide"/>
