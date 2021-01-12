@@ -312,7 +312,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget name="introduction" conditional="introduction" position="1410,600" size="500,305" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="introduction" conditional="introduction" position="1410,650" size="500,305" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- TEMPLATE PIP -->
 	<screen name="Template_Pip">
@@ -359,6 +359,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<panel name="StanDardScreen"/>
 	<panel name="description"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1075" zPosition="-16"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1450,135" size="420,2" zPosition="2"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="140,980" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="190,980" size="64,43"/>
 	<eLabel text="[move mode]" position="260,983" size="400,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
