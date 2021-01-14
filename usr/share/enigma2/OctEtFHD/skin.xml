@@ -335,7 +335,7 @@
 	<widget source="session.CurrentService" render="Label" position="1260,1030" size="400,35" font="RegularBold;23" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
 	    <convert type="PliExtraInfo">CryptoSpecial</convert>
 	</widget>
-	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1670,1030" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
+<!--	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1670,1030" size="98,31" transparent="1" alphatest="blend" zPosition="3"/> -->
 	<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1780,1030" size="63,32" alphatest="blend" zPosition="3"/>
 	<!-- Icons -->
 	<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/ip_tv.png" position="1199,870" size="63,32" zPosition="2" alphatest="blend">
@@ -567,7 +567,7 @@
 	<widget source="session.CurrentService" render="Label" font="FHD;24" position="475,1007" size="1210,45" zPosition="50" backgroundColor="OE_ListBackground" transparent="0" noWrap="1" valign="center" halign="left" foregroundColor="white">
 	    <convert type="CaidInfo2"/>
 	</widget>
-	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="465,965" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
+<!--	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="465,965" size="98,31" transparent="1" alphatest="blend" zPosition="3"/> -->
 	<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="575,965" size="63,32" alphatest="blend" zPosition="3"/>
 	<panel name="ClockBg"/>
 	 <!-- MSNWeather -->
