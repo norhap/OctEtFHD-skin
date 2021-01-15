@@ -2450,19 +2450,20 @@
   </screen>
 	<!-- PLUGIN BROWSER -->
   <screen name="PluginBrowser" backgroundColor="transparent" flags="wfNoBorder"  position="0,0" size="1920,1080" transparent="0">
-	<panel name="SlimScreen"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="10,980" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="10,1025" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1025" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="145,1025" size="64,43"/>
-	<eLabel text="[move mode]" position="210,1010" size="270,70" halign="left" valign="center" backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold;24"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="550,1025" size="64,43"/>
-	<eLabel text="Default" position="610,1010" size="270,70" backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="list" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="100,135" size="950,825" transparent="1"/>
+	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="33,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="33,920" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1035" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="155,1035" size="64,43"/>
+	<eLabel text="[move mode]" position="250,1020" size="600,70" halign="left" valign="center" backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold;24"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="900,1035" size="64,43"/>
+	<eLabel text="Default" position="985,1020" size="350,70" backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget name="list" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,140" size="1255,820" transparent="1"/>
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<!-- Widget -->
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="list" font="Regular;28" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,160" size="1255,750" transparent="1" zPosition="5"/>
 	<widget name="text" position="125,915" size="1255,50" font="RegularBold;30" backgroundColor="OE_Background" transparent="1" foregroundColor="green_light"/>
 	<widget source="session.CurrentService" render="Label" position="125,970" size="1255,45" font="FHD;30" halign="left" valign="center" foregroundColor="blue_light" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
@@ -3487,7 +3488,7 @@
 	<!-- AUTO DISEQC -->
   <screen name="AutoDiseqc" title="Auto DiSEqC" backgroundColor="transparent" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,310" size="650,690" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,310" size="1255,690" transparent="1"/>
 	<widget source="statusbar" render="Label" font="FHD;30" backgroundColor="OE_Background" position="125,150" size="1255,50" transparent="1" valign="top"/>
 	<widget source="tunerstatusbar" render="Label" font="FHD;30" backgroundColor="OE_Background" position="125,230" size="1255,50" transparent="1" foregroundColor="green_light" valign="top"/>
   </screen>
