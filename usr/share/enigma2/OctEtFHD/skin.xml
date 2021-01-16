@@ -210,9 +210,9 @@
   </switchpixmap>
 	<!-- RESTART GUI -->
   <screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
-	<ePixmap pixmap="icons/input_info.png" position="900,315" size="80,80" alphatest="blend"/>
-	<ePixmap alphatest="blend" pixmap="picon_default.png" position="825,150" size="220,132" transparent="1" zPosition="10"/>
-	<widget name="text" position="440,380" size="1020,150" zPosition="2" transparent="1" font="RegularBold;27" halign="center" valign="center"/>
+	<ePixmap pixmap="icons/input_info.png" position="910,315" size="80,80" alphatest="blend"/>
+	<ePixmap alphatest="blend" pixmap="picon_default.png" position="835,150" size="220,132" transparent="1" zPosition="10"/>
+	<widget name="text" position="500,420" size="920,250" zPosition="2" transparent="1" font="RegularBold;27" halign="center" valign="top"/>
   </screen>
 	<!-- MAIN MENU -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
@@ -261,7 +261,7 @@
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="260,925" size="40,40"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="670,925" size="40,40"/>
 	<widget source="key_red" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="60,925" size="140,39" transparent="1" zPosition="1" halign="left" valign="center"/>
-	<widget source="key_green" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="300,925" size="370,39" transparent="0" zPosition="1" halign="left" valign="center"/>
+	<widget source="key_green" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="300,925" size="370,39" transparent="1" zPosition="1" halign="left" valign="center"/>
 	<widget source="key_yellow" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="710,925" size="240,39" transparent="1" zPosition="1" halign="left" valign="center"/>
   </screen>
 	<!-- CHOICEBOX -->
@@ -3011,7 +3011,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="33,980" size="64,43"/>
 	<widget name="timerlist" itemHeight="95" setEventNameFont="RegularBold;21" setServiceNameFont="RegularBold;22" setFont="RegularBold;23" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="125,140" satPosLeft="400" rowSplit="45" size="1255,820" transparent="1"/>
 	<widget name="key_info" conditional="key_info" position="48,960" size="0,0" zPosition="-20"/>
-	<widget name="description" objectTypes="description,Button,Label" position="1410,200" size="500,810" font="FHD;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget name="description" objectTypes="description,Button,Label" position="1410,375" size="500,685" font="RegulardBold;22" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
   </screen>
 	<!-- TIMERENTRY -->
   <screen name="TimerEntry" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -4282,7 +4282,7 @@
 	<panel name="About_standard"/>
 	<panel name="setup_v_core"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,740" transparent="1"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="165,900" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="125,900" size="64,43" alphatest="blend"/>
   </screen>
   <screen name="VISIONSoftcamLog" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
@@ -4829,6 +4829,7 @@
   </screen>
   <screen name="MSNWeatherPluginEntriesListConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="entrylist" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,160" size="1255,800" transparent="1"/>
   </screen>
   <screen name="MSNWeatherPluginEntryConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
@@ -4838,6 +4839,7 @@
   </screen>
   <screen name="MSNWeatherPluginSearch" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="entrylist" font="RegularBold;26" itemHeight="70" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,160" size="1255,430" transparent="1"/>
   </screen>
 	<!-- ********** ####### TMBD ####### ********** -->
