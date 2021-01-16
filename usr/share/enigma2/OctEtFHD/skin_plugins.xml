@@ -6254,6 +6254,6 @@
   <screen name="TMBDSettings" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
-	<widget name="config" itemHeight="45" position="125,140" size="1255,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;30" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" itemHeight="45" position="125,140" size="1255,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 </skin>

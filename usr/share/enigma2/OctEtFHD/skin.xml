@@ -247,8 +247,8 @@
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;27" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1255,800" transparent="1"/>
-	<widget name="description" objectTypes="description,Button,Label" position="1410,290" size="500,780" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="footnote" conditional="footnote" position="1410,820" halign="center" valign="center" size="500,40" backgroundColor="OE_NewBg2" transparent="1"/>
+	<widget name="description" objectTypes="description,Button,Label" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="footnote" conditional="footnote" position="125,1035" halign="center" valign="center" size="1255,40" backgroundColor="OE_Foreground" transparent="1"/>
   </screen>
 	<!-- MENU SORT -->
   <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -266,7 +266,7 @@
   </screen>
 	<!-- CHOICEBOX -->
   <screen name="ChoiceBox" position="fill" flags="wfNoBorder">
-  <panel name="choicebox"/>
+	<panel name="choicebox"/>
   </screen>
   <screen name="ExtensionsList" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="choicebox"/>
@@ -788,13 +788,13 @@
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1255,800" transparent="1"/>
-	<widget source="help" render="Label" position="1410,150" size="500,780" font="FHD;34" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="help" render="Label" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
   <screen name="AutoTimerSettings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1255,800" transparent="1"/>
-	<widget source="help" render="Label" position="1410,150" size="500,780" font="FHD;34" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="help" render="Label" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
   <screen name="AutoTimerImporter" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2021,8 +2021,8 @@
 	<widget name="devicepic" alphatest="blend" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" position="1220,150" size="54,54"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,210" size="1100,5" zPosition="-9"/>
 	<widget name="menulist" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,230" size="1100,550" transparent="1"/>
-	<widget source="description" render="Label" objectTypes="description,Button,Label" position="1410,150" size="500,820" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
-	<widget source="description" render="Label" position="1410,150" size="500,820" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget source="description" render="Label" objectTypes="description,Button,Label" position="1410,150" size="500,910" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget source="description" render="Label" position="1410,150" size="500,910" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
   </screen>
 	<!-- NETWORK ADAPTER TEST -->
   <screen name="NetworkAdapterTest" title="Network test..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2752,6 +2752,7 @@
 	<!-- POSITIONER LOG -->
   <screen name="PositionerSetupLog" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="list" font="FHD;30" backgroundColor="OE_Background" position="125,160" size="1255,750" transparent="1"/>
   </screen>
 	<!-- DISH-->
@@ -2830,7 +2831,7 @@
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,140" size="1255,730" transparent="1"/>
-	<widget name="footer" position="1410,290" size="500,555" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="footer" position="1410,325" size="500,735" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 	<!-- MANUAL or AUTOMATIC SCANING -->
   <screen name="ServiceScan" title="Service Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2930,7 +2931,7 @@
   <screen backgroundColor="black" flags="wfNoBorder" name="Standby" position="0,0" size="1920,1080" title="Standby"/>
 	<!-- ####### Subtitle Display ####### -->
   <screen name="SubtitleDisplay" position="fill" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="message"/>
+	<panel name="message"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SubservicesQuickzap" position="570,850" size="840,100" title="Subservices">
 	<eLabel backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="0,0" size="840,45" text="Subservices" valign="center"/>
@@ -3034,7 +3035,7 @@
 	<panel name="StanDardScreen"/>
 	<panel name="Template_not_Pip"/>
 	<widget name="loglist" itemHeight="45" font="FHD;30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="125,140" size="1255,820" transparent="1"/>
-	<widget name="logentry" position="1410,150" size="500,820" font="FHD;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget name="logentry" position="1410,150" size="500,910" font="FHD;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
   </screen>
   <screen name="TimerSanityConflict" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -4167,6 +4168,7 @@
 	</screen>
   <screen name="VISIONDevicePanelConf" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
+	<panel name="setup_v_core"/>
 	<widget name="config" itemHeight="60" position="410,150" size="1400,740" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;22" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="Linconn" backgroundColor="OE_Background" foregroundColor="blue_light" position="455,850" size="640,50" transparent="1" valign="top"/>
   </screen>
@@ -4191,6 +4193,8 @@
   <screen name="VISIONBackupManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="About_standard"/>
 	<panel name="setup_v_core"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="125,900" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,940" transparent="1"/>
   </screen>
   <screen name="XtraPluginsSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
@@ -4337,7 +4341,7 @@
 	<widget name="HelpText1" position="125,580" size="1255,300" backgroundColor="OE_Background" font="RegularBold;22" halign="center" valign="center"/>
 	<widget name="HelpTextHeader2" position="125,830" size="1255,35" backgroundColor="OE_Background" font="RegularBold;22" foregroundColor="blue_light" halign="center" valign="center"/>
 	<widget name="HelpText2" position="125,830" size="1255,120" backgroundColor="OE_Background" font="RegularBold;22" halign="center" valign="center"/>
-	<widget name="text" position="1410,675" size="500,305" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="text" position="1410,675" size="500,385" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 	<!-- LED GB-->
   <screen name="LED_GigaSetup" position="fill" flags="wfNoBorder">
@@ -4385,6 +4389,7 @@
   </screen>
   <screen name="filtersServicesSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="list" position="125,150" size="1255,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
   </screen>
 	<!-- PERSIAN PALACE AND PICTURE PLAYER -->

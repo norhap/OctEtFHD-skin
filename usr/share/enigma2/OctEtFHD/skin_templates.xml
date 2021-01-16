@@ -316,33 +316,33 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	</screen>
 	<!-- TEMPLATE PIP -->
 	<screen name="Template_Pip">
-	<widget source="session.VideoPicture" render="Pig" position="1405,100" size="540,295" zPosition="1" backgroundColor="#df0b1300"/>
+	<widget source="session.VideoPicture" render="Pig" position="1405,100" size="540,330" zPosition="1" backgroundColor="#df0b1300"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget name="introduction" conditional="introduction" position="1410,290" size="500,780" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="description" conditional="description" position="1410,290" size="500,780" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="introduction" conditional="introduction" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="description" conditional="description" position="1410,325" size="500,735" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- TEMPLATE VISION CORE -->
 	<screen name="setup_v_core">
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="410,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="165,900" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="200,900" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
 	</screen>
 	<!-- INTRODUCTION STANDARD -->
 	<screen name="introduction_standard">
-	<widget source="session.VideoPicture" render="Pig" position="1405,100" size="540,295" zPosition="1" backgroundColor="#df0b1300"/>
+	<widget source="session.VideoPicture" render="Pig" position="1405,100" size="540,330" zPosition="1" backgroundColor="#df0b1300"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="introduction" render="Label" position="1410,290" size="500,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget source="introduction2" render="Label" conditional="introduction2" position="1410,365" size="500,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="introduction" conditional="introduction" position="1410,290" size="500,555" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="introduction" render="Label" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="introduction2" render="Label" conditional="introduction2" position="1410,500" size="500,560" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="introduction" conditional="introduction" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- DESCRIPTION STANDARD -->
 	<screen name="description_standard">
