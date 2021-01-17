@@ -1648,7 +1648,7 @@
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="85,85" size="75,75" transparent="1" zPosition="1"/>
   </screen>
   <screen name="HelpMenuOld" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<widget name="list" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="230,155" size="1145,800" transparent="1"/>
+	<widget name="list" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="230,155" size="1145,860" transparent="1"/>
 	<widget name="rc" alphatest="blend" backgroundColor="transparent" pixmaps="rc.png,rcold.png" position="60,center" size="150,500" zPosition="10"/>
 	<widget alphatest="on" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
@@ -1665,7 +1665,7 @@
 	 |	a second line in the help list, change the size of the description wizard to something
 	 |	appropriate (e.g. "280,44") and change over to the commented out "extended" template below.
 	 +-->
-	<widget source="list" render="Listbox" position="230,155" size="1145,800" backgroundColor="OE_Background" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
+	<widget source="list" render="Listbox" position="230,155" size="1145,860" backgroundColor="OE_Background" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 		<convert type="TemplatedMultiContent">
 			{
 			# Template for use when "description" is used
@@ -4092,9 +4092,10 @@
 	<!-- SKIN SELECTOR-->
   <screen name="SkinSelector" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<panel name="description_standard"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="33,980" size="64,43"/>
-	<widget name="preview" position="1450,300" size="440,440" alphatest="blend"/>
+	<widget name="preview" position="1440,500" size="440,440" alphatest="blend"/>
 	<widget source="skins" render="Listbox" position="125,140" size="1255,710" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 	{
