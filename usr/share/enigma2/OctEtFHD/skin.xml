@@ -1223,7 +1223,7 @@
   <screen name="Console" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
-	<widget name="text" font="Console;27" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="125,160" size="1255,800" transparent="1"/>
+	<widget name="text" font="Console;27" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="125,160" size="1255,800" transparent="1"/>
   </screen>
   <screen name="CommitInfoSetup" title="Open Vision Commit Info Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
