@@ -248,7 +248,6 @@
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;27" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1255,800" transparent="1"/>
 	<widget name="description" objectTypes="description,Button,Label" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="footnote" conditional="footnote" position="125,1035" halign="center" valign="center" size="1255,40" backgroundColor="OE_Foreground" transparent="1"/>
   </screen>
 	<!-- MENU SORT -->
   <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
