@@ -1632,25 +1632,90 @@
   </screen>
 	<!-- HELP MENU -->
   <screen name="HelpMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="30,70" size="1460,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="30,center" size="2,940" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1490,center" size="2,940" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="30,1010" size="1462,2" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="45,center" size="160,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="230,140" size="1240,2" zPosition="-9"/>
-	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" position="230,80" size="1010,50" transparent="1"/>
-	<widget name="list" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="230,155" size="1240,800" transparent="1"/>
+	<panel name="ClockBg" />
+	<panel name="Template_Pip" />
+	<panel name="HelpMenuOld" conditional="arrowdown" />
+	<panel name="HelpMenuNew" conditional="indicatorU0" />
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,0" size="1405,1080" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="1400,3" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="230,140" size="1145,2" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="105,1033" size="1300,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1077" size="1400,3" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="3,1078" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1402,0" size="3,1078" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="45,3" size="160,1075" zPosition="-11" valign="center"/>
+	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" position="125,40" size="1255,90" halign="center" valign="center" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="85,85" size="75,75" transparent="1" zPosition="1"/>
+  </screen>
+  <screen name="HelpMenuOld" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+	<widget name="list" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="230,155" size="1145,800" transparent="1"/>
 	<widget name="rc" alphatest="blend" backgroundColor="transparent" pixmaps="rc.png,rcold.png" position="60,center" size="150,500" zPosition="10"/>
-	<widget name="long_key" position="230,965" size="375,40" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold;26"/>
 	<widget alphatest="on" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowup" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowup2" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
-	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<widget name="long_key" position="230,1035" size="375,40" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold;26" transparent="1"/>
   </screen>
+  <screen name="HelpMenuNew" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+	<panel position="60,center" size="150,500">
+		<panel name="TemplateRemoteControl" />
+	</panel>
+	<!--
+	 |	To display the extended help for the current item in a description widget instead of in
+	 |	a second line in the help list, change the size of the description wizard to something
+	 |	appropriate (e.g. "280,44") and change over to the commented out "extended" template below.
+	 +-->
+	<widget source="list" render="Listbox" position="230,155" size="1145,800" backgroundColor="OE_Background" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
+		<convert type="TemplatedMultiContent">
+			{
+			# Template for use when "description" is used
+			#
+			# For integrated extended help uncomment the "MultiContentEntryText" entries,
+			# set the itemHeight for the extended entries to 50 and remove the panel for
+			# "ScreenTemplateDescription4".
+			"templates":
+				{
+				# Simple help with no headings ("flat")
+				# data[1:] = [helpText]
+				"default": (50,  # itemHeight
+					[
+					MultiContentEntryText(pos = (30, 0), size = (790, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)
+					]),
+				# Simple help with headings
+				# data[1:] = [heading, None]  # For heading entries
+				# data[1:] = [None, helpText]  # For help entries
+				"default+headings": (50,  # itemHeight
+					[
+					MultiContentEntryText(pos = (0, 0), size = (810, 50), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (30, 0), size = (790, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
+					]),
+				# Extended help with no headings
+				# data[1:] = [helpText, extendedHelpText]
+				"extended": (50,  # itemHeight
+					[
+					MultiContentEntryText(pos = (30, 0), size = (790, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)
+					# MultiContentEntryText(pos = (75, 25), size = (760, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
+					]),
+				# Extended help with headings
+				# data[1:] = [heading, None, None]  # For heading entries
+				# data[1:] = [None, helpText, extendedHelpText]  # For help entries
+				"extended+headings": (50,  # itemHeight
+					[
+					MultiContentEntryText(pos = (0, 0), size = (810, 50), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (30, 0), size = (790, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
+					# MultiContentEntryText(pos = (75, 25), size = (760, 50), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3)
+					]),
+				},
+			"fonts": [gFont("FHD", 30), gFont("FHD", 30), gFont("FHD", 30)],
+			"itemHeight": 50
+			}
+		</convert>
+	</widget>
+	<widget name="longshift_key0" position="230,1035" size="375,40" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" halign="right" transparent="1" valign="center" />
+	<widget name="longshift_key1" position="230,1035" size="375,40" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" transparent="1" valign="center" />
+	<widget name="description" conditional="description" position="1410,325" size="500,735" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2" />
+  </screen>
+	<!-- HOTKEY SETUP -->
   <screen name="HotkeySetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
@@ -2458,10 +2523,10 @@
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="33,920" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1035" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="155,1035" size="64,43"/>
-	<eLabel text="[move mode]" position="250,1020" size="600,70" halign="left" valign="center" backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold;24"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="900,1035" size="64,43"/>
-	<eLabel text="Default" position="985,1020" size="350,70" backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="list" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,140" size="1255,820" transparent="1"/>
+	<eLabel text="[move mode]" position="250,1035" size="600,40" halign="left" valign="center" backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold;24"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="900,1035" size="64,43"/>
+	<eLabel text="Default" position="985,1035" size="350,40" backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
