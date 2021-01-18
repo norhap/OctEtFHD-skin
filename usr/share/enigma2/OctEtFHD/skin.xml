@@ -2815,11 +2815,23 @@
 	<widget name="FEC" position="1150,915" size="80,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="fec_value" backgroundColor="OE_Background" font="FHD;30" foregroundColor="white" position="1230,915" size="165,45" transparent="1"/>
   </screen>
+	<!-- POSITIONER TUNER SCREEN -->
+  <screen name="TunerScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<panel name="Template_not_Pip"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,160" size="1255,800" transparent="1"/>
+  </screen>
+	<!-- POSITIONER ROTOR NIMSELECTION -->
+  <screen name="RotorNimSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<panel name="Template_not_Pip"/>
+	<widget name="nimlist" font="FHD;30" backgroundColor="OE_Background" position="125,160" size="1255,855" transparent="1"/>
+  </screen>
 	<!-- POSITIONER LOG -->
   <screen name="PositionerSetupLog" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="Template_not_Pip"/>
-	<widget name="list" font="FHD;30" backgroundColor="OE_Background" position="125,160" size="1255,750" transparent="1"/>
+	<widget name="list" font="FHD;30" backgroundColor="OE_Background" position="125,160" size="1255,855" transparent="1"/>
   </screen>
 	<!-- DISH-->
   <screen name="Dish" backgroundColor="transparent" flags="wfNoBorder" position="20,75" size="550,250" title="Dish" zPosition="2">
