@@ -247,7 +247,6 @@
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;27" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1255,800" transparent="1"/>
-	<widget name="description" objectTypes="description,Button,Label" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 	<!-- MENU SORT -->
   <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -1746,7 +1745,7 @@
 	<!-- INPUT DEVICE SELECTION -->
   <screen name="InputDeviceSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,155" size="1255,700" transparent="1">
 	    <convert type="TemplatedMultiContent">
 					   {"template": [ MultiContentEntryPixmapAlphaBlend(pos = (5, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
@@ -1760,7 +1759,7 @@
   </screen>
   <screen name="InputDeviceSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,155" size="1255,700" transparent="1"/>
   </screen>
   <screen name="Opkg" title="Installing Software..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -2063,7 +2062,7 @@
 	<!-- NETWORK -->
   <screen name="NetworkAdapterSelection" title="NetworkAdapterSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="125,165" size="1255,680" transparent="1">
 	    <convert type="TemplatedMultiContent">
 					{"template": [
@@ -2081,14 +2080,13 @@
   <screen name="AdapterSetupConfiguration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
+	<widget source="description" render="Label" conditional="description" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
 	<widget source="IF" render="Label" font="RegularBold;32" backgroundColor="OE_Background" halign="left" position="170,150" size="500,50" transparent="1"/>
 	<widget source="Statustext" render="Label" font="RegularBold;32" foregroundColor="white" backgroundColor="OE_Background" position="775,150" size="370,50" transparent="1" halign="right"/>
 	<widget name="statuspic" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png" position="1165,158" size="35,35" transparent="1"/>
 	<widget name="devicepic" alphatest="blend" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" position="1220,150" size="54,54"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,210" size="1100,5" zPosition="-9"/>
 	<widget name="menulist" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,230" size="1100,550" transparent="1"/>
-	<widget source="description" render="Label" objectTypes="description,Button,Label" position="1410,150" size="500,910" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
-	<widget source="description" render="Label" position="1410,150" size="500,910" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
   </screen>
 	<!-- NETWORK ADAPTER TEST -->
   <screen name="NetworkAdapterTest" title="Network test..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2132,8 +2130,9 @@
 	<!-- NETWORK ADAPTER SETUP -->
   <screen name="AdapterSetup" title="Network Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
-	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" position="650,140" render="Label" size="570,45" source="Adapter" transparent="1" halign="left"/>
+	<panel name="Template_Pip"/>
+	<widget source="Adapter" render="Label" position="1410,700" size="500,70" font="RegularBold;27" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1"/>
+	<widget source="description" render="Label" conditional="description" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,190" size="1255,400" transparent="1"/>
 	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="480,620" render="Label" size="255,45" source="IPtext" transparent="1"/>
 	<widget font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="480,670" render="Label" size="255,45" source="Netmasktext" transparent="1"/>
@@ -2161,7 +2160,7 @@
 	<!-- NETWORK NAMESERVER SETUP -->
   <screen name="NameserverSetup" title="NameserverSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,155" size="1255,700" transparent="1"/>
   </screen>
   <screen name="RestartNetwork" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -2242,12 +2241,12 @@
 	<!-- MOUNTS -->
   <screen name="NetworkMountsMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget name="menulist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,155" size="1255,700" transparent="1"/>
   </screen>
   <screen name="AutoMountManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget source="config" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="125,160" size="1255,700" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
@@ -2312,7 +2311,7 @@
   </screen>
  <screen name="UserManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget source="config" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,160" size="1255,680" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template": [
@@ -2327,7 +2326,7 @@
   </screen>
   <screen name="UserDialog" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,155" size="1255,700" transparent="1"/>
   </screen>
 	<!-- NUMBER ZAP-->
@@ -2423,6 +2422,7 @@
 	<!-- OSD3D -->
   <screen name="OSD3DSetupScreen" title="OSD 3D setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,150" size="1255,750" transparent="1"/>
   </screen>
 	<!-- PACKETMANAGER -->
@@ -2787,7 +2787,7 @@
 	<!-- POSITIONERSETUP -->
   <screen name="PositionerSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="Template_Pip"/>
+	<panel name="Template_not_Pip"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="33,960" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="33,900" size="64,43"/>
 	<widget name="list" itemHeight="50" font="FHD;30" backgroundColor="black" foregroundColor="OE_Foreground" position="125,150" size="1255,500" transparent="1"/>
@@ -2889,7 +2889,7 @@
 	<!-- SCAN MANUAL-->
   <screen name="ScanSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;32" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,155" size="1255,700" transparent="1"/>
   </screen>
 	<!-- AUTOMATIC SCANING -->
@@ -2903,17 +2903,17 @@
   <screen name="ServiceScan" title="Service Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
-	<widget alphatest="blend" pixmap="icons/scan-s.png" position="1290,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-s.png" position="1230,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	    <convert type="FrontendInfo">TYPE</convert>
 	    <convert type="ValueRange">0,0</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="icons/scan-c.png" position="1290,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-c.png" position="1230,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	    <convert type="FrontendInfo">TYPE</convert>
 	    <convert type="ValueRange">1,1</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="icons/scan-t.png" position="1290,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-t.png" position="1230,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	    <convert type="FrontendInfo">TYPE</convert>
 	    <convert type="ValueRange">2,2</convert>
 	    <convert type="ConditionalShowHide"/>
@@ -2928,7 +2928,7 @@
 	<!-- FAST SCANING -->
   <screen name="FastScanScreen" title="Fast Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="Template_not_Pip"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,160" size="1255,700" transparent="1"/>
   </screen>
   <screen name="FastScanStatus" title="Fast Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2986,9 +2986,8 @@
 	<!-- TERRESTRIAL SCAN -->
   <screen name="TerrestrialScanScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="Template_not_Pip"/>
+	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,140" size="1255,800" transparent="1"/>
-	<widget name="description" position="1410,150" size="500,650" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
   </screen>
   <screen name="ServiceInfoSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -4440,7 +4439,7 @@
 	<!-- FILTERS SERVICES SETUP -->
   <screen name="filtersServicesSetup" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<panel name="introduction_standard"/>
+	<panel name="Template_Pip"/>
 	<widget source="list" render="Listbox" position="125,140" size="1255,600" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 	    <convert type="TemplatedMultiContent">
 		{"template": [

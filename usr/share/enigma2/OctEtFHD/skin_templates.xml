@@ -310,9 +310,11 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
+	<widget name="footnote" conditional="footnote" position="125,1035" font="RegularBold;27" size="1255,40" halign="center" valign="center" backgroundColor="OE_Foreground" transparent="1"/>
 	<widget name="introduction" conditional="introduction" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="description" conditional="description" position="1410,325" size="500,735" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="footnote" conditional="footnote" position="125,1035" halign="center" valign="center" size="1255,40" backgroundColor="OE_Foreground" transparent="1"/>
+	<widget name="description" conditional="description" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="introduction" render="Label" conditional="introduction" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="introduction2" render="Label" conditional="introduction2" position="1410,725" size="500,230" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- TEMPLATE NOT PIP -->
 	<screen name="Template_not_Pip">
@@ -336,19 +338,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	    <convert type="ConditionalShowHide"/>
 	</widget>
 	</screen>
-	<!-- INTRODUCTION STANDARD -->
-	<screen name="introduction_standard">
-	<widget source="session.VideoPicture" render="Pig" position="1405,100" size="540,330" zPosition="1" backgroundColor="#df0b1300"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
-	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
-	    <convert type="ConditionalShowHide"/>
-	</widget>
-	<widget source="introduction" render="Label" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget source="introduction2" render="Label" conditional="introduction2" position="1410,500" size="500,560" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="introduction" conditional="introduction" position="1410,325" size="500,735" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	</screen>
-	<!-- DESCRIPTION STANDARD -->
+	<!-- DESCRIPTION INSIDE OF SCREEN STANDARD -->
 	<screen name="description_standard">
 	<eLabel backgroundColor="blue_light" position="140,857" size="1255,2" zPosition="2"/>
 	<widget source="description" render="Label" font="FHD;30" position="125,875" size="1255,85" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
