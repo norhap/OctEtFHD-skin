@@ -3773,9 +3773,8 @@
 	<panel name="StanDardScreen"/>
 	<panel name="Template_Pip"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,center" size="1255,750" transparent="1"/>
-	<eLabel backgroundColor="blue_light" position="125,857" size="1255,2" zPosition="2"/>
-	<widget name="status" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" position="150,770" size="600,85" transparent="1"/>
-	<widget name="statusbar" font="RegularBold;28" borderWidth="1" position="380,890" size="740,45" valign="center" halign="center" transparent="1" foregroundColor="blue_light" backgroundColor="OE_Background"/>
+	<widget name="statusbar" position="1410,450" size="500,45" font="RegularBold;27" backgroundColor="OE_NewBg2" valign="center" halign="center" transparent="1"/>
+	<widget name="status" position="1410,550" size="500,510" font="RegularBold;27" backgroundColor="OE_NewBg2" valign="center" halign="center" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="33,980" size="64,43"/>
   </screen>
 	<!-- CRON TIMERS -->
