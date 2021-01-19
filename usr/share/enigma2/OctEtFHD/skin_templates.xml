@@ -157,16 +157,16 @@
 	<screen name="key_evenview">
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="380,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="710,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1040,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1370,950" size="40,40"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="425,950" size="280,40" source="key_red" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="755,950" size="280,40" source="key_green" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1085,950" size="280,40" source="key_yellow" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1415,950" size="280,40" source="key_blue" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="425,950" size="280,40" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="755,950" size="280,40" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1085,950" size="280,40" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1415,950" size="280,40" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1100,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1450,950" size="40,40"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" position="425,935" size="300,70" source="key_red" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" position="755,935" size="300,70" source="key_green" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1145,935" size="300,70" source="key_yellow" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1495,935" size="300,70" source="key_blue" render="Label" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" position="425,935" size="300,70" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" position="755,935" size="300,70" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1145,935" size="300,70" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1495,935" size="300,70" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- STANDARD SCREEN -->
 	<screen name="StanDardScreen">

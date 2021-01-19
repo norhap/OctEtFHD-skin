@@ -1241,7 +1241,7 @@
 	    </convert>
 	</widget>
 	<eLabel backgroundColor="foreground" position="822,140" size="648,379" zPosition="1"/>
-	<eLabel backgroundColor="black" position="826,144" size="640,371" zPosition="2"/>
+	<eLabel backgroundColor="OE_Background" position="826,144" size="640,371" zPosition="2"/>
 	<widget name="Video" position="827,145" size="638,369" zPosition="3"/>
 	<widget source="session.CurrentService" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="824,530" size="648,50" halign="center" valign="center" transparent="1">
 	    <convert type="ServiceName">Name</convert>
@@ -1383,9 +1383,9 @@
 	</widget>
 	<!-- others -->
 	<eLabel backgroundColor="white" name="" position="80,535" size="267,2" zPosition="-9"/>
-	<ePixmap name="new ePixmap" pixmap="buttons/key_info.png" position="1624,950" size="64,43" alphatest="blend"/>
-	<ePixmap name="new ePixmap" pixmap="buttons/key_ok.png" position="1700,950" size="64,43" alphatest="blend"/>
-	<ePixmap name="new ePixmap" pixmap="buttons/key_exit.png" position="1776,950" size="64,43" alphatest="blend"/>
+	<eLabel backgroundColor="blue_light" name="" position="80,930" size="275,2" zPosition="-9"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="140,950" size="64,43" alphatest="blend"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_info.png" position="220,950" size="64,43" alphatest="blend"/>
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
@@ -2790,7 +2790,7 @@
 	<panel name="Template_not_Pip"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="33,960" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="33,900" size="64,43"/>
-	<widget name="list" itemHeight="50" font="FHD;30" backgroundColor="black" foregroundColor="OE_Foreground" position="125,150" size="1255,500" transparent="1"/>
+	<widget name="list" itemHeight="50" font="FHD;30" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="125,150" size="1255,500" transparent="1"/>
 	<eLabel backgroundColor="blue_light" name="" position="125,710" size="1255,2" zPosition="-9"/>
 	<widget name="SNR" position="125,720" size="140,45" backgroundColor="OE_Background" font="FHD;30" transparent="1"/>
 	<widget name="snr_bar" foregroundColor="un56c856" borderColor="OE_Selection" borderWidth="2" position="290,730" size="500,25" transparent="1"/>
@@ -2798,15 +2798,15 @@
 	<widget name="snr_db" position="995,720" size="300,45" font="FHD;30" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="un56c856"/>
 	<widget name="AGC" position="125,770" size="140,45" backgroundColor="OE_Background" font="FHD;30" transparent="1"/>
 	<widget name="agc_bar" position="290,780" size="500,25" borderWidth="1" foregroundColor="blue_light" transparent="1"/>
-	<widget name="agc_percentage" position="870,770" size="120,45" font="FHD;30" backgroundColor="black" foregroundColor="blue_light" transparent="1"/>
-	<widget name="BER" position="125,820" size="140,45" font="FHD;30" backgroundColor="black" transparent="1"/>
+	<widget name="agc_percentage" position="870,770" size="120,45" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<widget name="BER" position="125,820" size="140,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="ber_bar" borderColor="OE_Selection" borderWidth="2" backgroundColor="OE_Background" foregroundColor="blue_light" position="290,830" size="500,25" transparent="1"/>
 	<widget name="ber_value" backgroundColor="OE_Background" font="FHD;30" foregroundColor="blue_light" position="870,820" size="120,45" transparent="1"/>
-	<widget name="Lock" position="125,665" size="210,45" font="FHD;30" backgroundColor="black" transparent="1"/>
+	<widget name="Lock" position="125,665" size="210,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="lock_on" position="380,665" pixmap="extensions/lock_on.png" size="35,35" transparent="1"/>
 	<widget name="lock_off" position="380,665" size="35,35" transparent="1"/>
-	<widget name="lock_state" font="FHD;30" backgroundColor="black" position="455,665" size="250,45" transparent="1"/>
-	<widget name="rotorstatus" position="715,665" size="680,45" font="FHD;30" backgroundColor="black" transparent="1"/>
+	<widget name="lock_state" font="FHD;30" backgroundColor="OE_Background" position="455,665" size="250,45" transparent="1"/>
+	<widget name="rotorstatus" position="715,665" size="680,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="Frequency" position="125,915" size="255,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="frequency_value" backgroundColor="OE_Background" font="FHD;30" position="400,915" size="200,45" transparent="1"/>
 	<widget name="Symbolrate" position="600,915" size="335,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
@@ -3005,7 +3005,7 @@
 	<panel name="StanDardScreen"/>
 	<widget name="infolist" itemHeight="50" font="FHD;30" backgroundColor="OE_Background" position="125,215" size="925,700" transparent="1" zPosition="3"/>
   </screen>
-  <screen backgroundColor="black" flags="wfNoBorder" name="Standby" position="0,0" size="1920,1080" title="Standby"/>
+  <screen backgroundColor="OE_Background" flags="wfNoBorder" name="Standby" position="0,0" size="1920,1080" title="Standby"/>
 	<!-- ####### Subtitle Display ####### -->
   <screen name="SubtitleDisplay" position="fill" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
 	<panel name="message"/>
@@ -3307,7 +3307,7 @@
 	<!-- Clock -->
 	<panel name="ClockBg"/>
   </screen>
-  <screen backgroundColor="black" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1920,1080">
+  <screen backgroundColor="OE_Background" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1920,1080">
 	<widget position="center,center" render="Canvas" size="1280,800" source="Canvas"/>
   </screen>
   <screen name="VirtualKeyBoard" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" zPosition="99">
