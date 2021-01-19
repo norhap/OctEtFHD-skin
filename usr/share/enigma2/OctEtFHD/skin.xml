@@ -2806,20 +2806,20 @@
 	<widget name="lock_on" position="380,665" pixmap="extensions/lock_on.png" size="35,35" transparent="1"/>
 	<widget name="lock_off" position="380,665" size="35,35" transparent="1"/>
 	<widget name="lock_state" font="FHD;30" backgroundColor="black" position="455,665" size="250,45" transparent="1"/>
-	<widget name="rotorstatus" position="715,665" size="530,45" font="FHD;30" backgroundColor="black" transparent="1"/>
-	<widget name="status_bar" position="1250,665" size="145,45" halign="center" transparent="1"/>
+	<widget name="rotorstatus" position="715,665" size="680,45" font="FHD;30" backgroundColor="black" transparent="1"/>
 	<widget name="Frequency" position="125,915" size="255,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="frequency_value" backgroundColor="OE_Background" font="FHD;30" position="400,915" size="200,45" transparent="1"/>
 	<widget name="Symbolrate" position="600,915" size="335,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="symbolrate_value" backgroundColor="OE_Background" font="FHD;30" position="940,915" size="200,45" transparent="1"/>
 	<widget name="FEC" position="1150,915" size="80,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="fec_value" backgroundColor="OE_Background" font="FHD;30" foregroundColor="white" position="1230,915" size="165,45" transparent="1"/>
+	<widget name="status_bar" position="1410,325" size="500,735" font="RegularBold;27" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1"/>
   </screen>
 	<!-- POSITIONER TUNER SCREEN -->
   <screen name="TunerScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="Template_not_Pip"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="125,160" size="1255,800" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="125,160" size="1255,800" transparent="1"/>
   </screen>
 	<!-- POSITIONER ROTOR NIMSELECTION -->
   <screen name="RotorNimSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
