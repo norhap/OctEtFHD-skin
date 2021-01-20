@@ -19,7 +19,7 @@
 	<screen name="ClockBgAbout">
 	<eLabel backgroundColor="OE_NewBg2" position="0,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
 	<eLabel backgroundColor="white" position="80,93" size="230,2" transparent="0" zPosition="2"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;34" halign="left" position="150,5" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<widget backgroundColor="OE_NewBg" font="RegularBold;34" halign="left" position="150,5" zPosition="3" render="Label" size="100,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="75,58" zPosition="3" render="Label" size="230,35" source="global.CurrentTime" transparent="1">
@@ -56,7 +56,7 @@
 	</screen>
 	<!-- TITLES -->
 	<screen name="TitleScreenAll">
-	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" position="125,40" size="1255,90" halign="center" valign="center" transparent="1"/>
+	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" position="110,40" size="1240,90" halign="center" valign="center" transparent="1"/>
 	</screen>
 	<screen name="TitleAbout">
 	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" position="390,40" size="1530,90" halign="center" valign="center" transparent="1"/>
@@ -66,30 +66,30 @@
 	</screen>
 	<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE-->
 	<screen name="CONDITIONAL_RGYB">
-	<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="105,980" size="40,40"/>
-	<ePixmap objectTypes="key_green,Button,Label" alphatest="blend" pixmap="buttons/key_green.png" position="410,980" size="40,40"/>
-	<ePixmap objectTypes="key_yellow,Button,Label" alphatest="blend" pixmap="buttons/key_yellow.png" position="740,980" size="40,40"/>
-	<ePixmap objectTypes="key_blue,Button,Label" alphatest="blend" pixmap="buttons/key_blue.png" position="1070,980" size="40,40"/>
-	<widget objectTypes="key_red,Label,Button" name="key_red" font="RegularBold;24" backgroundColor="OE_Background" position="150,965" size="255,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget objectTypes="key_green,Label,Button" name="key_green" font="RegularBold;24" backgroundColor="OE_Background" position="460,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget objectTypes="key_yellow,Label,Button" name="key_yellow" font="RegularBold;24" backgroundColor="OE_Background" position="790,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget objectTypes="key_blue,Label,Button" name="key_blue" font="RegularBold;24" backgroundColor="OE_Background" position="1120,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" objectTypes="key_red,StaticText" backgroundColor="OE_Background" position="105,980" size="40,40" alphatest="blend" zPosition="1">
+	<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="90,980" size="40,40"/>
+	<ePixmap objectTypes="key_green,Button,Label" alphatest="blend" pixmap="buttons/key_green.png" position="395,980" size="40,40"/>
+	<ePixmap objectTypes="key_yellow,Button,Label" alphatest="blend" pixmap="buttons/key_yellow.png" position="725,980" size="40,40"/>
+	<ePixmap objectTypes="key_blue,Button,Label" alphatest="blend" pixmap="buttons/key_blue.png" position="1055,980" size="40,40"/>
+	<widget objectTypes="key_red,Label,Button" name="key_red" font="RegularBold;24" backgroundColor="OE_Background" position="135,965" size="255,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget objectTypes="key_green,Label,Button" name="key_green" font="RegularBold;24" backgroundColor="OE_Background" position="445,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget objectTypes="key_yellow,Label,Button" name="key_yellow" font="RegularBold;24" backgroundColor="OE_Background" position="775,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget objectTypes="key_blue,Label,Button" name="key_blue" font="RegularBold;24" backgroundColor="OE_Background" position="1105,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" objectTypes="key_red,StaticText" backgroundColor="OE_Background" position="90,980" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_red" render="Label" objectTypes="key_red,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="150,965" size="255,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" objectTypes="key_green,StaticText" backgroundColor="OE_Background" position="410,980" size="40,40" alphatest="blend" zPosition="1">
+	<widget source="key_red" render="Label" objectTypes="key_red,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="135,965" size="255,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" objectTypes="key_green,StaticText" backgroundColor="OE_Background" position="395,980" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_green" render="Label" objectTypes="key_green,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="460,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="790,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" objectTypes="key_yellow,StaticText" backgroundColor="OE_Background" position="740,980" size="40,40" alphatest="blend" zPosition="1">
+	<widget source="key_green" render="Label" objectTypes="key_green,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="445,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_yellow" render="Label" objectTypes="key_yellow,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="775,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" objectTypes="key_yellow,StaticText" backgroundColor="OE_Background" position="725,980" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="1070,980" size="40,40" alphatest="blend" zPosition="1">
+	<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_Background" position="1055,980" size="40,40" alphatest="blend" zPosition="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="1120,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="1105,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE SCREENS ABOUT-->
 	<screen name="CONDITIONAL_RGYB_ABOUT">
@@ -154,7 +154,7 @@
 	<widget source="key_blue" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="60,820" size="240,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- SOURCES NAMES EVENTVIEW -->
-	<screen name="key_evenview">
+	<screen name="Template_Keys_Epg">
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="380,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="710,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1100,950" size="40,40"/>
@@ -173,16 +173,16 @@
 	<panel name="ClockBg"/>
 	<panel name="TitleScreenAll"/>
 	<panel name="CONDITIONAL_RGYB"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,0" size="1405,1080" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="25,3" size="80,1074" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="1400,3" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="105,1033" size="1300,2" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1077" size="1400,3" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,0" size="1390,1080" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="10,3" size="80,1074" zPosition="-11" valign="center"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="1385,3" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1077" size="1385,3" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="3,1078" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1402,0" size="3,1078" zPosition="-15"/>
-	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="27,55" size="75,75" transparent="1" zPosition="1"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="125,135" size="1255,2" zPosition="-9"/>
-	<eLabel backgroundColor="blue_light" name="" position="125,965" size="1255,2" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1387,0" size="3,1078" zPosition="-15"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="12,55" size="75,75" transparent="1" zPosition="1"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="110,135" size="1255,2" zPosition="-9"/>position="125, size="1255,
+	<eLabel backgroundColor="blue_light" name="" position="110,965" size="1255,2" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="90,1033" size="1300,2" zPosition="-15"/>
 	</screen>
 	<!-- SCREEN OPENVISION-->
 	<screen  name="ScreenOpenVision">
@@ -307,29 +307,29 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<screen name="Template_Mandatory_Widgets">
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="18,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget name="footnote" conditional="footnote" position="125,1035" font="RegularBold;27" size="1255,40" halign="center" valign="center" backgroundColor="OE_Foreground" transparent="1"/>
-	<widget name="introduction" conditional="introduction" position="1410,410" size="500,650" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="description" conditional="description" position="1410,410" size="500,650" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget source="introduction" render="Label" conditional="introduction" position="1410,410" size="500,650" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget source="introduction2" render="Label" conditional="introduction2" position="1410,725" size="500,230" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="footnote" conditional="footnote" position="110,1035" font="RegularBold;27" size="1255,40" halign="center" valign="center" backgroundColor="OE_Foreground" transparent="1"/>
+	<widget name="introduction" conditional="introduction" position="1395,425" size="515,635" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="description" conditional="description" position="1395,425" size="515,635" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="introduction" render="Label" conditional="introduction" position="1395,425" size="515,635" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="introduction2" render="Label" conditional="introduction2" position="1395,725" size="515,230" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- TEMPLATE NOT PIP -->
 	<screen name="Template_not_Pip">
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1450,135" size="420,2" zPosition="2"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1435,135" size="435,2" zPosition="2"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="33,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="18,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget name="introduction" conditional="introduction" position="1410,650" size="500,305" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="introduction" conditional="introduction" position="1395,650" size="515,305" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- TEMPLATE PIP -->
 	<screen name="Template_Pip">
 	<panel name="Template_Mandatory_Widgets" />
-	<widget source="session.VideoPicture" render="Pig" position="1405,100" size="540,330" zPosition="1" backgroundColor="#df0b1300"/>
+	<widget source="session.VideoPicture" render="Pig" position="1390,100" size="555,340" zPosition="1" backgroundColor="#df0b1300"/>
 	</screen>
 	<!-- TEMPLATE VISION CORE -->
 	<screen name="setup_v_core">
@@ -340,60 +340,60 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	</screen>
 	<!-- DESCRIPTION INSIDE OF SCREEN STANDARD -->
 	<screen name="description_standard">
-	<eLabel backgroundColor="blue_light" position="140,857" size="1255,2" zPosition="2"/>
-	<widget source="description" render="Label" font="FHD;30" position="125,875" size="1255,85" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
-	<widget name="description" font="FHD;30" position="125,875" size="1255,85" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<eLabel backgroundColor="blue_light" position="90,857" size="1300,2" zPosition="2"/>
+	<widget source="description" render="Label" font="FHD;30" position="110,875" size="1255,85" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+	<widget name="description" font="FHD;30" position="110,875" size="1255,85" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 	</screen>
 	<!-- ####### CHOICEBOX ####### -->
 	<screen name="description" position="fill" flags="wfNoBorder">
 	<panel name="autoresize"/>
-	<widget name="description" position="1455,150" size="500,820" font="FHD;34" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget name="description" position="1395,145" size="515,45" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<screen name="choicebox">
 	<panel name="StanDardScreen"/>
 	<panel name="description"/>
-	<eLabel backgroundColor="OE_NewBg2" name="" position="1375,0" size="545,1080" zPosition="-16"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1450,135" size="420,2" zPosition="2"/>
+	<eLabel backgroundColor="OE_NewBg2" name="" position="1360,0" size="560,1080" zPosition="-16"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1440,135" size="425,2" zPosition="2"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="140,980" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="190,980" size="64,43"/>
 	<eLabel text="[move mode]" position="260,983" size="400,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
-	<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="125,140" size="1255,820" transparent="1" zPosition="3"/>
-	<widget name="text" position="1410,100" size="500,380" font="FHD;30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="description" position="1410,150" size="500,380" font="FHD;30" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget source="session.CurrentService" render="Progress" position="1420,495" size="470,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" transparent="1" borderWidth="2" zPosition="6">
+	<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="110,140" size="1255,820" transparent="1" zPosition="3"/>
+	<widget name="description" position="1395,145" size="515,45" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>
+	<widget name="text" position="1395,100" size="515,380" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="session.CurrentService" render="Progress" position="1405,495" size="485,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" transparent="1" borderWidth="2" zPosition="6">
 	    <convert type="CpuUsage">$0</convert>
 	</widget>
-	<widget source="session.Event_Now" render="Label" position="1418,510" size="470,70" backgroundColor="OE_NewBg2" font="RegularBold;23" transparent="1" zPosition="6">
+	<widget source="session.Event_Now" render="Label" position="1403,510" size="470,70" backgroundColor="OE_NewBg2" font="RegularBold;23" transparent="1" zPosition="6">
 	    <convert type="CpuUsage">CPU:$0 (Core #1: $1 Core #2: $2 Core #3: $3 Core #4: $4)</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1420,580" size="470,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1405,580" size="485,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1420,595" size="480,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1405,595" size="495,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1420,665" size="470,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1405,665" size="485,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1420,680" size="500,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1405,680" size="515,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1420,750" size="470,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1405,750" size="485,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">SwapFree</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1420,765" size="500,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1405,765" size="515,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">SwapFree</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1420,835" size="470,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1405,835" size="485,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1420,850" size="500,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1405,850" size="515,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Progress" position="1420,920" size="470,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Progress" position="1405,920" size="485,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1420,935" size="500,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1405,935" size="515,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
 	</widget>
 	</screen>
