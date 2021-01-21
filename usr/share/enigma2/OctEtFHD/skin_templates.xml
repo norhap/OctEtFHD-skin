@@ -56,15 +56,15 @@
 	</screen>
 	<!-- TITLES -->
 	<screen name="TitleScreenAll">
-	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="95,10" size="1260,130" halign="center" valign="top" transparent="1"/>
-	<widget source="ScreenPath" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="95,35" size="1260,105" halign="center" valign="center" transparent="1"/>
+	<widget source="Title" render="Label" font="RegularBold;29" backgroundColor="OE_Background" position="95,58" size="1290,80" halign="center" valign="top" transparent="1"/>
+	<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" position="95,0" size="1290,70" halign="center" valign="top" transparent="1"/>
 	</screen>
 	<screen name="TitleAbout">
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="405,55" size="1550,90" halign="center" valign="center" transparent="1"/>
 	<widget source="ScreenPath" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="405,10" size="1550,105" halign="center" valign="center" transparent="1"/>
 	</screen>
 	<screen name="TitleSlim">
-	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="85,0" size="300,90" halign="center" valign="center" transparent="1"/>
+	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="85,0" size="955,90" halign="center" valign="center" transparent="1"/>
 	</screen>
 	<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE-->
 	<screen name="CONDITIONAL_RGYB">
@@ -182,7 +182,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="3,1078" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1387,0" size="3,1078" zPosition="-15"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="12,55" size="75,75" transparent="1" zPosition="1"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="110,135" size="1255,2" zPosition="-9"/>position="125, size="1255,
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="110,138" size="1255,2" zPosition="-9"/>position="125, size="1255,
 	<eLabel backgroundColor="blue_light" name="" position="110,965" size="1255,2" zPosition="-9"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="90,1033" size="1300,2" zPosition="-15"/>
 	</screen>
@@ -215,9 +215,11 @@
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,0" size="1050,1080" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,0" size="80,1080" zPosition="-11" valign="center"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="2,30" size="75,75" transparent="1" zPosition="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="1048,125" size="2,850" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="1048,0" size="2,1077" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="80,0" size="968,3" zPosition="-9"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="100,125" size="950,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="100,975" size="950,2" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="80,1077" size="970,3" zPosition="-9"/>
 	</screen>
 	<!-- ABOUT STANDARD -->
 	<screen  name="About_standard">
