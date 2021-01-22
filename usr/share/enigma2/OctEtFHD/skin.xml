@@ -667,23 +667,23 @@
   <screen name="Troubleshoot" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="About_standard"/>
 	<widget name="AboutScrollLabel" font="Console; 28" backgroundColor="OE_Background" position="410,140" size="1505,805" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="1195,985" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="1259,985" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_up.png" position="1353,985" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_down.png" position="1417,985" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="1195,970" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="1259,970" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_up.png" position="1353,970" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_down.png" position="1417,970" size="64,43"/>
   </screen>
 	<!-- MEMORY INFO -->
   <screen name="MemoryInfo" title="MemoryInfo" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="About_standard"/>
 	<widget name="params" rowsincolumn="25"/>
-	<widget name="lmemtext" position="595,140" backgroundColor="OE_NewBg2" foregroundColor="white" size="225,855" zPosition="7" font="FHD;24" halign="right" transparent="1"/>
-	<widget name="lmemvalue" position="830,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="230,855" zPosition="8" font="FHD;24" halign="left" transparent="1"/>
-	<widget name="slide" borderWidth="2" borderColor="OE_Blue" backgroundColor="OE_Background" foregroundColor="green_light" position="410,160" zPosition="4" size="40,750" transparent="1"/>
-	<widget name="pfree" shadowColor="black" shadowOffset="2,1" position="455,160" zPosition="5" size="120,40" font="RegularBold;30" backgroundColor="OE_Background" halign="left" transparent="1"/>
-	<widget name="pused" shadowColor="black" shadowOffset="2,1" position="455,870" zPosition="5" size="120,40" font="RegularBold;28" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<widget name="rmemtext" position="1090,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="225,675" zPosition="7" font="FHD;24" halign="right" transparent="1"/>
-	<widget name="rmemvalue" position="1325,140" backgroundColor="OE_Background" foregroundColor="OE_Foreground" size="220,675" zPosition="7" font="FHD;24" halign="left" transparent="1"/>
-	<widget name="info" position="1100,720" backgroundColor="OE_Background" foregroundColor="green_light" size="500,200" zPosition="7" font="FHD;25" halign="left" transparent="1"/>
+	<widget name="lmemtext" position="395,140" backgroundColor="OE_Background" size="225,855" zPosition="7" font="FHD;24" halign="right" transparent="1"/>
+	<widget name="lmemvalue" position="630,140" backgroundColor="OE_Background" size="230,855" zPosition="8" font="FHD;24" halign="left" transparent="1"/>
+	<widget name="rmemtext" position="840,140" backgroundColor="OE_Background" size="225,675" zPosition="7" font="FHD;24" halign="right" transparent="1"/>
+	<widget name="rmemvalue" position="1075,140" backgroundColor="OE_Background" size="220,675" zPosition="7" font="FHD;24" halign="left" transparent="1"/>
+	<widget name="info" position="1380,140" backgroundColor="OE_Background" foregroundColor="green_light" size="500,200" zPosition="7" font="FHD;25" halign="left" transparent="1"/>
+	<widget name="pused" position="920,875" zPosition="5" size="120,40" font="RegularBold;28" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="slide" borderWidth="2" borderColor="OE_Blue" backgroundColor="OE_Background" foregroundColor="green_light" position="920,915" zPosition="4" size="350,25" transparent="1"/>
+	<widget name="pfree" position="1175,875" zPosition="5" size="120,40" font="RegularBold;28" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- STREAMING CLIENTS INFO -->
   <screen name="StreamingClientsInfo" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
