@@ -44,7 +44,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1395,154" size="2,771" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="295,230" size="1100,2" zPosition="-9"/>
 	<!--  Widget -->
-	<widget source="title" render="Label" font="RegularBold;38" backgroundColor="OE_Background" position="300,165" size="1360,58" transparent="1" halign="left"/>
+	<widget source="title" render="Label" font="RegularBold;38" backgroundColor="OE_Background" position="300,165" size="1090,58" transparent="1" halign="left"/>
 	<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="300,255" size="1085,650" transparent="1">
 		<convert type="TemplatedMultiContent">
 				  {"template": [ MultiContentEntryText(pos = (15, 5), size = (1085, 60), flags = RT_HALIGN_LEFT, text = 0) ],
