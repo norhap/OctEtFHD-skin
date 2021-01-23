@@ -4,14 +4,14 @@
 	<!-- <panel name="ClockBg"/> -->
   <screen name="ClockBg">
 	<eLabel backgroundColor="OE_NewBg2" position="1465,25" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
-	<eLabel backgroundColor="white" position="1470,60" size="230,2" transparent="0" zPosition="2"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="1740,25" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<eLabel backgroundColor="blue_light" position="1470,60" size="230,2" transparent="0" zPosition="2"/>
+	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="1720,25" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="1470,25" zPosition="3" render="Label" size="230,35" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="1465,25" zPosition="3" render="Label" size="230,35" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">Date</convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="1470,60" zPosition="3" render="Label" size="250,35" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="1465,60" zPosition="3" render="Label" size="250,35" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">FullDate</convert>
 	</widget>
   </screen>
@@ -173,46 +173,45 @@
 	<!-- TEMPLATE GRAPHICAL EPG -->
   <screen name="TemplateGraphicalEPG">
 	<!-- Event -->
-	<widget backgroundColor="OE_Background" font="FHD;34" position="180,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="760,50" source="Event" transparent="1" halign="left">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" position="160,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="780,50" source="Event" transparent="1" halign="left">
 	    <convert type="EventName">Name</convert>
 	</widget>
-	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" halign="left" position="950,90" size="520,45" transparent="1" zPosition="10"/>
-	<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="180,142" render="Progress" size="1000,6" source="Event" transparent="0" zPosition="1">
+	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="950,85" size="420,45" transparent="1" zPosition="10"/>
+	<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="160,160" render="Progress" size="1190,6" source="Event" transparent="0" zPosition="1">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="75,15" size="75,75" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<eLabel backgroundColor="OE_NewBg2" position="165,0" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
-	<eLabel backgroundColor="white" position="170,35" size="230,2" transparent="0" zPosition="2"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="440,0" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
-	    <convert type="ClockToText"></convert>
-	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="175,0" zPosition="3" render="Label" size="230,35" source="global.CurrentTime" transparent="1">
-	    <convert type="ClockToText">Date</convert>
-	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="170,35" zPosition="3" render="Label" size="250,35" source="global.CurrentTime" transparent="1">
-	    <convert type="ClockToText">FullDate</convert>
-	</widget>
-	<widget source="Event" render="Label" font="RegularBold;28" backgroundColor="OE_NewBg2" foregroundColor="white" position="65,90" size="100,45" halign="center" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="155,130" size="80,45" halign="center" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="Event" render="Label" font="RegularBold;28" backgroundColor="OE_NewBg2" foregroundColor="white" position="65,151" size="100,45" halign="center" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="1275,130" size="80,45" halign="center" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
+	<!-- Clock -->
+	<eLabel backgroundColor="OE_NewBg2" position="1460,0" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" position="1470,35" size="230,2" transparent="0" zPosition="2"/>
+	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="1725,0" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	    <convert type="ClockToText"></convert>
+	</widget>
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="1460,0" zPosition="3" render="Label" size="230,35" source="global.CurrentTime" transparent="1">
+	    <convert type="ClockToText">Date</convert>
+	</widget>
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="1460,35" zPosition="3" render="Label" size="250,35" source="global.CurrentTime" transparent="1">
+	    <convert type="ClockToText">FullDate</convert>
+	</widget>
 	<!-- Screen Colors -->
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="100,1080" zPosition="-11" valign="center"/>
-	<eLabel backgroundColor="blue_light" name="" position="180,930" size="1660,2" zPosition="-9"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="45,center" size="100,1080" zPosition="-11" valign="center"/>
+	<eLabel backgroundColor="blue_light" name="" position="160,930" size="1680,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="30,72" size="1830,2" zPosition="-15"/>
 	<eLabel backgroundColor="blue_light" name="" position="30,72" size="2,938" zPosition="-15"/>
 	<eLabel backgroundColor="blue_light" name="" position="30,1008" size="1830,2" zPosition="-15"/>
 	<eLabel backgroundColor="blue_light" name="" position="1858,72" size="2,938" zPosition="-15"/>
 	<!-- Buttons -->
-	<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="82,875" size="64,43" alphatest="blend"/>
-	<ePixmap name="new ePixmap" pixmap="buttons/key_info.png" position="82,920" size="64,43" alphatest="blend"/>
-	<ePixmap name="new ePixmap" pixmap="buttons/key_help.png" position="82,965" size="64,43" alphatest="blend"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="62,875" size="64,43" alphatest="blend"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_info.png" position="62,920" size="64,43" alphatest="blend"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_help.png" position="62,965" size="64,43" alphatest="blend"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="180,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="570,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="975,950" size="40,40"/>
@@ -221,6 +220,7 @@
 	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="615,935" size="300,70" name="key_green" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="1020,935" size="300,70" name="key_yellow" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="1435,935" size="400,70" name="key_blue" transparent="1" zPosition="1"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="55,85" size="75,75" transparent="1" zPosition="1"/>
   </screen>
 	<!-- STANDARD SCREEN -->
   <screen name="StanDardScreen">
