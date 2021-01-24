@@ -591,40 +591,46 @@
 	    <convert type="MSNWeather">observationtime</convert>
 	</widget>
   </screen>
+	<!-- MAIN MENU INFORMATION (NEW) -->
+	<!-- INFO COMMON -->
+  <screen name="Information" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+	<panel name="TemplateInformation"/>
+	<widget name="information" position="410,140" size="1505,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="FHD;30" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" leftColAlign="left" rightColAlign="left" split="1" transparent="1"/>
+  </screen>
 	<!-- MAIN MENU INFORMATION -->
 	<!-- INFO SERVICE -->
   <screen name="ServiceInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="infolist" itemHeight="40" font="FHD;30" selectionDisabled="1" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="410,140" size="1505,805" transparent="1"/>
   </screen>
 	<!-- INFO ABOUT -->
   <screen name="About" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" font="FHD;30" foregroundColor="white" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="410,140" size="1505,805" halign="left" transparent="1"/>
   </screen>
 	<!-- INFO OPENVISION -->
   <screen name="OpenVisionInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" scrollbarSliderForegroundColor="blue_light" font="FHD;30" backgroundColor="OE_Background" position="410,140" size="1505,805" transparent="1"/>
   </screen>
 	<!-- INFO DVB -->
   <screen name="DVBInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" font="FHD;30" backgroundColor="OE_Background" position="410,140" size="1505,805" transparent="1"/>
   </screen>
 	<!-- INFO GEOLOCATION -->
   <screen name="Geolocation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" font="FHD;30" backgroundColor="OE_Background" position="410,140" size="1505,805" transparent="1"/>
   </screen>
 	<!-- INFO BENCHMARK -->
   <screen name="BenchmarkInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" font="FHD;30" backgroundColor="OE_Background" position="410,140" size="1505,805" transparent="1"/>
   </screen>
 	<!-- INFO NETWORK STB -->
   <screen name="SystemNetworkInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="devicepic" position="1231,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
 	<widget name="AboutScrollLabel" position="410,147" size="1505,680" font="FHD;30" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="IFtext" render="Label" position="410,901" size="120,40" font="FHD;30" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
@@ -634,7 +640,7 @@
   </screen>
 	<!-- INFO DEVICES STB -->
   <screen name="Devices" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget source="TunerHeader" render="Label" position="410,147" size="1055,40" font="FHD;30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
 	<widget source="nims" render="Label" position="410,180" size="1505,400" font="FHD;30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top" zPosition="1"/>
 	<widget source="HDDHeader" render="Label" position="410,585" size="1055,40" font="FHD;30" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
@@ -644,28 +650,28 @@
   </screen>
 	<!-- INFO MEMORY STB -->
   <screen name="SystemMemoryInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" position="410,140" size="1505,805" font="FHD;30" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1"/>
   </screen>
 	<!-- SUBMENUS ABOUT -->
 	<!-- COMMIT INFO -->
   <screen name="CommitInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" font="FHD;30" scrollbarSliderForegroundColor="blue_light" foregroundColor="white" backgroundColor="OE_Background" position="410,140" size="1505,805" transparent="1"/>
   </screen>
   <screen name="CommitInfoDevelop" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="news" font="FHD;30" scrollbarSliderForegroundColor="blue_light" foregroundColor="white" backgroundColor="OE_Background" position="410,140" size="1505,805" transparent="1"/>
   </screen>
 	<!-- TRANSLATION INFO -->
   <screen name="TranslationInfo" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget source="TranslatorName" render="Label" position="410,150" size="680,70" font="FHD;30"/>
 	<widget source="TranslationInfo" render="Label" position="410,250" size="680,250" font="FHD;30"/>
   </screen>
 	<!-- TROUBLESHOOT -->
   <screen name="Troubleshoot" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" font="Console;25" backgroundColor="OE_Background" position="410,135" size="1505,810" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="1195,970" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="1259,970" size="64,43"/>
@@ -674,7 +680,7 @@
   </screen>
 	<!-- MEMORY INFO -->
   <screen name="MemoryInfo" title="MemoryInfo" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="params" rowsincolumn="25"/>
 	<widget name="lmemtext" position="395,140" backgroundColor="OE_Background" size="225,855" zPosition="7" font="FHD;24" halign="right" transparent="1"/>
 	<widget name="lmemvalue" position="630,140" backgroundColor="OE_Background" size="230,855" zPosition="8" font="FHD;24" halign="left" transparent="1"/>
@@ -3665,14 +3671,20 @@
   <screen name="CronTimers" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="lab1" position="110,150" size="240,50" font="FHD;32" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="lab1" position="110,150" size="330,50" font="FHD;32" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="labdisabled" position="405,150" size="210,50" font="FHD;32" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
 	<widget name="labactive" position="405,150" size="210,50" zPosition="1" font="FHD;32" valign="center" halign="center" backgroundColor="green"/>
 	<widget name="lab2" position="110,215" size="330,50" font="FHD;32" backgroundColor="OE_Background" valign="center" transparent="1"/>
 	<widget name="labstop" position="405,215" size="210,50" font="FHD;32" valign="center" halign="center" backgroundColor="red"/>
 	<widget name="labrun" position="405,215" size="210,50" zPosition="1" font="FHD;32" valign="center" halign="center" backgroundColor="green"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="170,275" size="718,590" font="FHD;32" transparent="1">
-	    <convert type="StringList"/>
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="110,285" size="1255,580" transparent="1">
+	    <convert type="TemplatedMultiContent">
+		{"template": [ MultiContentEntryText(pos = (20, 7), size = (1230, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
+		],
+		"fonts": [gFont("RegularBold", 26),gFont("RegularBold", 26)],
+		"itemHeight": 50
+		}
+	    </convert>
 	</widget>
 	<eLabel backgroundColor="blue_light" position="110,877" size="1255,2" zPosition="2"/>
 	<widget name="key" position="110,895" size="1255,50" font="FHD;32" valign="center" halign="center" transparent="1" backgroundColor="OE_Background" foregroundColor="blue_light"/>
@@ -4074,7 +4086,7 @@
   </screen>
 	<!-- VISION MENU-->
   <screen name="VISIONMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<eLabel backgroundColor="blue_light" position="410,857" size="1550,2" zPosition="2"/>
 	<widget source="menu" render="Listbox" position="410,140" zPosition="2" size="1550,710" backgroundColor="OE_Background" scrollbarMode="showOnDemand" transparent="1">
 	    <convert type="TemplatedMultiContent">
@@ -4099,7 +4111,7 @@
   </screen>
 	<!-- MOUNT MANAGER-->
   <screen name="VISIONDevicesPanel" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget source="list" render="Listbox" position="410,145" size="1505,650" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" transparent="1" scrollbarMode="showOnDemand">
 	    <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4116,14 +4128,14 @@
 	<ePixmap pixmap="buttons/key_menu.png" position="160,900" size="64,43" alphatest="blend"/>
 	</screen>
   <screen name="VISIONDevicePanelConf" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
 	<widget name="config" itemHeight="60" position="410,150" size="1400,740" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;22" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="Linconn" backgroundColor="OE_Background" foregroundColor="blue_light" position="455,850" size="640,50" transparent="1" valign="top"/>
   </screen>
 	<!--VISION BACKUP MANAGER -->
   <screen name="VISIONBackupManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="95,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="165,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_info.png" position="235,900" size="64,43" alphatest="blend"/>
@@ -4135,19 +4147,19 @@
 	</applet>
   </screen>
   <screen name="VISIONBackupManagerLogView" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="165,900" size="64,43" alphatest="blend"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1505,820" transparent="1"/>
   </screen>
   <screen name="VISIONBackupManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,940" transparent="1"/>
   </screen>
   <screen name="XtraPluginsSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
 	<widget name="lab7" position="580,120" size="400,150" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
@@ -4155,7 +4167,7 @@
   </screen>
 	<!-- VISION IMAGE MANAGER-->
   <screen name="VISIONImageManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
 	<widget name="lab7" position="950,130" size="400,160" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
@@ -4166,14 +4178,14 @@
 	</applet>
   </screen>
   <screen name="VISIONImageManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,630" transparent="1"/>
   </screen>
   <screen name="ImageManagerDownload" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="lab7" position="950,130" size="400,150" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1505,640" transparent="1"/>
 	<applet type="onLayoutFinish">
@@ -4182,7 +4194,7 @@
   </screen>
 	<!-- OPKG INSTALL-->
   <screen name="VISIONIPKInstaller" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="lab7" position="950,130" size="400,150" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1505,640" transparent="1"/>
 	<applet type="onLayoutFinish">
@@ -4192,7 +4204,7 @@
 	</screen>
 	<!-- SCRIPT RUNNER-->
   <screen name="VISIONScriptRunner" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1505,800" transparent="1"/>
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
@@ -4200,7 +4212,7 @@
   </screen>
 	<!-- SWAP MANAGER-->
   <screen name="VISIONSwap" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="160,900" size="64,43" alphatest="blend"/>
 	<widget name="autostart_off" position="410,190" zPosition="1" pixmap="extensions/lock_off.png" size="35,35" alphatest="blend"/>
 	<widget name="autostart_on" position="410,190" zPosition="2" pixmap="extensions/lock_on.png" size="35,35" alphatest="blend"/>
@@ -4215,7 +4227,7 @@
   </screen>
 	<!-- SOFTCAM VISION-->
   <screen name="VISIONSoftcamManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="lab8" position="330,275" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 	<widget name="activecam" position="530,275" size="350,75" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
 	<widget name="lab7" position="850,150" size="400,50" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
@@ -4227,29 +4239,29 @@
 	</applet>
   </screen>
   <screen name="VISIONSoftcamMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1400,740" transparent="1"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,900" size="64,43" alphatest="blend"/>
   </screen>
   <screen name="VISIONSoftcamLog" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="list" font="RegularBold;25" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="410,140" zPosition="10" size="1505,800" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="160,900" size="64,43"/>
   </screen>
   <screen name="VISIONStopCam" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="connect" position="530,235" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy24.png" transparent="1" alphatest="blend"/>
 	<widget name="lab7" position="570,255" halign="center" size="503,80" zPosition="1" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" valign="top" transparent="1"/>
   </screen>
   <screen name="VISIONStartCam" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="connect" position="530,235" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy24.png" transparent="1" alphatest="blend"/>
 	<widget name="lab7" position="570,255" halign="center" size="503,80" zPosition="1" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" valign="top" transparent="1"/>
   </screen>
 	<!-- CLIENT MODE BOX SETUP-->
   <screen name="ClientModeBoxMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="160,900" size="64,43"/>
 	<eLabel backgroundColor="blue_light" name="" position="410,865" size="1550,2" zPosition="-9"/>
 	<widget name="config" itemHeight="60" position="410,150" size="1400,710" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
@@ -4259,12 +4271,12 @@
 	</widget>
   </screen>
   <screen name="ClientModeBoxAbout" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="160,900" size="64,43"/>
 	<widget name="about" position="410,150" size="1280,800" font="RegularBold;28" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <screen name="ClientModeBoxWizard" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-	<panel name="TemplateAbout"/>
+	<panel name="TemplateInformation"/>
 	<widget name="text" font="FHD;30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="410,160" size="900,150" transparent="1"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="410,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1500,500" transparent="1">
 	    <convert type="TemplatedMultiContent">

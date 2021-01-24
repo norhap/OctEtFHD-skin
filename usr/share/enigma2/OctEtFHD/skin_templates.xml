@@ -30,7 +30,7 @@
 	</widget>
   </screen>
 	<!-- CLOCK INFORMATION -->
-  <screen name="ClockBgAbout">
+  <screen name="ClockBgInformation">
 	<eLabel backgroundColor="OE_NewBg2" position="0,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
 	<eLabel backgroundColor="white" position="80,93" size="230,2" transparent="0" zPosition="2"/>
 	<widget backgroundColor="OE_NewBg" font="RegularBold;34" halign="left" position="150,5" zPosition="3" render="Label" size="100,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
@@ -73,7 +73,7 @@
 	<widget source="Title" render="Label" font="RegularBold;29" backgroundColor="OE_Background" position="95,58" size="1290,80" halign="center" valign="top" transparent="1"/>
 	<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" position="95,0" size="1290,70" halign="center" valign="top" transparent="1"/>
   </screen>
-  <screen name="TitleAbout">
+  <screen name="TitleInformation">
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="405,55" size="1550,90" halign="center" valign="center" transparent="1"/>
 	<widget source="ScreenPath" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="405,10" size="1550,105" halign="center" valign="center" transparent="1"/>
   </screen>
@@ -108,7 +108,7 @@
 	<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="1105,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
 	<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE SCREENS ABOUT-->
-  <screen name="ButtonsAbout">
+  <screen name="ButtonsInformation">
 	<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="410,970" size="40,40"/>
 	<ePixmap objectTypes="key_green,Button,Label" alphatest="blend" pixmap="buttons/key_green.png" position="795,970" size="40,40"/>
 	<ePixmap objectTypes="key_yellow,Button,Label" alphatest="blend" pixmap="buttons/key_yellow.png" position="1180,970" size="40,40"/>
@@ -257,9 +257,9 @@
   </screen>
 	<!-- SCREEN OPENVISION-->
   <screen name="ScreenOpenVision">
-	<panel name="ClockBgAbout"/>
-	<panel name="TitleAbout"/>
-	<panel name="ButtonsAbout"/>
+	<panel name="ClockBgInformation"/>
+	<panel name="TitleInformation"/>
+	<panel name="ButtonsInformation"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1980,990" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="400,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="0,45" size="1920,2" zPosition="-15"/>
@@ -291,10 +291,10 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="80,1077" size="970,3" zPosition="-9"/>
   </screen>
 	<!-- ABOUT STANDARD -->
-  <screen name="TemplateAbout">
-	<panel name="ClockBgAbout"/>
-	<panel name="TitleAbout"/>
-	<panel name="ButtonsAbout"/>
+  <screen name="TemplateInformation">
+	<panel name="ClockBgInformation"/>
+	<panel name="TitleInformation"/>
+	<panel name="ButtonsInformation"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1920,990" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="0,45" size="1920,2" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="0,1035" size="1920,2" zPosition="-15"/>
