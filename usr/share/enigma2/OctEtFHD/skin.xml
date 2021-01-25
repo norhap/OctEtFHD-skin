@@ -439,7 +439,6 @@
 	<eLabel backgroundColor="blue_light" position="55,625" size="380,2" transparent="0" zPosition="-1" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" position="55,955" size="380,2" transparent="0" zPosition="-1" foregroundColor="blue_light"/>
 	<eLabel backgroundColor="blue_light" name="" position="465,955" size="1235,2" zPosition="-22" foregroundColor="white"/>
-	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="665,683" size="1020,2"/>
 	<widget alphatest="blend" position="135,10" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 	    <convert type="ServiceName2">Reference</convert>
 	</widget>
@@ -481,17 +480,18 @@
 	<widget source="session.Event_Now" render="Progress" pixmap="colors/00A4C400.png" backgroundColor="blue_light" position="665,225" size="1020,6" transparent="0" zPosition="10">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" font="RegularBold;30" halign="left" noWrap="1" position="665,635" render="Label" size="110,48" source="session.Event_Next" transparent="1" valign="top">
+	<widget backgroundColor="OE_ListBackground" font="RegularBold;30" halign="left" noWrap="1" position="665,625" render="Label" size="110,48" source="session.Event_Next" transparent="1" valign="top">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="session.Event_Next" font="RegularBold;30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" halign="left" position="775,635" size="730,48" transparent="1" valign="top">
+	<widget source="session.Event_Next" font="RegularBold;30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" halign="left" position="775,625" size="730,48" transparent="1" valign="top">
 	    <convert type="EventName">Name</convert>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" font="RegularBold;30" halign="right" position="1521,635" render="Label" size="165,48" source="session.Event_Next" transparent="1">
+	<widget backgroundColor="OE_ListBackground" font="RegularBold;30" halign="right" position="1521,625" render="Label" size="165,48" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">Duration</convert>
 	    <convert type="ClockToText">InMinutes</convert>
 	</widget>
+	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="665,673" size="1020,2"/>
 	<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/ip_tv.png" position="1038,967" size="63,32" zPosition="2" alphatest="blend">
 	    <convert type="ClientsStreaming"/>
 	    <convert type="ConditionalShowHide">Blink</convert>
@@ -555,10 +555,10 @@
 	    <convert type="ValueRange">1921,3841</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" position="665,235" size="1020,388" font="RegularBold;25" zPosition="1" backgroundColor="OE_ListBackground" transparent="1" halign="left">
+	<widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" position="665,235" size="1020,380" font="RegularBold;25" zPosition="1" backgroundColor="OE_ListBackground" transparent="1" halign="left">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
-	<widget source="session.Event_Next" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" position="665,690" size="1020,260" font="RegularBold;25" zPosition="1" backgroundColor="OE_ListBackground" transparent="1" halign="left" foregroundColor="grey">
+	<widget source="session.Event_Next" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" position="665,680" size="1020,270" font="RegularBold;25" zPosition="1" backgroundColor="OE_ListBackground" transparent="1" halign="left" foregroundColor="grey">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
   <!-- CryptoInfo -->
@@ -1317,7 +1317,7 @@
 	<widget alphatest="blend" name="timeline4" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
 	<widget alphatest="blend" name="timeline5" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="160,365" size="1698,2"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="160,170" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="1200,190" source="Event" transparent="1" valign="top">
+	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="160,180" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="1200,180" source="Event" transparent="1" valign="top">
 	    <convert type="EventName">FullDescription</convert>
 	</widget>
   </screen>
@@ -1447,7 +1447,7 @@
 	<widget alphatest="blend" name="more_button" pixmap="colors/epg_label.png" position="101,473" size="0,0" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="more_button_sel" pixmap="colors/epg_label.png" position="101,473" size="229,49" transparent="1" zPosition="2"/>
 	<widget name="list" font="RegularBold;28" itemHeight="50" setEventItemFont="RegularBold;26" setEventTimeFont="RegularBold;26" setColWidths="290,180" setColGap="20" setTimeWidth="155" setIconDistance="10" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="380,155" size="1460,550" transparent="1"/>
-	<widget source="Event" font="RegularBold;26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="380,720" size="1460,205" halign="left" transparent="1" valign="top">
+	<widget source="Event" font="RegularBold;26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="380,715" size="1460,210" halign="left" transparent="1" valign="top">
 	    <convert type="EventName">FullDescription</convert>
 	</widget>
   </screen>
@@ -1849,7 +1849,7 @@
 	</widget>
 	<widget name="chosenletter" position="300,885" size="100,50" font="RegularBold;24" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
 	<widget name="TrashcanSize" position="80,930" size="305,50" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
-	<widget name="freeDiskSpace" position="80,985" size="440,90" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
+	<widget name="freeDiskSpace" position="80,980" size="440,90" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
 	<widget name="movie_sort" pixmaps="/usr/share/enigma2/skin_default/icons/az.png,/usr/share/enigma2/skin_default/icons/newtop.png,/usr/share/enigma2/skin_default/icons/shuffle.png,/usr/share/enigma2/skin_default/icons/za.png,/usr/share/enigma2/skin_default/icons/oldtop.png,/usr/share/enigma2/skin_default/icons/faz.png,/usr/share/enigma2/skin_default/icons/fza.png,/usr/share/enigma2/skin_default/icons/default.png" position="420,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
 	<widget name="movie_off" pixmaps="/usr/share/enigma2/skin_default/icons/ask.png,/usr/share/enigma2/skin_default/icons/movielist.png,/usr/share/enigma2/skin_default/icons/quit.png,/usr/share/enigma2/skin_default/icons/pause.png,/usr/share/enigma2/skin_default/icons/playlist.png,/usr/share/enigma2/skin_default/icons/playlistquit.png,/usr/share/enigma2/skin_default/icons/loop.png,/usr/share/enigma2/skin_default/icons/rep.png" position="470,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
 	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="80,410" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="440,460" source="Service" transparent="1" valign="top" zPosition="1">
@@ -2930,7 +2930,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="18,980" size="64,43"/>
 	<widget name="timerlist" itemHeight="95" setEventNameFont="RegularBold;21" setServiceNameFont="RegularBold;22" setFont="RegularBold;23" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="110,140" satPosLeft="400" rowSplit="45" size="1255,820" transparent="1"/>
 	<widget name="key_info" conditional="key_info" position="48,960" size="0,0" zPosition="-20"/>
-	<widget name="description" objectTypes="description,Button,Label" position="1395,425" size="515,635" font="RegulardBold;22" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
+	<widget name="description" objectTypes="description,Button,Label" position="1395,440" size="515,635" font="RegularBold;21" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 	<!-- TIMERENTRY -->
   <screen name="TimerEntry" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
