@@ -423,7 +423,7 @@
 	    </convert>
 	</widget>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- SECOND INFOBAR -->
   <screen name="SecondInfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
@@ -567,7 +567,7 @@
 	</widget>
 <!--	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="575,965" size="63,32" transparent="1" alphatest="blend" zPosition="3"/> -->
 	<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="470,965" size="98,31" alphatest="blend" zPosition="3"/>
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
 	 <!-- MSNWeather -->
 	<widget alphatest="blend" render="MSNWeatherPixmap" position="55,700" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
 	    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
@@ -714,7 +714,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="170,960" size="40,40"/>
 	<widget name="key_blue" font="Regular;28" backgroundColor="OE_Background" position="220,960" size="300,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- AUDIOSELECTION -->
   <screen name="AudioSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -770,7 +770,7 @@
 	    <convert type="ConditionalShowHide"/>
 	</widget>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- AUTOTIMER -->
   <screen name="AutoTimerOverview" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -862,7 +862,7 @@
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="290,850" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="AutoResSetupMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -1042,7 +1042,7 @@
 	<widget name="key_yellow" font="Regular;28" backgroundColor="OE_Background" position="1225,950" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="key_blue" font="Regular;28" backgroundColor="OE_Background" position="1475,950" size="200,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="ChannelSelectionRadio" title="ChannelSelectionRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -1089,7 +1089,7 @@
 	<eLabel backgroundColor="white" name="" position="170,200" size="1255,2" zPosition="-9"/>
 	<widget name="entries" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,210" size="1255,750" transparent="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="CIselectMainMenu" title="CI Assignment" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -1105,7 +1105,7 @@
 	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="CIconfigMenu" title="CI Assignment" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -1129,7 +1129,7 @@
 	<widget source="key_yellow" render="Label" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_blue" render="Label" font="Regular;28" backgroundColor="OE_Background" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="easyCIconfigMenu" title="CI Assignment" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -1149,7 +1149,7 @@
 	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_yellow" render="Label" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="CAidSelect" title="select CAId's" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -1167,7 +1167,7 @@
 	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="MMIDialog" title="Common Interface" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -1179,7 +1179,7 @@
 	<widget name="entries" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,210" size="1255,700" transparent="1"/>
 	<widget name="bottom" font="FHD;30" backgroundColor="OE_Background" position="170,940" size="1255,45" transparent="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="myProviderSelection" title="Select provider to add..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -1201,7 +1201,7 @@
 	<widget source="key_yellow" render="Label" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_blue" render="Label" font="Regular;28" backgroundColor="OE_Background" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="myChannelSelection" title="Select service to add..." backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -1223,7 +1223,7 @@
 	<widget source="key_yellow" render="Label" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_blue" render="Label" font="Regular;28" backgroundColor="OE_Background" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- CONSOLE -->
   <screen name="Console" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -1297,7 +1297,7 @@
 	    <convert type="ServiceInfo">VideoHeight</convert>
 	</widget>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="DirectoryBrowser" title="Directorybrowser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -1348,28 +1348,29 @@
   <screen name="EventView" title="Eventview" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="MultiEventViewEPG"/>
 	<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="80,535" size="267,2" zPosition="-9"/>
 	<widget name="epg_eventname" position="85,122" size="0,0" font="Regular;22" halign="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="datetime" position="65,88" size="300,45" backgroundColor="OE_NewBg2" font="RegularBold;23" halign="center" valign="center" transparent="1" zPosition="2"/>
+	<widget source="Event" render="Progress" backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="70,140" size="290,6" transparent="0" zPosition="3">
+	    <convert type="EventTime">Progress</convert>
+	</widget>
 	<widget name="channel" font="FHD;34" backgroundColor="OE_Background" position="380,85" size="830,50" halign="left" transparent="1"/>
-
-	<widget name="datetime" position="65,88" size="300,45" backgroundColor="OE_Background" font="RegularBold;23" halign="center" valign="center" transparent="1"/>
-	<widget source="Event" render="Label" font="RegularBold;30" position="110,160" size="90,45" zPosition="2" halign="left" backgroundColor="OE_Background" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;30" position="125,160" size="90,45" zPosition="2" halign="left" backgroundColor="OE_NewBg2" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="Event" render="Label" font="RegularBold;30" position="200,160" size="90,45" zPosition="2" halign="right" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;30" position="200,160" size="90,45" zPosition="2" halign="right" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget name="duration" backgroundColor="OE_Background" font="RegularBold;30" halign="center" position="115,215" size="195,45" transparent="1"/>
-	<widget source="Event" render="Label" position="115,275" size="195,45" transparent="1" zPosition="1" backgroundColor="OE_Background" font="RegularBold;30" halign="center">
+	<widget name="duration" foregroundColor="blue_light" backgroundColor="OE_NewBg2" font="RegularBold;30" halign="center" position="115,215" size="195,45" transparent="1" zPosition="2"/>
+	<widget source="Event" render="Label" position="115,275" size="195,45" transparent="1" zPosition="2" backgroundColor="OE_NewBg2" font="RegularBold;30" halign="center">
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">InMinutes</convert>
 	</widget>
 	<widget alphatest="blend" position="105,335" render="Picon" size="220,132" source="Title" transparent="1" zPosition="5">
 	    <convert type="RefString">CurrentRef</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="FHD;30" name="epg_description" position="380,160" size="1460,750" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;30" name="epg_description" position="380,160" size="1460,750" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="my_icons/dolby_off.png" position="216,490" size="63,32" zPosition="1"/>
 	<widget alphatest="blend" pixmap="my_icons/dolby_on.png" position="216,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
 	    <convert type="ServiceInfo">IsMultichannel</convert>
@@ -1424,34 +1425,27 @@
 	    <convert type="ServiceInfo">SubtitlesAvailable</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="Event" render="Progress" backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="70,140" size="290,6" transparent="0" zPosition="1">
-	    <convert type="EventTime">Progress</convert>
-	</widget>
   </screen>
 	<!-- MULTI SELECTION EPG -->
   <screen name="EPGSelectionMulti" title="EPG Selection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="MultiEventViewEPG"/>
-	<eLabel backgroundColor="blue_light" name="" position="80,715" size="270,2" zPosition="-9"/>
-	<eLabel backgroundColor="blue_light" name="" position="80,930" size="270,2" zPosition="-9"/>
-	<eLabel backgroundColor="blue_light" name="" position="380,930" size="1460,2" zPosition="-9"/>
+	<widget name="date" backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="blue_light" halign="center" position="65,75" size="300,43" transparent="1" zPosition="2"/>
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_NewBg2" foregroundColor="white" position="65,15" size="300,50" halign="center" valign="center" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="80,142" size="270,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget source="Service" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="380,85" size="830,50" transparent="1">
 	    <convert type="ServiceName">Name</convert>
 	</widget>
-	<widget name="now_text" text="NOW" backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="white" halign="center" position="104,178" size="223,43" transparent="1"/>
-	<widget name="next_text" text="NEXT" backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="white" halign="center" position="104,327" size="223,43" transparent="1"/>
-	<widget name="more_text" text="MORE" backgroundColor="OE_Background" font="FHD;30" foregroundColor="white" halign="center" position="104,476" size="223,43" transparent="1"/>
-	<widget name="date" backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="blue_light" halign="center" position="65,670" size="300,43" transparent="1"/>
+	<widget name="now_text" text="NOW" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="104,178" size="223,43" transparent="1" zPosition="2"/>
+	<widget name="next_text" text="NEXT" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="104,327" size="223,43" transparent="1" zPosition="2"/>
+	<widget name="more_text" text="MORE" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="104,476" size="223,43" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" position="100,790" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
+	    <convert type="ServiceName2">Reference</convert>
+	</widget>
 	<widget alphatest="blend" name="now_button_sel" pixmap="colors/epg_label.png" position="101,175" size="229,49" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="now_button" pixmap="colors/epg_label.png" position="101,175" size="0,0" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="next_button" pixmap="colors/epg_label.png" position="101,324" size="0,0" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="next_button_sel" pixmap="colors/epg_label.png" position="101,324" size="229,49" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="more_button" pixmap="colors/epg_label.png" position="101,473" size="0,0" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="more_button_sel" pixmap="colors/epg_label.png" position="101,473" size="229,49" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" position="150,77" render="Picon" size="100,60" source="Service" transparent="1" zPosition="5">
-	    <convert type="ServiceName2">Reference</convert>
-	</widget>
 	<widget name="list" font="RegularBold;28" itemHeight="50" setEventItemFont="RegularBold;26" setEventTimeFont="RegularBold;26" setColWidths="290,180" setColGap="20" setTimeWidth="155" setIconDistance="10" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="380,155" size="1460,550" transparent="1"/>
 	<widget source="Event" font="RegularBold;26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="380,720" size="1460,205" halign="left" transparent="1" valign="top">
 	    <convert type="EventName">FullDescription</convert>
@@ -1500,7 +1494,7 @@
 	<eLabel text="Wait ..." font="FHD;34" backgroundColor="OE_Background" position="170,73" size="1255,50" transparent="1"/>
 	<widget name="wait" font="FHD;30" backgroundColor="OE_Background" position="170,165" size="1255,800" transparent="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- HDMI CEC -->
   <screen name="HdmiCECSetupScreen" title="HDMI CEC setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -1512,7 +1506,7 @@
   </screen>
 	<!-- HELP MENU -->
   <screen name="HelpMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<panel name="ClockBg" />
+	<panel name="Clock" />
 	<panel name="TemplatePip" />
 	<panel name="HelpMenuOld" conditional="arrowdown" />
 	<panel name="HelpMenuNew" conditional="indicatorU0" />
@@ -1656,7 +1650,7 @@
 	<widget name="package" backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="white" position="240,480" size="960,90" transparent="1" valign="top" halign="left"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="107,center" size="78,75" zPosition="4"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="OpkgInstaller" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -1763,7 +1757,7 @@
 	    <convert type="ServicePosition">Position</convert>
 	</widget>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="0,0" size="1920,1080" title="InfoBar">
 	<eLabel backgroundColor="OE_Background" name="InfoBar" position="center,910" size="1780,125" zPosition="-11"/>
@@ -1832,7 +1826,7 @@
 	    <convert type="ServiceInfo">VideoHeight</convert>
 	</widget>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- MOVIESELECTION -->
   <screen name="MovieSelection" title="Select a movie" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -1915,7 +1909,7 @@
 	<eLabel text="Movielist menu" font="FHD;34" backgroundColor="OE_Background" position="170,73" size="820,50" transparent="1"/>
 	<widget name="menu" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,145" size="820,850" transparent="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="MovieBrowserConfiguration" title="Movie Browser Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2039,7 +2033,7 @@
 	<widget name="label" font="FHD;30" backgroundColor="OE_Background" position="180,480" size="900,150" transparent="1" halign="center" valign="center" foregroundColor="white"/>
 	<ePixmap alphatest="blend" pixmap="icons/input_info.png" position="80,center" size="80,80" zPosition="4"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- SCAN IP -->
   <screen name="ScanIP" title="Scan IP" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -2059,7 +2053,7 @@
 	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" source="key_green" render="Label" position="505,620" size="240,40" transparent="1" zPosition="1"/>
 	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" source="key_yellow" render="Label" position="795,620" size="280,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- WLANSCAN -->
   <screen name="WlanScan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2300,7 +2294,7 @@
 	<eLabel text="Change pin code" font="FHD;34" backgroundColor="OE_Background" position="170,73" size="1255,50" transparent="1"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,150" size="1255,850" transparent="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="ParentalControlEditor" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -2310,7 +2304,7 @@
 	<eLabel text="Parental control services Editor" font="FHD;34" backgroundColor="OE_Background" position="170,73" size="1255,50" transparent="1"/>
 	<widget name="servicelist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,150" size="1255,850" transparent="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- PARENTAL CONTROL SETUP -->
   <screen name="ParentalControlSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2330,7 +2324,7 @@
 	<widget name="input" font="RegularBold;30" backgroundColor="OE_Background" position="180,620" size="1000,50" transparent="1" halign="center"/>
 	<ePixmap alphatest="blend" pixmap="icons/input_info.png" position="80,center" size="80,80" zPosition="4"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="PinInputPopup" title="Change pin code" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1170,290" zPosition="-15"/>
@@ -2344,7 +2338,7 @@
 	<widget name="input" font="RegularBold;30" backgroundColor="OE_Background" position="180,620" size="1000,50" transparent="1" halign="center"/>
 	<ePixmap alphatest="blend" pixmap="icons/input_info.png" position="80,center" size="80,80" zPosition="4"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="picshow" position="fill">
 	<panel name="StanDardScreen"/>
@@ -2406,7 +2400,7 @@
 	<widget source="key_red" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="480,960" size="270,40" transparent="1" zPosition="1"/>
 	<widget source="key_green" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="810,960" size="270,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- PLUGIN MANAGER-->
   <screen name="PluginManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2492,7 +2486,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
 	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="PVRState" backgroundColor="transparent" flags="wfNoBorder" position="80,105" size="270,74" zPosition="8">
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="10,0" size="60,74" zPosition="-10"/>
@@ -2553,7 +2547,7 @@
 	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
 	<widget source="key_yellow" render="Label" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="RestoreMenuImage" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -2571,7 +2565,7 @@
 	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
 	<widget source="key_yellow" render="Label" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="RestorePlugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -2597,7 +2591,7 @@
 	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
 	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="RestoreScreen" title="Restore is running" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2632,7 +2626,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_ok.png" position="78,907" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="78,960" size="64,43"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- NIMSETUP RECEPTION SETTINGS -->
   <screen name="NimSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2822,7 +2816,7 @@
 	<widget name="scan_state" position="220,520" size="1050,45" font="FHD;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="scan_progress" borderColor="darkgrey" borderWidth="2" pixmap="colors/00A4C400.png" position="220,585" size="1050,25" transparent="0"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- BLIND SCAN -->
   <screen name="Blindscan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2880,7 +2874,7 @@
 	<eLabel text="Subtitle selection" font="FHD;34" backgroundColor="OE_Background" position="170,73" size="1255,50" transparent="1"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,145" size="1255,850" transparent="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- TEXTBOX -->
   <screen name="TextBox" title="Message" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2894,7 +2888,7 @@
 	<eLabel backgroundColor="blue_light" name="" position="170,860" size="925,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="77,886" size="64,43"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="TimeDateInput" title="Time/Date Input" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1070,270" zPosition="-15"/>
@@ -2912,7 +2906,7 @@
 	<widget name="cancel" font="Regular;28" backgroundColor="OE_Background" position="215,620" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="ok" font="Regular;28" backgroundColor="OE_Background" position="545,620" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="TimerEdit" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1090,400" zPosition="-15"/>
@@ -2927,7 +2921,7 @@
 	<widget name="end" position="915,555" size="180,50" font="RegularBold;32" transparent="1" halign="right" backgroundColor="OE_Background" foregroundColor="white"/>
 	<widget name="apply" position="170,610" size="925,50" transparent="1" font="FHD;30" foregroundColor="white" backgroundColor="OE_Background"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- TIMEREDITLIST -->
   <screen name="TimerEditList" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2984,7 +2978,7 @@
 	<widget render="Label" source="key_yellow" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget render="Label" source="key_blue" font="Regular;28" backgroundColor="OE_Background" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="TimerSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -2994,7 +2988,7 @@
 	<eLabel text="Timer Selection" font="FHD;34" backgroundColor="OE_Background" position="170,73" size="1255,50" transparent="1"/>
 	<widget name="timerlist" itemHeight="80" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,145" size="1255,800" transparent="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="center,center" size="1920,1080" title="TimeshiftState">
 	<eLabel backgroundColor="OE_Background" name="InfoBar" position="center,910" size="1780,125" zPosition="-11"/>
@@ -3049,7 +3043,7 @@
 	<widget name="slider" borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,585" size="960,25" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="107,center" size="78,75" zPosition="4"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="UpdatePluginMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1350,650" zPosition="-15"/>
@@ -3081,7 +3075,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="490,812" size="40,40"/>
 	<widget source="key_red" render="Label" font="RegularBold;26" backgroundColor="OE_Background" halign="left" valign="center" position="540,812" size="320,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="SoftwareManagerSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -3099,7 +3093,7 @@
 	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="SoftwareManagerInfo" title="SoftwareManager information" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -3154,7 +3148,7 @@
 	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" position="215,670" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="545,670" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen backgroundColor="OE_Background" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1920,1080">
 	<widget position="center,center" render="Canvas" size="1280,800" source="Canvas"/>
@@ -3181,7 +3175,7 @@
 	<eLabel text="Keyboard" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<eLabel text="to shift" font="Regular;28" backgroundColor="OE_Background" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="VirtualKeyBoardmod" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" zPosition="99">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -3195,7 +3189,7 @@
 	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" halign="right" name="text" noWrap="1" position="255,227" size="1070,55" zPosition="3"/>
 	<widget name="list" selectionDisabled="1" position="325,310" size="950,620" transparent="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="DefaultWizard" title="Default Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1680,940" zPosition="-15"/>
@@ -3224,7 +3218,7 @@
 	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="DefaultSatLists" title="Default Sat Lists" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1680,940" zPosition="-15"/>
@@ -3253,7 +3247,7 @@
 	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="ImageWizard" title="Image Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1680,940" zPosition="-15"/>
@@ -3282,7 +3276,7 @@
 	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- INIT WIZARD-->
 	<!-- LANGUAJE WIZARD-->
@@ -3318,7 +3312,7 @@
 	<!-- Buttons-->
 	<eLabel backgroundColor="blue_light" name="" position="445,280" size="1255,2" zPosition="-9"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- VIDEO WIZARD-->
   <screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -3354,7 +3348,7 @@
 	<widget name="languagetext" backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" valign="center" position="145,1010" size="245,40" transparent="1" zPosition="1"/>
 	<widget name="portpic" position="1700,450" zPosition="10" size="150,150" transparent="1" alphatest="blend"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- VIDEO MODE-->
   <screen name="VideoMode" title="VideoMode" backgroundColor="transparent" flags="wfNoBorder" position="0,50" size="500,92" zPosition="8">
@@ -3400,7 +3394,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,1020" size="40,40" backgroundColor="OE_NewBg2"/>
 	<widget name="languagetext" backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" valign="center" position="115,1020" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- INSTALL WIZARD -->
   <screen name="InstallWizard" backgroundColor="transparent" title="Welcome..." position="0,center" size="1920,1080" transparent="0">
@@ -3453,7 +3447,7 @@
 	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="NetworkWizard" title="Network Wizard..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1680,940" zPosition="-15"/>
@@ -3482,7 +3476,7 @@
 	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
 	<eLabel backgroundColor="white" position="1375,106" size="180,2" transparent="0" zPosition="-10"/>
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <!-- OpenEight Screens -->
   <screen name="DeviceBrowser" title="Please select medium" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3501,7 +3495,7 @@
 	<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" halign="left" valign="center" position="220,960" size="270,40" transparent="1" zPosition="1"/>
 	<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" halign="left" valign="center" position="550,960" size="270,40" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
 	<!-- JOBVIEW -->
   <screen name="JobView" title="JobView" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
@@ -3525,7 +3519,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="240,785" size="40,40"/>
 	<eLabel text="Exit" font="RegularBold;24" backgroundColor="OE_Background" position="300,770" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="VFD_INISetup" title="LED Display Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -3552,7 +3546,7 @@
 	<widget name="key_yellow" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<widget name="key_blue" font="Regular;28" backgroundColor="OE_Background" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 	<!-- Clock -->
-	<panel name="ClockBg"/>
+	<panel name="Clock"/>
   </screen>
   <screen name="QuickMenuDevices" title="Devices" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
