@@ -2744,7 +2744,7 @@
 	<!-- SERVICES FOUND -->
   <screen name="ServicesFound" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<!-- Widget -->
+	<panel name="TemplateNoPip"/>
 	<widget name="legend" font="FHD;30" backgroundColor="OE_Background" position="110,185" size="1255,45" transparent="1"/>
 	<widget name="servicesfound" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="green_light" position="110,369" size="1255,550" transparent="1"/>
   </screen>

@@ -30,7 +30,7 @@
 	</widget>
   </screen>
 	<!-- CLOCK INFORMATION -->
-  <screen name="ClockBgInformation">
+  <screen name="ClockInformation">
 	<eLabel backgroundColor="OE_NewBg2" position="0,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
 	<eLabel backgroundColor="white" position="80,93" size="230,2" transparent="0" zPosition="2"/>
 	<widget backgroundColor="OE_NewBg" font="RegularBold;34" halign="left" position="150,5" zPosition="3" render="Label" size="100,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
@@ -297,7 +297,7 @@
   </screen>
 	<!-- SCREEN OPENVISION-->
   <screen name="ScreenOpenVision">
-	<panel name="ClockBgInformation"/>
+	<panel name="ClockInformation"/>
 	<panel name="TitleInformation"/>
 	<panel name="ButtonsInformation"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1980,990" zPosition="-15"/>
@@ -332,7 +332,7 @@
   </screen>
 	<!-- INFORMATION STANDARD -->
   <screen name="TemplateInformation">
-	<panel name="ClockBgInformation"/>
+	<panel name="ClockInformation"/>
 	<panel name="TitleInformation"/>
 	<panel name="ButtonsInformation"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,45" size="1920,990" zPosition="-15"/>
