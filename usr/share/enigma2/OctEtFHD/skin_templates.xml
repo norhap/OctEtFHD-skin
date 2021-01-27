@@ -397,19 +397,19 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
   </screen>
 	 <!-- DOWNLOADBAR-->
   <screen name="DownloadBar">
-	<widget name="action" position="35,30" size="400,70" halign="center" valign="center" font="RegularBold;26" backgroundColor="OE_NewBg2"/>
-	<widget name="status" position="450,15" size="635,70" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2"/>
+	<widget name="action" position="35,5" size="400,70" halign="center" valign="top" font="RegularBold;26" backgroundColor="OE_NewBg2"/>
+	<widget name="status" position="450,5" size="635,70" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="1100,10" size="75,75" transparent="1" zPosition="1"/>
-	<widget name="background" position="365,7" size="0,0" backgroundColor="OE_NewBg2"/>
-	<widget name="progress" position="1400,27" size="370,50" foregroundColor="blue_light" backgroundColor="OE_NewBg2"/>
-	<eLabel position="1400,27" size="370,2" backgroundColor="#0000fafa" zPosition="16"/>
-	<eLabel position="1398,27" size="2,50" backgroundColor="#0000fafa" zPosition="16"/>
-	<eLabel position="1400,75" size="370,2" backgroundColor="#0000fafa" zPosition="16"/>
-	<eLabel position="1770,27" size="2,50" backgroundColor="#0000fafa" zPosition="16"/>
-	<widget source="progress_text" render="Label" position="1270,35" size="135,50" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2">
+	<widget name="background" position="365,0" size="0,0" backgroundColor="OE_NewBg2"/>
+	<widget name="progress" position="1400,30" size="370,35" foregroundColor="blue_light" backgroundColor="OE_NewBg2"/>
+	<eLabel position="1400,30" size="370,2" backgroundColor="#0000fafa" zPosition="16"/>
+	<eLabel position="1398,30" size="2,37" backgroundColor="#0000fafa" zPosition="16"/>
+	<eLabel position="1400,65" size="370,2" backgroundColor="#0000fafa" zPosition="16"/>
+	<eLabel position="1770,30" size="2,37" backgroundColor="#0000fafa" zPosition="16"/>
+	<widget source="progress_text" render="Label" position="1270,30" size="135,50" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2">
 	    <convert type="ProgressToText">InText</convert>
 	</widget>
-	<widget source="progress_text" render="Label" position="1780,35" size="140,50" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2">
+	<widget source="progress_text" render="Label" position="1780,30" size="140,50" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2">
 	    <convert type="ProgressToText">InPercent</convert>
 	</widget>
   </screen>
