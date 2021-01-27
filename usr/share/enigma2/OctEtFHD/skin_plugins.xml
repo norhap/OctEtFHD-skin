@@ -7,21 +7,21 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Setup" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" font="FHD;32" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="110,140" size="1255,800" transparent="1"/>
-	<widget name="pleasewait" font="FHD;32" backgroundColor="OE_Background" foregroundColor="white" position="110,140" size="1255,50" transparent="1" zPosition="2"/>
+	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="110,140" size="1255,800" transparent="1"/>
+	<widget name="pleasewait" font="FHD;30" backgroundColor="OE_Background" foregroundColor="white" position="110,140" size="1255,50" transparent="1" zPosition="2"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_ProvidersSetup" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" font="FHD;32" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="110,140" size="1255,800" transparent="1"/>
-	<widget name="pleasewait" font="FHD;32" backgroundColor="OE_Background" foregroundColor="white" position="110,140" size="1255,50" transparent="1" zPosition="2"/>
+	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="110,140" size="1255,800" transparent="1"/>
+	<widget name="pleasewait" font="FHD;30" backgroundColor="OE_Background" foregroundColor="white" position="110,140" size="1255,50" transparent="1" zPosition="2"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Menu" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="110,165" size="1255,800" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="110,140" size="1255,800" transparent="1">
 	    <convert type="TemplatedMultiContent">
 							 {"template": [
 							 MultiContentEntryText(pos = (10, 0), size = (1300, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
@@ -51,13 +51,13 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Log" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" font="FHD;32" backgroundColor="OE_Background" foregroundColor="white" position="110,165" size="1255,800" transparent="1"/>
+	<widget name="list" font="FHD;30" backgroundColor="OE_Background" foregroundColor="white" position="110,165" size="1255,800" transparent="1"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_About" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="about" font="FHD;32" backgroundColor="OE_Background" foregroundColor="white" position="110,165" size="1255,750" transparent="1"/>
+	<widget name="about" font="FHD;30" backgroundColor="OE_Background" foregroundColor="white" position="110,165" size="1255,750" transparent="1"/>
 	<widget name="oealogo" position="110,800" size="177,130" alphatest="blend"/>
   </screen>
 
@@ -238,7 +238,7 @@
 	<widget name="key_b" backgroundColor="OE_Background" font="Regular;28" halign="left" valign="center" position="290,595" size="320,40" transparent="1" zPosition="1"/>
 	<eLabel backgroundColor="white" name="" position="220,690" size="410,2" zPosition="-9"/>
 	<eLabel backgroundColor="white" name="" position="648,160" size="2,810" zPosition="-9"/>
-	<widget name="c_title" backgroundColor="OE_Background" foregroundColor="green_light" position="700,160" size="770,50" font="FHD;32" transparent="1" halign="center"/>
+	<widget name="c_title" backgroundColor="OE_Background" foregroundColor="green_light" position="700,160" size="770,50" font="FHD;30" transparent="1" halign="center"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="700,220" size="770,750" transparent="1"/>
 	<!-- /*Buttons-->
 	<widget name="label_layout" position="305,750" size="240,20" font="Regular;15" valign="center" halign="center" transparent="1"/>

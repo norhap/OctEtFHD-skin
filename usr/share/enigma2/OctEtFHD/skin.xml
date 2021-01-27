@@ -1354,6 +1354,7 @@
 	    <convert type="EventTime">Progress</convert>
 	</widget>
 	<widget name="channel" font="FHD;34" backgroundColor="OE_Background" position="380,85" size="830,50" halign="left" transparent="1"/>
+	<widget name="epg_description" position="380,160" size="1460,750" backgroundColor="OE_Background" font="RegularBold;28" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
 	<widget source="Event" render="Label" font="RegularBold;30" position="125,160" size="90,45" zPosition="2" halign="left" backgroundColor="OE_NewBg2" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
@@ -1370,7 +1371,6 @@
 	<widget alphatest="blend" position="105,335" render="Picon" size="220,132" source="Title" transparent="1" zPosition="5">
 	    <convert type="RefString">CurrentRef</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;30" name="epg_description" position="380,160" size="1460,750" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="my_icons/dolby_off.png" position="216,490" size="63,32" zPosition="1"/>
 	<widget alphatest="blend" pixmap="my_icons/dolby_on.png" position="216,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
 	    <convert type="ServiceInfo">IsMultichannel</convert>
