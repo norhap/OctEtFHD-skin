@@ -2846,6 +2846,7 @@
   </screen>
   <screen name="ServiceInfoSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
 	<widget name="infolist" itemHeight="50" font="FHD;30" backgroundColor="OE_Background" position="110,215" size="925,700" transparent="1" zPosition="3"/>
   </screen>
   <screen backgroundColor="OE_Background" flags="wfNoBorder" name="Standby" position="0,0" size="1920,1080" title="Standby"/>
