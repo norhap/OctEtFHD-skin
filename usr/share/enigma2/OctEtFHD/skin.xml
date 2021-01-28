@@ -104,8 +104,8 @@
 	<alias name="TextNormal" font="FHD" size="30" height="50"/>
 	<alias name="FileList" font="FHD" size="30" height="50"/>
 	<alias name="FileListMulti" font="FHD" size="30" height="50"/>
-	<alias name="PluginBrowser0" font="FHD" size="32" height="80"/>
-	<alias name="PluginBrowser1" font="Regular" size="24"/>
+	<alias name="PluginBrowser0" font="RegularBold" size="26" height="80"/>
+	<alias name="PluginBrowser1" font="RegularLight" size="24"/>
 	<alias name="ServiceInfo" font="FHD" size="30" height="45"/>
 	<alias name="SelectionList" font="FHD" size="30" height="50"/>
 	<alias name="PiconManagerList" font="Regular" size="28" height="45"/>
