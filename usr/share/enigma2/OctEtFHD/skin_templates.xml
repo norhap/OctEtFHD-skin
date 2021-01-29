@@ -424,7 +424,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="18,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget name="footnote" conditional="footnote" position="110,1035" font="RegularBold;27" size="1255,40" halign="center" valign="center" backgroundColor="OE_Foreground" transparent="1"/>
+	<widget name="footnote" conditional="footnote" position="90,1036" font="RegularBold;24" size="1298,40" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="0"/>
 	<widget name="introduction" conditional="introduction" position="1395,425" size="515,635" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="description" conditional="description" position="1395,425" size="515,635" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget source="introduction" render="Label" conditional="introduction" position="1395,425" size="515,635" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
