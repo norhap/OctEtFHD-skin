@@ -305,7 +305,7 @@
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold;32" halign="right" position="1681,925" render="Label" size="165,55" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
-	    <convert type="RemainingToText">InMinutes</convert>
+	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
 	<widget source="session.Event_Now" render="Progress" backgroundColor="OE_NewBg" pixmap="colors/00A4C400.png" position="336,975" size="1510,4" transparent="0" zPosition="7">
 	    <convert type="EventTime">Progress</convert>
@@ -323,7 +323,7 @@
 	</widget>
 	<widget backgroundColor="OE_Background" font="RegularBold;32" halign="right" position="1681,982" render="Label" size="165,45" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">Duration</convert>
-	    <convert type="ClockToText">InMinutes</convert>
+	    <convert type="ClockToText">AsLengthHours</convert>
 	</widget>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="336,977" size="1510,2"/>
 	<!-- CryptoInfo -->
@@ -334,7 +334,7 @@
 	    <convert type="PliExtraInfo">CryptoSpecial</convert>
 	</widget>
 <!--	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1670,1030" size="98,31" transparent="1" alphatest="blend" zPosition="3"/> -->
-	<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1780,1030" size="63,32" alphatest="blend" zPosition="3"/>
+	<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1785,1030" size="63,32" alphatest="blend" zPosition="3"/>
 	<!-- Icons -->
 	<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/ip_tv.png" position="1199,870" size="63,32" zPosition="2" alphatest="blend">
 	    <convert type="ClientsStreaming"/>
@@ -475,7 +475,7 @@
 	</widget>
 	<widget backgroundColor="OE_ListBackground" font="RegularBold;34" halign="right" position="1500,170" render="Label" size="185,48" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
-	    <convert type="RemainingToText">InMinutes</convert>
+	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
 	<widget source="session.Event_Now" render="Progress" pixmap="colors/00A4C400.png" backgroundColor="blue_light" position="665,225" size="1020,6" transparent="0" zPosition="10">
 	    <convert type="EventTime">Progress</convert>
@@ -489,7 +489,7 @@
 	</widget>
 	<widget backgroundColor="OE_ListBackground" font="RegularBold;30" halign="right" position="1521,625" render="Label" size="165,48" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">Duration</convert>
-	    <convert type="ClockToText">InMinutes</convert>
+	    <convert type="ClockToText">AsLengthHours</convert>
 	</widget>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="665,673" size="1020,2"/>
 	<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/ip_tv.png" position="1038,967" size="63,32" zPosition="2" alphatest="blend">
@@ -918,33 +918,33 @@
 	<eLabel backgroundColor="blue_light" name="" position="1875,45" size="2,1000" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="35,center" size="630,1080" zPosition="-11" valign="center"/>
 	<!-- Widget -->
-	<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" position="50,0" size="480,50" halign="left" valign="center" transparent="1">
+	<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" position="50,0" size="615,50" halign="left" valign="center" transparent="1">
 	    <convert type="ServiceName">Name</convert>
 	</widget>
 	<widget source="Title" render="Label" font="FHD;34" backgroundColor="OE_Background" position="680,50" size="1190,90" halign="center"  valign="center" transparent="1"/>
 	<widget name="list" position="670,160" size="1200,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
-	<widget alphatest="blend" position="535,07" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
+	<widget alphatest="blend" position="535,55" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
 	    <convert type="ServiceName2">Reference</convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="350,55" zPosition="3" render="Label" size="200,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="362,55" zPosition="3" render="Label" size="120,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="255,130" zPosition="3" render="Label" size="335,35" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">FullDate</convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" halign="left" position="275,185" render="Label" size="115,40" source="ServiceEvent" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" halign="left" position="305,185" render="Label" size="115,40" source="ServiceEvent" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" halign="right" position="315,185" render="Label" size="115,40" source="ServiceEvent" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" halign="right" position="345,185" render="Label" size="115,40" source="ServiceEvent" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;28" position="445,185" size="145,40" transparent="1">
+	<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;28" position="475,185" size="115,40" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
-	    <convert type="RemainingToText">InMinutes</convert>
+	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
-	<widget source="ServiceEvent" render="Label" font="RegularBold;20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="315,230" size="195,85" halign="center" valign="center" transparent="1" zPosition="1">
+	<widget source="ServiceEvent" render="Label" font="RegularBold;20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="330,230" size="195,85" halign="center" valign="center" transparent="1" zPosition="1">
 	    <convert type="TransponderInfo">
 	    </convert>
 	</widget>
@@ -957,7 +957,7 @@
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" position="50,375" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="600,355" source="ServiceEvent" transparent="1" valign="top">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
-	<widget source="ServiceEvent" render="NextEvents" position="50,745" size="610,330" noWrap="1" font="RegularBold;22" backgroundColor="OE_NewBg2" foregroundColor="#a4c400"  transparent="1" zPosition="5">
+	<widget source="ServiceEvent" render="NextEvents" position="50,745" size="593,330" noWrap="1" font="RegularBold;22" backgroundColor="OE_NewBg2" foregroundColor="#a4c400"  transparent="1" zPosition="5">
 	    <convert type="ServiceName">Reference</convert>
 	</widget>
 	<!-- Button -->
@@ -979,12 +979,14 @@
 	<panel name="TemplatePip"/>
 	<widget name="menu" itemHeight="50" font="FHD;30" position="110,140" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" size="1255,800" transparent="1" zPosition="3"/>
   </screen>
+	<!-- CHANNELSELECTION SIMPLE -->
   <screen name="SimpleChannelSelection" title="SimpleChannelSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" name="list" position="110,center" scrollbarMode="showNever" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" size="1255,800" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,980" size="64,43"/>
   </screen>
+	<!-- CHANNELSELECTION SLIM -->
   <screen name="SlimChannelSelection" title="SlimChannelSelection" position="center,center" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
 	<eLabel backgroundColor="white" name="" position="680,930" size="1160,2" zPosition="-9"/>
@@ -1013,7 +1015,7 @@
 	</widget>
 	<widget source="Event" render="Label" backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="493,200" size="157,40" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
-	    <convert type="RemainingToText">InMinutes</convert>
+	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="81,244" size="570,1"/>
 	<widget backgroundColor="OE_PreBlack2" borderWidth="0" pixmap="colors/00A4C400.png" position="80,242" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
@@ -1045,6 +1047,7 @@
 	<!-- Clock -->
 	<panel name="Clock"/>
   </screen>
+	<!-- CHANNELSELECTION RADIO -->
   <screen name="ChannelSelectionRadio" title="ChannelSelectionRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" name="list" position="110,center" scrollbarMode="showNever" serviceItemHeight="50" serviceNumberFont="FHD;32" serviceNameFont="FHD;32" serviceInfoFont="RegularBold;29" size="1255,800" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
@@ -1234,7 +1237,7 @@
   </screen>
   <screen name="CommitInfoSetup" title="Open Vision Commit Info Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,center" size="1255,750" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,750" transparent="1"/>
   </screen>
   <screen name="CutListEditor" title="Cutlist editor" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -1302,7 +1305,7 @@
   </screen>
   <screen name="DirectoryBrowser" title="Directorybrowser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="filelist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,center" size="1255,750" transparent="1"/>
+	<widget name="filelist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,750" transparent="1"/>
   </screen>
 	<!-- GRAPHICAL MULTI EPG LIST -->
   <screen name="GraphMultiEPGList" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
@@ -1343,7 +1346,7 @@
   <screen name="HarddiskSelection" title="Select HDD" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="hddlist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,center" size="1255,750" transparent="1"/>
+	<widget name="hddlist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,750" transparent="1"/>
   </screen>
 	<!-- EVENT VIEW -->
   <screen name="EventView" title="Eventview" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -1367,7 +1370,7 @@
 	<widget name="duration" foregroundColor="blue_light" backgroundColor="OE_NewBg2" font="RegularBold;30" halign="center" position="115,215" size="195,45" transparent="1" zPosition="2"/>
 	<widget source="Event" render="Label" position="115,275" size="195,45" transparent="1" zPosition="2" backgroundColor="OE_NewBg2" font="RegularBold;30" halign="center">
 	    <convert type="EventTime">Remaining</convert>
-	    <convert type="RemainingToText">InMinutes</convert>
+	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
 	<widget alphatest="blend" position="105,335" render="Picon" size="220,132" source="Title" transparent="1" zPosition="5">
 	    <convert type="RefString">CurrentRef</convert>
@@ -1464,7 +1467,7 @@
   </screen>
   <screen name="FileBrowser" title="DVD File Browser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="filelist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,center" size="1255,750" transparent="1"/>
+	<widget name="filelist" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,750" transparent="1"/>
   </screen>
   <screen name="FilebrowserScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -1473,7 +1476,7 @@
   </screen>
   <screen name="FilebrowserConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,center" size="1255,750" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,750" transparent="1"/>
 	<widget name="buttonred" font="Regular;28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
 	<widget name="buttongreen" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
   </screen>
@@ -1914,7 +1917,7 @@
   </screen>
   <screen name="MovieBrowserConfiguration" title="Movie Browser Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" itemHeight="50" font="FHD;30" backgroundColor="OE_Background" position="110,center" size="1255,750" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD;30" backgroundColor="OE_Background" position="110,140" size="1255,750" transparent="1"/>
   </screen>
   <screen name="MPHelp" title="MPHelp" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2932,7 +2935,7 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="18,980" size="64,43"/>
 	<widget name="timerlist" itemHeight="95" setEventNameFont="RegularBold;21" setServiceNameFont="RegularBold;22" setFont="RegularBold;23" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="110,140" satPosLeft="400" rowSplit="45" size="1255,820" transparent="1"/>
 	<widget name="key_info" conditional="key_info" position="48,960" size="0,0" zPosition="-20"/>
-	<widget name="description" objectTypes="description,Button,Label" position="1395,440" size="515,635" font="RegularBold;21" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="description" objectTypes="description,Button,Label" position="1395,440" size="515,640" font="RegularBold;21" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 	<!-- TIMERENTRY -->
   <screen name="TimerEntry" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3630,7 +3633,7 @@
   <screen name="Config" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,center" size="1255,750" transparent="1"/>
+	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,750" transparent="1"/>
 	<widget name="statusbar" position="1395,450" size="515,45" font="RegularBold;27" backgroundColor="OE_NewBg2" valign="center" halign="center" transparent="1"/>
 	<widget name="status" position="1395,550" size="515,510" font="RegularBold;27" backgroundColor="OE_NewBg2" valign="center" halign="center" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,980" size="64,43"/>
