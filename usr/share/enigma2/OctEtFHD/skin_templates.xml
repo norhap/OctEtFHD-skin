@@ -181,6 +181,7 @@
   <screen name="TemplateEPGSelection">
 	<panel name="FrameClock"/>
 	<panel name="TemplateFrame"/>
+	<panel name="TemplateXtraEPGSelection"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
 	<eLabel backgroundColor="blue_light" name="" position="680,930" size="1160,2" zPosition="-9"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="600,1080" zPosition="1" valign="center"/>
@@ -195,7 +196,6 @@
 	<widget alphatest="blend" position="230,150" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
 	    <convert type="ServiceName">Reference</convert>
 	</widget>
-	<widget source="Service" render="xtraPoster" position="265,285" size="185,278" zPosition="2"/>
 	<widget source="Event" font="RegularBold;26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="80,570" size="575,355" transparent="1" halign="left" valign="top" zPosition="2">
 	    <convert type="EventName">FullDescription</convert>
 	</widget>
@@ -215,9 +215,10 @@
 	<widget backgroundColor="OE_Background" font="RegularBold;26" position="1595,935" size="240,70" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
 	<!-- TEMPLATE MULTIEPG AND EVENTVIEW -->
-  <screen name="MultiEventViewEPG">
+  <screen name="MultiEPGEventView">
 	<panel name="FrameClock"/>
 	<panel name="TemplateFrame"/>
+	<panel name="TemplateXtraMultiEPGEventView"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="1" valign="center"/>
 	<eLabel backgroundColor="blue_light" name="" position="380,142" size="1460,2" zPosition="-9" foregroundColor="white"/>
@@ -246,18 +247,17 @@
 	<panel name="FrameClock"/>
 	<panel name="TemplateFrame"/>
 	<!-- Event -->
-	<widget backgroundColor="OE_Background" font="RegularBold;28" position="160,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="780,50" source="Event" transparent="1" halign="left">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" position="160,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="1000,50" source="Event" transparent="1" halign="left">
 	    <convert type="EventName">Name</convert>
 	</widget>
-	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="950,85" size="420,45" transparent="1" zPosition="10"/>
-	<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="160,160" render="Progress" size="1190,6" source="Event" transparent="0" zPosition="1">
+	<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="160,160" render="Progress" size="950,6" source="Event" transparent="0" zPosition="1">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
 	<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="155,130" size="80,45" halign="center" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="1275,130" size="80,45" halign="center" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="1035,130" size="80,45" halign="center" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
@@ -516,7 +516,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<widget source="session.Event_Now" render="xtraPoster" position="80,490" size="185,278" zPosition="2"/>
   </screen>
   <screen name="poster_secondinfobar">
-	<widget source="session.Event_Now" render="xtraPoster" position="470,225" size="185,278" zPosition="2"/>
+	<widget source="session.Event_Now" render="xtraPoster" position="470,190" size="185,278" zPosition="2"/>
 	<widget source="session.Event_Next" render="xtraPoster" position="470,635" size="185,278" zPosition="2"/>
   </screen>
   <screen name="poster_channelselection">
@@ -524,6 +524,12 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
   </screen>
   <screen name="poster_movieselection">
 	<widget source="Service" render="xtraPoster" position="160,10" size="260,400" zPosition="2"/>
+  </screen>
+  <screen name="TemplateXtraEPGSelection">
+	<widget source="Event" render="xtraPoster" position="265,285" size="185,278" zPosition="2"/>
+  </screen>
+  <screen name="TemplateXtraMultiEPGEventView">
+	<widget source="Event" render="xtraPoster" position="120,620" size="185,278" zPosition="2"/>
   </screen>
 	<!-- REMOTE CONTROL -->
   <screen name="TemplateRemoteControl">
