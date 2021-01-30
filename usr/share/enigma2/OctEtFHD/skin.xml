@@ -251,10 +251,9 @@
 	<!-- MENU SORT -->
   <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="MainMenu"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="955,925" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="1010,925" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_leftright.png" position="975,924" size="64,43"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="290,926" size="1107,39" zPosition="-10"/>
-	<eLabel text="[move mode]" position="1060,925" size="320,39" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;24" halign="center" valign="center"/>
+	<eLabel text="[move mode]" position="1025,925" size="355,39" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;24" halign="center" valign="center"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="20,925" size="40,40"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="260,925" size="40,40"/>
 	<ePixmap alphatest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="670,925" size="40,40"/>
@@ -333,7 +332,7 @@
 	<widget source="session.CurrentService" render="Label" position="1260,1030" size="400,35" font="RegularBold;23" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
 	    <convert type="PliExtraInfo">CryptoSpecial</convert>
 	</widget>
-	<!-- <widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1670,1030" size="98,31" transparent="1" alphatest="blend" zPosition="3"/> -->
+	<!--<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1670,1030" size="98,31" transparent="1" alphatest="blend" zPosition="3"/> -->
 	<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1785,1030" size="63,32" alphatest="blend" zPosition="3"/>
 	<!-- Icons -->
 	<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/ip_tv.png" position="1199,870" size="63,32" zPosition="2" alphatest="blend">
@@ -466,7 +465,7 @@
 	    <convert type="ConditionalShowHide">
 	    </convert>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;30" halign="left" position="665,180" render="Label" size="110,48" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;30" halign="left" position="663,180" render="Label" size="110,48" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
@@ -484,7 +483,7 @@
 	<widget source="session.Event_Now" render="Progress" foregroundColor="blue_light" backgroundColor="green_light" position="665,225" size="1020,6" transparent="0" zPosition="10">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;30" halign="left" noWrap="1" position="665,625" render="Label" size="110,48" source="session.Event_Next" transparent="1" valign="top">
+	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;30" halign="left" noWrap="1" position="663,625" render="Label" size="110,48" source="session.Event_Next" transparent="1" valign="top">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
@@ -575,7 +574,7 @@
 	<widget source="session.CurrentService" render="Label" font="RegularBold;23" position="470,1020" size="1210,35" zPosition="50" backgroundColor="OE_ListBackground" transparent="1" noWrap="1" valign="center" halign="left" foregroundColor="white">
 	    <convert type="CaidInfo2"/>
 	</widget>
-	<!-- <widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="575,965" size="63,32" transparent="1" alphatest="blend" zPosition="3"/> -->
+	<!--<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="575,965" size="63,32" transparent="1" alphatest="blend" zPosition="3"/> -->
 	<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="470,965" size="98,31" alphatest="blend" zPosition="3"/>
 	<panel name="Clock"/>
 	 <!-- MSNWeather -->
@@ -683,10 +682,8 @@
   <screen name="Troubleshoot" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" font="Console;25" backgroundColor="OE_Background" position="410,135" size="1505,810" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="1195,970" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="1259,970" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_up.png" position="1353,970" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_down.png" position="1417,970" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_leftright.png" position="210,905" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_downup.png" position="125,905" size="64,43"/>
   </screen>
 	<!-- MEMORY INFO -->
   <screen name="MemoryInfo" title="MemoryInfo" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
@@ -728,6 +725,10 @@
   </screen>
 	<!-- AUDIOSELECTION -->
   <screen name="AudioSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+	<eLabel backgroundColor="blue_light" name="" position="30,70" size="1228,2" zPosition="-14"/>
+	<eLabel backgroundColor="blue_light" name="" position="30,70" size="2,938" zPosition="-14"/>
+	<eLabel backgroundColor="blue_light" name="" position="30,1008" size="1228,2" zPosition="-14"/>
+	<eLabel backgroundColor="blue_light" name="" position="1258,70" size="2,940" zPosition="-14"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1230,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="165,130" size="1065,2" zPosition="-9"/>
@@ -941,7 +942,7 @@
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" position="255,130" zPosition="3" render="Label" size="335,35" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">FullDate</convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" halign="left" position="305,185" render="Label" size="115,40" source="ServiceEvent" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" halign="left" position="303,185" render="Label" size="115,40" source="ServiceEvent" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
@@ -1323,7 +1324,7 @@
   <screen name="GraphMultiEPGList" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="TemplateGraphicalEPG"/>
 	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="700,20" size="420,45" transparent="0" zPosition="10"/>
-	<widget source="Event" render="xtraPoster" position="1175,80" size="185,278" zPosition="2"/>
+	<widget source="Event" render="xtraPoster" position="1150,80" size="185,278" zPosition="2"/>
 	<widget source="session.VideoPicture" render="Pig" position="1375,75" size="480,290" zPosition="1" backgroundColor="#df0b1300"/>
 	<widget backgroundColor="blue" foregroundColor="white" name="timeline_text" position="160,380" selectionDisabled="1" size="1680,50" transparent="1" itemHeight="55" font="RegularBold;26"/>
 	<widget name="list" position="160,430" size="1680,500" scrollbarMode="showNever" ServiceFont="Regular;28" ServiceBackgroundColor="OE_Background" EntryBackgroundColor="dark" EntryBackgroundColorNow="#37732F" EntryBackgroundColorSelected="OE_Selection" EntryBorderColor="darkgrey" EntryFont="RegularBold;24" EntryForegroundColor="#ffffff" EntryForegroundColorNow="#ffffff" EntryForegroundColorSelected="#ffffff" EventBorderWidth="0" ServiceBackgroundColorSelected="dark" ServiceBorderColor="darkgrey" ServiceBorderWidth="0" ServiceForegroundColorSelected="yellow" transparent="1"/>
@@ -1374,7 +1375,7 @@
 	</widget>
 	<widget name="channel" font="FHD;34" backgroundColor="OE_Background" position="380,85" size="830,50" halign="left" transparent="1"/>
 	<widget name="epg_description" position="380,160" size="1460,750" backgroundColor="OE_Background" font="RegularBold;28" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
-	<widget source="Event" render="Label" font="RegularBold;30" position="125,160" size="90,45" zPosition="2" halign="left" backgroundColor="OE_NewBg2" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;30" position="123,160" size="90,45" zPosition="2" halign="left" backgroundColor="OE_NewBg2" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
@@ -2383,12 +2384,12 @@
 	<panel name="TemplatePip"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="18,980" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="18,920" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1035" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="155,1035" size="64,43"/>
+	<!-- ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1035" size="64,43"/> -->
+	<!-- ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="155,1035" size="64,43"/> -->
 	<widget name="list" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="110,140" size="1255,820" transparent="1"/>
-	<eLabel text="[move mode]" position="250,1035" size="600,40" halign="left" valign="center" backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold;24"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="900,1035" size="64,43"/>
-	<eLabel text="Default" position="985,1035" size="350,40" backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<!-- eLabel text="[move mode]" position="250,1035" size="600,40" halign="left" valign="center" backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold;24"/> -->
+	<!-- ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="900,1035" size="64,43"/> -->
+	<!-- eLabel text="Default" position="985,1035" size="350,40" backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" transparent="1" zPosition="1"/> -->
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
