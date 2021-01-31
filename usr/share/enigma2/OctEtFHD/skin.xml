@@ -1246,7 +1246,7 @@
   <screen name="Console" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="text" font="Console;27" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="110,140" size="1255,800" transparent="1"/>
+	<widget name="text" font="Console;27" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="110,150" size="1255,800" transparent="1"/>
   </screen>
   <screen name="CommitInfoSetup" title="Open Vision Commit Info Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2394,9 +2394,9 @@
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" font="Regular;28" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,750" transparent="1" zPosition="5"/>
-	<widget name="text" position="110,915" size="1255,50" font="RegularBold;30" backgroundColor="OE_Background" transparent="1" foregroundColor="green_light"/>
-	<widget source="session.CurrentService" render="Label" position="110,970" size="1255,45" font="FHD;30" halign="left" valign="center" foregroundColor="blue_light" backgroundColor="OE_Background" noWrap="1" transparent="1" zPosition="5">
+	<widget name="list" font="Regular;28" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="110,140" size="1255,820" transparent="1" zPosition="5"/>
+	<widget name="text" position="1395,500" size="515,100" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="session.CurrentService" render="Label" position="1480,550" size="350,510" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2">
 	    <convert type="ProgressDiskSpaceInfo">FleshInfo,Full</convert>
 	</widget>
   </screen>
@@ -3129,9 +3129,8 @@
 	    </convert>
 	</widget>
   </screen>
-	<!-- KEY NO USED -->
-  <screen name="UnhandledKey" title="UnhandledKey" backgroundColor="transparent" flags="wfNoBorder" position="20,0" size="120,135" transparent="0" zPosition="10">
-	<eLabel backgroundColor="OE_NewBg2" position="0,0" size="120,155" zPosition="-50" foregroundColor="white"/>
+	<!-- KEY NO USED UNHANDLEDKEY -->
+  <screen name="UnhandledKey" flags="wfNoBorder" position="90,5" size="100,100" transparent="0" zPosition="10">
 	<widget name="UnhandledKeyPixmap" pixmap="my_icons/unhandled_key.png" position="22,20" size="75,75" alphatest="blend"/>
   </screen>
   <screen name="Volume" title="Volume" backgroundColor="transparent" flags="wfNoBorder" position="50,0" size="120,155" transparent="0" zPosition="10">
