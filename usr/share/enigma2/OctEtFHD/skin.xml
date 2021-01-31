@@ -3130,8 +3130,8 @@
 	</widget>
   </screen>
 	<!-- KEY NO USED UNHANDLEDKEY -->
-  <screen name="UnhandledKey" flags="wfNoBorder" position="90,5" size="100,100" transparent="0" zPosition="10">
-	<widget name="UnhandledKeyPixmap" pixmap="my_icons/unhandled_key.png" position="22,20" size="75,75" alphatest="blend"/>
+  <screen name="UnhandledKey" flags="wfNoBorder" position="110,5" size="75,75" transparent="0" zPosition="10">
+	<widget name="UnhandledKeyPixmap" pixmap="my_icons/unhandled_key.png" position="0,0" size="75,75" alphatest="blend"/>
   </screen>
   <screen name="Volume" title="Volume" backgroundColor="transparent" flags="wfNoBorder" position="50,0" size="120,155" transparent="0" zPosition="10">
 	<eLabel backgroundColor="white" foregroundColor="white" name="" position="10,93" size="100,4" zPosition="-45"/>
