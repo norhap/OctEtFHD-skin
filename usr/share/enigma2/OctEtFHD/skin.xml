@@ -3778,6 +3778,16 @@
 	<widget name="labstop" position="450,250" size="300,50" font="FHD;32" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
 	<widget name="labrun" position="450,250" size="300,50" font="FHD;32" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
   </screen>
+	<!-- NETWORK SATPI-->
+  <screen name="NetworkSATPI" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="lab1" position="110,140" size="300,50" font="FHD;32" foregroundColor="blue_light" valign="center" transparent="1" zPosition="2"/>
+	<widget name="labactive" position="320,140" size="530,50" font="FHD;32" halign="center" valign="center" transparent="0" backgroundColor="OE_Background" zPosition="2"/>
+	<widget name="lab2" position="110,250" size="300,50" font="FHD;32" foregroundColor="blue_light" valign="center" transparent="1" zPosition="2"/>
+	<widget name="labstop" position="450,250" size="300,50" font="FHD;32" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
+	<widget name="labrun" position="450,250" size="300,50" font="FHD;32" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
+  </screen>
 	<!-- INETD RECOVERY NETWORK -->
   <screen name="InetdRecovery" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
