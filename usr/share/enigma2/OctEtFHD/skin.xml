@@ -604,7 +604,8 @@
 	<!-- INFO COMMON -->
   <screen name="Information" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="TemplateInformation"/>
-	<widget name="information" position="410,140" size="1505,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="FHD;30" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" leftColAlign="left" rightColAlign="left" split="1" transparent="1"/>
+	<!-- widget name="information" conditional="information" position="410,140" size="1505,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="FHD;30" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" leftColAlign="left" rightColAlign="left" split="1" transparent="1"/> -->
+	<widget name="information" conditional="information" position="410,140" size="1505,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="FHD;30" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" split="1" transparent="1"/>
   </screen>
 	<!-- MAIN MENU INFORMATION -->
 	<!-- INFO SERVICE -->
@@ -634,14 +635,23 @@
   </screen>
 	<!-- INFO BENCHMARK -->
   <screen name="BenchmarkInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="TemplateInformation"/>
-	<widget name="AboutScrollLabel" font="FHD;30" backgroundColor="OE_Background" position="410,140" size="1505,805" transparent="1"/>
+	<panel name="Information"/>
+	<widget name="AboutScrollLabel" conditional="AboutScrollLabel" font="FHD;30" backgroundColor="OE_Background" position="410,140" size="1505,805" transparent="1"/>
   </screen>
 	<!-- INFO NETWORK STB -->
   <screen name="SystemNetworkInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<widget name="devicepic" position="1231,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
 	<widget name="AboutScrollLabel" position="410,147" size="1505,680" font="FHD;30" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="IFtext" render="Label" position="410,901" size="120,40" font="FHD;30" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="IF" position="540,901" size="400,40" render="Label" font="FHD;30" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="Statustext" position="846,901" size="300,40" render="Label" font="FHD;30" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="statuspic" position="800,900" size="35,35" transparent="1" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png"/>
+  </screen>
+	<!-- INFO NETWORK STB NEW-->
+  <screen name="NetworkInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="Information"/>
+	<widget name="devicepic" position="1231,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
 	<widget source="IFtext" render="Label" position="410,901" size="120,40" font="FHD;30" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="IF" position="540,901" size="400,40" render="Label" font="FHD;30" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="Statustext" position="846,901" size="300,40" render="Label" font="FHD;30" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
