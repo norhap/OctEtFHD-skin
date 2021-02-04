@@ -648,7 +648,7 @@
 	<widget source="Statustext" position="846,901" size="300,40" render="Label" font="FHD;30" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="statuspic" position="800,900" size="35,35" transparent="1" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png"/>
   </screen>
-	<!-- INFO NETWORK STB NEW-->
+	<!-- INFO NETWORK STB NEW -->
   <screen name="NetworkInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="Information"/>
 	<widget name="devicepic" position="1231,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
@@ -4093,6 +4093,7 @@
 	<!-- VISION MENU-->
   <screen name="VISIONMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="165,900" size="64,43" alphatest="blend"/>
 	<eLabel backgroundColor="blue_light" position="410,857" size="1550,2" zPosition="2"/>
 	<widget source="menu" render="Listbox" position="410,140" zPosition="2" size="1550,710" backgroundColor="OE_Background" scrollbarMode="showOnDemand" transparent="1">
 	    <convert type="TemplatedMultiContent">
