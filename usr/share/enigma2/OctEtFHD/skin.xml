@@ -4145,7 +4145,7 @@
 	<ePixmap pixmap="buttons/key_menu.png" position="95,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="165,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_info.png" position="235,900" size="64,43" alphatest="blend"/>
-	<widget name="lab7" position="950,130" size="400,150" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab7" position="410,130" size="1505,90" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,280" zPosition="10" size="1505,550" transparent="1"/>
 	<widget name="backupstatus" font="FHD;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,850" size="640,50" transparent="1" valign="top"/>
 	<applet type="onLayoutFinish">
@@ -4168,7 +4168,7 @@
 	<panel name="TemplateInformation"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
-	<widget name="lab7" position="580,120" size="400,150" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab7" position="410,130" size="1505,90" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="checkList" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1505,800" transparent="1"/>
   </screen>
 	<!-- VISION IMAGE MANAGER-->
@@ -4176,7 +4176,7 @@
 	<panel name="TemplateInformation"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_exit.png" position="200,900" size="64,43" alphatest="blend"/>
-	<widget name="lab7" position="950,130" size="400,160" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab7" position="410,130" size="1505,90" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1505,570" transparent="1"/>
 	<widget name="backupstatus" font="FHD;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,880" size="640,50" transparent="1" valign="top"/>
 	<applet type="onLayoutFinish">
@@ -4192,7 +4192,7 @@
   </screen>
   <screen name="ImageManagerDownload" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<widget name="lab7" position="950,130" size="400,150" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab7" position="410,130" size="1505,90" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1505,640" transparent="1"/>
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
@@ -4201,7 +4201,7 @@
 	<!-- OPKG INSTALL-->
   <screen name="VISIONIPKInstaller" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<widget name="lab7" position="950,130" size="400,150" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab7" position="410,130" size="1505,90" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1505,640" transparent="1"/>
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
@@ -4236,7 +4236,7 @@
 	<panel name="TemplateInformation"/>
 	<widget name="lab8" position="330,275" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 	<widget name="activecam" position="530,275" size="350,75" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
-	<widget name="lab7" position="850,150" size="400,50" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab7" position="410,130" size="1505,90" font="FHD;30" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,350" zPosition="10" size="1505,590" transparent="1"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,900" size="64,43" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_info.png" position="200,900" size="64,43" alphatest="blend"/>
@@ -4258,7 +4258,7 @@
   <screen name="VISIONStopCam" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<widget name="connect" position="530,235" size="64,64" zPosition="2" pixmaps="/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy1.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy2.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy3.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy4.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy5.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy6.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy7.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy8.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy9.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy10.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy11.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy12.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy13.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy14.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy15.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy17.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy18.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy19.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy20.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy21.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy22.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy23.png,/usr/lib/enigma2/python/Plugins/SystemPlugins/Vision/images/busy24.png" transparent="1" alphatest="blend"/>
-	<widget name="lab7" position="570,255" halign="center" size="503,80" zPosition="1" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" valign="top" transparent="1"/>
+	<widget name="lab7" position="410,130" size="1505,90" halign="center" zPosition="1" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" valign="center" transparent="1"/>
   </screen>
   <screen name="VISIONStartCam" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
