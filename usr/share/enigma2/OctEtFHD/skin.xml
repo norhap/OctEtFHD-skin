@@ -855,35 +855,18 @@
 	</widget>
   </screen>
   <screen name="AutoTimerWizard" title="Welcome..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1680,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="-11" valign="center"/>
-	<eLabel backgroundColor="blue_light" name="" position="85,142" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="380,142" size="1255,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="white" name="" position="380,470" size="1255,2" zPosition="-9"/>
-	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD;34" position="380,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
-	<widget name="text" font="FHD;30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,160" size="1255,300" transparent="1"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="380,480" scrollbarMode="showOnDemand" size="1255,500" transparent="1">
+	<panel name="TemplateWizard"/>
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" scrollbarMode="showOnDemand" size="1415,500" transparent="1">
 	    <convert type="TemplatedMultiContent">
-				{"template":[ MultiContentEntryText(pos=(20,2),size=(1220,45),flags=RT_HALIGN_LEFT,text=0) ],
+				{"template":[ MultiContentEntryText(pos=(20,2),size=(1395,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("FHD",30) ],"itemHeight":50}
 	    </convert>
 	</widget>
-	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="380,480" size="1255,500" zPosition="1"/>
-	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,center" size="135,500" zPosition="10"/>
-	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,950" size="40,40"/>
-	<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" position="115,950" size="245,40" transparent="1" zPosition="1"/>
-	<widget name="stepslider" position="380,900" size="245,40" foregroundColor="blue_light" backgroundColor="OE_Background" borderWidth="1" transparent="1" zPosition="1"/>
-	<widget name="step" borderWidth="1" position="380,850" size="450,40" font="RegularBold;26" foregroundColor="blue_light" zPosition="15" transparent="1"/>
-	<widget name="wizard" pixmap="picon_default.png" position="105,10" size="220,132" alphatest="blend" zPosition="1"/>
-	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="330,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="290,850" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,480" size="1415,215" zPosition="1"/>
+	<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="445,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="350,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<panel name="Clock"/>
   </screen>
   <screen name="AutoResSetupMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -3313,124 +3296,53 @@
 	<!-- INIT WIZARD-->
 	<!-- LANGUAJE WIZARD-->
   <screen name="LanguageWizard" title="Language Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1850,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="430,1080" zPosition="-11" valign="center"/>
-	<widget source="lab1" render="Label" position="35,160" size="400,50" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab2" render="Label" position="50,215" size="500,50" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="left" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab3" render="Label" position="30,295" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab4" render="Label" position="100,330" size="500,30" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab5" render="Label" position="30,395" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab6" render="Label" position="40,435" size="520,35" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD;34" position="445,95" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" name="" position="445,152" size="1255,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="105,152" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<widget name="text" font="FHD;30" halign="left" valign="center" backgroundColor="OE_Background" position="445,160" size="1255,100" transparent="1"/>
-	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,290" size="1255,715" transparent="1">
+	<panel name="TemplateWizard"/>
+	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,480" size="1420,525" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryText(pos=(120,8),size=(870,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
+				MultiContentEntryText(pos=(120,8),size=(1420,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
 				MultiContentEntryPixmapAlphaBlend(pos=(20,0),size=(64,64),png=2),# index 2 is the pixmap
 				],
 				"fonts":[gFont("RegularBold",32) ],"itemHeight":65}
 	    </convert>
 	</widget>
-	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="175,500" size="135,500" zPosition="10"/>
-	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="wizard" pixmap="picon_default.png" position="110,25" size="220,132" alphatest="blend" zPosition="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="blue_light" name="" position="445,280" size="1255,2" zPosition="-9"/>
-	<!-- Clock -->
-	<panel name="Clock"/>
   </screen>
 	<!-- VIDEO WIZARD-->
   <screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1850,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="430,1080" zPosition="-11" valign="center"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD;34" position="445,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
-	<widget source="lab1" render="Label" position="35,160" size="400,50" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab2" render="Label" position="50,215" size="500,50" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="left" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab3" render="Label" position="30,295" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab4" render="Label" position="100,330" size="500,30" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab5" render="Label" position="30,395" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab6" render="Label" position="40,435" size="520,35" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
-	<eLabel backgroundColor="blue_light" name="" position="445,152" size="1235,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="105,152" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<widget name="text" font="FHD;30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1255,300" transparent="1"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1235,500" transparent="1">
+	<panel name="TemplateWizard"/>
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1415,500" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,2),size=(1220,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("FHD",30) ],"itemHeight":50}
 		</convert>
 	</widget>
-	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,480" size="1255,500" zPosition="1"/>
-	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="175,500" size="135,500" zPosition="10"/>
-	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="wizard" pixmap="picon_default.png" position="110,25" size="220,132" alphatest="blend" zPosition="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="blue_light" name="" position="445,470" size="1235,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="100,1010" size="40,40" backgroundColor="OE_NewBg2"/>
-	<widget name="languagetext" backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" valign="center" position="145,1010" size="245,40" transparent="1" zPosition="1"/>
-	<widget name="portpic" position="1700,450" zPosition="10" size="150,150" transparent="1" alphatest="blend"/>
-	<!-- Clock -->
-	<panel name="Clock"/>
+	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,480" size="1415,500" zPosition="1"/>
   </screen>
 	<!-- VIDEO MODE-->
   <screen name="VideoMode" title="VideoMode" backgroundColor="transparent" flags="wfNoBorder" position="0,50" size="500,92" zPosition="8">
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" name="" position="0,0" size="500,45" zPosition="-11" valign="center"/>
-	<eLabel backgroundColor="white" position="0,45" size="500,2"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,47" size="500,45" zPosition="-15"/>
-	<!-- Widget -->
 	<eLabel text="VideoMode" position="0,0" size="480,45" font="RegularBold;28" backgroundColor="OE_NewBg" transparent="1" valign="center" halign="right" foregroundColor="white"/>
 	<widget name="videomode" position="0,47" size="480,45" font="RegularBold;28" backgroundColor="OE_Background" transparent="1" valign="center" halign="right"/>
   </screen>
 	<!-- START WIZARD-->
   <screen name="StartWizard" title="Start Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1850,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="430,1080" zPosition="-11" valign="center"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD;34" position="445,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
-	<widget source="lab1" render="Label" position="0,160" size="430,70" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab2" render="Label" position="0,215" size="430,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab3" render="Label" position="0,295" size="430,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab4" render="Label" position="0,330" size="430,30" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab5" render="Label" position="0,395" size="430,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<widget source="lab6" render="Label" position="0,435" size="430,35" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-	<eLabel backgroundColor="blue_light" name="" position="445,152" size="1435,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="85,152" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<widget name="text" font="FHD;30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1255,200" transparent="1"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1435,500" transparent="1">
+	<panel name="TemplateWizard"/>
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" size="1415,500" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,2),size=(1420,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("FHD",30) ],"itemHeight":50}
 		</convert>
 	</widget>
-	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,480" size="1435,500" zPosition="1"/>
-	<widget alphatest="blend" backgroundColor="transparent" name="rc" pixmaps="rc.png,rcold.png" position="152,500" size="135,500" zPosition="10"/>
-	<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
+	<widget name="config" font="FHD;30" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,480" size="1415,500" zPosition="1"/>
 	<eLabel text="Progress:" font="FHD;34" backgroundColor="OE_Background" position="445,420" size="215,50" transparent="1"/>
-	<widget name="stepslider" borderWidth="1" position="665,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
-	<widget name="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="blue_light" name="" position="445,470" size="1435,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,1020" size="40,40" backgroundColor="OE_NewBg2"/>
-	<widget name="languagetext" backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" valign="center" position="115,1020" size="245,40" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="Clock"/>
   </screen>
 	<!-- INSTALL WIZARD -->
   <screen name="InstallWizard" backgroundColor="transparent" title="Welcome..." position="0,center" size="1920,1080" transparent="0">
+	<panel name="TemplateWizard"/>
 	<widget name="config" itemHeight="50" font="FHD;30" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="170,160" size="1255,700" transparent="1"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="18,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	    <convert type="ConditionalShowHide"/>
+	</widget>
   </screen>
 	<!-- OPKG UPDATER -->
   <screen name="InstallWizardOpkgUpdater" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
@@ -4281,7 +4193,10 @@
   </screen>
   <screen name="ClientModeBoxAbout" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="160,900" size="64,43"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="160,900" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	    <convert type="ConditionalShowHide"/>
+	</widget>
 	<widget name="about" position="410,150" size="1280,800" font="RegularBold;28" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <screen name="ClientModeBoxWizard" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
