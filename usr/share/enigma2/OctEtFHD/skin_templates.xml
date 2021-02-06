@@ -347,8 +347,8 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,5" size="1520,2" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,1075" size="1520,2" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="430,1080" zPosition="-11" valign="center"/>
-	<eLabel backgroundColor="blue_light" name="" position="445,152" size="1415,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="445,470" size="1415,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="445,152" size="1420,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="445,470" size="1420,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="85,152" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget name="wizard" conditional="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD;34" position="445,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
