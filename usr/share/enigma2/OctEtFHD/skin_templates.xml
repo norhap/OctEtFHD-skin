@@ -4,10 +4,10 @@
 	<!-- <panel name="Clock"/> -->
   <screen name="Clock">
 	<eLabel backgroundColor="OE_NewBg2" position="1450,5" size="405,72" transparent="0" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1450,7" size="405,1" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1450,7" size="1,69" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1855,7" size="1,69" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1450,75" size="405,1" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1451,7" size="403,1" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1451,7" size="1,69" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1853,7" size="1,69" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1451,75" size="403,1" zPosition="2"/>
 	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="1725,8" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
@@ -305,10 +305,10 @@
   <screen name="FrameInformation">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,15" size="1920,1050" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="400,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,15" size="1510,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,15" size="1520,2" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="410,130" size="1490,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="410,950" size="1490,2" zPosition="-9"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,1065" size="1510,2" zPosition="-15"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,1065" size="1520,2" zPosition="-15"/>
 	<eLabel name="" foregroundColor="un5678a4" backgroundColor="blue_light" position="60,130" size="275,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="60,950" size="275,2" zPosition="-9"/>
   </screen>
