@@ -63,11 +63,11 @@
 	<!-- TITLES -->
   <screen name="TitleStanDardScreen">
 	<widget source="Title" render="Label" font="RegularBold;29" backgroundColor="OE_Background" position="95,58" size="1290,80" halign="center" valign="top" transparent="1"/>
-	<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" position="95,0" size="1290,70" halign="center" valign="top" transparent="1"/>
+	<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="blue_light" position="95,0" size="1290,70" halign="center" valign="top" transparent="1"/>
   </screen>
   <screen name="TitleInformation">
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="405,40" size="1490,90" halign="center" valign="top" transparent="1"/>
-	<widget source="ScreenPath" render="Label" font="RegularBold;22" backgroundColor="OE_Background" foregroundColor="blue_light" position="405,15" size="1490,35" halign="center" valign="top" transparent="1"/>
+	<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="blue_light" position="405,15" size="1490,35" halign="center" valign="top" transparent="1"/>
   </screen>
   <screen name="TitleSlim">
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="85,0" size="955,90" halign="center" valign="center" transparent="1"/>
