@@ -2740,12 +2740,12 @@
 	<widget backgroundColor="OE_Background" font="FHD;30" position="1105,175" render="Label" size="120,45" source="Frontend" transparent="1">
 	    <convert type="FrontendInfo">BER</convert>
 	</widget>
-	<eLabel text="TSID:" position="65,225" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
-	<widget source="tsid" render="Label" position="280,225" size="150,35" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-	<eLabel text="ONID:" position="385,225" size="120,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
-	<widget source="onid" render="Label" position="530,225" size="150,35" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
-	<eLabel text="Orb Pos:" position="675,225" size="140,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1" halign="right"/>
-	<widget source="pos" render="Label" position="850,225" size="150,35" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel text="TSID:" position="115,225" size="100,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1"/>
+	<widget source="tsid" render="Label" position="230,225" size="150,35" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel text="ONID:" position="435,225" size="100,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1"/>
+	<widget source="onid" render="Label" position="545,225" size="150,35" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
+	<eLabel text="Orb Pos:" position="725,225" size="130,35" backgroundColor="OE_Background" zPosition="2" font="FHD;30" transparent="1"/>
+	<widget source="pos" render="Label" position="865,225" size="150,35" font="FHD;30" foregroundColor="green_light" backgroundColor="OE_Background" halign="left" transparent="1" zPosition="3"/>
 	<eLabel name="lock" backgroundColor="OE_Background" font="FHD;30" foregroundColor="OE_Foreground" position="1045,220" size="230,45" halign="right" text="Lock:" transparent="1"/>
 	<widget alphatest="on" pixmap="extensions/lock_on.png" position="1330,220" render="Pixmap" size="35,35" source="Frontend" zPosition="1">
 	    <convert type="FrontendInfo">LOCK</convert>
