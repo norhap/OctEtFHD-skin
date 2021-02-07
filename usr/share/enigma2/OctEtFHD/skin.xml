@@ -3125,7 +3125,7 @@
 	</widget>
   </screen>
 	<!-- KEY NO USED UNHANDLEDKEY -->
-  <screen name="UnhandledKey" flags="wfNoBorder" position="110,5" size="75,75" transparent="0" zPosition="10">
+  <screen name="UnhandledKey" flags="wfNoBorder" backgroundColor="OE_NewBg2" position="12,10" size="75,75" transparent="0" zPosition="11">
 	<widget name="UnhandledKeyPixmap" pixmap="my_icons/unhandled_key.png" position="0,0" size="75,75" alphatest="blend"/>
   </screen>
   <screen name="Volume" title="Volume" backgroundColor="transparent" flags="wfNoBorder" position="50,0" size="120,155" transparent="0" zPosition="10">
@@ -3136,11 +3136,8 @@
 	<widget name="Volume" pixmap="my_icons/volume_2a100.png" position="10,91" size="100,8" transparent="1" zPosition="3"/>
 	<widget name="VolumeText" position="10,100" size="100,50" halign="center" font="FHD;40" backgroundColor="OE_NewBg2" transparent="1" zPosition="3"/>
   </screen>
-  <screen name="Mute" title="Mute" backgroundColor="transparent" flags="wfNoBorder" position="50,0" size="120,155" transparent="0" zPosition="10">
-	<eLabel backgroundColor="white" foregroundColor="white" name="" position="10,65" size="100,3" zPosition="-45"/>
-	<eLabel backgroundColor="OE_NewBg2" position="0,0" size="120,155" zPosition="-50" foregroundColor="white"/>
-	<!-- Widget -->
-	<ePixmap alphatest="blend" borderColor="transparent" borderWidth="0" pixmap="my_icons/mute2.png" position="21,85" size="79,55" transparent="1" zPosition="-1"/>
+  <screen name="Mute" title="Mute" backgroundColor="OE_NewBg2" flags="wfNoBorder" position="10,15" size="79,55" transparent="0" zPosition="10">
+	<ePixmap alphatest="blend" pixmap="my_icons/mute2.png" position="0,0" size="79,55"/>
   </screen>
   <screen name="VideoEnhancementSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
