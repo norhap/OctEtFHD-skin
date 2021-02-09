@@ -3,25 +3,25 @@
 	<!-- CLOCK TEMPLATES -->
 	<!-- <panel name="Clock"/> -->
   <screen name="Clock">
-	<eLabel backgroundColor="OE_NewBg2" position="1450,5" size="405,72" transparent="0" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1451,7" size="403,1" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1451,7" size="1,69" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1853,7" size="1,69" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1451,75" size="403,1" zPosition="2"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="1725,8" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<eLabel backgroundColor="OE_NewBg2" position="1440,5" size="430,75" transparent="0" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1441,7" size="428,1" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1441,7" size="1,72" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1868,7" size="1,72" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1441,78" size="428,1" zPosition="2"/>
+	<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="1735,10" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center" position="1450,25" zPosition="3" render="Label" size="270,35" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center"  valign="center" position="1443,10" zPosition="3" render="Label" size="290,65" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">FullDate</convert>
 	</widget>
   </screen>
 	<!-- CLOCK EPG -->
   <screen name="FrameClock">
 	<eLabel backgroundColor="OE_NewBg2" position="1460,0" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;45" halign="left" position="1725,0" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<widget backgroundColor="OE_NewBg" font="RegularBold;43" halign="left" position="1720,5" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center" position="1460,17" zPosition="3" render="Label" size="260,35" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center" position="1460,17" zPosition="3" render="Label" size="260,65" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">FullDate</convert>
 	</widget>
   </screen>
@@ -348,11 +348,9 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,1075" size="1520,2" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="430,1080" zPosition="-11" valign="center"/>
 	<eLabel backgroundColor="blue_light" name="" position="445,152" size="1420,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="445,470" size="1420,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="85,152" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<widget name="wizard" conditional="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="FHD;34" position="445,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
-	<widget name="text" conditional="text" font="FHD;30" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1255,300" transparent="1"/>
 	<widget name="portpic" conditional="portpic" position="300,465" zPosition="10" size="150,150" transparent="1" alphatest="blend"/>
 	<widget source="lab1" conditional="lab1" render="Label" position="35,160" size="400,50" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab2" conditional="lab2" render="Label" position="50,215" size="500,50" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="left" valign="center" transparent="1" zPosition="3"/>
@@ -367,8 +365,8 @@
 	<widget name="arrowdown2" conditional="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" conditional="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup2" conditional="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-	<widget name="stepslider" conditional="stepslider" borderWidth="1" position="665,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
-	<widget name="step" conditional="step" borderWidth="1" position="445,425" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<widget name="stepslider" conditional="stepslider" borderWidth="1" position="665,340" size="450,35" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+	<widget name="step" conditional="step" borderWidth="1" position="445,340" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="15" transparent="1"/>
   </screen>
 	 <!-- MESSAGEBOX TEMPLATE-->
   <screen name="MessageBoxTemplate">
