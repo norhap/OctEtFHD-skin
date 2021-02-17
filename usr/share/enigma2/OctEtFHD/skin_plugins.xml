@@ -2235,15 +2235,15 @@
 	<widget name="buddy" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="1090,195" size="380,600" transparent="1"/>
 	<widget name="input" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="97,870" size="1250,45" transparent="1"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="blue_light" name="" position="110,800" size="1250,2" zPosition="-9"/>
-	<widget name="red.pic" alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="105,980" size="40,40"/>
-	<widget name="green.pic" alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="450,980" size="40,40"/>
-	<widget name="yellow.pic" alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="780,980" size="40,40"/>
-	<widget name="blue.pic" alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="1080,980" size="40,40"/>
-	<widget name="disconnect.desc" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="connect.desc" font="RegularBold;26" backgroundColor="OE_Background" position="500,980" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="settings.desc" font="RegularBold;26" backgroundColor="OE_Background" position="830,980" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="blue.desc" font="RegularBold;24" backgroundColor="OE_Background" position="1100,965" size="250,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="97,800" size="1250,2" zPosition="-9"/>
+	<widget name="red.pic" alphatest="blend" pixmap="OctEtFHD/buttons/key_red.png" position="90,980" size="40,40"/>
+	<widget name="green.pic" alphatest="blend" pixmap="OctEtFHD/buttons/key_green.png" position="395,980" size="40,40"/>
+	<widget name="yellow.pic" alphatest="blend" pixmap="OctEtFHD/buttons/key_yellow.png" position="725,980" size="40,40"/>
+	<widget name="blue.pic" alphatest="blend" pixmap="OctEtFHD/buttons/key_blue.png" position="1045,980" size="40,40"/>
+	<widget name="disconnect.desc" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" position="135,965" size="255,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget name="connect.desc" font="RegularBold;24" backgroundColor="OE_Background" position="445,965" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget name="settings.desc" font="RegularBold;24" backgroundColor="OE_Background" position="775,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget name="blue.desc" font="RegularBold;24" backgroundColor="OE_Background" position="1090,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
 
   <!-- DreamMediathek -->
