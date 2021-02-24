@@ -1785,12 +1785,12 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="list" itemHeight="50" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="97,140" size="1250,100" transparent="1"/>
-	<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" position="97,270" size="1250,690" valign="top" halign="center"/>
-	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="1585,500" size="80,80" alphatest="blend"/>
-	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="1585,500" size="80,80" alphatest="blend"/>
-	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="1585,500" size="80,80" alphatest="blend"/>
-	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="1585,500" size="80,80" alphatest="blend"/>
-	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="1585,500" size="80,80" alphatest="blend"/>
+	<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" position="97,330" size="1250,630" valign="top" halign="center"/>
+	<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="680,245" size="80,80" alphatest="blend"/>
+	<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="680,245" size="80,80" alphatest="blend"/>
+	<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="680,245" size="80,80" alphatest="blend"/>
+	<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="680,245" size="80,80" alphatest="blend"/>
+	<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="680,245" size="80,80" alphatest="blend"/>
   </screen>
 	<!-- MESSAGEBOX SIMPLE-->
   <screen name="MessageBoxSimple" backgroundColor="transparent" position="200,center" size="1290,800">
