@@ -3829,8 +3829,8 @@
 	    <convert type="TemplatedMultiContent">
 		{"template": [
 		MultiContentEntryPixmapAlphaBlend(pos = (5, 15), size = (110, 110), png = 0),
-		MultiContentEntryText(pos = (90, 15), size = (400, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-		MultiContentEntryText(pos = (520, 15), size = (640, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+		MultiContentEntryText(pos = (90, 15), size = (900, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+		MultiContentEntryText(pos = (1000, 15), size = (250, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
 		],
 		"fonts": [gFont("RegularBold", 30),gFont("Regular", 28)],
 		"itemHeight": 80
@@ -3846,8 +3846,8 @@
 	    <convert type="TemplatedMultiContent">
 		{"template": [
 		MultiContentEntryPixmapAlphaBlend(pos = (5, 20), size = (110, 110), png = 0),
-		MultiContentEntryText(pos = (90, 20), size = (400, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-		MultiContentEntryText(pos = (520, 20), size = (640, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+		MultiContentEntryText(pos = (90, 20), size = (900, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+		MultiContentEntryText(pos = (1000, 20), size = (250, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
 		],
 		"fonts": [gFont("RegularBold", 30),gFont("Regular", 28)],
 		"itemHeight": 80
@@ -3863,15 +3863,15 @@
   <screen name="HddInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget font="RegularBold;26" halign="left" name="model" position="97,140" size="740,40" backgroundColor="OE_Background" valign="center"/>
-	<widget font="RegularBold;26" halign="left" name="serial" position="97,190" size="740,40" backgroundColor="OE_Background" valign="center"/>
-	<widget font="RegularBold;26" halign="left" name="firmware" position="97,240" size="740,40" backgroundColor="OE_Background" valign="center"/>
-	<widget font="RegularBold;26" halign="left" name="cylinders" position="97,290" size="740,40" backgroundColor="OE_Background" valign="center"/>
-	<widget font="RegularBold;26" halign="left" name="heads" position="97,340" size="740,40" backgroundColor="OE_Background" valign="center"/>
-	<widget font="RegularBold;26" halign="left" name="sectors" position="97,390" size="740,40" backgroundColor="OE_Background" valign="center"/>
-	<widget font="RegularBold;26" halign="left" name="readDisk" position="97,440" size="740,40" backgroundColor="OE_Background" valign="center"/>
-	<widget font="RegularBold;26" halign="left" name="readCache" position="97,490" size="740,40" backgroundColor="OE_Background" valign="center"/>
-	<widget font="RegularBold;26" halign="left" name="temp" position="97,540" size="740,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold;26" halign="left" name="model" position="97,140" size="1250,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold;26" halign="left" name="serial" position="97,190" size="1250,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold;26" halign="left" name="firmware" position="97,240" size="1250,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold;26" halign="left" name="cylinders" position="97,290" size="1250,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold;26" halign="left" name="heads" position="97,340" size="1250,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold;26" halign="left" name="sectors" position="97,390" size="1250,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold;26" halign="left" name="readDisk" position="97,440" size="1250,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold;26" halign="left" name="readCache" position="97,490" size="1250,40" backgroundColor="OE_Background" valign="center"/>
+	<widget font="RegularBold;26" halign="left" name="temp" position="97,540" size="1250,40" backgroundColor="OE_Background" valign="center"/>
 	<widget name="config" position="97,600" size="1250,205" backgroundColor="OE_Background" transparent="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light"/>
   </screen>
   <screen name="ExtraMessageBox"  backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="ExtraMessageBox">
