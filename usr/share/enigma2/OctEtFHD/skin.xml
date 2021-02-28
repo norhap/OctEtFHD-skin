@@ -4153,7 +4153,7 @@
   <screen name="VISIONSoftcamManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<widget name="lab8" position="330,275" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
-	<widget name="activecam" position="530,275" size="350,75" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
+	<widget name="activecam" position="530,275" size="1370,35" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
 	<widget name="lab7" position="315,130" size="350,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,350" zPosition="10" size="1490,590" transparent="1"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,900" size="64,43" alphatest="blend"/>
