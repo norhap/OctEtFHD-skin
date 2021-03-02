@@ -210,6 +210,7 @@
 	<!-- LANGUAJE WIZARD-->
   <screen name="LanguageWizard" title="Language Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
+	<panel name="TemplateRemoteControl"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
 	<eLabel backgroundColor="#0000fafa" name="" position="445,275" size="1460,2" zPosition="-8"/>
 	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1460,715" transparent="1">
@@ -225,6 +226,7 @@
 	<!-- VIDEO WIZARD-->
   <screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
+	<panel name="TemplateRemoteControl"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1460,300" transparent="1"/>
 	<eLabel backgroundColor="#0000fafa" name="" position="445,470" size="1460,2" zPosition="-9"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" size="1460,525" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
@@ -246,6 +248,7 @@
 	<!-- START WIZARD-->
   <screen name="StartWizard" title="Start Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
+	<panel name="TemplateRemoteControl"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1460,200" transparent="1"/>
 	<eLabel text="Progress:" font="RegularBold;34" backgroundColor="OE_Background" position="445,335" size="215,45" transparent="1"/>
 	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1460,2" zPosition="-9"/>
@@ -1621,9 +1624,45 @@
 	<widget name="long_key" position="230,1040" size="375,40" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold;26" transparent="1"/>
   </screen>
   <screen name="HelpMenuNew" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<panel position="60,center" size="150,500">
-		<panel name="TemplateRemoteControl" />
-	</panel>
+	<widget name="rc" pixmaps="rc.png,rcold.png" position="60,center" size="150,500" alphatest="blend" backgroundColor="transparent" zPosition="10" />
+	<!--
+	 |	For the key indicator pixmaps, "position" is used for
+	 |	the position of the pixmap "hotspot".
+	 |	The screen positions the pixmap relative to the
+	 |	hotspot, not the pixmap's top left corner
+	 +-->
+	<widget name="indicatorU0" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU1" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU2" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU3" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU4" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU5" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU6" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU7" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU8" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU9" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU10" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU11" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU12" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU13" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU14" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU15" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL0" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL1" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL2" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL3" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL4" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL5" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL6" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL7" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL8" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL9" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL10" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL11" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL12" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL13" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL14" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL15" pixmap="rc_circle.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
 	<!--
 	 |	To display the extended help for the current item in a description widget instead of in
 	 |	a second line in the help list, change the size of the description wizard to something
