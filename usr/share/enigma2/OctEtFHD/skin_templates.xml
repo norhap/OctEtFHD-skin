@@ -488,8 +488,8 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<panel name="StanDardScreen"/>
 	<panel name="description"/>
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1355,0" size="565,1080" zPosition="-16"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_left.png" position="110,980" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_right.png" position="160,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="110,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="160,980" size="64,43"/>
 	<eLabel text="[move mode]" position="230,983" size="400,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
 	<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" size="1250,820" transparent="1" zPosition="3"/>
 	<widget name="description" position="1360,145" size="550,45" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>

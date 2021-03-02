@@ -1617,10 +1617,10 @@
   <screen name="HelpMenuOld" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<widget name="list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="214,145" size="1130,850" transparent="1"/>
 	<widget name="rc" alphatest="blend" backgroundColor="transparent" pixmaps="rc.png,rcold.png" position="60,center" size="150,500" zPosition="10"/>
-	<widget alphatest="on" name="arrowdown" pixmap="arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
-	<widget alphatest="on" name="arrowdown2" pixmap="arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
-	<widget alphatest="on" name="arrowup" pixmap="arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
-	<widget alphatest="on" name="arrowup2" pixmap="arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
+	<widget alphatest="on" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
+	<widget alphatest="on" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
+	<widget alphatest="on" name="arrowup" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
+	<widget alphatest="on" name="arrowup2" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget name="long_key" position="230,1040" size="375,40" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold;26" transparent="1"/>
   </screen>
   <screen name="HelpMenuNew" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -1726,7 +1726,7 @@
 	<widget name="list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,305" size="1250,655" transparent="1"/>
 	<widget name="choosen" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" size="1250,150" transparent="1" foregroundColor="blue_light"/>
 	<!-- others-->
-	<ePixmap alphatest="blend" pixmap="buttons/key_0.png" position="835,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="835,980" size="64,43"/>
 	<eLabel text="Default" backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="900,985" size="200,40" transparent="1" zPosition="1"/>
   </screen>
   <screen name="HotkeySetupSelect" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -1800,7 +1800,7 @@
 	<!-- LANGUAJE SELECTION -->
   <screen name="LanguageSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="SlimScreen"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="10,925" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="10,925" size="64,43"/>
 	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="100,130" size="948,845" transparent="1">
 	    <convert type="TemplatedMultiContent">
 			{"template":[
@@ -1858,7 +1858,7 @@
 	<ePixmap name="new ePixmap" pixmap="buttons/key_help.png" position="1700,960" size="64,43" alphatest="blend"/>
 	<widget name="filelist" itemHeight="50" font="Regular;24" backgroundColor="OE_NewBg2" enableWrapAround="1" position="80,154" scrollbarMode="showNever" size="720,650" transparent="1"/>
 	<widget name="playlist" itemHeight="50" font="RegularBold;26" backgroundColor="OE_Background" selectionDisabled="1" position="830,153" scrollbarMode="showNever" size="1000,650" transparent="1"/>
-	<widget name="PositionGauge" position="377,628" size="0,0" pointer="position_pointer.png:13,3" seek_pointer="position_pointer.png:13,3" zPosition="3" transparent="1"/>
+	<widget name="PositionGauge" position="377,628" size="0,0" pointer="skin_default/position_pointer.png:13,3" seek_pointer="skin_default/position_pointer.png:13,3" zPosition="3" transparent="1"/>
 	<widget alphatest="blend" name="coverArt" pixmap="mmp/media_player.png" position="594,825" size="200,200" transparent="1"/>
 	<widget alphatest="blend" name="repeat" pixmaps="mmp/repeat_off.png,mmp/repeat_on.png" position="1770,960" size="60,43" transparent="1"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,810" size="720,4" zPosition="-9"/>
@@ -1976,8 +1976,8 @@
 	<widget name="chosenletter" position="300,885" size="100,50" font="RegularBold;24" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
 	<widget name="TrashcanSize" position="80,930" size="305,50" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
 	<widget name="freeDiskSpace" position="80,980" size="440,90" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
-	<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png" position="420,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
-	<widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" position="470,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
+	<widget name="movie_sort" pixmaps="/usr/share/enigma2/skin_default/icons/az.png,/usr/share/enigma2/skin_default/icons/newtop.png,/usr/share/enigma2/skin_default/icons/shuffle.png,/usr/share/enigma2/skin_default/icons/za.png,/usr/share/enigma2/skin_default/icons/oldtop.png,/usr/share/enigma2/skin_default/icons/faz.png,/usr/share/enigma2/skin_default/icons/fza.png,/usr/share/enigma2/skin_default/icons/default.png" position="420,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
+	<widget name="movie_off" pixmaps="/usr/share/enigma2/skin_default/icons/ask.png,/usr/share/enigma2/skin_default/icons/movielist.png,/usr/share/enigma2/skin_default/icons/quit.png,/usr/share/enigma2/skin_default/icons/pause.png,/usr/share/enigma2/skin_default/icons/playlist.png,/usr/share/enigma2/skin_default/icons/playlistquit.png,/usr/share/enigma2/skin_default/icons/loop.png,/usr/share/enigma2/skin_default/icons/rep.png" position="470,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
 	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="80,420" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="440,450" source="Service" transparent="1" valign="top" zPosition="1">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
@@ -1999,9 +1999,9 @@
 	<!-- MOVIESELECTIONSLIM -->
 	<screen name="MovieSelectionSlim" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
 	<panel name="SlimScreen"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="10,935" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="10,980" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="10,1025" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_menu.png" position="10,935" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_info.png" position="10,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="10,1025" size="64,43"/>
 	<widget name="chosenletter" position="350,530" size="380,185" font="Regular;50" foregroundColor="green_light" halign="center" valign="center" transparent="1" zPosition="4"/>
 	<widget name="freeDiskSpace" position="100,635" size="530,35" font="RegularBold;22" halign="left" transparent="1" backgroundColor="OE_Background" foregroundColor="blue_light"/>
 	<widget name="TrashcanSize" position="800,635" size="235,35" font="RegularBold;21" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" zPosition="2" transparent="1"/>
@@ -2018,8 +2018,8 @@
 	<widget backgroundColor="OE_Background" font="RegularBold;22" halign="left" position="100,675" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="925,285" source="Service" transparent="1" valign="top">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
-	<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png" position="25,890" size="35,20" transparent="1" alphatest="on"/>
-	<widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" position="25,910" size="35,20" transparent="1" alphatest="on"/>
+	<widget name="movie_sort" pixmaps="/usr/share/enigma2/skin_default/icons/az.png,/usr/share/enigma2/skin_default/icons/newtop.png,/usr/share/enigma2/skin_default/icons/shuffle.png,/usr/share/enigma2/skin_default/icons/za.png,/usr/share/enigma2/skin_default/icons/oldtop.png,/usr/share/enigma2/skin_default/icons/faz.png,/usr/share/enigma2/skin_default/icons/fza.png,/usr/share/enigma2/skin_default/icons/default.png" position="25,890" size="35,20" transparent="1" alphatest="on"/>
+	<widget name="movie_off" pixmaps="/usr/share/enigma2/skin_default/icons/ask.png,/usr/share/enigma2/skin_default/icons/movielist.png,/usr/share/enigma2/skin_default/icons/quit.png,/usr/share/enigma2/skin_default/icons/pause.png,/usr/share/enigma2/skin_default/icons/playlist.png,/usr/share/enigma2/skin_default/icons/playlistquit.png,/usr/share/enigma2/skin_default/icons/loop.png,/usr/share/enigma2/skin_default/icons/rep.png" position="25,910" size="35,20" transparent="1" alphatest="on"/>
   </screen>
   <screen name="MovieMenu" title="MovieMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2489,13 +2489,13 @@
   <screen name="PluginBrowser" backgroundColor="transparent" flags="wfNoBorder"  position="0,0" size="1920,1080" transparent="0">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="18,920" size="64,43"/>
-	<!-- ePixmap alphatest="blend" pixmap="buttons/key_left.png" position="100,1035" size="64,43"/> -->
-	<!-- ePixmap alphatest="blend" pixmap="buttons/key_right.png" position="155,1035" size="64,43"/> -->
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="18,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="18,920" size="64,43"/>
+	<!-- ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1035" size="64,43"/> -->
+	<!-- ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="155,1035" size="64,43"/> -->
 	<widget name="list" itemHeight="75" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" size="1250,820" transparent="1"/>
 	<!-- eLabel text="[move mode]" position="250,1035" size="600,40" halign="left" valign="center" backgroundColor="OE_Background" zPosition="1" transparent="1" font="RegularBold;24"/> -->
-	<!-- ePixmap alphatest="blend" pixmap="buttons/key_0.png" position="900,1035" size="64,43"/> -->
+	<!-- ePixmap alphatest="blend" pixmap="skin_default/buttons/key_0.png" position="900,1035" size="64,43"/> -->
 	<!-- eLabel text="Default" position="985,1035" size="350,40" backgroundColor="OE_Background" font="RegularBold;24" halign="left" valign="center" transparent="1" zPosition="1"/> -->
   </screen>
   <screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2812,7 +2812,7 @@
   </screen>
 	<!-- DISH-->
   <screen name="Dish" backgroundColor="transparent" flags="wfNoBorder" position="20,75" size="550,250" title="Dish" zPosition="2">
-	<widget alphatest="off" name="Dishpixmap" pixmap="icons/dish.png" position="0,0" size="256,256"/>
+	<widget alphatest="off" name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="256,256"/>
 	<widget name="turnTime" position="260,20" size="150,30" zPosition="1" font="RegularBold;24" transparent="1"/>
 	<widget name="From" position="260,60" size="110,30" zPosition="1" font="RegularBold;22" transparent="1"/>
 	<widget name="posFrom" position="390,60" size="160,30" zPosition="1" font="RegularBold;24" transparent="1"/>
@@ -4790,8 +4790,8 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="435,798" size="40,40" zPosition="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="840,798" size="40,40" zPosition="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1245,798" size="40,40" zPosition="1"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="1572,7" zPosition="1" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_info.png" position="1572,52" zPosition="1" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1572,7" zPosition="1" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="skin_default/buttons/key_info.png" position="1572,52" zPosition="1" size="64,43" alphatest="blend"/>
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_red" position="0,790" size="300,57" transparent="1" valign="center" zPosition="2"/>
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_green" position="385,790" size="375,57" transparent="1" valign="center" zPosition="2"/>
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_yellow" position="825,790" size="375,57" transparent="1" valign="center" zPosition="2"/>
