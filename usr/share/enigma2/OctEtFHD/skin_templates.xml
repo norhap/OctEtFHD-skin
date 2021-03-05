@@ -553,7 +553,6 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
   </screen>
 	<!-- REMOTE CONTROL -->
   <screen name="TemplateRemoteControl">
-	<widget name="rc" pixmaps="rc.png,rcold.png" position="152,500" size="150,500" alphatest="blend" backgroundColor="transparent" zPosition="10" />
 	<!--
 	 |	For the key indicator pixmaps, "position" is used for
 	 |	the position of the pixmap "hotspot".
