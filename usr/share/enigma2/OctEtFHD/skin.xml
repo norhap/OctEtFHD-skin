@@ -4764,5 +4764,5 @@
 	<eLabel position="1,44" size="419,1" backgroundColor="blue_light" zPosition="3"/>
 	<eLabel position="419,0" size="1,44" backgroundColor="blue_light" zPosition="3"/>
 	<widget name="status" position="0,5" size="420,35" backgroundColor="OE_NewBg2" transparent="1" font="RegularBold;24" valign="center" halign="center" zPosition="100"/>
-  </screen>  
+  </screen>
 </skin>
