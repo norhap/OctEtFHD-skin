@@ -4863,33 +4863,33 @@
 	<panel name="Clock1"/>
   </screen>
 
-  <!-- SatipClient -->
+  <!-- SAT>IP CLIENT -->
   <screen name="SATIPTuner" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-  	<panel name="StanDardScreen"/>
-	<panel name="TemplateNoPip"/>
-	<widget name="config" zPosition="2" position="97,200" size="1250,72" font="RegularBold;32" scrollbarMode="showOnDemand" transparent="1" />
-	<widget source="choices" render="Label" position="97,288" size="1250,40" font="RegularBold;32" halign="left" valign="center" />
-	<widget source="description" render="Label" position="97,344" size="1250,210" font="RegularBold;26" halign="left" valign="center" />
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<panel name="TemplateDescription"/>
+	<widget name="config" zPosition="2" position="97,200" size="1250,72" font="RegularBold;32" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget source="choices" render="Label" position="97,288" size="1250,40" font="RegularBold;32" halign="left" valign="center"/>
   </screen>
 
   <screen name="SATIPClient" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-  	<panel name="StanDardScreen"/>
-	<panel name="TemplateNoPip"/>
-	<widget source="vtunerList" render="Listbox" enableWrapAround="1" position="97,140" size="1250,800" transparent="1" zPosition="3">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<panel name="TemplateDescription"/>
+	<widget source="vtunerList" render="Listbox" enableWrapAround="1" position="97,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1" zPosition="3">
 		<convert type="TemplatedMultiContent">
 			{"template": [
 				MultiContentEntryText(pos = (20, 0), size = (1210, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 				MultiContentEntryText(pos = (50, 40), size = (400, 26), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
 				MultiContentEntryText(pos = (450, 40), size = (400, 26), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
 				MultiContentEntryText(pos = (850, 40), size = (400, 26), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),
-				MultiContentEntryText(pos = (50, 74), size = (1210, 26), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
+				MultiContentEntryText(pos = (50, 74), size = (1200, 26), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
 				],
 				"fonts": [gFont("RegularBold",32),gFont("RegularBold",26)],
-				"itemHeight": 150
+				"itemHeight": 100
 			}
 		</convert>
 	</widget>
-	<widget source="description" render="Label" position="97,920" size="590,30" font="Regular;20" halign="center" valign="center" />
   </screen>
 
   <!-- SeyirTURK -->

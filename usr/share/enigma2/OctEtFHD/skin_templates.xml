@@ -475,9 +475,8 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
   </screen>
 	<!-- DESCRIPTION INSIDE OF SCREEN STANDARD -->
   <screen name="TemplateDescription">
-	<eLabel backgroundColor="blue_light" position="97,860" size="1250,2" zPosition="2"/>
-	<widget source="description" render="Label" font="RegularBold;28" position="97,862" size="1250,103" zPosition="10" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="0"/>
-	<widget name="description" font="RegularBold;28" position="97,862" size="1250,103" zPosition="10" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="0"/>
+	<widget source="description" conditional="description" render="Label" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="description" conditional="description" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 	<!-- ####### CHOICEBOX ####### -->
   <screen name="description" position="fill" flags="wfNoBorder">
