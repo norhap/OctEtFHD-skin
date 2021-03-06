@@ -3,7 +3,7 @@ OctEtFHD [![Build Status](https://travis-ci.org/OpenVisionE2/OctEtFHD-skin.svg?b
 
 Original skin by Octagon Germany
 
-Modified to be compatible with Open Vision
+Modified to be compatible with Open Vision, revamped by norhap
 
 ![Screenshot](sc1.jpg)
 ![Screenshot](sc2.jpg)
