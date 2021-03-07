@@ -1606,29 +1606,29 @@
 	<panel name="HelpMenuNew" conditional="indicatorU0" />
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,0" size="1355,1080" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="1350,3" zPosition="-15"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="214,140" size="1130,2" zPosition="-9"/>
+	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="184,140" size="1160,2" zPosition="-9"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="105,1033" size="1250,2" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1077" size="1350,3" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="3,1078" zPosition="-15"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1352,0" size="3,1078" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="45,3" size="160,1075" zPosition="-11" valign="center"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="15,3" size="160,1075" zPosition="-11" valign="center"/>
 	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="97,40" size="1250,90" halign="center" valign="center" transparent="1"/>
-	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="85,85" size="75,75" transparent="1" zPosition="1"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="55,85" size="75,75" transparent="1" zPosition="1"/>
   </screen>
   <screen name="HelpMenuOld" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-	<widget name="list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="214,145" size="1130,850" transparent="1"/>
-	<widget name="rc" alphatest="blend" backgroundColor="transparent" pixmaps="rc.png,rcold.png" position="60,center" size="150,500" zPosition="10"/>
+	<widget name="list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="184,145" size="1160,850" transparent="1"/>
+	<widget name="rc" alphatest="blend" backgroundColor="transparent" pixmaps="rc.png,rcold.png" position="30,center" size="150,500" zPosition="10"/>
 	<widget alphatest="on" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowup" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowup2" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
-	<widget name="long_key" position="230,1040" size="375,40" backgroundColor="OE_Background" foregroundColor="blue_light" font="RegularBold;26" transparent="1"/>
+	<widget name="long_key" position="214,1040" size="1160,35" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" halign="left" transparent="1"/>
   </screen>
   <screen name="HelpMenuNew" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateRemoteControl"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="90,980" size="64,43"/>
-	<widget name="rc" pixmaps="rc.png,rcold.png" position="60,center" size="150,500" alphatest="blend" backgroundColor="transparent" zPosition="10" />
-	<widget source="list" render="Listbox" position="214,145" size="1130,850" backgroundColor="OE_Background" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="60,980" size="64,43"/>
+	<widget name="rc" pixmaps="rc.png,rcold.png" position="30,center" size="150,500" alphatest="blend" backgroundColor="transparent" zPosition="10" />
+	<widget source="list" render="Listbox" position="184,145" size="1160,850" backgroundColor="OE_Background" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 		<convert type="TemplatedMultiContent">
 			{
 			# Template for use when "description" is used
@@ -1642,41 +1642,41 @@
 				# data[1:] = [helpText]
 				"default": (50,  # itemHeight
 					[
-					MultiContentEntryText(pos = (30, 0), size = (790, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)
+					MultiContentEntryText(pos = (30, 0), size = (1130, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)
 					]),
 				# Simple help with headings
 				# data[1:] = [heading, None]  # For heading entries
 				# data[1:] = [None, helpText]  # For help entries
 				"default+headings": (50,  # itemHeight
 					[
-					MultiContentEntryText(pos = (0, 0), size = (810, 50), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (30, 0), size = (790, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
+					MultiContentEntryText(pos = (0, 0), size = (1160, 50), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (30, 0), size = (1130, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
 					]),
 				# Extended help with no headings
 				# data[1:] = [helpText, extendedHelpText]
 				"extended": (50,  # itemHeight
 					[
-					MultiContentEntryText(pos = (30, 0), size = (790, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)
-					# MultiContentEntryText(pos = (75, 25), size = (760, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
+					MultiContentEntryText(pos = (30, 0), size = (1130, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1)
+					# MultiContentEntryText(pos = (75, 25), size = (1085, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
 					]),
 				# Extended help with headings
 				# data[1:] = [heading, None, None]  # For heading entries
 				# data[1:] = [None, helpText, extendedHelpText]  # For help entries
 				"extended+headings": (50,  # itemHeight
 					[
-					MultiContentEntryText(pos = (0, 0), size = (810, 50), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (30, 0), size = (790, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
-					# MultiContentEntryText(pos = (75, 25), size = (760, 50), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3)
+					MultiContentEntryText(pos = (0, 0), size = (1160, 50), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (30, 0), size = (1130, 50), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
+					# MultiContentEntryText(pos = (75, 25), size = (1085, 50), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3)
 					]),
 				},
-			"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 28), gFont("RegularBold", 28)],
+			"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 26), gFont("RegularBold", 26)],
 			"itemHeight": 50
 			}
 		</convert>
 	</widget>
-	<widget name="longshift_key0" position="230,1040" size="375,40" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" halign="right" transparent="1" valign="center" />
-	<widget name="longshift_key1" position="230,1040" size="375,40" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" transparent="1" valign="center" />
-	<widget name="description" conditional="description" position="1360,425" size="550,635" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2" />
+	<widget name="longshift_key0" position="214,1040" size="500,35" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" halign="left" transparent="1"/>
+	<widget name="longshift_key1" position="720,1040" size="440,35" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" halign="left" transparent="1"/>
+	<widget name="description" conditional="description" position="1360,425" size="550,635" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 	<!-- HOTKEY SETUP -->
   <screen name="HotkeySetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
