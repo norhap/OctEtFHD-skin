@@ -324,8 +324,8 @@
   <screen name="Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Setup">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
   </screen>
 	<!-- MENU SORT -->
   <screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -1711,6 +1711,7 @@
   <screen name="InputDeviceSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,700" transparent="1">
 	    <convert type="TemplatedMultiContent">
 					   {"template": [ MultiContentEntryPixmapAlphaBlend(pos = (5, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
@@ -2010,6 +2011,7 @@
   <screen name="NetworkAdapterSelection" title="NetworkAdapterSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="97,140" size="1250,680" transparent="1">
 	    <convert type="TemplatedMultiContent">
 					{"template": [
@@ -2027,6 +2029,7 @@
   <screen name="AdapterSetupConfiguration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget source="description" render="Label" conditional="description" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
 	<widget source="IF" render="Label" font="RegularBold;32" backgroundColor="OE_Background" halign="left" position="165,150" size="500,50" transparent="1"/>
 	<widget source="Statustext" render="Label" font="RegularBold;32" foregroundColor="white" backgroundColor="OE_Background" position="770,150" size="370,50" transparent="1" halign="right"/>
@@ -2108,6 +2111,7 @@
   <screen name="NameserverSetup" title="NameserverSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,700" transparent="1"/>
   </screen>
   <screen name="RestartNetwork" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -2192,6 +2196,7 @@
   <screen name="NetworkMountsMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget name="menulist" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,700" transparent="1"/>
   </screen>
   <screen name="AutoMountManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
@@ -2602,6 +2607,7 @@
   <screen name="LocationBox" title="Location Box" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="97,145" size="1250,45" transparent="1"/>
 	<widget name="target" font="RegularBold;26" backgroundColor="OE_Background" position="97,195" size="1250,45" transparent="1"/>
 	<widget name="filelist" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,245" size="1250,450" transparent="1"/>
@@ -3890,6 +3896,7 @@
   <screen name="NetworkMacSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget name="config" itemHeight="50" position="97,140" size="1250,800" scrollbarMode="showOnDemand" font="RegularBold;23" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="description" font="RegularBold;26" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
@@ -3897,6 +3904,7 @@
   <screen name="IPv6Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget name="config" itemHeight="50" font="RegularBold;25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" zPosition="10" size="1250,630" transparent="1"/>
   </screen>
 	<!-- E2IPLAYER SETUP-->
@@ -3930,9 +3938,10 @@
   <screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,930" size="64,43"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="18,980" size="64,43" alphatest="blend"/>
 	<widget name="config" itemHeight="50" position="97,140" size="1250,300" font="RegularBold;30" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="info" position="120,450" size="1250,510" font="RegularBold;30" backgroundColor="OE_Background" transparent="1"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="18,980" size="64,43" alphatest="blend"/>
   </screen>
 	<!-- PE SPEED UP-->
   <screen name="PESpeedUp" position="fill" title="PE Speed Up">
@@ -4766,5 +4775,11 @@
 	<eLabel position="1,44" size="419,1" backgroundColor="blue_light" zPosition="3"/>
 	<eLabel position="419,0" size="1,44" backgroundColor="blue_light" zPosition="3"/>
 	<widget name="status" position="0,5" size="420,35" backgroundColor="OE_NewBg2" transparent="1" font="RegularBold;24" valign="center" halign="center" zPosition="100"/>
+  </screen>
+	<!-- ********** ####### VIDEO SETUP ####### ********** -->
+  <screen name="VideoSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Setup">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
   </screen>
 </skin>
