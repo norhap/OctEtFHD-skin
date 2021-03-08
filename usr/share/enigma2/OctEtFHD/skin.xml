@@ -189,6 +189,7 @@
 	<parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
 	<parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
 	<parameter name="HelpMenuListExtHlp1" value="0, 42, 900, 30"/>
+	<parameter name="InformationColors" value="OE_Background, OE_Foreground, OE_Blue, OE_Blue, OE_Orange"/>
 	<parameter name="PiconManagerList" value="10, 2, 1410, 45"/>
 	<parameter name="PiconManagerListFont" value="Regular; 28"/>
 	<parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25"/>
