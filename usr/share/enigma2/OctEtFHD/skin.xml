@@ -563,11 +563,11 @@
 	<widget source="session.Event_Now" render="Progress" foregroundColor="blue_light" backgroundColor="green_light" position="665,225" size="1020,6" transparent="0" zPosition="10">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="663,638" render="Label" size="100,48" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="663,638" render="Label" size="100,48" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="745,638" render="Label" size="100,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="745,638" render="Label" size="100,40" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
