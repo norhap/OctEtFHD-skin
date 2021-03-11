@@ -5,9 +5,9 @@
   <screen name="Clock">
 	<eLabel backgroundColor="OE_NewBg2" position="1390,5" size="490,75" transparent="0" zPosition="2"/>
 	<eLabel backgroundColor="blue_light" name="" position="1392,7" size="485,1" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1392,7" size="1,71" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1877,7" size="1,71" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="1392,78" size="486,1" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1392,7" size="1,70" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1877,7" size="1,70" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="1392,77" size="486,1" zPosition="2"/>
 	<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="1735,13" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
