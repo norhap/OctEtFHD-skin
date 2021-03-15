@@ -213,8 +213,8 @@
 	<panel name="TemplateWizard"/>
 	<panel name="TemplateRemoteControl"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
-	<eLabel backgroundColor="#0000fafa" name="" position="445,275" size="1460,2" zPosition="-8"/>
-	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1460,715" transparent="1">
+	<eLabel backgroundColor="#0000fafa" name="" position="445,275" size="1430,2" zPosition="-8"/>
+	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,715" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos=(120,15),size=(1340,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
@@ -228,9 +228,9 @@
   <screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
 	<panel name="TemplateRemoteControl"/>
-	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1460,300" transparent="1"/>
-	<eLabel backgroundColor="#0000fafa" name="" position="445,470" size="1460,2" zPosition="-9"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" size="1460,525" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
+	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1430,300" transparent="1"/>
+	<eLabel backgroundColor="#0000fafa" name="" position="445,470" size="1430,2" zPosition="-9"/>
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" size="1430,525" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,10),size=(1440,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("RegularBold",30) ],"itemHeight":50}
@@ -250,21 +250,21 @@
   <screen name="StartWizard" title="Start Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
 	<panel name="TemplateRemoteControl"/>
-	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1460,200" transparent="1"/>
+	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1430,200" transparent="1"/>
 	<eLabel text="Progress:" font="RegularBold;34" backgroundColor="OE_Background" position="445,335" size="215,45" transparent="1"/>
-	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1460,2" zPosition="-9"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,390" size="1460,655" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
+	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1430,2" zPosition="-9"/>
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,390" size="1430,655" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,2),size=(1440,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("RegularBold",30) ],"itemHeight":50}
 	    </convert>
 	</widget>
-	<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,390" size="1460,655" zPosition="1"/>
+	<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,390" size="1430,655" zPosition="1"/>
   </screen>
 	<!-- INSTALL WIZARD -->
   <screen name="InstallWizard" backgroundColor="transparent" title="Welcome..." position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="445,130" size="1460,200" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="445,130" size="1430,200" transparent="1"/>
   </screen>
 	<!-- OPKG UPDATER -->
   <screen name="InstallWizardOpkgUpdater" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
@@ -940,15 +940,15 @@
   </screen>
   <screen name="AutoTimerWizard" title="Welcome..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
-	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1460,200" transparent="1"/>
-	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1460,2" zPosition="-9"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,390" scrollbarMode="showOnDemand" size="1460,500" transparent="1">
+	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1430,200" transparent="1"/>
+	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1430,2" zPosition="-9"/>
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,390" scrollbarMode="showOnDemand" size="1430,500" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[ MultiContentEntryText(pos=(20,5),size=(1440,45),flags=RT_HALIGN_LEFT,text=0) ],
 				"fonts":[gFont("RegularBold",30) ],"itemHeight":50}
 	    </convert>
 	</widget>
-	<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,390" size="1460,215" zPosition="1"/>
+	<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,390" size="1430,215" zPosition="1"/>
   </screen>
   <screen name="AutoResSetupMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
