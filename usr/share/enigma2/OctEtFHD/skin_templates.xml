@@ -305,6 +305,8 @@
   </screen>
 	<!-- FRAME MENUS OPENVISION -->
   <screen name="FrameInformation">
+	<eLabel text="Help" position="0,865" size="395,35" font="RegularBold;26" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="165,905" size="64,43"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,0" size="1920,1080" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,center" size="400,1080" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="400,5" size="1520,2" zPosition="-15"/>
@@ -354,7 +356,7 @@
 	<widget name="wizard" conditional="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="RegularBold;34" position="445,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
 	<widget name="portpic" conditional="portpic" position="300,465" zPosition="10" size="150,150" transparent="1" alphatest="blend"/>
-	<widget source="lab1" conditional="lab1" render="Label" position="35,160" size="400,50" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget source="lab1" conditional="lab1" render="Label" position="20,160" size="400,50" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab2" conditional="lab2" render="Label" position="40,215" size="390,45" font="RegularBold;22" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="left" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab3" conditional="lab3" render="Label" position="30,295" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget source="lab4" conditional="lab4" render="Label" position="100,330" size="500,30" font="RegularBold;23" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
