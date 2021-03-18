@@ -2102,13 +2102,6 @@
 	<eLabel text=":" position="718,720" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" halign="left"/>
 	<eLabel text=":" position="718,780" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" halign="left"/>
 	<eLabel text=":" position="718,830" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" halign="left"/>
-	<!-- others-->
-	<widget alphatest="blend" pixmap="buttons/key_text.png" position="1332,958" render="Pixmap" size="64,43" source="VKeyIcon" transparent="1">
-	    <convert type="ConditionalShowHide"/>
-	</widget>
-	<widget alphatest="blend" pixmap="my_icons/key_board.png" position="1406,958" render="Pixmap" size="64,43" source="VKeyIcon" transparent="1">
-	    <convert type="ConditionalShowHide"/>
-	</widget>
   </screen>
 	<!-- NETWORK NAMESERVER SETUP -->
   <screen name="NameserverSetup" title="NameserverSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
