@@ -975,30 +975,14 @@
 	<panel name="Clock"/>
   </screen>
 
-  <!-- CacheFlush -->
+  <!-- CACHE FLUSH -->
   <screen name="CacheFlushSetupMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="CacheFlush Setup" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,600" transparent="1"/>
-	<eLabel backgroundColor="white" name="" position="170,780" size="1250,2" zPosition="-9"/>
-	<widget name="min_free_kb" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,790" size="1250,45" transparent="1"/>
-	<widget name="memory" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,840" size="1250,45" transparent="1"/>
-	<widget name="slide" borderWidth="1" halign="left" position="170,890" size="1250,25" transparent="1" backgroundColor="OE_Background"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="830,960" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1160,960" size="40,40"/>
-	<widget name="key_red" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="220,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="key_green" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="550,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="key_yellow" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="880,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget name="key_blue" font="Regular;28" backgroundColor="OE_Background" foregroundColor="white" position="1210,960" size="270,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="Clock"/>
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
+	<widget name="min_free_kb" position="1360,480" size="550,70" font="RegularBold;21" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="memory" position="1355,805" size="550,70" font="RegularBold;23" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="slide" borderWidth="1" position="1360,800" size="550,15" transparent="1" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa"/>
   </screen>
 
   <screen name="CacheFlushAutoScreen" title="CacheFlush Status" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
