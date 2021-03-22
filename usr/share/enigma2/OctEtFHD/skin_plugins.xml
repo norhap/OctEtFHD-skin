@@ -980,9 +980,9 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
-	<widget name="min_free_kb" position="1360,480" size="550,70" font="RegularBold;21" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="memory" position="1355,805" size="550,70" font="RegularBold;23" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="slide" borderWidth="1" position="1360,800" size="550,15" transparent="1" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa"/>
+	<widget name="min_free_kb" position="1360,505" size="550,70" font="RegularBold;21" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="slide" borderWidth="2" position="1360,600" size="535,15" transparent="1" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa"/>
+	<widget name="memory" position="1360,625" size="550,70" font="RegularBold;21" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 
   <screen name="CacheFlushAutoScreen" title="CacheFlush Status" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
