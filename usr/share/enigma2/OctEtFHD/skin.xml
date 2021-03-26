@@ -765,8 +765,8 @@
 	<!-- TRANSLATION INFO -->
   <screen name="TranslationInfo" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateInformation"/>
-	<widget source="TranslatorName" render="Label" position="410,150" size="680,70" font="RegularBold;26"/>
-	<widget source="TranslationInfo" render="Label" position="410,250" size="680,250" font="RegularBold;26"/>
+	<widget source="TranslatorName" render="Label" position="410,150" size="680,70" font="RegularBold;26" backgroundColor="OE_Background"/>
+	<widget source="TranslationInfo" render="Label" position="410,250" size="680,250" font="RegularBold;26" backgroundColor="OE_Background"/>
   </screen>
 	<!-- TROUBLESHOOT -->
   <screen name="Troubleshoot" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
