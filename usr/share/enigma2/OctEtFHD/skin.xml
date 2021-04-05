@@ -4079,7 +4079,7 @@
 	<ePixmap pixmap="buttons/key_info.png" position="235,905" size="64,43" alphatest="blend"/>
 	<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,280" zPosition="10" size="1490,550" transparent="1"/>
-	<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,850" size="1490,35" transparent="1" valign="top"/>
+	<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,880" size="1490,35" transparent="1" valign="top"/>
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
 	</applet>
@@ -4110,7 +4110,7 @@
 	<ePixmap pixmap="buttons/key_exit.png" position="200,905" size="64,43" alphatest="blend"/>
 	<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,570" transparent="1"/>
-	<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,850" size="1490,35" transparent="1" valign="top"/>
+	<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,880" size="1490,35" transparent="1" valign="top"/>
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
 	</applet>
