@@ -1681,8 +1681,9 @@
 			}
 		</convert>
 	</widget>
-	<widget name="longshift_key0" position="214,1040" size="500,35" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" halign="left" transparent="1"/>
-	<widget name="longshift_key1" position="720,1040" size="440,35" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" halign="left" transparent="1"/>
+	<widget name="buttonlist" position="214,1040" size="500,35" backgroundColor="OE_Background" conditional="buttonlist" font="RegularBold;26" foregroundColor="blue_light" halign="left" transparent="1"/>
+	<widget name="longshift_key0" position="214,1040" size="500,35" backgroundColor="OE_Background" conditional="longshift_key0" font="RegularBold;26" foregroundColor="blue_light" halign="left" transparent="1"/>
+	<widget name="longshift_key1" position="720,1040" size="440,35" backgroundColor="OE_Background" conditional="longshift_key1" font="RegularBold;26" foregroundColor="blue_light" halign="left" transparent="1"/>
 	<widget name="description" conditional="description" position="1360,425" size="550,635" font="RegularBold;26" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 	<!-- HOTKEY SETUP -->
