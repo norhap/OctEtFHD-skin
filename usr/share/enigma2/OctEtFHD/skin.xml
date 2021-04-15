@@ -3784,8 +3784,8 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="lab1" position="97,140" size="1250,50" font="RegularBold;28" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
-	<widget name="key_menu" position="97,915" size="400,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="18,925" size="64,43" alphatest="blend"/>
+	<widget name="key_menu" position="1340,735" size="580,35" font="RegularBold;26" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="1595,680" size="64,43" alphatest="blend"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,720" transparent="1">
 	    <convert type="TemplatedMultiContent">
 		{"template": [ MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (110, 110), png = 2), # index 3 is the interface pixmap
@@ -3801,7 +3801,7 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="config" itemHeight="50" position="97,140" size="1250,700" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="Linconn" position="500,880" size="550,50" font="RegularBold;26" backgroundColor="#9f1313"/>
+	<widget name="Linconn" position="1340,735" size="580,35" font="RegularBold;26" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
   </screen>
 	<!-- EDIT FSTAB-->
   <screen name="fstabViewerScreen" position="fill" flags="wfNoBorder">
