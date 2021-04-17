@@ -2980,8 +2980,8 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,600" transparent="1"/>
-	<widget name="status" position="1435,375" size="450,250" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="statusbar" position="1435,665" size="450,385" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="status" position="1350,450" size="570,140" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="statusbar" position="1350,590" size="570,385" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,865" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="18,920" size="64,43"/>
   </screen>
