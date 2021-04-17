@@ -686,7 +686,7 @@
 	<panel name="TemplateInformation"/>
 	<panel name="HelpInformation"/>
 	<!-- widget name="information" conditional="information" position="410,140" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" leftColAlign="left" rightColAlign="left" split="1" transparent="1"/> -->
-	<widget name="information" conditional="information" position="410,140" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" split="1" transparent="1"/>
+	<widget name="information" conditional="information" position="410,145" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" split="1" transparent="1"/>
   </screen>
 	<!-- MAIN MENU INFORMATION -->
 	<!-- INFO SERVICE -->
@@ -698,7 +698,7 @@
   <screen name="About" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="">
 	<panel name="TemplateInformation"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="165,905" size="64,43"/>
-	<widget name="AboutScrollLabel" font="RegularBold;26" foregroundColor="white" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="410,140" size="1490,805" halign="left" transparent="1"/>
+	<widget name="AboutScrollLabel" font="RegularBold;26" foregroundColor="white" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="410,147" size="1490,805" halign="left" transparent="1"/>
   </screen>
 	<!-- INFO OPENVISION -->
   <screen name="OpenVisionInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
