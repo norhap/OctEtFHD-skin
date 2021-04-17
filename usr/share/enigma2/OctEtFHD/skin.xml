@@ -2863,17 +2863,17 @@
   <screen name="ServiceScan" title="Service Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplateNoPip"/>
-	<widget alphatest="blend" pixmap="icons/scan-s.png" position="1230,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-s.png" position="1570,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	    <convert type="FrontendInfo">TYPE</convert>
 	    <convert type="ValueRange">0,0</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="icons/scan-c.png" position="1230,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-c.png" position="1570,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	    <convert type="FrontendInfo">TYPE</convert>
 	    <convert type="ValueRange">1,1</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="icons/scan-t.png" position="1230,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
+	<widget alphatest="blend" pixmap="icons/scan-t.png" position="1570,180" render="Pixmap" size="110,110" source="FrontendInfo" transparent="1">
 	    <convert type="FrontendInfo">TYPE</convert>
 	    <convert type="ValueRange">2,2</convert>
 	    <convert type="ConditionalShowHide"/>
@@ -2893,9 +2893,10 @@
   </screen>
   <screen name="FastScanStatus" title="Fast Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="scan_state" position="220,520" size="1050,45" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1"/>
-	<widget name="scan_progress" borderColor="grey" borderWidth="1" backgroundColor="OE_Background" foregroundColor="green_light" position="220,585" size="1050,25" transparent="1"/>
-	<widget name="frontend" pixmap="icons/scan-s.png" alphatest="blend" position="1290,190" size="110,110" zPosition="1"/>
+	<panel name="TemplateNoPip"/>
+	<widget name="scan_state" position="97,300" size="1050,45" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1"/>
+	<widget name="scan_progress" borderColor="grey" borderWidth="1" backgroundColor="OE_Background" foregroundColor="green_light" position="97,365" size="1050,25" transparent="1"/>
+	<widget name="frontend" pixmap="icons/scan-s.png" alphatest="blend" position="1570,180" size="110,110" zPosition="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_ok.png" position="18,980" size="64,43"/>
   </screen>
 	<!-- CABLE SCANING -->
