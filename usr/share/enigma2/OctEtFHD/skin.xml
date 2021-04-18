@@ -1044,14 +1044,179 @@
 	<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="50,365" render="Progress" size="600,5" source="ServiceEvent" transparent="0" zPosition="1">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" position="50,375" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="600,360" source="ServiceEvent" transparent="1" valign="top">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" position="50,380" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="600,330" source="ServiceEvent" transparent="1" valign="top">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
-	<widget backgroundColor="blue_light" foregroundColor="blue_light" borderWidth="0" position="50,740" render="Progress" size="600,5" source="Event" transparent="0" zPosition="1">
+	<widget backgroundColor="blue_light" foregroundColor="blue_light" borderWidth="0" position="50,720" render="Progress" size="600,5" source="Event" transparent="0" zPosition="1">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<widget source="ServiceEvent" render="NextEvents" position="50,745" size="593,330" noWrap="1" font="RegularBold;22" backgroundColor="OE_NewBg2" foregroundColor="#a4c400"  transparent="1" zPosition="5">
-	    <convert type="ServiceName">Reference</convert>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,725" size="600,25" font="RegularBold;22"
+	    options="movetype=running,
+	    repeat=2,
+		startpoint=0,
+		startdelay=1000,
+		oneshot=2000,step=1,
+		steptime=12,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+	    <convert type="RunningEvents">Event1,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,750" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=5000,
+		oneshot=2000,step=1,
+		steptime=14,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event2,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,775" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=10000,
+		oneshot=2000,step=1,
+		steptime=12,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event3,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,800" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=15000,
+		oneshot=2000,step=1,
+		steptime=14,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event4,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,825" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=20000,
+		oneshot=2000,step=1,
+		steptime=20,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event5,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,850" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=25000,
+		oneshot=2000,step=1,
+		steptime=22,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event6,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,875" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=30000,
+		oneshot=2000,step=1,
+		steptime=24,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event7,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,900" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=35000,
+		oneshot=2000,step=1,
+		steptime=26,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event8,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,925" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=40000,
+		oneshot=2000,step=1,
+		steptime=28,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event9,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,950" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=45000,
+		oneshot=2000,step=1,
+		steptime=30,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event10,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,975" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=50000,
+		oneshot=2000,step=1,
+		steptime=32,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event11,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,1000" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=55000,
+		oneshot=2000,step=1,
+		steptime=32,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event12,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,1025" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=60000,
+		oneshot=2000,step=1,
+		steptime=32,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event13,onlyStart</convert>
+	</widget>
+	<widget source="ServiceEvent" render="DRRunningText" position="50,1050" size="600,25" font="RegularBold;22"
+		options="movetype=running,
+		repeat=2,
+		startpoint=0,
+		startdelay=65000,
+		oneshot=2000,step=1,
+		steptime=32,
+		always=0,
+		noWrap"
+		backgroundColor="OE_NewBg2" foregroundColor="#a4c400" transparent="1" zPosition="2">
+		<convert type="RunningEvents">Event14,onlyStart</convert>
 	</widget>
 	<!-- Button -->
 	<ePixmap alphatest="blend" pixmap="buttons/key_text.png" position="1665,970" size="64,43"/>
