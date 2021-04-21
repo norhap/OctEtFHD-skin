@@ -3463,15 +3463,15 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,305" size="1025,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="240,770" size="1025,2" zPosition="-9"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="240,248" size="1060,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
-	<widget source="job_name" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,367" size="1060,50" transparent="1" zPosition="4"/>
-	<widget source="job_task" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,422" size="1060,50" transparent="1" zPosition="4"/>
+	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="240,248" size="990,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
+	<widget source="job_name" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,367" size="990,50" transparent="1" zPosition="4"/>
+	<widget source="job_task" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,422" size="990,50" transparent="1" zPosition="4"/>
 	<widget source="job_progress" render="Progress" borderColor="blue_light" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,center" size="800,35" transparent="1" zPosition="1"/>
 	<widget source="job_progress" render="Label" font="RegularBold;32" backgroundColor="OE_Background" halign="center" position="1050,520" size="250,50" transparent="1" zPosition="2" foregroundColor="white">
 	    <convert type="ProgressToText"/>
 	</widget>
-	<widget source="job_status" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,570" size="1060,50" transparent="1" zPosition="4"/>
-	<widget name="config" itemHeight="50" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,625" size="1060,50" transparent="1" zPosition="4"/>
+	<widget source="job_status" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,570" size="990,50" transparent="1" zPosition="4"/>
+	<widget name="config" itemHeight="50" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,625" size="990,50" transparent="1" zPosition="4"/>
 	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="95,256" size="100,100" transparent="1" zPosition="10"/>
 	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="107,center" size="78,75" zPosition="4"/>
 	<!-- Buttons-->
@@ -4183,7 +4183,7 @@
 	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
 	<ePixmap pixmap="buttons/key_menu.png" position="110,905" size="64,43" alphatest="blend"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="165,905" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="200,905" size="64,43"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1490,740" transparent="1"/>
   </screen>
   <screen name="VISIONSoftcamLog" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
