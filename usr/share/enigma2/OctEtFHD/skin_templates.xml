@@ -17,11 +17,11 @@
   </screen>
 	<!-- CLOCK EPG -->
   <screen name="FrameClock">
-	<eLabel backgroundColor="OE_NewBg2" position="1375,0" size="485,72" transparent="0" zPosition="2" foregroundColor="white"/>
-	<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="1720,5" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+	<eLabel backgroundColor="OE_NewBg2" position="1425,0" size="485,72" transparent="0" zPosition="2" foregroundColor="white"/>
+	<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="1770,5" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 	    <convert type="ClockToText"></convert>
 	</widget>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center"  valign="center" position="1377,5" zPosition="3" render="Label" size="328,65" source="global.CurrentTime" transparent="1">
+	<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center"  valign="center" position="1427,5" zPosition="3" render="Label" size="328,65" source="global.CurrentTime" transparent="1">
 	    <convert type="ClockToText">LongDate</convert>
 	</widget>
   </screen>
@@ -166,21 +166,21 @@
 	<!-- MENUS EPG -->
 	<!-- FRAME EPG -->
   <screen name="TemplateFrame">
-	<eLabel backgroundColor="blue_light" name="" position="30,72" size="1830,2" zPosition="0"/>
-	<eLabel backgroundColor="blue_light" name="" position="30,72" size="2,938" zPosition="0"/>
-	<eLabel backgroundColor="blue_light" name="" position="30,1008" size="1830,2" zPosition="0"/>
-	<eLabel backgroundColor="blue_light" name="" position="1858,72" size="2,938" zPosition="0"/>
+	<eLabel backgroundColor="blue_light" name="" position="10,72" size="1900,2" zPosition="0"/>
+	<eLabel backgroundColor="blue_light" name="" position="10,72" size="2,938" zPosition="0"/>
+	<eLabel backgroundColor="blue_light" name="" position="10,1008" size="1900,2" zPosition="0"/>
+	<eLabel backgroundColor="blue_light" name="" position="1908,72" size="2,938" zPosition="0"/>
   </screen>
 	<!-- EPG SINGLE EPG SEARCH EPG SIMILAR -->
   <screen name="TemplateEPGSelection">
 	<panel name="FrameClock"/>
 	<panel name="TemplateFrame"/>
 	<panel name="TemplateXtraEPGSelection"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
-	<eLabel backgroundColor="blue_light" name="" position="680,930" size="1160,2" zPosition="-9"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1900,940" zPosition="-15"/>
+	<eLabel backgroundColor="blue_light" name="" position="680,930" size="1210,2" zPosition="-9"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="600,1080" zPosition="1" valign="center"/>
 	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_NewBg2" position="65,30" size="535,100" halign="center" valign="center" transparent="1" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="680,142" size="1160,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="680,142" size="1210,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,142" size="570,2" zPosition="2" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,930" size="570,2" zPosition="2"/>
 	<!-- Event -->
@@ -213,10 +213,10 @@
 	<panel name="FrameClock"/>
 	<panel name="TemplateFrame"/>
 	<panel name="TemplateXtraMultiEPGEventView"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1900,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="300,1080" zPosition="1" valign="center"/>
-	<eLabel backgroundColor="blue_light" name="" position="380,142" size="1460,2" zPosition="-9" foregroundColor="white"/>
-	<eLabel backgroundColor="blue_light" name="" position="380,930" size="1460,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,142" size="1510,2" zPosition="-9" foregroundColor="white"/>
+	<eLabel backgroundColor="blue_light" name="" position="380,930" size="1510,2" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,142" size="270,2" zPosition="2" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,930" size="275,2" zPosition="2"/>
 	<!-- Buttons -->
@@ -256,9 +256,9 @@
 	    <convert type="ClockToText"/>
 	</widget>
 	<!-- Screen Colors -->
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1900,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="45,center" size="100,1080" zPosition="1" valign="center"/>
-	<eLabel backgroundColor="blue_light" name="" position="160,930" size="1680,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="160,930" size="1730,2" zPosition="-9"/>
 	<!-- Buttons -->
 	<ePixmap pixmap="buttons/key_menu.png" position="62,875" size="64,43" zPosition="2" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_info.png" position="62,920" size="64,43" zPosition="2" alphatest="blend"/>
@@ -552,7 +552,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<widget source="ServiceEvent" render="xtraPoster" position="80,50" size="185,278" zPosition="2"/>
   </screen>
   <screen name="poster_movieselection">
-	<widget source="Service" render="xtraPoster" position="160,10" size="260,400" zPosition="2"/>
+	<widget source="Service" render="xtraPoster" position="110,10" size="260,400" zPosition="2"/>
   </screen>
   <screen name="TemplateXtraEPGSelection">
 	<widget source="Event" render="xtraPoster" position="265,285" size="185,278" zPosition="2"/>
