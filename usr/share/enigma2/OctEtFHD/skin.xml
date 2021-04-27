@@ -1571,9 +1571,10 @@
 	<panel name="TemplateGraphicalEPG"/>
 	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="700,20" size="420,45" transparent="0" zPosition="10"/>
 	<widget source="Event" render="xtraPoster" position="1150,80" size="185,278" zPosition="2"/>
-	<widget source="session.VideoPicture" render="Pig" position="1375,75" size="480,290" zPosition="1" backgroundColor="#df0b1300"/>
-	<widget backgroundColor="blue" foregroundColor="white" name="timeline_text" position="160,380" selectionDisabled="1" size="1680,50" transparent="1" itemHeight="55" font="RegularBold;26"/>
-	<widget name="list" position="160,430" size="1680,500" scrollbarMode="showNever" ServiceFont="Regular;28" ServiceBackgroundColor="OE_Background" EntryBackgroundColor="dark" EntryBackgroundColorNow="#37732F" EntryBackgroundColorSelected="OE_Selection" EntryBorderColor="darkgrey" EntryFont="RegularBold;24" EntryForegroundColor="#ffffff" EntryForegroundColorNow="#ffffff" EntryForegroundColorSelected="#ffffff" EventBorderWidth="0" ServiceBackgroundColorSelected="dark" ServiceBorderColor="darkgrey" ServiceBorderWidth="0" ServiceForegroundColorSelected="yellow" transparent="1"/>
+	<widget source="session.VideoPicture" render="Pig" position="1365,75" size="530,290" zPosition="1" backgroundColor="#df0b1300"/>
+	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="160,365" size="1730,2"/>
+	<widget backgroundColor="blue" foregroundColor="white" name="timeline_text" position="160,380" selectionDisabled="1" size="1730,50" transparent="1" itemHeight="55" font="RegularBold;26"/>
+	<widget name="list" position="160,430" size="1730,500" scrollbarMode="showNever" ServiceFont="Regular;28" ServiceBackgroundColor="OE_Background" EntryBackgroundColor="dark" EntryBackgroundColorNow="#37732F" EntryBackgroundColorSelected="OE_Selection" EntryBorderColor="darkgrey" EntryFont="RegularBold;24" EntryForegroundColor="#ffffff" EntryForegroundColorNow="#ffffff" EntryForegroundColorSelected="#ffffff" EventBorderWidth="0" ServiceBackgroundColorSelected="dark" ServiceBorderColor="darkgrey" ServiceBorderWidth="0" ServiceForegroundColorSelected="yellow" transparent="1"/>
 	<widget alphatest="blend" name="timeline_now" pixmap="extensions/timeline-now.png" position="0,430" size="17,500" zPosition="2"/>
 	<widget alphatest="blend" name="timeline0" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
 	<widget alphatest="blend" name="timeline1" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
@@ -1581,7 +1582,6 @@
 	<widget alphatest="blend" name="timeline3" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
 	<widget alphatest="blend" name="timeline4" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
 	<widget alphatest="blend" name="timeline5" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
-	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="160,365" size="1698,2"/>
 	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="160,180" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="965,180" source="Event" transparent="1" valign="top">
 	    <convert type="EventName">FullDescription</convert>
 	</widget>
@@ -1590,8 +1590,8 @@
   <screen name="GraphMultiEPG" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="TemplateGraphicalEPG"/>
 	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" valign="center" position="1182,80" size="660,45" transparent="1" zPosition="10"/>
-	<widget backgroundColor="blue" foregroundColor="white" name="timeline_text" position="160,170" selectionDisabled="1" size="1680,50" transparent="1" itemHeight="55" font="RegularBold;26"/>
-	<widget name="list" position="160,230" size="1680,690" scrollbarMode="showNever" ServiceFont="Regular;28" ServiceBackgroundColor="OE_Background" EntryBackgroundColor="dark" EntryBackgroundColorNow="#37732F" EntryBackgroundColorSelected="OE_Selection" EntryBorderColor="darkgrey" EntryFont="RegularBold;24" EntryForegroundColor="#ffffff" EntryForegroundColorNow="#ffffff" EntryForegroundColorSelected="#ffffff" EventBorderWidth="0" ServiceBackgroundColorSelected="dark" ServiceBorderColor="darkgrey" ServiceBorderWidth="0" ServiceForegroundColorSelected="yellow" transparent="1"/>
+	<widget backgroundColor="blue" foregroundColor="white" name="timeline_text" position="160,170" selectionDisabled="1" size="1730,50" transparent="1" itemHeight="55" font="RegularBold;26"/>
+	<widget name="list" position="160,230" size="1730,690" scrollbarMode="showNever" ServiceFont="Regular;28" ServiceBackgroundColor="OE_Background" EntryBackgroundColor="dark" EntryBackgroundColorNow="#37732F" EntryBackgroundColorSelected="OE_Selection" EntryBorderColor="darkgrey" EntryFont="RegularBold;24" EntryForegroundColor="#ffffff" EntryForegroundColorNow="#ffffff" EntryForegroundColorSelected="#ffffff" EventBorderWidth="0" ServiceBackgroundColorSelected="dark" ServiceBorderColor="darkgrey" ServiceBorderWidth="0" ServiceForegroundColorSelected="yellow" transparent="1"/>
 	<widget alphatest="blend" name="timeline_now" pixmap="extensions/timeline-now.png" position="0,230" size="17,690" zPosition="2"/>
 	<widget alphatest="blend" name="timeline0" pixmap="extensions/timeline.png" position="0,225" size="1,690" zPosition="2"/>
 	<widget alphatest="blend" name="timeline1" pixmap="extensions/timeline.png" position="0,230" size="1,690" zPosition="2"/>
@@ -1620,7 +1620,7 @@
 	    <convert type="EventTime">Progress</convert>
 	</widget>
 	<widget name="channel" font="RegularBold;34" backgroundColor="OE_Background" position="380,90" size="830,50" halign="left" transparent="1"/>
-	<widget name="epg_description" position="380,160" size="1460,765" backgroundColor="OE_Background" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="epg_description" position="380,160" size="1510,765" backgroundColor="OE_Background" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
 	<widget source="Event" render="Label" font="RegularBold;28" position="110,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
@@ -1709,7 +1709,7 @@
 	<widget alphatest="blend" name="next_button_sel" pixmap="colors/epg_label.png" position="101,255" size="229,49" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="more_button" pixmap="colors/epg_label.png" position="101,340" size="0,0" transparent="1" zPosition="2"/>
 	<widget alphatest="blend" name="more_button_sel" pixmap="colors/epg_label.png" position="101,340" size="229,49" transparent="1" zPosition="2"/>
-	<widget name="list" font="RegularBold;28" itemHeight="50" setEventItemFont="RegularBold;26" setEventTimeFont="RegularBold;26" setColWidths="290,180" setColGap="20" setTimeWidth="155" setIconDistance="10" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="380,155" size="1460,550" transparent="1"/>
+	<widget name="list" font="RegularBold;28" itemHeight="50" setEventItemFont="RegularBold;26" setEventTimeFont="RegularBold;26" setColWidths="290,180" setColGap="20" setTimeWidth="155" setIconDistance="10" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="380,155" size="1510,550" transparent="1"/>
 	<widget alphatest="blend" position="100,415" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
 	    <convert type="ServiceName2">Reference</convert>
 	</widget>
@@ -1720,12 +1720,12 @@
 	<!-- EPG SINGLE -->
   <screen name="EPGSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="EPG Selection">
 	<panel name="TemplateEPGSelection"/>
-	<widget name="list" itemHeight="50" setEventItemFont="RegularBold;27" setColWidths="120,220" setColGap="40" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="680,160" size="1160,750" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list" itemHeight="50" setEventItemFont="RegularBold;27" setColWidths="120,220" setColGap="40" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="680,160" size="1210,750" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <!-- EPG SEARCH -->
   <screen name="EPGSearch" title="EPG Search" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="TemplateEPGSelection"/>
-	<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 26" setEventTimeFont="RegularBold; 26" setColWidths="120,220" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="680,160" size="1160,750" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 26" setEventTimeFont="RegularBold; 26" setColWidths="120,220" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="680,160" size="1210,750" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <screen name="FileBrowser" title="DVD File Browser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
@@ -2093,34 +2093,34 @@
 	<panel name="poster_movieselection"/>
 	<panel name="FrameClock"/>
 	<panel name="TemplateFrame"/>
-	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="515,60" size="1305,90" halign="center" valign="center" transparent="1"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1830,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="450,1080" zPosition="0" valign="center"/>
-	<eLabel backgroundColor="blue_light" name="" position="515,142" size="1345,2" zPosition="2" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="515,930" size="1345,2" zPosition="-9"/>
-	<eLabel backgroundColor="blue_light" name="" position="80,930" size="420,2" zPosition="2"/>
-	<widget name="list" zPosition="1" position="515,160" size="1340,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="0"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="80,885" size="180,45" render="Label" source="Service" transparent="1" zPosition="1">
+	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="465,60" size="1345,90" halign="center" valign="center" transparent="1"/>
+	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1900,940" zPosition="-15"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="15,center" size="450,1080" zPosition="0" valign="center"/>
+	<eLabel backgroundColor="blue_light" name="" position="465,142" size="1445,2" zPosition="2" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="465,930" size="1445,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="30,930" size="420,2" zPosition="2"/>
+	<widget name="list" zPosition="1" position="465,160" size="1440,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="0"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="30,885" size="180,45" render="Label" source="Service" transparent="1" zPosition="1">
 	    <convert type="ServiceTime">Duration</convert>
 	    <convert type="ClockToText">AsLength</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="265,885" render="Label" size="200,45" source="Service" transparent="1" zPosition="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="215,885" render="Label" size="200,45" source="Service" transparent="1" zPosition="1">
 	    <convert type="MovieInfo">FileSize</convert>
 	</widget>
-	<widget name="chosenletter" position="300,885" size="100,50" font="RegularBold;24" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
-	<widget name="TrashcanSize" position="80,930" size="305,50" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
-	<widget name="freeDiskSpace" position="80,980" size="440,90" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
-	<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png" position="420,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
-	<widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" position="470,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="80,420" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="440,450" source="Service" transparent="1" valign="top" zPosition="1">
+	<widget name="chosenletter" position="250,885" size="100,50" font="RegularBold;24" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
+	<widget name="TrashcanSize" position="30,930" size="305,50" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
+	<widget name="freeDiskSpace" position="30,980" size="440,90" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
+	<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png" position="370,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
+	<widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" position="420,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="30,420" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="440,450" source="Service" transparent="1" valign="top" zPosition="1">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
 	<widget name="DescriptionBorder" position="0,0" size="0,0"/>
 	<widget name="waitingtext" position="0,0" size="0,0" font="RegularBold;38" backgroundColor="OE_Background" foregroundColor="white" zPosition="1"/>
 	<!-- Button -->
-	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="515,950" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="573,950" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="629,950" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="465,950" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="525,950" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="585,950" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="690,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="970,950" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1260,950" size="40,40"/>
