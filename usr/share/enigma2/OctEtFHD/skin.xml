@@ -1614,80 +1614,80 @@
   <screen name="EventView" title="Eventview" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="MultiEPGEventView"/>
 	<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="epg_eventname" position="85,122" size="0,0" font="Regular;22" halign="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="datetime" position="65,88" size="300,45" backgroundColor="OE_NewBg2" font="RegularBold;23" halign="center" valign="center" transparent="1" zPosition="2"/>
-	<widget source="Event" render="Progress" backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="70,140" size="290,6" transparent="0" zPosition="3">
+	<widget name="epg_eventname" position="35,122" size="0,0" font="Regular;22" halign="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="datetime" position="35,88" size="300,45" backgroundColor="OE_NewBg2" font="RegularBold;23" halign="center" valign="center" transparent="1" zPosition="2"/>
+	<widget source="Event" render="Progress" backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="40,140" size="290,6" transparent="0" zPosition="3">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<widget name="channel" font="RegularBold;34" backgroundColor="OE_Background" position="380,90" size="830,50" halign="left" transparent="1"/>
-	<widget name="epg_description" position="380,160" size="1510,765" backgroundColor="OE_Background" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
-	<widget source="Event" render="Label" font="RegularBold;28" position="110,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" transparent="1">
+	<widget name="channel" font="RegularBold;34" backgroundColor="OE_Background" position="350,90" size="830,50" halign="left" transparent="1"/>
+	<widget name="epg_description" position="350,160" size="1540,765" backgroundColor="OE_Background" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget source="Event" render="Label" font="RegularBold;28" position="80,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="Event" render="Label" font="RegularBold;28" position="194,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;28" position="164,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget name="duration" foregroundColor="blue_light" backgroundColor="OE_NewBg2" font="RegularBold;30" halign="center" position="115,215" size="195,45" transparent="1" zPosition="2"/>
-	<widget source="Event" render="Label" position="115,275" size="195,45" transparent="1" zPosition="2" backgroundColor="OE_NewBg2" font="RegularBold;30" halign="center">
+	<widget name="duration" foregroundColor="blue_light" backgroundColor="OE_NewBg2" font="RegularBold;30" halign="center" position="85,215" size="195,45" transparent="1" zPosition="2"/>
+	<widget source="Event" render="Label" position="85,275" size="195,45" transparent="1" zPosition="2" backgroundColor="OE_NewBg2" font="RegularBold;30" halign="center">
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
-	<widget alphatest="blend" position="105,335" render="Picon" size="220,132" source="Title" transparent="1" zPosition="5">
+	<widget alphatest="blend" position="75,335" render="Picon" size="220,132" source="Title" transparent="1" zPosition="5">
 	    <convert type="RefString">CurrentRef</convert>
 	</widget>
-	<ePixmap alphatest="blend" pixmap="my_icons/dolby_off.png" position="216,490" size="63,32" zPosition="1"/>
-	<widget alphatest="blend" pixmap="my_icons/dolby_on.png" position="216,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+	<ePixmap alphatest="blend" pixmap="my_icons/dolby_off.png" position="186,490" size="63,32" zPosition="1"/>
+	<widget alphatest="blend" pixmap="my_icons/dolby_on.png" position="186,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
 	    <convert type="ServiceInfo">IsMultichannel</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<ePixmap alphatest="blend" pixmap="my_icons/format_off.png" position="148,490" size="63,32" zPosition="1"/>
-	<widget alphatest="blend" pixmap="my_icons/format_on.png" position="148,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+	<ePixmap alphatest="blend" pixmap="my_icons/format_off.png" position="118,490" size="63,32" zPosition="1"/>
+	<widget alphatest="blend" pixmap="my_icons/format_on.png" position="118,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
 	    <convert type="ServiceInfo">IsWidescreen</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<ePixmap alphatest="blend" pixmap="my_icons/txt_off.png" position="148,550" size="63,32" zPosition="1"/>
-	<widget alphatest="blend" pixmap="my_icons/txt_on.png" position="148,550" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+	<ePixmap alphatest="blend" pixmap="my_icons/txt_off.png" position="118,550" size="63,32" zPosition="1"/>
+	<widget alphatest="blend" pixmap="my_icons/txt_on.png" position="118,550" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
 	    <convert type="ServiceInfo">HasTelext</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="my_icons/sd_on.png" position="80,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="1">
+	<widget alphatest="blend" pixmap="my_icons/sd_on.png" position="50,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="1">
 	    <convert type="ServiceInfo">VideoWidth</convert>
 	    <convert type="ValueRange">0,720</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="my_icons/hd_on.png" position="80,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+	<widget alphatest="blend" pixmap="my_icons/hd_on.png" position="50,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
 	    <convert type="ServiceInfo">VideoWidth</convert>
 	    <convert type="ValueRange">721,1280</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="my_icons/fhd_on.png" position="80,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
+	<widget alphatest="blend" pixmap="my_icons/fhd_on.png" position="50,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="3">
 	    <convert type="ServiceInfo">VideoWidth</convert>
 	    <convert type="ValueRange">1281,1920</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget alphatest="blend" pixmap="my_icons/uhd_on.png" position="80,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="4">
+	<widget alphatest="blend" pixmap="my_icons/uhd_on.png" position="50,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="4">
 	    <convert type="ServiceInfo">VideoWidth</convert>
 	    <convert type="ValueRange">1921,3841</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<ePixmap alphatest="blend" pixmap="my_icons/crypt_off.png" position="284,490" size="63,32" zPosition="1"/>
-	<widget alphatest="blend" pixmap="my_icons/crypt_on.png" position="284,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+	<ePixmap alphatest="blend" pixmap="my_icons/crypt_off.png" position="254,490" size="63,32" zPosition="1"/>
+	<widget alphatest="blend" pixmap="my_icons/crypt_on.png" position="254,490" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
 	    <convert type="ServiceInfo">IsCrypted</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<ePixmap alphatest="blend" pixmap="my_icons/rec_off.png" position="284,550" size="63,32" zPosition="1"/>
-	<widget alphatest="blend" pixmap="my_icons/rec_on.png" position="284,550" render="Pixmap" size="63,32" source="session.RecordState" zPosition="2">
+	<ePixmap alphatest="blend" pixmap="my_icons/rec_off.png" position="254,550" size="63,32" zPosition="1"/>
+	<widget alphatest="blend" pixmap="my_icons/rec_on.png" position="254,550" render="Pixmap" size="63,32" source="session.RecordState" zPosition="2">
 	    <convert type="ConditionalShowHide">Blink</convert>
 	</widget>
-	<ePixmap alphatest="blend" pixmap="my_icons/hbbtv_off.png" position="80,550" size="63,32" zPosition="1"/>
-	<widget alphatest="blend" pixmap="my_icons/hbbtv_on.png" position="80,550" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="10">
+	<ePixmap alphatest="blend" pixmap="my_icons/hbbtv_off.png" position="50,550" size="63,32" zPosition="1"/>
+	<widget alphatest="blend" pixmap="my_icons/hbbtv_on.png" position="50,550" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="10">
 	    <convert type="ServiceInfo">HasHBBTV</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<ePixmap alphatest="blend" pixmap="my_icons/sub_off.png" position="216,550" size="63,32" zPosition="1"/>
-	<widget alphatest="blend" pixmap="my_icons/sub_on.png" position="216,550" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
+	<ePixmap alphatest="blend" pixmap="my_icons/sub_off.png" position="186,550" size="63,32" zPosition="1"/>
+	<widget alphatest="blend" pixmap="my_icons/sub_on.png" position="186,550" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
 	    <convert type="ServiceInfo">SubtitlesAvailable</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
@@ -1695,37 +1695,37 @@
 	<!-- MULTI SELECTION EPG -->
   <screen name="EPGSelectionMulti" title="EPG Selection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="MultiEPGEventView"/>
-	<widget name="date" backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="blue_light" halign="center" position="65,75" size="300,43" transparent="1" zPosition="2"/>
-	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_NewBg2" foregroundColor="white" position="65,15" size="300,50" halign="center" valign="center" transparent="1"/>
-	<widget source="Service" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="380,90" size="830,50" transparent="1">
+	<widget name="date" backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="blue_light" halign="center" position="35,75" size="300,43" transparent="1" zPosition="2"/>
+	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_NewBg2" foregroundColor="white" position="35,15" size="300,50" halign="center" valign="center" transparent="1"/>
+	<widget source="Service" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="350,90" size="830,50" transparent="1">
 	    <convert type="ServiceName">Name</convert>
 	</widget>
-	<widget name="now_text" text="NOW" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="104,178" size="223,43" transparent="1" zPosition="2"/>
-	<widget name="next_text" text="NEXT" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="104,263" size="223,43" transparent="1" zPosition="2"/>
-	<widget name="more_text" text="MORE" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="104,349" size="223,43" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="now_button_sel" pixmap="colors/epg_label.png" position="101,170" size="229,49" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="now_button" pixmap="colors/epg_label.png" position="101,170" size="0,0" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="next_button" pixmap="colors/epg_label.png" position="101,255" size="0,0" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="next_button_sel" pixmap="colors/epg_label.png" position="101,255" size="229,49" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="more_button" pixmap="colors/epg_label.png" position="101,340" size="0,0" transparent="1" zPosition="2"/>
-	<widget alphatest="blend" name="more_button_sel" pixmap="colors/epg_label.png" position="101,340" size="229,49" transparent="1" zPosition="2"/>
-	<widget name="list" font="RegularBold;28" itemHeight="50" setEventItemFont="RegularBold;26" setEventTimeFont="RegularBold;26" setColWidths="290,180" setColGap="20" setTimeWidth="155" setIconDistance="10" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="380,155" size="1510,550" transparent="1"/>
-	<widget alphatest="blend" position="100,415" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
+	<widget name="now_text" text="NOW" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="74,178" size="223,43" transparent="1" zPosition="2"/>
+	<widget name="next_text" text="NEXT" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="74,263" size="223,43" transparent="1" zPosition="2"/>
+	<widget name="more_text" text="MORE" backgroundColor="OE_NewBg2" font="RegularBold;30" foregroundColor="white" halign="center" position="74,349" size="223,43" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="now_button_sel" pixmap="colors/epg_label.png" position="71,170" size="229,49" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="now_button" pixmap="colors/epg_label.png" position="71,170" size="0,0" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="next_button" pixmap="colors/epg_label.png" position="71,255" size="0,0" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="next_button_sel" pixmap="colors/epg_label.png" position="71,255" size="229,49" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="more_button" pixmap="colors/epg_label.png" position="71,340" size="0,0" transparent="1" zPosition="2"/>
+	<widget alphatest="blend" name="more_button_sel" pixmap="colors/epg_label.png" position="71,340" size="229,49" transparent="1" zPosition="2"/>
+	<widget name="list" font="RegularBold;28" itemHeight="50" setEventItemFont="RegularBold;26" setEventTimeFont="RegularBold;26" setColWidths="290,180" setColGap="20" setTimeWidth="155" setIconDistance="10" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="350,155" size="1540,550" transparent="1"/>
+	<widget alphatest="blend" position="70,415" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
 	    <convert type="ServiceName2">Reference</convert>
 	</widget>
-	<widget source="Event" font="RegularBold;26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="380,715" size="1460,210" halign="left" transparent="1" valign="top">
+	<widget source="Event" font="RegularBold;26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="350,715" size="1490,210" halign="left" transparent="1" valign="top">
 	    <convert type="EventName">FullDescription</convert>
 	</widget>
   </screen>
 	<!-- EPG SINGLE -->
   <screen name="EPGSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="EPG Selection">
 	<panel name="TemplateEPGSelection"/>
-	<widget name="list" itemHeight="50" setEventItemFont="RegularBold;27" setColWidths="120,220" setColGap="40" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="680,160" size="1210,750" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list" itemHeight="50" setEventItemFont="RegularBold;27" setColWidths="120,220" setColGap="40" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="600,160" size="1290,750" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <!-- EPG SEARCH -->
   <screen name="EPGSearch" title="EPG Search" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="TemplateEPGSelection"/>
-	<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 26" setEventTimeFont="RegularBold; 26" setColWidths="120,220" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="680,160" size="1210,750" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 26" setEventTimeFont="RegularBold; 26" setColWidths="120,220" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="600,160" size="1290,750" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <screen name="FileBrowser" title="DVD File Browser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
