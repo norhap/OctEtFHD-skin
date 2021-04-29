@@ -177,36 +177,36 @@
 	<panel name="TemplateFrame"/>
 	<panel name="TemplateXtraEPGSelection"/>
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1900,940" zPosition="-15"/>
-	<eLabel backgroundColor="blue_light" name="" position="600,930" size="1290,2" zPosition="-9"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="30,center" size="550,1080" zPosition="1" valign="center"/>
-	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_NewBg2" position="35,30" size="535,100" halign="center" valign="center" transparent="1" zPosition="2"/>
-	<eLabel backgroundColor="blue_light" name="" position="600,142" size="1290,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="45,142" size="520,2" zPosition="2" foregroundColor="un5678a4"/>
-	<eLabel backgroundColor="blue_light" name="" position="45,930" size="520,2" zPosition="2"/>
+	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="30,center" size="450,1080" zPosition="1" valign="center"/>
+	<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_NewBg2" position="30,30" size="450,110" halign="center" valign="center" transparent="1" zPosition="2"/>
+	<eLabel backgroundColor="blue_light" name="" position="500,142" size="1390,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="500,930" size="1390,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="45,142" size="420,2" zPosition="2" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" name="" position="45,930" size="420,2" zPosition="2"/>
 	<!-- Event -->
-	<widget source="Service" render="Label" font="RegularBold;28" backgroundColor="OE_Background" position="600,90" size="830,50" transparent="1">
+	<widget source="Service" render="Label" font="RegularBold;28" backgroundColor="OE_Background" position="500,90" size="830,50" transparent="1">
 	    <convert type="ServiceName">Name</convert>
 	</widget>
-	<widget alphatest="blend" position="200,150" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
+	<widget alphatest="blend" position="140,150" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
 	    <convert type="ServiceName">Reference</convert>
 	</widget>
-	<widget source="Event" font="RegularBold;25" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="45,575" size="525,350" transparent="1" halign="left" valign="top" zPosition="2">
+	<widget source="Event" font="RegularBold;25" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="45,575" size="435,350" transparent="1" halign="left" valign="top" zPosition="2">
 	    <convert type="EventName">FullDescription</convert>
 	</widget>
 	<!-- Buttons -->
-	<ePixmap pixmap="buttons/key_menu.png" position="230,950" size="64,43" zPosition="2" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_info.png" position="340,950" size="64,43" zPosition="2" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="185,950" size="64,43" zPosition="2" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_info.png" position="260,950" size="64,43" zPosition="2" alphatest="blend"/>
 	<!-- Keys Sources -->
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="600,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="930,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1270,950" size="40,40"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1600,950" size="40,40"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;24" position="650,935" size="240,70" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;24" position="975,935" size="270,70" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1315,935" size="270,70" render="Label" source="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1650,935" size="240,70" render="Label" source="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1315,935" size="270,70" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1650,935" size="240,70" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="500,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="830,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_yellow.png" position="1220,950" size="40,40"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1550,950" size="40,40"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="550,935" size="240,70" name="key_red" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="875,935" size="270,70" name="key_green" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1265,935" size="270,70" render="Label" source="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1600,935" size="270,70" render="Label" source="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1265,935" size="270,70" name="key_yellow" halign="left" valign="center" transparent="1" zPosition="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;24" position="1600,935" size="270,70" name="key_blue" halign="left" valign="center" transparent="1" zPosition="1"/>
   </screen>
 	<!-- TEMPLATE MULTIEPG AND EVENTVIEW -->
   <screen name="MultiEPGEventView">
@@ -555,7 +555,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<widget source="Service" render="xtraPoster" position="110,10" size="260,400" zPosition="2"/>
   </screen>
   <screen name="TemplateXtraEPGSelection">
-	<widget source="Event" render="xtraPoster" position="215,285" size="185,278" zPosition="2"/>
+	<widget source="Event" render="xtraPoster" position="165,285" size="185,278" zPosition="2"/>
   </screen>
   <screen name="TemplateXtraMultiEPGEventView">
 	<widget source="Event" render="xtraPoster" position="90,620" size="185,278" zPosition="2"/>

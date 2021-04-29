@@ -1720,12 +1720,12 @@
 	<!-- EPG SINGLE -->
   <screen name="EPGSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="EPG Selection">
 	<panel name="TemplateEPGSelection"/>
-	<widget name="list" itemHeight="50" setEventItemFont="RegularBold;27" setColWidths="120,220" setColGap="40" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="600,160" size="1290,750" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list" itemHeight="50" setEventItemFont="RegularBold;27" setColWidths="120,220" setColGap="40" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="500,160" size="1390,750" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <!-- EPG SEARCH -->
   <screen name="EPGSearch" title="EPG Search" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="TemplateEPGSelection"/>
-	<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 26" setEventTimeFont="RegularBold; 26" setColWidths="120,220" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="600,160" size="1290,750" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 26" setEventTimeFont="RegularBold; 26" setColWidths="120,220" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="500,160" size="1390,750" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <screen name="FileBrowser" title="DVD File Browser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
