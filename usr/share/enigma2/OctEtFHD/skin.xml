@@ -473,14 +473,14 @@
 	    <convert type="ValueRange">1921,3841</convert>
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-    <eLabel text="SNR" position="35,778" zPosition="2" size="40,25" font="Regular;22" halign="center" backgroundColor="OE_NewBg" transparent="1" valign="center"/>
+    <eLabel text="SNR" position="35,780" zPosition="2" size="40,25" font="Regular;21" halign="center" backgroundColor="OE_NewBg" transparent="1" valign="center"/>
 	<widget source="session.FrontendStatus" render="Progress" backgroundColor="OE_NewBg" foregroundColor="un56c856" position="80,785" size="145,15" zPosition="2" borderWidth="2" borderColor="blue_light">
 	    <convert type="FrontendInfo">SNR</convert>
 	</widget>
 	<widget source="session.FrontendStatus" render="Label" position="215,772" size="115,40" backgroundColor="OE_NewBg" transparent="1" halign="center" font="RegularBold;23" valign="center" zPosition="3" foregroundColor="un56c856">
 	    <convert type="FrontendInfo">SNR</convert>
 	</widget>
-    <eLabel text="AGC" position="35,819" zPosition="2" size="45,25" font="Regular;22" halign="center" backgroundColor="OE_NewBg" transparent="1" valign="center"/>
+    <eLabel text="AGC" position="35,820" zPosition="2" size="45,25" font="Regular;21" halign="center" backgroundColor="OE_NewBg" transparent="1" valign="center"/>
 	<widget source="session.FrontendStatus" render="Progress" foregroundColor="blue_light" backgroundColor="OE_NewBg" position="80,825" size="145,15" zPosition="2" borderWidth="2" borderColor="blue_light">
 	    <convert type="FrontendInfo">AGC</convert>
 	</widget>
