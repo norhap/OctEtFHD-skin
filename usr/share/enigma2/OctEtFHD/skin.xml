@@ -4319,7 +4319,8 @@
 	<!-- SCRIPT RUNNER-->
   <screen name="VISIONScriptRunner" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_exit.png" position="165,905" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="110,905" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_exit.png" position="200,905" size="64,43" alphatest="blend"/>
 	<widget name="list" font="RegularBold;25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
