@@ -220,8 +220,9 @@
 	<eLabel backgroundColor="blue_light" name="" position="50,142" size="270,2" zPosition="2" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="50,930" size="275,2" zPosition="2"/>
 	<!-- Buttons -->
-	<ePixmap pixmap="buttons/key_menu.png" position="110,950" size="64,43" zPosition="2" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_info.png" position="190,950" size="64,43" zPosition="2" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_menu.png" position="65,950" size="64,43" zPosition="2" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_info.png" position="155,950" size="64,43" zPosition="2" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_leftright.png" position="245,950" size="64,43" zPosition="2" alphatest="blend"/>
 	<ePixmap pixmap="buttons/key_red.png" position="350,950" size="40,40" alphatest="blend" />
 	<ePixmap pixmap="buttons/key_green.png" position="710,950" size="40,40" alphatest="blend" />
 	<ePixmap pixmap="buttons/key_yellow.png" position="1100,950" size="40,40" alphatest="blend" />
@@ -491,7 +492,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<!-- ####### CHOICEBOX ####### -->
   <screen name="description" position="fill" flags="wfNoBorder">
 	<panel name="autoresize"/>
-	<widget name="description" position="1360,145" size="550,45" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="description" position="1360,110" size="550,165" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
   <screen name="choicebox">
 	<panel name="StanDardScreen"/>
@@ -501,7 +502,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="160,980" size="64,43"/>
 	<eLabel text="[move mode]" position="230,983" size="400,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
 	<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" size="1250,820" transparent="1" zPosition="3"/>
-	<widget name="description" position="1360,145" size="550,45" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>
+	<widget name="description" position="1360,110" size="550,165" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>
 	<widget name="text" position="1360,100" size="550,380" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget source="session.CurrentService" render="Progress" position="1385,495" size="495,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" transparent="1" borderWidth="2" zPosition="6">
 	    <convert type="CpuUsage">$0</convert>
