@@ -368,7 +368,7 @@
 	<widget source="lab6" conditional="lab6" render="Label" position="40,435" size="520,30" font="RegularBold;22" backgroundColor="OE_NewBg2" halign="left" valign="center" transparent="1" zPosition="3"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="70,1020" size="40,40" backgroundColor="OE_NewBg2"/>
 	<widget name="languagetext" conditional="languagetext" backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" valign="center" position="115,1020" size="245,40" transparent="1" zPosition="1"/>
-	<widget name="rc" conditional="rc" alphatest="blend" backgroundColor="transparent" pixmaps="rc.png,rcold.png" position="152,500" size="150,500" zPosition="10"/>
+	<widget name="rc" conditional="rc" alphatest="blend" position="152,500" size="150,500" zPosition="10"/>
 	<widget name="arrowdown" conditional="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowdown2" conditional="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="arrowup" conditional="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
@@ -508,7 +508,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	    <convert type="CpuUsage">$0</convert>
 	</widget>
 	<widget source="session.Event_Now" render="Label" position="1383,510" size="470,70" backgroundColor="OE_NewBg2" font="RegularBold;23" transparent="1" zPosition="6">
-	    <convert type="CpuUsage">CPU:$0 (Core #1: $1 Core #2: $2 Core #3: $3 Core #4: $4)</convert>
+	    <convert type="CpuUsage">CPU:$0 (Core 1: $1 Core 2: $2 Core 3: $3 Core 4: $4)</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Progress" position="1385,580" size="495,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
