@@ -364,7 +364,6 @@
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="28,1078" size="289,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="RegularBold;30" position="325,870" halign="center" size="110,40" transparent="1" zPosition="1"/>
-	<eLabel backgroundColor="OE_Background" font="Regular;52" halign="center" position="430,849" size="30,60" text="l" transparent="1"/>
 	<widget source="session.CurrentService" render="Label" position="458,850" size="750,35" font="RegularBold;27" noWrap="1" backgroundColor="background" transparent="1" halign="left" valign="center" foregroundColor="white">
 	    <convert type="ServiceName">Name</convert>
 	</widget>
