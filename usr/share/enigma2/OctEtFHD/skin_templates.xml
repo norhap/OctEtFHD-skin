@@ -508,7 +508,7 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	    <convert type="CpuUsage">$0</convert>
 	</widget>
 	<widget source="session.Event_Now" render="Label" position="1383,510" size="470,70" backgroundColor="OE_NewBg2" font="RegularBold;23" transparent="1" zPosition="6">
-	    <convert type="CpuUsage">CPU:$0 (Core 1: $1 Core 2: $2 Core 3: $3 Core 4: $4)</convert>
+	    <convert type="CpuUsage">CPU:$0 [Core1: $1 Core2: $2 Core3: $3 Core4: $4]</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Progress" position="1385,580" size="495,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
