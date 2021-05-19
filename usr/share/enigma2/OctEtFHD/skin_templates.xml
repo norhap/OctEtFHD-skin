@@ -484,6 +484,10 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	    <convert type="ConditionalShowHide"/>
 	</widget>
   </screen>
+  <screen name="ButtonsVisionCore">
+	<ePixmap pixmap="buttons/key_menu.png" position="90,905" size="64,43" alphatest="blend"/>
+	<ePixmap pixmap="buttons/key_exit.png" position="240,905" size="64,43" alphatest="blend"/>
+  </screen>
 	<!-- DESCRIPTION INSIDE OF SCREEN STANDARD -->
   <screen name="TemplateDescription">
 	<widget source="description" conditional="description" render="Label" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>

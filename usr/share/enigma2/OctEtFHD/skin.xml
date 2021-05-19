@@ -4187,10 +4187,11 @@
 	<widget name="link_label" position="97,825" size="830,35" font="RegularBold;26"/>
 	<widget name="link_value" position="97,890" size="830,70" font="RegularBold;26"/>
   </screen>
+	<!-- **********VISION CORE********** -->
 	<!-- VISION MENU-->
   <screen name="VISIONMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="165,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
 	<eLabel backgroundColor="blue_light" position="410,857" size="1490,2" zPosition="2"/>
 	<widget source="menu" render="Listbox" position="410,140" zPosition="2" size="1490,710" backgroundColor="OE_Background" scrollbarMode="showOnDemand" transparent="1">
 	    <convert type="TemplatedMultiContent">
@@ -4216,7 +4217,7 @@
 	<!-- MOUNT MANAGER-->
   <screen name="VISIONDevicesPanel" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="165,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
 	<widget source="list" render="Listbox" position="410,145" size="1490,650" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" transparent="1" scrollbarMode="showOnDemand">
 	    <convert type="TemplatedMultiContent">
 	{"template": [
@@ -4240,9 +4241,8 @@
 	<!--VISION BACKUP MANAGER -->
   <screen name="VISIONBackupManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="95,905" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_exit.png" position="165,905" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_info.png" position="235,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
+	<ePixmap pixmap="buttons/key_info.png" position="165,905" size="64,43" alphatest="blend"/>
 	<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,280" zPosition="10" size="1490,550" transparent="1"/>
 	<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,880" size="1490,35" transparent="1" valign="top"/>
@@ -4252,15 +4252,14 @@
   </screen>
   <screen name="VISIONBackupManagerLogView" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_exit.png" position="165,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,135" zPosition="10" size="1490,820" transparent="1"/>
   </screen>
   <screen name="VISIONBackupManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
+	<panel name="ButtonsVisionCore"/>
+	<ePixmap pixmap="buttons/key_help.png" position="165,905" size="64,43" alphatest="blend"/>
 	<eLabel backgroundColor="blue_light" name="" position="410,880" size="1490,2" zPosition="-9"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="80,905" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_exit.png" position="170,905" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_help.png" position="260,905" size="64,43" alphatest="blend"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1490,940" transparent="1"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="410,635" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget name="description" conditional="description"  position="410,880" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="2" size="1490,70" transparent="1" valign="center" halign="center"/>
@@ -4274,16 +4273,15 @@
   </screen>
   <screen name="XtraPluginsSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="110,905" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_exit.png" position="200,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
 	<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="checkList" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
   </screen>
 	<!-- VISION IMAGE MANAGER-->
   <screen name="VISIONImageManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="110,905" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_exit.png" position="200,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
+	<ePixmap pixmap="buttons/key_help.png" position="165,905" size="64,43" alphatest="blend"/>
 	<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,570" transparent="1"/>
 	<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,880" size="1490,35" transparent="1" valign="top"/>
@@ -4294,8 +4292,7 @@
   <screen name="VISIONImageManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="110,905" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_exit.png" position="200,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1490,630" transparent="1"/>
   </screen>
   <screen name="ImageManagerDownload" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
@@ -4309,7 +4306,7 @@
 	<!-- OPKG INSTALL-->
   <screen name="VISIONIPKInstaller" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="165,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
 	<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,640" transparent="1"/>
 	<applet type="onLayoutFinish">
@@ -4319,8 +4316,7 @@
 	<!-- SCRIPT RUNNER-->
   <screen name="VISIONScriptRunner" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="110,905" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_exit.png" position="200,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
 	<widget name="list" font="RegularBold;25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
@@ -4329,7 +4325,7 @@
 	<!-- SWAP MANAGER-->
   <screen name="VISIONSwap" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="165,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
 	<widget name="autostart_off" position="410,190" zPosition="1" pixmap="extensions/lock_off.png" size="35,35" alphatest="blend"/>
 	<widget name="autostart_on" position="410,190" zPosition="2" pixmap="extensions/lock_on.png" size="35,35" alphatest="blend"/>
 	<widget name="lab7" position="460,180" size="600,50" font="RegularBold;26" valign="center" transparent="1" backgroundColor="OE_Background"/>
@@ -4344,8 +4340,8 @@
 	<!-- SOFTCAM VISION-->
   <screen name="VISIONSoftcamManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="110,905" size="64,43" alphatest="blend"/>
-	<ePixmap pixmap="buttons/key_info.png" position="200,905" size="64,43" alphatest="blend"/>
+	<panel name="ButtonsVisionCore"/>
+	<ePixmap pixmap="buttons/key_info.png" position="165,905" size="64,43" alphatest="blend"/>
 	<widget name="lab8" position="330,275" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 	<widget name="activecam" position="530,275" size="1370,35" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
 	<widget name="lab7" position="315,130" size="350,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
@@ -4357,8 +4353,7 @@
   <screen name="VISIONSoftcamMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
-	<ePixmap pixmap="buttons/key_menu.png" position="110,905" size="64,43" alphatest="blend"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="200,905" size="64,43"/>
+	<panel name="ButtonsVisionCore"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1490,740" transparent="1"/>
   </screen>
   <screen name="VISIONSoftcamLog" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
