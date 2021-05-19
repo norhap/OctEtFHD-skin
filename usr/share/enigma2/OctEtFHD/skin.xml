@@ -944,6 +944,7 @@
   </screen>
   <screen name="AutoTimerWizard" title="Welcome..." backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateWizard"/>
+	<panel name="TemplateRemoteControl"/>
 	<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1430,200" transparent="1"/>
 	<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1430,2" zPosition="-9"/>
 	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,390" scrollbarMode="showOnDemand" size="1430,500" transparent="1">
@@ -1623,7 +1624,7 @@
   </screen>
   <screen name="HelpMenuOld" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<widget name="list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="184,145" size="1160,850" transparent="1"/>
-	<widget name="rc" alphatest="blend" backgroundColor="transparent" pixmaps="rc.png,rcold.png" position="30,center" size="150,500" zPosition="10"/>
+	<widget name="rc" alphatest="blend" position="30,center" size="150,500" zPosition="10"/>
 	<widget alphatest="on" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-150,-150" size="55,105" zPosition="11"/>
 	<widget alphatest="on" name="arrowup" pixmap="skin_default/arrowup.png" position="-150,-150" size="55,105" zPosition="11"/>
@@ -1633,7 +1634,7 @@
   <screen name="HelpMenuNew" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<panel name="TemplateRemoteControl"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="60,980" size="64,43"/>
-	<widget name="rc" pixmaps="rc.png,rcold.png" position="30,center" size="150,500" alphatest="blend" backgroundColor="transparent" zPosition="10" />
+	<widget name="rc" position="30,center" size="150,500" alphatest="blend" zPosition="10" />
 	<widget source="list" render="Listbox" position="184,145" size="1160,850" backgroundColor="OE_Background" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1">
 		<convert type="TemplatedMultiContent">
 			{
@@ -2452,7 +2453,7 @@
 	</widget>
   </screen>
 	<!-- PLUGIN BROWSER -->
-  <screen name="PluginBrowser" backgroundColor="transparent" flags="wfNoBorder"  position="0,0" size="1920,1080" transparent="0">
+  <screen name="PluginBrowser" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="18,980" size="64,43"/>
@@ -4000,7 +4001,7 @@
 	<widget name="sort_right" position="980,850" size="250,50" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="list_right_free" position="1180,850" size="75,50" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1"/>
   </screen>
-  <screen name="FileCommanderFileStatInfo" title="File Commander - File/Directory Information"  position="fill">
+  <screen name="FileCommanderFileStatInfo" title="File Commander - File/Directory Information" position="fill">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="18,980" size="64,43"/>
@@ -4018,7 +4019,7 @@
 	}
  		</convert>
  	</widget>
-	<widget name="link_sep"  position="97,800" size="830,2" transparent="1"/>
+	<widget name="link_sep" position="97,800" size="830,2" transparent="1"/>
 	<widget name="link_label" position="97,825" size="830,35" font="RegularBold;26"/>
 	<widget name="link_value" position="97,890" size="830,70" font="RegularBold;26"/>
   </screen>
@@ -4070,8 +4071,11 @@
   <screen name="VISIONDevicePanelConf" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
+	<panel name="ButtonsVisionCore"/>
+	<eLabel backgroundColor="blue_light" name="" position="410,880" size="1490,2" zPosition="-9"/>
+	<widget source="lab7" render="Label" position="410,880" size="1490,70" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
+	<widget name="lab7" position="410,880" size="1490,70" font="RegularBold;28" backgroundColor="OE_Background" halign="center" valign="center" transparent="1" zPosition="3"/>
 	<widget name="config" itemHeight="80" position="410,150" size="1490,740" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="Linconn" backgroundColor="OE_Background" foregroundColor="blue_light" position="455,850" size="1490,50" transparent="1" valign="top"/>
   </screen>
 	<!--VISION BACKUP MANAGER -->
   <screen name="VISIONBackupManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
@@ -4097,12 +4101,12 @@
 	<eLabel backgroundColor="blue_light" name="" position="410,880" size="1490,2" zPosition="-9"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1490,940" transparent="1"/>
 	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="410,635" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget name="description" conditional="description"  position="410,880" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="2" size="1490,70" transparent="1" valign="center" halign="center"/>
-	<widget name="footnote" conditional="footnote"  position="410,880" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="2" size="1490,70" transparent="1" valign="center" halign="center"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="170,905" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget name="description" conditional="description" position="410,880" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="2" size="1490,70" transparent="1" valign="center" halign="center"/>
+	<widget name="footnote" conditional="footnote" position="410,880" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="2" size="1490,70" transparent="1" valign="center" halign="center"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="165,905" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="VKeyIcon" conditional="VKeyIcon" alphatest="blend" pixmap="my_icons/key_board.png" position="260,905" render="Pixmap" size="64,43" transparent="1">
+	<widget source="VKeyIcon" conditional="VKeyIcon" alphatest="blend" pixmap="my_icons/key_board.png" position="165,850" render="Pixmap" size="64,43" transparent="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
   </screen>
@@ -4126,7 +4130,6 @@
   </screen>
   <screen name="VISIONImageManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<panel name="TemplateSetupVisionCore"/>
 	<panel name="ButtonsVisionCore"/>
 	<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1490,630" transparent="1"/>
   </screen>
@@ -4193,6 +4196,7 @@
   </screen>
   <screen name="VISIONSoftcamLog" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
+	<ePixmap pixmap="buttons/key_exit.png" position="165,905" size="64,43" alphatest="blend"/>
 	<widget name="list" font="RegularBold;25" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
   </screen>
   <screen name="VISIONStopCam" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
