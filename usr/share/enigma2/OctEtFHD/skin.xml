@@ -3623,27 +3623,16 @@
 	<!-- JOBVIEW -->
   <screen name="JobView" title="JobView" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" transparent="0">
 	<panel name="MandatoryWidgets"/>
-	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1250,600" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="150,680" zPosition="-11" valign="center"/>
-	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,305" size="1025,2" zPosition="-9"/>
-	<eLabel backgroundColor="blue_light" name="" position="240,770" size="1025,2" zPosition="-9"/>
-	<!-- Widget -->
-	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="240,248" size="990,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
-	<widget source="job_name" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,367" size="990,50" transparent="1" zPosition="4"/>
-	<widget source="job_task" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,422" size="990,50" transparent="1" zPosition="4"/>
-	<widget source="job_progress" render="Progress" borderColor="blue_light" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="240,center" size="800,35" transparent="1" zPosition="1"/>
-	<widget source="job_progress" render="Label" font="RegularBold;32" backgroundColor="OE_Background" halign="center" position="1050,520" size="250,50" transparent="1" zPosition="2" foregroundColor="white">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget source="job_name" render="Label" font="RegularBold;32" backgroundColor="OE_Background" position="220,367" size="990,50" transparent="1" zPosition="4"/>
+	<widget source="job_task" render="Label" font="RegularBold;32" backgroundColor="OE_Background" position="220,422" size="990,50" transparent="1" zPosition="4"/>
+	<widget source="job_progress" render="Progress" borderColor="blue_light" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="220,center" size="800,35" transparent="1" zPosition="1"/>
+	<widget source="job_progress" render="Label" font="RegularBold;32" backgroundColor="OE_Background" halign="center" position="1020,520" size="250,50" transparent="1" zPosition="2" foregroundColor="white">
 	    <convert type="ProgressToText"/>
 	</widget>
-	<widget source="job_status" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,570" size="990,50" transparent="1" zPosition="4"/>
-	<widget name="config" itemHeight="50" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="240,625" size="990,50" transparent="1" zPosition="4"/>
-	<ePixmap alphatest="blend" pixmap="colors/setting1.png" position="95,256" size="100,100" transparent="1" zPosition="10"/>
-	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="107,center" size="78,75" zPosition="4"/>
-	<!-- Buttons-->
-	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="240,785" size="40,40"/>
-	<eLabel text="Exit" font="RegularBold;24" backgroundColor="OE_Background" position="300,770" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="Clock"/>
+	<widget source="job_status" render="Label" font="RegularBold;32" backgroundColor="OE_Background" position="220,570" size="990,50" transparent="1" zPosition="4"/>
+	<widget name="config" itemHeight="50" font="RegularBold;32" backgroundColor="OE_Background" position="220,625" size="990,50" transparent="1" zPosition="4"/>
   </screen>
   <screen name="VFD_INISetup" title="LED Display Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
