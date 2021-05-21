@@ -356,7 +356,7 @@
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="2,215" zPosition="-11"/>
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="15,1065" size="1865,2" zPosition="-11"/>
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="1880,850" size="2,217" zPosition="-11"/>
-	<eLabel backgroundColor="OE_NewBg" name="" position="336,915" size="1510,4" zPosition="20" transparent="0" foregroundColor="OE_ListBackground"/>
+	<eLabel backgroundColor="OE_NewBg" name="" position="336,917" size="1510,4" zPosition="20" transparent="0" foregroundColor="OE_ListBackground"/>
 	<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="30,775" size="285,305" zPosition="-10"/>
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="28,775" size="2,305" zPosition="-11"/>
 	<eLabel backgroundColor="blue_light" name="InfoBar" position="28,773" size="289,2" zPosition="-11"/>
@@ -370,45 +370,45 @@
 	<widget source="session.CurrentService" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="458,885" size="730,28" transparent="1" zPosition="1">
 	    <convert type="PliExtraInfo">TransponderInfo</convert>
 	</widget>
-	<widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" font="RegularBold;32" halign="left" noWrap="1" position="575,930" size="1100,64" transparent="1">
+	<widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" font="RegularBold;30" halign="left" noWrap="1" position="575,933" size="1050,64" transparent="1">
 	    <convert type="EventName">Name</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;30" position="335,933" render="Label" size="105,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" position="335,935" render="Label" size="105,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;30" position="430,933" render="Label" size="130,40" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" position="430,935" render="Label" size="130,40" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:- %H:%M</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="1681,915" render="Label" size="165,70" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="1580,935" render="Label" size="265,70" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
 	<widget source="session.Event_Now" render="Progress" backgroundColor="OE_NewBg" pixmap="colors/00A4C400.png" position="336,975" size="1510,4" transparent="0" zPosition="7">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;30" position="335,988" render="Label" size="105,40" source="session.Event_Next" transparent="1" valign="top">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" position="335,988" render="Label" size="105,40" source="session.Event_Next" transparent="1" valign="top">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;30" position="430,988" render="Label" size="130,40" source="session.Event_Next" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" position="430,988" render="Label" size="130,40" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:- %H:%M</convert>
 	</widget>
-	<widget source="session.Event_Next" font="RegularBold;32" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" halign="left" position="575,985" size="1100,48" transparent="1" valign="top">
+	<widget source="session.Event_Next" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" halign="left" position="575,986" size="1050,48" transparent="1" valign="top">
 	    <convert type="EventName">Name</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="1681,985" render="Label" size="165,45" source="session.Event_Next" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="1681,990" render="Label" size="165,45" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">Duration</convert>
 	    <convert type="ClockToText">AsLengthHours</convert>
 	</widget>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="336,977" size="1510,2"/>
 	<!-- CryptoInfo -->
-	<widget source="session.CurrentService" render="Label" position="335,1030" size="905,35" backgroundColor="OE_Background" font="RegularBold;22" foregroundColor="blue_light" transparent="1" halign="left">
+	<widget source="session.CurrentService" render="Label" position="335,1035" size="905,35" backgroundColor="OE_Background" font="RegularBold;22" foregroundColor="blue_light" transparent="1" halign="left">
 	    <convert type="CryptoInfo">VerboseInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1260,1030" size="400,35" font="RegularBold;22" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
+	<widget source="session.CurrentService" render="Label" position="1260,1035" size="400,35" font="RegularBold;22" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
 	    <convert type="PliExtraInfo">CryptoSpecial</convert>
 	</widget>
 	<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1670,1030" size="98,31" transparent="1" alphatest="blend" zPosition="3"/>
