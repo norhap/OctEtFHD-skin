@@ -399,7 +399,7 @@
 	<widget source="session.Event_Next" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" halign="left" position="575,986" size="1050,48" transparent="1" valign="top">
 	    <convert type="EventName">Name</convert>
 	</widget>
-	<widget backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="1681,990" render="Label" size="165,45" source="session.Event_Next" transparent="1">
+	<widget backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="1681,988" render="Label" size="165,45" source="session.Event_Next" transparent="1">
 	    <convert type="EventTime">Duration</convert>
 	    <convert type="ClockToText">AsLengthHours</convert>
 	</widget>
@@ -4077,9 +4077,9 @@
   <screen name="SkinSelector" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<eLabel backgroundColor="blue_light" position="97,860" size="1250,2" zPosition="2"/>
-	<widget source="description" render="Label" font="RegularBold;28" position="97,862" size="1250,103" zPosition="10" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="0"/>
-	<widget name="description" font="RegularBold;28" position="97,862" size="1250,103" zPosition="10" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="0"/>
+	<eLabel backgroundColor="blue_light" position="97,900" size="1250,2" zPosition="2"/>
+	<widget source="description" render="Label" font="RegularBold;28" position="97,900" size="1250,70" zPosition="10" halign="center" valign="center" foregroundColor="blue_light" transparent="1"/>
+	<widget name="description" font="RegularBold;28" position="97,900" size="1250,70" zPosition="10" halign="center" valign="center" foregroundColor="blue_light" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget name="preview" position="1430,500" size="440,440" alphatest="blend"/>
 	<widget source="skins" render="Listbox" position="97,140" size="1250,710" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
