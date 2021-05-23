@@ -1035,7 +1035,6 @@
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
-	<widget alphatest="blend" position="300,240" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
 	<widget alphatest="blend" position="415,260" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
 	    <convert type="ServiceName2">Reference</convert>
 	</widget>
