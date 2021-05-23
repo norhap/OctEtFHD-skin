@@ -570,7 +570,7 @@
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget source="session.Event_Next" font="RegularBold;30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" halign="left" position="845,635" size="735,48" transparent="1" valign="top">
+	<widget source="session.Event_Next" font="RegularBold;30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" halign="left" position="845,635" size="635,48" transparent="1" valign="top">
 	    <convert type="EventName">Name</convert>
 	</widget>
 	<widget backgroundColor="OE_ListBackground" font="RegularBold;30" halign="right" position="1520,635" render="Label" size="165,48" source="session.Event_Next" transparent="1">
