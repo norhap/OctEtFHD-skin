@@ -2780,14 +2780,26 @@
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="97,145" size="1250,45" transparent="1"/>
 	<widget name="target" font="RegularBold;26" backgroundColor="OE_Background" position="97,195" size="1250,45" transparent="1"/>
-	<widget name="filelist" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,245" size="1250,450" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="97,710" size="1250,2" zPosition="-9"/>
-	<widget name="textbook" font="RegularBold;26" backgroundColor="OE_Background" position="97,710" size="1250,45" transparent="1"/>
-	<widget name="booklist" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,760" size="1250,205" transparent="1"/>
+	<panel name="LocationBoxOld" conditional="textbook" />
+	<panel name="LocationBoxNew" conditional="filetext" />
 	<widget name="red" pixmap="buttons/key_red.png" position="97,980" size="0,0" alphatest="blend"/>
 	<widget name="green" pixmap="buttons/key_green.png" position="460,980" size="0,0" alphatest="blend"/>
 	<widget name="yellow" pixmap="buttons/key_yellow.png" position="790,980" size="40,40" alphatest="blend"/>
 	<widget name="blue" pixmap="buttons/key_blue.png" position="1120,980" size="0,0" alphatest="blend"/>
+  </screen>
+  <screen name="LocationBoxOld" title="Location Box" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<widget name="filelist" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,245" size="1250,450" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="97,710" size="1250,2" zPosition="-9"/>
+	<widget name="textbook" font="RegularBold;26" backgroundColor="OE_Background" position="97,710" size="1250,45" transparent="1"/>
+	<widget name="booklist" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,760" size="1250,205" transparent="1"/>
+  </screen>
+  <screen name="LocationBoxNew" title="Location Box" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,920" size="64,43"/>
+	<widget name="filetext" font="RegularBold;26" backgroundColor="blue_light" position="97,245" size="1250,45" valign="center"/>
+	<widget name="filelist" itemHeight="45" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,290" size="1250,405" transparent="1"/>
+	<widget name="quickselect" font="RegularBold;100" backgroundColor="OE_Background" foregroundColor="OE_Orange" position="97,290" size="1250,405" transparent="1" halign="center" valign="center" zPosition="+1"/>
+	<widget name="booktext" font="RegularBold;26" backgroundColor="blue_light" position="97,710" size="1250,45" valign="center"/>
+	<widget name="booklist" itemHeight="45" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,755" size="1250,185" transparent="1"/>
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2">
 	<widget name="RassLogo" pixmap="icons/rass_logo.png" position="150,840" size="150,85"/>
