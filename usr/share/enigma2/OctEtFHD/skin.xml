@@ -744,12 +744,12 @@
 	<!-- INFO DEVICES STB -->
   <screen name="Devices" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="TemplateInformation"/>
-	<widget source="TunerHeader" render="Label" position="410,147" size="1055,40" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
-	<widget source="nims" render="Label" position="410,180" size="1490,400" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top" zPosition="1"/>
-	<widget source="HDDHeader" render="Label" position="410,585" size="1055,40" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
-	<widget source="hdd" render="Label" position="410,620" size="1490,125" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top"/>
-	<widget source="MountsHeader" render="Label" position="410,750" size="1055,40" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
-	<widget source="mounts" render="Label" position="410,780" size="1490,170" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" zPosition="1"/>
+	<widget source="TunerHeader" conditional="TunerHeader" render="Label" position="410,147" size="1055,40" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
+	<widget source="nims" conditional="nims" render="Label" position="410,180" size="1490,400" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top" zPosition="1"/>
+	<widget source="HDDHeader" conditional="HDDHeader" render="Label" position="410,147" size="1055,40" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
+	<widget source="hdd" conditional="hdd" render="Label" position="410,180" size="1490,125" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" valign="top"/>
+	<widget source="MountsHeader" conditional="MountsHeader" render="Label" position="410,585" size="1055,40" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="1"/>
+	<widget source="mounts" conditional="mounts" render="Label" position="410,620" size="1490,170" font="RegularBold;26" halign="left" backgroundColor="OE_NewBg2" foregroundColor="white" transparent="1" zPosition="1"/>
   </screen>
 	<!-- INFO MEMORY STB -->
   <screen name="SystemMemoryInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
