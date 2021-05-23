@@ -552,10 +552,10 @@
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" font="RegularBold;30" halign="left" noWrap="1" position="865,185" size="715,48" transparent="1">
+	<widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" font="RegularBold;30" halign="left" noWrap="1" position="845,185" size="635,48" transparent="1">
 	    <convert type="EventName">Name</convert>
 	</widget>
-	<widget backgroundColor="OE_ListBackground" font="RegularBold;30" halign="right" position="1500,180" render="Label" size="185,48" source="session.Event_Now" transparent="1">
+	<widget backgroundColor="OE_ListBackground" font="RegularBold;30" halign="right" position="1420,180" render="Label" size="265,48" source="session.Event_Now" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
@@ -570,7 +570,7 @@
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget source="session.Event_Next" font="RegularBold;30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" halign="left" position="865,635" size="735,48" transparent="1" valign="top">
+	<widget source="session.Event_Next" font="RegularBold;30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" halign="left" position="845,635" size="735,48" transparent="1" valign="top">
 	    <convert type="EventName">Name</convert>
 	</widget>
 	<widget backgroundColor="OE_ListBackground" font="RegularBold;30" halign="right" position="1520,635" render="Label" size="165,48" source="session.Event_Next" transparent="1">
@@ -1031,11 +1031,12 @@
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
-	<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;28" foregroundColor="blue_light" position="415,255" size="110,30" transparent="1">
+	<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;28" foregroundColor="blue_light" position="365,225" size="200,30" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
 	<widget alphatest="blend" position="300,240" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
+	<widget alphatest="blend" position="415,260" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
 	    <convert type="ServiceName2">Reference</convert>
 	</widget>
 	<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" foregroundColor="green_light" halign="left" position="50,325" size="500,45" transparent="1" valign="center">
@@ -1106,7 +1107,7 @@
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="Event" render="Label" backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="493,200" size="157,40" transparent="1">
+	<widget source="Event" render="Label" backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="493,200" size="200,40" transparent="1">
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">NoSeconds</convert>
 	</widget>
