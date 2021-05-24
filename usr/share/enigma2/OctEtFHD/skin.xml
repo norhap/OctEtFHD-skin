@@ -726,10 +726,10 @@
 	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" position="410,147" size="1490,680" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1"/>
 	<widget source="IF" position="410,901" size="345,40" render="Label" font="RegularBold;26" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget source="IFtext" render="Label" position="775,901" size="250,40" font="RegularBold;26" halign="right" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="statuspic" position="1035,900" size="35,35" transparent="1" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png"/>
+	<widget source="IFtext" render="Label" position="775,901" size="250,40" font="RegularBold;26" halign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="statuspic" position="1025,895" size="35,35" transparent="1" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png"/>
 	<widget source="Statustext" position="1090,901" size="250,40" render="Label" font="RegularBold;26" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="devicepic" position="1360,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
+	<widget name="devicepic" position="1430,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
   </screen>
 	<!-- INFO NETWORK STB NEW -->
   <screen name="NetworkInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
