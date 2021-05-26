@@ -375,8 +375,8 @@
 	<widget name="arrowup2" conditional="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 	<widget name="stepslider" conditional="stepslider" borderWidth="1" position="665,340" size="450,35" foregroundColor="blue_light" zPosition="15" transparent="1"/>
 	<widget name="step" conditional="step" borderWidth="1" position="445,345" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="15" transparent="1"/>
-	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="445,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="350,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="445,825" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="350,825" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
   </screen>
