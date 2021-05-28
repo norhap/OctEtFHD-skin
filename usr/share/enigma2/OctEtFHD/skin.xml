@@ -1635,11 +1635,11 @@
 	</widget>
 	<widget name="channel" font="RegularBold;34" backgroundColor="OE_Background" position="350,90" size="830,50" halign="left" transparent="1"/>
 	<widget name="epg_description" position="350,160" size="1540,765" backgroundColor="OE_Background" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
-	<widget source="Event" render="Label" font="RegularBold;28" position="80,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;28" position="85,160" size="105,45" zPosition="2" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText"/>
 	</widget>
-	<widget source="Event" render="Label" font="RegularBold;28" position="164,160" size="100,45" zPosition="2" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" transparent="1">
+	<widget source="Event" render="Label" font="RegularBold;28" position="175,160" size="105,45" zPosition="2" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="OE_Foreground" transparent="1">
 	    <convert type="EventTime">EndTime</convert>
 	    <convert type="ClockToText">Format:-%H:%M</convert>
 	</widget>
