@@ -258,7 +258,7 @@
 				"fonts":[gFont("RegularBold",30) ],"itemHeight":50}
 	    </convert>
 	</widget>
-	<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,515" size="1430,555" zPosition="1"/>
+	<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,500" size="1400,500" zPosition="1"/>
   </screen>
 	<!-- START WIZARD-->
   <screen name="StartWizard" title="Start Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
