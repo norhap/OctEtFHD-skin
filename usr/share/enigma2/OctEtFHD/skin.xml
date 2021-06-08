@@ -4215,7 +4215,7 @@
 	</widget>
 	<widget name="lab7" position="950,130" size="0,0" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
 	</screen>
-  <screen name="VISIONDevicePanelConf" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+  <screen name="DeviceMountSetup" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
 	<panel name="ButtonsVisionCore"/>
