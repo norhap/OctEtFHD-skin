@@ -447,11 +447,11 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
   </screen>
 	<!-- TEMPLATE MANDATORY WIDGETS -->
   <screen name="MandatoryWidgets">
-	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="18,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="260,725" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="18,725" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
-	<widget source="VKeyIcon" conditional="VKeyIcon" alphatest="blend" pixmap="my_icons/key_board.png" position="18,750" render="Pixmap" size="64,43" transparent="1">
+	<widget source="VKeyIcon" conditional="VKeyIcon" alphatest="blend" pixmap="my_icons/key_board.png" position="18,775" render="Pixmap" size="64,43" transparent="1">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
 	<widget name="footnote" conditional="footnote" position="91,1036" font="RegularBold;24" size="1260,40" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="0"/>
@@ -463,8 +463,8 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<!-- TEMPLATE NOT PIP -->
   <screen name="TemplateNoPip">
 	<eLabel backgroundColor="OE_NewBg2" name="" position="1340,0" size="580,1080" zPosition="-16"/>
-	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="18,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="260,725" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+	<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="18,725" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 	    <convert type="ConditionalShowHide"/>
 	</widget>
 	<widget name="description" conditional="description" position="1360,260" size="550,380" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
