@@ -2974,6 +2974,12 @@
 	<panel name="TemplateNoPip"/>
 	<widget name="list" font="RegularBold;26" backgroundColor="OE_Background" position="97,140" size="1250,855" transparent="1"/>
   </screen>
+	<!-- POSITIONERSETUP ONIDTSID -->
+  <screen name="ONIDTSIDScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplateNoPip"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
+  </screen>
 	<!-- DISH-->
   <screen name="Dish" backgroundColor="transparent" flags="wfNoBorder" position="20,75" size="550,250" title="Dish" zPosition="2">
 	<widget alphatest="off" name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="256,256"/>
