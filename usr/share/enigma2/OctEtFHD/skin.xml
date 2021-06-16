@@ -740,7 +740,7 @@
 	<panel name="Information"/>
 	<widget name="AboutScrollLabel" conditional="AboutScrollLabel" font="RegularBold;26" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
   </screen>
-	<!-- INFO NETWORK STB -->
+	<!-- INFO NETWORK STB OLD -->
   <screen name="SystemNetworkInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" position="410,147" size="1490,680" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1"/>
@@ -750,15 +750,10 @@
 	<widget source="Statustext" position="1090,901" size="250,40" render="Label" font="RegularBold;26" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="devicepic" position="1430,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
   </screen>
-	<!-- INFO NETWORK STB NEW -->
+	<!-- NETWORK INFORMATION -->
   <screen name="NetworkInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="Information"/>
 	<panel name="HelpInformation"/>
-	<widget name="devicepic" position="1231,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
-	<widget source="IFtext" render="Label" position="410,901" size="120,40" font="RegularBold;26" halign="left" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget source="IF" position="540,901" size="400,40" render="Label" font="RegularBold;26" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget source="Statustext" position="846,901" size="300,40" render="Label" font="RegularBold;26" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="statuspic" position="800,900" size="35,35" transparent="1" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png"/>
   </screen>
 	<!-- INFO DEVICES STB -->
   <screen name="Devices" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
