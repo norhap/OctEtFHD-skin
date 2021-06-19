@@ -706,6 +706,12 @@
 	<!-- widget name="information" conditional="information" position="410,140" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" leftColAlign="left" rightColAlign="left" split="1" transparent="1"/> -->
 	<widget name="information" conditional="information" position="410,145" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" split="1" transparent="1"/>
   </screen>
+  <screen name="InformationImage" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+	<panel name="TemplateInformation"/>
+	<panel name="HelpInformation"/>
+	<widget name="name" position="410,145" size="1490,35" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="white" halign="center" transparent="1" valign="center" />
+	<widget name="image" position="410,190" size="1490,750" backgroundColor="OE_Background" alphatest="blend" scale="1" transparent="1"/>
+  </screen>
 	<!-- MAIN MENU INFORMATION -->
 	<!-- INFO SERVICE -->
   <screen name="ServiceInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
