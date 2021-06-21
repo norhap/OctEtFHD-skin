@@ -4069,7 +4069,6 @@
 	<panel name="TemplatePip"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
 	<widget name="config" itemHeight="50" position="97,140" size="1250,800" scrollbarMode="showOnDemand" font="RegularBold;23" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="description" font="RegularBold;26" position="420,400" size="780,195" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- NETWORK IPV6 SETUP-->
   <screen name="IPv6Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
