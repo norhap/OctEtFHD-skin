@@ -706,11 +706,12 @@
 	<!-- widget name="information" conditional="information" position="410,140" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" leftColAlign="left" rightColAlign="left" split="1" transparent="1"/> -->
 	<widget name="information" conditional="information" position="410,145" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" noWrap="1" split="1" transparent="1"/>
   </screen>
+ 	<!-- INFO IMAGES -->
   <screen name="InformationImage" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 	<panel name="TemplateInformation"/>
 	<panel name="HelpInformation"/>
-	<widget name="name" position="410,145" size="1490,35" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="white" halign="center" transparent="1" valign="center" />
-	<widget name="image" position="410,190" size="1490,750" backgroundColor="OE_Background" alphatest="blend" scale="1" transparent="1"/>
+	<widget name="name" position="405,60" size="1490,70" font="RegularBold;28" backgroundColor="OE_Background" halign="center" valign="top" transparent="1"/>
+	<widget name="image" position="410,160" size="1490,750" backgroundColor="OE_Background" alphatest="blend" scale="1" transparent="1"/>
   </screen>
 	<!-- MAIN MENU INFORMATION -->
 	<!-- INFO SERVICE -->
