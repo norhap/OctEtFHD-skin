@@ -520,31 +520,31 @@ self.instance.move(ePoint(int(orgpos.x() + (orgwidth - newwidth) // 2), int(orgp
 	<widget source="session.CurrentService" render="Progress" position="1385,580" size="495,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1385,595" size="495,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1385,595" size="540,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Progress" position="1385,665" size="495,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1385,680" size="515,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1385,680" size="540,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Progress" position="1385,750" size="495,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">SwapFree</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1385,765" size="515,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1385,765" size="540,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">SwapFree</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Progress" position="1385,835" size="495,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1385,850" size="515,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1385,850" size="540,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 	</widget>
 	<widget source="session.CurrentService" render="Progress" position="1385,920" size="495,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
 	</widget>
-	<widget source="session.CurrentService" render="Label" position="1385,935" size="515,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="1385,935" size="540,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 	    <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
 	</widget>
   </screen>
