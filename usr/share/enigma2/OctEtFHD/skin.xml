@@ -3448,33 +3448,19 @@
   <screen backgroundColor="OE_Background" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1920,1080">
 	<widget position="center,center" render="Canvas" size="1280,800" source="Canvas"/>
   </screen>
+	<!-- VIRTUAL KEYBOARD -->
   <screen name="VirtualKeyBoard" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" zPosition="99">
-	<!-- Background -->
-	<eLabel position="30,center" size="1460,940" backgroundColor="OE_Background" foregroundColor="OE_Background" zPosition="-3"/>
-	<eLabel position="70,center" size="80,1080" backgroundColor="OE_NewBg2" foregroundColor="white" valign="center" zPosition="-2"/>
-	<eLabel position="170,130" size="1250,2" backgroundColor="blue_light" foregroundColor="white" zPosition="-1"/>
-	<!-- Widget -->
-	<eLabel text="Virtual KeyBoard" position="170,73" size="1250,50" backgroundColor="OE_Background" font="RegularBold;34" transparent="1"/>
-	<widget name="prompt" position="170,150" size="1250,50" font="RegularBold;26" backgroundColor="OE_Background" halign="center" transparent="1"/>
-	<eLabel position="245,220" size="1100,70" backgroundColor="white" zPosition="+1"/>
-	<eLabel position="250,225" size="1090,60" backgroundColor="OE_Background" zPosition="+2"/>
-	<widget name="text" position="255,227" size="1070,55" backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" halign="right" noWrap="1" zPosition="+3"/>
-	<widget name="list" position="325,350" size="950,620" selectionDisabled="1" transparent="1"/>
-	<widget name="mode" position="325,800" size="950,40" backgroundColor="OE_Background" font="Regular;30" halign="center" transparent="1" valign="center"/>
-	<widget name="locale" position="170,890" size="830,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
-	<widget name="language" position="1020,890" size="400,40" backgroundColor="OE_Background" font="Regular;30" halign="right" transparent="1" valign="center"/>
-	<!-- Buttons-->
-	<eLabel position="170,945" size="1250,2" backgroundColor="white" zPosition="-1"/>
-	<ePixmap position="170,960" size="40,40" pixmap="buttons/key_red.png" alphatest="blend"/>
-	<ePixmap position="500,960" size="40,40" pixmap="buttons/key_green.png" alphatest="blend"/>
-	<ePixmap position="830,960" size="40,40" pixmap="buttons/key_yellow.png" alphatest="blend"/>
-	<ePixmap position="1160,960" size="40,40" pixmap="buttons/key_blue.png" alphatest="blend"/>
-	<widget source="key_red" render="Label" position="220,960" size="270,40" font="Regular;28" backgroundColor="OE_Background" halign="left" valign="center" transparent="1"/>
-	<widget source="key_green" render="Label" position="550,960" size="270,40" font="Regular;28" backgroundColor="OE_Background" halign="left" valign="center" transparent="1"/>
-	<widget source="key_yellow" render="Label" position="880,960" size="270,40" font="Regular;28" backgroundColor="OE_Background" halign="left" valign="center" transparent="1"/>
-	<widget source="key_blue" render="Label" position="1210,960" size="270,40" font="Regular;28" backgroundColor="OE_Background" halign="left" valign="center" transparent="1"/>
-	<!-- Clock -->
-	<panel name="Clock"/>
+	<panel name="MandatoryWidgets"/>
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="prompt" position="97,145" size="1250,70" font="RegularBold;26" backgroundColor="OE_Background" valign="center" halign="center" transparent="1"/>
+	<eLabel position="170,220" size="1100,70" backgroundColor="#00fafa" zPosition="+1"/>
+	<eLabel position="175,225" size="1090,60" backgroundColor="OE_Background" zPosition="+2"/>
+	<widget name="text" position="175,235" size="1070,35" backgroundColor="OE_Background" font="RegularBold;32" halign="right" noWrap="1" zPosition="+3"/>
+	<widget name="list" position="240,350" size="950,620" selectionDisabled="1" transparent="1"/>
+	<widget name="mode" position="225,800" size="950,40" backgroundColor="OE_Background" font="Regular;30" halign="center" transparent="1" valign="center"/>
+	<widget name="locale" position="97,860" size="1250,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
+	<widget name="language" position="97,910" size="1250,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
   </screen>
   <!-- Is the VirtualKeyBoardmod screen actually used? -->
   <screen name="VirtualKeyBoardmod" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" zPosition="99">
