@@ -2543,8 +2543,13 @@
 	<widget name="lab1" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" size="1250,760" transparent="1"/>
   </screen>
-	<!-- OSCAMINFO -->
+	<!-- OSCAMINFO NCAMINFO-->
   <screen name="OscamInfoMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="mainmenu" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,145" size="1250,800" transparent="1"/>
+  </screen>
+  <screen name="NcamInfoMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="mainmenu" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,145" size="1250,800" transparent="1"/>
@@ -2555,6 +2560,12 @@
 	<widget name="output" itemHeight="50" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
   </screen>
   <screen name="OscamInfoConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,550" transparent="1"/>
+	<widget name="status" render="Label" font="EL_Standard;28" backgroundColor="OE_Background" halign="left" position="97,730" size="1250,200" transparent="1"/>
+  </screen>
+  <screen name="NcamInfoConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,550" transparent="1"/>
