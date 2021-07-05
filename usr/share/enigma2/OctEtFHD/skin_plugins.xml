@@ -6238,4 +6238,68 @@
 	<panel name="TemplatePip"/>
 	<widget name="config" itemHeight="45" position="97,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
   </screen>
+
+	<!-- ******************** CCcam Info ******************** -->
+  <screen name="CCcamInfoMain" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="menu" itemHeight="45" position="97,145" size="1250,815" transparent="1"/>
+  </screen>
+  <screen name="CCcamInfoInfoScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="text" position="97,140" font="RegularBold;26" size="1250,820" transparent="1"/>
+  </screen>
+  <screen name="CCcamInfoSubMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="list" position="97,145" size="1250,815" itemHeight="45" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="info" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+  </screen>
+  <screen name="CCcamInfoServerMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="list" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="info" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+  </screen>
+  <screen name="CCcamShareViewMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="uphops" position="97,145" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="providers" position="97,195" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="reshare" position="97,245" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="cards" position="97,295" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="title" position="97,345" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="list" itemHeight="45" position="97,400" size="1250,540" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+  </screen>
+  <screen name="CCcamInfoShareInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="list" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+  </screen>
+  <screen name="CCcamInfoRemoteBoxMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="list" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+  </screen>
+  <screen name="CCcamInfoConfigSwitcher" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="list" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+  </screen>
+  <screen name="CCcamInfoConfigMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="config" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
+  </screen>
+  <screen name="CCcamInfoEcmInfoSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="list" itemHeight="45" position="97,145" size="1250,815" font="RegularBold;25" transparent="1"/>
+  </screen>
+  <screen name="CCcamInfoMenuConfig" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<widget name="list" itemHeight="45" position="97,145" size="1250,815" font="RegularBold;25" transparent="1"/>
+  </screen>
 </skin>
