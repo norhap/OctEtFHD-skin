@@ -751,10 +751,10 @@
   <screen name="SystemNetworkInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<widget name="AboutScrollLabel" position="410,147" size="1490,680" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1"/>
-	<widget source="IF" position="410,901" size="345,40" render="Label" font="RegularBold;26" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget source="IFtext" render="Label" position="775,901" size="250,40" font="RegularBold;26" halign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="statuspic" position="1025,895" size="35,35" transparent="1" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png"/>
-	<widget source="Statustext" position="1090,901" size="250,40" render="Label" font="RegularBold;26" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="IF" position="410,900" size="345,40" render="Label" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="IFtext" render="Label" position="775,905" size="250,40" font="RegularBold;26" halign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="statuspic" position="1025,900" size="35,35" transparent="1" alphatest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png"/>
+	<widget source="Statustext" position="1090,900" size="250,40" render="Label" font="RegularBold;26" halign="right" valign="center" foregroundColor="white" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="devicepic" position="1430,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphatest="blend" transparent="1"/>
   </screen>
 	<!-- NETWORK INFORMATION -->
@@ -2005,8 +2005,8 @@
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="65,center" size="750,1080" zPosition="-11" valign="center"/>
 	<eLabel backgroundColor="blue_light" name="" position="830,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,142" size="720,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<eLabel text="MEDIA PLAYER" position="80,85" size="445,50" font="RegularBold;34" backgroundColor="OE_Background" transparent="1" foregroundColor="white"/>
-	<eLabel text="PLAYLIST" position="830,85" size="245,50" font="RegularBold;34" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="white"/>
+	<eLabel text="Media player" position="80,85" size="445,50" font="RegularBold;34" backgroundColor="OE_Background" transparent="1" foregroundColor="white"/>
+	<eLabel text="Play back media files" position="830,85" size="1600,40" font="RegularBold;34" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="white"/>
 	<widget name="coverArt" position="930,415" size="120,110" pixmap="no_coverArt.png" transparent="1" alphatest="blend"/>
 	<eLabel backgroundColor="blue_light" position="830,892" size="1000,2" zPosition="-9"/>
 	<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="1626,960" size="64,43" alphatest="blend"/>
@@ -2014,7 +2014,9 @@
 	<widget name="filelist" itemHeight="50" font="Regular;24" backgroundColor="OE_NewBg2" enableWrapAround="1" position="80,154" scrollbarMode="showNever" size="720,650" transparent="1"/>
 	<widget name="playlist" itemHeight="50" font="RegularBold;26" backgroundColor="OE_Background" selectionDisabled="1" position="830,153" scrollbarMode="showNever" size="1000,650" transparent="1"/>
 	<widget name="PositionGauge" position="377,628" size="0,0" pointer="skin_default/position_pointer.png:13,3" seek_pointer="skin_default/position_pointer.png:13,3" zPosition="3" transparent="1"/>
-	<widget alphatest="blend" name="coverArt" pixmap="mmp/media_player.png" position="594,825" size="200,200" transparent="1"/>
+	<ePixmap name="new ePixmap" pixmap="buttons/key_channel.png" position="78,825" size="64,43" alphatest="blend"/>
+	<eLabel text="Switch between filelist/playlist" position="150,820" size="530,60" font="RegularBold;24" backgroundColor="OE_NewBg2" halign="left" transparent="1" zPosition="3"/>
+	<widget alphatest="blend" name="coverArt" pixmap="mmp/media_player.png" position="330,890" size="200,200" transparent="1"/>
 	<widget alphatest="blend" name="repeat" pixmaps="mmp/repeat_off.png,mmp/repeat_on.png" position="1770,960" size="60,43" transparent="1"/>
 	<eLabel backgroundColor="blue_light" name="" position="80,810" size="720,4" zPosition="-9"/>
 	<widget backgroundColor="OE_Background" font="Regular;28" name="year" position="80,915" size="500,45" transparent="1" valign="center" halign="left"/>
