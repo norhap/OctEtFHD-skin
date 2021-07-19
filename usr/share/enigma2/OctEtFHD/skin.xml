@@ -3435,20 +3435,23 @@
   <screen name="Mute" title="Mute" backgroundColor="OE_NewBg2" flags="wfNoBorder" position="10,15" size="79,55" transparent="0" zPosition="10">
 	<ePixmap alphatest="blend" pixmap="my_icons/mute2.png" position="0,0" size="79,55"/>
   </screen>
+	<!-- VIDEO ENHANCEMENT -->  
   <screen name="VideoEnhancementSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
   </screen>
   <screen name="VideoEnhancementPreview" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1070,370" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,440" zPosition="-11" valign="center"/>
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,420" size="900,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="VideoEnhancementPreview" font="RegularBold;34" backgroundColor="OE_Background" position="170,363" size="900,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
+	<widget source="Title" render="Label" backgroundColor="OE_Background" font="RegularBold;34" position="170,370" size="900,35" transparent="1" valign="center" zPosition="3" halign="left" />
 	<widget name="config" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,440" size="900,150" transparent="1" zPosition="3"/>
+	<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="445,825" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 	<widget source="introduction" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="170,605" size="900,45" transparent="1" valign="center"/>
 	<!-- Button -->
-	<eLabel backgroundColor="white" name="" position="170,655" size="900,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="170,655" size="900,2" zPosition="-9"/>
+	<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="75,center" size="78,75" zPosition="4"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,670" size="40,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,670" size="40,40"/>
 	<widget name="key_red" font="Regular;28" backgroundColor="OE_Background" position="215,670" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
