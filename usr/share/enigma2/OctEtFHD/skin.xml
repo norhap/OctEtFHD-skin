@@ -3009,8 +3009,10 @@
 	    <convert type="FrontendInfo">SNR</convert>
 	</widget>
   </screen>
+	<!-- POSITIONER SELECTING SATELLITES-->
   <screen name="SelectSatsEntryScreen" title="Select Sats Entry" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
 	<widget name="list" itemHeight="50" font="RegularBold;28" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,700" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="97,870" size="1250,2" zPosition="2"/>
 	<widget name="hint" font="RegularBold;26" position="97,875" size="1250,85" zPosition="10" halign="center" valign="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
