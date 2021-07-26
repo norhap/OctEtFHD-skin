@@ -2154,7 +2154,7 @@
 	<widget backgroundColor="OE_Background" font="RegularBold;26" halign="left" position="1595,950" size="280,40" name="key_blue" transparent="1" zPosition="1"/>
   </screen>
 	<!-- MOVIESELECTIONSLIM -->
-	<screen name="MovieSelectionSlim" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
+  <screen name="MovieSelectionSlim" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
 	<panel name="SlimScreen"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_menu.png" position="10,935" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_info.png" position="10,980" size="64,43"/>
@@ -3924,7 +3924,7 @@
 	<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/SystemPlugins/MountManager/icons/fstabEditor.png" position="670,1035" size="100,40"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
   </screen>
-	<screen name="fstabEditorScreen" position="fill" flags="wfNoBorder">
+  <screen name="fstabEditorScreen" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="105,980" size="40,40"/>
@@ -4161,9 +4161,9 @@
 	<widget source="list" render="Listbox" position="410,145" size="1490,650" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" transparent="1" scrollbarMode="showOnDemand">
 	    <convert type="TemplatedMultiContent">
 	{"template": [
-	MultiContentEntryText(pos = (160, 10), size = (1160, 35), font=0, text = 0),
-	MultiContentEntryText(pos = (165, 50), size = (1160, 70), font=1, flags = RT_VALIGN_TOP| RT_WRAP, text = 1, color = 0x0000fafa, color_sel = 0x0000ffff),
-	MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (80, 80), png = 2),
+	MultiContentEntryText(pos = (140, 10), size = (1340, 35), font=0, text = 0),
+	MultiContentEntryText(pos = (140, 50), size = (1340, 70), font=1, flags = RT_VALIGN_TOP| RT_WRAP, text = 1, color = 0x0000fafa, color_sel = 0x0000ffff),
+	MultiContentEntryPixmapAlphaBlend(pos = (30, 20), size = (80, 80), png = 2),
 	],
 	"fonts": [gFont("RegularBold", 26),gFont("RegularBold", 26)],
 	"itemHeight": 120
@@ -4171,7 +4171,7 @@
 	    </convert>
 	</widget>
 	<widget name="lab7" position="950,130" size="0,0" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-	</screen>
+  </screen>
   <screen name="DeviceMountSetup" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
 	<panel name="TemplateSetupVisionCore"/>
@@ -4254,7 +4254,7 @@
 	<applet type="onLayoutFinish">
 	self[&quot;list&quot;].instance.setItemHeight(50)
   </applet>
-	</screen>
+  </screen>
 	<!-- SCRIPT RUNNER-->
   <screen name="VISIONScriptRunner" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 	<panel name="TemplateInformation"/>
