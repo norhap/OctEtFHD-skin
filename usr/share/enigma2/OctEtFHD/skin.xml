@@ -3474,7 +3474,7 @@
 	<widget name="prompt" position="97,145" size="1250,70" font="RegularBold;26" backgroundColor="OE_Background" valign="center" halign="center" transparent="1"/>
 	<eLabel position="170,220" size="1100,70" backgroundColor="#00fafa" zPosition="+1"/>
 	<eLabel position="175,225" size="1090,60" backgroundColor="OE_Background" zPosition="+2"/>
-	<widget name="text" position="175,235" size="1070,35" backgroundColor="OE_Background" font="RegularBold;32" halign="right" noWrap="1" zPosition="+3"/>
+	<widget name="text" position="175,235" size="1070,40" backgroundColor="OE_Background" font="RegularBold;32" halign="right" noWrap="1" zPosition="+3"/>
 	<widget name="list" position="240,350" size="950,620" selectionDisabled="1" transparent="1"/>
 	<widget name="mode" position="225,800" size="950,40" backgroundColor="OE_Background" font="Regular;30" halign="center" transparent="1" valign="center"/>
 	<widget name="locale" position="97,860" size="1250,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
