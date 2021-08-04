@@ -3886,7 +3886,7 @@
   <screen name="NetworkServiceLog" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="infotext" position="97,140" size="1250,250" font="RegularBold;28" valign="center" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="infotext" position="97,140" size="1250,820" font="RegularBold;28" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" valign="center" backgroundColor="OE_Background" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="18,980" size="64,43"/>
   </screen>
 	<!-- MOUNT MANAGER DIMA73-->
