@@ -1335,8 +1335,18 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" name="list" position="97,center" scrollbarMode="showNever" serviceItemHeight="50" serviceNumberFont="RegularBold;32" serviceNameFont="RegularBold;32" serviceInfoFont="RegularBold;27" size="1250,800" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
-	<!-- others -->
+	<!-- RDS RADIO RTP TEXT -->
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,980" size="64,43"/>
+	<widget source="RdsDecoder" render="Pixmap" pixmap="rass_logo.png" position="1395,500" size="50,21" alphatest="blend">
+	    <convert type="RdsInfo">RasInteractiveAvailable</convert>
+	    <convert type="ConditionalShowHide"/>
+	</widget>
+	<widget source="RdsDecoder" render="Label" position="1360,550" size="550,140" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2">
+	    <convert type="RdsInfo">RadioText</convert>
+	</widget>
+	<widget source="RdsDecoder" render="Label" position="1395,710" size="515,140" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2">
+	    <convert type="RdsInfo">RtpText</convert>
+	</widget>
   </screen>
   <screen name="ChapterZap" title="ChapterZap" backgroundColor="transparent" flags="wfNoBorder" position="50,50" size="284,96" zPosition="8">
 	<!-- Back -->
@@ -2836,10 +2846,11 @@
 	<widget name="booktext" font="RegularBold;26" backgroundColor="blue_light" position="97,710" size="1250,45" valign="center"/>
 	<widget name="booklist" itemHeight="45" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,770" size="1250,185" transparent="1"/>
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2">
-	<widget name="RassLogo" pixmap="icons/rass_logo.png" position="150,840" size="150,85"/>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" name="RadioText" noWrap="1" position="150,930" shadowColor="transpBlack" shadowOffset="-2,-2" size="1620,45" foregroundColor="white"/>
-	<widget backgroundColor="OE_NewBg2" font="RegularBold;28" halign="right" name="RtpText" noWrap="1" position="150,975" shadowColor="transpBlack" shadowOffset="-2,-2" size="1620,45" foregroundColor="white"/>
+	<!-- RDS INFO DISPLAY RADIOTEXT -->
+  <screen name="RdsInfoDisplay" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" zPosition="-2">
+	<widget name="RassLogo" pixmap="rass_logo.png" position="150,50" size="50,21"/>
+	<widget name="RadioText" backgroundColor="#54111112" font="RegularBold;28" noWrap="1" position="20,100" shadowColor="transpBlack" shadowOffset="-2,-2" size="1000,45" foregroundColor="white"/>
+	<widget name="RtpText" backgroundColor="#54111112" font="RegularBold;28" halign="left" noWrap="1" position="20,145" shadowColor="transpBlack" shadowOffset="-2,-2" size="1000,45" foregroundColor="white"/>
   </screen>
   <screen name="RestoreMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
@@ -3441,7 +3452,7 @@
   <screen name="Mute" title="Mute" backgroundColor="OE_NewBg2" flags="wfNoBorder" position="10,15" size="79,55" transparent="0" zPosition="10">
 	<ePixmap alphatest="blend" pixmap="my_icons/mute2.png" position="0,0" size="79,55"/>
   </screen>
-	<!-- VIDEO ENHANCEMENT -->  
+	<!-- VIDEO ENHANCEMENT -->
   <screen name="VideoEnhancementSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
@@ -4905,5 +4916,10 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
+  </screen>
+	<!-- ********** ####### SCREENSAVER ####### ********** -->
+  <screen name="Screensaver" position="fill" flags="wfNoBorder">
+	<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
+	<widget name="picture" pixmap="screensaverpicture.png" position="0,0" size="140,140" alphatest="blend" zPosition="1"/>
   </screen>
 </skin>
