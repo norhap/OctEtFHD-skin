@@ -2848,7 +2848,7 @@
   </screen>
 	<!-- RDS INFO DISPLAY RADIOTEXT -->
   <screen name="RdsInfoDisplay" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" zPosition="-2">
-	<widget name="RassLogo" pixmap="rass_logo.png" position="150,50" size="50,21"/>
+	<widget name="RassLogo" pixmap="icons/rass_logo.png" position="150,50" size="50,21"/>
 	<widget name="RadioText" backgroundColor="#54111112" font="RegularBold;28" noWrap="1" position="20,100" shadowColor="transpBlack" shadowOffset="-2,-2" size="1000,45" foregroundColor="white"/>
 	<widget name="RtpText" backgroundColor="#54111112" font="RegularBold;28" halign="left" noWrap="1" position="20,145" shadowColor="transpBlack" shadowOffset="-2,-2" size="1000,45" foregroundColor="white"/>
   </screen>
