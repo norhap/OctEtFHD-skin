@@ -1968,15 +1968,16 @@
   </screen>
 	<!-- LANGUAJE SELECTION -->
   <screen name="LanguageSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<panel name="SlimScreen"/>
-	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="10,925" size="64,43"/>
-	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="100,130" size="948,845" transparent="1">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="18,925" size="64,43"/>
+	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="100,140" size="1250,820" transparent="1">
 	    <convert type="TemplatedMultiContent">
 			{"template":[
-			MultiContentEntryText(pos=(120,15),size=(870,50),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
+			MultiContentEntryText(pos=(120,15),size=(1240,50),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
 			MultiContentEntryPixmapAlphaBlend(pos=(20,0),size=(64,64),png=2),# index 2 is the pixmap
 			],
-			"fonts":[gFont("RegularBold",32) ],"itemHeight":65}
+			"fonts":[gFont("RegularBold",32) ],"itemHeight":63}
 	    </convert>
 	</widget>
   </screen>
