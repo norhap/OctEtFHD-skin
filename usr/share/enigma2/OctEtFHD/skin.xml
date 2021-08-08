@@ -1971,7 +1971,7 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="18,925" size="64,43"/>
-	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="100,140" size="1250,820" transparent="1">
+	<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="97,140" size="1250,820" transparent="1">
 	    <convert type="TemplatedMultiContent">
 			{"template":[
 			MultiContentEntryText(pos=(120,15),size=(1240,50),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
