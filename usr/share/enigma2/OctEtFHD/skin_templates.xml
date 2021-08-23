@@ -491,8 +491,8 @@
 	</screen>
 		<!-- DESCRIPTION INSIDE OF SCREEN STANDARD -->
 	<screen name="TemplateDescription">
-		<widget source="description" conditional="description" render="Label" position="1355,425" size="565,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-		<widget name="description" conditional="description" position="1355,425" size="565,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+		<widget source="description" conditional="description" render="Label" position="1355,425" size="565,635" font="RegularBold;22" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+		<widget name="description" conditional="description" position="1355,425" size="565,635" font="RegularBold;22" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 		<!-- ####### CHOICEBOX ####### -->
 	<screen name="description" position="fill" flags="wfNoBorder">
