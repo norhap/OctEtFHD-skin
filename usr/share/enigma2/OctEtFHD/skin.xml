@@ -4319,10 +4319,12 @@
 		self[&quot;list&quot;].instance.setItemHeight(50)
 		</applet>
 	</screen>
-	<screen name="VISIONImageManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
-		<panel name="TemplateInformation"/>
-		<panel name="ButtonsVisionCore"/>
-		<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1490,630" transparent="1"/>
+	<!-- VISION IMAGE MANAGER SETUP-->
+	<screen name="ImageManagerSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,980" size="64,43"/>
+		<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
 	</screen>
 	<screen name="ImageManagerDownload" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
