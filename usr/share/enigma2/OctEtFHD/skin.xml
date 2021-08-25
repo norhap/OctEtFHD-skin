@@ -219,23 +219,24 @@
 		<panel name="TemplateRemoteControl"/>
 		<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
 		<eLabel backgroundColor="#0000fafa" name="" position="445,275" size="1430,2" zPosition="-8"/>
-		<widget name="icons" position="0,0" size="30,27" pixmaps="icons/lock_on.png,icons/lock_off.png,icons/lock_error.png" alphatest="blend" />
-		<widget source="locales" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,728" transparent="1">
+		<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>		
+		<widget name="icons" position="0,0" size="30,27" pixmaps="icons/lock_on.png,icons/lock_off.png,icons/lock_error.png" alphatest="blend"/>
+		<widget source="locales" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,745" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template":
 					[
-					MultiContentEntryPixmapAlphaBlend(pos = (10, 0), size = (64, 60), flags = BT_SCALE, png = 0),  # Flag.
+					MultiContentEntryPixmapAlphaBlend(pos = (10, 1), size = (64, 60), flags = BT_SCALE, png = 0),  # Flag.
 					MultiContentEntryText(pos = (130, 0), size = (580, 56), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),  # Language name (Native).
 					MultiContentEntryText(pos = (720, 0), size = (550, 56), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2),  # Language name (English).
 					MultiContentEntryText(pos = (1280, 0), size = (110, 56), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 3),  # Locale.
 					],
 				"fonts":[gFont("RegularBold",26)],
-				"itemHeight":63
+				"itemHeight":62
 				}
 			</convert>
 		</widget>
-		<widget source="description" render="Label" font="Regular;30" backgroundColor="OE_Background" position="445,1010" size="1430,50" transparent="1" valign="center" foregroundColor="white"/>
+		<widget source="description" render="Label" font="RegularBold;24" backgroundColor="OE_Background" position="445,1010" size="1430,50" transparent="1" valign="center" foregroundColor="white"/>
 	</screen>
 	<!-- LANGUAGE WIZARD-->
 	<screen name="LanguageWizard" title="Language Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -2026,7 +2027,7 @@
 			<convert type="TemplatedMultiContent">
 				{"template":
 				[
-				MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (64, 60), flags = BT_SCALE, png = 0),  # Flag.
+				MultiContentEntryPixmapAlphaBlend(pos = (5, 1), size = (64, 60), flags = BT_SCALE, png = 0),  # Flag.
 				MultiContentEntryText(pos = (80, 15), size = (500, 34), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),  # Language name (Native).
 				MultiContentEntryText(pos = (600, 15), size = (455, 34), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),  # Lanuage name (English).
 				MultiContentEntryText(pos = (1060, 15), size = (110, 34), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),  # Locale.
