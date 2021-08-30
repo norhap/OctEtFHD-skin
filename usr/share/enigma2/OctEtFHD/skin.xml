@@ -2022,6 +2022,8 @@
 		<panel name="TemplatePip"/>
 		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="18,925" size="64,43"/>
 		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_menu.png" position="18,980" size="64,43"/>
+		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_info.png" position="1595,680" size="64,43"/>
+		<eLabel text="Jump to the currently active locale/language" position="1355,445" size="565,635" font="RegularBold;24" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget name="icons" position="0,0" size="30,27" pixmaps="icons/lock_off.png,icons/lock_on.png,icons/lock_error.png" alphatest="blend"/>
 		<widget source="locales" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="97,140" size="1250,820" transparent="1">
 			<convert type="TemplatedMultiContent">
