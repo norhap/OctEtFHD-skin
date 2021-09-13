@@ -219,7 +219,7 @@
 		<panel name="TemplateRemoteControl"/>
 		<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
 		<eLabel backgroundColor="#0000fafa" name="" position="445,275" size="1430,2" zPosition="-8"/>
-		<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>		
+		<ePixmap alphatest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
 		<widget name="icons" position="0,0" size="30,27" pixmaps="icons/lock_off.png,icons/lock_on.png,icons/lock_error.png" alphatest="blend"/>
 		<widget source="locales" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,745" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -3985,8 +3985,8 @@
 		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,720" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (110, 110), png = 2), # index 3 is the interface pixmap
-				MultiContentEntryText(pos = (90, 10), size = (1000, 70), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
+				MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (80, 80), png = 2),
+				MultiContentEntryText(pos = (90, 10), size = (1000, 70), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1),
 				],
 				"fonts": [gFont("RegularBold", 25),gFont("Regular", 28)],
 				"itemHeight": 80
@@ -4035,9 +4035,9 @@
 		<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" size="1250,700" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryPixmapAlphaBlend(pos = (5, 15), size = (110, 110), png = 0),
-				MultiContentEntryText(pos = (90, 15), size = (900, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-				MultiContentEntryText(pos = (1000, 15), size = (250, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+				MultiContentEntryPixmapAlphaBlend(pos = (5, 15), size = (48, 48), png = 0),
+				MultiContentEntryText(pos = (90, 25), size = (900, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+				MultiContentEntryText(pos = (1000, 25), size = (250, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
 				],
 				"fonts": [gFont("RegularBold", 30),gFont("Regular", 28)],
 				"itemHeight": 80
@@ -4052,7 +4052,7 @@
 		<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,210" size="1250,720" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryPixmapAlphaBlend(pos = (5, 20), size = (110, 110), png = 0),
+				MultiContentEntryPixmapAlphaBlend(pos = (5, 20), size = (48, 48), png = 0),
 				MultiContentEntryText(pos = (90, 20), size = (900, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 				MultiContentEntryText(pos = (1000, 20), size = (250, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
 				],
@@ -4080,6 +4080,23 @@
 		<widget font="RegularBold;26" halign="left" name="readCache" position="97,490" size="1250,40" backgroundColor="OE_Background" valign="center"/>
 		<widget font="RegularBold;26" halign="left" name="temp" position="97,540" size="1250,40" backgroundColor="OE_Background" valign="center"/>
 		<widget name="config" position="97,600" size="1250,205" backgroundColor="OE_Background" transparent="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light"/>
+	</screen>
+	<screen name="HddFastRemove" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<widget name="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="410,160" size="900,150" transparent="1"/>
+		<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,720" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[
+				MultiContentEntryPixmapAlphaBlend(pos = (5, 15), size = (48, 48), png = 0),
+				MultiContentEntryText(pos = (125, 0), size = (1120, 35), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1),
+				MultiContentEntryText(pos = (125, 45), size = (1120, 35), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 2),
+				],
+				"fonts": [gFont("RegularBold", 26),gFont("Regular", 26)],
+				"itemHeight": 80
+				}
+			</convert>
+		</widget>
 	</screen>
 	<screen name="ExtraMessageBox"  backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="ExtraMessageBox">
 		<panel name="StanDardScreen"/>
