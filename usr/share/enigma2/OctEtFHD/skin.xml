@@ -2244,10 +2244,10 @@
 		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_info.png" position="10,980" size="64,43"/>
 		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="10,1025" size="64,43"/>
 		<widget name="chosenletter" position="350,530" size="380,185" font="Regular;50" foregroundColor="green_light" halign="center" valign="center" transparent="1" zPosition="4"/>
-		<widget name="freeDiskSpace" position="100,635" size="530,35" font="RegularBold;22" halign="left" transparent="1" backgroundColor="OE_Background" foregroundColor="blue_light"/>
-		<widget name="TrashcanSize" position="800,635" size="235,35" font="RegularBold;21" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" zPosition="2" transparent="1"/>
+		<widget name="freeDiskSpace" position="100,65" size="530,30" font="RegularBold;22" halign="left" transparent="1" backgroundColor="OE_Background" foregroundColor="blue_light"/>
+		<widget name="TrashcanSize" position="825,65" size="235,30" font="RegularBold;21" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" zPosition="2" transparent="1"/>
 		<widget name="waitingtext" position="640,95" size="300,35" font="RegularBold;26" halign="center" valign="center" transparent="1" backgroundColor="OE_Background" zPosition="4"/>
-		<widget name="list" position="100,135" size="945,610" zPosition="3" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1" enableWrapAround="1"/>
+		<widget name="list" position="100,135" size="945,655" zPosition="3" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" transparent="1" enableWrapAround="1"/>
 		<widget name="DescriptionBorder" position="10,400" size="503,95" zPosition="3" transparent="1"/>
 		<widget source="Service" render="Label" position="100,95" size="520,25" zPosition="1" backgroundColor="OE_Background" font="RegularBold;21" noWrap="1" transparent="1" valign="top">
 			<convert type="MovieInfo">RecordServiceName</convert>
@@ -2256,7 +2256,7 @@
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget backgroundColor="OE_Background" font="RegularBold;22" halign="left" position="100,675" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="925,285" source="Service" transparent="1" valign="top">
+		<widget backgroundColor="OE_Background" font="RegularBold;22" halign="left" position="100,690" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="925,285" source="Service" transparent="1" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png" position="25,890" size="35,20" transparent="1" alphatest="on"/>
