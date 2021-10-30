@@ -872,7 +872,7 @@
 	</screen>
 	<!-- AUDIOSELECTION -->
 	<screen name="AudioSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
-		<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="18,700" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -3534,7 +3534,7 @@
 		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,420" size="900,2" zPosition="-9"/>
 		<widget source="Title" render="Label" backgroundColor="OE_Background" font="RegularBold;34" position="170,370" size="900,40" transparent="1" valign="center" zPosition="3" halign="left"/>
 		<widget name="config" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,440" size="900,150" transparent="1" zPosition="3"/>
-		<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="445,825" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="445,825" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 		<widget source="introduction" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="170,605" size="900,45" transparent="1" valign="center"/>
 		<!-- Button -->
 		<eLabel backgroundColor="blue_light" name="" position="170,655" size="900,2" zPosition="-9"/>
@@ -4310,7 +4310,7 @@
 		<ePixmap pixmap="buttons/key_help.png" position="165,905" size="64,43" alphatest="blend"/>
 		<eLabel backgroundColor="blue_light" name="" position="410,880" size="1490,2" zPosition="-9"/>
 		<widget name="config" itemHeight="60" font="RegularBold;25" backgroundColor="OE_Background" position="410,150" zPosition="10" size="1490,940" transparent="1"/>
-		<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="410,635" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="410,635" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 		<widget name="description" conditional="description" position="410,880" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="2" size="1490,70" transparent="1" valign="center" halign="center"/>
 		<widget name="footnote" conditional="footnote" position="410,880" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="2" size="1490,70" transparent="1" valign="center" halign="center"/>
 		<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="165,905" zPosition="1" size="64,43" transparent="1" alphatest="blend">
@@ -4453,7 +4453,7 @@
 	</screen>
 	<screen name="ClientModeBoxAbout" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
-		<widget name="HelpWindow" conditional="HelpWindow" pixmap="buttons/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
+		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="280,700" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="160,900" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
