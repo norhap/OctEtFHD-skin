@@ -2710,7 +2710,7 @@
 		<!-- Widget -->
 		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="180,403" size="1000,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
 		<widget name="service" font="RegularBold;26" backgroundColor="OE_Background" position="180,470" size="1000,45" transparent="1" halign="center" foregroundColor="white"/>
-		<widget name="text" font="RegularBold;3" backgroundColor="OE_Background" position="180,520" size="1000,45" transparent="1" halign="center" foregroundColor="white"/>
+		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="180,520" size="1000,45" transparent="1" halign="center" foregroundColor="white"/>
 		<widget name="tries" font="RegularBold;26" backgroundColor="OE_Background" position="180,570" size="1000,45" transparent="1" halign="center" foregroundColor="white"/>
 		<widget name="input" font="RegularBold;30" backgroundColor="OE_Background" position="180,620" size="1000,50" transparent="1" halign="center"/>
 		<ePixmap alphatest="blend" pixmap="icons/input_info.png" position="80,center" size="80,80" zPosition="4"/>
