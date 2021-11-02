@@ -3999,7 +3999,7 @@
 		<widget source="skins" render="Listbox" position="97,140" size="1250,710" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryText(pos = (22, 0), size = (1300, 50), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 7)
+				MultiContentEntryText(pos = (22, 0), size = (1300, 50), font = 0, color_sel = 0x0000ffff, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 7)
 				],
 				"fonts": [gFont("RegularBold",30)],
 				"itemHeight": 50
