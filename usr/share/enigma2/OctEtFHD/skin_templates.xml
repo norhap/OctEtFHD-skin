@@ -58,7 +58,7 @@
 				{
 				"template":
 				[
-				MultiContentEntryText(pos = (15, 12), size = (1095, 60), color_sel = 0x0000ffff, flags = RT_HALIGN_LEFT, text = 0)
+				MultiContentEntryText(pos = (15, 12), size = (1095, 60), color_sel = 0x00a2f0f7, flags = RT_HALIGN_LEFT, text = 0)
 				],
 				"fonts": [gFont("RegularBold", 34)],
 				"itemHeight": 64
