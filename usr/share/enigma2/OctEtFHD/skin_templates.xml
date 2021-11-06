@@ -387,7 +387,7 @@
 		<!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
 		<panel name="autoresize"/>
-		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="175,25" size="1090,350" valign="center" halign="center"/>
+		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="175,25" size="1050,350" valign="center" halign="center"/>
 		<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="55,50" size="80,80" alphatest="blend"/>
 		<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="55,50" size="80,80" alphatest="blend"/>
 		<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="55,50" size="80,80" alphatest="blend"/>
