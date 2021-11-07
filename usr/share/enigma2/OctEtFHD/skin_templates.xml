@@ -387,13 +387,13 @@
 		<!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
 		<panel name="autoresize"/>
-		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="175,25" size="1050,350" valign="center" halign="center"/>
-		<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="55,50" size="80,80" alphatest="blend"/>
-		<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="55,50" size="80,80" alphatest="blend"/>
-		<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="55,50" size="80,80" alphatest="blend"/>
-		<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="55,50" size="80,80" alphatest="blend"/>
-		<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="55,50" size="80,80" alphatest="blend"/>
-		<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="175,380" size="1090,405" transparent="1"/>
+		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="135,25" size="1090,350" halign="left" valign="center"/>
+		<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="22,40" size="80,80" alphatest="blend"/>
+		<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="22,40" size="80,80" alphatest="blend"/>
+		<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="22,40" size="80,80" alphatest="blend"/>
+		<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="22,40" size="80,80" alphatest="blend"/>
+		<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="22,40" size="80,80" alphatest="blend"/>
+		<widget name="list" itemHeight="45" font="RegularBold;26" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="140,380" size="1155,405" transparent="1"/>
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
@@ -407,16 +407,16 @@ if self.type == self.TYPE_YESNO:
 	offset = 60
 wsizex = textsize[0] + 60
 wsizey = textsize[1] + offset
-if (1100 &gt; wsizex):
-	wsizex = 1100
+if (1155 &gt; wsizex):
+	wsizex = 1155
 wsize = (wsizex, wsizey)
 # resize
 #self.instance.resize(eSize(*wsize))
 # resize label
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
 # move list
-listsize = (wsizex - 30, 605)
-self[&quot;list&quot;].instance.move(ePoint(185, int(textsize[1] + 180)))
+listsize = (wsizex - 30, 405)
+self[&quot;list&quot;].instance.move(ePoint(140, int(textsize[1] + 180)))
 self[&quot;list&quot;].instance.resize(eSize(*listsize))
 # center window
 newwidth = wsize[0]

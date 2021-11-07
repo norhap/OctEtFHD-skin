@@ -2025,14 +2025,14 @@
 		<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="680,265" size="80,80" alphatest="blend"/>
 	</screen>
 	<!-- MESSAGEBOX SIMPLE-->
-	<screen name="MessageBoxSimple" backgroundColor="transparent" position="center,center" size="1290,725">
+	<screen name="MessageBoxSimple" backgroundColor="transparent" position="240,center" size="1290,725">
 		<panel name="MessageBoxTemplate"/>
-		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="20,10" size="150,705" zPosition="-10"/>
+		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,5" size="120,715" zPosition="-10"/>
 		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,center" size="1290,725" zPosition="-15"/>
-		<eLabel backgroundColor="blue_light" name="" position="20,10" size="2,705" zPosition="20" foregroundColor="white"/>
-		<eLabel backgroundColor="blue_light" name="" position="20,10" size="1250,2" zPosition="-10" foregroundColor="white"/>
-		<eLabel backgroundColor="blue_light" name="" position="1270,10" size="2,705" zPosition="20" foregroundColor="white"/>
-		<eLabel backgroundColor="blue_light" name="" position="20,715" size="1252,2" zPosition="-10" foregroundColor="white"/>
+		<eLabel backgroundColor="blue_light" name="" position="2,2" size="2,721" zPosition="20"/>
+		<eLabel backgroundColor="blue_light" name="" position="2,2" size="1286,2" zPosition="-10"/>
+		<eLabel backgroundColor="blue_light" name="" position="1286,2" size="2,721" zPosition="20"/>
+		<eLabel backgroundColor="blue_light" name="" position="2,721" size="1286,2" zPosition="-10"/>
 	</screen>
 	<!-- MEDIAPLAYER-->
 	<screen name="MediaPlayer" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="MediaPlayer" transparent="0">
