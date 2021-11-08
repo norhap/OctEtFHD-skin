@@ -3731,34 +3731,47 @@
 	<screen name="NetworkuShare" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget name="autostart" position="97,140" size="300,50" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="labdisabled" position="300,140" size="300,50" font="RegularBold;26" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labactive" position="300,140" size="300,50" font="RegularBold;26" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
-		<widget name="status" position="97,190" size="200,50" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
-		<widget name="labstop" position="650,140" size="350,50" font="RegularBold;26" halign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="650,140" size="350,50" font="RegularBold;26" halign="center" backgroundColor="green" zPosition="2"/>
-		<widget name="username" position="97,240" size="300,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="labuser" position="450,240" size="550,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
-		<widget name="iface" position="97,340" size="300,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="labiface" position="450,340" size="550,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
-		<widget name="port" position="97,440" size="300,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="labport" position="450,440" size="550,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
-		<widget name="telnetport" position="97,540" size="300,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="labtelnetport" position="450,540" size="550,50" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
-		<widget name="sharedir" position="97,640" size="300,60" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="labsharedir" position="450,640" size="550,50" font="RegularBold;26" valign="top" backgroundColor="#4D5375"/>
-		<widget name="web" position="97,740" size="300,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="webinactive" position="450,755" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
-		<widget name="webactive" position="450,755" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
-		<widget name="dlna" position="97,840" size="300,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="dlnainactive" position="450,855" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
-		<widget name="dlnaactive" position="450,855" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
-		<widget name="xbox" position="500,740" size="300,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="xboxinactive" position="770,755" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
-		<widget name="xboxactive" position="770,755" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
-		<widget name="telnet" position="500,840" size="300,50" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="telnetinactive" position="770,855" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
-		<widget name="telnetactive" position="770,855" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
+		<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,980" size="64,43"/>
+		<widget name="autostart" position="1360,495" size="230,50" font="RegularBold;25" valign="center" backgroundColor="OE_NewBg2" transparent="1"/>
+		<widget name="labdisabled" position="1595,495" size="260,50" font="RegularBold;25" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
+		<widget name="labactive" position="1595,495" size="260,50" font="RegularBold;25" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+		<widget name="status" position="1360,595" size="230,50" font="RegularBold;25" backgroundColor="OE_Background" valign="center" transparent="1"/>
+		<widget name="labstop" position="1595,595" size="260,50" font="RegularBold;25" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
+		<widget name="labrun" position="1595,595" size="260,50" font="RegularBold;25" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+		<widget name="username" position="97,190" size="300,35" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="labuser" position="450,190" size="550,35" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
+		<widget name="iface" position="97,290" size="300,35" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="labiface" position="450,290" size="550,35" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
+		<widget name="port" position="97,390" size="300,35" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="labport" position="450,390" size="550,35" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
+		<widget name="telnetport" position="97,490" size="300,35" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="labtelnetport" position="450,490" size="550,35" font="RegularBold;26" valign="center" backgroundColor="#4D5375"/>
+		<widget name="sharedir" position="97,600" size="300,35" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="labsharedir" position="450,585" size="550,70" font="RegularBold;26" valign="top" backgroundColor="#4D5375"/>
+		<widget name="web" position="97,700" size="300,35" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="webinactive" position="450,705" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
+		<widget name="webactive" position="450,705" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
+		<widget name="dlna" position="97,800" size="300,35" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="dlnainactive" position="450,805" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
+		<widget name="dlnaactive" position="450,805" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
+		<widget name="xbox" position="500,700" size="300,35" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="xboxinactive" position="770,705" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
+		<widget name="xboxactive" position="770,705" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
+		<widget name="telnet" position="500,800" size="300,35" font="RegularBold;26" valign="center" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="telnetinactive" position="770,805" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
+		<widget name="telnetactive" position="770,805" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
+	</screen>
+	<!-- USHARE SETUP KEY MENU-->
+	<screen name="NetworkuShareSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Setup">
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
+	</screen>
+	<!-- USHARE SETUP KEY MENU->GREEN SHARES-->
+	<screen name="uShareSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="Setup">
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<widget name="checkList" itemHeight="43" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,825" transparent="1"/>
 	</screen>
 	<!-- OPENVPN-->
 	<screen name="NetworkOpenvpn" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
