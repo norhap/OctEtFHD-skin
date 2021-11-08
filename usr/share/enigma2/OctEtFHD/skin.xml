@@ -2025,10 +2025,10 @@
 		<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="680,265" size="80,80" alphatest="blend"/>
 	</screen>
 	<!-- MESSAGEBOX SIMPLE-->
-	<screen name="MessageBoxSimple" backgroundColor="transparent" position="240,center" size="1290,435">
+	<screen name="MessageBoxSimple" backgroundColor="transparent" position="260,center" size="1290,435">
 		<panel name="MessageBoxTemplate"/>
 		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="110,5" size="1155,200" halign="left" valign="center"/>
-		<widget name="list" itemHeight="32" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="115,230" size="1190,190" transparent="1"/>
+		<widget name="list" itemHeight="32" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="115,230" size="1190,190" transparent="1"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,5" size="100,425" zPosition="-10"/>
 		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,center" size="1290,425" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" name="" position="2,2" size="2,431" zPosition="20"/>
