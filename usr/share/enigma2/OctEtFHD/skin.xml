@@ -1531,7 +1531,7 @@
 		<panel name="StanDardScreen"/>
 		<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,750" transparent="1"/>
 	</screen>
-	<screen name="CutListEditor" title="Cutlist editor" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<!--screen name="CutListEditor" title="Cutlist editor" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<widget source="cutlist" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="97,140" size="640,850" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -1556,7 +1556,7 @@
 		<widget name="Timeline" pointer="position_arrow.png:3,5" backgroundColor="OE_Background" foregroundColor="grey" position="824,640" size="648,20"/>
 		<ePixmap pixmap="mmp/dvr.png" position="984,735" size="323,66" alphatest="blend"/>
 		<widget name="SeekState" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="1055,834" zPosition="20" size="180,45" halign="center" valign="center" transparent="1"/>
-	</screen>
+	</screen-->
 	<screen name="DVDPlayer" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
 		<eLabel backgroundColor="OE_Background" name="InfoBar" position="center,910" size="1780,125" zPosition="-11"/>
 		<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="1565,870" size="250,210" zPosition="-10"/>
