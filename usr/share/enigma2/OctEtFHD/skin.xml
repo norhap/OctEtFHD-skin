@@ -1531,32 +1531,47 @@
 		<panel name="StanDardScreen"/>
 		<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,750" transparent="1"/>
 	</screen>
-	<!--screen name="CutListEditor" title="Cutlist editor" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-		<panel name="StanDardScreen"/>
-		<widget source="cutlist" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="97,140" size="640,850" transparent="1">
+	<!-- CUTLISTEDITOR -->
+	<screen name="CutListEditor" position="0,0" size="1920,1080" title="CutListEditor">
+		<panel name="Buttons"/>
+		<eLabel text="Cutlist editor" position="50,10" size="1700,40" backgroundColor="blue" foregroundColor="green_light" halign="center"  valign="center" zPosition="5" font="RegularBold;40" transparent="1"/>
+		<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="95,85" size="75,75" transparent="1" zPosition="1"/>
+		<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" name="" position="45,70" size="1830,980" zPosition="-15"/>
+		<eLabel backgroundColor="blue" foregroundColor="OE_Background" name="" position="0,0" size="1920,1080" zPosition="-16"/>
+		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="45,65" size="1830,5" zPosition="-16"/>
+		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="40,65" size="5,985" zPosition="-16"/>
+		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="40,1045" size="1835,5" zPosition="-15"/>
+		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="1875,65" size="5,985" zPosition="-16"/>
+		<eLabel backgroundColor="blue_light" name="" position="90,162" size="90,2" zPosition="-9" foregroundColor="un5678a4"/>
+		<eLabel text="[OK]  =" position="1600,985" size="120,65" backgroundColor="OE_NewBg2" zPosition="5" font="RegularBold;26" transparent="1"/>
+		<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="1720,980" size="64,43" alphatest="blend"/>
+		<widget source="cutlist" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="60,200" size="420,270" transparent="1">
 			<convert type="TemplatedMultiContent">
-				{"template":[
-				MultiContentEntryText(pos=(10,5), size=(350, 50), text = 1, backcolor = MultiContentTemplateColor(3)),
-				MultiContentEntryText(pos=(360,5), size=(250, 50), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
+				{"template": [
+				MultiContentEntryText(pos=(35,10), size=(160, 40), text = 1, backcolor = MultiContentTemplateColor(4)),
+				MultiContentEntryText(pos=(205,10), size=(80, 40), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(4)),
+				MultiContentEntryText(pos=(305,10), size=(70, 40), text = 3, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(4))
 				],
-				"fonts": [gFont("RegularBold", 30)],
+
+				"fonts": [gFont("Regular", 28)],
 				"itemHeight": 50
 				}
 			</convert>
 		</widget>
-		<eLabel backgroundColor="foreground" position="822,140" size="648,379" zPosition="1"/>
-		<eLabel backgroundColor="OE_Background" position="826,144" size="640,371" zPosition="2"/>
-		<widget name="Video" position="827,145" size="638,369" zPosition="3"/>
-		<widget source="session.CurrentService" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="824,530" size="648,50" halign="center" valign="center" transparent="1">
+		<eLabel text="IN" position="190,861" size="80,20" zPosition="3" halign="center" font="Regular;20" backgroundColor="#004000"/>
+		<widget name="InLen" position="280,861" size="70,20" zPosition="3" halign="right" font="Regular;20" backgroundColor="#004000"/>
+		<eLabel text="OUT" position="190,890" size="80,20" zPosition="3" halign="center" font="Regular;20" backgroundColor="#400000"/>
+		<widget name="OutLen" position="280,890" size="70,20" zPosition="3" halign="right" font="Regular;20" backgroundColor="#400000"/>
+		<widget name="SeekState" position="500,884" size="65,25" zPosition="1" halign="right" font="Regular;20" valign="center"/>
+		<widget name="Video" position="500,86" size="1068,700" zPosition="1" backgroundColor="#df0b1300"/>
+		<widget name="Timeline" position="575,886" size="993,20" backgroundColor="un808888" foregroundColor="black" pointer="position_arrow.png:3,5" zPosition="3"/>
+		<widget source="session.CurrentService" position="500,795" size="1300,55" backgroundColor="OE_NewBg2" font="RegularBold; 26" halign="left" render="Label" transparent="1" valign="center" zPosition="3" foregroundColor="white">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="824,585" size="648,45" halign="center" valign="center" transparent="1">
+		<widget source="session.CurrentService" position="450,850" size="400,25" backgroundColor="OE_NewBg2" font="RegularBold; 24" halign="center" render="Label" transparent="1" valign="center" zPosition="3">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<widget name="Timeline" pointer="position_arrow.png:3,5" backgroundColor="OE_Background" foregroundColor="grey" position="824,640" size="648,20"/>
-		<ePixmap pixmap="mmp/dvr.png" position="984,735" size="323,66" alphatest="blend"/>
-		<widget name="SeekState" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="1055,834" zPosition="20" size="180,45" halign="center" valign="center" transparent="1"/>
-	</screen-->
+	</screen>
 	<screen name="DVDPlayer" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
 		<eLabel backgroundColor="OE_Background" name="InfoBar" position="center,910" size="1780,125" zPosition="-11"/>
 		<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="1565,870" size="250,210" zPosition="-10"/>
