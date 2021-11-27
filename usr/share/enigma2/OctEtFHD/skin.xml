@@ -4879,10 +4879,10 @@
 		<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="1245,798" size="40,40" zPosition="1"/>
 		<ePixmap pixmap="skin_default/buttons/key_menu.png" position="1572,7" zPosition="1" size="64,43" alphatest="blend"/>
 		<ePixmap pixmap="skin_default/buttons/key_info.png" position="1572,52" zPosition="1" size="64,43" alphatest="blend"/>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_red" position="0,790" size="300,57" transparent="1" valign="center" zPosition="2"/>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_green" position="385,790" size="375,57" transparent="1" valign="center" zPosition="2"/>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_yellow" position="825,790" size="375,57" transparent="1" valign="center" zPosition="2"/>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_blue" position="1195,790" size="375,57" transparent="1" valign="center" zPosition="2"/>
+		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_red" position="20,790" size="300,57" transparent="1" valign="center" zPosition="2"/>
+		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_green" position="410,790" size="375,57" transparent="1" valign="center" zPosition="2"/>
+		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_yellow" position="845,790" size="375,57" transparent="1" valign="center" zPosition="2"/>
+		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" name="key_blue" position="1215,790" size="375,57" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<!-- ********** ####### BUFFER INDICATOR ####### ********** -->
 	<screen name="BufferIndicator" position="320,800" size="420,45" backgroundColor="OE_NewBg2" flags="wfNoBorder">
