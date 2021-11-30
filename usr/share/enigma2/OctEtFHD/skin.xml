@@ -169,9 +169,9 @@
 	<parameter name="AllowUseOnlyIcon" value="1, 1"/>
 	<parameter name="AllowUserDatesAndTimesDisplay" value="1, 1"/>
 	<parameter name="AboutHddSplit" value="1, 1"/>
-	<parameter name="ChoicelistDash" value="0, 8, 1000, 50"/>
-	<parameter name="ChoicelistName" value="85, 8, 1000, 50"/>
-	<parameter name="ChoicelistNameSingle" value="5, 8, 1400, 50"/>
+	<parameter name="ChoicelistDash" value="0, 0, 1000, 50"/>
+	<parameter name="ChoicelistName" value="85, 0, 1000, 50"/>
+	<parameter name="ChoicelistNameSingle" value="5, 0, 1400, 50"/>
 	<parameter name="ChoicelistIcon" value="10, 2, 64, 50"/>
 	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
 	<parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
