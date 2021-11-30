@@ -8,21 +8,21 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_menu.png" position="18,980" size="64,43"/>
-	<widget name="config" font="RegularBold;25" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,800" transparent="1"/>
-	<widget name="pleasewait" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,50" transparent="1" zPosition="2"/>
+	<widget name="config" font="RegularBold;25" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="pleasewait" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,50" transparent="1" zPosition="2"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_ProvidersSetup" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" font="RegularBold;25" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,800" transparent="1"/>
-	<widget name="pleasewait" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,50" transparent="1" zPosition="2"/>
+	<widget name="config" font="RegularBold;25" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="pleasewait" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,50" transparent="1" zPosition="2"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Menu" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,800" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1">
 	    <convert type="TemplatedMultiContent">
 							 {"template": [
 							 MultiContentEntryText(pos = (10, 0), size = (1300, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
@@ -37,7 +37,7 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Ordering" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="97,165" size="1250,800" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="26,165" size="1250,800" transparent="1">
 	    <convert type="TemplatedMultiContent">
 							 {"template": [
 							 MultiContentEntryText(pos = (10, 5), size = (1300, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
@@ -52,20 +52,20 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Log" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" font="RegularBold;25" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" foregroundColor="white" position="97,165" size="1250,800" transparent="1"/>
+	<widget name="list" font="RegularBold;25" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" foregroundColor="white" position="26,165" size="1250,800" transparent="1"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_About" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="about" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="97,165" size="1250,750" transparent="1"/>
-	<widget name="oealogo" position="97,800" size="177,130" alphatest="blend"/>
+	<widget name="about" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="26,165" size="1250,750" transparent="1"/>
+	<widget name="oealogo" position="26,800" size="177,130" alphatest="blend"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_HideSections" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="97,165" size="1250,750" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="26,165" size="1250,750" transparent="1">
 	    <convert type="TemplatedMultiContent">
 							 {"template": [
 							 MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (35, 35), png = 0),
@@ -980,10 +980,10 @@
   <screen name="CacheFlushSetupMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
-	<widget name="min_free_kb" position="1360,505" size="550,70" font="RegularBold;21" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="slide" borderWidth="2" position="1360,600" size="535,15" transparent="1" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa"/>
-	<widget name="memory" position="1360,625" size="550,70" font="RegularBold;21" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="min_free_kb" position="1290,505" size="620,70" font="RegularBold;21" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="slide" borderWidth="2" position="1290,600" size="620,15" transparent="1" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa"/>
+	<widget name="memory" position="1290,625" size="620,70" font="RegularBold;21" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 
   <screen name="CacheFlushAutoScreen" title="CacheFlush Status" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
@@ -1753,7 +1753,7 @@
   <screen name="CrossEPG_Menu" title="CrossEPG" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,800" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+	<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
 	    <convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryPixmapAlphaBlend(pos=(12,15),size=(32,32),png=0),
@@ -1767,14 +1767,14 @@
   <screen name="CrossEPG_Setup" title="CrossEPG - Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,665" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,665" transparent="1"/>
 	<widget name="information" position="1360,425" size="540,635" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 
   <screen name="CrossEPG_Providers" title="CrossEPG - Providers" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,800" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1">
 	    <convert type="TemplatedMultiContent">
 			{"template":[
 			MultiContentEntryText(pos=(12,7),size=(1100,40),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_TOP,text=0),
@@ -1788,7 +1788,7 @@
   <screen name="CrossEPG_Ordering" title="CrossEPG - Providers" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,820" transparent="1">
+	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,820" transparent="1">
 	    <convert type="TemplatedMultiContent">
 			{"template":[
 			MultiContentEntryText(pos=(12,7),size=(1100,40),font=0,flags=RT_HALIGN_LEFT|RT_VALIGN_TOP,text=0),
@@ -1802,24 +1802,24 @@
   <screen name="CrossEPG_Info" title="CrossEPG - Info" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="version" position="97,145" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="create" position="97,200" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="last_update" position="97,255" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="headersdb_size" position="97,310" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="descriptorsdb_size" position="97,365" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="indexesdb_size" position="97,420" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="aliasesdb_size" position="97,475" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="total_size" position="97,530" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="channels_count" position="97,585" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="events_count" position="97,640" size="1250,50" transparent="1"/>
-	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="hashes_count" position="97,695" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="version" position="26,145" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="create" position="26,200" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="last_update" position="26,255" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="headersdb_size" position="26,310" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="descriptorsdb_size" position="26,365" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="indexesdb_size" position="26,420" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="aliasesdb_size" position="26,475" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="total_size" position="26,530" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="channels_count" position="26,585" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="events_count" position="26,640" size="1250,50" transparent="1"/>
+	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" name="hashes_count" position="26,695" size="1250,50" transparent="1"/>
   </screen>
 
   <screen name="CrossEPG_About" title="CrossEPG - About" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="about" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,660" transparent="1"/>
-	<widget name="rytec_pix" position="97,810" size="140,100" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="about" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,660" transparent="1"/>
+	<widget name="rytec_pix" position="26,810" size="140,100" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="rytec_text" position="285,810" size="140,100" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="krkadoni_pix" position="445,810" size="140,100" backgroundColor="OE_Background" transparent="1"/>
 	<widget name="krkadoni_text" position="605,810" size="140,100" backgroundColor="OE_Background" transparent="1"/>
@@ -2207,20 +2207,20 @@
   <!-- DREAM IRC -->
   <screen name="dreamIRCSetupScreen" title="dreamIRC - edit settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="97,140" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="26,140" size="1250,750" transparent="1"/>
   </screen>
 
   <screen name="dreamIRCMainMenu" title="dreamIRC" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<widget name="chat" font="RegularBold;25" backgroundColor="OE_Background" position="170,195" size="900,600" transparent="1" foregroundColor="white"/>
-	<widget name="input.desc" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="97,810" size="1250,45" transparent="1"/>
-	<widget name="chat.desc" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="97,140" size="900,45" transparent="1"/>
+	<widget name="input.desc" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="26,810" size="1250,45" transparent="1"/>
+	<widget name="chat.desc" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="26,140" size="900,45" transparent="1"/>
 	<widget name="buddy.desc" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="1090,140" size="380,45" transparent="1"/>
 	<widget name="buddy" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="1090,195" size="380,600" transparent="1"/>
-	<widget name="input" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="97,870" size="1250,45" transparent="1"/>
+	<widget name="input" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="26,870" size="1250,45" transparent="1"/>
 	<!-- Buttons-->
-	<eLabel backgroundColor="blue_light" name="" position="97,800" size="1250,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" name="" position="26,800" size="1250,2" zPosition="-9"/>
 	<widget name="red.pic" alphatest="blend" pixmap="buttons/key_red.png" position="90,980" size="40,40"/>
 	<widget name="green.pic" alphatest="blend" pixmap="buttons/key_green.png" position="395,980" size="40,40"/>
 	<widget name="yellow.pic" alphatest="blend" pixmap="buttons/key_yellow.png" position="725,980" size="40,40"/>
@@ -2980,57 +2980,57 @@
   <screen name="EPGImportConfig" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,600" transparent="1"/>
-	<widget name="status" position="1350,450" size="570,140" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget name="statusbar" position="1350,590" size="570,385" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,865" size="64,43"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="18,920" size="64,43"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,600" transparent="1"/>
+	<widget name="status" position="1290,575" size="620,140" font="RegularBold;27" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="statusbar" position="1290,750" size="620,350" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,1035" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="85,1035" size="64,43"/>
   </screen>
 
   <screen name="EPGImportSources" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,800" transparent="1"/>
+	<widget name="list" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
   </screen>
 
   <screen name="EPGImportProfile" title="EPGImportProfile" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,600" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,600" transparent="1"/>
   </screen>
 
   <screen name="EPGImportLog" title="EPG Import Log" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" position="97,140" size="1250,820" transparent="1"/>
+	<widget name="list" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" position="26,140" size="1250,820" transparent="1"/>
   </screen>
 
   <screen name="EPGSearchSetup" title="EPGSearch Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" backgroundColor="OE_Background" enableWrapAround="1" position="97,145" scrollbarMode="showOnDemand" size="1250,650" transparent="1"/>
-	<widget source="help" render="Label" position="1360,425" size="540,635" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="config" itemHeight="50" font="RegularBold;25" backgroundColor="OE_Background" enableWrapAround="1" position="26,145" scrollbarMode="showOnDemand" size="1250,650" transparent="1"/>
+	<widget source="help" render="Label" position="1290,575" size="620,635" font="RegularBold;27" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 
   <!-- EPG REFRESH -->
   <screen name="EPGRefreshConfiguration" title="Configure EPGRefresh" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
-	<widget source="help" render="Label" position="1360,425" size="540,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+	<widget source="help" render="Label" position="1290,575" size="620,635" font="RegularBold;25" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
   <screen name="EPGSaveLoadConfiguration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="97,140" size="1250,820" transparent="1"/>
-	<widget source="help" render="Label" position="1360,425" size="540,200" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-	<widget source="epgcachelocation" render="Label" position="1360,645" size="540,200" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,820" transparent="1"/>
+	<widget source="help" render="Label" position="1290,645" size="620,200" font="RegularBold;25" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget source="epgcachelocation" render="Label" position="1290,645" size="620,200" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 
   <screen name="EPGRefreshServiceEditor" title="Edit Services to refresh" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,650" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,650" transparent="1"/>
   </screen>
 
   <!-- ET-Portal -->
@@ -4853,15 +4853,15 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<panel name="TemplateDescription"/>
-	<widget name="config" zPosition="2" position="97,200" size="1250,72" font="RegularBold;32" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
-	<widget source="choices" render="Label" position="97,288" size="1250,40" font="RegularBold;32" halign="left" valign="center"/>
+	<widget name="config" zPosition="2" position="26,200" size="1250,72" font="RegularBold;32" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget source="choices" render="Label" position="26,288" size="1250,40" font="RegularBold;32" halign="left" valign="center"/>
   </screen>
 
   <screen name="SATIPClient" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<panel name="TemplateDescription"/>
-	<widget source="vtunerList" render="Listbox" enableWrapAround="1" position="97,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1" zPosition="3">
+	<widget source="vtunerList" render="Listbox" enableWrapAround="1" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1" zPosition="3">
 		<convert type="TemplatedMultiContent">
 			{"template": [
 				MultiContentEntryText(pos = (20, 0), size = (1210, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -5903,19 +5903,19 @@
   <screen name="SubsChooser" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="file_list" itemHeight="50" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,740" transparent="1"/>
-	<widget name="menu_list" backgroundColor="OE_Background" foregroundColor="white" position="97,965" size="1250,80" transparent="1"/>
+	<widget name="file_list" itemHeight="50" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,740" transparent="1"/>
+	<widget name="menu_list" backgroundColor="OE_Background" foregroundColor="white" position="26,965" size="1250,80" transparent="1"/>
 	<!-- others-->
-	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="18,980" size="64,43"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="18,1035" size="64,43"/>
   </screen>
 
   <screen name="SubsSearchParamsMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="sourceTitleInfo" render="Label" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" position="97,140" size="1250,50" transparent="1"/>
-	<widget source="sourceTitle" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" position="97,210" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="97,280" size="1250,670" transparent="1"/>
-	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="97,980" size="40,40"/>
+	<widget source="sourceTitleInfo" render="Label" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" position="26,140" size="1250,50" transparent="1"/>
+	<widget source="sourceTitle" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" position="26,210" size="1250,50" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="26,280" size="1250,670" transparent="1"/>
+	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="26,980" size="40,40"/>
 	<eLabel text="Subtitles" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="150,980" size="470,40" transparent="1" zPosition="1"/>
   </screen>
 
@@ -6065,9 +6065,9 @@
 
   <screen name="SubsSearchContextMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget source="subtitle_release" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="97,145" size="1250,45" transparent="1"/>
-	<eLabel backgroundColor="blue_light" name="" position="97,200" size="1250,2" zPosition="-9" foregroundColor="white"/>
-	<widget source="context_menu" render="Listbox" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="white" position="97,215" size="1250,750" transparent="1">
+	<widget source="subtitle_release" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="26,145" size="1250,45" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="" position="26,200" size="1250,2" zPosition="-9" foregroundColor="white"/>
+	<widget source="context_menu" render="Listbox" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="white" position="26,215" size="1250,750" transparent="1">
 	    <convert type="TemplatedMultiContent">
 					{"templates":
 					{"default": (50, [
@@ -6189,34 +6189,34 @@
   <screen name="SubsSetupGeneral" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
   </screen>
 
   <screen name="SubsSetupExternal" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="97,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
   </screen>
 
   <screen name="SubsSetupDVBPlayer" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
   </screen>
 
   <screen name="SubsDownloadedSubtitlesMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="97,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
   </screen>
 
   <screen name="SubsDownloadedSelection" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget source="header_name" render="Label" position="97,145" size="360,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
+	<widget source="header_name" render="Label" position="26,145" size="360,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
 	<widget source="header_provider" render="Label" position="620,145" size="300,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
 	<widget source="header_date" render="Label" position="1025,145" size="325,35" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light"/>
-	<widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="97,190" size="1250,700" zPosition="3" transparent="1">
+	<widget source="subtitles" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" position="26,190" size="1250,700" zPosition="3" transparent="1">
 	    <convert type="TemplatedMultiContent">
 					{"templates":
 					{"default": (50, [
@@ -6231,76 +6231,76 @@
 					}
 		</convert>
 	</widget>
-	<widget source="entries_sum" render="Label" position="97,900" size="380,160" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
+	<widget source="entries_sum" render="Label" position="26,900" size="380,160" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 	<!-- TMBD SETTINGS-->
   <screen name="TMBDSettings" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="45" position="97,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" itemHeight="45" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 
 	<!-- ******************** CCcam Info ******************** -->
   <screen name="CCcamInfoMain" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="menu" itemHeight="45" position="97,145" size="1250,815" transparent="1"/>
+	<widget name="menu" itemHeight="45" position="26,145" size="1250,815" transparent="1"/>
   </screen>
   <screen name="CCcamInfoInfoScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="text" position="97,140" font="RegularBold;26" size="1250,820" transparent="1"/>
+	<widget name="text" position="26,140" font="RegularBold;26" size="1250,820" transparent="1"/>
   </screen>
   <screen name="CCcamInfoSubMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" position="97,145" size="1250,815" itemHeight="45" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="list" position="26,145" size="1250,815" itemHeight="45" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
 	<widget name="info" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
   <screen name="CCcamInfoServerMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="list" itemHeight="45" position="26,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
 	<widget name="info" position="1360,425" size="550,635" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
   <screen name="CCcamShareViewMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="uphops" position="97,145" size="695,30" font="RegularBold;25" transparent="1"/>
-	<widget name="providers" position="97,195" size="695,30" font="RegularBold;25" transparent="1"/>
-	<widget name="reshare" position="97,245" size="695,30" font="RegularBold;25" transparent="1"/>
-	<widget name="cards" position="97,295" size="695,30" font="RegularBold;25" transparent="1"/>
-	<widget name="title" position="97,345" size="695,30" font="RegularBold;25" transparent="1"/>
-	<widget name="list" itemHeight="45" position="97,400" size="1250,540" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="uphops" position="26,145" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="providers" position="26,195" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="reshare" position="26,245" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="cards" position="26,295" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="title" position="26,345" size="695,30" font="RegularBold;25" transparent="1"/>
+	<widget name="list" itemHeight="45" position="26,400" size="1250,540" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
   </screen>
   <screen name="CCcamInfoShareInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="list" itemHeight="45" position="26,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
   </screen>
   <screen name="CCcamInfoRemoteBoxMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="list" itemHeight="45" position="26,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
   </screen>
   <screen name="CCcamInfoConfigSwitcher" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
+	<widget name="list" itemHeight="45" position="26,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="1"/>
   </screen>
   <screen name="CCcamInfoConfigMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="45" position="97,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" itemHeight="45" position="26,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <screen name="CCcamInfoEcmInfoSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" itemHeight="45" position="97,145" size="1250,815" font="RegularBold;25" transparent="1"/>
+	<widget name="list" itemHeight="45" position="26,145" size="1250,815" font="RegularBold;25" transparent="1"/>
   </screen>
   <screen name="CCcamInfoMenuConfig" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="list" itemHeight="45" position="97,145" size="1250,815" font="RegularBold;25" transparent="1"/>
+	<widget name="list" itemHeight="45" position="26,145" size="1250,815" font="RegularBold;25" transparent="1"/>
   </screen>
 </skin>
