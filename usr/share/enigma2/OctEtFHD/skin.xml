@@ -3502,11 +3502,11 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="prompt" position="26,145" size="1250,100" font="RegularBold;26" backgroundColor="OE_Background" valign="center" halign="center" transparent="1"/>
-		<eLabel position="165,250" size="950,70" backgroundColor="#00fafa" zPosition="+1"/>
-		<eLabel position="170,255" size="940,60" backgroundColor="OE_Background" zPosition="+2"/>
-		<widget name="text" position="170,265" size="940,45" backgroundColor="OE_Background" font="RegularBold;32" halign="center" valign="center" noWrap="1" zPosition="+3"/>
-		<widget name="list" position="165,350" size="950,620" selectionDisabled="1" transparent="1"/>
-		<widget name="mode" position="170,800" size="950,40" backgroundColor="OE_Background" font="Regular;30" halign="center" transparent="1" valign="center"/>
+		<eLabel position="26,245" size="1250,220" backgroundColor="#00fafa" zPosition="+1"/>
+		<eLabel position="31,250" size="1240,210" backgroundColor="OE_Background" zPosition="+2"/>
+		<widget name="text" position="31,265" size="1240,195" backgroundColor="OE_Background" font="RegularBold;30" halign="center" valign="center" noWrap="1" zPosition="+3"/>
+		<widget name="list" position="165,470" size="950,620" selectionDisabled="1" transparent="1"/>
+		<widget name="mode" position="170,820" size="950,40" backgroundColor="OE_Background" font="Regular;30" halign="center" transparent="1" valign="center"/>
 		<widget name="locale" position="26,860" size="1250,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
 		<widget name="language" position="26,910" size="1250,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
 	</screen>
