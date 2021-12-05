@@ -2695,9 +2695,9 @@
 		<panel name="TemplatePip"/>
 		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_help.png" position="18,1035" size="64,43"/>
 		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_exit.png" position="85,1035" size="64,43"/>
-		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_menu.png" position="1595,680" size="64,43"/>
-		<eLabel text="Show" position="1340,735" size="580,35" font="RegularBold;26" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<eLabel text=" packages selected." position="1340,780" size="580,35" font="RegularBold;26" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_menu.png" position="1565,680" size="64,43"/>
+		<eLabel text="Show" position="1290,735" size="620,35" font="RegularBold;26" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
+		<eLabel text=" packages selected." position="1290,780" size="620,35" font="RegularBold;26" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
 		<!-- ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="100,1035" size="64,43"/> -->
 		<!-- ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="155,1035" size="64,43"/> -->
 		<widget name="list" itemHeight="74" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,142" size="1250,820" transparent="1"/>
@@ -4903,5 +4903,13 @@
 		<panel name="TemplatePip"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
 		<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+	</screen>
+	<!-- ********** ####### TAGS EDITOR ####### ********** -->
+	<screen name="TagEditor" backgroundColor="transparent" flags="wfNoBorder" position="fill">
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
+		<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="85,1035" size="64,43"/>
+		<widget name="taglist" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	</screen>
 </skin>
