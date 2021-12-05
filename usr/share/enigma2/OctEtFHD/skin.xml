@@ -3502,13 +3502,13 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="prompt" position="26,145" size="1250,100" font="RegularBold;26" backgroundColor="OE_Background" valign="center" halign="center" transparent="1"/>
-		<eLabel position="26,245" size="1250,220" backgroundColor="#00fafa" zPosition="+1"/>
-		<eLabel position="31,250" size="1240,210" backgroundColor="OE_Background" zPosition="+2"/>
-		<widget name="text" position="31,265" size="1240,195" backgroundColor="OE_Background" font="RegularBold;30" halign="center" valign="center" noWrap="1" zPosition="+3"/>
-		<widget name="list" position="165,470" size="950,620" selectionDisabled="1" transparent="1"/>
-		<widget name="mode" position="170,820" size="950,40" backgroundColor="OE_Background" font="Regular;30" halign="center" transparent="1" valign="center"/>
-		<widget name="locale" position="26,860" size="1250,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
-		<widget name="language" position="26,910" size="1250,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
+		<eLabel position="26,245" size="1250,275" backgroundColor="#00fafa" zPosition="+1"/>
+		<eLabel position="31,250" size="1240,265" backgroundColor="OE_Background" zPosition="+2"/>
+		<widget name="text" position="31,260" size="1240,248" backgroundColor="OE_Background" font="RegularBold;30" halign="center" valign="center" zPosition="+3"/>
+		<widget name="list" position="165,525" size="950,620" selectionDisabled="1" transparent="1"/>
+		<widget name="mode" position="270,820" size="950,40" backgroundColor="OE_Background" font="Regular;30" halign="right" transparent="1"/>
+		<widget name="locale" position="26,880" size="1250,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
+		<widget name="language" position="26,920" size="1250,40" backgroundColor="OE_Background" font="Regular;30" transparent="1" valign="center"/>
 	</screen>
 	<!-- Is the VirtualKeyBoardmod screen actually used? -->
 	<screen name="VirtualKeyBoardmod" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" zPosition="99">
