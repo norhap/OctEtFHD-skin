@@ -173,6 +173,7 @@
 	<parameter name="ChoicelistName" value="85, 0, 1000, 50"/>
 	<parameter name="ChoicelistNameSingle" value="5, 0, 1400, 50"/>
 	<parameter name="ChoicelistIcon" value="10, 2, 64, 50"/>
+	<parameter name="SelectionListLock" value="5, 15, 25, 24"/>
 	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
 	<parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
 	<parameter name="ExpandableListIcon" value="0, 12, 30, 38"/>
@@ -202,7 +203,6 @@
 	<parameter name="PluginBrowserDownloadName" value="90, 1, 45"/>
 	<parameter name="PluginBrowserName" value="180, 1, 45"/>
 	<parameter name="RSList" value="40, 0, 1200, 50, 10, 12, 50, 50"/>
-	<parameter name="SelectionListLock" value="5, 15, 45, 45"/>
 	<parameter name="ServiceInfo" value="0, 0, 450, 50"/>
 	<parameter name="ServiceInfoLeft" value="0, 0, 450, 45"/>
 	<parameter name="ServiceInfoRight" value="450, 0, 1000, 45"/>
