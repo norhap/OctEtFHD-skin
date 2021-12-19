@@ -2021,28 +2021,19 @@
 	</screen>
 	<!-- MESSAGEBOX -->
 	<screen name="MessageBox" backgroundColor="transparent" position="center,center" size="1920,1080">
-		<panel name="autoresize"/>
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
+		<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
 		<widget name="list" itemHeight="50" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="26,140" size="1250,100" transparent="1"/>
 		<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" position="150,370" size="1000,430" halign="center" valign="top"/>
-		<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="610,265" size="80,80" alphatest="blend"/>
-		<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="610,265" size="80,80" alphatest="blend"/>
-		<widget name="InfoPixmap" conditional="InfoPixmap" pixmap="icons/input_info.png" position="610,265" size="80,80" alphatest="blend"/>
-		<widget name="WarningPixmap" conditional="WarningPixmap" pixmap="icons/input_warning.png" position="610,265" size="80,80" alphatest="blend"/>
-		<widget name="icon" conditional="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="610,265" size="80,80" alphatest="blend"/>
+		<widget name="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="610,265" size="80,80" alphatest="blend"/>
 	</screen>
 	<!-- MESSAGEBOX SIMPLE-->
-	<screen name="MessageBoxSimple" backgroundColor="transparent" position="260,center" size="1290,445">
+	<screen name="MessageBoxSimple" backgroundColor="OE_Background" position="260,center" size="1290,445">
 		<panel name="MessageBoxTemplate"/>
-		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="110,3" size="1155,200" halign="left" valign="center"/>
-		<widget name="list" itemHeight="32" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="115,230" size="1190,190" transparent="1"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,3" size="100,440" zPosition="-10"/>
-		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="100,0" size="1286,443" zPosition="-15"/>
-		<eLabel backgroundColor="blue_light" name="" position="2,0" size="5,442" zPosition="20"/>
-		<eLabel backgroundColor="blue_light" name="" position="7,0" size="1281,5" zPosition="20"/>
-		<eLabel backgroundColor="blue_light" name="" position="1283,0" size="5,442" zPosition="20"/>
-		<eLabel backgroundColor="blue_light" name="" position="2,440" size="1286,5" zPosition="20"/>
+		<widget name="list" itemHeight="32" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="115,230" size="1190,190" transparent="1"/>
+		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="110,3" size="1155,200" halign="left" valign="center"/>
 	</screen>
 	<!-- MEDIAPLAYER-->
 	<screen name="MediaPlayer" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="MediaPlayer" transparent="0">
