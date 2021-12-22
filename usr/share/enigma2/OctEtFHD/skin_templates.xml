@@ -364,7 +364,7 @@
 		<eLabel backgroundColor="#0000fafa" name="" position="445,152" size="1430,2" zPosition="-9" foregroundColor="un5678a4"/>
 		<eLabel backgroundColor="blue_light" name="" position="85,152" size="260,2" zPosition="-9" foregroundColor="un5678a4"/>
 		<widget name="wizard" conditional="wizard" pixmap="picon_default.png" position="105,25" size="220,132" alphatest="blend" zPosition="10"/>
-		<widget source="Title" render="Label" backgroundColor="OE_Background" font="RegularBold;34" position="445,85" size="840,50" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
+		<widget source="Title" render="Label" backgroundColor="OE_Background" font="RegularBold;34" position="445,10" size="1430,145" transparent="1" valign="center" zPosition="3" halign="left" foregroundColor="white"/>
 		<widget name="portpic" conditional="portpic" position="300,475" zPosition="10" size="150,150" transparent="1" alphatest="blend"/>
 		<widget source="lab1" conditional="lab1" render="Label" position="20,160" size="400,50" font="RegularBold;40" backgroundColor="OE_NewBg2" halign="center" valign="center" transparent="1" zPosition="3"/>
 		<widget source="lab2" conditional="lab2" render="Label" position="40,215" size="390,45" font="RegularBold;22" backgroundColor="OE_NewBg2" foregroundColor="blue_light" halign="left" valign="center" transparent="1" zPosition="3"/>
