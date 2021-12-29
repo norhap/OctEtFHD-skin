@@ -522,8 +522,7 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 	</screen>
 		<!-- ####### CHOICEBOX ####### -->
 	<screen name="description" position="fill" flags="wfNoBorder">
-		<panel name="autoresize"/>
-		<widget name="description" position="1360,110" size="550,165" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+		<widget name="description" conditional="description" position="1360,110" size="550,165" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<screen name="choicebox">
 		<panel name="StanDardScreen"/>
@@ -533,7 +532,7 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="90,980" size="64,43"/>
 		<eLabel text="[move mode]" position="160,983" size="400,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
 		<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,145" size="1250,815" transparent="1" zPosition="3"/>
-		<widget name="description" position="1290,110" size="620,165" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>
+		<widget name="description" conditional="description" position="1290,110" size="620,165" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>
 		<widget name="text" position="1290,100" size="620,380" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget source="session.Event_Now" render="Label" position="1313,515" size="200,25" foregroundColor="blue_light" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="6">
 			<convert type="CpuUsage">CPU:$0</convert>
