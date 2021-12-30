@@ -3531,8 +3531,8 @@
 		<panel name="MandatoryWidgets"/>
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="job_name" render="Label" font="RegularBold;32" backgroundColor="OE_Background" position="120,367" size="990,50" transparent="1" zPosition="4"/>
-		<widget source="job_task" render="Label" font="RegularBold;32" backgroundColor="OE_Background" position="120,422" size="990,50" transparent="1" zPosition="4"/>
+		<widget source="job_name" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="120,367" size="1156,70" transparent="1" zPosition="4"/>
+		<widget source="job_task" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="120,440" size="1156,50" transparent="1" zPosition="4"/>
 		<widget source="job_progress" render="Progress" borderColor="blue_light" borderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="120,center" size="800,35" transparent="1" zPosition="1"/>
 		<widget source="job_progress" render="Label" font="RegularBold;32" backgroundColor="OE_Background" halign="center" position="920,520" size="250,50" transparent="1" zPosition="2" foregroundColor="white">
 			<convert type="ProgressToText"/>
