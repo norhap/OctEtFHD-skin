@@ -224,9 +224,10 @@
 		<eLabel backgroundColor="blue_light" name="" position="50,142" size="270,2" zPosition="2" foregroundColor="white"/>
 		<eLabel backgroundColor="blue_light" name="" position="50,930" size="275,2" zPosition="2"/>
 		<!-- Buttons -->
-		<ePixmap pixmap="buttons/key_menu.png" position="65,950" size="64,43" zPosition="2" alphatest="blend"/>
-		<ePixmap pixmap="buttons/key_info.png" position="155,950" size="64,43" zPosition="2" alphatest="blend"/>
-		<ePixmap pixmap="buttons/key_leftright.png" position="245,950" size="64,43" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_menu.png" position="50,950" size="64,43" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_info.png" position="120,950" size="64,43" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_leftright.png" position="190,950" size="64,43" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_help.png" position="260,950" size="64,43" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="buttons/key_red.png" position="350,950" size="40,40" alphatest="blend"/>
 		<ePixmap pixmap="buttons/key_green.png" position="710,950" size="40,40" alphatest="blend"/>
 		<ePixmap pixmap="buttons/key_yellow.png" position="1100,950" size="40,40" alphatest="blend"/>
