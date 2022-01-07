@@ -3090,17 +3090,8 @@
 	<!-- SCAN MANUAL-->
 	<screen name="ScanSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
-		<eLabel backgroundColor="OE_NewBg2" name="" position="1269,0" size="651,1080" zPosition="-16"/>
-		<widget source="session.VideoPicture" render="Pig" position="1284,100" size="646,400" zPosition="1" backgroundColor="#df0b1300"/>
+		<panel name="TemplatePip"/>
 		<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
-		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="190,725" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="190,1035" zPosition="1" size="64,43" transparent="1" alphatest="blend">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="VKeyIcon" conditional="VKeyIcon" alphatest="blend" pixmap="my_icons/key_board.png" position="257,1035" render="Pixmap" size="64,43" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget name="introduction" position="1290,575" size="620,635" font="RegularBold;25" halign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<!-- AUTOMATIC SCANING -->
 	<screen name="ScanSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
