@@ -2035,7 +2035,7 @@
 	<screen name="MessageBoxSimple" backgroundColor="OE_Background" position="260,center" size="1290,445">
 		<panel name="MessageBoxTemplate"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="0,3" size="100,540" zPosition="-10"/>
-		<widget name="list" itemHeight="32" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="115,230" size="1190,190" transparent="1"/>
+		<widget name="list" conditional="list" itemHeight="32" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="115,230" size="1190,190" transparent="1"/>
 		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="110,3" size="1155,200" halign="left" valign="center"/>
 	</screen>
 	<!-- MEDIAPLAYER-->
