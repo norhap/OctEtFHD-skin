@@ -2392,7 +2392,7 @@
 				MultiContentEntryText(pos = (10, 45), size = (430, 40), font=1, flags = RT_HALIGN_LEFT, text = 5,color_sel=0x0000fafa), # index 5 is the interface
 				MultiContentEntryText(pos = (400, 45), size = (300, 40), font=1, flags = RT_HALIGN_LEFT, text = 4,color_sel=0x0000fafa), # index 0 is the encrypto
 				MultiContentEntryText(pos = (750, 3), size = (350, 45), font=1, flags = RT_HALIGN_LEFT, text = 2,color_sel=0x0000fafa), # index 0 is the signal
-				MultiContentEntryText(pos = (750, 45), size = (350, 40), font=1, flags = RT_HALIGN_LEFT, text = 3,color_sel=0x0000fafa), # index 0 is the maxrate
+				MultiContentEntryText(pos = (750, 45), size = (474, 40), font=1, flags = RT_HALIGN_LEFT, text = 3,color_sel=0x0000fafa), # index 0 is the maxrate
 				],
 				"fonts": [gFont("RegularBold", 26),gFont("RegularBold", 26)],
 				"itemHeight": 85
@@ -2418,12 +2418,12 @@
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="26,425" render="Label" size="495,45" source="LabelSignal" transparent="1"/>
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="26,475" render="Label" size="495,45" source="LabelBitrate" transparent="1"/>
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="26,525" render="Label" size="495,45" source="LabelEnc" transparent="1"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,230" render="Label" size="490,90" source="BSSID" transparent="1"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,325" render="Label" size="490,45" source="ESSID" transparent="1"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,375" render="Label" size="490,45" source="quality" transparent="1"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,425" render="Label" size="490,45" source="signal" transparent="1"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,475" render="Label" size="490,45" source="bitrate" transparent="1"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,525" render="Label" size="490,45" source="enc" transparent="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,230" render="Label" size="554,90" source="BSSID" transparent="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,325" render="Label" size="554,45" source="ESSID" transparent="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,375" render="Label" size="554,45" source="quality" transparent="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,425" render="Label" size="554,45" source="signal" transparent="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,475" render="Label" size="554,45" source="bitrate" transparent="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" halign="left" position="670,525" render="Label" size="554,45" source="enc" transparent="1"/>
 	</screen>
 	<!-- MOUNTS -->
 	<screen name="NetworkMountsMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
