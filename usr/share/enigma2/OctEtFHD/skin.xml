@@ -1529,21 +1529,21 @@
 		<panel name="Buttons"/>
 		<eLabel text="Cutlist editor" position="50,10" size="1700,40" backgroundColor="blue" foregroundColor="green_light" halign="center" valign="center" zPosition="5" font="RegularBold;40" transparent="1"/>
 		<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="95,85" size="75,75" transparent="1" zPosition="1"/>
-		<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" name="" position="45,70" size="1830,980" zPosition="-15"/>
+		<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" name="" position="20,70" size="1880,980" zPosition="-15"/>
 		<eLabel backgroundColor="blue" foregroundColor="OE_Background" name="" position="0,0" size="1920,1080" zPosition="-16"/>
-		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="45,65" size="1830,5" zPosition="-16"/>
-		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="40,65" size="5,985" zPosition="-16"/>
-		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="40,1045" size="1835,5" zPosition="-15"/>
-		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="1875,65" size="5,985" zPosition="-16"/>
+		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="20,65" size="1880,5" zPosition="-16"/>
+		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="15,65" size="5,985" zPosition="-16"/>
+		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="15,1045" size="1885,5" zPosition="-15"/>
+		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" name="" position="1900,65" size="5,985" zPosition="-16"/>
 		<eLabel backgroundColor="blue_light" name="" position="90,162" size="90,2" zPosition="-9" foregroundColor="un5678a4"/>
 		<eLabel text="[OK]  =" position="1600,985" size="120,65" backgroundColor="OE_NewBg2" zPosition="5" font="RegularBold;26" transparent="1"/>
 		<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="1720,980" size="64,43" alphatest="blend"/>
-		<widget source="cutlist" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="60,200" size="420,270" transparent="1">
+		<widget source="cutlist" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="50,200" size="420,250" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos=(35,10), size=(160, 40), text = 1, backcolor = MultiContentTemplateColor(4)),
-				MultiContentEntryText(pos=(205,10), size=(80, 40), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(4)),
-				MultiContentEntryText(pos=(305,10), size=(70, 40), text = 3, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(4))
+				MultiContentEntryText(pos=(25,10), size=(160, 40), text = 1, backcolor = MultiContentTemplateColor(4)),
+				MultiContentEntryText(pos=(195,10), size=(80, 40), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(4)),
+				MultiContentEntryText(pos=(295,10), size=(70, 40), text = 3, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(4))
 				],
 
 				"fonts": [gFont("Regular", 28)],
