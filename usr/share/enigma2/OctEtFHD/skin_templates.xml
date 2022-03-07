@@ -69,7 +69,7 @@
 		<!-- TITLES -->
 	<screen name="TitleStanDardScreen">
 		<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" position="24,63" size="1255,70" halign="center" valign="top" transparent="1"/>
-		<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="blue_light" position="24,10" size="1255,70" halign="center" transparent="1"/>
+		<widget source="ScreenPath" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="blue_light" position="24,10" size="1255,56" halign="center" transparent="1"/>
 	</screen>
 	<screen name="TitleInformation">
 		<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" position="405,62" size="1490,70" halign="center" valign="top" transparent="1"/>
