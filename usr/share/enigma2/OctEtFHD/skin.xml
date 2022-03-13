@@ -3373,37 +3373,31 @@
 		<!-- Clock -->
 		<panel name="Clock"/>
 	</screen>
+		<!-- SOFTWARE MANAGER -->
 	<screen name="UpdatePluginMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1350,650" zPosition="-15"/>
-		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="400,800" zPosition="-11" valign="center"/>
-		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="490,280" size="870,2" zPosition="-9"/>
-		<!-- Widget -->
-		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="490,223" size="870,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
-		<widget source="menu" render="Listbox" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" position="490,290" size="870,495" transparent="1">
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,1035" size="64,43"/>
+		<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1">
 			<convert type="TemplatedMultiContent">
-				{"template":[ MultiContentEntryText(pos = (15, 2), size = (800, 55), flags = RT_HALIGN_LEFT, text = 1)],
-				"fonts": [gFont("RegularBold", 32)],
-				"itemHeight": 55
-				}
+				 {"template": [
+				 MultiContentEntryText(pos = (10, 0), size = (1300, 50), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+				 ],
+				 "fonts": [gFont("RegularBold",32)],
+				 "itemHeight": 50
+				 }
 			</convert>
 		</widget>
-		<eLabel text="Info" font="RegularBold;34" backgroundColor="OE_Background" position="80,223" size="380,50" transparent="1" valign="center" zPosition="3" halign="center"/>
-		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="90,280" size="360,2" zPosition="-9"/>
-		<widget source="menu" render="Listbox" scrollbarMode="showNever" selectionDisabled="1" backgroundColor="OE_Background" position="90,290" size="360,510" transparent="1">
+		<widget source="menu" render="Listbox" scrollbarMode="showNever" selectionDisabled="1" backgroundColor="OE_NewBg2" position="1300,525" size="620,300" transparent="1">
 			<convert type="TemplatedMultiContent">
-				{"template":[ MultiContentEntryText(pos = (15, 5), size = (350, 500), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2),# index 2 is the Description,
+				{"template":[ MultiContentEntryText(pos = (2, 2), size = (618, 300), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
 				],
-				"fonts": [gFont("RegularBold", 28)],
-				"itemHeight": 500
+				"fonts": [gFont("RegularBold", 24)],
+				"itemHeight": 300
 				}
 			</convert>
+			<widget source="status" render="Label" position="1300,850" zPosition="10" size="620,100" halign="left" font="RegularBold;24" backgroundColor="OE_NewBg2" transparent="1" shadowOffset="-1,-1" />
 		</widget>
-		<!-- /*Buttons-->
-		<eLabel backgroundColor="blue_light" name="" position="490,795" size="870,2" zPosition="-9"/>
-		<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="490,812" size="40,40"/>
-		<widget source="key_red" render="Label" font="RegularBold;26" backgroundColor="OE_Background" halign="left" valign="center" position="540,812" size="320,40" transparent="1" zPosition="1"/>
-		<!-- Clock -->
-		<panel name="Clock"/>
 	</screen>
 	<!-- SOFTWARE MANAGER SETUP-->
 	<screen name="SoftwareManagerSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3419,6 +3413,7 @@
 	</screen>
 	<screen name="SoftwareManagerInfo" title="SoftwareManager information" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
 		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" selectionDisabled="0" backgroundColor="OE_Background" position="26,140" size="1250,750" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template":[
