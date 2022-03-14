@@ -1952,7 +1952,7 @@
 	<screen name="OpkgInstaller" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget name="list" backgroundColor="OE_Background" position="26,140" size="1250,750" transparent="1" zPosition="5"/>
+		<widget name="list" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" position="26,140" size="1250,750" transparent="1" zPosition="5"/>
 	</screen>
 	<!-- OPKGMENU -->
 	<screen name="OPKGMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
