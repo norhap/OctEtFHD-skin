@@ -453,7 +453,7 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 	</screen>
 		<!-- AUTORESIZE-->
 	<screen name="autoresize" position="fill" flags="wfNoBorder">
-		<widget name="autoresize" position="20,20" size="560,300" transparent="1"/>
+		<widget name="autoresize" conditional="autoresize" position="20,20" size="560,300" transparent="1"/>
 	</screen>
 		<!-- DOWNLOADBAR-->
 	<screen name="DownloadBar">
@@ -527,6 +527,7 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 	</screen>
 		<!-- ####### CHOICEBOX ####### -->
 	<screen name="description" position="fill" flags="wfNoBorder">
+		<panel name="autoresize"/>
 		<widget name="description" conditional="description" position="1360,110" size="550,165" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<screen name="choicebox">
