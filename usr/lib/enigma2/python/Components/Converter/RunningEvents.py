@@ -23,7 +23,7 @@ class RunningEvents(Converter, object):
 	noDuration = 15
 	onlyDuration = 16
 	withDuration = 17
-	onlyStart = 1
+	onlyStart = 18
 
 	def __init__(self, type):
 		Converter.__init__(self, type)
@@ -94,7 +94,7 @@ class RunningEvents(Converter, object):
 			elif self.type == self.PrimeTime:
 				curEvent = self.source.getCurrentEvent()
 				if curEvent:
-					now = localtime(time())
+					now = localtime(int(time()))
 					dt = datetime(now.tm_year, now.tm_mon, now.tm_mday, 21, 15)
 					primeTime = int(mktime(dt.timetuple()))
 					self.epgcache.startTimeQuery(eServiceReference(ref.toString()), primeTime)
