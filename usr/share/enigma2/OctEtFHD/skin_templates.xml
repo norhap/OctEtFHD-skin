@@ -410,7 +410,7 @@ from enigma import ePoint, eSize, getDesktop
 screenSize = (getDesktop(0).size().width(), getDesktop(0).size().height())
 iconPos = (10, 25)
 listPos = (110, 85)
-listSize = (1190, 140)
+listSize = (1290, 140)
 if self.list:
 	scrollbarWidth = 25  # self["list"].instance.getScrollbarOffset() + self["list"].instance.getScrollbarWidth()
 	height = 35
@@ -424,7 +424,7 @@ if self.list:
 else:
 	textAdjust = 0
 textPos = (80, 20)
-textSize = (1050, 65)
+textSize = (1285, 65)
 maxWidth = textSize[0] + textAdjust + (0 if self.typeIcon else textPos[0] - iconPos[0])
 newTextWidth, newTextHeight = getScreenObjectSize(self.text, self["text"], maxWidth, screenSize[1])
 if newTextHeight > screenSize[1] - 100:
