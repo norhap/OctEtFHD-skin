@@ -534,10 +534,16 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 		<panel name="StanDardScreen"/>
 		<panel name="description"/>
 		<eLabel backgroundColor="OE_NewBg2" name="" position="1215,0" size="705,1080" zPosition="-16"/>
-		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_left.png" position="40,980" size="64,43"/>
-		<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_right.png" position="90,980" size="64,43"/>
-		<eLabel text="[move mode]" position="160,983" size="400,70" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;26" halign="left"/>
 		<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,145" size="1250,815" transparent="1" zPosition="3"/>
+		<ePixmap pixmap="buttons/key_help.png" position="20,1035" size="64,43" alphatest="blend"/>
+		<widget source="key_text" conditional="key_text" render="Pixmap" pixmap="buttons/key_leftright.png" position="100,1035" size="64,43" backgroundColor="OE_NewBg2" alphatest="blend"/>
+		<widget source="key_text" conditional="key_text" text="Move" render="FixedLabel" backgroundColor="OE_NewBg2" position="175,1040" size="250,35" font="RegularBold;26" zPosition="1"/>
+		<widget source="key_text" conditional="key_text" render="Pixmap" pixmap="buttons/key_text.png" position="425,1035" size="64,43" backgroundColor="OE_NewBg2" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="key_text" conditional="key_text" text="Reset" render="FixedLabel" backgroundColor="OE_NewBg2" position="500,1040" size="300,35" font="RegularBold;26" zPosition="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget name="description" conditional="description" position="1290,110" size="620,165" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>
 		<widget name="text" position="1290,100" size="620,380" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget source="session.Event_Now" render="Label" position="1313,515" size="200,25" foregroundColor="blue_light" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="6">
