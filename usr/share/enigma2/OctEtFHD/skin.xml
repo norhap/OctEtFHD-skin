@@ -825,9 +825,11 @@
 		<panel name="TemplateInformation"/>
 		<widget name="AboutScrollLabel" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" foregroundColor="white" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
 		</screen>
+	<!-- My commits norhap -->
 	<screen name="CommitInfoDevelop" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="TemplateInformation"/>
-		<widget name="news" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" foregroundColor="white" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
+		<widget name="AboutScrollLabel" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" foregroundColor="white" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
+		<widget source="key_text" conditional="key_text" render="Pixmap" pixmap="buttons/key_leftright.png" position="165,905" size="64,43" backgroundColor="OE_Background" alphatest="blend"/>
 	</screen>
 	<!-- TRANSLATION INFO -->
 	<screen name="TranslationInfo" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
