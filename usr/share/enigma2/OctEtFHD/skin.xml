@@ -2173,6 +2173,7 @@
 		<eLabel backgroundColor="blue_light" name="" position="465,142" size="1445,2" zPosition="2" foregroundColor="un5678a4"/>
 		<eLabel backgroundColor="blue_light" name="" position="465,930" size="1445,2" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" name="" position="30,930" size="420,2" zPosition="2"/>
+		<widget name="chosenletter" position="425,165" size="40,40" font="RegularBold;30" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
 		<widget name="list" zPosition="1" position="465,160" size="1440,750" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" transparent="0"/>
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="30,885" size="180,45" render="Label" source="Service" transparent="1" zPosition="1">
 			<convert type="ServiceTime">Duration</convert>
@@ -2181,7 +2182,6 @@
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" halign="left" position="215,885" render="Label" size="200,45" source="Service" transparent="1" zPosition="1">
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<widget name="chosenletter" position="250,885" size="100,50" font="RegularBold;24" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
 		<widget name="TrashcanSize" position="30,930" size="305,50" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
 		<widget name="freeDiskSpace" position="30,980" size="440,90" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
 		<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png" position="370,950" zPosition="10" size="35,20" transparent="1" alphatest="on"/>
@@ -2190,7 +2190,7 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="DescriptionBorder" position="0,0" size="0,0"/>
-		<widget name="waitingtext" position="0,0" size="0,0" font="RegularBold;38" backgroundColor="OE_Background" foregroundColor="white" zPosition="1"/>
+		<widget name="waitingtext" position="0,0" size="0,0" font="RegularBold;38" backgroundColor="OE_Background" zPosition="1"/>
 		<!-- Button -->
 		<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="465,950" size="64,43"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="525,950" size="64,43"/>
