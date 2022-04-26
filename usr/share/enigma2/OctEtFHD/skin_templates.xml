@@ -400,7 +400,7 @@
 def getScreenObjectSize(data, screenObject, maxWidth, maxHeight):
 	from enigma import eLabel, eSize
 	if isinstance(data, str):
-		data = [(data, None)]
+		data = [(str(data), None)]
 	font = screenObject.instance.getFont()
 	size = eSize(maxWidth, maxHeight)
 	width = max([eLabel.calculateTextSize(font, line[0], size, False).width() for line in data]) if data else 0
