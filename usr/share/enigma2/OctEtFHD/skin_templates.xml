@@ -424,7 +424,7 @@ if self.list:
 	textAdjust = max(0, newListSize[0] - listSize[0])
 else:
 	textAdjust = 0
-textPos = (80, 20)
+textPos = (95, 15)
 textSize = (1285, 65)
 maxWidth = textSize[0] + textAdjust + (0 if self.typeIcon else textPos[0] - iconPos[0])
 newTextWidth, newTextHeight = getScreenObjectSize(self.text, self["text"], maxWidth, screenSize[1])
