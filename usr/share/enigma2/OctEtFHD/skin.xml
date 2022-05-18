@@ -3323,6 +3323,7 @@
 		<panel name="Clock"/>
 	</screen>
 	<screen name="TimeshiftState" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="TimeshiftState">
+		<panel name="TimeshiftLive"/>
 		<eLabel backgroundColor="OE_Background" name="InfoBar" position="center,910" size="1780,125" zPosition="-11"/>
 		<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" name="" position="1565,870" size="250,210" zPosition="-10"/>
 		<eLabel name="" foregroundColor="white" backgroundColor="green_light" position="1580,981" size="220,2" zPosition="-9"/>
@@ -3330,7 +3331,6 @@
 		<widget backgroundColor="OE_Background" font="RegularBold;34" halign="center" noWrap="1" position="225,918" render="Label" size="1060,56" source="session.CurrentService" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget name="state" position="255,990" size="1000,42" font="RegularBold;28" backgroundColor="OE_Background" transparent="1" foregroundColor="white"/>
 		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" halign="right" position="1285,924" render="Label" size="135,45" source="session.CurrentService" transparent="1" valign="center">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
@@ -3360,6 +3360,7 @@
 	<screen name="TimeshiftLive" backgroundColor="transparent" flags="wfNoBorder" position="80,105" size="310,74" zPosition="8">
 		<eLabel backgroundColor="un800000" foregroundColor="white" name="" position="0,10" size="310,54" zPosition="-11" valign="center"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="10,0" size="60,74" zPosition="-10"/>
+		<widget name="state" conditional="state" position="30,20" size="1000,42" font="RegularBold;28" backgroundColor="OE_Background" transparent="1" foregroundColor="white"/>
 		<!-- Widget -->
 		<eLabel text="Timeshift Live" position="80,12" size="220,50" font="RegularBold;28" backgroundColor="un800000" transparent="1" valign="center" halign="left"/>
 	</screen>
