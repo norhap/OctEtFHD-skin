@@ -2971,7 +2971,7 @@
 		<widget name="snr_percentage" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="un56c856" position="870,725" size="120,45" transparent="1"/>
 		<widget name="snr_db" position="995,725" size="300,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" halign="left" foregroundColor="un56c856"/>
 		<widget name="AGC" position="26,780" size="140,45" backgroundColor="OE_Background" font="RegularBold;26" transparent="1"/>
-		<widget name="agc_bar" position="290,780" size="500,25" borderWidth="1" foregroundColor="blue_light" transparent="1"/>
+		<widget name="agc_bar" position="290,780" size="500,25" borderWidth="2" borderColor="OE_Selection" foregroundColor="blue_light" transparent="1"/>
 		<widget name="agc_percentage" position="870,775" size="120,45" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 		<widget name="BER" position="26,830" size="140,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
 		<widget name="ber_bar" borderColor="OE_Selection" borderWidth="2" backgroundColor="OE_Background" foregroundColor="blue_light" position="290,830" size="500,25" transparent="1"/>
@@ -3023,7 +3023,7 @@
 		<widget name="posGoto" position="390,100" size="160,30" zPosition="1" font="RegularBold;24" foregroundColor="green_light" transparent="1"/>
 		<widget name="tunerName" position="230,140" size="220,30" zPosition="2" font="RegularBold;24" foregroundColor="blue_light" halign="left" transparent="1"/>
 		<widget name="turnSpeed" position="230,180" size="220,30" zPosition="2" font="RegularBold;24" halign="left" transparent="1"/>
-		<widget source="session.FrontendStatus" render="Progress" position="230,210" size="200,20" borderWidth="1" foregroundColor="blue_light" zPosition="2">
+		<widget source="session.FrontendStatus" render="Progress" position="230,210" size="200,20" borderWidth="2" borderColor="blue_light" foregroundColor="blue_light" zPosition="2">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 	</screen>
@@ -3608,7 +3608,7 @@
 	<!-- IMAGE FLASH MULTIBOOT SELECT IMAGE -->
 	<screen name="SelectImage" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="ScreenOpenVision"/>
-		<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1490,670" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1490,670" transparent="1"/>
 		<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
 		<widget source="description" render="Label" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,70" transparent="1" halign="center" valign="center"/>
 	</screen>
@@ -3616,7 +3616,7 @@
 	<screen name="FlashImage" position="fill" zPosition="10" flags="wfNoBorder">
 		<panel name="ScreenOpenVision"/>
 		<widget name="header" position="410,155" size="1490,85" zPosition="10" font="RegularBold;30" halign="center" valign="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="progress" backgroundColor="OE_Background" position="410,270" size="1490,85" zPosition="10" transparent="1"/>
+		<widget name="progress" backgroundColor="blue_light" borderWidth="2" borderColor="blue_light" position="410,270" size="1490,85" zPosition="10" transparent="1"/>
 		<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
 		<widget name="info" font="RegularBold;24" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,90" transparent="1" zPosition="10" halign="center" valign="center"/>
 	</screen>
@@ -3782,7 +3782,7 @@
 	<screen name="InetdRecovery" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget name="config" itemHeight="50" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,140" zPosition="10" size="1250,630" transparent="1"/>
+		<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,140" zPosition="10" size="1250,630" transparent="1"/>
 	</screen>
 	<!--INADYN-->
 	<screen name="NetworkInadyn" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3923,7 +3923,7 @@
 	<screen name="HddMountDevice" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget name="menu" itemHeight="50" font="RegularBold;25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,200" zPosition="10" size="1250,720" transparent="1"/>
+		<widget name="menu" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,200" zPosition="10" size="1250,720" transparent="1"/>
 	</screen>
 	<screen name="HddInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
@@ -3981,7 +3981,7 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
-		<widget name="config" itemHeight="50" font="RegularBold;25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,140" zPosition="10" size="1250,630" transparent="1"/>
+		<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="26,140" zPosition="10" size="1250,630" transparent="1"/>
 	</screen>
 	<!-- E2IPLAYER SETUP-->
 	<screen name="ConfigMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -4151,7 +4151,7 @@
 		<panel name="ButtonsVisionCore"/>
 		<ePixmap pixmap="buttons/key_info.png" position="165,905" size="64,43" alphatest="blend"/>
 		<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,280" zPosition="10" size="1490,550" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,280" zPosition="10" size="1490,550" transparent="1"/>
 		<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,880" size="1490,35" transparent="1" valign="top"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
@@ -4160,7 +4160,7 @@
 	<screen name="VISIONBackupManagerLogView" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
 		<panel name="ButtonsVisionCore"/>
-		<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,135" zPosition="10" size="1490,820" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,135" zPosition="10" size="1490,820" transparent="1"/>
 	</screen>
 	<screen name="VISIONBackupManagerMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
@@ -4181,7 +4181,7 @@
 	<screen name="XtraPluginsSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
 		<panel name="ButtonsVisionCore"/>
-		<widget name="checkList" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
+		<widget name="checkList" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
 	</screen>
 	<!-- VISION IMAGE MANAGER-->
 	<screen name="VISIONImageManager" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
@@ -4189,7 +4189,7 @@
 		<panel name="ButtonsVisionCore"/>
 		<ePixmap pixmap="buttons/key_help.png" position="165,905" size="64,43" alphatest="blend"/>
 		<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,570" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,570" transparent="1"/>
 		<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,880" size="1490,35" transparent="1" valign="top"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
@@ -4205,7 +4205,7 @@
 	<screen name="ImageManagerDownload" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
 		<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,640" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,640" transparent="1"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
 		</applet>
@@ -4215,7 +4215,7 @@
 		<panel name="TemplateInformation"/>
 		<panel name="ButtonsVisionCore"/>
 		<widget name="lab7" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" transparent="1" zPosition="3"/>
-		<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,640" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,640" transparent="1"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
 		</applet>
@@ -4224,7 +4224,7 @@
 	<screen name="VISIONScriptRunner" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
 		<panel name="ButtonsVisionCore"/>
-		<widget name="list" font="RegularBold;25" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
+		<widget name="list" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,140" zPosition="10" size="1490,800" transparent="1"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
 		</applet>
@@ -4252,7 +4252,7 @@
 		<widget name="lab8" position="330,140" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 		<widget name="activecam" position="530,140" size="1370,35" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
 		<widget name="lab7" position="410,310" size="600,35" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
-		<widget name="list" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,350" zPosition="10" size="1490,590" transparent="1"/>
+		<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,350" zPosition="10" size="1490,590" transparent="1"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
 		</applet>
@@ -4292,8 +4292,8 @@
 		</widget>
 		<widget name="config" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="410,480" size="1490,500" zPosition="1"/>
 		<eLabel text="Progress:" font="RegularBold;34" backgroundColor="OE_Background" position="410,420" size="300,50" transparent="1"/>
-		<widget name="stepslider" borderWidth="1" position="730,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
-		<widget name="step" borderWidth="1" position="730,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+		<widget name="stepslider" borderWidth="2" borderColor="blue_light" position="730,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+		<widget name="step" borderWidth="2" borderColor="blue_light" position="730,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
 		<eLabel backgroundColor="#0000fafa" name="" position="410,470" size="1490,2" zPosition="-9"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="50,905" size="40,40"/>
 		<widget name="languagetext" backgroundColor="OE_Background" font="RegularBold;26" halign="left" valign="center" position="95,905" size="245,40" transparent="1" zPosition="1"/>
@@ -4385,7 +4385,7 @@
 	</screen>
 	<screen name="PersianPalace" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="ScreenOpenVision"/>
-		<widget name="list" font="RegularBold;26" borderWidth="1" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1490,670" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1490,670" transparent="1"/>
 		<widget name="help" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,948" size="1490,85" transparent="1" halign="center" valign="center"/>
 	</screen>
 	<screen name="PictureLoader" position="fill" backgroundColor="transparent" flags="wfNoBorder">
