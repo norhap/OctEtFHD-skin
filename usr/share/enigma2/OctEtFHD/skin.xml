@@ -746,7 +746,7 @@
 		<panel name="TemplateInformation"/>
 		<panel name="HelpInformation"/>
 		<!-- widget name="information" conditional="information" position="410,140" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" noWrap="1" leftColAlign="left" rightColAlign="left" split="1" transparent="1"/> -->
-		<widget name="information" conditional="information" position="410,145" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" noWrap="1" split="1" transparent="1"/>
+		<widget name="information" conditional="information" position="410,145" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" foregroundColor="white" scrollbarSliderForegroundColor="blue_light" borderColor="blue_light" noWrap="1" split="1" transparent="1"/>
 		</screen>
 		<!-- INFO IMAGES -->
 		<screen name="InformationImage" position="fill" backgroundColor="transparent" flags="wfNoBorder">
@@ -765,7 +765,7 @@
 	<screen name="About" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="">
 		<panel name="TemplateInformation"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="165,905" size="64,43"/>
-		<widget name="AboutScrollLabel" font="RegularBold;26" foregroundColor="white" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" position="410,147" size="1490,805" halign="left" transparent="1"/>
+		<widget name="AboutScrollLabel" font="RegularBold;26" foregroundColor="white" backgroundColor="OE_Background" scrollbarSliderForegroundColor="blue_light" borderColor="blue_light" position="410,147" size="1490,805" halign="left" transparent="1"/>
 	</screen>
 	<!-- INFO OPENVISION -->
 	<screen name="OpenVisionInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -823,12 +823,12 @@
 	<!-- COMMIT INFO -->
 	<screen name="CommitInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="TemplateInformation"/>
-		<widget name="AboutScrollLabel" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" foregroundColor="white" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
+		<widget name="AboutScrollLabel" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" borderColor="blue_light" foregroundColor="white" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
 		</screen>
 	<!-- My commits norhap -->
 	<screen name="CommitInfoDevelop" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="TemplateInformation"/>
-		<widget name="AboutScrollLabel" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" foregroundColor="white" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
+		<widget name="AboutScrollLabel" font="RegularBold;26" scrollbarSliderForegroundColor="blue_light" borderColor="blue_light" foregroundColor="white" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
 		<widget source="key_text" conditional="key_text" render="Pixmap" pixmap="buttons/key_leftright.png" position="165,905" size="64,43" backgroundColor="OE_Background" alphatest="blend"/>
 	</screen>
 	<!-- TRANSLATION INFO -->
@@ -842,7 +842,7 @@
 		<panel name="TemplateInformation"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_leftright.png" position="210,905" size="64,43"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_downup.png" position="125,905" size="64,43"/>
-		<widget name="AboutScrollLabel" font="Console;25" backgroundColor="OE_Background" position="410,140" size="1490,805" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" transparent="1"/>
+		<widget name="AboutScrollLabel" font="Console;25" backgroundColor="OE_Background" position="410,140" size="1490,805" scrollbarSliderForegroundColor="blue_light" borderColor="blue_light" transparent="1"/>
 	</screen>
 	<!-- MEMORY INFO -->
 	<screen name="MemoryInfo" title="MemoryInfo" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
