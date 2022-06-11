@@ -1370,17 +1370,12 @@
 		<panel name="StanDardScreen"/>
 		<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	</screen>
+	<!-- COMMON INTERFACE -->
 	<screen name="CiSelection" title="Common Interface" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
-		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,1080" zPosition="-11" valign="center"/>
-		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
-		<!-- Widget -->
-		<eLabel text="Common Interface" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
-		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="170,145" size="1250,45" transparent="1"/>
-		<eLabel backgroundColor="white" name="" position="170,200" size="1250,2" zPosition="-9"/>
-		<widget name="entries" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,210" size="1250,750" transparent="1"/>
-		<!-- Clock -->
-		<panel name="Clock"/>
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="26,140" size="1250,35" transparent="1"/>
+		<widget name="entries" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,200" size="1250,750" transparent="1"/>
 	</screen>
 	<screen name="CIselectMainMenu" title="CI Assignment" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
