@@ -3036,7 +3036,7 @@
 		<panel name="TemplateNoPip"/>
 		<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" backgroundColor="OE_Background" position="26,265" size="1250,705" transparent="1"/>
 		<eLabel backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" name="snr" position="40,144" size="120,45" text="SNR:" transparent="1"/>
-		<widget borderColor="grey" borderWidth="2" backgroundColor="OE_Foreground" foregroundColor="un56c856" position="165,148" render="Progress" size="850,20" source="Frontend" transparent="1">
+		<widget borderColor="grey" borderWidth="2" backgroundColor="OE_Background" foregroundColor="un56c856" position="165,148" render="Progress" size="850,20" source="Frontend" transparent="1">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" position="1035,143" render="Label" size="120,45" source="Frontend" transparent="1">
