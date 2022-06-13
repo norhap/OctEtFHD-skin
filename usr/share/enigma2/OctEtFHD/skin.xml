@@ -3433,8 +3433,8 @@
 		<eLabel backgroundColor="white" foregroundColor="white" name="" position="10,93" size="100,4" zPosition="-45"/>
 		<eLabel backgroundColor="OE_NewBg2" position="0,0" size="120,155" zPosition="-50" foregroundColor="white"/>
 		<!-- Widget -->
-		<ePixmap alphatest="blend" borderColor="transparent" scrollbarBorderWidth="0" pixmap="my_icons/volume1.png" position="21,30" size="79,55" transparent="1" zPosition="-1"/>
-		<widget name="Volume" pixmap="my_icons/volume_2a100.png" position="10,91" size="100,8" transparent="1" zPosition="3"/>
+		<ePixmap alphatest="blend" pixmap="my_icons/volume1.png" position="21,30" size="79,55" transparent="1" zPosition="-1"/>
+		<widget name="Volume" backgroundColor="blue_light" pixmap="my_icons/volume_2a100.png" position="10,91" size="100,8" transparent="1" zPosition="3"/>
 		<widget name="VolumeText" position="10,100" size="100,50" halign="center" font="RegularBold;40" backgroundColor="OE_NewBg2" transparent="1" zPosition="3"/>
 	</screen>
 	<screen name="Mute" title="Mute" backgroundColor="OE_NewBg2" flags="wfNoBorder" position="10,15" size="79,55" transparent="0" zPosition="10">
