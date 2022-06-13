@@ -4011,7 +4011,7 @@
 		<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
 		<ePixmap pixmap="buttons/key_menu.png" position="85,1035" size="64,43" alphatest="blend"/>
 		<widget name="config" itemHeight="50" position="26,140" size="1250,300" font="RegularBold;30" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="info" position="40,450" size="1250,510" font="RegularBold;28" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="info" position="40,450" size="1236,510" font="RegularBold;28" backgroundColor="OE_Background" transparent="1"/>
 	</screen>
 	<!-- PE SPEED UP-->
 	<screen name="PESpeedUp" position="fill" title="PE Speed Up">
