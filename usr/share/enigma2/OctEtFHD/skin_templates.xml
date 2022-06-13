@@ -53,7 +53,7 @@
 		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="295,270" size="1095,2" zPosition="-9"/>
 		<!--  Widget -->
 		<widget source="title" render="Label" font="RegularBold;35" backgroundColor="OE_Background" position="295,190" size="1095,85" transparent="1" halign="center"/>
-		<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="295,275" size="1095,650" transparent="1">
+		<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="295,275" size="1095,650" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template":
@@ -250,7 +250,7 @@
 		<widget backgroundColor="OE_Background" font="RegularBold;28" position="160,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="1000,50" source="Event" transparent="1" halign="left">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="blue_light" borderWidth="0" pixmap="colors/00A4C400.png" position="160,160" render="Progress" size="950,6" source="Event" transparent="0" zPosition="1">
+		<widget backgroundColor="blue_light" scrollbarBorderWidth="0" pixmap="colors/00A4C400.png" position="160,160" render="Progress" size="950,6" source="Event" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="150,130" size="100,45" halign="center" transparent="1">
@@ -381,8 +381,8 @@
 		<widget name="arrowdown2" conditional="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 		<widget name="arrowup" conditional="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
 		<widget name="arrowup2" conditional="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphatest="blend" zPosition="11"/>
-		<widget name="stepslider" conditional="stepslider" borderWidth="2" borderColor="blue_light" position="665,340" size="450,35" foregroundColor="blue_light" zPosition="15" transparent="1"/>
-		<widget name="step" conditional="step" borderWidth="2" borderColor="blue_light" position="445,345" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+		<widget name="stepslider" conditional="stepslider" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" position="665,340" size="450,35" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+		<widget name="step" conditional="step" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" position="445,345" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="15" transparent="1"/>
 		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="445,825" size="1,1" transparent="1" zPosition="10" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="350,825" zPosition="1" size="64,43" transparent="1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
@@ -535,7 +535,7 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 		<panel name="StanDardScreen"/>
 		<panel name="description"/>
 		<eLabel backgroundColor="OE_NewBg2" name="" position="1215,0" size="705,1080" zPosition="-16"/>
-		<widget name="list" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="blue_light" scrollbarSliderBorderColor="blue_light" backgroundColor="OE_Background" position="26,145" size="1250,815" transparent="1" zPosition="3"/>
+		<widget name="list" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,145" size="1250,815" transparent="1" zPosition="3"/>
 		<ePixmap pixmap="buttons/key_help.png" position="20,1035" size="64,43" alphatest="blend"/>
 		<widget source="key_text" conditional="key_text" render="Pixmap" pixmap="buttons/key_leftright.png" position="100,1035" size="64,43" backgroundColor="OE_NewBg2" alphatest="blend"/>
 		<widget source="key_text" conditional="key_text" text="Move" render="FixedLabel" backgroundColor="OE_NewBg2" position="175,1040" size="250,35" font="RegularBold;26" zPosition="1"/>
@@ -550,37 +550,37 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 		<widget source="session.Event_Now" render="Label" position="1300,515" size="200,25" foregroundColor="blue_light" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="6">
 			<convert type="CpuUsage">CPU:$0</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="1300,540" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" transparent="1" borderWidth="2" borderColor="blue_light" zPosition="6">
+		<widget source="session.CurrentService" render="Progress" position="1300,540" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" transparent="1" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" zPosition="6">
 			<convert type="CpuUsage">$0</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="1300,555" size="610,50" backgroundColor="OE_NewBg2" font="RegularBold;20" transparent="1" zPosition="6">
 			<convert type="CpuUsage">Core1: $1 Core2: $2 Core3: $3 Core4: $4 Core5: $5 Core6: $6 Core7: $7 Core8: $8</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="1302,625" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" borderColor="blue_light" transparent="1" zPosition="5">
+		<widget source="session.CurrentService" render="Progress" position="1302,625" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" transparent="1" zPosition="5">
 			<convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1302,640" size="610,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 			<convert type="ProgressDiskSpaceInfo">MemTotal</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="1302,710" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" borderColor="blue_light" transparent="1" zPosition="5">
+		<widget source="session.CurrentService" render="Progress" position="1302,710" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" transparent="1" zPosition="5">
 			<convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1302,725" size="610,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 			<convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="1302,795" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" borderColor="blue_light" transparent="1" zPosition="5">
+		<widget source="session.CurrentService" render="Progress" position="1302,795" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" transparent="1" zPosition="5">
 			<convert type="ProgressDiskSpaceInfo">SwapFree</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1302,810" size="610,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 			<convert type="ProgressDiskSpaceInfo">SwapFree</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="1302,880" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" borderColor="blue_light" transparent="1" zPosition="5">
+		<widget source="session.CurrentService" render="Progress" position="1302,880" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" transparent="1" zPosition="5">
 			<convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1302,895" size="610,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
 			<convert type="ProgressDiskSpaceInfo">HddInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="1302,963" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" borderWidth="2" borderColor="blue_light" transparent="1" zPosition="5">
+		<widget source="session.CurrentService" render="Progress" position="1302,963" size="600,15" backgroundColor="OE_NewBg2" foregroundColor="#00fafa" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" transparent="1" zPosition="5">
 			<convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1302,978" size="610,70" backgroundColor="OE_NewBg2" font="RegularBold;21" transparent="1" zPosition="5">
