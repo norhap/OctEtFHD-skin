@@ -8,14 +8,14 @@
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_menu.png" position="18,980" size="64,43"/>
-	<widget name="config" font="RegularBold;25" itemHeight="50" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
 	<widget name="pleasewait" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,50" transparent="1" zPosition="2"/>
   </screen>
 
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoBouquetsMaker_ProvidersSetup" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" font="RegularBold;25" itemHeight="50" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
 	<widget name="pleasewait" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,50" transparent="1" zPosition="2"/>
   </screen>
 
@@ -117,7 +117,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="AntiScroll Setup" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -148,7 +148,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -240,7 +240,7 @@
 	<eLabel backgroundColor="white" name="" position="220,690" size="410,2" zPosition="-9"/>
 	<eLabel backgroundColor="white" name="" position="648,160" size="2,810" zPosition="-9"/>
 	<widget name="c_title" backgroundColor="OE_Background" foregroundColor="green_light" position="700,160" size="770,50" font="RegularBold;25" transparent="1" halign="center"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="700,220" size="770,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="700,220" size="770,750" transparent="1"/>
 	<!-- /*Buttons-->
 	<widget name="label_layout" position="305,750" size="240,20" font="Regular;15" valign="center" halign="center" transparent="1"/>
 	<widget name="label_tl" position="325,775" size="100,20" font="Console;15" valign="center" halign="center" zPosition="5" transparent="1" foregroundColor="red"/>
@@ -271,7 +271,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="AudioRestart Setup" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,875" size="1250,2" zPosition="-9" foregroundColor="white"/>
 	<widget name="PluginInfo" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,890" size="1250,45" transparent="1"/>
 	<!-- Buttons-->
@@ -295,7 +295,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,875" size="1250,2" zPosition="-9" foregroundColor="white"/>
 	<widget name="PluginInfo" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,890" size="1250,45" transparent="1"/>
 	<!-- Buttons-->
@@ -364,7 +364,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,650" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,650" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,825" size="1250,2" zPosition="-9" foregroundColor="white"/>
 	<widget source="help" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,840" size="1250,95" transparent="1"/>
 	<!-- Buttons-->
@@ -427,7 +427,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -483,7 +483,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,420" size="830,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="Edit Birthday" font="RegularBold;30" backgroundColor="OE_Background" position="240,363" size="830,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
-	<widget name="config" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="240,440" size="830,150" transparent="1" zPosition="3"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="240,440" size="830,150" transparent="1" zPosition="3"/>
 	<widget name="error" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="240,605" size="830,45" transparent="1" valign="center"/>
 	<widget name="HelpWindow" position="150,712" size="1,1" zPosition="10"/>
 	<!-- Button -->
@@ -502,7 +502,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="BirthdayReminder Setup" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -701,7 +701,7 @@
 	<eLabel text="Setup" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="300,50" transparent="1"/>
 	<ePixmap position="170,145" size="900,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Blu-ray/pic/blu-rayHD.png" alphatest="blend" zPosition="1"/>
 	<eLabel backgroundColor="white" name="" position="170,215" size="1250,2" zPosition="-9"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" backgroundColor="OE_Background" enableWrapAround="1" position="170,230" scrollbarMode="showOnDemand" size="1250,400" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" backgroundColor="OE_Background" enableWrapAround="1" position="170,230" scrollbarMode="showOnDemand" size="1250,400" transparent="1"/>
 	<widget name="plugin" position="170,635" size="533,300" alphatest="blend" zPosition="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
@@ -753,7 +753,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="170,960" size="40,40"/>
@@ -790,7 +790,7 @@
 	<!-- Widget -->
 	<widget source="Title" render="Label" position="680,85" size="800,50" font="RegularBold;30" halign="left" backgroundColor="OE_Background" transparent="1" foregroundColor="white"/>
 	<eLabel backgroundColor="blue_light" name="" position="680,142" size="700,2" zPosition="-9" foregroundColor="un5678a4"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="680,160" size="1160,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="680,160" size="1160,750" transparent="1"/>
 	<widget name="pic_tv" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Boblight-enigma2/pic/tv.png" position="115,center" size="500,387" zPosition="4" transparent="1" alphatest="on"/>
 	<widget name="pic_leftb" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Boblight-enigma2/pic/left-bottom.png" position="115,center" size="500,387" zPosition="5" transparent="1" alphatest="on"/>
 	<widget name="pic_leftt" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Boblight-enigma2/pic/left-top.png" position="115,center" size="500,387" zPosition="5" transparent="1" alphatest="on"/>
@@ -843,7 +843,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,420" size="900,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="240,363" size="900,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
-	<widget name="config" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="240,center" size="900,200" transparent="1" zPosition="3"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="240,center" size="900,200" transparent="1" zPosition="3"/>
 	<!-- Button -->
 	<eLabel backgroundColor="white" name="" position="240,655" size="900,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="240,670" size="40,40"/>
@@ -860,7 +860,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,370" size="1000,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="240,313" size="1000,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="240,385" size="1000,250" transparent="1" halign="left" valign="center" foregroundColor="white"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="240,385" size="1000,250" transparent="1" halign="left" valign="center" foregroundColor="white"/>
 	<widget name="infoLabel" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="white" halign="left" position="240,640" size="1000,45" transparent="1" valign="center"/>
 	<!-- /*Buttons-->
 	<eLabel backgroundColor="white" name="" position="240,700" size="1000,2" zPosition="-9"/>
@@ -880,7 +880,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="240,420" size="900,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="240,363" size="900,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
-	<widget name="config" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="240,center" size="900,200" transparent="1" zPosition="3"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="240,center" size="900,200" transparent="1" zPosition="3"/>
 	<!-- Button -->
 	<eLabel backgroundColor="white" name="" position="240,655" size="900,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="240,670" size="40,40"/>
@@ -901,7 +901,7 @@
 	<widget name="config_information" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="green_light" position="480,575" size="655,45" transparent="1" halign="left"/>
 	<eLabel backgroundColor="white" name="" position="1155,575" size="2,405" zPosition="-9"/>
 	<widget name="config_information_text" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="480,630" size="655,350" transparent="1" halign="left"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="480,200" size="1350,350" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="480,200" size="1350,350" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="75,560" size="380,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_1.png" position="65,70" size="64,43"/>
 	<ePixmap alphatest="blend" pixmap="skin_default/buttons/key_2.png" position="65,123" size="64,43"/>
@@ -980,7 +980,7 @@
   <screen name="CacheFlushSetupMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	<widget name="min_free_kb" position="1290,505" size="620,70" font="RegularBold;21" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="slide" scrollbarBorderWidth="2" position="1290,600" size="620,15" transparent="1" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa"/>
 	<widget name="memory" position="1290,625" size="620,70" font="RegularBold;21" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
@@ -1200,7 +1200,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,205" size="760,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,205" size="760,700" transparent="1"/>
 	<ePixmap position="170,145" size="530,50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Chefkoch/pic/chefkoch.png" alphatest="blend" zPosition="1"/>
 	<widget name="plugin" position="955,205" size="512,288" alphatest="blend" zPosition="1"/>
 	<!-- Buttons-->
@@ -1254,7 +1254,7 @@
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="800,50" transparent="1"/>
 	<ePixmap position="170,155" size="800,50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/clever-tanken/pic/logo_800.png" alphatest="blend" zPosition="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,225" size="800,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,225" size="800,700" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="800,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -1286,7 +1286,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="CDInfo" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,450" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,450" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,620" size="1250,2" zPosition="-9" foregroundColor="white"/>
 	<widget source="info" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,645" size="1250,125" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,790" size="1250,1" zPosition="-9" foregroundColor="white"/>
@@ -1331,7 +1331,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="Settings" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -1728,7 +1728,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="CoolTV Guide Setup" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,650" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,650" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,825" size="1250,2" zPosition="-9" foregroundColor="white"/>
 	<widget name="CoolText1" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,840" size="1250,45" transparent="1"/>
 	<widget name="CoolText2" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,890" size="1250,45" transparent="1"/>
@@ -1767,7 +1767,7 @@
   <screen name="CrossEPG_Setup" title="CrossEPG - Configuration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,665" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,665" transparent="1"/>
 	<widget name="information" position="1360,425" size="540,635" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 
@@ -2021,7 +2021,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" font="RegularBold;25" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -2105,7 +2105,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,875" size="1250,2" zPosition="-9" foregroundColor="white"/>
 	<widget name="information" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,890" size="1250,45" transparent="1"/>
 	<!-- Buttons-->
@@ -2207,7 +2207,7 @@
   <!-- DREAM IRC -->
   <screen name="dreamIRCSetupScreen" title="dreamIRC - edit settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="26,140" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="26,140" size="1250,750" transparent="1"/>
   </screen>
 
   <screen name="dreamIRCMainMenu" title="dreamIRC" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2302,7 +2302,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -2362,7 +2362,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" position="170,145" size="1250,550" transparent="1" foregroundColor="white" backgroundColor="OE_Background"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" position="170,145" size="1250,550" transparent="1" foregroundColor="white" backgroundColor="OE_Background"/>
 	<eLabel backgroundColor="white" name="" position="170,710" size="1250,2" zPosition="-9"/>
 	<widget source="info" render="Label" font="Regular;30" backgroundColor="OE_Background" position="170,720" size="1250,205" transparent="1" valign="center"/>
 	<!-- Buttons-->
@@ -2467,7 +2467,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" position="170,145" size="1250,550" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" position="170,145" size="1250,550" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,710" size="1250,2" zPosition="-9"/>
 	<widget name="thumbnail" font="Regular;30" backgroundColor="OE_Background" position="170,725" size="1250,205" transparent="1" valign="center"/>
 	<!-- Buttons-->
@@ -2491,7 +2491,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -2568,7 +2568,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -2629,7 +2629,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,145" size="1250,300" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,145" size="1250,300" transparent="1"/>
 	<widget name="pushlink" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/eHue/push-link.png" position="600,455" size="320,320" zPosition="4" transparent="0" alphatest="blend"/>
 	<widget name="msg" font="Regular;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,800" size="1250,110" zPosition="2" halign="center" valign="center" transparent="1"/>
 	<!-- Buttons-->
@@ -2652,7 +2652,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,145" size="1250,350" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,145" size="1250,350" transparent="1"/>
 	<ePixmap name="colorbar" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/eHue/colorbar.png" position="510,center" size="360,40" zPosition="4" transparent="0" alphatest="off"/>
 	<widget name="hueval" position="505,center" size="11,50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/eHue/slider.png" zPosition="5" alphatest="blend"/>
 	<widget source="Canvas" render="Canvas" position="600,581" size="180,100"/>
@@ -2674,7 +2674,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,145" size="1250,350" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,145" size="1250,350" transparent="1"/>
 	<widget source="Canvas" render="Canvas" position="600,581" size="180,100"/>
 	<ePixmap name="bulb" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/eHue/bulb.png" position="506,511" size="360,300" zPosition="4" transparent="1" alphatest="on"/>
 	<widget render="Label" source="info1" font="Regular;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,820" size="1250,110" zPosition="2" halign="center" valign="center" transparent="1"/>
@@ -2813,7 +2813,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -2830,7 +2830,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -2859,7 +2859,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -2980,7 +2980,7 @@
   <screen name="EPGImportConfig" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,600" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,600" transparent="1"/>
 	<widget name="status" position="1290,575" size="620,140" font="RegularBold;27" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="statusbar" position="1290,750" size="620,350" font="RegularBold;27" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,1035" size="64,43"/>
@@ -2996,7 +2996,7 @@
   <screen name="EPGImportProfile" title="EPGImportProfile" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,600" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,600" transparent="1"/>
   </screen>
 
   <screen name="EPGImportLog" title="EPG Import Log" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3008,7 +3008,7 @@
   <screen name="EPGSearchSetup" title="EPGSearch Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" backgroundColor="OE_Background" enableWrapAround="1" position="26,145" scrollbarMode="showOnDemand" size="1250,650" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" backgroundColor="OE_Background" enableWrapAround="1" position="26,145" scrollbarMode="showOnDemand" size="1250,650" transparent="1"/>
 	<widget source="help" render="Label" position="1290,575" size="620,635" font="RegularBold;27" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
 
@@ -3016,13 +3016,13 @@
   <screen name="EPGRefreshConfiguration" title="Configure EPGRefresh" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	<widget source="help" render="Label" position="1290,575" size="620,635" font="RegularBold;25" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
   <screen name="EPGSaveLoadConfiguration" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,820" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,820" transparent="1"/>
 	<widget source="help" render="Label" position="1290,645" size="620,200" font="RegularBold;25" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget source="epgcachelocation" render="Label" position="1290,645" size="620,200" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
   </screen>
@@ -3030,7 +3030,7 @@
   <screen name="EPGRefreshServiceEditor" title="Edit Services to refresh" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,650" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,650" transparent="1"/>
   </screen>
 
   <!-- ET-Portal -->
@@ -3061,7 +3061,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget render="Label" source="Title" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" backgroundColor="OE_Background" enableWrapAround="1" position="170,165" scrollbarMode="showOnDemand" size="1250,750" transparent="1" foregroundColor="white"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" backgroundColor="OE_Background" enableWrapAround="1" position="170,165" scrollbarMode="showOnDemand" size="1250,750" transparent="1" foregroundColor="white"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -3092,7 +3092,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -3109,7 +3109,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -3126,7 +3126,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -3143,7 +3143,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -3494,7 +3494,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
 	<widget name="HelpWindow" position="400,712" size="1,1" zPosition="10"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
@@ -3616,7 +3616,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -3676,7 +3676,7 @@
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
 	<ePixmap position="1200,885" size="270,50" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FOCUSOnline/pic/menu.png" alphatest="blend" zPosition="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,133" size="1250,350" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,133" size="1250,350" transparent="1"/>
 	<widget name="plugin" position="170,518" size="700,400" alphatest="blend" zPosition="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
@@ -3855,7 +3855,7 @@
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,205" size="1250,2" zPosition="-9"/>
 	<widget name="consideration" position="170,145" size="1250,45" font="RegularBold;25" backgroundColor="OE_Background" transparent="1" foregroundColor="green_light"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,220" size="1250,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,220" size="1250,700" transparent="1"/>
 	<widget name="HelpWindow" position="400,550" size="1,1" zPosition="10"/>
 	<!-- others-->
 	<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="78,905" size="64,43"/>
@@ -3951,7 +3951,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -4066,7 +4066,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,872" size="1250,1" zPosition="-9"/>
 	<widget name="info" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="white" position="170,885" size="1250,45" transparent="1"/>
 	<!-- Buttons-->
@@ -4209,7 +4209,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,700" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -4231,7 +4231,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,150" size="1250,400" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,150" size="1250,400" transparent="1"/>
 	<widget name="address" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="blue_light" position="170,560" size="640,45" transparent="1" zPosition="1" valign="center" halign="left"/>
 	<widget name="sendto" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="blue_light" position="830,560" size="640,45" transparent="1" zPosition="1" valign="center" halign="left"/>
 	<eLabel backgroundColor="white" name="" position="170,615" size="1250,2" zPosition="-9"/>
@@ -4261,7 +4261,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,150" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,150" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -4464,7 +4464,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="1250,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="1250,700" transparent="1"/>
 	<widget name="key_ok" font="RegularBold;28" foregroundColor="white" backgroundColor="OE_Background" position="170,894" zPosition="2" size="600,45" valign="center" halign="center" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
@@ -4533,7 +4533,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,550" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,550" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,720" size="1250,2" zPosition="-9" foregroundColor="white"/>
 	<widget name="LastDayStarted" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,730" size="1250,45" transparent="1"/>
 	<widget name="RemainingTime" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,780" size="1250,45" transparent="1"/>
@@ -4561,7 +4561,7 @@
 	<eLabel backgroundColor="blue_light" name="" position="80,142" size="520,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="RegularBold;30" position="630,85" size="750,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" backgroundColor="OE_Background" enableWrapAround="1" position="630,155" scrollbarMode="showOnDemand" size="1200,650" transparent="1" foregroundColor="white"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" backgroundColor="OE_Background" enableWrapAround="1" position="630,155" scrollbarMode="showOnDemand" size="1200,650" transparent="1" foregroundColor="white"/>
 	<eLabel backgroundColor="white" name="" position="630,810" size="1200,1" zPosition="-9"/>
 	<widget name="LCD1" position="70,155" zPosition="1" size="540,310" transparent="1" alphatest="on"/>
 	<widget source="LCD1text" render="Label" position="80,85" size="520,50" font="RegularBold;30" backgroundColor="OE_NewBg2" transparent="1" halign="left" foregroundColor="white"/>
@@ -4620,7 +4620,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="MeteoViewer Setup" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,140" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,140" size="1250,750" transparent="1"/>
 	<widget name="statusbar" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="right" position="820,958" size="650,45" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
@@ -4670,7 +4670,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="Setup Weather MSN" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,750" transparent="1"/>
 	<widget name="HelpWindow" position="170,550" zPosition="1" size="1,1" backgroundColor="OE_Background" transparent="1" alphatest="blend"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
@@ -4837,7 +4837,7 @@
 	<eLabel backgroundColor="dark" foregroundColor="OE_Background" name="" position="52,57" size="596,56" zPosition="-11" valign="center"/>
 	<!-- Page Title / Widget -->
 	<eLabel text="Picon Manager" position="95,61" size="550,50" font="EL_Standard;32" backgroundColor="dark" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="220,135" size="1250,800" transparent="1"/>
 	<!-- /*Buttons-->
 	<eLabel backgroundColor="white" name="" position="220,973" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="220,987" size="40,40"/>
@@ -4911,7 +4911,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="seyirTURKSetup" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -5237,7 +5237,7 @@
 	<widget name="baslik" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,205" size="1250,2" zPosition="-9"/>
 	<eLabel text="Uyelik Aktif Olmasini Istiyorsaniz Bilgileri Dogru Girmelisiniz" position="170,140" size="1250,55" font="RegularBold;25" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="config" itemHeight="42" font="Regular;30" backgroundColor="OE_Background" enableWrapAround="1" position="170,220" scrollbarMode="showOnDemand" size="1250,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" backgroundColor="OE_Background" enableWrapAround="1" position="170,220" scrollbarMode="showOnDemand" size="1250,700" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -5291,7 +5291,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget name="baslik" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="42" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -5312,7 +5312,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget name="baslik" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="42" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -5329,7 +5329,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget name="baslik" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="42" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" backgroundColor="OE_Background" foregroundColor="white" position="170,center" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -5527,7 +5527,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,600" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,165" size="1250,600" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="110,775" size="1250,2" zPosition="-9" foregroundColor="white"/>
 	<widget source="help" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="green_light" halign="left" position="170,785" size="1250,145" transparent="1"/>
 	<!-- Buttons-->
@@ -5796,7 +5796,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<eLabel text="YouTube Search" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="1250,50" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showNever" backgroundColor="OE_Background" foregroundColor="white" position="170,155" size="1250,50" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,210" size="1250,2" zPosition="-9"/>
 	<widget source="list" render="Listbox" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,230" size="1250,700" transparent="1">
 	    <convert type="TemplatedMultiContent">
@@ -5827,7 +5827,7 @@
 	<eLabel text="Setup" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
 	<widget source="Title" render="Label" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="white" position="170,145" size="1250,55" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,210" size="1250,2" zPosition="-9"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,225" size="1250,700" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,225" size="1250,700" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -5914,7 +5914,7 @@
 	<panel name="TemplatePip"/>
 	<widget source="sourceTitleInfo" render="Label" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" position="26,140" size="1250,50" transparent="1"/>
 	<widget source="sourceTitle" render="Label" backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="blue_light" position="26,210" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="26,280" size="1250,670" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="white" position="26,280" size="1250,670" transparent="1"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_blue.png" position="26,980" size="40,40"/>
 	<eLabel text="Subtitles" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="white" halign="left" valign="center" position="150,980" size="470,40" transparent="1" zPosition="1"/>
   </screen>
@@ -5951,7 +5951,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,750" transparent="1"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="170,945" size="1250,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -6047,7 +6047,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,650" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1250,650" transparent="1"/>
 	<eLabel backgroundColor="white" name="" position="170,820" size="1250,2" zPosition="-9" foregroundColor="white"/>
 	<widget source="fname" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,835" size="1250,45" transparent="1"/>
 	<widget source="dpath" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" halign="left" position="170,885" size="1250,45" transparent="1"/>
@@ -6147,7 +6147,7 @@
 	<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,130" size="1610,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" foregroundColor="white" position="170,73" size="1100,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1610,300" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" foregroundColor="white" position="170,160" size="1610,300" transparent="1"/>
 	<widget source="header_name" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="170,470" size="300,45" transparent="1"/>
 	<widget source="header_lang" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="475,470" size="1000,45" transparent="1"/>
 	<widget source="header_state" render="Label" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" halign="left" position="1480,470" size="300,45" transparent="1"/>
@@ -6189,25 +6189,25 @@
   <screen name="SubsSetupGeneral" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
   </screen>
 
   <screen name="SubsSetupExternal" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="white" position="26,140" size="1250,800" transparent="1"/>
   </screen>
 
   <screen name="SubsSetupDVBPlayer" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
   </screen>
 
   <screen name="SubsDownloadedSubtitlesMenu" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
   </screen>
 
   <screen name="SubsDownloadedSelection" position="fill" flags="wfNoBorder">
@@ -6237,7 +6237,7 @@
   <screen name="TMBDSettings" position="fill" flags="wfNoBorder">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="45" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" transparent="1"/>
   </screen>
 
 	<!-- ******************** CCcam Info ******************** -->
@@ -6291,7 +6291,7 @@
   <screen name="CCcamInfoConfigMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
 	<panel name="TemplatePip"/>
-	<widget name="config" itemHeight="45" position="26,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" position="26,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" transparent="1"/>
   </screen>
   <screen name="CCcamInfoEcmInfoSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 	<panel name="StanDardScreen"/>
