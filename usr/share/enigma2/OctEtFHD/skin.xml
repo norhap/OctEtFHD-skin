@@ -3621,8 +3621,8 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" position="26,140" size="1250,750" transparent="1"/>
-		<widget name="statusbar" position="1300,450" size="605,45" font="RegularBold;25" valign="center" halign="center" transparent="1"/>
-		<widget name="status" position="1300,550" size="605,510" font="RegularBold;25" valign="center" halign="center" transparent="1"/>
+		<widget name="statusbar" position="1300,450" size="605,45" font="RegularBold;25" valign="center" halign="center" backgroundColor="OE_NewBg2" transparent="1"/>
+		<widget name="status" position="1300,550" size="605,510" font="RegularBold;25" valign="center" halign="center" backgroundColor="OE_NewBg2" transparent="1"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,1035" size="64,43"/>
 	</screen>
 	<!-- CRON TIMERS -->
