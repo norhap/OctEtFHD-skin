@@ -3277,13 +3277,13 @@
 		<widget name="cancel" pixmap="buttons/key_green.png" position="500,980" size="0,0" alphatest="blend" backgroundColor="OE_Background"/>
 		<widget name="ok" position="410,635" size="0,0" backgroundColor="OE_Background"/>
 	</screen>
-	<!-- TIMER LOG -->
+	<!-- TIMEREDITLIST BUTTON INFO LOG -->
 	<screen name="TimerLog" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
-		<panel name="TemplateNoPip"/>
-		<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>	
+		<panel name="TemplatePip"/>
+		<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
 		<widget name="loglist" itemHeight="45" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,810" transparent="1"/>
-		<widget name="logentry" position="1290,575" size="620,635" font="RegularBold;25" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+		<widget name="logentry" position="1290,500" size="620,580" font="RegularBold;21" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 	<screen name="TimerSanityConflict" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1460,940" zPosition="-15"/>
