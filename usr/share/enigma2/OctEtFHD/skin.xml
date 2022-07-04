@@ -2719,8 +2719,8 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="list" font="Regular;28" itemHeight="75" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,820" transparent="1" zPosition="5"/>
-		<widget name="text" position="1360,500" size="550,100" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-		<widget source="session.CurrentService" render="Label" position="1480,550" size="350,510" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2">
+		<widget name="text" position="1290,500" size="620,100" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+		<widget source="session.CurrentService" render="Label" position="1290,700" size="620,100" font="RegularBold;25" halign="center" valign="center" backgroundColor="OE_NewBg2" transparent="1" zPosition="2">
 			<convert type="ProgressDiskSpaceInfo">FleshInfo,Full</convert>
 		</widget>
 	</screen>
