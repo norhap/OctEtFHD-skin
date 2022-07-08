@@ -104,6 +104,9 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="key_blue" render="Label" objectTypes="key_blue,StaticText" font="RegularBold;24" backgroundColor="OE_Background" position="1020,965" size="260,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+		<widget source="key_info" render="Pixmap" pixmap="buttons/key_info.png" objectTypes="key_info,StaticText" backgroundColor="OE_NewBg2" position="80,1035" size="64,43" alphatest="blend" zPosition="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 	</screen>
 		<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE SCREENS INFORMATION-->
 	<screen name="ButtonsInformation">

@@ -3254,7 +3254,7 @@
 	<screen name="TimerEditList" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<ePixmap alphatest="blend" pixmap="buttons/key_info.png" position="18,1035" size="64,43"/>
+		<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="18,1035" size="64,43"/>
 		<widget name="timerlist" itemHeight="95" setEventNameFont="RegularBold;21" setServiceNameFont="RegularBold;22" setFont="RegularBold;23" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" position="26,140" satPosLeft="400" rowSplit="45" size="1250,809" transparent="1"/>
 		<widget name="key_info" conditional="key_info" position="48,960" size="0,0" zPosition="-20"/>
 		<widget name="description" objectTypes="description,Button,Label" position="1290,500" size="620,580" font="RegularBold;21" halign="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
