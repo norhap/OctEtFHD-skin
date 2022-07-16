@@ -3263,7 +3263,7 @@
 	<screen name="TimerEntry" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,820" transparent="1"/>
+		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,815" transparent="1"/>
 		<widget name="cancel" conditional="cancel" position="170,980" size="0,0" backgroundColor="OE_Background"/>
 		<widget name="canceltext" conditional="canceltext" position="220,965" size="0,0" backgroundColor="OE_Background"/>
 		<widget name="ok" conditional="ok" position="500,980" size="0,0" backgroundColor="OE_Background"/>
