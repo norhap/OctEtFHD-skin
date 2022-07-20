@@ -242,6 +242,7 @@
 	<screen name="LanguageWizard" title="Language Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 		<panel name="TemplateWizard"/>
 		<panel name="TemplateRemoteControl"/>
+		<panel name="ButtonsInformation"/>
 		<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
 		<eLabel backgroundColor="#0000fafa" name="" position="445,275" size="1430,2" zPosition="-8"/>
 		<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,715" transparent="1">
@@ -255,10 +256,21 @@
 			</convert>
 		</widget>
 	</screen>
+	<!-- TIME WIZARD-->
+	<screen name="TimeWizard" title="Time Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+		<panel name="TemplateWizard"/>
+		<panel name="ButtonsInformation"/>
+		<panel name="TemplateRemoteControl"/>
+		<panel name="TemplateWizardLanguage"/>
+		<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1430,200" transparent="1"/>
+		<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1430,2" zPosition="-9"/>
+		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,390" size="1430,655" zPosition="1"/>
+	</screen>
 	<!-- VIDEO WIZARD-->
 	<screen name="VideoWizard" title="Video Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 		<panel name="TemplateWizard"/>
 		<panel name="TemplateRemoteControl"/>
+		<panel name="TemplateWizardLanguage"/>
 		<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,160" size="1430,300" transparent="1"/>
 		<eLabel backgroundColor="#0000fafa" name="" position="445,470" size="1430,2" zPosition="-9"/>
 		<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,480" size="1430,525" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1">
@@ -273,6 +285,7 @@
 	</screen>
 	<!-- VIDEO MODE-->
 	<screen name="VideoMode" title="VideoMode" backgroundColor="transparent" flags="wfNoBorder" position="0,50" size="500,92" zPosition="8">
+		<panel name="TemplateWizardLanguage"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" name="" position="0,0" size="500,45" zPosition="-11" valign="center"/>
 		<eLabel backgroundColor="white" position="0,45" size="500,2"/>
 		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="0,47" size="500,45" zPosition="-15"/>
@@ -283,6 +296,7 @@
 		<screen name="NetworkWizard" title="Network Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 		<panel name="TemplateWizard"/>
 		<panel name="TemplateRemoteControl"/>
+		<panel name="TemplateWizardLanguage"/>
 		<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,50" size="1430,550" transparent="1"/>
 		<eLabel backgroundColor="#0000fafa" name="" position="445,495" size="1430,2" zPosition="-9"/>
 		<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,500" size="1430,500" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1">
@@ -299,6 +313,7 @@
 	<screen name="StartWizard" title="Start Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 		<panel name="TemplateWizard"/>
 		<panel name="TemplateRemoteControl"/>
+		<panel name="TemplateWizardLanguage"/>
 		<widget name="text" conditional="text" font="RegularBold;26" halign="left" valign="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1430,200" transparent="1"/>
 		<eLabel text="Progress:" font="RegularBold;34" backgroundColor="OE_Background" position="445,335" size="215,45" transparent="1"/>
 		<eLabel backgroundColor="#0000fafa" name="" position="445,385" size="1430,2" zPosition="-9"/>
@@ -315,6 +330,7 @@
 	<!-- INSTALL WIZARD -->
 	<screen name="InstallWizard" backgroundColor="transparent" title="Welcome..." position="0,center" size="1920,1080" transparent="0">
 		<panel name="TemplateWizard"/>
+		<panel name="TemplateWizardLanguage"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="445,130" size="1430,200" transparent="1"/>
 	</screen>
 	<!-- OPKG UPDATER -->
