@@ -1593,7 +1593,7 @@
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">InMinutes</convert>
 	</widget>
-	<widget name="timeline_text" selectionDisabled="1" position="center,310" size="1820,46" backgroundColor="OE_NewBg2" transparent="0" foregroundColor="white" font="RegularBold;28"/>
+	<widget name="timeline_text" selection="0" position="center,310" size="1820,46" backgroundColor="OE_NewBg2" transparent="0" foregroundColor="white" font="RegularBold;28"/>
 	<widget source="Event" render="Label" font="Regular;28" backgroundColor="OE_Background" transparent="1" position="80,195" size="1760,105" zPosition="1">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
@@ -1624,7 +1624,7 @@
 	<!-- Widget -->
 	<eLabel text="Cool Nice Guide" backgroundColor="OE_Background" font="RegularBold;30" position="80,85" size="350,50" transparent="1" foregroundColor="white"/>
 	<widget source="Title" render="Label" backgroundColor="OE_Background" font="RegularBold;30" position="630,85" size="900,50" transparent="1" halign="left" foregroundColor="white"/>
-	<widget name="timeline_text" selectionDisabled="1" position="center,150" size="1820,46" backgroundColor="OE_NewBg2" transparent="0" foregroundColor="white" font="RegularBold;28"/>
+	<widget name="timeline_text" selection="0" position="center,150" size="1820,46" backgroundColor="OE_NewBg2" transparent="0" foregroundColor="white" font="RegularBold;28"/>
 	<widget name="list" position="center,210" size="1760,680" CoolBorderColR="#000000" CoolBorderColL="#000000" scrollbarMode="showNever" transparent="1"/>
 	<widget name="timeline_now" position="0,205" zPosition="2" size="17,685" pixmap="extensions/timeline-now.png" alphatest="blend"/>
 	<!-- Buttons-->
@@ -1666,7 +1666,7 @@
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">InMinutes</convert>
 	</widget>
-	<widget name="timeline_text" selectionDisabled="1" position="center,310" size="1820,46" backgroundColor="OE_NewBg2" transparent="0" foregroundColor="white" font="RegularBold;28"/>
+	<widget name="timeline_text" selection="0" position="center,310" size="1820,46" backgroundColor="OE_NewBg2" transparent="0" foregroundColor="white" font="RegularBold;28"/>
 	<widget source="Event" render="Label" font="Regular;28" backgroundColor="OE_Background" transparent="1" position="80,195" size="1760,105" zPosition="1">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
@@ -5348,7 +5348,7 @@
 	<eLabel backgroundColor="white" position="245,220" size="1100,70" zPosition="1"/>
 	<eLabel backgroundColor="OE_Background" position="250,225" size="1090,60" zPosition="2" font="Regular;24"/>
 	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" halign="right" name="text" noWrap="1" position="255,227" size="1070,55" zPosition="3"/>
-	<widget name="list" selectionDisabled="1" position="325,310" size="950,620" transparent="1"/>
+	<widget name="list" selection="0" position="325,310" size="950,620" transparent="1"/>
 	<!-- Clock -->
 	<panel name="Clock"/>
   </screen>
@@ -5890,7 +5890,7 @@
 	<eLabel backgroundColor="white" position="245,220" size="1100,70" zPosition="1"/>
 	<eLabel backgroundColor="OE_Background" position="250,225" size="1090,60" zPosition="2" font="Regular;24"/>
 	<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" halign="right" name="text" noWrap="1" position="255,227" size="1070,55" zPosition="3"/>
-	<widget name="list" selectionDisabled="1" position="325,310" size="950,620" transparent="1"/>
+	<widget name="list" selection="0" position="325,310" size="950,620" transparent="1"/>
 	<widget source="country" render="Pixmap" position="80,80" size="60,40" alphatest="on" scrollbarBorderWidth="2" borderColor="white">
 	    <convert type="ValueToPixmap">LanguageCode</convert>
 	</widget>
