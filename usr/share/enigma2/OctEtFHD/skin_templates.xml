@@ -394,9 +394,9 @@
 	</screen>
 		<!-- WIZARD LANGUAGE TEMPLATE-->
 	<screen name="TemplateWizardLanguage">
-		<widget name="languagetext" conditional="languagetext" backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" valign="center" position="115,980" size="315,65" transparent="1" zPosition="1"/>
-		<widget objectTypes="key_red,Label,Button" name="key_red" font="RegularBold;24" backgroundColor="OE_Background" position="475,980" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
-		<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="65,990" size="40,40"/>
+		<widget name="languagetext" conditional="languagetext" backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" valign="center" position="115,1000" size="315,65" transparent="1" zPosition="1"/>
+		<widget objectTypes="key_red,Label,Button" name="key_red" font="RegularBold;24" backgroundColor="OE_Background" position="475,1000" size="270,70" halign="left" valign="center" transparent="1" zPosition="1"/>
+		<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="65,1010" size="40,40"/>
 	</screen>
 		<!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
