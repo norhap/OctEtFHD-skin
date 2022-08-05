@@ -654,7 +654,7 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
-		<widget source="session.Event_Next" backgroundColor="OE_Accent1" scrollbarBorderWidth="0" pixmap="colors/00A4C400.png" position="665,673" size="1020,2" render="Progress" transparent="0" zPosition="1">
+		<widget source="session.Event_Next" backgroundColor="OE_Accent1" pixmap="colors/00A4C400.png" position="665,673" size="1020,2" render="Progress" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/ip_tv.png" position="1038,967" size="63,32" zPosition="2" alphatest="blend">
@@ -1078,13 +1078,13 @@
 		<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" foregroundColor="green_light" halign="left" position="50,325" size="500,45" transparent="1" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="blue_light" scrollbarBorderWidth="0" pixmap="colors/00A4C400.png" position="50,365" render="Progress" size="500,5" source="ServiceEvent" transparent="0" zPosition="1">
+		<widget backgroundColor="blue_light" pixmap="colors/00A4C400.png" position="50,365" render="Progress" size="500,5" source="ServiceEvent" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="left" position="50,380" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="500,330" source="ServiceEvent" transparent="1" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget backgroundColor="blue_light" foregroundColor="blue_light" scrollbarBorderWidth="0" position="50,720" render="Progress" size="500,5" source="Event" transparent="0" zPosition="1">
+		<widget backgroundColor="blue_light" foregroundColor="blue_light" position="50,720" render="Progress" size="500,5" source="Event" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,725" size="500,25" font="RegularBold;22"
@@ -1313,7 +1313,7 @@
 			<convert type="RemainingToText">NoSeconds</convert>
 		</widget>
 		<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="81,244" size="570,1"/>
-		<widget backgroundColor="OE_PreBlack2" scrollbarBorderWidth="0" pixmap="colors/00A4C400.png" position="80,242" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
+		<widget backgroundColor="OE_PreBlack2" pixmap="colors/00A4C400.png" position="80,242" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="Regular;29" halign="left" position="80,260" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="570,563" source="ServiceEvent" transparent="1" valign="top">
@@ -1671,7 +1671,7 @@
 		<panel name="MultiEPGEventView"/>
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
 		<widget name="epg_eventname" position="35,122" size="0,0" font="Regular;22" halign="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
-		<widget source="Event" render="Progress" backgroundColor="blue_light" scrollbarBorderWidth="0" pixmap="colors/00A4C400.png" position="40,140" size="290,6" transparent="0" zPosition="3">
+		<widget source="Event" render="Progress" backgroundColor="blue_light" pixmap="colors/00A4C400.png" position="40,140" size="290,6" transparent="0" zPosition="3">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget name="channel" font="RegularBold;34" backgroundColor="OE_Background" position="350,90" size="830,50" halign="left" transparent="1"/>
@@ -3229,10 +3229,12 @@
 		<!-- Clock -->
 		<panel name="Clock"/>
 	</screen>
+	<!-- TIME DATE INPUT -->
 	<screen name="TimeDateInput" title="Time/Date Input" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="30,center" size="1070,270" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="70,center" size="80,340" zPosition="-11" valign="center"/>
 		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="170,470" size="900,2" zPosition="-9"/>
+		<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="75,center" size="78,75" zPosition="4"/>
 		<!-- Widget -->
 		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,413" size="900,50" transparent="1" valign="center" zPosition="3" foregroundColor="white"/>
 		<widget name="config" itemHeight="45" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,490" size="900,100" transparent="1" zPosition="3"/>
@@ -3240,10 +3242,9 @@
 		<eLabel backgroundColor="white" name="" position="170,605" size="900,2" zPosition="-9"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="170,620" size="40,40"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_green.png" position="500,620" size="40,40"/>
-		<widget name="canceltext" font="Regular;28" backgroundColor="OE_Background" position="215,620" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-		<widget name="oktext" font="Regular;28" backgroundColor="OE_Background" position="545,620" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-		<widget name="cancel" font="Regular;28" backgroundColor="OE_Background" position="215,620" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
-		<widget name="ok" font="Regular;28" backgroundColor="OE_Background" position="545,620" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="445,825" size="0,0" transparent="1" zPosition="10" alphatest="on"/>
+		<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" position="215,620" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
+		<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="545,620" size="280,40" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<!-- Clock -->
 		<panel name="Clock"/>
 	</screen>

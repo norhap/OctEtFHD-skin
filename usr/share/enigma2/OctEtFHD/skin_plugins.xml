@@ -1366,7 +1366,7 @@
 	    <convert type="ClockToText"></convert>
 	</widget>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="80,200" size="520,2"/>
-	<widget source="Event" render="Progress" backgroundColor="OE_PreBlack2" scrollbarBorderWidth="0" pixmap="colors/00A4C400.png" position="80,198" size="520,6" transparent="1" zPosition="1">
+	<widget source="Event" render="Progress" backgroundColor="OE_PreBlack2" pixmap="colors/00A4C400.png" position="80,198" size="520,6" transparent="1" zPosition="1">
 	    <convert type="EventTime">Progress</convert>
 	</widget>
 	<widget source="Event" render="Label" backgroundColor="OE_Background" font="RegularBold;28" halign="right" position="435,153" size="165,40" transparent="1">
@@ -3356,7 +3356,7 @@
 	<widget name="pic5" position="35,480" size="90,90" alphatest="blend" zPosition="1"/>
 	<widget name="pic6" position="35,570" size="90,90" alphatest="blend" zPosition="1"/>
 	<widget name="picpost" position="35,72" size="180,120" alphatest="blend" zPosition="1"/>
-	<widget name="score" position="235,74" size="160,32" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FragMutti/pic/logos/score.png" scrollbarBorderWidth="0" orientation="orHorizontal" transparent="1" zPosition="1"/>
+	<widget name="score" position="235,74" size="160,32" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FragMutti/pic/logos/score.png" orientation="orHorizontal" transparent="1" zPosition="1"/>
 	<widget name="scoreback" position="235,74" size="160,32" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FragMutti/pic/logos/score_back.png" alphatest="on" zPosition="2"/>
 	<widget name="scoretext" font="Regular;20" backgroundColor="OE_Background" foregroundColor="white" position="235,145" size="160,30" halign="center" transparent="1" zPosition="1"/>
 	<widget name="textpage" font="RegularBold;22" backgroundColor="OE_Background" foregroundColor="white" transparent="1" position="36,230" size="1210,430" halign="left" zPosition="0"/>
@@ -4792,7 +4792,7 @@
 	<widget name="spicon" position="85,730" size="660,45" font="RegularBold;28" transparent="1" zPosition="1" halign="left" foregroundColor="white" backgroundColor="OE_NewBg2"/>
 	<widget name="piconslider" position="395,400" size="350,45" zPosition="2" transparent="0" foregroundColor="green_light" backgroundColor="OE_Blue"/>
 	<widget name="list" itemHeight="45" position="790,160" size="1040,750" scrollbarMode="showOnDemand" transparent="1" backgroundColor="OE_Background"/>
-	<widget name="picon" position="344,785" size="400,240" zPosition="4" transparent="1" scrollbarBorderWidth="0" borderColor="OE_Background" alphatest="blend" halign="center"/>
+	<widget name="picon" position="344,785" size="400,240" zPosition="4" transparent="1" borderColor="OE_Background" alphatest="blend" halign="center"/>
 	<!-- Buttons-->
 	<eLabel backgroundColor="white" name="" position="790,930" size="1040,2" zPosition="-9"/>
 	<ePixmap alphatest="blend" pixmap="buttons/key_red.png" position="790,950" size="40,40"/>
