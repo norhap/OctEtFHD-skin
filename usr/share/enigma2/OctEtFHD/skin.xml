@@ -1669,6 +1669,7 @@
 	<!-- EVENT VIEW -->
 	<screen name="EventView" title="Eventview" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="MultiEPGEventView"/>
+		<ePixmap pixmap="buttons/key_help.png" position="260,950" size="64,43" zPosition="2" alphatest="blend"/>
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
 		<widget name="epg_eventname" position="35,122" size="0,0" font="Regular;22" halign="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
 		<widget source="Event" render="Progress" backgroundColor="blue_light" pixmap="colors/00A4C400.png" position="40,140" size="290,6" transparent="0" zPosition="3">
@@ -2045,7 +2046,7 @@
 		<panel name="autoresize"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
 		<widget name="list" conditional="list" itemHeight="50" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="26,140" size="1250,100" transparent="1"/>
-		<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" position="150,370" size="1000,430" halign="center" valign="top"/>
+		<widget name="text" font="RegularBold;27" backgroundColor="OE_Background" position="26,370" size="1250,670" halign="center" valign="top"/>
 		<widget name="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="610,265" size="80,80" alphatest="blend"/>
 		<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="610,265" size="80,80" alphatest="blend"/>
 		<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="610,265" size="80,80" alphatest="blend"/>
