@@ -3,32 +3,32 @@
 		<!-- CLOCK TEMPLATES -->
 		<!-- <panel name="Clock"/> -->
 	<screen name="Clock">
-		<eLabel backgroundColor="OE_NewBg2" position="1390,5" size="490,75" transparent="0" zPosition="2"/>
-		<eLabel backgroundColor="blue_light" name="" position="1392,7" size="485,1" zPosition="2"/>
-		<eLabel backgroundColor="blue_light" name="" position="1392,7" size="1,70" zPosition="2"/>
-		<eLabel backgroundColor="blue_light" name="" position="1877,7" size="1,70" zPosition="2"/>
-		<eLabel backgroundColor="blue_light" name="" position="1392,77" size="486,1" zPosition="2"/>
-		<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="1735,13" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+		<eLabel backgroundColor="OE_NewBg2" position="1370,5" size="543,75" transparent="0" zPosition="2"/>
+		<eLabel backgroundColor="blue_light" name="" position="1372,7" size="540,1" zPosition="2"/>
+		<eLabel backgroundColor="blue_light" name="" position="1372,7" size="1,70" zPosition="2"/>
+		<eLabel backgroundColor="blue_light" name="" position="1911,7" size="1,70" zPosition="2"/>
+		<eLabel backgroundColor="blue_light" name="" position="1372,77" size="540,1" zPosition="2"/>
+		<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="1715,13" zPosition="3" render="Label" size="195,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center"  valign="center" position="1393,10" zPosition="3" render="Label" size="332,65" source="global.CurrentTime" transparent="1">
+		<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center"  valign="center" position="1373,10" zPosition="3" render="Label" size="352,65" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">LongDate</convert>
 		</widget>
 	</screen>
 		<!-- CLOCK EPG -->
 	<screen name="FrameClock">
-		<eLabel backgroundColor="OE_NewBg2" position="1425,0" size="485,72" transparent="0" zPosition="2" foregroundColor="white"/>
-		<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="1770,5" zPosition="3" render="Label" size="155,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+		<eLabel backgroundColor="OE_NewBg2" position="1385,0" size="525,72" transparent="0" zPosition="2" foregroundColor="white"/>
+		<widget backgroundColor="OE_NewBg" font="RegularBold;40" halign="left" position="1690,5" zPosition="3" render="Label" size="195,60" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center"  valign="center" position="1427,5" zPosition="3" render="Label" size="328,65" source="global.CurrentTime" transparent="1">
+		<widget backgroundColor="OE_NewBg2" font="RegularBold;24" halign="center"  valign="center" position="1377,5" zPosition="3" render="Label" size="328,65" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">LongDate</convert>
 		</widget>
 	</screen>
 		<!-- CLOCK INFORMATION -->
 	<screen name="ClockInformation">
 		<eLabel backgroundColor="OE_NewBg2" position="0,45" size="400,72" transparent="0" zPosition="2" foregroundColor="white"/>
-		<widget backgroundColor="OE_NewBg" font="RegularBold;30" halign="left" position="150,30" zPosition="3" render="Label" size="88,30" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
+		<widget backgroundColor="OE_NewBg" font="RegularBold;30" halign="left" position="150,30" zPosition="3" render="Label" size="150,30" source="global.CurrentTime" transparent="1" valign="center" foregroundColor="white">
 			<convert type="ClockToText"></convert>
 		</widget>
 		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" halign="center" valign="center" position="0,93" zPosition="3" render="Label" size="395,30" source="global.CurrentTime" transparent="1">
@@ -277,6 +277,7 @@
 	<screen name="TemplateGraphicalEPG">
 		<panel name="FrameClock"/>
 		<panel name="TemplateFrame"/>
+		<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" halign="center" valign="center" position="150,10" size="1230,45" transparent="1" zPosition="10"/>
 		<!-- Event -->
 		<widget backgroundColor="OE_Background" font="RegularBold;28" position="160,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="1000,50" source="Event" transparent="1" halign="left">
 			<convert type="EventName">Name</convert>
@@ -284,11 +285,11 @@
 		<widget backgroundColor="blue_light" pixmap="colors/00A4C400.png" position="160,160" render="Progress" size="950,6" source="Event" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="150,130" size="100,45" halign="center" transparent="1">
+		<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="150,130" size="150,45" halign="center" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="1020,130" size="100,45" halign="center" transparent="1">
+		<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="970,130" size="150,45" halign="center" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
@@ -331,7 +332,7 @@
 		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,1077" size="1279,3" zPosition="-15"/>
 		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="5,0" size="3,1078" zPosition="-15"/>
 		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="1281,0" size="3,1078" zPosition="-15"/>
-		<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="1300,5" size="75,75" transparent="1" zPosition="1"/>
+		<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="1290,5" size="75,75" transparent="1" zPosition="1"/>
 		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="26,138" size="1250,2" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" name="" position="26,965" size="1250,2" zPosition="-9"/>
 		<eLabel name="" foregroundColor="white" backgroundColor="blue_light" position="20,1033" size="1261,2" zPosition="-15"/>
