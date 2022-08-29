@@ -3044,6 +3044,20 @@
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 	</screen>
+	<!-- DISH PiP-->
+	<screen name="Dishpip" backgroundColor="transparent" flags="wfNoBorder" position="20,75" size="550,250" title="Dish" zPosition="2">
+		<widget alphatest="off" name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="256,256"/>
+		<widget name="turnTime" position="260,20" size="150,30" zPosition="1" font="RegularBold;24" transparent="1"/>
+		<widget name="From" position="260,60" size="110,30" zPosition="1" font="RegularBold;22" transparent="1"/>
+		<widget name="posFrom" position="390,60" size="160,30" zPosition="1" font="RegularBold;24" transparent="1"/>
+		<widget name="Goto" position="260,100" size="110,30" zPosition="1" font="RegularBold;22" foregroundColor="green_light" transparent="1"/>
+		<widget name="posGoto" position="390,100" size="160,30" zPosition="1" font="RegularBold;24" foregroundColor="green_light" transparent="1"/>
+		<widget name="tunerName" position="230,140" size="220,30" zPosition="2" font="RegularBold;24" foregroundColor="blue_light" halign="left" transparent="1"/>
+		<widget name="turnSpeed" position="230,180" size="220,30" zPosition="2" font="RegularBold;24" halign="left" transparent="1"/>
+		<widget source="session.FrontendStatus" render="Progress" position="230,210" size="200,20" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" foregroundColor="blue_light" zPosition="2">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+	</screen>
 	<!-- POSITIONER SELECTING SATELLITES-->
 	<screen name="SelectSatsEntryScreen" title="Select Sats Entry" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
