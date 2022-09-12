@@ -886,7 +886,7 @@
 	<screen name="AudioSelection" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<eLabel backgroundColor="blue_light" position="26,415" size="1250,5"/>
+		<eLabel backgroundColor="blue_light" position="26,515" size="1250,5"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_menu.png" position="18,1035" size="64,43"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_ok.png" position="85,1035" size="64,43"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="152,1035" size="64,43"/>
@@ -904,8 +904,8 @@
 		<widget source="key_blue" alphatest="blend" pixmap="buttons/key_blue.png" position="26,305" size="40,40" render="Pixmap" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" position="70,155" size="1185,250" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1" zPosition="3"/>
-		<widget source="streams" render="Listbox" position="26,435" size="1250,365" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1" zPosition="3">
+		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" position="70,155" size="1185,350" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1" zPosition="3"/>
+		<widget source="streams" render="Listbox" position="26,535" size="1250,365" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 				{"default": (50, [
@@ -2861,11 +2861,11 @@
 		<widget name="config" itemHeight="40" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="262,10" size="920,450" transparent="1"/>
 		<widget name="videofps" position="105,290" size="910,40" backgroundColor="OE_Background" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" foregroundColor="blue"/>
 		<ePixmap alphatest="blend" pixmap="colors/o_logo.png" position="85,30" size="75,75" zPosition="1"/>
-		<ePixmap alphatest="blend" pixmap="buttons/key_ok.png" position="15,300" size="64,43" zPosition="1"/>
-		<widget name="save" position="23,295" size="210,55" backgroundColor="OE_Background" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center"/>
-		<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="30,360" size="40,40"/>
-		<widget name="key_red" position="85,370" size="150,35" backgroundColor="OE_Background" transparent="1" zPosition="1" font="Regular;24"/>
-		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="445,825" size="0,0" transparent="1" zPosition="10" alphatest="on"/>
+		<ePixmap alphatest="blend" pixmap="buttons/key_ok.png" position="15,150" size="64,43" zPosition="1"/>
+		<widget name="save" position="23,145" size="210,55" backgroundColor="OE_Background" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center"/>
+		<ePixmap objectTypes="key_red,Button,Label" alphatest="blend" pixmap="buttons/key_red.png" position="30,210" size="40,40"/>
+		<widget name="key_red" position="85,220" size="150,35" backgroundColor="OE_Background" transparent="1" zPosition="1" font="Regular;24"/>
+		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="445,260" size="0,0" transparent="1" zPosition="10" alphatest="on"/>
 	</screen>
 		<screen name="QuickSubtitlesClearRests" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
