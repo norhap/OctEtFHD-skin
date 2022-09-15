@@ -892,6 +892,9 @@
 		<ePixmap alphatest="blend" pixmap="buttons/key_exit.png" position="152,1035" size="64,43"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_leftright.png" position="219,1035" size="64,43"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_downup.png" position="286,1035" size="64,43"/>
+		<widget source="key_help" alphatest="blend" pixmap="buttons/key_help.png" position="353,1035" size="64,43" render="Pixmap" zPosition="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="key_red" alphatest="blend" pixmap="buttons/key_red.png" position="26,155" render="Pixmap" size="40,40" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
