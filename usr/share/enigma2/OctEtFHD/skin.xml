@@ -4323,7 +4323,7 @@
 		<panel name="ButtonsVisionCore"/>
 		<ePixmap pixmap="buttons/key_info.png" position="165,905" size="64,43" alphatest="blend"/>
 		<widget name="lab8" position="330,140" size="170,50" font="RegularBold;26" halign="right" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
-		<widget name="activecam" position="530,140" size="1370,35" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
+		<widget name="activecam" position="530,140" size="1370,70" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
 		<widget name="lab7" position="410,310" size="600,35" font="RegularBold;26" halign="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 		<widget name="list" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,350" zPosition="10" size="1490,590" transparent="1"/>
 		<applet type="onLayoutFinish">
