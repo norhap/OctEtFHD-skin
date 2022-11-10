@@ -2617,21 +2617,27 @@
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,760" transparent="1"/>
 	</screen>
 	<!-- OSCAMINFO NCAMINFO-->
-	<screen name="oscamInfoMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<screen name="OSCamInfoMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="mainmenu" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,145" size="1250,800" transparent="1"/>
 	</screen>
-	<screen name="ncamInfoMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<screen name="NCamInfoMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="mainmenu" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,145" size="1250,800" transparent="1"/>
 	</screen>
-	<screen name="oscECMInfo" backgroundColor="transparent" title="ECMInfo" position="center,center" size="1920,1080">
+	<screen name="OSCamECMInfo" backgroundColor="transparent" title="ECMInfo" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="output" itemHeight="50" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	</screen>
+	<screen name="NCamECMInfo" backgroundColor="transparent" title="ECMInfo" position="center,center" size="1920,1080">
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<widget name="output" itemHeight="50" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+	</screen>
+	<!-- OSCAMINFO NCAMINFO DEPRECATED-->
 	<screen name="OscamInfoConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
