@@ -198,7 +198,7 @@
 		<widget alphatest="blend" position="140,150" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="Event" font="RegularBold;25" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="45,575" size="435,350" transparent="1" halign="left" valign="top" zPosition="2">
+		<widget source="Event" font="RegularBold;25" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="45,575" size="435,350" transparent="1" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<!-- Buttons -->
