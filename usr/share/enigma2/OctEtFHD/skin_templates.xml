@@ -47,9 +47,12 @@
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="20,15" size="270,1050" zPosition="-10"/>
 		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="15,30" size="1180,1020" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="15,29" size="1180,2" zPosition="-15"/>
+		<eLabel backgroundColor="OE_NewBg2" position="290,24" size="912,5" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="15,1049" size="1182,2" zPosition="-15"/>
+		<eLabel backgroundColor="OE_NewBg2" position="290,1051" size="912,5" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="15,029" size="2,1021" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="1195,029" size="2,1021" zPosition="-15"/>
+		<eLabel backgroundColor="OE_NewBg2" position="1197,029" size="5,1023" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="295,165" size="895,2" zPosition="-9"/>
 		<!--  Widget -->
 		<widget source="title" render="Label" font="RegularBold;35" backgroundColor="OE_Background" position="290,55" size="905,85" transparent="1" verticalAlignment="center" horizontalAlignment="center"/>
