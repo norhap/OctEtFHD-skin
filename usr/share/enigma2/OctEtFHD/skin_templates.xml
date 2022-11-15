@@ -63,7 +63,7 @@
 				[
 				MultiContentEntryText(pos = (15, 12), size = (895, 60), color_sel = 0x00a2f0f7, text = 0)
 				],
-				"fonts": [gFont("RegularBold", 34)],
+				"fonts": [gFont("RegularBold", 36)],
 				"itemHeight": 64
 				}
 			</convert>
