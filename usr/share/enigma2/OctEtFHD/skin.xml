@@ -597,10 +597,10 @@
 		<widget alphaTest="blend" position="135,10" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName2">Reference</convert>
 		</widget>
-		<widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_NewBg" foregroundColor="OE_Foreground" font="RegularBold;38" verticalAlignment="center" horizontalAlignment="center" position="25,200" size="440,48" transparent="1" zPosition="1"/>
-		<widget source="session.CurrentService" render="Label" horizontalAlignment="center" verticalAlignment="center" position="25,250" size="440,45" font="RegularBold;30" noWrap="1" backgroundColor="OE_NewBg" transparent="1">
+		<widget source="session.CurrentService" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" position="25,170" size="440,45" font="RegularBold;30" noWrap="1" backgroundColor="OE_NewBg" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
+		<widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_NewBg" foregroundColor="OE_Foreground" font="RegularBold;38" verticalAlignment="center" horizontalAlignment="center" position="25,250" size="440,48" transparent="1" zPosition="1"/>
 		<widget source="session.CurrentService" render="Label" font="RegularBold;28" foregroundColor="yellow" backgroundColor="OE_NewBg" noWrap="1" position="25,300" size="440,45" horizontalAlignment="center" verticalAlignment="center" zPosition="4" transparent="1">
 			<convert type="ServiceName">Provider</convert>
 		</widget>
