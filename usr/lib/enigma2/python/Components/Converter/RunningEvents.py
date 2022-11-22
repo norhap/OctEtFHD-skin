@@ -4,7 +4,7 @@ from enigma import eEPGCache, eServiceReference
 from time import localtime, strftime, mktime, time
 from datetime import datetime
 
-class RunningEvents(Converter, object):
+class RunningEvents(Converter):
 	Event1 = 0
 	Event2 = 1
 	Event3 = 2
