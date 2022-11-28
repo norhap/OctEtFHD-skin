@@ -283,7 +283,7 @@
 		<panel name="TemplateFrame"/>
 		<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" position="150,10" size="1230,45" transparent="1" zPosition="10"/>
 		<!-- Event -->
-		<widget backgroundColor="OE_Background" font="RegularBold;28" position="160,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="1000,50" source="Event" transparent="1" horizontalAlignment="left">
+		<widget backgroundColor="OE_Background" font="RegularBold;28" position="160,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="1000,50" source="Event" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget backgroundColor="blue_light" pixmap="colors/00A4C400.png" position="160,160" render="Progress" size="950,6" source="Event" transparent="0" zPosition="1">

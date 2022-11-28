@@ -1640,7 +1640,7 @@
 		<widget alphaTest="blend" name="timeline3" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
 		<widget alphaTest="blend" name="timeline4" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
 		<widget alphaTest="blend" name="timeline5" pixmap="extensions/timeline.png" position="0,430" size="1,500" zPosition="2"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" horizontalAlignment="left" position="160,180" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="965,180" source="Event" transparent="1" verticalAlignment="top">
+		<widget backgroundColor="OE_Background" font="RegularBold;26" position="160,180" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="965,180" source="Event" transparent="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
