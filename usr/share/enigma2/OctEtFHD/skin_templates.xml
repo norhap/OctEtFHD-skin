@@ -112,6 +112,13 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
+		<!--  NAME KEYS FOR ACTIONS BUTTONS SECONDINFOBAR-->
+	<screen name="SecondInfobarButtons">
+		<ePixmap objectTypes="key_yellow,Button,Label" alphaTest="blend" pixmap="buttons/key_yellow.png" position="480,1010" size="40,40"/>
+		<ePixmap objectTypes="key_blue,Button,Label" alphaTest="blend" pixmap="buttons/key_blue.png" position="920,1010" size="40,40"/>
+		<widget objectTypes="key_yellow,Label,Button" name="key_yellow" font="RegularBold;24" backgroundColor="OE_Background" position="525,1000" size="400,60" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget objectTypes="key_blue,Label,Button" name="key_blue" font="RegularBold;24" backgroundColor="OE_Background" position="965,1000" size="400,60" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+	</screen>
 		<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE SCREENS INFORMATION-->
 	<screen name="ButtonsInformation">
 		<ePixmap objectTypes="key_red,Button,Label" alphaTest="blend" pixmap="buttons/key_red.png" position="430,995" size="40,40"/>

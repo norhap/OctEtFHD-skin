@@ -583,6 +583,7 @@
 	<!-- SECOND INFOBAR -->
 	<screen name="SecondInfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
 		<panel name="poster_secondinfobar"/>
+		<panel name="SecondInfobarButtons"/>
 		<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="10,160" size="1690,895" zPosition="-22" foregroundColor="white"/>
 		<eLabel backgroundColor="blue_light" name="" position="10,158" size="1690,2" zPosition="-22" foregroundColor="white"/>
 		<eLabel backgroundColor="blue_light" name="" position="10,1055" size="1690,2" zPosition="-22" foregroundColor="white"/>
@@ -727,12 +728,12 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<!-- CryptoInfo -->
-		<widget source="session.CurrentService" render="Label" font="RegularBold;21" position="470,1020" size="1210,35" zPosition="50" backgroundColor="OE_ListBackground" transparent="1" noWrap="1" foregroundColor="white">
-			<convert type="CaidInfo2"/>
-		</widget>
-		<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="540,965" size="98,31" transparent="1" alphaTest="blend" zPosition="3"/>
 		<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="470,965" size="98,31" alphaTest="blend" zPosition="3"/>
 		<panel name="Clock"/>
+		<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="540,965" size="98,31" transparent="1" alphaTest="blend" zPosition="3"/>
+		<widget source="session.CurrentService" render="Label" font="RegularBold;21" position="660,965" size="450,35" zPosition="50" backgroundColor="OE_ListBackground" transparent="1" noWrap="1" foregroundColor="white">
+			<convert type="CaidInfo2"/>
+		</widget>
 		 <!-- MSNWeather -->
 		<ePixmap pixmap="WeatherIcon/wind.png" position="52,630" size="60,60" alphaTest="blend"/>
 		<widget alphaTest="blend" render="MSNWeatherPixmap" position="55,700" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
