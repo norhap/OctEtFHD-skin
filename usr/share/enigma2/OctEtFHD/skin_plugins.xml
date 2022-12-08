@@ -1373,7 +1373,7 @@
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">InMinutes</convert>
 	</widget>
-	<widget source="Event" font="Regular;28" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" horizontalAlignment="left" position="80,210" size="520,530" transparent="1" verticalAlignment="top">
+	<widget source="Event" font="Regular;28" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="80,210" size="520,530" transparent="1">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
 	<widget source="Service" render="CoolNextEvent" foregroundColor="OE_Foreground" backgroundColor="dark" font="Regular;26" position="80,759" size="520,170" horizontalAlignment="left" transparent="1">

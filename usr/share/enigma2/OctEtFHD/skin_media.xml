@@ -58,7 +58,7 @@
 	<widget backgroundColor="OE_NewBg2" font="RegularBold;25" foregroundColor="white" horizontalAlignment="left" position="285,908" render="Label" size="210,45" source="Service" transparent="1">
 	    <convert type="EMCMovieInfo">FileSize</convert>
 	</widget>
-	<widget source="Service" font="RegularBold;28" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="grey" horizontalAlignment="left" position="520,765" size="1320,160" transparent="1" verticalAlignment="top">
+	<widget source="Service" font="RegularBold;28" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" foregroundColor="grey" position="520,765" size="1320,160" transparent="1">
 	    <convert type="EMCEventName">ExtendedDescription</convert>
 	</widget>
 	<widget backgroundColor="OE_Background" font="Regular;32" foregroundColor="OE_Foreground" horizontalAlignment="center" name="wait" position="center,center" size="1920,50" verticalAlignment="center" zPosition="1"/>
