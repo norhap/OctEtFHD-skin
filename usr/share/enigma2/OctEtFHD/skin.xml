@@ -1897,8 +1897,8 @@
 				}
 			</convert>
 		</widget>
-		<widget name="buttonlist" position="214,1040" size="500,35" backgroundColor="OE_Background" conditional="buttonlist" font="RegularBold;26" foregroundColor="blue_light" horizontalAlignment="left" transparent="1"/>
-		<widget name="longshift_key0" position="214,1040" size="500,35" backgroundColor="OE_Background" conditional="longshift_key0" font="RegularBold;26" foregroundColor="blue_light" horizontalAlignment="left" transparent="1"/>
+		<widget name="buttonlist" position="214,1040" size="1130,35" backgroundColor="OE_Background" conditional="buttonlist" font="RegularBold;26" foregroundColor="blue_light" horizontalAlignment="left" transparent="1"/>
+		<widget name="longshift_key0" position="214,1040" size="1130,35" backgroundColor="OE_Background" conditional="longshift_key0" font="RegularBold;26" foregroundColor="blue_light" horizontalAlignment="left" transparent="1"/>
 		<widget name="longshift_key1" position="720,1040" size="440,35" backgroundColor="OE_Background" conditional="longshift_key1" font="RegularBold;26" foregroundColor="blue_light" horizontalAlignment="left" transparent="1"/>
 		<widget name="description" conditional="description" position="1360,575" size="550,635" font="RegularBold;24" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
