@@ -3231,10 +3231,11 @@
 	<screen name="SubtitleDisplay" position="fill" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="message"/>
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="SubservicesQuickzap" position="570,850" size="840,100" title="Subservices">
-		<eLabel backgroundColor="OE_NewBg2" font="RegularBold;28" foregroundColor="white" horizontalAlignment="center" position="0,0" size="840,45" text="Subservices" verticalAlignment="center"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" horizontalAlignment="center" name="CurrentSubserviceNumber" position="0,45" size="130,55" verticalAlignment="center"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="white" position="110,45" render="Label" size="710,55" source="session.CurrentService" verticalAlignment="center">
+	<!-- ####### SUBSERVICES QUICK ZAP ####### -->
+	<screen name="SubservicesQuickzap" backgroundColor="transparent" flags="wfNoBorder" position="570,850" size="840,100" title="Subservices">
+		<eLabel backgroundColor="OE_NewBg2" font="RegularBold;28" horizontalAlignment="center" position="0,0" size="840,45" text="Subservices" verticalAlignment="center"/>
+		<widget name="CurrentSubserviceNumber" foregroundColor="blue_light" backgroundColor="OE_Background" font="RegularBold;30" horizontalAlignment="center" position="0,45" size="133,55" verticalAlignment="center"/>
+		<widget source="session.CurrentService" backgroundColor="OE_Background" font="RegularBold;32" position="133,45" render="Label" size="708,55" verticalAlignment="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
