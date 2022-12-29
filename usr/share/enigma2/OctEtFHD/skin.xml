@@ -5,9 +5,9 @@
 	<output id="0">
 	<resolution bpp="32" xres="1920" yres="1080"/>
 	</output>
-	<include filename="skin_media.xml"/>
-	<include filename="skin_plugins.xml"/>
-	<include filename="skin_templates.xml"/>
+	<include filename="OctEtFHD/skin_media.xml"/>
+	<include filename="OctEtFHD/skin_plugins.xml"/>
+	<include filename="OctEtFHD/skin_templates.xml"/>
 	<colors>
 	<color name="background" value="#40000000"/>
 	<color name="black" value="#00000000"/>
@@ -141,14 +141,14 @@
 	<color color="OE_Foreground" name="WindowTitleForeground"/>
 	<color color="un888a8a8a" name="WindowTitleBackground"/>
 	<borderset name="bsWindow">
-	<pixmap filename="window/bs_tl.png" pos="bpTopLeft"/>
-	<pixmap filename="window/bs_t.png" pos="bpTop"/>
-	<pixmap filename="window/bs_tr.png" pos="bpTopRight"/>
-	<pixmap filename="window/bs_l.png" pos="bpLeft"/>
-	<pixmap filename="window/bs_r.png" pos="bpRight"/>
-	<pixmap filename="window/bs_bl.png" pos="bpBottomLeft"/>
-	<pixmap filename="window/bs_b.png" pos="bpBottom"/>
-	<pixmap filename="window/bs_br.png" pos="bpBottomRight"/>
+	<pixmap filename="OctEtFHD/window/bs_tl.png" pos="bpTopLeft"/>
+	<pixmap filename="OctEtFHD/window/bs_t.png" pos="bpTop"/>
+	<pixmap filename="OctEtFHD/window/bs_tr.png" pos="bpTopRight"/>
+	<pixmap filename="OctEtFHD/window/bs_l.png" pos="bpLeft"/>
+	<pixmap filename="OctEtFHD/window/bs_r.png" pos="bpRight"/>
+	<pixmap filename="OctEtFHD/window/bs_bl.png" pos="bpBottomLeft"/>
+	<pixmap filename="OctEtFHD/window/bs_b.png" pos="bpBottom"/>
+	<pixmap filename="OctEtFHD/window/bs_br.png" pos="bpBottomRight"/>
 	</borderset>
 	</windowstyle>
 	<windowstyle id="1" type="skinned">
@@ -351,8 +351,8 @@
 
 	<!-- GRAPHIC SWITCH -->
 	<switchpixmap>
-		<pixmap name="menu_on" filename="icons/menu_on.png"/>
-		<pixmap name="menu_off" filename="icons/menu_off.png"/>
+		<pixmap name="menu_on" filename="OctEtFHD/icons/menu_on.png"/>
+		<pixmap name="menu_off" filename="OctEtFHD/icons/menu_off.png"/>
 	</switchpixmap>
 	<!-- RESTART GUI -->
 	<screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
