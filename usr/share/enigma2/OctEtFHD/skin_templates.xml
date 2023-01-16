@@ -17,11 +17,11 @@
 	</screen>
 		<!-- CLOCK EPG -->
 	<screen name="FrameClock">
-		<eLabel backgroundColor="OE_NewBg2" position="1385,0" size="525,72" transparent="0" zPosition="2" foregroundColor="white"/>
-		<widget backgroundColor="OE_NewBg" font="RegularBold;40" horizontalAlignment="left" position="1690,5" zPosition="3" render="Label" size="195,60" source="global.CurrentTime" transparent="1" verticalAlignment="center" foregroundColor="white">
+		<eLabel backgroundColor="OE_NewBg2" position="1365,0" size="545,72" transparent="0" zPosition="2" foregroundColor="white"/>
+		<widget backgroundColor="OE_NewBg" font="RegularBold;40" horizontalAlignment="left" position="1670,5" zPosition="3" render="Label" size="215,60" source="global.CurrentTime" transparent="1" verticalAlignment="center" foregroundColor="white">
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;24" horizontalAlignment="center"  verticalAlignment="center" position="1377,5" zPosition="3" render="Label" size="328,65" source="global.CurrentTime" transparent="1">
+		<widget backgroundColor="OE_NewBg2" font="RegularBold;24" horizontalAlignment="center"  verticalAlignment="center" position="1367,5" zPosition="3" render="Label" size="338,65" source="global.CurrentTime" transparent="1">
 			<convert type="ClockToText">LongDate</convert>
 		</widget>
 	</screen>
@@ -193,6 +193,7 @@
 		<!-- MENUS EPG -->
 		<!-- FRAME EPG -->
 	<screen name="TemplateFrame">
+		<eLabel backgroundColor="black" position="0,0" size="1920,1080" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" name="" position="10,72" size="1900,2" zPosition="0"/>
 		<eLabel backgroundColor="blue_light" name="" position="10,72" size="2,938" zPosition="0"/>
 		<eLabel backgroundColor="blue_light" name="" position="10,1008" size="1900,2" zPosition="0"/>
@@ -203,7 +204,6 @@
 		<panel name="FrameClock"/>
 		<panel name="TemplateFrame"/>
 		<panel name="TemplateXtraEPGSelection"/>
-		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1900,940" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="30,center" size="450,1080" zPosition="1" verticalAlignment="center"/>
 		<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_NewBg2" position="30,30" size="450,110" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="blue_light" name="" position="500,142" size="1390,2" zPosition="-9" foregroundColor="un5678a4"/>
@@ -253,7 +253,6 @@
 		<panel name="FrameClock"/>
 		<panel name="TemplateFrame"/>
 		<panel name="TemplateXtraMultiEPGEventView"/>
-		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1900,940" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="35,center" size="300,1080" zPosition="1" verticalAlignment="center"/>
 		<eLabel backgroundColor="blue_light" name="" position="350,142" size="1540,2" zPosition="-9" foregroundColor="white"/>
 		<eLabel backgroundColor="blue_light" name="" position="350,930" size="1540,2" zPosition="-9"/>
@@ -296,7 +295,7 @@
 	<screen name="TemplateGraphicalEPG">
 		<panel name="FrameClock"/>
 		<panel name="TemplateFrame"/>
-		<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" position="150,10" size="1230,45" transparent="1" zPosition="10"/>
+		<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" position="130,10" size="1210,45" transparent="1" zPosition="10"/>
 		<!-- Event -->
 		<widget backgroundColor="OE_Background" font="RegularBold;28" position="160,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="1000,50" source="Event" transparent="1">
 			<convert type="EventName">Name</convert>
@@ -313,7 +312,6 @@
 			<convert type="ClockToText"/>
 		</widget>
 		<!-- Screen Colors -->
-		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1900,940" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="45,center" size="100,1080" zPosition="1" verticalAlignment="center"/>
 		<eLabel backgroundColor="blue_light" name="" position="160,930" size="1730,2" zPosition="-9"/>
 		<!-- Buttons -->

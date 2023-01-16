@@ -2171,13 +2171,12 @@
 		<panel name="FrameClock"/>
 		<panel name="TemplateFrame"/>
 		<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="465,60" size="1345,90" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
-		<eLabel backgroundColor="OE_Background" foregroundColor="OE_Background" name="" position="10,center" size="1900,940" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="white" name="" position="15,center" size="450,1080" zPosition="0" verticalAlignment="center"/>
 		<eLabel backgroundColor="blue_light" name="" position="465,142" size="1445,2" zPosition="2" foregroundColor="un5678a4"/>
 		<eLabel backgroundColor="blue_light" name="" position="465,930" size="1445,2" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" name="" position="30,930" size="420,2" zPosition="2"/>
 		<widget name="chosenletter" position="425,165" size="40,40" font="RegularBold;30" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
-		<widget name="list" zPosition="1" position="465,160" size="1440,750" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="0"/>
+		<widget name="list" position="465,160" size="1440,750" backgroundColor="black" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="0"/>
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" horizontalAlignment="left" position="30,885" size="180,45" render="Label" source="Service" transparent="1" zPosition="1">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
