@@ -3233,7 +3233,7 @@
 	<screen name="TextBox" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplateNoPip"/>
-		<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="green_light" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" position="26,160" size="1240,820" transparent="1"/>
+		<widget name="text" font="RegularBold;28" backgroundColor="OE_Background" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" position="26,160" size="1240,820" transparent="1"/>
 	</screen>
 	<!-- TIME DATE INPUT -->
 	<screen name="TimeDateInput" title="Time/Date Input" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
