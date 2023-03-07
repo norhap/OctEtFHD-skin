@@ -452,7 +452,7 @@
 	</screen>
 		<!-- MESSAGEBOX TEMPLATE-->
 	<screen name="MessageBoxTemplate">
-		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="20,105" size="64,43"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="20,93" size="64,43"/>
 		<widget name="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="10,3" size="80,80" alphaTest="blend"/>
 		<widget name="ErrorPixmap" conditional="ErrorPixmap" pixmap="icons/input_error.png" position="10,3" size="80,80" alphaTest="blend"/>
 		<widget name="QuestionPixmap" conditional="QuestionPixmap" pixmap="icons/input_question.png" position="10,3" size="80,80" alphaTest="blend"/>
@@ -508,8 +508,8 @@ elif self.typeIcon:
 else:
 	width = newTextSize[0]
 	height = newTextSize[1]
-width += 20
-height += 20
+width += 70
+height += 68
 self.instance.resize(eSize(width, height))
 self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height) // 2))
 		</applet>

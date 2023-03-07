@@ -2043,7 +2043,7 @@
 		<widget name="text" font="RegularBold;27" backgroundColor="OE_Background" position="26,370" size="1250,660" horizontalAlignment="center" verticalAlignment="top"/>
 	</screen>
 	<!-- MESSAGEBOX SIMPLE-->
-	<screen name="MessageBoxSimple" backgroundColor="OE_Background" position="260,center" size="1390,445">
+	<screen name="MessageBoxSimple" backgroundColor="OE_Background" position="260,center" size="1395,445">
 		<panel name="MessageBoxTemplate"/>
 		<panel name="autoresize"/>
 		<eLabel backgroundColor="OE_NewBg2" position="0,3" size="100,640" zPosition="-10"/>
