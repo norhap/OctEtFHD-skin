@@ -2350,8 +2350,8 @@
 		<eLabel text=":" position="648,780" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" horizontalAlignment="left"/>
 		<eLabel text=":" position="648,830" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" horizontalAlignment="left"/>
 	</screen>
-	<!-- NETWORK NAMESERVER SETUP -->
-	<screen name="NameserverSetup" title="NameserverSetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<!-- NETWORK DNS SETUP -->
+	<screen name="DNSSettings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
