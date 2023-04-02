@@ -263,6 +263,9 @@
 		<panel name="TemplateRemoteControl"/>
 		<panel name="TemplateWizardLanguage"/>
 		<widget name="text" conditional="text" font="RegularBold;26" horizontalAlignment="left" verticalAlignment="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,130" size="1430,200" transparent="1"/>
+		<widget source="global.CurrentTime" backgroundColor="OE_Background" font="RegularBold;28" position="1735,352" zPosition="3" render="Label" size="140,30" transparent="1">
+			<convert type="ClockToText">Mixed</convert>
+		</widget>
 		<widget name="label" conditional="label" backgroundColor="#0000fafa" position="445,385" size="1430,2" zPosition="-9"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" foregroundColor="OE_Foreground" backgroundColor="OE_Background" transparent="1" position="445,390" size="1430,655" zPosition="1"/>
 	</screen>
