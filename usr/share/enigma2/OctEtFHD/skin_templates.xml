@@ -570,9 +570,9 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 	</screen>
 		<!-- TEMPLATE PIP -->
 	<screen name="TemplatePip">
-		<eLabel backgroundColor="OE_NewBg2" position="1269,0" size="651,1080" zPosition="-16"/>
 		<panel name="MandatoryWidgets"/>
-		<widget source="session.VideoPicture" render="Pig" position="1284,100" size="646,400" zPosition="1" backgroundColor="#df0b1300"/>
+		<eLabel backgroundColor="OE_NewBg2" position="1269,0" size="651,1080" zPosition="-16"/>
+		<widget source="session.VideoPicture" render="Pig" position="1285,100" size="635,400" zPosition="1" backgroundColor="#df0b1300"/>
 	</screen>
 		<!-- TEMPLATE VISION CORE -->
 	<screen name="TemplateSetupVisionCore">
