@@ -2049,7 +2049,7 @@
 	<screen name="MessageBoxSimple" backgroundColor="OE_Background" position="260,center" size="1395,445">
 		<panel name="MessageBoxTemplate"/>
 		<panel name="autoresize"/>
-		<eLabel backgroundColor="OE_NewBg2" position="0,3" size="100,640" zPosition="-10"/>
+		<eLabel backgroundColor="OE_NewBg2" position="0,3" size="100,900" zPosition="-10"/>
 		<widget name="list" conditional="list" itemHeight="32" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="115,230" size="1290,190" transparent="1"/>
 		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="110,3" size="1285,200" horizontalAlignment="left" verticalAlignment="center"/>
 	</screen>
