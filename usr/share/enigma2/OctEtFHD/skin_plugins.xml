@@ -6319,4 +6319,12 @@
 	<widget name="list" itemHeight="45" position="26,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" font="RegularBold;25" transparent="1"/>
 	<widget name="status" position="375,145" size="600,700" font="RegularBold;30" verticalAlignment="center" horizontalAlignment="center" transparent="1"/>
   </screen>
+  <screen name="InstallChannelsListsIPToSAT" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
+	<panel name="StanDardScreen"/>
+	<panel name="TemplatePip"/>
+	<ePixmap alphaTest="blend" pixmap="buttons/key_exit.png" position="18,1035" size="64,43"/>
+	<widget name="list" itemHeight="45" position="26,145" size="1250,815" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" font="RegularBold;25" transparent="1"/>
+	<widget name="status" position="1290,575" size="620,635"  font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+		<widget name="managerlistchannels" conditional="managerlistchannels" position="1290,950" size="620,130" font="RegularBold;24" foregroundColor="#00eb3e10" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1"/>
+  </screen>
 </skin>
