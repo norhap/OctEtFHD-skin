@@ -4061,11 +4061,8 @@
 	<screen name="SkinSelector" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<eLabel backgroundColor="blue_light" position="26,900" size="1250,2" zPosition="2"/>
-		<widget source="description" render="Label" font="RegularBold;28" position="26,900" size="1250,70" zPosition="10" horizontalAlignment="center" verticalAlignment="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
-		<widget name="description" font="RegularBold;28" position="26,900" size="1250,70" zPosition="10" horizontalAlignment="center" verticalAlignment="center" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
-		<widget name="preview" position="1345,550" size="520,440" alphaTest="blend"/>
+		<widget name="preview" position="1345,590" size="520,440" alphaTest="blend"/>
 		<widget source="skins" render="Listbox" position="26,140" size="1250,710" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
