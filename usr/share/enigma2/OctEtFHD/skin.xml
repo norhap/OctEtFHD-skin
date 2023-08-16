@@ -3160,8 +3160,8 @@
 	<screen name="FastScanStatus" title="Fast Scan" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplateNoPip"/>
-		<widget name="scan_state" position="26,300" size="1050,45" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" transparent="1"/>
-		<widget name="scan_progress" borderColor="grey" scrollbarBorderWidth="1" backgroundColor="OE_Background" foregroundColor="green_light" position="26,365" size="1050,25" transparent="1"/>
+		<widget name="scan_state" position="26,290" size="1250,48" font="RegularBold;32" backgroundColor="OE_Background" transparent="1"/>
+		<widget name="scan_progress" scrollbarBorderColor="blue_light" scrollbarBorderWidth="2" backgroundColor="OE_Background" foregroundColor="green_light" position="26,345" size="1250,25" transparent="1"/>
 		<widget name="frontend" pixmap="icons/scan-s.png" alphaTest="blend" position="1570,180" size="110,110" zPosition="1"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_ok.png" position="18,1035" size="64,43"/>
 	</screen>
