@@ -368,7 +368,7 @@
 		<eLabel backgroundColor="blue_light" position="100,975" size="950,2" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" position="80,1077" size="970,3" zPosition="-9"/>
 	</screen>
-		<!-- FRAME MENUS OPENVISION -->
+		<!-- FRAME MENUS NORHAP -->
 	<screen name="FrameInformation">
 		<eLabel backgroundColor="OE_Background" position="0,0" size="1920,1080" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" position="0,center" size="400,1080" zPosition="-11" verticalAlignment="center"/>
@@ -384,20 +384,19 @@
 		<eLabel text="Help" position="0,865" size="395,35" font="RegularBold;26" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="165,905" size="64,43"/>
 	</screen>
-		<!-- SCREEN OPENVISION-->
-	<screen name="ScreenOpenVision">
+		<!-- SCREEN NORHAP-->
+	<screen name="norhap">
 		<panel name="FrameInformation"/>
 		<panel name="ClockInformation"/>
 		<panel name="TitleInformation"/>
 		<panel name="ButtonsInformation"/>
 		<panel name="TemplateInformation"/>
 		<ePixmap alphaTest="blend" pixmap="picon_default.png" position="85,150" size="220,132" transparent="1" zPosition="10"/>
-		<eLabel text="OpenVision" position="0,330" size="400,70" font="RegularBold;40" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<eLabel text="Lets define enigma2 once more" position="0,405" size="400,70" font="RegularBold;21" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<eLabel text="norhap" position="0,330" size="400,70" font="RegularBold;40" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 		<eLabel text="Report problems to:" position="0,530" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<eLabel text="https://openvision.tech" position="0,590" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<eLabel text="telegram @norhap" position="0,590" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 		<eLabel text="Sources are available at:" position="0,715" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<eLabel text="https://github.com/OpenVisionE2" position="0,790" size="400,35" font="RegularBold;21" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<eLabel text="https://github.com/norhap" position="0,790" size="400,35" font="RegularBold;21" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 	</screen>
 		<!-- INFORMATION STANDARD -->
 	<screen name="TemplateInformation">
@@ -408,10 +407,9 @@
 		<ePixmap alphaTest="blend" pixmap="picon_default.png" position="85,150" size="220,132" transparent="1" zPosition="10"/>
 		<widget source="lab1" conditional="lab1" render="Label" position="0,330" size="400,70" font="RegularBold;40" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 		<widget source="lab2" conditional="lab2" render="Label" position="0,405" size="400,70" font="RegularBold;22" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget source="lab3" conditional="lab3" render="Label" position="0,530" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget source="lab4" conditional="lab4" render="Label" position="0,590" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget source="lab5" conditional="lab5" render="Label" position="0,715" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget source="lab6" conditional="lab6" render="Label" position="0,790" size="400,35" font="RegularBold;22" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<widget source="lab3" conditional="lab3" render="Label" position="0,480" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<widget source="lab4" conditional="lab4" render="Label" position="0,555" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<widget source="lab5" conditional="lab5" render="Label" position="0,630" size="400,70" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 
 		<!-- Button -->
 	</screen>
@@ -427,11 +425,10 @@
 		<widget source="Title" render="Label" backgroundColor="OE_Background" font="RegularBold;34" position="445,10" size="1430,145" transparent="1" verticalAlignment="center" zPosition="3" horizontalAlignment="left"/>
 		<widget name="portpic" conditional="portpic" position="300,475" zPosition="10" size="150,150" transparent="1" alphaTest="blend"/>
 		<widget source="lab1" conditional="lab1" render="Label" position="20,160" size="400,50" font="RegularBold;40" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget source="lab2" conditional="lab2" render="Label" position="40,215" size="390,45" font="RegularBold;22" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget source="lab3" conditional="lab3" render="Label" position="30,295" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget source="lab4" conditional="lab4" render="Label" position="100,330" size="500,30" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget source="lab5" conditional="lab5" render="Label" position="30,395" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget source="lab6" conditional="lab6" render="Label" position="40,435" size="520,30" font="RegularBold;22" backgroundColor="OE_NewBg2" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<widget source="lab2" conditional="lab2" render="Label" position="100,215" size="390,45" font="RegularBold;22" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<widget source="lab3" conditional="lab3" render="Label" position="30,270" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<widget source="lab4" conditional="lab4" render="Label" position="100,320" size="500,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<widget source="lab5" conditional="lab5" render="Label" position="30,365" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 		<widget name="rc" conditional="rc" alphaTest="blend" position="152,490" size="150,500" zPosition="10"/>
 		<widget name="arrowdown" conditional="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphaTest="blend" zPosition="11"/>
 		<widget name="arrowdown2" conditional="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphaTest="blend" zPosition="11"/>
