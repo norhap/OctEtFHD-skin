@@ -778,8 +778,13 @@
 		<widget name="image" position="410,160" size="1490,750" backgroundColor="OE_Background" alphaTest="blend" scale="1" transparent="1"/>
 	</screen>
 	<!-- MAIN MENU INFORMATION -->
-	<!-- INFO SERVICE -->
+	<!-- INFO SERVICE SAT -->
 	<screen name="ServiceInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+		<panel name="TemplateInformation"/>
+		<widget name="infolist" itemHeight="40" font="RegularBold;26" selection="0" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
+	</screen>
+	<!-- INFO SERVICE URL IPTV -->
+	<screen name="ServiceInfoSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="TemplateInformation"/>
 		<widget name="infolist" itemHeight="40" font="RegularBold;26" selection="0" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
 	</screen>
@@ -3207,11 +3212,6 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
-	</screen>
-	<screen name="ServiceInfoSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-		<panel name="StanDardScreen"/>
-		<panel name="TemplatePip"/>
-		<widget name="infolist" itemHeight="50" font="RegularBold;26" backgroundColor="OE_Background" position="26,215" size="925,700" transparent="1" zPosition="3"/>
 	</screen>
 	<!-- ####### Subtitle Display ####### -->
 	<screen backgroundColor="OE_Background" flags="wfNoBorder" name="Standby" position="0,0" size="1920,1080" title="Standby"/>
