@@ -2065,16 +2065,16 @@
 		<eLabel backgroundColor="OE_Background" position="30,center" size="1830,940" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="830,810" size="1000,4" zPosition="-9"/>
 		<eLabel backgroundColor="OE_NewBg2" position="65,center" size="750,1080" zPosition="-11" verticalAlignment="center"/>
-		<eLabel backgroundColor="blue_light" position="830,142" size="550,2" zPosition="-9" foregroundColor="un5678a4"/>
+		<eLabel backgroundColor="blue_light" position="830,142" size="1000,2" zPosition="-9" foregroundColor="un5678a4"/>
 		<eLabel backgroundColor="blue_light" position="80,142" size="720,2" zPosition="-9" foregroundColor="un5678a4"/>
 		<eLabel text="Media player" position="80,85" size="445,50" font="RegularBold;34" backgroundColor="OE_Background" transparent="1"/>
-		<eLabel text="Play back media files" position="830,85" size="1600,40" font="RegularBold;34" backgroundColor="OE_Background" transparent="1" horizontalAlignment="left"/>
+		<eLabel text="Play back media files" position="830,85" size="1000,40" font="RegularBold;34" backgroundColor="OE_Background" transparent="1" horizontalAlignment="left"/>
 		<widget name="coverArt" position="930,415" size="120,110" pixmap="no_coverArt.png" transparent="1" alphaTest="blend"/>
 		<eLabel backgroundColor="blue_light" position="830,892" size="1000,2" zPosition="-9"/>
 		<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="1626,960" size="64,43" alphaTest="blend"/>
 		<ePixmap name="new ePixmap" pixmap="buttons/key_help.png" position="1700,960" size="64,43" alphaTest="blend"/>
-		<widget name="filelist" itemHeight="50" font="Regular;24" backgroundColor="OE_NewBg2" enableWrapAround="1" position="80,154" scrollbarMode="showNever" size="720,650" transparent="1"/>
-		<widget name="playlist" itemHeight="50" font="RegularBold;26" backgroundColor="OE_Background" selection="0" position="830,153" scrollbarMode="showNever" size="1000,650" transparent="1"/>
+		<widget name="filelist" itemHeight="50" font="Regular;24" backgroundColor="OE_NewBg2" position="80,154" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" size="720,650" transparent="1"/>
+		<widget name="playlist" itemHeight="50" font="RegularBold;26" backgroundColor="OE_Background" selection="1" position="830,153" size="1000,650" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1"/>
 		<widget name="PositionGauge" position="377,628" size="0,0" pointer="skin_default/position_pointer.png:13,3" seekPointer="skin_default/position_pointer.png:13,3" zPosition="3" transparent="1"/>
 		<ePixmap name="new ePixmap" pixmap="buttons/key_channel.png" position="78,825" size="64,43" alphaTest="blend"/>
 		<eLabel text="Switch between filelist/playlist" position="150,820" size="530,60" font="RegularBold;24" backgroundColor="OE_NewBg2" horizontalAlignment="left" transparent="1" zPosition="3"/>
