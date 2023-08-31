@@ -2066,7 +2066,8 @@
 		<eLabel position="967,93" size="922,39" backgroundColor="grey" zPosition="5" text="P l a y l i s t" foregroundColor="black" font="Regular;33" horizontalAlignment="center"/>
 		<widget name="playlist" position="967,135" size="922,610" backgroundColor="#00101214" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light"/>
 		<widget name="title" position="200,765" size="0,0" backgroundColor="#00101214" transparent="1" font="Regular;39" foregroundColor="green_light" horizontalAlignment="center"/>
-		<eLabel position="30,750" size="1860,60" backgroundColor="grey"/>
+		<eLabel position="30,750" size="922,60" backgroundColor="grey"/>
+		<eLabel position="967,750" size="922,60" backgroundColor="grey"/>
 		<ePixmap name="new ePixmap" pixmap="buttons/key_channel.png" position="30,760" size="64,43" alphaTest="blend"/>
 		<eLabel text="Switch between filelist/playlist" position="102,755" size="530,60" font="Regular;24" foregroundColor="black" backgroundColor="grey" horizontalAlignment="left" transparent="1" zPosition="3"/>
 		<eLabel text="Show previous event" position="1030,750" size="300,55" font="Regular;24" foregroundColor="black" backgroundColor="grey" horizontalAlignment="left" transparent="1" zPosition="3"/>
