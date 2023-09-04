@@ -4316,7 +4316,7 @@
 		<panel name="ButtonsVisionCore"/>
 		<widget name="autostart_off" position="410,190" zPosition="1" pixmap="extensions/lock_off.png" size="35,35" alphaTest="blend"/>
 		<widget name="autostart_on" position="410,190" zPosition="2" pixmap="extensions/lock_on.png" size="35,35" alphaTest="blend"/>
-		<widget name="lab6" position="460,180" size="600,50" font="RegularBold;26" verticalAlignment="center" transparent="1" backgroundColor="OE_Background"/>
+		<widget name="lab6" position="460,180" size="1490,50" font="RegularBold;26" verticalAlignment="center" transparent="1" backgroundColor="OE_Background"/>
 		<widget name="lab7" position="410,280" size="350,50" backgroundColor="OE_Background" font="RegularBold;26" verticalAlignment="center" transparent="1"/>
 		<widget name="labplace" position="610,280" size="350,50" font="RegularBold;26" verticalAlignment="center" backgroundColor="#4D5375"/>
 		<widget name="lab9" position="410,380" size="350,50" backgroundColor="OE_Background" font="RegularBold;26" verticalAlignment="center" transparent="1"/>
@@ -4332,7 +4332,7 @@
 		<ePixmap pixmap="buttons/key_info.png" position="165,905" size="64,43" alphaTest="blend"/>
 		<widget name="lab7" position="330,140" size="170,50" font="RegularBold;26" horizontalAlignment="right" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 		<widget name="activecam" position="530,140" size="1370,70" font="RegularBold;26" horizontalAlignment="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="green_light" transparent="1" noWrap="1"/>
-		<widget name="lab6" position="410,310" size="600,35" font="RegularBold;26" horizontalAlignment="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
+		<widget name="lab6" position="410,310" size="1490,35" font="RegularBold;26" horizontalAlignment="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 		<widget name="list" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,350" zPosition="10" size="1490,590" transparent="1"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
