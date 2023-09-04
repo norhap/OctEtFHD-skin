@@ -2277,7 +2277,6 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
-		<widget source="description" render="Label" conditional="description" position="1290,575" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget source="IF" render="Label" font="RegularBold;32" backgroundColor="OE_Background" horizontalAlignment="left" position="26,155" size="500,50" transparent="1"/>
 		<widget source="Statustext" render="Label" font="RegularBold;32" backgroundColor="OE_Background" position="770,155" size="370,50" transparent="1" horizontalAlignment="right"/>
 		<widget name="statuspic" alphaTest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png" position="1160,158" size="35,35" transparent="1"/>
@@ -2330,7 +2329,6 @@
 		<panel name="TemplatePip"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
 		<widget source="Adapter" render="Label" position="1290,610" size="550,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>
-		<widget source="description" render="Label" conditional="description" position="1290,575" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,400" transparent="1"/>
 		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="right" position="390,620" render="Label" size="255,45" source="IPtext" transparent="1"/>
 		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="right" position="390,670" render="Label" size="255,45" source="Netmasktext" transparent="1"/>
