@@ -2527,22 +2527,22 @@
 	</screen>
 	<!-- NUMBER ZAP-->
 	<screen name="NumberZap" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080">
-		<eLabel backgroundColor="OE_Background" position="30,center" size="730,115" zPosition="-15"/>
+		<eLabel backgroundColor="OE_Background" position="50,center" size="800,160" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" position="70,center" size="120,180" zPosition="-11" verticalAlignment="center"/>
-		<eLabel backgroundColor="blue_light" position="200,540" size="550,2" zPosition="-9"/>
-		<widget name="channel" position="200,500" size="150,50" zPosition="1" horizontalAlignment="left" font="RegularBold;30" transparent="1"/>
+		<eLabel backgroundColor="blue_light" position="200,540" size="635,2" zPosition="3"/>
+		<widget name="channel" position="200,500" size="150,50" backgroundColor="OE_Background" zPosition="1" horizontalAlignment="left" font="RegularBold;30" transparent="1"/>
 		<widget name="number" font="RegularBold;30" backgroundColor="OE_Background" position="350,495" size="270,50" transparent="1" verticalAlignment="center" zPosition="3" horizontalAlignment="left"/>
-		<widget name="servicename" font="RegularBold;30" backgroundColor="OE_Background" position="200,540" size="550,50" transparent="1" horizontalAlignment="center" verticalAlignment="center"/>
+		<widget name="servicename" font="RegularBold;28" backgroundColor="OE_Background" position="190,540" size="640,80" transparent="0" horizontalAlignment="center" verticalAlignment="center" zPosition="2"/>
 		<ePixmap alphaTest="blend" pixmap="colors/o_logo.png" position="91,center" size="78,75" zPosition="4"/>
 	</screen>
 	<!-- NUMBER ZAP PICON-->
 	<screen name="NumberZapPicon" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080">
-		<eLabel backgroundColor="OE_Background" position="30,center" size="730,115" zPosition="-15"/>
+		<eLabel backgroundColor="OE_Background" position="50,center" size="800,160" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" position="70,center" size="120,180" zPosition="-11" verticalAlignment="center"/>
-		<eLabel backgroundColor="blue_light" position="200,540" size="550,2" zPosition="-9"/>
-		<widget name="channel" position="200,500" size="150,50" zPosition="1" horizontalAlignment="left" font="RegularBold;30" transparent="1"/>
+		<eLabel backgroundColor="blue_light" position="200,540" size="635,2" zPosition="3"/>
+		<widget name="channel" position="200,500" size="150,50" backgroundColor="OE_Background" zPosition="1" horizontalAlignment="left" font="RegularBold;30" transparent="1"/>
 		<widget name="number" font="RegularBold;30" backgroundColor="OE_Background" position="350,495" size="270,50" transparent="1" verticalAlignment="center" zPosition="3" horizontalAlignment="left"/>
-		<widget name="servicename" font="RegularBold;30" backgroundColor="OE_Background" position="200,540" size="550,50" transparent="1" horizontalAlignment="center" verticalAlignment="center"/>
+		<widget name="servicename" font="RegularBold;28" backgroundColor="OE_Background" position="190,540" size="640,80" transparent="0" horizontalAlignment="center" verticalAlignment="center" zPosition="2"/>
 		<widget source="Service" render="Picon" position="80,center" size="100,60" zPosition="4" transparent="1" alphaTest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
