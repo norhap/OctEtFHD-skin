@@ -541,11 +541,11 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 	</screen>
 		<!-- TEMPLATE MANDATORY WIDGETS -->
 	<screen name="MandatoryWidgets">
-		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="190,725" size="1,1" transparent="1" zPosition="10" alphaTest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="190,1035" zPosition="1" size="64,43" transparent="1" alphaTest="blend">
+		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="225,725" size="1,1" transparent="1" zPosition="10" alphaTest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="225,1035" zPosition="1" size="64,43" transparent="1" alphaTest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="VKeyIcon" conditional="VKeyIcon" alphaTest="blend" pixmap="my_icons/key_board.png" position="257,1035" render="Pixmap" size="64,43" transparent="1">
+		<widget source="VKeyIcon" conditional="VKeyIcon" alphaTest="blend" pixmap="my_icons/key_board.png" position="295,1035" render="Pixmap" size="64,43" transparent="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="footnote" conditional="footnote" position="1290,950" size="620,130" font="RegularBold;24" foregroundColor="#00eb3e10" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1"/>
