@@ -2723,7 +2723,7 @@
 		<ePixmap alphaTest="blend" pixmap="skin_default/buttons/key_help.png" position="18,1035" size="64,43"/>
 		<ePixmap alphaTest="blend" pixmap="skin_default/buttons/key_exit.png" position="85,1035" size="64,43"/>
 		<ePixmap alphaTest="blend" pixmap="skin_default/buttons/key_menu.png" position="1565,680" size="64,43"/>
-		<widget source="pluginList" render="Listbox" position="26,142" size="1250,820" conditional="pluginList" listOrientation="vertical" scrollbarMode="showOnDemand">
+		<widget source="pluginList" render="Listbox" position="26,142" size="1250,800" conditional="pluginList" listOrientation="vertical" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{
 				"template":
@@ -2737,7 +2737,7 @@
 				}
 			</convert>
 		</widget>
-		<widget source="pluginGrid" render="Listbox" position="24,142" size="1255,820" conditional="pluginGrid" listOrientation="grid" scrollbarMode="showOnDemand">
+		<widget source="pluginGrid" render="Listbox" position="24,142" size="1255,770" conditional="pluginGrid" listOrientation="grid" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{
 				"template":
@@ -4440,7 +4440,7 @@
 	<screen name="filtersServicesSetup" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="list" render="Listbox" position="26,140" size="1250,600" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="list" render="Listbox" position="26,140" size="1250,600" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (10, 0), size = (820, 30), font = 0, flags = RT_HALIGN_LEFT, text = 0),
@@ -4507,7 +4507,7 @@
 	<screen name="HistoryZapDefaultSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (10, 14), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x0000baff, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4529,7 +4529,7 @@
 	<screen name="HistoryZapEventSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,780" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,780" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (10, 11), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4552,7 +4552,7 @@
 	<screen name="HistoryZapEventPiconSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (85, 25), size = (30, 20), font = 2,	 color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4576,7 +4576,7 @@
 	<screen name="HistoryZapEventDurationSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4600,7 +4600,7 @@
 	<screen name="HistoryZapEventDurationBarSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4625,7 +4625,7 @@
 	<screen name="HistoryZapEventDurationPiconSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (80, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4650,7 +4650,7 @@
 	<screen name="HistoryZapEventDurationPiconBarSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (80, 3), size = (30, 40), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4676,7 +4676,7 @@
 	<screen name="HistoryZapDescriptionSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4700,7 +4700,7 @@
 	<screen name="HistoryZapDescriptionDurationSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4725,7 +4725,7 @@
 	<screen name="HistoryZapDescriptionDurationBarSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (0, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4751,7 +4751,7 @@
 	<screen name="HistoryZapDescriptionPiconSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (60, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4776,7 +4776,7 @@
 	<screen name="HistoryZapDescriptionDurationPiconSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (60, 3), size = (30, 20), font = 2, color = 0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4802,7 +4802,7 @@
 	<screen name="HistoryZapDescriptionDurationBarPiconSkinFullHD" position="fill" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
+		<widget source="menu" render="Listbox" position="26,140" size="1250,820" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos = (57, 3), size = (30, 20), font = 2, color =0x00ffc000, color_sel = 0x00ffc000, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
