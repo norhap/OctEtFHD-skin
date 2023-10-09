@@ -41,9 +41,9 @@
 	<screen name="MainMenu">
 		<panel name="Clock"/>
 		<panel name="TemplateMenuSort"/>
-		<eLabel text="Show menu numbers" position="5,300" size="265,45" font="RegularBold;19" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="105,360" size="64,43"/>
-		<ePixmap alphaTest="blend" pixmap="colors/setting1.png" position="85,082" size="100,100" transparent="1" zPosition="10"/>
+		<ePixmap alphaTest="blend" pixmap="picon_default.png" position="20,30" size="220,132"/>
+		<eLabel text="Show menu numbers" position="5,380" size="265,45" font="RegularBold;19" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="105,430" size="64,43"/>
 		<eLabel backgroundColor="OE_NewBg2" position="5,24" size="270,1032" zPosition="-10"/>
 		<eLabel backgroundColor="blue_light" position="275,31" size="2,1018" zPosition="-10"/>
 		<eLabel backgroundColor="OE_Background" position="0,30" size="1180,1020" zPosition="-15"/>
@@ -68,6 +68,38 @@
 				"itemHeight": 64
 				}
 			</convert>
+		</widget>
+		<widget source="menu" render="FixedLabel" text="Plugin IPToSAT" position="15,250" size="260,40" backgroundColor="OE_NewBg2" font="RegularBold;32">
+			<convert type="MenuEntryCompare">iptosat_menu</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="FixedLabel" text="Plugin Vision" position="15,250" size="260,40" backgroundColor="OE_NewBg2" font="RegularBold;32">
+			<convert type="MenuEntryCompare">vision_menu</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/setup.png" position="80,225" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">setup_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/plugin.png" position="80,225" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">plugin_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/info.png" position="80,225" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">info_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/media_player.png" position="80,225" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">media_player</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/timer.png" position="80,225" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">timer_menu</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/power.png" position="80,225" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">standby_restart_list</convert>
+			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
 		<!-- TITLES -->

@@ -364,32 +364,32 @@
 		<ePixmap alphaTest="blend" pixmap="picon_default.png" position="835,150" size="220,132" transparent="1" zPosition="10"/>
 		<widget name="text" position="500,420" size="920,250" zPosition="2" transparent="1" font="RegularBold;25" horizontalAlignment="center" verticalAlignment="top"/>
 	</screen>
-	<!-- MAIN MENU -->
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="Menu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<!-- MENU -->
+	<screen name="Menu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
 		<panel name="MainMenu"/>
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_mainmenu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<screen name="menu_mainmenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
 		<panel name="MainMenu"/>
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_system" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<screen name="menu_system" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
 		<panel name="MainMenu"/>
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_shutdown" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<screen name="menu_shutdown" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
 		<panel name="MainMenu"/>
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_setup" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<screen name="menu_setup" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
 		<panel name="MainMenu"/>
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_scan" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<screen name="menu_scan" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
 		<panel name="MainMenu"/>
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_information" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<screen name="menu_information" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
 		<panel name="MainMenu"/>
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_timermenu" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<screen name="menu_timermenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
 		<panel name="MainMenu"/>
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_harddisk" position="0,0" size="1920,1080" title="Main menu" transparent="0">
+	<screen name="menu_harddisk" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
 		<panel name="MainMenu"/>
 	</screen>
 	<!-- SETUP -->
