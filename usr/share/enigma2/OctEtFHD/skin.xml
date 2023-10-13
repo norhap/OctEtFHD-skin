@@ -195,7 +195,7 @@
 	<parameter name="InformationColors" value="OE_Background, OE_Foreground, OE_Blue, OE_Blue, OE_Orange"/>
 	<parameter name="PiconManagerList" value="10, 2, 1410, 45"/>
 	<parameter name="PiconManagerListFont" value="Regular; 28"/>
-	<parameter name="PicturePlayerThumb" value="30, 285, 45, 300, 30, 25"/>
+	<parameter name="PicturePlayerThumb" value="35, 190, 30, 200, 20, 14"/>
 	<parameter name="PlayListName" value="65, 2, 1000, 50"/>
 	<parameter name="PlayListIcon" value="10, 14, 23, 23"/>
 	<parameter name="PluginBrowserDescr" value="180, 43, 34"/>
