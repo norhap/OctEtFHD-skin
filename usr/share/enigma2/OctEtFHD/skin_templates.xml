@@ -332,7 +332,7 @@
 		<widget backgroundColor="OE_Background" font="RegularBold;28" position="160,85" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" size="1000,50" source="Event" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="blue_light" pixmap="colors/00A4C400.png" position="160,160" render="Progress" size="950,6" source="Event" transparent="0" zPosition="1">
+		<widget backgroundColor="blue_light" pixmap="colors/green_light.png" position="160,160" render="Progress" size="950,6" source="Event" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="Event" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="150,130" size="150,45" horizontalAlignment="center" transparent="1">

@@ -465,7 +465,7 @@
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">NoSeconds</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" backgroundColor="OE_NewBg" pixmap="colors/00A4C400.png" position="336,975" size="1510,4" transparent="0" zPosition="7">
+		<widget source="session.Event_Now" render="Progress" backgroundColor="OE_NewBg" pixmap="colors/green_light.png" position="336,975" size="1510,4" transparent="0" zPosition="7">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="RegularBold;28" position="335,988" render="Label" size="90,40" source="session.Event_Next" transparent="1" verticalAlignment="top">
@@ -660,7 +660,7 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
-		<widget source="session.Event_Next" backgroundColor="OE_Accent1" pixmap="colors/00A4C400.png" position="665,673" size="1020,2" render="Progress" transparent="0" zPosition="1">
+		<widget source="session.Event_Next" backgroundColor="OE_Accent1" pixmap="colors/green_light.png" position="665,673" size="1020,2" render="Progress" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/ip_tv.png" position="1038,967" size="63,32" zPosition="2" alphaTest="blend">
@@ -1092,7 +1092,7 @@
 		<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" foregroundColor="green_light" position="50,325" size="500,45" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="blue_light" pixmap="colors/00A4C400.png" position="50,365" render="Progress" size="500,5" source="ServiceEvent" transparent="0" zPosition="1">
+		<widget backgroundColor="blue_light" pixmap="colors/green_light.png" position="50,365" render="Progress" size="500,5" source="ServiceEvent" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" position="50,380" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="500,330" source="ServiceEvent" transparent="1">
@@ -1327,7 +1327,7 @@
 			<convert type="RemainingToText">NoSeconds</convert>
 		</widget>
 		<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="81,244" size="570,1"/>
-		<widget backgroundColor="OE_PreBlack2" pixmap="colors/00A4C400.png" position="80,242" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
+		<widget backgroundColor="OE_PreBlack2" pixmap="colors/green_light.png" position="80,242" render="Progress" size="570,5" source="ServiceEvent" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="Regular;29" position="80,260" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="RunningText" size="570,563" source="ServiceEvent" transparent="1">
@@ -1605,7 +1605,7 @@
 		<widget position="95,978" render="PositionGauge" size="1375,8" source="session.CurrentService" transparent="1" zPosition="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget pixmap="colors/00A4C400.png" position="95,978" render="Progress" size="1375,8" source="session.CurrentService" transparent="1" zPosition="2">
+		<widget pixmap="colors/green_light.png" position="95,978" render="Progress" size="1375,8" source="session.CurrentService" transparent="1" zPosition="2">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="RegularBold;30" horizontalAlignment="left" position="95,924" render="Label" shadowColor="OE_Background" shadowOffset="-1,-1" size="125,42" source="session.CurrentService" transparent="1" verticalAlignment="center">
@@ -1684,7 +1684,7 @@
 		<ePixmap pixmap="buttons/key_help.png" position="260,950" size="64,43" zPosition="2" alphaTest="blend"/>
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" horizontalAlignment="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
 		<widget name="epg_eventname" position="35,122" size="0,0" font="Regular;22" horizontalAlignment="left" zPosition="3" backgroundColor="OE_Background" transparent="1"/>
-		<widget source="Event" render="Progress" backgroundColor="blue_light" pixmap="colors/00A4C400.png" position="40,140" size="290,6" transparent="0" zPosition="3">
+		<widget source="Event" render="Progress" backgroundColor="blue_light" pixmap="colors/green_light.png" position="40,140" size="290,6" transparent="0" zPosition="3">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget name="channel" font="RegularBold;34" backgroundColor="OE_Background" position="350,90" size="830,50" horizontalAlignment="left" transparent="1"/>
@@ -2105,7 +2105,7 @@
 		<widget position="75,978" render="PositionGauge" size="1345,8" source="session.CurrentService" transparent="1" zPosition="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget pixmap="colors/00A4C400.png" position="75,978" render="Progress" size="1345,8" source="session.CurrentService" transparent="1" zPosition="2">
+		<widget pixmap="colors/green_light.png" position="75,978" render="Progress" size="1345,8" source="session.CurrentService" transparent="1" zPosition="2">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" horizontalAlignment="left" position="90,924" render="Label" shadowColor="OE_Background" shadowOffset="-1,-1" size="135,45" source="session.CurrentService" transparent="1" verticalAlignment="center">
@@ -3197,7 +3197,7 @@
 		<eLabel text="Cable Scan" font="RegularBold;34" backgroundColor="OE_Background" position="220,453" size="1050,50" transparent="1" verticalAlignment="center" zPosition="3"/>
 		<widget name="frontend" pixmap="icons/scan-c.png" position="80,center" size="110,110" transparent="1" alphaTest="blend"/>
 		<widget name="scan_state" position="220,520" size="1050,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="scan_progress" borderColor="darkgrey" scrollbarBorderWidth="2" pixmap="colors/00A4C400.png" position="220,585" size="1050,25" transparent="0"/>
+		<widget name="scan_progress" borderColor="darkgrey" scrollbarBorderWidth="2" pixmap="colors/green_light.png" position="220,585" size="1050,25" transparent="0"/>
 		<!-- Clock -->
 		<panel name="Clock"/>
 	</screen>
@@ -3382,7 +3382,7 @@
 		<widget backgroundColor="OE_Background" font="RegularBold;45" horizontalAlignment="center" position="1580,910" render="Label" size="220,65" source="session.CurrentService" transparent="1" verticalAlignment="center">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget pixmap="colors/00A4C400.png" position="75,978" render="Progress" size="1345,8" source="session.CurrentService" transparent="1" zPosition="2">
+		<widget pixmap="colors/green_light.png" position="75,978" render="Progress" size="1345,8" source="session.CurrentService" transparent="1" zPosition="2">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="75,981" size="1345,2" zPosition="-1"/>

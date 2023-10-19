@@ -97,7 +97,7 @@
 	    <convert type="EMCServicePosition">Remaining,Negate</convert>
 	</widget>
 	<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="200,980" size="1330,2" zPosition="-1"/>
-	<widget pixmap="colors/00A4C400.png" position="200,977" render="EMCPositionGauge" size="1330,8" source="Service" transparent="1" zPosition="6">
+	<widget pixmap="colors/green_light.png" position="200,977" render="EMCPositionGauge" size="1330,8" source="Service" transparent="1" zPosition="6">
 	    <convert type="EMCServicePosition">Gauge</convert>
 	</widget>
 	<widget pointer="extensions/CoolPointer.png:1600,0" position="200,978" render="EMCPositionGauge" size="1330,6" source="Service" transparent="1" zPosition="5">
