@@ -73,6 +73,10 @@
 			<convert type="MenuEntryCompare">iptosat_menu</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="FixedLabel" text="Plugin XStreamity" position="5,250" size="260,40" backgroundColor="OE_NewBg2" font="RegularBold;28">
+			<convert type="MenuEntryCompare">XStreamity</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="FixedLabel" text="Plugin Vision" position="15,250" size="260,40" backgroundColor="OE_NewBg2" font="RegularBold;32">
 			<convert type="MenuEntryCompare">vision_menu</convert>
 			<convert type="ConditionalShowHide"/>
