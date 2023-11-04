@@ -1902,7 +1902,6 @@
 	<screen name="HotkeySetup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget name="description" conditional="description" position="1290,575" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget name="list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,305" size="1250,655" transparent="1"/>
 		<widget name="choosen" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,150" transparent="1" foregroundColor="blue_light"/>
 		<!-- others-->
@@ -1911,9 +1910,13 @@
 	</screen>
 	<screen name="HotkeySetupSelect" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
-		<panel name="TemplatePip"/>
+		<eLabel backgroundColor="OE_NewBg2" position="1269,0" size="651,1080" zPosition="-16"/>
+		<widget source="session.VideoPicture" render="Pig" position="1285,100" size="635,400" zPosition="1" backgroundColor="#df0b1300"/>
 		<widget name="list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,305" size="1250,655" transparent="1"/>
 		<widget name="choosen" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,150" transparent="1" foregroundColor="blue_light"/>
+		<widget name="description" conditional="description" position="1290,520" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+		<widget name="h_prev" pixmap="buttons/left.png" zPosition="3" alphaTest="blend" position="18,1035" size="36,36"/>
+		<widget name="h_next" pixmap="buttons/right.png" zPosition="3" alphaTest="blend" position="60,1035" size="36,36"/>
 	</screen>
 	<!-- INPUTBOX -->
 	<screen name="InputBox" title="Input" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
