@@ -560,10 +560,10 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 		<eLabel position="1398,30" size="2,37" backgroundColor="#0000fafa" zPosition="16"/>
 		<eLabel position="1400,65" size="370,2" backgroundColor="#0000fafa" zPosition="16"/>
 		<eLabel position="1770,30" size="2,37" backgroundColor="#0000fafa" zPosition="16"/>
-		<widget source="progress_text" render="Label" position="1250,35" size="155,50" font="RegularBold;26" horizontalAlignment="left" backgroundColor="OE_NewBg2">
+		<widget source="progress_text" conditional="progress_text" render="Label" position="1250,35" size="155,50" font="RegularBold;26" horizontalAlignment="left" backgroundColor="OE_NewBg2">
 			<convert type="ProgressToText">InText</convert>
 		</widget>
-		<widget source="progress_text" render="Label" position="1780,35" size="140,50" font="RegularBold;26" horizontalAlignment="left" backgroundColor="OE_NewBg2">
+		<widget source="progress_text" conditional="progress_text" render="Label" position="1780,35" size="140,50" font="RegularBold;26" horizontalAlignment="left" backgroundColor="OE_NewBg2">
 			<convert type="ProgressToText">InPercent</convert>
 		</widget>
 	</screen>
