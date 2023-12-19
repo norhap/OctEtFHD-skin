@@ -402,7 +402,7 @@
 		<widget source="key_menu" conditional="key_menu" render="Label" position="225,1040" size="200,35" backgroundColor="key_back" font="Regular;24" horizontalAlignment="center" verticalAlignment="center">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="config" itemHeight="50" font="RegularBold;26" entryFont="RegularBold;26" valueFont="Regular;22" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+		<widget name="config" itemHeight="50" font="RegularBold;26" headerFont="RegularBold;30" entryFont="RegularBold;26" valueFont="Regular;22" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	</screen>
 	<!-- MENU SORT -->
 	<screen name="MenuSort" position="fill" backgroundColor="transparent" flags="wfNoBorder">
