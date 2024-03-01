@@ -6314,4 +6314,17 @@
 	<widget name="status" position="1290,900" size="620,215"  font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget name="managerlistchannels" conditional="managerlistchannels" position="1290,575" size="620,130" font="RegularBold;24" foregroundColor="#00eb3e10" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1"/>
   </screen>
+	<!-- PARENTAL CONTROL IPToSAT -->
+	<screen name="PinInputPopupIPToSAT" title="Change pin code" backgroundColor="OE_NewBg2" flags="wfNoBorder" position="0,0" size="1920,1080">
+		<eLabel backgroundColor="OE_NewBg2" position="30,center" size="1920,1080" zPosition="-15"/>
+		<eLabel backgroundColor="OE_NewBg2" position="0,center" size="100,360" zPosition="-11" verticalAlignment="center"/>
+		<eLabel backgroundColor="blue_light" position="180,460" size="1000,2" zPosition="-9"/>
+		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="180,403" size="1000,50" transparent="1" verticalAlignment="center" zPosition="3"/>
+		<widget name="service" font="RegularBold;26" backgroundColor="OE_Background" position="180,470" size="1000,45" transparent="1" horizontalAlignment="center"/>
+		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="180,520" size="1000,45" transparent="1" horizontalAlignment="center"/>
+		<widget name="tries" font="RegularBold;26" backgroundColor="OE_Background" position="180,570" size="1000,45" transparent="1" horizontalAlignment="center"/>
+		<widget name="input" font="RegularBold;30" backgroundColor="OE_Background" position="180,620" size="1000,50" transparent="1" horizontalAlignment="center"/>
+		<ePixmap alphaTest="blend" pixmap="icons/input_info.png" position="80,center" size="80,80" zPosition="4"/>
+		<panel name="Clock"/>
+	</screen>
 </skin>
