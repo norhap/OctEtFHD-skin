@@ -465,7 +465,7 @@
 		<widget source="lab3" conditional="lab3" render="Label" position="30,270" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 		<widget source="lab4" conditional="lab4" render="Label" position="100,320" size="500,30" font="RegularBold;23" backgroundColor="OE_NewBg2" foregroundColor="blue_light" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="3"/>
 		<widget source="lab5" conditional="lab5" render="Label" position="30,365" size="400,30" font="RegularBold;23" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget name="rc" conditional="rc" alphaTest="blend" position="152,490" size="150,500" zPosition="10"/>
+		<widget name="rc" conditional="rc" alphaTest="blend" position="152,510" size="150,500" zPosition="10"/>
 		<widget name="arrowdown" conditional="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphaTest="blend" zPosition="11"/>
 		<widget name="arrowdown2" conditional="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" alphaTest="blend" zPosition="11"/>
 		<widget name="arrowup" conditional="arrowup" pixmap="arrowup.png" position="-100,-100" size="37,70" alphaTest="blend" zPosition="11"/>
