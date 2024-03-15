@@ -1966,21 +1966,23 @@
 		<!-- Clock -->
 		<panel name="Clock"/>
 	</screen>
+	<!-- OPKGINSTALLER -->
 	<screen name="OpkgInstaller" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget name="list" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" position="26,140" size="1250,750" transparent="1" zPosition="5"/>
+		<widget name="list" itemHeight="50" backgroundColor="OE_Background" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" position="26,140" size="1250,800" transparent="1" zPosition="5"/>
 	</screen>
 	<!-- OPKGMENU -->
 	<screen name="OPKGMenu" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget name="filelist" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,750" transparent="1"/>
+		<widget name="filelist" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	</screen>
 	<!-- OPKGSOURCE -->
 	<screen name="OPKGSource" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
-		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="26,140" size="1250,50" transparent="1"/>
+		<panel name="TemplatePip"/>
+		<widget name="text" font="RegularBold;26" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	</screen>
 	<!-- LANGUAGE SELECTION -->
 	<screen name="LanguageSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
