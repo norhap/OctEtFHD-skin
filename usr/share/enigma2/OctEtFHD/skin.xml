@@ -781,12 +781,12 @@
 	<!-- INFO SERVICE SAT -->
 	<screen name="ServiceInfo" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="TemplateInformation"/>
-		<widget name="infolist" itemHeight="40" font="RegularBold;26" selection="0" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
+		<widget name="infolist" itemHeight="40" font="RegularBold;26" selection="0" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" position="410,140" size="1490,805" transparent="1"/>
 	</screen>
 	<!-- INFO SERVICE URL IPTV -->
 	<screen name="ServiceInfoSimple" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="TemplateInformation"/>
-		<widget name="infolist" itemHeight="40" font="RegularBold;26" selection="0" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="410,140" size="1490,805" transparent="1"/>
+		<widget name="infolist" itemHeight="40" font="RegularBold;26" selection="0" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" position="410,140" size="1490,805" transparent="1"/>
 	</screen>
 	<!-- INFO ABOUT -->
 	<screen name="About" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="">
