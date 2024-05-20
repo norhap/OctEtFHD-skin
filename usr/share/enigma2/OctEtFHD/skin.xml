@@ -2071,11 +2071,12 @@
 		<eLabel position="30,750" size="922,60" backgroundColor="grey"/>
 		<eLabel position="967,750" size="922,60" backgroundColor="grey"/>
 		<ePixmap name="new ePixmap" pixmap="buttons/key_channel.png" position="30,760" size="64,43" alphaTest="blend"/>
-		<eLabel text="Switch between filelist/playlist" position="102,755" size="530,60" font="Regular;24" foregroundColor="black" backgroundColor="grey" horizontalAlignment="left" transparent="1" zPosition="3"/>
-		<eLabel text="Show previous event" position="1030,750" size="300,55" font="Regular;24" foregroundColor="black" backgroundColor="grey" horizontalAlignment="left" transparent="1" zPosition="3"/>
-		<ePixmap name="new ePixmap" pixmap="buttons/key_leftright.png" position="1363,745" size="64,43" alphaTest="blend"/>
-		<eLabel text="Show next event" position="1478,750" size="300,55" font="Regular;24" foregroundColor="black" backgroundColor="grey" horizontalAlignment="left" transparent="1" zPosition="3"/>
-		<widget name="coverArt" pixmap="buttons/key_leftright.png" position="1750,750" size="0,0" transparent="1" alphaTest="blend"/>
+		<eLabel text="Switch between filelist/playlist" position="102,767" size="700,60" font="Regular;24" foregroundColor="black" backgroundColor="grey" horizontalAlignment="left" transparent="1" zPosition="3"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="857,760" size="64,43"/>
+		<eLabel text="Show previous event" position="1030,767" size="300,55" font="Regular;24" foregroundColor="black" backgroundColor="grey" horizontalAlignment="left" transparent="1" zPosition="3"/>
+		<ePixmap name="new ePixmap" pixmap="buttons/key_leftright.png" position="1363,760" size="64,43" alphaTest="blend"/>
+		<eLabel text="Show next event" position="1478,767" size="300,55" font="Regular;24" foregroundColor="black" backgroundColor="grey" horizontalAlignment="left" transparent="1" zPosition="3"/>
+		<widget name="coverArt" pixmap="buttons/key_leftright.png" position="1750,767" size="0,0" transparent="1" alphaTest="blend"/>
 		<widget name="titletext" position="200,832" size="150,37" font="Regular;30" backgroundColor="#00101214" transparent="1" foregroundColor="darkgrey"/>
 		<widget name="currenttext" position="350,832" size="1200,37" font="Regular;30" backgroundColor="#00101214" transparent="1" foregroundColor="green_light"/>
 		<widget name="artisttext" position="200,877" size="150,37" backgroundColor="#00101214" transparent="1" foregroundColor="darkgrey" font="Regular;30"/>
