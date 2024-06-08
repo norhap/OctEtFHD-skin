@@ -59,13 +59,12 @@
 		<widget source="title" render="Label" font="RegularBold;35" backgroundColor="OE_Background" position="275,55" size="905,85" transparent="1" verticalAlignment="center" horizontalAlignment="center"/>
 		<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="282,170" size="892,832" transparent="1">
 			<convert type="TemplatedMultiContent">
-				{
-				"template":
-				[
-				MultiContentEntryText(pos = (3, 12), size = (892, 60), color_sel = 0x00a2f0f7, text = 0)
-				],
-				"fonts": [gFont("RegularBold", 36)],
-				"itemHeight": 64
+				{ "template":
+					[
+					MultiContentEntryText(pos = (3, 12), size = (892, 60), color_sel = 0x00a2f0f7, text = 0)
+					],
+				  "fonts": [gFont("RegularBold", 36)],
+				  "itemHeight": 64
 				}
 			</convert>
 		</widget>
