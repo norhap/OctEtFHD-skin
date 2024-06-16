@@ -68,6 +68,7 @@
 				}
 			</convert>
 		</widget>
+		<widget name="menuimage" position="80,225" size="260,100" alphaTest="blend" conditional="menuimage" backgroundColor="OE_NewBg2"/>
 		<widget source="menu" render="FixedLabel" text="Plugin IPToSAT" position="15,250" size="260,40" backgroundColor="OE_NewBg2" font="RegularBold;32">
 			<convert type="MenuEntryCompare">iptosat_menu</convert>
 			<convert type="ConditionalShowHide"/>
@@ -88,7 +89,7 @@
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" alphaTest="blend" pixmap="mainmenu/info.png" position="80,225" render="Pixmap" size="100,100">
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,225" render="Pixmap" size="100,100">
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -96,11 +97,11 @@
 			<convert type="MenuEntryCompare">media_player</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" alphaTest="blend" pixmap="mainmenu/timer.png" position="80,225" render="Pixmap" size="100,100">
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/timermenu.png" position="80,225" render="Pixmap" size="100,100">
 			<convert type="MenuEntryCompare">timer_menu</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" alphaTest="blend" pixmap="mainmenu/power.png" position="80,225" render="Pixmap" size="100,100">
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,225" render="Pixmap" size="100,100">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
