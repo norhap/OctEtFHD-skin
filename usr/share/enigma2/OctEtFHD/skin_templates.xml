@@ -41,7 +41,7 @@
 	<screen name="MainMenu">
 		<panel name="Clock"/>
 		<panel name="TemplateMenuSort"/>
-		<ePixmap alphaTest="blend" pixmap="picon_default.png" position="20,30" size="220,132"/>
+		<ePixmap alphaTest="blend" pixmap="picon_default.png" position="20,20" size="220,132"/>
 		<eLabel text="Show menu numbers" position="5,380" size="265,45" font="RegularBold;19" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="105,430" size="64,43"/>
 		<eLabel backgroundColor="OE_NewBg2" position="5,24" size="270,1032" zPosition="-10"/>
@@ -68,7 +68,8 @@
 				}
 			</convert>
 		</widget>
-		<widget name="menuimage" position="80,225" size="260,100" alphaTest="blend" conditional="menuimage" backgroundColor="OE_NewBg2"/>
+		<widget name="menuimage" position="80,260" size="260,100" alphaTest="blend" conditional="menuimage" backgroundColor="OE_NewBg2"/>
+		<!-- IMAGES MAIN MENU NOT menuimage-->
 		<widget source="menu" render="FixedLabel" text="Plugin IPToSAT" position="15,250" size="260,40" backgroundColor="OE_NewBg2" font="RegularBold;32">
 			<convert type="MenuEntryCompare">iptosat_menu</convert>
 			<convert type="ConditionalShowHide"/>
@@ -81,28 +82,362 @@
 			<convert type="MenuEntryCompare">vision_menu</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" alphaTest="blend" pixmap="mainmenu/setup.png" position="80,225" render="Pixmap" size="100,100">
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/setup.png" position="80,260" render="Pixmap" size="100,100">
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" alphaTest="blend" pixmap="mainmenu/plugin.png" position="80,225" render="Pixmap" size="100,100">
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/plugin.png" position="80,260" render="Pixmap" size="100,100">
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,225" render="Pixmap" size="100,100">
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,260" render="Pixmap" size="100,100">
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" alphaTest="blend" pixmap="mainmenu/media_player.png" position="80,225" render="Pixmap" size="100,100">
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/media_player.png" position="80,260" render="Pixmap" size="100,100">
 			<convert type="MenuEntryCompare">media_player</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" alphaTest="blend" pixmap="mainmenu/timermenu.png" position="80,225" render="Pixmap" size="100,100">
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/timermenu.png" position="80,260" render="Pixmap" size="100,100">
 			<convert type="MenuEntryCompare">timer_menu</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,225" render="Pixmap" size="100,100">
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<!-- menuimage + IMAGE ITEM KEYS SUBMENUS (IF MOVE POSITION WITH MENUSORT)-->
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">about_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">device_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">receiver_image_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">memory_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">network_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">service_info_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">BenchmarkInformation_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/information.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">streaming_clients_info_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">standby</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">restart_enigma_debug</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">restart_enigma</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">multiboot</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">enable_kexec_multiboot</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">restart</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">dualboot</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">deep_standby</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">maintenance_mode</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">dual_mode</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/shutdown.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">android_mode</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/timermenu.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">timer_edit</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/timermenu.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">crontimer_edit</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/timermenu.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">sleep</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/timermenu.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">powertimer_edit</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/scan.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">tuner_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/scan.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">auto_scan</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/scan.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">fallbacktuner_settings</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/scan.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">fastscan</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/scan.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">satfinder</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/video.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">autolanguage_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/video.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">hdmicec</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/cam.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">softcam_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/cam.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">streamrelay_settings</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/cam.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">softcamsetup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/lcd.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">display_skin_selector</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/lcd.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">lcd_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/led.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">led_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/harddisk.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">harddisk_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/harddisk.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">harddisk_init</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/harddisk.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">harddisk_check</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/rec.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">setup_MovieSelection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/rec.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">playback_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/rec.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">recording_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/rec.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">timeshift_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/network.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">device_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/network.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">netmounts_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/network.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">services_menu</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/osd_menu.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">user_interface</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/osd_menu.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">primary_skin_selector</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/osd_menu.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">subtitle_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/osd_menu.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">language_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/osd_menu.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">parental_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">accesslevel_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">usage_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">hotkey_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">log_settings</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">logs_man</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">input_device_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">input_device_remote_control</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">software_update</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">rfmod_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">flash_image</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">factory_reset</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/epg.png" position="80,260" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">epgloadsave_menu</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<!-- IMAGES UP IN SUBMENUS NOT menuimage-->
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/network.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">network_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/harddisk.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">hardisk_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/rec.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">rec_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/system.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">system_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/lcd.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">display_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/led.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">leddisplay_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/video.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">video_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/epg.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">epg_menu</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/epg_setup.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">epg_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/saveepgcache.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">saveepgcache</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/loadepgcache.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">loadepgcache</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/deleteepgcache.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">deleteepgcache</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/saveepgcache.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">epgimporter</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/scan.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">service_searching_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/cam.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">cam_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/ci_setup.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">ci_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/osd_menu.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">osd_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/time.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">time_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/software_manager.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">software_manager</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" alphaTest="blend" pixmap="mainmenu/autobackup.png" position="80,158" render="Pixmap" size="100,100">
+			<convert type="MenuEntryCompare">autobackup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
