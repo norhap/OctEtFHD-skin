@@ -440,6 +440,10 @@
 			<convert type="MenuEntryCompare">autobackup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="FixedLabel" text="Network Services" position="5,250" size="260,70" backgroundColor="OE_NewBg2" horizontalAlignment="center" font="RegularBold;28">
+			<convert type="MenuEntryCompare">networkservices</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 	</screen>
 		<!-- TITLES -->
 	<screen name="TitleStanDardScreen">
