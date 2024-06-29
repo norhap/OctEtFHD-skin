@@ -260,6 +260,7 @@
 		<panel name="TemplateWizard"/>
 		<panel name="TemplateRemoteControl"/>
 		<panel name="ButtonsInformation"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="25,945" size="64,43"/>
 		<widget name="text" conditional="text" font="RegularBold;26" horizontalAlignment="left" verticalAlignment="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
 		<widget name="label" conditional="label" backgroundColor="#0000fafa" position="445,275" size="1430,2" zPosition="-8"/>
 		<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,715" transparent="1">
