@@ -1104,7 +1104,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,725" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=1000,
 			oneshot=2000,step=1,
@@ -1116,7 +1116,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,750" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=5000,
 			oneshot=2000,step=1,
@@ -1128,7 +1128,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,775" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=10000,
 			oneshot=2000,step=1,
@@ -1140,7 +1140,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,800" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=15000,
 			oneshot=2000,step=1,
@@ -1152,7 +1152,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,825" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=20000,
 			oneshot=2000,step=1,
@@ -1164,7 +1164,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,850" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=25000,
 			oneshot=2000,step=1,
@@ -1176,7 +1176,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,875" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=30000,
 			oneshot=2000,step=1,
@@ -1188,7 +1188,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,900" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=35000,
 			oneshot=2000,step=1,
@@ -1200,7 +1200,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,925" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=40000,
 			oneshot=2000,step=1,
@@ -1212,7 +1212,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,950" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=45000,
 			oneshot=2000,step=1,
@@ -1224,7 +1224,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,975" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=50000,
 			oneshot=2000,step=1,
@@ -1236,7 +1236,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,1000" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=55000,
 			oneshot=2000,step=1,
@@ -1248,7 +1248,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,1025" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=60000,
 			oneshot=2000,step=1,
@@ -1260,7 +1260,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="DRRunningText" position="50,1050" size="500,25" font="RegularBold;22"
 			options="movetype=running,
-			repeat=2,
+			repeat=0,
 			startpoint=0,
 			startdelay=65000,
 			oneshot=2000,step=1,
