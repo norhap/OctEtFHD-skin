@@ -427,7 +427,7 @@
 	</screen>
 	<!-- INFOBAR -->
 	<screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="InfoBar">
-		<panel name="poster_firstinfobar"/>
+		<!--panel name="poster_firstinfobar"/-->
 		<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="15,852" size="1865,215" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="1865,2" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="2,215" zPosition="-11"/>
@@ -591,7 +591,7 @@
 	</screen>
 	<!-- SECOND INFOBAR -->
 	<screen name="SecondInfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
-		<panel name="poster_secondinfobar"/>
+		<!--panel name="poster_secondinfobar"/-->
 		<panel name="SecondInfobarButtons"/>
 		<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="10,160" size="1690,895" zPosition="-22"/>
 		<eLabel backgroundColor="blue_light" position="10,158" size="1690,2" zPosition="-22"/>
@@ -1050,7 +1050,7 @@
 	</screen>
 	<!-- CHANNELSELECTION -->
 	<screen name="ChannelSelection" position="center,center" size="1920,1080" backgroundColor="transparent" title="Channel Selection" flags="wfNoBorder">
-		<panel name="poster_channelselection"/>
+		<!--panel name="poster_channelselection"/-->
 		<eLabel backgroundColor="OE_Background" position="10,45" size="1895,1000" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="570,145" size="1330,2" zPosition="-9" foregroundColor="un5678a4"/>
 		<eLabel backgroundColor="blue_light" position="570,930" size="1330,2" zPosition="-9"/>
@@ -2169,7 +2169,7 @@
 	</screen>
 	<!-- MOVIESELECTION -->
 	<screen name="MovieSelection" title="Select a movie" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-		<panel name="poster_movieselection"/>
+		<!--panel name="poster_movieselection"/-->
 		<panel name="FrameClock"/>
 		<panel name="TemplateFrame"/>
 		<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="465,60" size="1345,90" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
