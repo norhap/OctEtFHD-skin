@@ -451,7 +451,7 @@
 		<widget source="session.CurrentService" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="325,885" size="930,28" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
 		</widget>
-		<widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" font="RegularBold;30" noWrap="1" position="575,933" size="1050,64" transparent="1">
+		<widget source="session.Event_Now" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" font="RegularBold;30" noWrap="1" position="575,933" size="1050,64" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="RegularBold;28" position="335,935" render="Label" size="90,40" source="session.Event_Now" transparent="1">
@@ -477,7 +477,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="session.Event_Next" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" position="575,986" size="1050,48" transparent="1">
+		<widget source="session.Event_Next" font="RegularBold;30" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" position="575,986" size="1050,48" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="RegularBold;28" horizontalAlignment="right" position="1681,988" render="Label" size="165,45" source="session.Event_Next" transparent="1">
@@ -636,7 +636,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:-%H:%M</convert>
 		</widget>
-		<widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" font="RegularBold;30" noWrap="1" position="845,185" size="635,48" transparent="1">
+		<widget source="session.Event_Now" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="DRRunningText" backgroundColor="OE_ListBackground" font="RegularBold;30" noWrap="1" position="845,185" size="635,48" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget backgroundColor="OE_ListBackground" font="RegularBold;30" horizontalAlignment="right" position="1420,180" render="Label" size="265,48" source="session.Event_Now" transparent="1">
@@ -654,7 +654,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:-%H:%M</convert>
 		</widget>
-		<widget source="session.Event_Next" font="RegularBold;30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="RunningText" backgroundColor="OE_ListBackground" position="845,635" size="635,48" transparent="1">
+		<widget source="session.Event_Next" font="RegularBold;30" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" render="DRRunningText" backgroundColor="OE_ListBackground" position="845,635" size="635,48" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget backgroundColor="OE_ListBackground" font="RegularBold;30" horizontalAlignment="right" position="1520,635" render="Label" size="165,48" source="session.Event_Next" transparent="1">
@@ -1060,7 +1060,7 @@
 		<eLabel backgroundColor="blue_light" position="1905,45" size="2,1000" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" position="35,center" size="530,1080" zPosition="-11" verticalAlignment="center"/>
 		<!-- Widget -->
-		<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" position="40,0" size="525,50" transparent="1">
+		<widget source="ServiceEvent" font="RegularBold;30" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" position="40,0" size="525,50" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="580,50" size="1310,90" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
@@ -1090,7 +1090,7 @@
 		<widget alphaTest="blend" position="415,260" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" foregroundColor="green_light" position="50,325" size="500,45" transparent="1">
+		<widget source="ServiceEvent" font="RegularBold;30" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" foregroundColor="green_light" position="50,325" size="500,45" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget backgroundColor="blue_light" pixmap="colors/green_light.png" position="50,365" render="Progress" size="500,5" source="ServiceEvent" transparent="0" zPosition="1">
@@ -1302,7 +1302,7 @@
 		<eLabel backgroundColor="white" position="680,930" size="1160,2" zPosition="-9"/>
 		<eLabel backgroundColor="OE_NewBg2" position="65,center" size="600,1080" zPosition="-11" verticalAlignment="center"/>
 		<!-- Widget -->
-		<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" position="80,85" size="450,50" transparent="1">
+		<widget source="ServiceEvent" font="RegularBold;30" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" position="80,85" size="450,50" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<eLabel backgroundColor="blue_light" position="80,142" size="570,2" zPosition="-9" foregroundColor="un5678a4"/>
@@ -1311,7 +1311,7 @@
 		<widget alphaTest="blend" position="550,77" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="2">
 			<convert type="RefString">ServicelistRef</convert>
 		</widget>
-		<widget source="ServiceEvent" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="green_light" position="80,150" size="570,45" transparent="1">
+		<widget source="ServiceEvent" font="RegularBold;30" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="green_light" position="80,150" size="570,45" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="RegularBold;28" horizontalAlignment="left" position="80,200" render="Label" size="85,35" source="ServiceEvent" transparent="1">
@@ -1771,7 +1771,7 @@
 		<widget alphaTest="blend" position="70,415" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="Event" font="RegularBold;26" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="350,715" size="1490,210" transparent="1">
+		<widget source="Event" font="RegularBold;26" render="DRRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="350,715" size="1490,210" transparent="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>

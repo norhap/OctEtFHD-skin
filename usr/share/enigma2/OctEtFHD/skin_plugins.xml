@@ -1352,7 +1352,7 @@
 	    <convert type="EventTime">Remaining</convert>
 	    <convert type="RemainingToText">InMinutes</convert>
 	</widget>
-	<widget source="Event" font="Regular;28" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="80,210" size="520,530" transparent="1">
+	<widget source="Event" font="Regular;28" render="DRRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="80,210" size="520,530" transparent="1">
 	    <convert type="EventName">ExtendedDescription</convert>
 	</widget>
 	<widget source="Service" render="CoolNextEvent" foregroundColor="OE_Foreground" backgroundColor="dark" font="Regular;26" position="80,759" size="520,170" horizontalAlignment="left" transparent="1">
@@ -4380,7 +4380,7 @@
 	<eLabel backgroundColor="blue_light" position="80,142" size="230,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<eLabel text="IPTV Player" font="RegularBold;25" backgroundColor="OE_NewBg2" position="80,82" size="230,50" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
 	<!-- Widget -->
-	<widget name="headertext" font="RegularBold;30" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" position="350,85" size="1000,50" transparent="1"/>
+	<widget name="headertext" font="RegularBold;30" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" position="350,85" size="1000,50" transparent="1"/>
 	<eLabel backgroundColor="yellow" position="350,815" size="1480,1" zPosition="-9" foregroundColor="yellow"/>
 	<widget name="statustext" position="350,155" zPosition="1" size="1480,150" font="RegularBold;32" horizontalAlignment="left" verticalAlignment="top" transparent="1" backgroundColor="OE_Background" foregroundColor="green_light"/>
 	<widget name="list" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" position="350,155" zPosition="2" size="1480,650"/>
