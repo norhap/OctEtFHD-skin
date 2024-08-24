@@ -1640,7 +1640,7 @@
 	<!-- GRAPHICAL MULTI EPG LIST -->
 	<screen name="GraphMultiEPGList" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplateGraphicalEPG"/>
-		<widget source="Event" render="xtraPoster" position="1150,80" size="185,278" zPosition="2"/>
+		<!--widget source="Event" render="xtraPoster" position="1150,80" size="185,278" zPosition="2"/!-->
 		<widget source="session.VideoPicture" render="Pig" position="1365,75" size="530,290" zPosition="1" backgroundColor="#df0b1300"/>
 		<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" position="160,365" size="1730,2"/>
 		<widget backgroundColor="blue" name="timeline_text" position="160,380" selection="0" size="1730,50" transparent="1" itemHeight="55" font="RegularBold;26"/>
