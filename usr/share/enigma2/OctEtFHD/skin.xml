@@ -2112,10 +2112,10 @@
 		<widget pixmap="colors/green_light.png" position="75,978" render="Progress" size="1345,8" source="session.CurrentService" transparent="1" zPosition="2">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" horizontalAlignment="left" position="90,924" render="Label" shadowColor="OE_Background" shadowOffset="-1,-1" size="135,45" source="session.CurrentService" transparent="1" verticalAlignment="center">
+		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" horizontalAlignment="left" position="90,896" render="Label" shadowColor="OE_Background" shadowOffset="-1,-1" size="135,90" source="session.CurrentService" transparent="1" verticalAlignment="center">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" horizontalAlignment="right" position="1285,924" render="Label" size="135,45" source="session.CurrentService" transparent="1" verticalAlignment="center">
+		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" horizontalAlignment="right" position="1285,920" render="Label" size="135,45" source="session.CurrentService" transparent="1" verticalAlignment="center">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<widget backgroundColor="OE_Background" font="RegularBold;45" horizontalAlignment="center" position="1580,910" render="Label" size="220,65" source="session.CurrentService" transparent="1" verticalAlignment="center">
@@ -3387,22 +3387,23 @@
 		<eLabel backgroundColor="OE_Background" name="InfoBar" position="center,910" size="1780,125" zPosition="-11"/>
 		<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" position="1565,870" size="250,210" zPosition="-10"/>
 		<eLabel backgroundColor="green_light" position="1580,981" size="220,2" zPosition="-9"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;34" horizontalAlignment="center" noWrap="1" position="225,918" render="Label" size="1060,56" source="session.CurrentService" transparent="1">
+		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" position="80,896" render="Label" size="265,80" source="session.CurrentService" transparent="1" verticalAlignment="center">
+			<convert type="ServicePosition">Position</convert>
+		</widget>		
+		<widget backgroundColor="OE_Background" font="RegularBold;34" noWrap="1" position="650,918" render="Label" size="640,56" source="session.CurrentService" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" horizontalAlignment="right" position="1285,924" render="Label" size="135,45" source="session.CurrentService" transparent="1" verticalAlignment="center">
+		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" position="1295,896" render="Label" size="265,80" source="session.CurrentService" transparent="1" verticalAlignment="center">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="OE_Foreground" horizontalAlignment="left" position="90,924" render="Label" size="135,45" source="session.CurrentService" transparent="1" verticalAlignment="center">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
+
 		<widget backgroundColor="OE_Background" font="RegularBold;45" horizontalAlignment="center" position="1580,910" render="Label" size="220,65" source="session.CurrentService" transparent="1" verticalAlignment="center">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget pixmap="colors/green_light.png" position="75,978" render="Progress" size="1345,8" source="session.CurrentService" transparent="1" zPosition="2">
+		<widget pixmap="colors/green_light.png" position="75,978" render="Progress" size="1475,8" source="session.CurrentService" transparent="1" zPosition="2">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="75,981" size="1345,2" zPosition="-1"/>
+		<eLabel backgroundColor="OE_Accent1" foregroundColor="OE_Accent1" name="new eLabel" position="75,981" size="1475,2" zPosition="-1"/>
 		<!-- Info -->
 		<ePixmap alphaTest="blend" pixmap="my_icons/format_off.png" position="1620,994" size="63,32" zPosition="1"/>
 		<widget alphaTest="blend" pixmap="my_icons/format_on.png" position="1620,994" render="Pixmap" size="63,32" source="session.CurrentService" zPosition="2">
