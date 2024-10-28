@@ -3111,8 +3111,9 @@
 	<!-- SATFINDER -->
 	<screen name="Satfinder" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
-		<panel name="TemplateNoPip"/>
+		<panel name="TemplatePip"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="18,1035" size="64,43"/>
+		<widget name="header" font="RegularBold;28" backgroundColor="OE_Background" horizontalAlignment="center" position="23,100" size="1250,35" foregroundColor="#00e5e619" transparent="1"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,265" size="1250,705" transparent="1"/>
 		<eLabel backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="OE_Foreground" name="snr" position="40,144" size="120,45" text="SNR:" transparent="1"/>
 		<widget borderColor="grey" scrollbarBorderWidth="2" backgroundColor="OE_Background" foregroundColor="un56c856" position="165,148" render="Progress" size="850,20" source="Frontend" transparent="1">
