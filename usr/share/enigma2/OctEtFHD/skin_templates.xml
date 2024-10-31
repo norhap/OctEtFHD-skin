@@ -920,10 +920,10 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="footnote" conditional="footnote" position="1290,950" size="620,130" font="RegularBold;24" foregroundColor="#00e5e619" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1"/>
-		<widget name="introduction" conditional="introduction" position="1290,575" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+		<widget name="introduction" conditional="introduction" position="1290,650" size="620,560" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget source="description" render="Label" conditional="description" position="1290,520" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget name="description" conditional="description" position="1290,520" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-		<widget source="introduction" render="Label" conditional="introduction" position="1290,575" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+		<widget source="introduction" render="Label" conditional="introduction" position="1290,650" size="620,560" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget source="introduction2" render="Label" conditional="introduction2" position="1290,725" size="620,230" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	</screen>
 		<!-- TEMPLATE NOT PIP -->
