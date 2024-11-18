@@ -2345,11 +2345,6 @@
 		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,775" render="Label" size="255,45" source="DNS1" transparent="1"/>
 		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,825" render="Label" size="255,45" source="DNS2text" transparent="1"/>
 		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,825" render="Label" size="255,45" source="DNS2" transparent="1"/>
-		<eLabel text=":" position="560,620" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" horizontalAlignment="left"/>
-		<eLabel text=":" position="608,670" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" horizontalAlignment="left"/>
-		<eLabel text=":" position="628,720" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" horizontalAlignment="left"/>
-		<eLabel text=":" position="580,775" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" horizontalAlignment="left"/>
-		<eLabel text=":" position="618,825" size="25,45" font="RegularBold;26" backgroundColor="OE_Background" transparent="1" horizontalAlignment="left"/>
 		<widget source="Adapter" render="Label" position="1290,610" size="550,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>
 		<widget source="introduction2" render="Label" conditional="introduction2" position="1290,725" size="620,230" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget source="introduction" render="Label" conditional="introduction" position="390,580" size="620,230" font="RegularBold;25" horizontalAlignment="left" foregroundColor="blue_light" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
