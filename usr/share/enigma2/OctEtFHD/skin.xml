@@ -238,7 +238,7 @@
 		<widget name="label" conditional="label" backgroundColor="#0000fafa" position="445,275" size="1430,2" zPosition="-8"/>
 		<ePixmap alphaTest="blend" pixmap="picon_default.png" position="105,25" size="220,132" transparent="1" zPosition="10"/>
 		<widget name="icons" position="0,0" size="30,27" pixmaps="icons/lock_off.png,icons/lock_on.png,icons/lock_error.png" alphaTest="blend"/>
-		<widget source="locales" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,745" transparent="1">
+		<widget source="locales" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,650" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
 				"template":
@@ -263,7 +263,7 @@
 		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="25,945" size="64,43"/>
 		<widget name="text" conditional="text" font="RegularBold;26" horizontalAlignment="left" verticalAlignment="center" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="445,170" size="1420,90" transparent="1"/>
 		<widget name="label" conditional="label" backgroundColor="#0000fafa" position="445,275" size="1430,2" zPosition="-8"/>
-		<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,715" transparent="1">
+		<widget source="languages" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="445,280" size="1430,650" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template":[
 				MultiContentEntryText(pos=(120,15),size=(1340,45),flags=RT_HALIGN_LEFT,text=1),# index 1 is the language name,
