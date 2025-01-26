@@ -3714,8 +3714,8 @@
 	<eLabel backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="colors/o_logo.png" position="75,80" size="75,75" transparent="1" zPosition="1"/>
 	<!-- Widget -->
-	<widget source="Titel" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
-	<widget source="Titel2" render="Label" font="RegularBold;30" backgroundColor="OE_Background" horizontalAlignment="left" position="170,73" size="1250,50" transparent="1"/>
+	<widget source="Titel" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="170,73" size="800,50" transparent="1"/>
+	<widget source="Titel2" render="Label" font="RegularBold;30" backgroundColor="OE_Background" horizontalAlignment="left" position="975,73" size="0,0" transparent="1"/>
 	<widget name="MainList" itemHeight="180" foregroundColorSelected="white" backgroundColorSelected="OE_Selection" font0="RegularBold;28" font1="RegularBold;26" font2="RegularBold;28" font3="RegularBold;28" setTime="0,80,100,45" setPict="100,65,70,70" setPictScale="0" setTemp="200,55,90,40" setTempUnits="200,95,90,40" setWindPict="300,75,35,35" setWindPictScale="1" setWind="330,55,95,40" setWindUnits="330,95,120,40" text1Pos="480,0,800,42" text2Pos="480,45,800,42" text3Pos="480,90,800,42" text4Pos="480,135,800,42" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="170,140" size="1250,720" transparent="1"/>
 	<eLabel backgroundColor="blue_light" position="170,320" size="1250,1" zPosition="-9"/>
 	<eLabel backgroundColor="blue_light" position="170,500" size="1250,1" zPosition="-9"/>
