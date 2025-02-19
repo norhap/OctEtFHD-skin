@@ -1785,6 +1785,22 @@
 		<panel name="TemplateEPGSelection"/>
 		<widget name="list" itemHeight="50" setEventItemFont="RegularBold; 26" setEventTimeFont="RegularBold; 24" setColWidths="130,220" setColGap="30" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" position="500,160" size="1390,750" backgroundColor="OE_Background" transparent="1"/>
 	</screen>
+	<!-- EPG SEARCH HISTORY-->
+	<screen name="EPGSearchHistory" title="EPGSearch - History" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<widget source="history" render="Listbox" position="26,140" size="1250,750" itemHeight="50" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template":[
+				MultiContentEntryText(pos = (10, 3), size = (1250, 45), font=0, flags = RT_HALIGN_LEFT, text = 0,color_sel=0x0000fafa), # index 0 list history
+				],
+				"fonts": [gFont("RegularBold", 26),gFont("RegularBold", 26)],
+				"itemHeight": 85
+				}
+			</convert>
+		</widget>
+		<widget name="help" position="1290,520" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	</screen>
 	<screen name="FileBrowser" title="DVD File Browser" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<widget name="filelist" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,750" transparent="1"/>
