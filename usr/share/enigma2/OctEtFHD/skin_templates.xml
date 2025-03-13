@@ -709,7 +709,7 @@
 		<widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" objectTypes="key_green,StaticText" backgroundColor="OE_Background" position="520,950" size="40,40" alphaTest="blend" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap alphaTest="blend" pixmap="colors/o_logo.png" position="55,85" size="75,75" transparent="1" zPosition="1"/>
+		<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="55,100" size="75,75" transparent="1" zPosition="1"/>
 	</screen>
 		<!-- STANDARD SCREEN -->
 	<screen name="StanDardScreen">
@@ -724,7 +724,7 @@
 		<eLabel backgroundColor="blue_light" position="5,1077" size="1279,3" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="5,0" size="3,1078" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="1281,0" size="3,1078" zPosition="-15"/>
-		<ePixmap alphaTest="blend" pixmap="colors/o_logo.png" position="1290,5" size="75,75" transparent="1" zPosition="1"/>
+		<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="1287,20" size="75,75" transparent="1" zPosition="1"/>
 		<eLabel backgroundColor="blue_light" position="26,138" size="1250,2" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" position="26,965" size="1250,2" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" position="20,1033" size="1261,2" zPosition="-15"/>
@@ -736,7 +736,7 @@
 		<panel name="ButtonsSlim"/>
 		<eLabel backgroundColor="OE_Background" position="0,0" size="1050,1080" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" position="0,0" size="80,1080" zPosition="-11" verticalAlignment="center"/>
-		<ePixmap alphaTest="blend" pixmap="colors/o_logo.png" position="2,30" size="75,75" transparent="1" zPosition="1"/>
+		<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="2,45" size="75,75" transparent="1" zPosition="1"/>
 		<eLabel backgroundColor="blue_light" position="1048,0" size="2,1077" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" position="80,0" size="968,3" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" position="100,125" size="950,2" zPosition="-9"/>
@@ -892,7 +892,7 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 	<screen name="DownloadBar">
 		<widget name="action" position="35,5" size="400,70" horizontalAlignment="center" verticalAlignment="top" font="RegularBold;26" backgroundColor="OE_NewBg2"/>
 		<widget name="status" position="450,5" size="635,70" font="RegularBold;26" horizontalAlignment="center" verticalAlignment="center" backgroundColor="OE_NewBg2"/>
-		<ePixmap alphaTest="blend" pixmap="colors/o_logo.png" position="1100,10" size="75,75" transparent="1" zPosition="1"/>
+		<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="1100,25" size="75,75" transparent="1" zPosition="1"/>
 		<widget name="background" position="365,0" size="0,0" backgroundColor="OE_NewBg2"/>
 		<widget name="progress" position="1400,30" size="370,35" foregroundColor="blue_light" backgroundColor="OE_NewBg2"/>
 		<eLabel position="1400,30" size="370,2" backgroundColor="#0000fafa" zPosition="16"/>
