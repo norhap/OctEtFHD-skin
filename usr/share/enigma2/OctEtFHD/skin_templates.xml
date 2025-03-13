@@ -560,10 +560,10 @@
 		<!-- MENU SORT -->
 	<screen name="TemplateMenuSort">
 		<ePixmap alphaTest="blend" objectTypes="key_blue,Button,Label" backgroundColor="OE_NewBg2" pixmap="buttons/key_blue.png" position="2,910" size="40,40"/>
-		<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_NewBg2" position="2,910" size="40,40" alphaTest="blend" zPosition="1">
+		<widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" objectTypes="key_blue,StaticText" backgroundColor="OE_NewBg2" position="4,910" size="40,40" alphaTest="blend" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_blue" conditional="key_blue" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="39,895" size="240,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget source="key_blue" conditional="key_blue" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="50,895" size="229,70" verticalAlignment="center" transparent="1" zPosition="1"/>
 	</screen>
 		<!-- MENUS EPG -->
 		<!-- FRAME EPG -->
