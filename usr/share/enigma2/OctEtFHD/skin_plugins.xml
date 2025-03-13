@@ -3712,7 +3712,7 @@
 	<eLabel backgroundColor="OE_Background" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" position="70,center" size="80,1080" zPosition="-11" verticalAlignment="center"/>
 	<eLabel backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
-	<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
+	<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
 	<!-- Widget -->
 	<widget source="Titel" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="170,73" size="800,50" transparent="1"/>
 	<widget source="Titel2" render="Label" font="RegularBold;30" backgroundColor="OE_Background" horizontalAlignment="left" position="975,73" size="0,0" transparent="1"/>
@@ -3746,7 +3746,7 @@
   <screen name="CityPanel" title="Select a city" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" position="70,center" size="80,1080" zPosition="-11" verticalAlignment="center"/>
-	<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
+	<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
@@ -3770,7 +3770,7 @@
 	<eLabel backgroundColor="OE_Background" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" position="70,center" size="80,1080" zPosition="-11" verticalAlignment="center"/>
 	<eLabel backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
-	<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
+	<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
 	<widget name="Mlist" font="RegularBold;32" itemHeight="145" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,165" size="1250,725" transparent="1"/>
@@ -3792,7 +3792,7 @@
 	<eLabel backgroundColor="OE_Background" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" position="70,center" size="80,1080" zPosition="-11" verticalAlignment="center"/>
 	<eLabel backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
-	<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
+	<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
 	<widget name="Mlist" font="RegularBold;32" itemHeight="145" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="170,165" size="1250,725" transparent="1"/>
@@ -3804,7 +3804,7 @@
 	<eLabel backgroundColor="OE_Background" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" position="70,center" size="80,1080" zPosition="-11" verticalAlignment="center"/>
 	<eLabel backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
-	<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
+	<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="75,95" size="75,75" transparent="1" zPosition="1"/>
 	<!-- Widget -->
 	<eLabel text="SlideShow Settings" font="RegularBold;30" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
 	<widget name="Mlist" itemHeight="50" font="RegularBold;25" valueFont="Regular;28" backgroundColorSelected="OE_Selection" scrollbarMode="showOnDemand" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="170,165" size="1250,750" transparent="1"/>
@@ -6103,7 +6103,7 @@
 		</convert>
 	</widget>
 	<!-- Buttons-->
-	<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="72,70" size="75,75" transparent="1" zPosition="1"/>
+	<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="72,70" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel backgroundColor="blue_light" position="170,945" size="1610,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
@@ -6151,7 +6151,7 @@
 		</convert>
 	</widget>
 	<!-- Buttons-->
-	<ePixmap alphaTest="blend" pixmap="colors/norhap_logo.png" position="72,70" size="75,75" transparent="1" zPosition="1"/>
+	<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="72,70" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel backgroundColor="blue_light" position="170,945" size="1610,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
