@@ -411,7 +411,7 @@
 		<ePixmap alphaTest="blend" pixmap="buttons/key_leftright.png" position="940,1004" size="64,43"/>
 		<eLabel backgroundColor="OE_NewBg2" position="277,1004" size="903,45" zPosition="-10"/>
 		<eLabel text="Move" position="1010,1010" size="168,30" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;24"/>
-		<ePixmap alphaTest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="4,1005" size="40,40"/>
+		<ePixmap alphaTest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="4,1003" size="40,40"/>
 		<ePixmap alphaTest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="235,1005" size="40,40"/>
 		<ePixmap alphaTest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="655,1005" size="40,40"/>
 		<widget source="key_red" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="48,1005" size="202,39" transparent="1" zPosition="1" horizontalAlignment="left" verticalAlignment="center"/>
@@ -907,16 +907,16 @@
 		<widget source="key_help" alphaTest="blend" pixmap="buttons/key_help.png" position="353,1035" size="64,43" render="Pixmap" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_red" alphaTest="blend" pixmap="buttons/key_red.png" position="26,158" render="Pixmap" size="40,40" zPosition="1">
+		<widget source="key_red" alphaTest="blend" pixmap="buttons/key_red.png" position="26,160" render="Pixmap" size="40,40" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_green" alphaTest="blend" pixmap="buttons/key_green.png" position="26,207" size="40,40" render="Pixmap" zPosition="1">
+		<widget source="key_green" alphaTest="blend" pixmap="buttons/key_green.png" position="26,209" size="40,40" render="Pixmap" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_yellow" alphaTest="blend" pixmap="buttons/key_yellow.png" position="26,257" size="40,40" render="Pixmap" zPosition="1">
+		<widget source="key_yellow" alphaTest="blend" pixmap="buttons/key_yellow.png" position="26,259" size="40,40" render="Pixmap" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_blue" alphaTest="blend" pixmap="buttons/key_blue.png" position="26,307" size="40,40" render="Pixmap" zPosition="1">
+		<widget source="key_blue" alphaTest="blend" pixmap="buttons/key_blue.png" position="26,309" size="40,40" render="Pixmap" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" position="70,155" size="1185,350" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1" zPosition="3"/>
