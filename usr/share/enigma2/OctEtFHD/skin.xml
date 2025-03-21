@@ -1345,6 +1345,8 @@
 		<panel name="TemplatePip"/>
 		<widget name="list" position="26,center" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" foregroundColorNextEvent="blue_light" foregroundColorEventNextSelected="#0000fafa" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="RegularBold;32" serviceNameFont="RegularBold;32" serviceInfoFont="RegularBold;27" size="1250,800" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="18,1035" size="64,43"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_text.png" position="87,1035" size="64,43"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_info.png" position="156,1035" size="64,43"/>
 	</screen>
 	<!-- CHANNELSELECTION RADIO -->
 	<screen name="ChannelSelectionRadio" title="ChannelSelectionRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
