@@ -1071,11 +1071,11 @@
 		<widget source="ServiceEvent" font="RegularBold;27" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" foregroundColor="green_light" position="50,345" size="365,45" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;22" position="420,337" render="Label" size="90,25" source="ServiceEvent" transparent="1">
+		<widget source="ServiceEvent" backgroundColor="OE_NewBg2" font="RegularBold;20" position="420,340" render="Label" size="90,25" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;22" position="485,337" render="Label" size="90,25" source="ServiceEvent" transparent="1">
+		<widget source="ServiceEvent" backgroundColor="OE_NewBg2" font="RegularBold;20" position="479,340" render="Label" size="90,25" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:-%H:%M</convert>
 		</widget>
