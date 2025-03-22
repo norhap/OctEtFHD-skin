@@ -629,7 +629,7 @@
 		<widget source="session.CurrentService" render="Label" backgroundColor="OE_NewBg" position="25,430" size="440,25" horizontalAlignment="center" verticalAlignment="center" zPosition="6" font="RegularBold;22" transparent="1" >
 			<convert type="PliExtraInfo">CryptoBar</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="RegularBold;21" backgroundColor="OE_NewBg" position="25,455" size="440,90" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="1">
+		<widget source="session.CurrentService" render="Label" font="RegularBold;21" backgroundColor="OE_NewBg" position="25,455" size="440,168" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv.png" alphaTest="blend" position="110,958" zPosition="20" size="250,90" transparent="1">
