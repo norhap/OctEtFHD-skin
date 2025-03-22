@@ -440,14 +440,23 @@
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="315,775" size="2,305" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="28,1078" size="289,2" zPosition="-9"/>
 		<!--widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="RegularBold;30" position="325,870" horizontalAlignment="center" size="110,40" transparent="1" zPosition="1"/-->
-		<widget source="session.CurrentService" render="Label" position="325,850" size="833,35" font="RegularBold;27" noWrap="1" backgroundColor="background" transparent="1" horizontalAlignment="left" verticalAlignment="center">
+		<widget source="session.CurrentService" render="Label" position="325,850" size="600,35" font="RegularBold;27" noWrap="1" backgroundColor="background" transparent="1" horizontalAlignment="left" verticalAlignment="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="1160,852" horizontalAlignment="left" zPosition="4" size="255,25" font="RegularBold;24" foregroundColor="green" backgroundColor="OE_Background" transparent="1">
+		<widget source="session.CurrentService" alphaTest="blend" pixmap="buttons/key_green.png" position="935,844" render="Pixmap" size="40,40" zPosition="2">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="key_yellow" conditional="key_yellow" objectTypes="key_yellow,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" foregroundColor="#00eff708" position="1417,852" size="430,30" horizontalAlignment="right" transparent="1" zPosition="1"/>
+		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="975,852" horizontalAlignment="left" zPosition="4" size="205,25" font="RegularBold;24" backgroundColor="OE_Background" transparent="1">
+			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap objectTypes="key_yellow,Button,Label" alphaTest="blend" pixmap="buttons/key_yellow.png" position="1150,844" size="40,40"/>
+		<widget name="key_yellow" conditional="key_yellow" objectTypes="key_yellow,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" position="1190,852" size="300,30" horizontalAlignment="right" transparent="1" zPosition="1"/>
+		<!-- Extensions key blue wildcard used from yellow button auto timer -->
+		<ePixmap objectTypes="key_yellow,Button,Label" alphaTest="blend" pixmap="buttons/key_blue.png" position="1570,844" size="40,40"/>
+		<widget source="key_yellow" conditional="key_yellow" render="FixedLabel" text="Extensions" font="RegularBold;23" backgroundColor="OE_Background" position="1610,852" size="260,30" transparent="1" zPosition="1"/>
+		<!-- END Extensions key blue wildcard used from yellow button auto timer -->
 		<widget source="session.CurrentService" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="325,885" size="930,28" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
 		</widget>
