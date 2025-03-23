@@ -452,9 +452,9 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap objectTypes="key_yellow,Button,Label" alphaTest="blend" pixmap="buttons/key_yellow.png" position="1150,844" size="40,40"/>
-		<widget name="key_yellow" conditional="key_yellow" objectTypes="key_yellow,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" position="1190,852" size="300,30" horizontalAlignment="right" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" conditional="key_yellow" objectTypes="key_yellow,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" position="1190,852" size="300,30" horizontalAlignment="left" transparent="1" zPosition="1"/>
 		<ePixmap objectTypes="key_blue,Button,Label" alphaTest="blend" pixmap="buttons/key_blue.png" position="1570,844" size="40,40"/>
-		<widget name="key_blue" conditional="key_blue" objectTypes="key_blue,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" position="1610,852" size="260,30" transparent="1" zPosition="1"/>
+		<widget name="key_blue" conditional="key_blue" objectTypes="key_blue,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" position="1610,852" size="260,30" horizontalAlignment="left" transparent="1" zPosition="1"/>
 		<widget source="session.CurrentService" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="325,885" size="930,28" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
 		</widget>
