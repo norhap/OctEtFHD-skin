@@ -440,17 +440,19 @@
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="315,775" size="2,305" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="28,1078" size="289,2" zPosition="-9"/>
 		<!--widget source="session.CurrentService" render="ChannelNumber" backgroundColor="OE_Background" foregroundColor="OE_Foreground" font="RegularBold;30" position="325,870" horizontalAlignment="center" size="110,40" transparent="1" zPosition="1"/-->
-		<widget source="session.CurrentService" render="Label" position="325,850" size="600,35" font="RegularBold;27" noWrap="1" backgroundColor="background" transparent="1" horizontalAlignment="left" verticalAlignment="center">
+		<widget source="session.CurrentService" render="Label" position="325,850" size="500,35" font="RegularBold;27" noWrap="1" backgroundColor="background" transparent="1" horizontalAlignment="left" verticalAlignment="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" alphaTest="blend" pixmap="buttons/key_green.png" position="935,844" render="Pixmap" size="40,40" zPosition="2">
+		<widget source="session.CurrentService" alphaTest="blend" pixmap="buttons/key_green.png" position="825,844" render="Pixmap" size="40,40" zPosition="2">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="975,852" horizontalAlignment="left" zPosition="4" size="205,25" font="RegularBold;24" backgroundColor="OE_Background" transparent="1">
+		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="865,852" horizontalAlignment="left" zPosition="4" size="205,25" font="RegularBold;24" backgroundColor="OE_Background" transparent="0">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<ePixmap pixmap="buttons/key_green.png" position="825,844" size="40,40" objectTypes="key_green,Button,Label" alphaTest="blend"/>
+		<widget name="key_green" position="865,852" size="280,25" conditional="key_green" objectTypes="key_green,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_yellow.png" position="1150,844" size="40,40" objectTypes="key_yellow,Button,Label" alphaTest="blend"/>
 		<widget name="key_yellow" position="1190,852" size="320,30" conditional="key_yellow" objectTypes="key_yellow,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_blue.png" position="1505,844" size="40,40" objectTypes="key_blue,Button,Label" alphaTest="blend"/>
