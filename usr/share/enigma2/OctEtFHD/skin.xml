@@ -444,13 +444,13 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- CryptoInfo -->
-		<widget source="session.CurrentService" render="Label" position="895,860" size="394,25" backgroundColor="OE_Background" font="RegularBold;22" foregroundColor="blue_light" transparent="1" horizontalAlignment="left">
+		<widget source="session.CurrentService" render="Label" position="895,855" size="414,25" backgroundColor="OE_Background" font="RegularBold;22" foregroundColor="blue_light" transparent="1" horizontalAlignment="left">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1290,860" size="400,25" font="RegularBold;22" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="1310,855" size="400,25" font="RegularBold;22" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
 			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
-		<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1695,860" size="98,31" transparent="1" alphaTest="blend" zPosition="3"/>
+		<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1715,855" size="98,31" transparent="1" alphaTest="blend" zPosition="3"/>
 		<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1808,855" size="63,32" alphaTest="blend" zPosition="3"/>
 		<widget source="session.CurrentService" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="325,885" size="930,28" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
