@@ -5008,7 +5008,7 @@
 	<!-- ********** ####### SCREENSAVER ####### ********** -->
 	<screen name="Screensaver" position="fill" flags="wfNoBorder">
 		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
-		<widget name="picture" pixmap="screensaverpicture.png" position="0,0" size="140,140" alphaTest="blend" zPosition="1"/>
+		<widget name="picture" pixmap="screensaverpicture.png" position="0,0" size="220,132" alphaTest="blend" zPosition="1"/>
 	</screen>
 	<!-- ********** ####### FACTORY RESET ####### ********** -->
 	<screen name="FactoryReset" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
