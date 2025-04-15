@@ -935,20 +935,20 @@
 				{"templates":
 				{"default": (50, [
 				MultiContentEntryText(pos = (0, 5), size = (55, 40),	font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-				MultiContentEntryText(pos = (60, 5), size = (70, 40),	 font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
-				MultiContentEntryText(pos = (160, 5), size = (360, 40),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-				MultiContentEntryText(pos = (430, 5), size = (450, 40), font = 0, flags = RT_HALIGN_LEFT,	 text = 4), # language,
-				MultiContentEntryText(pos = (1000, 5), size = (25, 40),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				MultiContentEntryText(pos = (5, 5), size = (60, 40),	 font = 0, flags = RT_HALIGN_LEFT,	text = 2), # number,
+				MultiContentEntryText(pos = (67, 5), size = (350, 40),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+				MultiContentEntryText(pos = (420, 5), size = (770, 40), font = 0, flags = RT_HALIGN_LEFT,	 text = 4), # language,
+				MultiContentEntryText(pos = (1210, 5), size = (25, 40),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 				], True, "showNever"),
 				"notselected": (50, [
-				MultiContentEntryText(pos = (0, 5),	size = (55, 35),  font = 0, flags = RT_HALIGN_LEFT,	 text = 1), # key,
-				MultiContentEntryText(pos = (60, 5),	size = (70, 35),  font = 0, flags = RT_HALIGN_LEFT,	 text = 2), # number,
-				MultiContentEntryText(pos = (160, 5), size = (360, 35),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-				MultiContentEntryText(pos = (430, 5), size = (450, 35), font = 0, flags = RT_HALIGN_LEFT,	 text = 4), # language,
-				MultiContentEntryText(pos = (1000, 5), size = (25, 35),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				MultiContentEntryText(pos = (0, 5),	size = (55, 40),  font = 0, flags = RT_HALIGN_LEFT,	 text = 1), # key,
+				MultiContentEntryText(pos = (5, 5),	size = (60, 40),  font = 0, flags = RT_HALIGN_LEFT,	 text = 2), # number,
+				MultiContentEntryText(pos = (67, 5), size = (350, 40),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+				MultiContentEntryText(pos = (420, 5), size = (770, 40), font = 0, flags = RT_HALIGN_LEFT,	 text = 4), # language,
+				MultiContentEntryText(pos = (1210, 5), size = (25, 40),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 				], False, "showNever")
 				},
-				"fonts": [gFont("RegularBold", 30), gFont("RegularBold", 30)],
+				"fonts": [gFont("RegularBold", 28), gFont("RegularBold", 28)],
 				"itemHeight": 55
 				}
 			</convert>
