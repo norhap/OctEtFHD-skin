@@ -591,11 +591,11 @@
 		</widget>
 		<!-- buttons -->
 		<ePixmap pixmap="buttons/key_green.png" position="335,1028" size="40,40" objectTypes="key_green,Button,Label" alphaTest="blend"/>
-		<widget name="key_green" position="375,1037" size="460,26" objectTypes="key_green,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="375,1035" size="460,26" objectTypes="key_green,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_yellow.png" position="845,1028" size="40,40" objectTypes="key_yellow,Button,Label" alphaTest="blend"/>
-		<widget name="key_yellow" position="885,1037" size="460,26" objectTypes="key_yellow,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="885,1035" size="460,26" objectTypes="key_yellow,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_blue.png" position="1355,1028" size="40,40" objectTypes="key_blue,Button,Label" alphaTest="blend"/>
-		<widget name="key_blue" position="1395,1037" size="460,26" objectTypes="key_blue,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
+		<widget name="key_blue" position="1395,1035" size="460,26" objectTypes="key_blue,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
 		<!-- Clock -->
 		<panel name="Clock"/>
 	</screen>
