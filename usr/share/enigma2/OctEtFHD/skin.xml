@@ -1459,7 +1459,7 @@
 		<eLabel text="easyCIconfigMenu" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
 		<widget source="ServiceList_desc" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="170,145" size="1250,45" transparent="1"/>
 		<eLabel backgroundColor="white" position="170,200" size="1250,2" zPosition="-9"/>
-		<widget name="ServiceList" render="Label" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,210" size="1250,700" transparent="1"/>
+		<widget name="ServiceList" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,210" size="1250,700" transparent="1"/>
 		<!-- Buttons-->
 		<eLabel backgroundColor="white" position="170,945" size="1250,2" zPosition="-9"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
@@ -2653,13 +2653,13 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,550" transparent="1"/>
-		<widget name="status" render="Label" font="EL_Standard;28" backgroundColor="OE_Background" horizontalAlignment="left" position="26,730" size="1250,200" transparent="1"/>
+		<widget name="status" font="EL_Standard;28" backgroundColor="OE_Background" horizontalAlignment="left" position="26,730" size="1250,200" transparent="1"/>
 	</screen>
 	<screen name="NcamInfoConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,550" transparent="1"/>
-		<widget name="status" render="Label" font="EL_Standard;28" backgroundColor="OE_Background" horizontalAlignment="left" position="26,730" size="1250,200" transparent="1"/>
+		<widget name="status" font="EL_Standard;28" backgroundColor="OE_Background" horizontalAlignment="left" position="26,730" size="1250,200" transparent="1"/>
 	</screen>
 	<!-- OSD3D -->
 	<screen name="OSD3DSetupScreen" title="OSD 3D setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
