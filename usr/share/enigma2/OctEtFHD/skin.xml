@@ -2215,7 +2215,7 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="DescriptionBorder" position="0,0" size="0,0"/>
-		<widget name="waitingtext" position="0,0" size="0,0" font="RegularBold;38" backgroundColor="OE_Background" zPosition="1"/>
+		<widget name="waitingtext" position="950,145" size="600,35" font="RegularBold;26" foregroundColor="#0000fafa" backgroundColor="black" zPosition="1"/>
 		<!-- Button -->
 		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="465,950" size="64,43"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_info.png" position="525,950" size="64,43"/>
