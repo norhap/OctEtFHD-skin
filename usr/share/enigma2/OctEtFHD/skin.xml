@@ -1072,6 +1072,7 @@
 		<eLabel backgroundColor="OE_NewBg2" position="40,0" size="520,5" zPosition="11"/>
 		<widget source="session.VideoPicture" render="Pig" position="40,0" size="520,340" zPosition="1" backgroundColor="#df0b1300"/>
 		<!-- Widget -->
+		<widget name="letternumber" conditional="letternumber" position="570,80" size="40,40" font="RegularBold;30" foregroundColor="#0000fafa" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
 		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="580,50" size="1310,90" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
 		<widget name="list" position="570,150" size="1330,760" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" foregroundColorNextEvent="blue_light" foregroundColorEventNextSelected="#0000fafa" foregroundColorMarked="red" foregroundColorMarkedSelected="red" backgroundColorMarked="OE_Background" itemHeight="50" serviceItemHeight="38" serviceNumberFont="RegularBold;30" serviceNameFont="RegularBold;30" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 		<widget source="ServiceEvent" render="Label" font="RegularBold;20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="620,905" size="1200,30" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="1">
@@ -2198,7 +2199,7 @@
 		<eLabel backgroundColor="blue_light" position="465,142" size="1445,2" zPosition="2" foregroundColor="un5678a4"/>
 		<eLabel backgroundColor="blue_light" position="465,930" size="1445,2" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" position="30,930" size="420,2" zPosition="2"/>
-		<widget name="chosenletter" position="425,165" size="40,40" font="RegularBold;30" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
+		<widget name="chosenletter" position="425,165" size="40,40" font="RegularBold;30" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa" transparent="1" zPosition="1"/>
 		<widget name="list" position="465,160" size="1440,750" backgroundColor="black" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="0"/>
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" horizontalAlignment="left" position="30,885" size="180,45" render="Label" source="Service" transparent="1" zPosition="1">
 			<convert type="ServiceTime">Duration</convert>
