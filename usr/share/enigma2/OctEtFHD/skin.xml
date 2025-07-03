@@ -2225,10 +2225,10 @@
 		<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="970,950" size="40,40"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1260,950" size="40,40"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="1550,950" size="40,40"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" horizontalAlignment="left" position="735,950" size="280,40" name="key_red" transparent="1" zPosition="1"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" horizontalAlignment="left" position="1015,950" size="280,40" name="key_green" transparent="1" zPosition="1"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" horizontalAlignment="left" position="1305,950" size="280,40" name="key_yellow" transparent="1" zPosition="1"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" horizontalAlignment="left" position="1595,950" size="280,40" name="key_blue" transparent="1" zPosition="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" horizontalAlignment="left" position="735,937" size="280,70" name="key_red" transparent="1" zPosition="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" horizontalAlignment="left" position="1015,937" size="280,70" name="key_green" transparent="1" zPosition="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" horizontalAlignment="left" position="1305,937" size="280,70" name="key_yellow" transparent="1" zPosition="1"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" horizontalAlignment="left" position="1595,937" size="310,70" name="key_blue" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- MOVIESELECTIONSLIM -->
 	<screen name="MovieSelectionSlim" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
