@@ -1072,8 +1072,8 @@
 		<eLabel backgroundColor="OE_NewBg2" position="40,0" size="520,5" zPosition="11"/>
 		<widget source="session.VideoPicture" render="Pig" position="40,0" size="520,340" zPosition="1" backgroundColor="#df0b1300"/>
 		<!-- Widget -->
-		<widget name="letternumber" conditional="letternumber" position="570,80" size="40,40" font="RegularBold;30" foregroundColor="#0000fafa" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
-		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="580,50" size="1310,90" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
+		<widget name="letternumber" conditional="letternumber" position="585,65" size="30,35" font="RegularBold;30" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="580,50" size="1310,80" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
 		<widget name="list" position="570,150" size="1330,760" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" foregroundColorNextEvent="blue_light" foregroundColorEventNextSelected="#0000fafa" foregroundColorMarked="red" foregroundColorMarkedSelected="red" backgroundColorMarked="OE_Background" itemHeight="50" serviceItemHeight="38" serviceNumberFont="RegularBold;30" serviceNameFont="RegularBold;30" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 		<widget source="ServiceEvent" render="Label" font="RegularBold;20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="620,905" size="1200,30" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo">
@@ -1296,9 +1296,7 @@
 	</screen>
 	<!-- CHANNELSELECTION STANDARD 2 -->
 	<screen name="Standar2ChannelSelection" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
-		<!-- Clock -->
-		<panel name="Clock"/>
-		<eLabel backgroundColor="OE_Background" position="30,center" size="1830,940" zPosition="-15"/>
+		<eLabel backgroundColor="OE_Background" position="0,0" size="1920,1080" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" position="65,center" size="600,1080" zPosition="-11" verticalAlignment="center"/>
 		<widget source="ServiceEvent" render="Label" font="RegularBold;28" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="80,10" size="570,70" transparent="1" zPosition="1">
 			<convert type="TransponderInfo">
@@ -1307,10 +1305,11 @@
 		<widget source="ServiceEvent" font="RegularBold;30" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" position="80,85" size="450,50" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="Title" render="Label" font="RegularBold;32" backgroundColor="OE_Background" position="680,20" size="750,140" transparent="1"/>
-		<eLabel backgroundColor="blue_light" position="80,142" size="570,2" zPosition="-9" foregroundColor="un5678a4"/>
-		<eLabel backgroundColor="blue_light" position="680,142" size="1230,2" zPosition="-9" foregroundColor="un5678a4"/>
-		<widget name="list" position="680,160" size="1230,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" foregroundColorNextEvent="blue_light" foregroundColorEventNextSelected="#0000fafa" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="RegularBold;32" serviceNameFont="RegularBold;32" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
+		<widget name="letternumber" conditional="letternumber" position="710,130" size="30,35" font="RegularBold;30" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="680,0" size="1240,125" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
+		<eLabel backgroundColor="blue_light" position="80,129" size="570,2" zPosition="-9" foregroundColor="un5678a4"/>
+		<eLabel backgroundColor="blue_light" position="680,129" size="1230,2" zPosition="-9" foregroundColor="un5678a4"/>
+		<widget name="list" position="680,165" size="1230,800" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" foregroundColorNextEvent="blue_light" foregroundColorEventNextSelected="#0000fafa" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="RegularBold;32" serviceNameFont="RegularBold;32" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 		<widget source="ServiceEvent" font="RegularBold;30" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_Background" foregroundColor="green_light" position="80,150" size="570,45" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -1354,6 +1353,7 @@
 	<screen name="SimpleChannelSelection" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
+		<widget name="letternumber" conditional="letternumber" position="60,15" size="30,35" font="RegularBold;30" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget name="list" position="26,center" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" foregroundColorNextEvent="blue_light" foregroundColorEventNextSelected="#0000fafa" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="RegularBold;32" serviceNameFont="RegularBold;32" serviceInfoFont="RegularBold;27" size="1250,800" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="18,1035" size="64,43"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_text.png" position="87,1035" size="64,43"/>
