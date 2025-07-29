@@ -4133,7 +4133,7 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
-		<widget name="preview" position="1345,590" size="520,440" alphaTest="blend"/>
+		<widget name="preview" position="1320,590" size="560,480" alphaTest="blend"/>
 		<widget source="skins" render="Listbox" position="26,140" size="1250,710" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light">
 			<convert type="TemplatedMultiContent">
 				{"template":[
