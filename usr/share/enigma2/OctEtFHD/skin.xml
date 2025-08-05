@@ -3265,8 +3265,11 @@
 		<panel name="TemplatePip"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	</screen>
+	<!-- STANDBY -->
+	<screen name="Standby" backgroundColor="OE_Background" flags="wfNoBorder" position="fill" size="1920,1080" title="Standby">
+		<eLabel backgroundColor="#00000000" font="RegularBold;38" position="center,center" size="200,60" text="Standby" transparent="1" horizontalAlignment="center" noWrap="1"/>
+	</screen>
 	<!-- ####### Subtitle Display ####### -->
-	<screen backgroundColor="OE_Background" flags="wfNoBorder" name="Standby" position="0,0" size="1920,1080" title="Standby"/>
 	<screen name="SubtitleDisplay" position="fill" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="message"/>
 	</screen>
