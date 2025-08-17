@@ -910,7 +910,8 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 	</screen>
 		<!-- SUBTITLEDISPLAY -->
 	<screen name="message" position="fill" flags="wfNoBorder">
-		<widget name="message" position="0,0" size="0,0" transparent="1"/>
+		<widget name="message" conditional="message" position="0,0" size="0,0" transparent="1"/>
+		<widget name="subtitles" conditional="subtitles" position="0,0" size="0,0" transparent="1"/>
 	</screen>
 		<!-- TEMPLATE MANDATORY WIDGETS -->
 	<screen name="MandatoryWidgets">
