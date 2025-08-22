@@ -573,8 +573,8 @@
 		<eLabel backgroundColor="black" position="0,0" size="1920,1080" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="10,72" size="1900,2" zPosition="0"/>
 		<eLabel backgroundColor="blue_light" position="10,72" size="2,938" zPosition="0"/>
-		<eLabel backgroundColor="blue_light" position="10,1008" size="1900,2" zPosition="0"/>
-		<eLabel backgroundColor="blue_light" position="1908,72" size="2,938" zPosition="0"/>
+		<eLabel backgroundColor="blue_light" position="10,1023" size="1900,2" zPosition="0"/>
+		<eLabel backgroundColor="blue_light" position="1908,72" size="2,953" zPosition="0"/>
 	</screen>
 		<!-- EPG SINGLE EPG SEARCH EPG SIMILAR -->
 	<screen name="TemplateEPGSelection">
