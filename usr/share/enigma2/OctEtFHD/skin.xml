@@ -2315,39 +2315,39 @@
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
 		<widget name="InfoText" position="1290,575" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-		<widget name="Adaptertext" backgroundColor="OE_Background" font="RegularBold;32" position="170,175" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="Adapter" backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="OE_Foreground" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,225" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="AdapterInfo_OK" pixmap="extensions/lock_on.png" alphaTest="blend" position="590,230" size="35,35" zPosition="2"/>
-		<widget name="AdapterInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="OE_Foreground" foregroundColors="darkgrey,grey,white" horizontalAlignment="right" position="640,225" size="280,45" transparent="1" verticalAlignment="center" zPosition="2"/>
-		<widget name="AdapterInfo" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" backgroundColor="OE_Background" position="640,225" size="350,45" zPosition="1"/>
-		<widget name="Networktext" backgroundColor="OE_Background" font="RegularBold;32" position="170,325" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="Network" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,375" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="NetworkInfo_Check" backgroundColor="OE_Background" pixmaps="extensions/lock_on.png,extensions/lock_off.png" alphaTest="blend" position="590,380" size="35,35" zPosition="2"/>
-		<widget name="NetworkInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,grey,white" horizontalAlignment="right" position="640,375" size="280,45" transparent="1" verticalAlignment="center" zPosition="2"/>
-		<widget name="NetworkInfo" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" backgroundColor="OE_Background" position="640,375" size="350,45" zPosition="1"/>
-		<widget name="Dhcptext" backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="OE_Foreground" position="170,475" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="Dhcp" backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="OE_Foreground" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,525" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="DhcpInfo_Check" backgroundColor="OE_Background" pixmaps="extensions/lock_on.png,extensions/lock_off.png" alphaTest="blend" position="590,530" size="35,35" zPosition="2"/>
-		<widget name="DhcpInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,grey,white" horizontalAlignment="right" position="640,525" size="280,45" transparent="1" verticalAlignment="center" zPosition="2"/>
-		<widget name="DhcpInfo" backgroundColor="OE_Background" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" position="640,525" size="350,45" zPosition="1"/>
-		<widget name="IPtext" backgroundColor="OE_Background" font="RegularBold;32" position="170,625" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="IP" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,675" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="IPInfo_Check" backgroundColor="OE_Background" pixmaps="extensions/lock_on.png,extensions/lock_off.png" alphaTest="blend" position="590,680" size="35,35" zPosition="2"/>
-		<widget name="IPInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,grey,white" horizontalAlignment="right" position="640,675" size="280,45" transparent="1" verticalAlignment="center" zPosition="2"/>
-		<widget name="IPInfo" backgroundColor="OE_Background" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" position="640,675" size="350,45" zPosition="1"/>
-		<widget name="DNStext" backgroundColor="OE_Background" font="RegularBold;32" position="170,775" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="DNS" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,825" size="400,45" transparent="1" zPosition="1"/>
-		<widget name="DNSInfo_Check" backgroundColor="OE_Background" pixmaps="extensions/lock_on.png,extensions/lock_off.png" alphaTest="blend" position="590,830" size="35,35" zPosition="2"/>
-		<widget name="DNSInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,grey,white" horizontalAlignment="right" position="640,825" size="280,45" transparent="1" verticalAlignment="center" zPosition="2"/>
-		<widget name="DNSInfo" backgroundColor="OE_Background" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" position="640,825" size="350,45" zPosition="1"/>
-		<widget name="EditSettings_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,grey,white" horizontalAlignment="right" position="470,888" size="450,45" transparent="1" verticalAlignment="center" zPosition="2"/>
-		<widget name="EditSettingsButton" backgroundColor="OE_Background" pixmaps="extensions/lan-seloff.png,extensions/lan-sel300.png" alphaTest="blend" position="440,888" size="550,45" zPosition="2"/>
+		<widget name="Adaptertext" backgroundColor="OE_Background" font="RegularBold;32" position="170,175" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="Adapter" backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="OE_Foreground" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,225" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="AdapterInfo_OK" pixmap="extensions/lock_on.png" alphaTest="blend" position="590,223" size="35,35" zPosition="2"/>
+		<widget name="AdapterInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="OE_Foreground" foregroundColors="darkgrey,#00e5e619,#0000fafa" horizontalAlignment="right" position="640,225" size="280,40" transparent="1" verticalAlignment="center" zPosition="2"/>
+		<widget name="AdapterInfo" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" backgroundColor="OE_Background" position="640,225" size="350,40" zPosition="1"/>
+		<widget name="Networktext" backgroundColor="OE_Background" font="RegularBold;32" position="170,325" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="Network" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,375" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="NetworkInfo_Check" backgroundColor="OE_Background" pixmaps="extensions/lock_on.png,extensions/lock_off.png" alphaTest="blend" position="590,373" size="35,35" zPosition="2"/>
+		<widget name="NetworkInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,#00e5e619,#0000fafa" horizontalAlignment="right" position="640,375" size="280,40" transparent="1" verticalAlignment="center" zPosition="2"/>
+		<widget name="NetworkInfo" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" backgroundColor="OE_Background" position="640,375" size="350,40" zPosition="1"/>
+		<widget name="Dhcptext" backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="OE_Foreground" position="170,475" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="Dhcp" backgroundColor="OE_Background" font="RegularBold;32" foregroundColor="OE_Foreground" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,525" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="DhcpInfo_Check" backgroundColor="OE_Background" pixmaps="extensions/lock_on.png,extensions/lock_off.png" alphaTest="blend" position="590,523" size="35,35" zPosition="2"/>
+		<widget name="DhcpInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,#00e5e619,#0000fafa" horizontalAlignment="right" position="640,525" size="280,40" transparent="1" verticalAlignment="center" zPosition="2"/>
+		<widget name="DhcpInfo" backgroundColor="OE_Background" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" position="640,525" size="350,40" zPosition="1"/>
+		<widget name="IPtext" backgroundColor="OE_Background" font="RegularBold;32" position="170,625" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="IP" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,675" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="IPInfo_Check" backgroundColor="OE_Background" pixmaps="extensions/lock_on.png,extensions/lock_off.png" alphaTest="blend" position="590,673" size="35,35" zPosition="2"/>
+		<widget name="IPInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,#00e5e619,#0000fafa" horizontalAlignment="right" position="640,675" size="280,40" transparent="1" verticalAlignment="center" zPosition="2"/>
+		<widget name="IPInfo" backgroundColor="OE_Background" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" position="640,675" size="350,40" zPosition="1"/>
+		<widget name="DNStext" backgroundColor="OE_Background" font="RegularBold;32" position="170,775" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="DNS" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="#8c8c93,#f23d21,#1cff1c" position="170,825" size="400,40" transparent="1" zPosition="1"/>
+		<widget name="DNSInfo_Check" backgroundColor="OE_Background" pixmaps="extensions/lock_on.png,extensions/lock_off.png" alphaTest="blend" position="590,823" size="35,35" zPosition="2"/>
+		<widget name="DNSInfo_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,#00e5e619,#0000fafa" horizontalAlignment="right" position="640,825" size="280,40" transparent="1" verticalAlignment="center" zPosition="2"/>
+		<widget name="DNSInfo" backgroundColor="OE_Background" pixmaps="extensions/lan-seloff.png,extensions/lan-sel.png" alphaTest="blend" position="640,825" size="350,40" zPosition="1"/>
+		<widget name="EditSettings_Text" backgroundColor="OE_Background" font="RegularBold;32" foregroundColors="darkgrey,#00e5e619,#0000fafa" horizontalAlignment="right" position="470,888" size="450,40" transparent="1" verticalAlignment="center" zPosition="2"/>
+		<widget name="EditSettingsButton" backgroundColor="OE_Background" pixmaps="extensions/lan-seloff.png,extensions/lan-sel300.png" alphaTest="blend" position="440,888" size="550,40" zPosition="2"/>
 		<widget name="InfoTextBorder" position="120,340" size="595,310" zPosition="2"/>
-		<eLabel backgroundColor="white" position="170,275" size="750,2" zPosition="9"/>
-		<eLabel backgroundColor="white" position="170,425" size="750,2" zPosition="9"/>
-		<eLabel backgroundColor="white" position="170,575" size="750,2" zPosition="9"/>
-		<eLabel backgroundColor="white" position="170,725" size="750,2" zPosition="9"/>
-		<eLabel backgroundColor="white" position="170,875" size="750,2" zPosition="-9"/>
+		<eLabel backgroundColor="#0000fafa" position="170,275" size="750,2" zPosition="9"/>
+		<eLabel backgroundColor="#0000fafa" position="170,425" size="750,2" zPosition="9"/>
+		<eLabel backgroundColor="#0000fafa" position="170,575" size="750,2" zPosition="9"/>
+		<eLabel backgroundColor="#0000fafa" position="170,725" size="750,2" zPosition="9"/>
+		<eLabel backgroundColor="#0000fafa" position="170,875" size="750,2" zPosition="-9"/>
 	</screen>
 	<!-- NETWORK ADAPTER SETUP -->
 	<screen name="AdapterSetup" title="Network Setup" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -3750,7 +3750,7 @@
 		<panel name="HelpInformation"/>
 		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1490,670" transparent="1"/>
 		<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
-		<widget source="description" render="Label" font="RegularBold;28" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,70" transparent="1" horizontalAlignment="center" verticalAlignment="center" zPosition="3"/>
+		<widget source="description" render="Label" font="RegularBold;27" foregroundColor="#0000fafa" backgroundColor="OE_Background" position="410,848" size="1490,70" transparent="1" horizontalAlignment="left" verticalAlignment="center" zPosition="3"/>
 	</screen>
 	<!-- FLASHIMAGE -->
 	<screen name="FlashImage" position="fill" zPosition="10" flags="wfNoBorder">
@@ -3759,7 +3759,7 @@
 		<widget name="progress_counter" position="1110,230" size="150,50" backgroundColor="OE_Background" font="RegularBold;28" foregroundColor="blue_light" zPosition="10" transparent="1"/>
 		<widget name="progress" position="410,280" size="1490,50" foregroundColor="blue_light" scrollbarBorderWidth="2" scrollbarBorderColor="green_light" zPosition="10" transparent="1"/>
 		<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
-		<widget name="info" font="RegularBold;24" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,90" transparent="1" zPosition="10" horizontalAlignment="center" verticalAlignment="center"/>
+		<widget name="info" font="RegularBold;24" foregroundColor="#0000fafa" backgroundColor="OE_Background" position="410,848" size="1490,90" transparent="1" zPosition="10" horizontalAlignment="left" verticalAlignment="center"/>
 	</screen>
 	<!-- AUTO BACKUP -->
 	<screen name="Config" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
