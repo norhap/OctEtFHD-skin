@@ -939,29 +939,13 @@
 	<panel name="Clock"/>
   </screen>
 
-  <!-- BTDevicesManager -->
-  <screen name="BluetoothDevicesManager" title="BluetoothDevicesManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-	<eLabel backgroundColor="OE_Background" position="30,center" size="1460,940" zPosition="-15"/>
-	<eLabel backgroundColor="OE_NewBg2" position="70,center" size="80,1080" zPosition="-11" verticalAlignment="center"/>
-	<eLabel backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
-	<!-- Widget -->
-	<eLabel text="BluetoothDevicesManager" font="RegularBold;30" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
-	<widget name="devicelist" itemHeight="50" font="RegularBold;25" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,160" size="1250,700" transparent="1"/>
-	<eLabel backgroundColor="white" position="170,875" size="1250,2" zPosition="-9"/>
-	<widget name="ConnStatus" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="170,890" size="1250,45" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" position="170,945" size="1250,2" zPosition="-9"/>
-	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
-	<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="830,960" size="40,40"/>
-	<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="1160,960" size="40,40"/>
-	<widget name="key_red" font="Regular;28" backgroundColor="OE_Background" position="220,960" size="270,40" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-	<widget name="key_green" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-	<widget name="key_yellow" font="Regular;28" backgroundColor="OE_Background" position="880,960" size="270,40" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-	<widget name="key_blue" font="Regular;28" backgroundColor="OE_Background" position="1210,960" size="270,40" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-	<!-- Clock -->
-	<panel name="Clock"/>
-  </screen>
+  <!-- BLUETOOTH DEVICE MANAGER -->
+	<screen name="BluetoothDevicesManager" title="BluetoothDevicesManager" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+		<panel name="StanDardScreen"/>
+		<panel name="TemplatePip"/>
+		<widget name="devicelist" font="RegularBold;26" itemHeight="50" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
+		<widget name="ConnStatus"  position="1290,520" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	</screen>
 
   <!-- Buienradar -->
   <screen name="Radar" title="" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
