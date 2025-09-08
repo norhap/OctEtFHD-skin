@@ -427,7 +427,7 @@
 	</screen>
 	<!-- INFOBAR -->
 	<screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="InfoBar">
-		<!--panel name="poster_firstinfobar"/-->
+		<panel name="poster_firstinfobar"/>
 		<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="15,852" size="1865,215" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="1865,2" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="2,215" zPosition="-11"/>
@@ -601,7 +601,7 @@
 	</screen>
 	<!-- SECOND INFOBAR -->
 	<screen name="SecondInfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
-		<!--panel name="poster_secondinfobar"/-->
+		<panel name="poster_secondinfobar"/>
 		<panel name="SecondInfobarButtons"/>
 		<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="10,160" size="1690,895" zPosition="-22"/>
 		<eLabel backgroundColor="blue_light" position="10,158" size="1690,2" zPosition="-22"/>
@@ -1060,7 +1060,7 @@
 	</screen>
 	<!-- CHANNELSELECTION -->
 	<screen name="ChannelSelection" position="0,0" size="1920,1080" backgroundColor="transparent" title="Channel Selection" flags="wfNoBorder">
-		<!--panel name="poster_channelselection"/-->
+		<panel name="poster_channelselection"/>
 		<eLabel backgroundColor="OE_Background" position="10,45" size="1895,1000" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="570,145" size="1330,2" zPosition="-9" foregroundColor="un5678a4"/>
 		<eLabel backgroundColor="blue_light" position="570,930" size="1330,2" zPosition="-9"/>
@@ -1097,7 +1097,7 @@
 		<widget backgroundColor="blue_light" pixmap="colors/green_light.png" position="50,385" render="Progress" size="500,5" source="ServiceEvent" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;26" position="50,390" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="DRRunningText" size="500,330" source="ServiceEvent" transparent="1">
+		<widget backgroundColor="OE_NewBg2" font="RegularBold;24" position="50,390" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="DRRunningText" size="500,170" source="ServiceEvent" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget backgroundColor="blue_light" foregroundColor="blue_light" position="50,723" render="Progress" size="500,4" source="Event" transparent="0" zPosition="1">
@@ -2122,6 +2122,7 @@
 		<!-- MOVIEPLAYER NO CHECK-->
 	<screen name="MoviePlayer" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar">
 		<panel name="PVRState"/>
+		<panel name="poster_firstinfobar"/>
 		<eLabel backgroundColor="OE_Background" name="InfoBar" position="center,910" size="1780,125" zPosition="-11"/>
 		<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" position="1565,870" size="250,210" zPosition="-10"/>
 		<eLabel backgroundColor="green_light" position="1580,981" size="220,2" zPosition="-9"/>
@@ -2190,29 +2191,33 @@
 		<panel name="Clock"/>
 	</screen>
 	<!-- MOVIESELECTION -->
-	<screen name="MovieSelection" title="Select a movie" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-		<!--panel name="poster_movieselection"/-->
-		<panel name="FrameClock"/>
-		<panel name="TemplateFrame"/>
+	<screen name="MovieSelection" position="0,0" size="1920,1080" title="EMCSelection">
+		<panel name="poster_movieselection"/>
+		<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="470,10" size="75,75" transparent="1" zPosition="1"/>
+		<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" position="45,center" size="1875,940" zPosition="-15"/>
+		<eLabel backgroundColor="#002c445e" foregroundColor="OE_Background" position="0,0" size="1920,1080" zPosition="-16"/>
+		<eLabel text="Movie Selection" position="450,0" size="1465,65" backgroundColor="#002c445e" foregroundColor="green_light" horizontalAlignment="center" verticalAlignment="center" zPosition="5" font="RegularBold;40" transparent="1"/>
 		<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="465,60" size="1345,90" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
-		<eLabel backgroundColor="OE_NewBg2" position="15,center" size="450,1080" zPosition="0" verticalAlignment="center"/>
-		<eLabel backgroundColor="blue_light" position="465,142" size="1445,2" zPosition="2" foregroundColor="un5678a4"/>
-		<eLabel backgroundColor="blue_light" position="465,930" size="1445,2" zPosition="-9"/>
-		<eLabel backgroundColor="blue_light" position="30,930" size="420,2" zPosition="2"/>
+		<eLabel backgroundColor="OE_NewBg2" position="0,center" size="450,1080" zPosition="0" verticalAlignment="center"/>
+		<eLabel backgroundColor="OE_NewBg2" position="450,0" size="15,80" zPosition="0" verticalAlignment="center"/>
+		<eLabel backgroundColor="OE_NewBg2" position="450,1000" size="15,80" zPosition="0" verticalAlignment="center"/>
+		<eLabel backgroundColor="blue_light" position="465,158" size="1440,2" zPosition="2" foregroundColor="un5678a4"/>
+		<eLabel backgroundColor="blue_light" position="465,910" size="1440,2" zPosition="-9"/>
+		<eLabel backgroundColor="blue_light" position="15,910" size="430,2" zPosition="2"/>
 		<widget name="chosenletter" position="425,165" size="40,40" font="RegularBold;30" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa" transparent="1" zPosition="1"/>
-		<widget name="list" position="465,160" size="1440,750" backgroundColor="black" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="0"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" horizontalAlignment="left" position="30,885" size="180,45" render="Label" source="Service" transparent="1" zPosition="1">
+		<widget name="list" position="465,160" size="1440,750" backgroundColor="#002c445e" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="0"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" horizontalAlignment="left" position="15,880" size="180,45" render="Label" source="Service" transparent="1" zPosition="1">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" horizontalAlignment="left" position="215,885" render="Label" size="200,45" source="Service" transparent="1" zPosition="1">
+		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" horizontalAlignment="left" position="215,880" render="Label" size="200,45" source="Service" transparent="1" zPosition="1">
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<widget name="TrashcanSize" position="30,930" size="305,50" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
-		<widget name="freeDiskSpace" position="30,980" size="440,90" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
-		<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png" position="370,950" zPosition="10" size="35,20" transparent="1" alphaTest="on"/>
-		<widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" position="420,950" zPosition="10" size="35,20" transparent="1" alphaTest="on"/>
-		<widget backgroundColor="OE_Background" font="RegularBold;26" position="30,420" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="DRRunningText" size="440,450" source="Service" transparent="1" zPosition="1">
+		<widget name="TrashcanSize" position="15,930" size="305,50" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
+		<widget name="freeDiskSpace" position="15,1000" size="440,90" font="RegularBold;22" backgroundColor="OE_NewBg2" transparent="1" zPosition="1"/>
+		<widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" position="370,970" zPosition="10" size="35,20" transparent="1" alphaTest="on"/>
+		<widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" position="420,970" zPosition="10" size="35,20" transparent="1" alphaTest="on"/>
+		<widget backgroundColor="OE_Background" font="RegularBold;24" position="15,420" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="DRRunningText" size="440,450" source="Service" transparent="1" zPosition="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="DescriptionBorder" position="0,0" size="0,0"/>
