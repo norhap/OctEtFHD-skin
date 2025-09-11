@@ -4914,8 +4914,8 @@
 		<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="95,100" size="75,75" transparent="1" zPosition="1"/>
 		<widget source="session.VideoPicture" render="Pig" position="1360,100" size="480,265" zPosition="1" backgroundColor="#df0b1300"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" position="45,center" size="1830,940" zPosition="-15"/>
-		<eLabel backgroundColor="blue" foregroundColor="OE_Background" position="0,0" size="1920,1080" zPosition="-16"/>
-		<widget source="Title" position="0,10" size="1920,50" render="Label" font="RegularBold;40" backgroundColor="blue" foregroundColor="green_light" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
+		<eLabel backgroundColor="#002c445e" foregroundColor="OE_Background" position="0,0" size="1920,1080" zPosition="-16"/>
+		<widget source="Title" position="0,10" size="1920,50" render="Label" font="RegularBold;40" backgroundColor="#002c445e" foregroundColor="green_light" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
 		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" position="45,65" size="1830,5" zPosition="-16"/>
 		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" position="40,65" size="5,945" zPosition="-16"/>
 		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" position="40,1005" size="1835,5" zPosition="-15"/>
