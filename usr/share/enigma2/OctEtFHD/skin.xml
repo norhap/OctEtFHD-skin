@@ -360,10 +360,10 @@
 		<pixmap name="menu_off" filename="OctEtFHD/icons/menu_off.png"/>
 	</switchpixmap>
 	<!-- RESTART GUI -->
-	<screen name="QuitMainloopScreen" position="fill" backgroundColor="OE_NewBg2" flags="wfNoBorder">
+	<screen name="QuitMainloopScreen" position="fill" backgroundColor="#002c445e" flags="wfNoBorder">
 		<ePixmap pixmap="icons/input_info.png" position="910,315" size="80,80" alphaTest="blend"/>
 		<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo150x90.png" position="865,150" size="150,90" transparent="1" zPosition="10"/>
-		<widget name="text" position="500,420" size="920,250" zPosition="2" transparent="1" font="RegularBold;25" horizontalAlignment="center" verticalAlignment="top"/>
+		<widget name="text" position="500,420" size="920,250" zPosition="2" transparent="1" font="RegularBold;25" backgroundColor="#002c445e" horizontalAlignment="center" verticalAlignment="top"/>
 	</screen>
 	<!-- MENU -->
 	<screen name="Menu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" title="Main menu" transparent="0">
