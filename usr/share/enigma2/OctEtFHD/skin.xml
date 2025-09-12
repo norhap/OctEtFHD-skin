@@ -767,16 +767,16 @@
 		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,830" size="440,40" source="session.MSNWeather" zPosition="3" horizontalAlignment="center" verticalAlignment="center" transparent="1" foregroundColor="yellow">
 			<convert type="MSNWeather">city</convert>
 		</widget>
-		<eLabel text="Feels Like:" position="60,880" size="294,35" zPosition="5" font="RegularBold;28" transparent="1"/>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="355,880" size="40,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
+		<eLabel text="Feels Like:" position="60,875" size="294,35" zPosition="5" font="RegularBold;28" transparent="1"/>
+		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="355,875" size="40,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
 			<convert type="MSNWeather">feelslike</convert>
 		</widget>
-		<eLabel text="°C" position="400,880" size="50,50" backgroundColor="OE_NewBg" foregroundColor="blue_light" zPosition="5" font="RegularBold;28" transparent="1"/>
-		<eLabel text="Humidity:" position="60,925" size="300,35" zPosition="5" font="RegularBold;28" transparent="1"/>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="295,925" size="60,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
+		<eLabel text="°C" position="400,875" size="50,50" backgroundColor="OE_NewBg" foregroundColor="blue_light" zPosition="5" font="RegularBold;28" transparent="1"/>
+		<eLabel text="Humidity:" position="60,920" size="300,35" zPosition="5" font="RegularBold;28" transparent="1"/>
+		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="295,920" size="60,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
 			<convert type="MSNWeather">humidity</convert>
 		</widget>
-		<eLabel text="%" position="360,925" size="30,50" backgroundColor="OE_NewBg" foregroundColor="blue_light" zPosition="5" font="RegularBold;28" transparent="1"/>
+		<eLabel text="%" position="360,920" size="30,50" backgroundColor="OE_NewBg" foregroundColor="blue_light" zPosition="5" font="RegularBold;28" transparent="1"/>
 	</screen>
 	<!-- MAIN MENU INFORMATION (NEW) -->
 	<!-- INFO COMMON -->
