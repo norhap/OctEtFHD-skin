@@ -4925,8 +4925,8 @@
 		<eLabel backgroundColor="green_light" foregroundColor="OE_Background" position="1875,65" size="5,945" zPosition="-16"/>
 		<eLabel backgroundColor="blue_light" position="90,162" size="90,2" zPosition="-9" foregroundColor="un5678a4"/>
 		<widget render="Label" source="caption" position="240,100" zPosition="1" size="1000,70" font="RegularBold;40" foregroundColor="#0000fafa" transparent="1" horizontalAlignment="center"/>
-		<widget render="Label" source="observationtime" position="1350,375" zPosition="1" size="480,35" font="RegularBold;26" foregroundColor="#0000fafa" transparent="1" horizontalAlignment="right" borderColor="red"/>
-		<widget render="Label" source="observationpoint" position="1080,418" zPosition="1" size="750,40" font="RegularBold;22" foregroundColor="#0000fafa" transparent="1" horizontalAlignment="right"/>
+		<widget render="Label" source="observationtime" position="1150,375" zPosition="1" size="680,35" font="RegularBold;26" foregroundColor="#0000fafa" transparent="1" horizontalAlignment="right"/>
+		<widget render="Label" source="observationpoint" position="880,418" zPosition="1" size="950,40" font="RegularBold;22" foregroundColor="#0000fafa" transparent="1" horizontalAlignment="right"/>
 		<widget name="currenticon" position="70,255" zPosition="1" size="0,0" alphaTest="blend"/>
 		<widget alphaTest="blend" render="MSNWeatherPixmap" position="70,252" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
