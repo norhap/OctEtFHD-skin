@@ -4961,7 +4961,7 @@
 		</widget>
 		<widget render="Label" source="weekday5_temp" position="1370,819" zPosition="1" size="430,180" horizontalAlignment="center" verticalAlignment="center" font="RegularBold;30" transparent="1"/>
 		<widget render="Label" source="statustext" position="center,-2" size="1739,1041" font="RegularBold;26" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
-		<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="70,950" size="64,43" alphaTest="blend"/>
+		<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="45,964" size="64,43" alphaTest="blend"/>
 	</screen>
 	<screen name="MSNWeatherPluginEntriesListConfigScreen" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="">
 		<panel name="StanDardScreen"/>
