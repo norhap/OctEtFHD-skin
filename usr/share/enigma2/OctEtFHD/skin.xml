@@ -775,7 +775,7 @@
 		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="364,920" size="70,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1">
 			<convert type="MSNWeather">humidity</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,970" size="410,50" horizontalAlignment="center" verticalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
+		<widget backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,960" size="410,100" horizontalAlignment="center" verticalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
 			<convert type="MSNWeather">city</convert>
 		</widget>
 	</screen>
