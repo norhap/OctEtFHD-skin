@@ -768,18 +768,16 @@
 			<convert type="MSNWeather">condition</convert>
 		</widget>
 		<eLabel text="Feels Like:" position="60,875" size="294,35" zPosition="5" font="RegularBold;28" transparent="1"/>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="355,875" size="40,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1">
+		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="364,875" size="70,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1">
 			<convert type="MSNWeather">feelslike</convert>
 		</widget>
-		<eLabel text="°C" position="400,875" size="50,50" backgroundColor="OE_NewBg" zPosition="5" font="RegularBold;28" transparent="1"/>
 		<eLabel text="Humidity:" position="60,920" size="300,35" zPosition="5" font="RegularBold;28" transparent="1"/>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="295,920" size="60,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1">
+		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="364,920" size="70,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1">
 			<convert type="MSNWeather">humidity</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,970" size="410,50" horizontalAlignment="center" verticalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
 			<convert type="MSNWeather">city</convert>
 		</widget>
-		<eLabel text="%" position="360,920" size="30,50" backgroundColor="OE_NewBg" zPosition="5" font="RegularBold;28" transparent="1"/>
 	</screen>
 	<!-- MAIN MENU INFORMATION (NEW) -->
 	<!-- INFO COMMON -->
