@@ -2369,16 +2369,16 @@
 		<widget source="session.VideoPicture" render="Pig" position="1285,100" size="635,400" zPosition="1" backgroundColor="#df0b1300"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_help.png" position="18,1035" size="64,43"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,400" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,620" render="Label" size="255,45" source="IPtext" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,620" render="Label" size="255,45" source="IP" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,670" render="Label" size="255,45" source="Netmasktext" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,670" render="Label" size="255,45" source="Mask" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,720" render="Label" size="255,45" source="Gatewaytext" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,720" render="Label" size="255,45" source="Gateway" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,775" render="Label" size="255,45" source="DNS1text" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,775" render="Label" size="255,45" source="DNS1" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,825" render="Label" size="255,45" source="DNS2text" transparent="1"/>
-		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,825" render="Label" size="255,45" source="DNS2" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,620" render="Label" size="455,45" source="IPtext" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,620" render="Label" size="455,45" source="IP" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,670" render="Label" size="455,45" source="Netmasktext" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,670" render="Label" size="455,45" source="Mask" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,720" render="Label" size="455,45" source="Gatewaytext" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,720" render="Label" size="455,45" source="Gateway" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,775" render="Label" size="455,45" source="DNS1text" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,775" render="Label" size="455,45" source="DNS1" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="390,825" render="Label" size="455,45" source="DNS2text" transparent="1"/>
+		<widget font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="680,825" render="Label" size="455,45" source="DNS2" transparent="1"/>
 		<widget source="Adapter" render="Label" position="1290,610" size="550,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" foregroundColor="blue_light" transparent="1" zPosition="2"/>
 		<widget source="introduction2" render="Label" conditional="introduction2" position="1290,725" size="620,230" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 		<widget source="introduction" render="Label" conditional="introduction" position="390,580" size="620,230" font="RegularBold;25" horizontalAlignment="left" foregroundColor="blue_light" backgroundColor="OE_Background" transparent="1" zPosition="2"/>
