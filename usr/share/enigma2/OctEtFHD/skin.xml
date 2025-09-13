@@ -751,12 +751,14 @@
 			<convert type="CaidInfo2"/>
 		</widget>
 		 <!-- MSNWeather -->
-		<ePixmap pixmap="WeatherIcon/wind.png" position="52,630" size="60,60" alphaTest="blend"/>
-		<widget alphaTest="blend" render="MSNWeatherPixmap" position="55,700" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
-			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
+		<widget alphaTest="blend" render="MSNWeatherPixmap" pixmap="WeatherIcon/wind.png" position="52,630" size="60,60" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">winddisplay</convert>
 		</widget>
 		<widget source="session.MSNWeather" render="Label" position="100,620" size="330,70" font="RegularBold;24" horizontalAlignment="center" verticalAlignment="center" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
 			<convert type="MSNWeather">winddisplay</convert>
+		</widget>
+		<widget alphaTest="blend" render="MSNWeatherPixmap" position="55,700" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
 		</widget>
 		<widget source="session.MSNWeather" render="Label" position="220,695" size="220,35" font="RegularBold;24" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
 			<convert type="MSNWeather">observationtime</convert>
@@ -767,15 +769,13 @@
 		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,830" size="440,40" source="session.MSNWeather" zPosition="3" horizontalAlignment="center" verticalAlignment="center" transparent="1" foregroundColor="green_light">
 			<convert type="MSNWeather">condition</convert>
 		</widget>
-		<eLabel text="Feels Like:" position="60,875" size="294,35" zPosition="5" font="RegularBold;28" backgroundColor="OE_NewBg" transparent="0"/>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="364,875" size="70,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1">
+		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,875" size="440,50" horizontalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1">
 			<convert type="MSNWeather">feelslike</convert>
 		</widget>
-		<eLabel text="Humidity:" position="60,920" size="300,35" zPosition="5" font="RegularBold;28" backgroundColor="OE_NewBg" transparent="0"/>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="364,920" size="70,50" horizontalAlignment="left" source="session.MSNWeather" zPosition="3" transparent="1">
+		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,920" size="440,50" horizontalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1">
 			<convert type="MSNWeather">humidity</convert>
 		</widget>
-		<widget backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,960" size="410,100" horizontalAlignment="center" verticalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
+		<widget backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,960" size="440,100" horizontalAlignment="center" verticalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
 			<convert type="MSNWeather">city</convert>
 		</widget>
 	</screen>
