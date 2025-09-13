@@ -633,11 +633,11 @@
 		<widget source="session.CurrentService" render="Label" font="RegularBold;21" backgroundColor="OE_NewBg" position="25,455" size="440,168" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv.png" alphaTest="blend" position="110,958" zPosition="20" size="250,90" transparent="1">
+		<!-- widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv.png" alphaTest="blend" position="110,958" zPosition="20" size="250,90" transparent="1">
 			<convert type="ServiceInfo">IsStream</convert>
 			<convert type="ConditionalShowHide">
 			</convert>
-		</widget>
+		</widget -->
 		<widget backgroundColor="OE_ListBackground" foregroundColor="green_light" font="RegularBold;28" position="663,188" render="Label" size="90,35" source="session.Event_Now" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
