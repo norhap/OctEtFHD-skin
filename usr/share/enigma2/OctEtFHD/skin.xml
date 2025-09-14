@@ -611,8 +611,8 @@
 		<eLabel backgroundColor="blue_light" position="1700,158" size="2,899" zPosition="-22"/>
 		<eLabel backgroundColor="OE_NewBg" position="25,center" size="440,1080" transparent="0" zPosition="-20"/>
 		<eLabel backgroundColor="blue_light" foregroundColor="OE_Background" position="55,159" size="380,2" zPosition="-15"/>
-		<eLabel backgroundColor="blue_light" position="55,625" size="380,2" transparent="0" zPosition="-1"/>
-		<eLabel backgroundColor="blue_light" position="55,955" size="380,2" transparent="0" zPosition="-1" foregroundColor="blue_light"/>
+		<eLabel backgroundColor="blue_light" position="55,510" size="380,2" transparent="0" zPosition="-1"/>
+		<eLabel backgroundColor="blue_light" position="25,955" size="530,2" transparent="0" zPosition="-1" foregroundColor="blue_light"/>
 		<eLabel backgroundColor="blue_light" position="465,955" size="1235,2" zPosition="-22"/>
 		<widget alphaTest="blend" position="135,10" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
@@ -630,7 +630,7 @@
 		<widget source="session.CurrentService" render="Label" backgroundColor="OE_NewBg" position="25,430" size="440,25" horizontalAlignment="center" verticalAlignment="center" zPosition="6" font="RegularBold;22" transparent="1" >
 			<convert type="PliExtraInfo">CryptoBar</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="RegularBold;21" backgroundColor="OE_NewBg" position="25,455" size="440,168" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="1">
+		<widget source="session.CurrentService" render="Label" font="RegularBold;21" backgroundColor="OE_NewBg" position="25,455" size="440,50" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
 		</widget>
 		<!-- widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv.png" alphaTest="blend" position="110,958" zPosition="20" size="250,90" transparent="1">
@@ -751,32 +751,86 @@
 			<convert type="CaidInfo2"/>
 		</widget>
 		 <!-- MSNWeather -->
-		<widget alphaTest="blend" render="MSNWeatherPixmap" pixmap="WeatherIcon/wind.png" position="200,630" size="60,48" source="session.MSNWeather" transparent="1" zPosition="8">
+		<widget alphaTest="blend" render="MSNWeatherPixmap" pixmap="WeatherIcon/wind.png" position="200,515" size="60,48" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">winddisplay</convert>
 		</widget>
-		<widget source="session.MSNWeather" render="Label" position="220,635" size="244,70" font="RegularBold;24" horizontalAlignment="center" verticalAlignment="center" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
+		<widget source="session.MSNWeather" render="Label" position="220,520" size="244,70" font="RegularBold;24" horizontalAlignment="center" verticalAlignment="center" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
 			<convert type="MSNWeather">winddisplay</convert>
 		</widget>
-		<widget alphaTest="blend" render="MSNWeatherPixmap" position="55,640" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
+		<widget alphaTest="blend" render="MSNWeatherPixmap" position="55,525" size="128,128" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
 		</widget>
-		<widget source="session.MSNWeather" render="Label" position="250,695" size="213,35" font="RegularBold;24" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
+		<widget source="session.MSNWeather" render="Label" position="250,580" size="213,35" font="RegularBold;24" backgroundColor="OE_NewBg" transparent="1" zPosition="2">
 			<convert type="MSNWeather">observationtime</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;40" render="Label" position="210,730" size="170,87" source="session.MSNWeather" transparent="1" zPosition="8" horizontalAlignment="center" foregroundColor="#0000fafa">
+		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;32" render="Label" position="245,615" size="80,40" source="session.MSNWeather" transparent="1" zPosition="8" horizontalAlignment="center" foregroundColor="#0000fafa">
 			<convert type="MSNWeather">temperature_current</convert>
 		</widget>
-		<widget backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,770" size="438,100" source="session.MSNWeather" zPosition="3" horizontalAlignment="center" verticalAlignment="center" transparent="1" foregroundColor="green_light">
+		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;26" render="Label" position="25,670" size="440,40" source="session.MSNWeather" transparent="1" zPosition="8" horizontalAlignment="center">
+			<convert type="MSNWeather">temperature_heigh_low,current</convert>
+		</widget>
+		<widget backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,705" size="438,100" source="session.MSNWeather" zPosition="3" horizontalAlignment="center" verticalAlignment="center" transparent="1" foregroundColor="green_light">
 			<convert type="MSNWeather">condition</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,875" size="440,50" horizontalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1">
+		<!--widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;26" render="Label" position="25,1890" size="440,35" horizontalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1">
 			<convert type="MSNWeather">feelslike</convert>
-		</widget>
-		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,920" size="440,50" horizontalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1">
+		</widget-->
+		<widget noWrap="1" backgroundColor="OE_NewBg" font="RegularBold;25" render="Label" position="25,805" size="440,50" horizontalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1">
 			<convert type="MSNWeather">humidity</convert>
 		</widget>
 		<widget backgroundColor="OE_NewBg" font="RegularBold;28" render="Label" position="25,960" size="440,100" horizontalAlignment="center" verticalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1" foregroundColor="blue_light">
 			<convert type="MSNWeather">city</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="25,840" size="110,25" font="RegularBold;21" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">weekday,day2</convert>
+		</widget>
+		<widget alphaTest="blend" render="MSNWeatherPixmap" position="25,865" size="60,60" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="25,930" size="45,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">temperature_high,day2</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="65,930" size="45,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">temperature_low,day2</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="25,960" size="110,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">conditionday,day2</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="135,840" size="110,100" font="RegularBold;21" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">weekday,day3</convert>
+		</widget>
+		<widget alphaTest="blend" render="MSNWeatherPixmap" position="140,865" size="60,60" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="135,930" size="45,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">temperature_high,day3</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="175,930" size="45,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">temperature_low,day3</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="245,840" size="110,25" font="RegularBold;21" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">weekday,day4</convert>
+		</widget>
+		<widget alphaTest="blend" render="MSNWeatherPixmap" position="255,865" size="60,60" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="255,930" size="45,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">temperature_high,day4</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="295,930" size="45,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">temperature_low,day4</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="362,840" size="110,25" font="RegularBold;21" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">weekday,day5</convert>
+		</widget>
+		<widget alphaTest="blend" render="MSNWeatherPixmap" position="370,865" size="60,60" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="367,930" size="45,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">temperature_high,day5</convert>
+		</widget>
+		<widget alphaTest="blend" render="Label" position="407,930" size="45,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
+			<convert type="MSNWeather">temperature_low,day5</convert>
 		</widget>
 	</screen>
 	<!-- MAIN MENU INFORMATION (NEW) -->
