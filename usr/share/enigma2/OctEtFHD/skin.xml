@@ -612,7 +612,6 @@
 		<eLabel backgroundColor="OE_NewBg" position="25,center" size="440,1080" transparent="0" zPosition="-20"/>
 		<eLabel backgroundColor="blue_light" foregroundColor="OE_Background" position="55,159" size="380,2" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="55,510" size="380,2" transparent="0" zPosition="-1"/>
-		<eLabel backgroundColor="blue_light" position="25,955" size="530,2" transparent="0" zPosition="-1" foregroundColor="blue_light"/>
 		<eLabel backgroundColor="blue_light" position="465,955" size="1235,2" zPosition="-22"/>
 		<widget alphaTest="blend" position="135,10" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
@@ -790,7 +789,7 @@
 		<widget alphaTest="blend" render="Label" position="90,930" size="40,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day2</convert>
 		</widget>
-		<widget alphaTest="blend" render="Label" position="25,975" size="108,50" font="RegularBold;17" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
+		<widget alphaTest="blend" render="Label" position="25,965" size="108,50" font="RegularBold;17" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_text,day2</convert>
 		</widget>
 		<widget alphaTest="blend" render="Label" position="135,830" size="110,100" font="RegularBold;21" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
@@ -805,7 +804,7 @@
 		<widget alphaTest="blend" render="Label" position="200,930" size="40,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day3</convert>
 		</widget>
-		<widget alphaTest="blend" render="Label" position="135,975" size="108,50" font="RegularBold;17" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
+		<widget alphaTest="blend" render="Label" position="135,965" size="108,50" font="RegularBold;17" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_text,day3</convert>
 		</widget>
 		<widget alphaTest="blend" render="Label" position="245,830" size="110,25" font="RegularBold;21" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
@@ -820,7 +819,7 @@
 		<widget alphaTest="blend" render="Label" position="305,930" size="40,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day4</convert>
 		</widget>
-		<widget alphaTest="blend" render="Label" position="245,975" size="108,50" font="RegularBold;17" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
+		<widget alphaTest="blend" render="Label" position="245,965" size="108,50" font="RegularBold;17" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_text,day4</convert>
 		</widget>
 		<widget alphaTest="blend" render="Label" position="362,830" size="110,25" font="RegularBold;21" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
@@ -835,10 +834,10 @@
 		<widget alphaTest="blend" render="Label" position="425,930" size="40,25" font="RegularBold;20" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day5</convert>
 		</widget>
-		<widget alphaTest="blend" render="Label" position="357,975" size="108,50" font="RegularBold;17" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
+		<widget alphaTest="blend" render="Label" position="357,965" size="108,50" font="RegularBold;17" horizontalAlignment="center" source="session.MSNWeather" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_text,day5</convert>
 		</widget>
-		<widget foregroundColor="#00e5e619" backgroundColor="OE_NewBg" font="RegularBold;20" render="Label" position="25,1020" size="410,50" horizontalAlignment="center" verticalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1">
+		<widget foregroundColor="#00e5e619" backgroundColor="OE_NewBg" font="RegularBold;20" render="Label" position="25,1010" size="410,50" horizontalAlignment="center" verticalAlignment="center" source="session.MSNWeather" zPosition="3" transparent="1">
 			<convert type="MSNWeather">city</convert>
 		</widget>
 	</screen>
