@@ -1340,13 +1340,15 @@
 			<convert type="RunningEvents">Event14,onlyStart</convert>
 		</widget>
 		<!-- clock -->
-		<widget backgroundColor="OE_NewBg" font="RegularBold;28" position="1740,935" size="140,30" zPosition="3" render="Label" source="global.CurrentTime" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1740,935" size="140,30" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="#0000fafa" zPosition="3" transparent="1">
 			<convert type="ClockToText">Mixed</convert>
 		</widget>
 		<!-- Button -->
 		<ePixmap alphaTest="blend" pixmap="buttons/key_text.png" position="1710,970" size="64,43"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="1775,970" size="64,43"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_info.png" position="1840,970" size="64,43"/>
+		<widget source="key_info" render="Pixmap" position="1840,970" size="64,43" pixmap="buttons/key_info.png" objectTypes="key_info,StaticText" backgroundColor="OE_Background" alphaTest="blend" zPosition="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="565,970" size="40,40"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="845,970" size="40,40"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1125,970" size="40,40"/>
@@ -1405,17 +1407,19 @@
 		<eLabel backgroundColor="blue_light" position="80,830" size="570,1" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" position="680,980" size="1230,2" zPosition="-9"/>
 		<!-- Buttona -->
-		<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="680,1000" size="40,40"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="930,1000" size="40,40"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1180,1000" size="40,40"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="1430,1000" size="40,40"/>
-		<widget name="key_red" font="Regular;28" backgroundColor="OE_Background" position="725,1000" size="200,40" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<widget name="key_green" font="Regular;28" backgroundColor="OE_Background" position="975,1000" size="200,40" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" font="Regular;28" backgroundColor="OE_Background" position="1225,1000" size="200,40" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<widget name="key_blue" font="Regular;28" backgroundColor="OE_Background" position="1475,1000" size="200,40" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_text.png" position="1676,1000" size="64,43"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="1741,1000" size="64,43"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_info.png" position="1806,1000" size="64,43"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="677,1000" size="40,40"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="857,1000" size="40,40"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1137,1000" size="40,40"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="1417,1000" size="40,40"/>
+		<widget name="key_red" font="RegularBold;26" backgroundColor="OE_Background" position="720,985" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_green" font="RegularBold;26" backgroundColor="OE_Background" position="900,985" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" font="RegularBold;26" backgroundColor="OE_Background" position="1180,985" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_blue" font="RegularBold;26" backgroundColor="OE_Background" position="1460,985" size="245,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_text.png" position="1706,1000" size="64,43"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="1771,1000" size="64,43"/>
+		<widget source="key_info" render="Pixmap" position="1836,1000" size="64,43" pixmap="buttons/key_info.png" objectTypes="key_info,StaticText" backgroundColor="OE_Background" alphaTest="blend" zPosition="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 	</screen>
 	<!-- CHANNELSELECTION SIMPLE -->
 	<screen name="SimpleChannelSelection" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
@@ -1425,7 +1429,9 @@
 		<widget name="list" position="26,center" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" foregroundColorNextEvent="blue_light" foregroundColorEventNextSelected="#0000fafa" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" itemHeight="50" serviceItemHeight="50" serviceNumberFont="RegularBold;32" serviceNameFont="RegularBold;32" serviceInfoFont="RegularBold;27" size="1250,800" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="18,1035" size="64,43"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_text.png" position="87,1035" size="64,43"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_info.png" position="156,1035" size="64,43"/>
+		<widget source="key_info" render="Pixmap" position="156,1035" size="64,43" pixmap="buttons/key_info.png" objectTypes="key_info,StaticText" backgroundColor="OE_Background" alphaTest="blend" zPosition="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 	</screen>
 	<!-- CHANNELSELECTION RADIO -->
 	<screen name="ChannelSelectionRadio" title="ChannelSelectionRadio" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
