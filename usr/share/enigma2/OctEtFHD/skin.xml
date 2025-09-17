@@ -97,8 +97,8 @@
 	<font filename="/usr/share/fonts/andale.ttf" name="Fixed" scale="100"/>
 	<font filename="/usr/share/fonts/nmsbd.ttf" name="Arial" scale="100"/>
 	<font filename="/usr/share/fonts/DejaVuSansCondensed-Bold.ttf" name="Regular" scale="95"/>
-	<font filename="/usr/share/fonts/OpenSans-Regular.ttf" name="RegularLight" scale="95"/>
-	<font filename="/usr/share/fonts/OpenSans-Regular.ttf" name="EL_Standard" scale="100"/>
+	<font filename="/usr/share/fonts/DejaVuSansCondensed-Bold.ttf" name="RegularLight" scale="95"/>
+	<font filename="/usr/share/fonts/DejaVuSansCondensed-Bold.ttf" name="EL_Standard" scale="100"/>
 	<font filename="/usr/share/fonts/DejaVuSansCondensed-Bold.ttf" name="RegularBold" scale="100"/>
 	<alias name="ChoiceList" font="RegularBold" size="25" height="45"/>
 	<alias name="Body" font="RegularBold" size="30" height="50"/>
@@ -1354,7 +1354,7 @@
 		<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1125,970" size="40,40"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="1405,970" size="40,40"/>
 		<widget name="key_red" font="RegularBold;26" backgroundColor="OE_Background" position="608,955" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<widget name="key_green" font="RegularBold;26" backgroundColor="OE_Background" position="888,955" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget source="key_green" render="Label" position="888,955" size="235,70" font="RegularBold;26" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<widget name="key_yellow" font="RegularBold;26" backgroundColor="OE_Background" position="1168,955" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<widget name="key_blue" font="RegularBold;26" backgroundColor="OE_Background" position="1448,955" size="260,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 	</screen>
@@ -1412,7 +1412,7 @@
 		<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1137,1000" size="40,40"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="1417,1000" size="40,40"/>
 		<widget name="key_red" font="RegularBold;26" backgroundColor="OE_Background" position="720,985" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<widget name="key_green" font="RegularBold;26" backgroundColor="OE_Background" position="900,985" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget source="key_green" render="Label" position="900,985" size="235,70" font="RegularBold;26" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<widget name="key_yellow" font="RegularBold;26" backgroundColor="OE_Background" position="1180,985" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<widget name="key_blue" font="RegularBold;26" backgroundColor="OE_Background" position="1460,985" size="245,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_text.png" position="1706,1000" size="64,43"/>
