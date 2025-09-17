@@ -801,7 +801,7 @@
 		<widget source="session.MSNWeather" render="Label" position="155,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_high,day3</convert>
 		</widget>
-		<widget source="session.MSNWeather" render="Label" position="200,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
+		<widget source="session.MSNWeather" render="Label" position="195,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day3</convert>
 		</widget>
 		<widget source="session.MSNWeather" render="Label" position="135,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
@@ -828,10 +828,10 @@
 		<widget source="session.MSNWeather" position="385,865" size="60,60" alphaTest="blend" render="MSNWeatherPixmap" transparent="1" zPosition="8">
 			<convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/OctEtFHD/WeatherIcon/,png</convert>
 		</widget>
-		<widget source="session.MSNWeather" render="Label" position="377,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
+		<widget source="session.MSNWeather" render="Label" position="382,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_high,day5</convert>
 		</widget>
-		<widget source="session.MSNWeather" render="Label" position="420,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
+		<widget source="session.MSNWeather" render="Label" position="423,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day5</convert>
 		</widget>
 		<widget source="session.MSNWeather" render="Label" position="357,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
