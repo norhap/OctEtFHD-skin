@@ -2267,18 +2267,18 @@
 	<!-- MOVIESELECTION -->
 	<screen name="MovieSelection" position="0,0" size="1920,1080" title="EMCSelection">
 		<panel name="poster_movieselection"/>
-		<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="470,10" size="75,75" transparent="1" zPosition="1"/>
-		<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" position="45,center" size="1875,940" zPosition="-15"/>
+		<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="470,15" size="75,75" transparent="1" zPosition="1"/>
+		<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" position="45,75" size="1875,1080" zPosition="-15"/>
 		<eLabel backgroundColor="#002c445e" foregroundColor="OE_Background" position="0,0" size="1920,1080" zPosition="-16"/>
 		<eLabel text="Movie Selection" position="450,0" size="1465,65" backgroundColor="#002c445e" foregroundColor="green_light" horizontalAlignment="center" verticalAlignment="center" zPosition="5" font="RegularBold;40" transparent="1"/>
 		<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="465,60" size="1345,90" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
 		<eLabel backgroundColor="OE_NewBg2" position="0,center" size="445,1080" zPosition="0"/>
-		<eLabel backgroundColor="OE_NewBg2" position="445,0" size="5,70" zPosition="0"/>
+		<eLabel backgroundColor="OE_NewBg2" position="445,0" size="5,80" zPosition="0"/>
 		<eLabel backgroundColor="blue_light" position="450,158" size="1455,2" zPosition="2"/>
 		<eLabel backgroundColor="blue_light" position="450,910" size="1455,2" zPosition="10"/>
 		<eLabel backgroundColor="blue_light" position="0,910" size="450,2" zPosition="2"/>
 		<eLabel backgroundColor="blue_light" position="450,160" size="2,752" zPosition="2"/>
-		<eLabel backgroundColor="#002c445e" position="452,160" size="13,752" zPosition="2"/>
+		<eLabel backgroundColor="#002c445e" position="452,160" size="13,750" zPosition="2"/>
 		<widget name="chosenletter" position="425,165" size="40,40" font="RegularBold;30" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa" transparent="1" zPosition="1"/>
 		<widget name="list" position="465,160" size="1440,750" backgroundColor="#002c445e" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="0"/>
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" horizontalAlignment="left" position="15,880" size="180,45" render="Label" source="Service" transparent="1" zPosition="1">
@@ -2305,10 +2305,10 @@
 		<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="1050,940" size="40,40"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1340,940" size="40,40"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="1630,940" size="40,40"/>
-		<widget name="key_red" backgroundColor="OE_NewBg2" font="RegularBold;22" horizontalAlignment="left" verticalAlignment="center" position="815,920" size="250,85" transparent="1" zPosition="1"/>
-		<widget name="key_green" backgroundColor="OE_NewBg2" font="RegularBold;22" horizontalAlignment="left" verticalAlignment="center" position="1095,920" size="250,85" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" backgroundColor="OE_NewBg2" font="RegularBold;22" horizontalAlignment="left" verticalAlignment="center" position="1385,920" size="250,85" transparent="1" zPosition="1"/>
-		<widget name="key_blue" backgroundColor="OE_NewBg2" font="RegularBold;22" horizontalAlignment="left" verticalAlignment="center" position="1675,920" size="310,85" transparent="1" zPosition="1"/>
+		<widget name="key_red" backgroundColor="OE_NewBg2" font="RegularBold;22" horizontalAlignment="left" verticalAlignment="center" position="815,910" size="250,100" transparent="1" zPosition="1"/>
+		<widget name="key_green" backgroundColor="OE_NewBg2" font="RegularBold;22" horizontalAlignment="left" verticalAlignment="center" position="1095,910" size="250,100" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" backgroundColor="OE_NewBg2" font="RegularBold;22" horizontalAlignment="left" verticalAlignment="center" position="1385,910" size="250,100" transparent="1" zPosition="1"/>
+		<widget name="key_blue" backgroundColor="OE_NewBg2" font="RegularBold;22" horizontalAlignment="left" verticalAlignment="center" position="1675,910" size="310,100" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- MOVIESELECTIONSLIM -->
 	<screen name="MovieSelectionSlim" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
