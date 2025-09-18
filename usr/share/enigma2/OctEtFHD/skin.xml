@@ -789,7 +789,7 @@
 		<widget source="session.MSNWeather" render="Label" position="85,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day2</convert>
 		</widget>
-		<widget source="session.MSNWeather" render="Label" position="25,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
+		<widget source="session.MSNWeather" render="Label" position="27,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_text,day2</convert>
 		</widget>
 		<widget source="session.MSNWeather" render="Label" position="135,830" size="110,100" font="RegularBold;21" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
@@ -804,7 +804,7 @@
 		<widget source="session.MSNWeather" render="Label" position="195,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day3</convert>
 		</widget>
-		<widget source="session.MSNWeather" render="Label" position="135,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
+		<widget source="session.MSNWeather" render="Label" position="137,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_text,day3</convert>
 		</widget>
 		<widget source="session.MSNWeather" render="Label" position="245,830" size="110,25" font="RegularBold;21" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
@@ -819,7 +819,7 @@
 		<widget source="session.MSNWeather" render="Label" position="305,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day4</convert>
 		</widget>
-		<widget source="session.MSNWeather" render="Label" position="245,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
+		<widget source="session.MSNWeather" render="Label" position="247,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_text,day4</convert>
 		</widget>
 		<widget source="session.MSNWeather" render="Label" position="362,830" size="110,25" font="RegularBold;21" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
@@ -834,7 +834,7 @@
 		<widget source="session.MSNWeather" render="Label" position="423,930" size="40,25" font="RegularBold;20" backgroundColor="OE_NewBg" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_low,day5</convert>
 		</widget>
-		<widget source="session.MSNWeather" render="Label" position="357,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
+		<widget source="session.MSNWeather" render="Label" position="362,965" size="108,50" font="RegularBold;17" backgroundColor="OE_NewBg" horizontalAlignment="center" transparent="1" zPosition="8">
 			<convert type="MSNWeather">temperature_text,day5</convert>
 		</widget>
 		<widget source="session.MSNWeather" position="25,1010" size="410,50" render="Label" foregroundColor="#00e5e619" backgroundColor="OE_NewBg" font="RegularBold;20" horizontalAlignment="center" verticalAlignment="center" zPosition="3" transparent="0">
