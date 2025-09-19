@@ -173,11 +173,13 @@
 	<parameter name="ChoicelistName" value="85, 0, 1300, 50"/>
 	<parameter name="ChoicelistNameSingle" value="5, 0, 1400, 50"/>
 	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
-	<parameter name="SelectionListLock" value="5, 15, 25, 24"/>
 	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
 	<parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
+	<parameter name="SelectionListLock" value="10, 11, 45, 45"/>
+	<parameter name="SelectionListLockOff" value="10, 11, 45, 45"/>
 	<parameter name="ExpandableListIcon" value="0, 12, 30, 38"/>
 	<parameter name="ExpandableListDescr" value="55, 2, 1000, 45"/>
+	<parameter name="EPGImportSelectionListDescr" value="55, 11, 1000, 35"/>
 	<parameter name="FcFileListIcon" value="10, 4, 30, 30"/>
 	<parameter name="FcFileListMultiIcon" value="45, 4, 30, 30"/>
 	<parameter name="FcFileListMultiLock" value="2, 0, 30, 30"/>
