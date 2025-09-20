@@ -1851,7 +1851,7 @@
 		<widget alphaTest="blend" position="70,415" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="Event" font="RegularBold;26" render="DRRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="OE_Background" position="350,715" size="1490,210" transparent="1">
+		<widget source="Event" font="RegularBold;26" render="DRRunningText" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" backgroundColor="#002c445e" position="350,717" size="1540,210" transparent="0">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
