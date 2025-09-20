@@ -412,13 +412,13 @@
 		<panel name="MainMenu"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_leftright.png" position="940,1004" size="64,43"/>
 		<eLabel backgroundColor="OE_NewBg2" position="277,1004" size="903,45" zPosition="-10"/>
-		<eLabel text="Move" position="1010,1010" size="168,30" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;24"/>
+		<eLabel text="Move" position="1010,1010" size="168,30" noWrap="1" backgroundColor="OE_NewBg2" zPosition="1" transparent="1" font="RegularBold;24"/>
 		<ePixmap alphaTest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_red.png" position="4,1003" size="40,40"/>
-		<ePixmap alphaTest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="235,1005" size="40,40"/>
+		<ePixmap alphaTest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_green.png" position="270,1005" size="40,40"/>
 		<ePixmap alphaTest="blend" backgroundColor="OE_NewBg2" pixmap="buttons/key_yellow.png" position="655,1005" size="40,40"/>
 		<widget source="key_red" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="48,1005" size="202,39" transparent="1" zPosition="1" horizontalAlignment="left" verticalAlignment="center"/>
-		<widget source="key_green" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="280,1007" size="370,39" transparent="1" zPosition="1" horizontalAlignment="left" verticalAlignment="center"/>
-		<widget source="key_yellow" render="Label" font="RegularBold;24" backgroundColor="OE_NewBg2" position="697,1007" size="238,39" transparent="1" zPosition="1" horizontalAlignment="left" verticalAlignment="center"/>
+		<widget source="key_green" render="Label" noWrap="1" font="RegularBold;24" backgroundColor="OE_NewBg2" position="315,1007" size="335,39" transparent="1" zPosition="1" horizontalAlignment="left" verticalAlignment="center"/>
+		<widget source="key_yellow" render="Label" noWrap="1" font="RegularBold;24" backgroundColor="OE_NewBg2" position="697,1007" size="238,39" transparent="1" zPosition="1" horizontalAlignment="left" verticalAlignment="center"/>
 	</screen>
 	<!-- CHOICEBOX -->
 	<screen name="ChoiceBox" position="fill" flags="wfNoBorder">
