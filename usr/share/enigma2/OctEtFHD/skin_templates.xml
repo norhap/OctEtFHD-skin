@@ -56,7 +56,7 @@
 		<eLabel backgroundColor="OE_NewBg2" position="1182,029" size="5,1023" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="282,165" size="892,2" zPosition="-9"/>
 		<!--  Widget -->
-		<widget source="title" render="Label" font="RegularBold;35" backgroundColor="OE_Background" position="275,55" size="905,85" transparent="1" verticalAlignment="center" horizontalAlignment="center"/>
+		<widget source="title" render="Label" font="RegularBold;35" backgroundColor="OE_Background" foregroundColor="#0000fafa" position="275,55" size="905,85" transparent="1" verticalAlignment="center" horizontalAlignment="center"/>
 		<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="282,170" size="892,832" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{ "template":
