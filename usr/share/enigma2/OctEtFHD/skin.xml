@@ -446,10 +446,10 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- CryptoInfo -->
-		<widget source="session.CurrentService" render="Label" position="895,855" size="414,25" backgroundColor="OE_Background" font="RegularBold;22" foregroundColor="blue_light" transparent="1" horizontalAlignment="left">
+		<widget source="session.CurrentService" render="Label" position="895,855" size="414,25" backgroundColor="OE_Background" font="RegularBold;22" foregroundColor="#0000fafa" transparent="1" horizontalAlignment="left">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="1310,855" size="400,25" font="RegularBold;22" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="1310,855" size="400,25" font="RegularBold;22" backgroundColor="OE_Background" foregroundColor="#0000fafa" transparent="1">
 			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
 		<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1715,855" size="98,31" transparent="1" alphaTest="blend" zPosition="3"/>
