@@ -905,7 +905,7 @@
 		<widget source="IFtext" render="Label" position="775,905" size="250,40" font="RegularBold;26" horizontalAlignment="center" backgroundColor="OE_Background" transparent="1"/>
 		<widget name="statuspic" position="1025,900" size="35,35" transparent="1" alphaTest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png"/>
 		<widget source="Statustext" position="1090,900" size="250,40" render="Label" font="RegularBold;26" horizontalAlignment="right" verticalAlignment="center" backgroundColor="OE_Background" transparent="1"/>
-		<widget name="devicepic" position="1430,890" size="54,54" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphaTest="blend" transparent="1"/>
+		<widget name="devicepic" position="1430,897" size="40,40" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" alphaTest="blend" transparent="1"/>
 	</screen>
 	<!-- NETWORK INFORMATION -->
 	<screen name="NetworkInformation" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
@@ -2388,7 +2388,7 @@
 		<widget source="IF" render="Label" font="RegularBold;32" backgroundColor="OE_Background" horizontalAlignment="left" position="26,155" size="500,50" transparent="1"/>
 		<widget source="Statustext" render="Label" font="RegularBold;32" backgroundColor="OE_Background" position="770,155" size="370,50" transparent="1" horizontalAlignment="right"/>
 		<widget name="statuspic" alphaTest="blend" pixmaps="extensions/lock_on.png,extensions/lock_off.png" position="1160,158" size="35,35" transparent="1"/>
-		<widget name="devicepic" alphaTest="blend" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" position="1215,150" size="54,54"/>
+		<widget name="devicepic" alphaTest="blend" pixmaps="icons/network_wired.png,icons/network_wireless.png,icons/network_wired-active.png,icons/network_wired-inactive.png,icons/network_wireless-active.png,icons/network_wireless-inactive.png" zPosition="10" position="1215,155" size="40,40"/>
 		<eLabel backgroundColor="blue_light" position="26,210" size="1250,5" zPosition="-9"/>
 		<widget name="menulist" itemHeight="50" font="RegularBold;32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,230" size="1250,550" transparent="1"/>
 	</screen>
