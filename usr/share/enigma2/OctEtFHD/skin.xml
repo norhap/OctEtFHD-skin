@@ -175,8 +175,8 @@
 	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
 	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
 	<parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
-	<parameter name="SelectionListLock" value="5, 10, 33, 38"/>
-	<parameter name="SelectionListLockOff" value="5, 10, 33, 38"/>
+	<parameter name="SelectionListLock" value="5, 15, 30, 24"/>
+	<parameter name="SelectionListLockOff" value="5, 15, 30, 24"/>
 	<parameter name="ExpandableListIcon" value="0, 12, 30, 38"/>
 	<parameter name="ExpandableListDescr" value="55, 2, 1000, 45"/>
 	<parameter name="EPGImportSelectionListDescr" value="55, 9, 1000, 35"/>
