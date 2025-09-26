@@ -179,7 +179,7 @@
 	<parameter name="SelectionListLockOff" value="5, 15, 30, 24"/>
 	<parameter name="ExpandableListIcon" value="0, 12, 30, 38"/>
 	<parameter name="ExpandableListDescr" value="55, 2, 1000, 45"/>
-	<parameter name="EPGImportSelectionListDescr" value="55, 9, 1000, 35"/>
+	<parameter name="EPGImportSelectionListDescr" value="55, 14, 1000, 35"/>
 	<parameter name="FcFileListIcon" value="10, 4, 30, 30"/>
 	<parameter name="FcFileListMultiIcon" value="45, 4, 30, 30"/>
 	<parameter name="FcFileListMultiLock" value="2, 0, 30, 30"/>
