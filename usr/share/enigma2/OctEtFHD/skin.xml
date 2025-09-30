@@ -2847,7 +2847,7 @@
 		</widget>
 		<widget name="quickselect" position="1400,850" size="410,100" font="Regular;24" foregroundColor="#00fff000" horizontalAlignment="center" transparent="1" verticalAlignment="center" zPosition="+1" />
 		<widget source="description" render="Label" conditional="description" position="1290,520" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-		<eLabel text="Plugin Browser Setup" position="1290,835" size="620,35" font="RegularBold;26" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<eLabel text="Plugin Browser Settings" position="1290,835" size="620,35" font="RegularBold;26" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 	</screen>
 	<!-- PLUGIN BROWSER GRID-->
 	<screen name="PluginBrowserGrid" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080" transparent="0">
@@ -2874,7 +2874,7 @@
 		</widget>
 		<widget name="quickselect" position="1400,850" size="410,100" font="Regular;24" foregroundColor="#00fff000" horizontalAlignment="center" transparent="1" verticalAlignment="center" zPosition="+1" />
 		<widget source="description" render="Label" conditional="description" position="1290,520" size="620,635" font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
-		<eLabel text="Plugin Browser Setup" position="1290,835" size="620,35" font="RegularBold;26" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
+		<eLabel text="Plugin Browser Settings" position="1290,835" size="620,35" font="RegularBold;26" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
 	</screen>
 	<screen name="PluginDownloadBrowser" title="Downloadable plugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
