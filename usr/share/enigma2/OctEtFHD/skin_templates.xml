@@ -1036,7 +1036,7 @@ self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height)
 		<widget source="ServiceEvent" conditional="ServiceEvent" render="xtraPoster" position="210,561" size="175,159" zPosition="2"/>
 	</screen>
 	<screen name="poster_movieselection">
-		<widget source="Service" conditional="Service" render="xtraPoster" position="95,10" size="260,400" zPosition="2"/>
+		<widget source="Service" conditional="Service" render="xtraPoster" position="20,10" size="410,450" zPosition="2"/>
 	</screen>
 	<screen name="TemplateXtraEPGSelection">
 		<widget source="Event" conditional="Event" render="xtraPoster" position="165,285" size="185,278" zPosition="2"/>
