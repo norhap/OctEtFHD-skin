@@ -1149,25 +1149,25 @@
 			<convert type="TransponderInfo">
 			</convert>
 		</widget>
-		<widget source="ServiceEvent" font="RegularBold;27" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" foregroundColor="green_light" position="50,345" size="365,45" transparent="1">
+		<widget source="ServiceEvent" font="RegularBold;27" render="DRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=2000,always=0" backgroundColor="OE_NewBg2" foregroundColor="green_light" position="50,355" size="430,45" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" backgroundColor="OE_NewBg2" font="RegularBold;20" position="420,340" render="Label" size="90,25" transparent="1">
+		<widget source="ServiceEvent" backgroundColor="OE_NewBg2" font="RegularBold;19" position="428,338" render="Label" size="90,25" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget source="ServiceEvent" backgroundColor="OE_NewBg2" font="RegularBold;20" position="479,340" render="Label" size="90,25" transparent="1">
+		<widget source="ServiceEvent" backgroundColor="OE_NewBg2" font="RegularBold;19" position="484,338" render="Label" size="90,25" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:-%H:%M</convert>
 		</widget>
-		<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;20" foregroundColor="blue_light" position="450,362" size="80,30" transparent="1">
+		<widget source="Event" render="Label" backgroundColor="OE_NewBg2" font="RegularBold;20" foregroundColor="blue_light" position="485,367" size="75,30" transparent="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">NoSeconds</convert>
 		</widget>
-		<widget backgroundColor="blue_light" pixmap="colors/green_light.png" position="50,385" render="Progress" size="500,5" source="ServiceEvent" transparent="0" zPosition="1">
+		<widget backgroundColor="blue_light" pixmap="colors/green_light.png" position="50,390" render="Progress" size="500,5" source="ServiceEvent" transparent="0" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget backgroundColor="OE_NewBg2" font="RegularBold;24" position="50,390" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="DRRunningText" size="500,170" source="ServiceEvent" transparent="1">
+		<widget backgroundColor="OE_NewBg2" font="RegularBold;24" position="50,395" options="movetype=running,startpoint=0,direction=top,steptime=100,startdelay=4000,wrap,always=0" render="DRRunningText" size="500,170" source="ServiceEvent" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Pixmap" backgroundColor="OE_NewBg2" position="50,595" size="40,20" alphaTest="blend">
