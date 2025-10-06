@@ -175,11 +175,12 @@
 	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
 	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
 	<parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
-	<parameter name="SelectionListLock" value="5, 15, 30, 24"/>
-	<parameter name="SelectionListLockOff" value="5, 15, 30, 24"/>
+	<parameter name="SelectionListLock" value="5, 14, 30, 24"/>
+	<parameter name="SelectionListLockOff" value="5, 14, 30, 24"/>
+	<parameter name="SelectionListDescr" value="45, 13, 1200, 28"/>
 	<parameter name="ExpandableListIcon" value="0, 12, 30, 38"/>
 	<parameter name="ExpandableListDescr" value="55, 2, 1000, 45"/>
-	<parameter name="EPGImportSelectionListDescr" value="55, 14, 1000, 35"/>
+	<parameter name="EPGImportSelectionListDescr" value="55, 12, 1000, 35"/>
 	<parameter name="FcFileListIcon" value="10, 4, 30, 30"/>
 	<parameter name="FcFileListMultiIcon" value="45, 4, 30, 30"/>
 	<parameter name="FcFileListMultiLock" value="2, 0, 30, 30"/>
@@ -187,8 +188,8 @@
 	<parameter name="FcFileListName" value="68, 4, 1000, 40"/>
 	<parameter name="FileListIcon" value="7, 4, 52, 50"/>
 	<parameter name="FileListMultiIcon" value="55, 0, 50, 50"/>
-	<parameter name="FileListMultiLock" value="5, 13, 50, 50"/>
-	<parameter name="FileListMultiName" value="125, 3, 1000, 50"/>
+	<parameter name="FileListMultiLock" value="5, 10, 50, 50"/>
+	<parameter name="FileListMultiName" value="60, 4, 1000, 50"/>
 	<parameter name="FileListName" value="68, 4, 1000, 50"/>
 	<parameter name="fstabMenuList" value="0, 10, 300, 50, 400, 10, 500, 50"/>
 	<parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
