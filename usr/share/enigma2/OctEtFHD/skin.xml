@@ -173,7 +173,7 @@
 	<parameter name="ChoicelistIconExpanded" value="10, 4, 64, 50"/>
 	<parameter name="ChoicelistIconVerticalline" value="9, 13, 35, 25"/>
 	<parameter name="ChoicelistName" value="85, 0, 1165, 50"/>
-	<parameter name="ChoicelistNameSingle" value="5, 0, 1400, 50"/>
+	<parameter name="ChoicelistNameSingle" value="5, 11, 1400, 50"/>
 	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
 	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
 	<parameter name="DreamexplorerName" value="62, 0, 1200, 38"/>
