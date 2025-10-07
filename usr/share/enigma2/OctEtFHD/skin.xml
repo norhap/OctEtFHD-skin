@@ -169,8 +169,10 @@
 	<parameter name="AllowUseOnlyIcon" value="1, 1"/>
 	<parameter name="AllowUserDatesAndTimesDisplay" value="1, 1"/>
 	<parameter name="AboutHddSplit" value="1, 1"/>
-	<parameter name="ChoicelistDash" value="0, 0, 1000, 50"/>
-	<parameter name="ChoicelistName" value="85, 0, 1300, 50"/>
+	<parameter name="ChoicelistDash" value="0, 0, 1275, 50"/>
+	<parameter name="ChoicelistIconExpanded" value="10, 4, 64, 50"/>
+	<parameter name="ChoicelistIconVerticalline" value="9, 13, 35, 25"/>
+	<parameter name="ChoicelistName" value="85, 0, 1165, 50"/>
 	<parameter name="ChoicelistNameSingle" value="5, 0, 1400, 50"/>
 	<parameter name="ChoicelistIcon" value="10, 4, 64, 50"/>
 	<parameter name="DreamexplorerIcon" value="15, 4, 30, 30"/>
@@ -3838,7 +3840,7 @@
 	<screen name="SelectImage" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="norhap"/>
 		<panel name="HelpInformation"/>
-		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1490,670" transparent="1"/>
+		<widget name="list" itemHeight="50" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,155" zPosition="10" size="1490,670" transparent="1"/>
 		<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
 		<widget source="description" render="Label" font="RegularBold;27" foregroundColor="#0000fafa" backgroundColor="OE_Background" position="410,848" size="1490,70" transparent="1" horizontalAlignment="left" verticalAlignment="center" zPosition="3"/>
 	</screen>
