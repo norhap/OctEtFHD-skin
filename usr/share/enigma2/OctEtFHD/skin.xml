@@ -188,11 +188,11 @@
 	<parameter name="FcFileListMultiLock" value="2, 0, 30, 30"/>
 	<parameter name="FcFileListMultiName" value="90, 3, 1000, 32"/>
 	<parameter name="FcFileListName" value="68, 4, 1000, 40"/>
-	<parameter name="FileListIcon" value="7, 4, 52, 50"/>
-	<parameter name="FileListMultiIcon" value="55, 0, 35, 35"/>
+	<parameter name="FileListIcon" value="7, 0, 52, 50"/>
+	<parameter name="FileListMultiIcon" value="40, 0, 35, 35"/>
 	<parameter name="FileListMultiLock" value="5, 10, 50, 50"/>
-	<parameter name="FileListMultiName" value="125, 4, 1000, 50"/>
-	<parameter name="FileListName" value="68, 4, 1000, 50"/>
+	<parameter name="FileListMultiName" value="95, 4, 1155, 50"/>
+	<parameter name="FileListName" value="68, 2, 1182, 50"/>
 	<parameter name="fstabMenuList" value="0, 10, 300, 50, 400, 10, 500, 50"/>
 	<parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
 	<parameter name="HelpMenuListExtHlp0" value="0, 0, 900, 39"/>
