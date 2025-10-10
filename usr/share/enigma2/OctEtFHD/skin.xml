@@ -5169,7 +5169,7 @@
 	<screen name="mhwEPG" position="20,20" size="615,195" title="mhwEPG" flags="wfNoBorder" backgroundColor="#002c445e">
 		<widget name="picon" position="15,55" size="120,80" transparent="1" alphaTest="blend"/>
 		<widget name="action" position="13,9" size="433,35" horizontalAlignment="left" verticalAlignment="center" font="Regular;25" foregroundColor="#0000fafa" transparent="1" backgroundColor="#002c445e"/>
-		<widget name="progress" position="150,97" size="420,15" borderWidth="1" borderColor="#0000fafa" foregroundColor="green_light" backgroundColor="black" zPosition="2"/>
+		<widget name="progress" position="150,97" size="420,15" borderWidth="1" borderColor="#0000fafa" foregroundColor="green_light" backgroundColor="#00670606" zPosition="2"/>
 		<eLabel name="fondoprogreso" position="150,97" size="420,12"/>
 		<widget name="espera" position="150,63" size="420,30" verticalAlignment="center" horizontalAlignment="center" font="Regular;25" transparent="1" backgroundColor="#002c445e"/>
 		<widget name="status" position="150,120" size="420,30" horizontalAlignment="center" verticalAlignment="center" font="Regular;25" transparent="1" backgroundColor="#002c445e"/>
