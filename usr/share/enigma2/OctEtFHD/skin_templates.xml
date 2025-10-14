@@ -813,7 +813,7 @@
 		<widget name="arrowup2" conditional="arrowup2" pixmap="arrowup.png" position="-100,-100" size="37,70" alphaTest="blend" zPosition="11"/>
 		<widget name="stepslider" conditional="stepslider" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" position="665,340" size="450,35" foregroundColor="blue_light" zPosition="15" transparent="1"/>
 		<widget name="description" conditional="description" position="20,130" size="400,400" font="RegularBold;24" backgroundColor="OE_NewBg2" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget name="step" conditional="step" position="445,345" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" zPosition="15" transparent="1"/>
+		<widget name="step" conditional="step" position="1135,343" size="450,40" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="#0000fafa" zPosition="15" transparent="1"/>
 		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="445,825" size="1,1" transparent="1" zPosition="10" alphaTest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="350,825" zPosition="1" size="64,43" transparent="1" alphaTest="blend">
 			<convert type="ConditionalShowHide"/>
