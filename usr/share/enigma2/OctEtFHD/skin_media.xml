@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin>
-  <!-- EnhancedMovieCenter -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="EnhancedMovieCenterMenu" title="EnhancedMovieCenterMenu" position="center,center" size="1920,1080">
+  <!-- ENHANCEDMOVIECENTER -->
+  <screen name="EnhancedMovieCenterMenu" backgroundColor="transparent" flags="wfNoBorder" title="EnhancedMovieCenterMenu" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" position="30,center" size="1460,940" zPosition="-15"/>
 	<eLabel backgroundColor="OE_NewBg2" position="70,center" size="80,1080" zPosition="-11" verticalAlignment="center"/>
 	<eLabel backgroundColor="blue_light" position="170,130" size="1300,2" zPosition="-9"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
-	<widget name="config" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,160" size="1300,600" transparent="1"/>
-	<eLabel backgroundColor="white" name="new eLabel" position="170,770" size="1300,2" zPosition="-1"/>
+	<widget name="config" itemHeight="50" font="RegularBold;30" valueFont="RegularBold;23" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" backgroundColor="OE_Background" position="170,160" size="1300,600" transparent="1"/>
+	<eLabel backgroundColor="blue_light" name="new eLabel" position="170,770" size="1300,2" zPosition="-1"/>
 	<widget render="Label" source="help" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="green_light" horizontalAlignment="left" position="170,785" size="1300,150" transparent="1"/>
-	<!-- Buttons-->
-	<eLabel backgroundColor="white" position="170,945" size="1300,2" zPosition="-9"/>
+	<!-- Buttons -->
+	<eLabel backgroundColor="blue_light" position="170,945" size="1300,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="830,960" size="40,40"/>
@@ -198,7 +198,7 @@
 	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
 	<widget name="config" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,165" size="1300,750" transparent="1"/>
 	<widget name="HelpWindow" position="400,712" size="1,1" zPosition="10"/>
-	<!-- Buttons-->
+	<!-- Buttons -->
 	<eLabel backgroundColor="white" position="170,945" size="1300,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
@@ -215,7 +215,7 @@
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
 	<widget name="playlist" itemHeight="50" font="RegularBold;25" posFont="Bold; 30" nameFont="Bold; 30" posWidth="60" nameWidth="810" posColor="white" posColorSel="white" nameColor="white" nameColorSel="white" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="170,155" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
+	<!-- Buttons -->
 	<eLabel backgroundColor="white" position="170,945" size="1300,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
@@ -236,7 +236,7 @@
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
 	<widget name="filelist" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,160" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
+	<!-- Buttons -->
 	<eLabel backgroundColor="white" position="170,945" size="1300,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
@@ -262,7 +262,7 @@
 	<widget name="no_poster" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="center" position="85,545" size="460,45" transparent="1"/>
 	<widget name="info" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="center" position="85,495" size="460,45" transparent="1"/>
 	<widget name="done_msg" font="Regular;28" backgroundColor="OE_NewBg2" horizontalAlignment="center" position="85,700" size="460,165" transparent="1" verticalAlignment="top"/>
-	<!-- Buttons-->
+	<!-- Buttons -->
 	<eLabel backgroundColor="white" position="85,930" size="460,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="85,870" size="64,43"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_ok.png" position="85,948" size="64,43"/>
@@ -288,7 +288,7 @@
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
 	<widget name="config" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,160" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
+	<!-- Buttons -->
 	<eLabel backgroundColor="white" position="170,945" size="1300,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
@@ -308,7 +308,7 @@
 	<widget name="info" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="center" position="85,530" size="460,475" transparent="1" verticalAlignment="top"/>
 	<widget name="menulist" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="580,165" size="1260,750" transparent="1"/>
 	<widget name="poster" position="170,70" size="290,420" zPosition="4" alphaTest="on" backgroundColor="OE_Background"/>
-	<!-- Buttons-->
+	<!-- Buttons -->
 	<eLabel backgroundColor="white" position="580,930" size="1260,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="580,950" size="64,43"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_ok.png" position="655,950" size="64,43"/>
@@ -329,7 +329,7 @@
 	<widget name="movielist" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="580,center" size="1260,750" transparent="1"/>
 	<widget name="poster" position="170,70" size="290,420" zPosition="4" alphaTest="on" backgroundColor="OE_Background"/>
 	<widget name="resulttext" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="center" position="84,785" size="460,225" transparent="1" verticalAlignment="top"/>
-	<!-- Buttons-->
+	<!-- Buttons -->
 	<eLabel backgroundColor="white" position="580,930" size="1260,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="580,948" size="64,43"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_ok.png" position="960,948" size="64,43"/>
@@ -364,7 +364,7 @@
 	<!-- Widget -->
 	<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1300,50" transparent="1"/>
 	<widget name="config" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,165" size="1300,750" transparent="1"/>
-	<!-- Buttons-->
+	<!-- Buttons -->
 	<eLabel backgroundColor="white" position="170,945" size="1300,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
@@ -386,15 +386,15 @@
 	<widget name="previewlist" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="580,center" size="1260,750" transparent="1"/>
 	<widget name="previewcover" position="170,70" size="290,420" zPosition="4" alphaTest="on" backgroundColor="EL_Background"/>
 	<widget name="runtime" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="left" position="80,555" size="230,45" transparent="1"/>
-	<widget name="genre" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="80,600" size="230,45" transparent="1"/>
-	<widget name="country" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="80,645" size="230,45" transparent="1"/>
-	<widget name="release" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="80,690" size="230,45" transparent="1"/>
-	<widget name="rating" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="80,735" size="230,45" transparent="1"/>
-	<widget name="runtimetxt" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,555" size="230,45" transparent="1"/>
-	<widget name="genretxt" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,600" size="230,45" transparent="1"/>
-	<widget name="countrytxt" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,645" size="230,45" transparent="1"/>
-	<widget name="releasetxt" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,690" size="230,45" transparent="1"/>
-	<widget name="ratingtxt" font="EL_Standard;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,735" size="230,45" transparent="1"/>
+	<widget name="genre" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="80,600" size="230,45" transparent="1"/>
+	<widget name="country" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="80,645" size="230,45" transparent="1"/>
+	<widget name="release" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="80,690" size="230,45" transparent="1"/>
+	<widget name="rating" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="80,735" size="230,45" transparent="1"/>
+	<widget name="runtimetxt" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,555" size="230,45" transparent="1"/>
+	<widget name="genretxt" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,600" size="230,45" transparent="1"/>
+	<widget name="countrytxt" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,645" size="230,45" transparent="1"/>
+	<widget name="releasetxt" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,690" size="230,45" transparent="1"/>
+	<widget name="ratingtxt" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="OE_Foreground" horizontalAlignment="left" position="320,735" size="230,45" transparent="1"/>
 	<widget name="starsbg" position="210,525" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_empty_10.png" zPosition="3" alphaTest="blend"/>
 	<widget name="stars" position="210,525" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_filled_10.png" zPosition="4" transparent="1"/>
 	<!-- Button -->
@@ -407,27 +407,27 @@
 	<eLabel backgroundColor="white" position="1525,106" size="180,2" transparent="0" zPosition="-10"/>
 	<panel name="Clock"/>
   </screen>
-
+	<!-- IMDB -->
   <screen name="IMDB" title="Internet Movie Database Details Plugin" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<eLabel backgroundColor="OE_Background" position="30,center" size="1830,940" zPosition="-15"/>
 	<eLabel backgroundColor="blue_light" position="85,510" size="460,2" zPosition="-9"/>
 	<eLabel backgroundColor="OE_NewBg2" position="65,center" size="500,1080" zPosition="-11" verticalAlignment="center"/>
-	<eLabel backgroundColor="blue_light" position="580,142" size="650,2" zPosition="-9" foregroundColor="un5678a4"/>
+	<eLabel backgroundColor="blue_light" position="580,200" size="1260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" position="580,85" size="670,50" font="RegularBold;34" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="poster" position="85,70" size="155,200" alphaTest="blend" transparent="1"/>
-	<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="85,275" zPosition="0" size="210,21" transparent="1" alphaTest="on"/>
-	<widget name="stars" position="85,275" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1"/>
-	<widget name="ratinglabel" font="EL_Standard;28" backgroundColor="OE_NewBg2" horizontalAlignment="left" position="245,70" size="300,200" transparent="1" verticalAlignment="top"/>
-	<widget name="detailslabel" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="left" position="85,302" size="460,200" transparent="1" verticalAlignment="top"/>
-	<widget name="menu" itemHeight="50" font="RegularBold;30" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="580,160" size="1260,350" transparent="1"/>
-	<widget name="castlabel" font="RegularBold;28" backgroundColor="OE_Background" horizontalAlignment="left" position="580,540" size="1260,350" transparent="1"/>
-	<widget name="statusbar" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="left" position="85,540" size="460,350" transparent="1"/>
-	<widget name="extralabel" font="RegularBold;25" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="580,160" size="1260,730" transparent="1"/>
+	<widget source="Title" render="Label" position="580,85" size="670,110" font="RegularBold;34" backgroundColor="OE_Background" transparent="1"/>
+	<widget name="poster" position="60,5" size="500,480" alphaTest="blend" transparent="1"/>
+	<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="200,485" zPosition="0" size="210,21" transparent="1" alphaTest="on"/>
+	<widget name="stars" position="200,485" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1"/>
+	<widget name="statusbar" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="left" position="85,540" size="460,100" transparent="1"/>
+	<widget name="ratinglabel" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="left" position="85,640" size="430,100" transparent="1" verticalAlignment="top"/>
+	<widget name="detailslabel" font="RegularBold;28" backgroundColor="OE_Background" position="580,210" size="1260,350" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1"/>
+	<widget name="menu" itemHeight="50" font="RegularBold;30" backgroundColor="OE_Background" position="580,250" size="1260,350" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1"/>
+	<widget name="castlabel" font="RegularBold;28" backgroundColor="OE_Background" horizontalAlignment="left" position="580,605" size="1260,350" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1"/>
+	<widget name="extralabel" font="RegularBold;25" foregroundColor="OE_Foreground" position="580,200" size="1260,730" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1"/>
 	<!-- Button -->
 	<ePixmap name="new ePixmap" pixmap="buttons/key_menu.png" position="480,950" size="64,43" alphaTest="blend"/>
 	<!-- Button -->
-	<eLabel backgroundColor="white" position="580,930" size="1260,2" zPosition="-9"/>
+	<eLabel backgroundColor="blue_light" position="580,940" size="1260,2" zPosition="-9"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="580,950" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="895,950" size="40,40"/>
 	<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1210,950" size="40,40"/>
