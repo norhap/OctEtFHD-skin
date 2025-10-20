@@ -2278,7 +2278,6 @@
 	</screen>
 	<!-- MOVIESELECTION -->
 	<screen name="MovieSelection" position="0,0" size="1920,1080" title="EMCSelection">
-		<panel name="poster_movieselection"/>
 		<widget name="poster" conditional="poster" position="65,10" size="320,450" alphaTest="blend" backgroundColor="OE_NewBg2" zPosition="2"/>
 		<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="470,15" size="75,75" transparent="1" zPosition="1"/>
 		<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" position="45,75" size="1875,1080" zPosition="-15"/>
@@ -2292,6 +2291,8 @@
 		<eLabel backgroundColor="blue_light" position="0,910" size="450,2" zPosition="2"/>
 		<eLabel backgroundColor="blue_light" position="450,160" size="2,752" zPosition="2"/>
 		<eLabel backgroundColor="#002c445e" position="452,160" size="13,750" zPosition="2"/>
+		<widget source="session.VideoPicture" render="Pig" position="0,75" size="450,340" zPosition="1" backgroundColor="#df0b1300"/>
+		<widget name="hiddenpig" conditional="hiddenpig" position="0,75" size="450,340" backgroundColor="OE_NewBg2" zPosition="1"/>
 		<widget name="chosenletter" position="425,165" size="40,40" font="RegularBold;30" backgroundColor="OE_NewBg2" foregroundColor="#0000fafa" transparent="1" zPosition="1"/>
 		<widget name="list" position="465,160" size="1440,750" backgroundColor="#002c445e" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="0"/>
 		<widget backgroundColor="OE_Background" font="RegularBold;26" foregroundColor="green_light" horizontalAlignment="left" position="15,880" size="180,45" render="Label" source="Service" transparent="1" zPosition="1">
