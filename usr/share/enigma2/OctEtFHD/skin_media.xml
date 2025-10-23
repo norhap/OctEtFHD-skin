@@ -415,7 +415,7 @@
 	<eLabel backgroundColor="blue_light" position="580,200" size="1260,2" zPosition="-9" foregroundColor="un5678a4"/>
 	<!-- Widget -->
 	<widget source="Title" render="Label" position="580,85" size="670,110" font="RegularBold;34" backgroundColor="OE_Background" transparent="1"/>
-	<widget name="poster" position="60,5" size="500,480" alphaTest="blend" transparent="1"/>
+	<widget name="poster" position="70,5" size="490,480" alphaTest="blend"/>
 	<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="200,485" zPosition="0" size="210,21" transparent="1" alphaTest="on"/>
 	<widget name="stars" position="200,485" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1"/>
 	<widget name="statusbar" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="left" position="85,540" size="460,100" transparent="1"/>
