@@ -418,8 +418,8 @@
 	<widget name="poster" position="50,85" size="525,580" alphaTest="blend"/>
 	<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="210,680" zPosition="0" size="210,21" transparent="1" alphaTest="on"/>
 	<widget name="stars" position="210,680" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1"/>
-	<widget name="statusbar" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="center" position="85,730" size="490,100" transparent="1"/>
-	<widget name="ratinglabel" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="center" position="85,840" size="490,100" transparent="1"/>
+	<widget name="statusbar" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="center" position="60,730" size="515,100" transparent="1"/>
+	<widget name="ratinglabel" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="center" position="60,840" size="515,100" transparent="1"/>
 	<widget name="detailslabel" font="RegularBold;28" backgroundColor="OE_NewBg2" position="580,210" size="1260,350" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1"/>
 	<widget name="menu" itemHeight="50" font="RegularBold;30" backgroundColor="OE_NewBg2" position="580,250" size="1260,350" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1"/>
 	<widget name="castlabel" font="RegularBold;28" backgroundColor="OE_NewBg2" horizontalAlignment="left" position="580,605" size="1260,350" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" transparent="1"/>
