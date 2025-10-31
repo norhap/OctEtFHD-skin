@@ -414,7 +414,7 @@
 	<eLabel backgroundColor="#002c445e" foregroundColor="OE_Background" position="0,0" size="1920,1080" zPosition="-16"/>
 	<eLabel text="IMDB" position="850,10" size="130,65" backgroundColor="#002c445e" foregroundColor="green_light" zPosition="5" font="RegularBold;40" horizontalAlignment="center" transparent="1"/>
 	<!-- Widget -->
-	<widget source="Title" render="Label" position="580,85" size="670,110" font="RegularBold;34" foregroundColor="#0000fafa" backgroundColor="OE_NewBg2" transparent="1"/>
+	<widget source="Title" render="Label" position="580,85" size="1165,110" font="RegularBold;34" foregroundColor="#0000fafa" backgroundColor="OE_NewBg2" transparent="1"/>
 	<widget name="poster" position="50,85" size="525,580" alphaTest="blend"/>
 	<widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="210,680" zPosition="0" size="210,21" transparent="1" alphaTest="on"/>
 	<widget name="stars" position="210,680" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" transparent="1"/>
