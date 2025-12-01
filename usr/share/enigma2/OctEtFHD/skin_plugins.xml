@@ -6296,7 +6296,7 @@
 	<ePixmap alphaTest="blend" pixmap="buttons/key_exit.png" position="18,1035" size="64,43"/>
 	<widget name="list" itemHeight="45" position="26,145" size="1250,760" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" font="RegularBold;25" transparent="1"/>
 	<widget source="xmlfiles" render="Label" conditional="xmlfiles" position="145,1035" zPosition="12" size="165,43" backgroundColor="key_back" font="Regular;20" horizontalAlignment="center" verticalAlignment="center" foregroundColor="key_text"/>
-	<widget name="status" position="1290,900" size="620,215"  font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
+	<widget name="status" position="1290,830" size="620,250"  font="RegularBold;25" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1" zPosition="2"/>
 	<widget name="managerlistchannels" conditional="managerlistchannels" position="1290,575" size="620,130" font="RegularBold;24" foregroundColor="#00eb3e10" horizontalAlignment="left" backgroundColor="OE_NewBg2" transparent="1"/>
   </screen>
 	<!-- PARENTAL CONTROL IPToSAT -->
