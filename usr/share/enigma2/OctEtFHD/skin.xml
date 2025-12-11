@@ -433,10 +433,10 @@
 	<!-- INFOBAR -->
 	<screen name="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080" title="InfoBar">
 		<panel name="poster_firstinfobar"/>
-		<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="15,852" size="1865,215" zPosition="-11"/>
+		<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="15,852" size="1865,227" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="1865,2" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="2,215" zPosition="-11"/>
-		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,1065" size="1865,2" zPosition="-11"/>
+		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,1077" size="1865,2" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="1880,850" size="2,217" zPosition="-11"/>
 		<eLabel backgroundColor="OE_NewBg" position="336,922" size="1535,4" zPosition="20" transparent="0" foregroundColor="OE_ListBackground"/>
 		<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" position="30,775" size="285,305" zPosition="-10"/>
@@ -590,17 +590,17 @@
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="375,1037" horizontalAlignment="left" zPosition="4" size="205,26" font="RegularBold;24" backgroundColor="OE_Background" transparent="0">
+		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="375,1035" horizontalAlignment="left" zPosition="4" size="205,26" font="RegularBold;22" backgroundColor="OE_Background" transparent="0">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- buttons -->
-		<ePixmap pixmap="buttons/key_green.png" position="335,1028" size="40,40" objectTypes="key_green,Button,Label" alphaTest="blend"/>
-		<widget name="key_green" position="375,1035" size="460,26" objectTypes="key_green,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_yellow.png" position="845,1028" size="40,40" objectTypes="key_yellow,Button,Label" alphaTest="blend"/>
-		<widget name="key_yellow" position="885,1035" size="460,26" objectTypes="key_yellow,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_blue.png" position="1355,1028" size="40,40" objectTypes="key_blue,Button,Label" alphaTest="blend"/>
-		<widget name="key_blue" position="1395,1035" size="460,26" objectTypes="key_blue,Label,Button" font="RegularBold;23" backgroundColor="OE_Background" horizontalAlignment="left" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/key_green.png" position="335,1029" size="40,40" objectTypes="key_green,Button,Label" alphaTest="blend"/>
+		<widget name="key_green" position="375,1024" size="460,51" objectTypes="key_green,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/key_yellow.png" position="845,1029" size="40,40" objectTypes="key_yellow,Button,Label" alphaTest="blend"/>
+		<widget name="key_yellow" position="885,1024" size="460,51" objectTypes="key_yellow,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/key_blue.png" position="1355,1029" size="40,40" objectTypes="key_blue,Button,Label" alphaTest="blend"/>
+		<widget name="key_blue" position="1395,1024" size="460,51" objectTypes="key_blue,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<!-- Clock -->
 		<panel name="Clock"/>
 	</screen>
