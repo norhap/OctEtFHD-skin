@@ -435,9 +435,9 @@
 		<panel name="poster_firstinfobar"/>
 		<eLabel backgroundColor="OE_ListBackground" name="InfoBar" position="15,852" size="1865,227" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="1865,2" zPosition="-11"/>
-		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="2,215" zPosition="-11"/>
+		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,850" size="2,227" zPosition="-11"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="15,1077" size="1865,2" zPosition="-11"/>
-		<eLabel backgroundColor="blue_light" name="InfoBar" position="1880,850" size="2,217" zPosition="-11"/>
+		<eLabel backgroundColor="blue_light" name="InfoBar" position="1880,850" size="2,229" zPosition="-11"/>
 		<eLabel backgroundColor="OE_NewBg" position="336,922" size="1535,4" zPosition="20" transparent="0" foregroundColor="OE_ListBackground"/>
 		<eLabel backgroundColor="OE_NewBg" foregroundColor="OE_NewBg" position="30,775" size="285,305" zPosition="-10"/>
 		<eLabel backgroundColor="blue_light" name="InfoBar" position="28,775" size="2,305" zPosition="-11"/>
