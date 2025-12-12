@@ -494,11 +494,11 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap pixmap="buttons/key_green.png" objectTypes="key_green,Button,Label" alphaTest="blend" position="463,1005" size="40,40"/>
-		<widget name="key_green" objectTypes="key_green,Label,Button" font="RegularBold;21" backgroundColor="OE_Background" position="505,998" size="385,55" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_green" objectTypes="key_green,Label,Button" font="RegularBold;21" backgroundColor="OE_Background" position="505,998" size="385,51" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_yellow.png" objectTypes="key_yellow,Button,Label" alphaTest="blend" position="860,1005" size="40,40"/>
-		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" position="900,998" size="385,55" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" position="900,998" size="385,51" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_blue.png" objectTypes="key_blue,Button,Label" alphaTest="blend" position="1270,1005" size="40,40"/>
-		<widget name="key_blue" objectTypes="key_blue,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" position="1310,998" size="385,55" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_blue" objectTypes="key_blue,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" position="1310,998" size="385,51" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 	</screen>
 		<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE SCREENS INFORMATION-->
 	<screen name="ButtonsInformation">
