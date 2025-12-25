@@ -3559,12 +3559,12 @@
 	</screen>
 		<!-- TIMESHIFT LIVE -->
 	<screen name="TimeshiftLive" backgroundColor="transparent" flags="wfNoBorder" position="80,105" size="310,74" zPosition="8">
-		<eLabel backgroundColor="un800000" position="0,10" size="310,54" zPosition="-11" verticalAlignment="center"/>
+		<eLabel backgroundColor="un800000" position="0,10" size="390,54" zPosition="-11" verticalAlignment="center"/>
 		<eLabel backgroundColor="OE_NewBg2" position="10,0" size="60,74" zPosition="-10"/>
 		<widget name="state" conditional="state" position="30,25" size="0,0" font="RegularBold;30" backgroundColor="OE_NewBg2" transparent="1"/>
 		<widget name="statusicon" conditional="statusicon" position="28,25" size="25,25" pixmaps="icons/mp_play.png,icons/mp_pause.png,icons/mp_stop.png,icons/mp_forward.png,icons/mp_backward.png,icons/mp_slow.png" zPosition="5" alphaTest="on"/>
 		<widget name="speed" conditional="speed" position="20,105" size="110,40" font="RegularBold;30" transparent="1"/>
-		<eLabel text="Timeshift Live" position="80,12" size="220,50" font="RegularBold;28" backgroundColor="un800000" transparent="1" verticalAlignment="center" horizontalAlignment="left"/>
+		<eLabel text="Timeshift Actived" position="80,17" size="300,35" font="RegularBold;28" backgroundColor="un800000" transparent="1" verticalAlignment="center" horizontalAlignment="left"/>
 	</screen>
 		<!-- SOFTWARE UPDATE -->
 	<screen name="SoftwareUpdate" title="Software Update" flags="wfNoBorder" position="center,center" size="1920,1080">
