@@ -3558,7 +3558,7 @@
 		</widget>
 	</screen>
 		<!-- TIMESHIFT LIVE -->
-	<screen name="TimeshiftLive" backgroundColor="transparent" flags="wfNoBorder" position="80,105" size="310,74" zPosition="8">
+	<screen name="TimeshiftLive" backgroundColor="transparent" flags="wfNoBorder" position="80,105" size="390,74" zPosition="8">
 		<eLabel backgroundColor="un800000" position="0,10" size="390,54" zPosition="-11" verticalAlignment="center"/>
 		<eLabel backgroundColor="OE_NewBg2" position="10,0" size="60,74" zPosition="-10"/>
 		<widget name="state" conditional="state" position="30,25" size="0,0" font="RegularBold;30" backgroundColor="OE_NewBg2" transparent="1"/>
