@@ -3853,10 +3853,10 @@
 	<!-- FLASHIMAGE -->
 	<screen name="FlashImage" position="fill" zPosition="10" flags="wfNoBorder">
 		<panel name="norhap"/>
-		<widget name="header" position="center,400" size="900,85" zPosition="10" font="RegularBold;30" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#002c445e" transparent="0"/>
-		<widget name="info" position="center,490" size="900,140" font="RegularBold;24" foregroundColor="#0000fafa" backgroundColor="#002c445e" transparent="0" zPosition="10" horizontalAlignment="left" verticalAlignment="center"/>
-		<widget name="progress" position="center,635" size="900,50" foregroundColor="#002c445e" scrollbarBorderWidth="2" scrollbarBorderColor="green_light" zPosition="10" transparent="1"/>
-		<widget name="progress_counter" position="1420,645" size="150,50" backgroundColor="transparent" font="RegularBold;28" foregroundColor="#0000fafa" zPosition="10" transparent="1"/>
+		<widget name="header" position="center,200" size="900,85" zPosition="10" font="RegularBold;30" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#002c445e" transparent="0"/>
+		<widget name="info" position="center,290" size="900,140" font="RegularBold;24" foregroundColor="#0000fafa" backgroundColor="#002c445e" transparent="0" zPosition="10" horizontalAlignment="left" verticalAlignment="center"/>
+		<widget name="progress" position="center,435" size="900,50" foregroundColor="#002c445e" scrollbarBorderWidth="2" scrollbarBorderColor="green_light" zPosition="10" transparent="1"/>
+		<widget name="progress_counter" position="1420,445" size="150,50" backgroundColor="transparent" font="RegularBold;28" foregroundColor="#0000fafa" zPosition="10" transparent="1"/>
 	</screen>
 	<!-- AUTO BACKUP -->
 	<screen name="Config" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
