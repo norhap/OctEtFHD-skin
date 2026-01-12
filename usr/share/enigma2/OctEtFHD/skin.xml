@@ -4388,7 +4388,7 @@
 		<panel name="ButtonsVisionCore"/>
 		<ePixmap pixmap="buttons/key_info.png" position="165,905" size="64,43" alphaTest="blend"/>
 		<widget name="lab6" position="410,140" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,280" zPosition="10" size="1490,550" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,280" size="1490,550" verticalAlignment="center" zPosition="10" transparent="1"/>
 		<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,880" size="1490,35" transparent="1" verticalAlignment="top"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
@@ -4426,7 +4426,7 @@
 		<panel name="ButtonsVisionCore"/>
 		<ePixmap pixmap="buttons/key_help.png" position="165,905" size="64,43" alphaTest="blend"/>
 		<widget name="lab6" position="410,140" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,280" zPosition="10" size="1490,570" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,280" size="1490,570" verticalAlignment="center" zPosition="10" transparent="1"/>
 		<widget name="backupstatus" font="RegularBold;32" backgroundColor="OE_Background" foregroundColor="blue_light" position="410,880" size="1490,35" transparent="1" verticalAlignment="top"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
@@ -4442,7 +4442,7 @@
 	<screen name="ImageManagerDownload" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
 		<widget name="lab6" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,640" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,300" size="1490,640" verticalAlignment="center" zPosition="10" transparent="1"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
 		</applet>
@@ -4452,7 +4452,7 @@
 		<panel name="TemplateInformation"/>
 		<panel name="ButtonsVisionCore"/>
 		<widget name="lab6" position="410,130" size="1490,90" font="RegularBold;26" backgroundColor="OE_Background" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="3"/>
-		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,300" zPosition="10" size="1490,640" transparent="1"/>
+		<widget name="list" font="RegularBold;26" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,300" size="1490,640" verticalAlignment="center" zPosition="10" transparent="1"/>
 		<applet type="onLayoutFinish">
 		self[&quot;list&quot;].instance.setItemHeight(50)
 		</applet>
@@ -4524,10 +4524,10 @@
 		<widget name="stepslider" scrollbarBorderWidth="2" scrollbarBorderColor="blue_light" position="730,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
 		<widget name="step" position="730,420" size="450,40" foregroundColor="blue_light" zPosition="15" transparent="1"/>
 		<widget name="label" conditional="label" backgroundColor="#0000fafa" position="410,470" size="1490,2" zPosition="-9"/>
-		<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="410,480" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" size="1490,500" transparent="1">
+		<widget source="list" render="Listbox" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="410,480" size="1490,500" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" verticalAlignment="center" scrollbarBorderColor="blue_light" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryText(pos=(20,2),size=(1420,45),flags=RT_HALIGN_LEFT,text=0)],
+				MultiContentEntryText(pos=(20,7),size=(1420,45),flags=RT_HALIGN_LEFT,text=0)],
 				"fonts":[gFont("RegularBold",30)],
 				"itemHeight":50}
 			</convert>
