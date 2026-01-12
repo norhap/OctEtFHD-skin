@@ -191,7 +191,7 @@
 	<parameter name="FileListIcon" value="7, 0, 52, 50"/>
 	<parameter name="FileListMultiIcon" value="40, 0, 35, 35"/>
 	<parameter name="FileListMultiLock" value="5, 10, 50, 50"/>
-	<parameter name="FileListMultiName" value="95, 4, 1150, 50"/>
+	<parameter name="FileListMultiName" value="95, 5, 1150, 50"/>
 	<parameter name="FileListName" value="68, 2, 1177, 50"/>
 	<parameter name="fstabMenuList" value="0, 10, 300, 50, 400, 10, 500, 50"/>
 	<parameter name="HelpMenuListHlp" value="0, 0, 900, 42"/>
@@ -4491,7 +4491,7 @@
 		<widget name="lab6" position="410,310" size="1490,35" font="RegularBold;26" horizontalAlignment="left" zPosition="2" backgroundColor="OE_Background" foregroundColor="blue_light" transparent="1"/>
 		<widget name="list" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" position="410,350" zPosition="10" size="1490,590" transparent="1"/>
 		<applet type="onLayoutFinish">
-		self[&quot;list&quot;].instance.setItemHeight(50)
+		self[&quot;list&quot;].instance.setItemHeight(45)
 		</applet>
 	</screen>
 	<screen name="VISIONSoftcamMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
