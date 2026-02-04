@@ -556,11 +556,11 @@
 		<widget source="session.FrontendStatus" text="SNR" render="FixedLabel" position="35,781" zPosition="2" size="40,25" font="Regular;21" horizontalAlignment="center" backgroundColor="OE_NewBg" transparent="1" verticalAlignment="center">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Progress" foregroundColor="un56c856" position="80,785" size="145,15" zPosition="2" scrollbarBorderWidth="2" borderColor="blue_light">
+		<widget render="Progress" source="session.FrontendStatus" pixmap="my_icons/barra-snr-agc.png" position="80,786" size="145,14" zPosition="7" transparent="1" backgroundColor="OE_NewBg" scrollbarBorderWidth="2" borderColor="#0000fafa">
 			<convert type="FrontendInfo">SNR</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<eLabel backgroundColor="blue_light" position="80,785" size="145,15" zPosition="0"/>
+		<eLabel backgroundColor="#0000fafa" position="80,785" size="145,15" zPosition="0"/>
 		<eLabel backgroundColor="red" position="82,787" size="141,11" zPosition="1"/>
 		<widget source="session.FrontendStatus" render="Label" position="215,772" size="115,40" backgroundColor="OE_NewBg" transparent="1" horizontalAlignment="center" font="RegularBold;23" verticalAlignment="center" zPosition="3" foregroundColor="un56c856">
 			<convert type="FrontendInfo">SNR</convert>
@@ -568,11 +568,11 @@
 		<widget source="session.FrontendStatus" render="FixedLabel" text="AGC" position="35,821" zPosition="2" size="45,25" font="Regular;21" horizontalAlignment="center" backgroundColor="OE_NewBg" transparent="1" verticalAlignment="center">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Progress" foregroundColor="blue_light" position="80,825" size="145,15" zPosition="2" scrollbarBorderWidth="2" borderColor="blue_light">
+		<widget render="Progress" source="session.FrontendStatus" pixmap="my_icons/barra-snr-agc.png" position="80,826" size="145,14" zPosition="7" transparent="1" backgroundColor="OE_NewBg" scrollbarBorderWidth="2" borderColor="#0000fafa">
 			<convert type="FrontendInfo">AGC</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<eLabel backgroundColor="blue_light" position="80,825" size="145,15" zPosition="0"/>
+		<eLabel backgroundColor="#0000fafa" position="80,825" size="145,15" zPosition="0"/>
 		<eLabel backgroundColor="red" position="82,827" size="141,11" zPosition="1"/>
 		<widget source="session.FrontendStatus" render="Label" position="215,812" size="115,40" backgroundColor="OE_NewBg" transparent="1" horizontalAlignment="center" font="RegularBold;23" verticalAlignment="center" zPosition="3" foregroundColor="blue_light">
 			<convert type="FrontendInfo">AGC</convert>
