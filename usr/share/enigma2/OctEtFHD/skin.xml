@@ -586,11 +586,11 @@
 		<widget source="session.CurrentService" render="Label" zPosition="4" position="30,1030" size="285,35" horizontalAlignment="center" verticalAlignment="center" font="RegularBold;22" backgroundColor="OE_NewBg" transparent="1">
 			<convert type="PliExtraInfo">ResolutionString</convert>
 		</widget>
-		<widget source="session.CurrentService" alphaTest="blend" pixmap="buttons/key_green.png" position="335,1028" render="Pixmap" size="40,40" zPosition="2">
+		<widget source="session.CurrentService" alphaTest="blend" pixmap="buttons/key_green.png" position="320,1029" render="Pixmap" size="40,40" zPosition="2">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="375,1035" horizontalAlignment="left" zPosition="4" size="205,26" font="RegularBold;22" backgroundColor="OE_Background" transparent="0">
+		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="360,1037" horizontalAlignment="left" zPosition="4" size="205,37" font="RegularBold;22" backgroundColor="OE_Background" transparent="0">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
