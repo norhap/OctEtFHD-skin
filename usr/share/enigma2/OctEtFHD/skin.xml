@@ -1136,7 +1136,7 @@
 		<panel name="poster_channelselection"/>
 		<eLabel backgroundColor="OE_Background" position="10,45" size="1895,1000" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="570,145" size="1330,2" zPosition="-9" foregroundColor="un5678a4"/>
-		<eLabel backgroundColor="blue_light" position="570,930" size="1330,2" zPosition="-9"/>
+		<eLabel backgroundColor="blue_light" position="570,950" size="1330,2" zPosition="-9"/>
 		<eLabel backgroundColor="blue_light" position="10,45" size="1895,2" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="10,1045" size="1897,2" zPosition="-15"/>
 		<eLabel backgroundColor="blue_light" position="10,45" size="2,1000" zPosition="-15"/>
@@ -1147,8 +1147,8 @@
 		<!-- Widget -->
 		<widget name="letternumber" conditional="letternumber" position="585,65" size="30,35" font="RegularBold;30" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="Title" render="Label" font="RegularBold;34" backgroundColor="OE_Background" position="580,50" size="1310,80" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
-		<widget name="list" position="570,150" size="1330,760" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" foregroundColorNextEvent="blue_light" foregroundColorEventNextSelected="#0000fafa" foregroundColorMarked="red" foregroundColorMarkedSelected="red" backgroundColorMarked="OE_Background" itemHeight="50" serviceItemHeight="38" serviceNumberFont="RegularBold;30" serviceNameFont="RegularBold;30" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
-		<widget source="ServiceEvent" render="Label" font="RegularBold;20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="620,905" size="1200,30" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="1">
+		<widget name="list" position="570,150" size="1330,783" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" colorEventProgressbarBorder="OE_Selection" colorEventProgressbarBorderSelected="OE_Foreground" colorServiceDescription="#a4c400" colorServiceDescriptionSelected="OE_Foreground" foregroundColorServiceNotAvail="OE_Accent2" foregroundColorNextEvent="blue_light" foregroundColorEventNextSelected="#0000fafa" foregroundColorMarked="red" foregroundColorMarkedSelected="red" backgroundColorMarked="OE_Background" itemHeight="39" serviceItemHeight="39" serviceNumberFont="RegularBold;30" serviceNameFont="RegularBold;30" serviceInfoFont="RegularBold;27" transparent="1" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="70" progressPercentWidth="80" progressbarHeight="12"/>
+		<widget source="ServiceEvent" render="Label" font="RegularBold;20" backgroundColor="OE_NewBg2" foregroundColor="blue_light" position="620,925" size="1200,30" horizontalAlignment="center" verticalAlignment="center" transparent="1" zPosition="1">
 			<convert type="TransponderInfo">
 			</convert>
 		</widget>
@@ -1352,23 +1352,23 @@
 			<convert type="RunningEvents">Event14,onlyStart</convert>
 		</widget>
 		<!-- clock -->
-		<widget source="global.CurrentTime" render="Label" position="1740,935" size="140,30" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="#0000fafa" zPosition="3" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1740,955" size="140,30" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="#0000fafa" zPosition="3" transparent="1">
 			<convert type="ClockToText">Mixed</convert>
 		</widget>
 		<!-- Button -->
-		<ePixmap alphaTest="blend" pixmap="buttons/key_text.png" position="1710,970" size="64,43"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="1775,970" size="64,43"/>
-		<widget source="key_info" render="Pixmap" position="1840,970" size="64,43" pixmap="buttons/key_info.png" objectTypes="key_info,StaticText" backgroundColor="OE_Background" alphaTest="blend" zPosition="1">
+		<ePixmap alphaTest="blend" pixmap="buttons/key_text.png" position="1710,985" size="64,43"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="1775,985" size="64,43"/>
+		<widget source="key_info" render="Pixmap" position="1840,985" size="64,43" pixmap="buttons/key_info.png" objectTypes="key_info,StaticText" backgroundColor="OE_Background" alphaTest="blend" zPosition="1">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="565,970" size="40,40"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="845,970" size="40,40"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1125,970" size="40,40"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="1405,970" size="40,40"/>
-		<widget name="key_red" font="RegularBold;26" backgroundColor="OE_Background" position="608,955" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<widget source="key_green" render="Label" position="888,955" size="235,70" font="RegularBold;26" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" font="RegularBold;26" backgroundColor="OE_Background" position="1168,955" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<widget name="key_blue" font="RegularBold;26" backgroundColor="OE_Background" position="1448,955" size="260,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="565,985" size="40,40"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="845,985" size="40,40"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_yellow.png" position="1125,985" size="40,40"/>
+		<ePixmap alphaTest="blend" pixmap="buttons/key_blue.png" position="1405,985" size="40,40"/>
+		<widget name="key_red" font="RegularBold;26" backgroundColor="OE_Background" position="608,970" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget source="key_green" render="Label" position="888,970" size="235,70" font="RegularBold;26" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" font="RegularBold;26" backgroundColor="OE_Background" position="1168,970" size="235,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_blue" font="RegularBold;26" backgroundColor="OE_Background" position="1448,970" size="260,70" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- CHANNELSELECTION MENU -->
 	<screen name="ChannelContextMenu" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
