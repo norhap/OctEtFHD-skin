@@ -457,9 +457,9 @@
 		</widget>
 		<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="1715,855" size="98,31" transparent="1" alphaTest="blend" zPosition="3"/>
 		<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="1808,855" size="63,32" alphaTest="blend" zPosition="3"/>
-		<widget source="session.CurrentService" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="325,885" size="930,28" transparent="1" zPosition="1">
+		<!-- widget source="session.CurrentService" render="Label" font="RegularBold;24" backgroundColor="OE_Background" foregroundColor="OE_Foreground" position="325,885" size="930,28" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
-		</widget>
+		</widget -->
 		<!-- Icons -->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/ip_tv.png" position="1297,889" size="63,32" zPosition="2" alphaTest="blend">
 			<convert type="ClientsStreaming"/>
@@ -634,9 +634,9 @@
 		<widget source="session.CurrentService" render="Label" backgroundColor="OE_NewBg" position="25,430" size="440,25" horizontalAlignment="center" verticalAlignment="center" zPosition="6" font="RegularBold;22" transparent="1" >
 			<convert type="PliExtraInfo">CryptoBar</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="RegularBold;21" backgroundColor="OE_NewBg" position="25,455" size="440,50" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="1">
+		<!-- widget source="session.CurrentService" render="Label" font="RegularBold;21" backgroundColor="OE_NewBg" position="25,455" size="440,50" verticalAlignment="center" horizontalAlignment="center" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">TransponderInfo</convert>
-		</widget>
+		</widget -->
 		<!-- widget source="session.CurrentService" render="Pixmap" pixmap="my_icons/logo_iptv.png" alphaTest="blend" position="110,958" zPosition="20" size="250,90" transparent="1">
 			<convert type="ServiceInfo">IsStream</convert>
 			<convert type="ConditionalShowHide">
