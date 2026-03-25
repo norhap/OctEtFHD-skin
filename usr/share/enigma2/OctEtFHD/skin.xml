@@ -751,9 +751,9 @@
 		<widget source="session.CurrentService" render="PicCript" path="OctEtFHD/cript" position="475,965" size="98,31" alphaTest="blend" zPosition="3"/>
 		<panel name="Clock"/>
 		<widget source="session.CurrentService" render="PicEmu2" path="OctEtFHD/emu" position="545,965" size="98,31" transparent="1" alphaTest="blend" zPosition="3"/>
-		<widget source="session.CurrentService" render="Label" font="RegularBold;21" position="665,965" size="450,35" zPosition="50" backgroundColor="OE_ListBackground" transparent="1" noWrap="1">
+		<!-- widget source="session.CurrentService" render="Label" font="RegularBold;21" position="665,965" size="450,35" zPosition="50" backgroundColor="OE_ListBackground" transparent="1" noWrap="1">
 			<convert type="CaidInfo2"/>
-		</widget>
+		</widget -->
 		 <!-- MSNWeather -->
 		<widget source="session.MSNWeather" render="MSNWeatherPixmap" position="200,515" size="60,48" pixmap="WeatherIcon/wind.png" alphaTest="blend" transparent="1" zPosition="8">
 			<convert type="MSNWeather">winddisplay</convert>
