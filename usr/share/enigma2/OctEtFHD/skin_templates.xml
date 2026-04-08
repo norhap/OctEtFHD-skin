@@ -489,7 +489,7 @@
 	</screen>
 		<!--  NAME KEYS FOR ACTIONS BUTTONS SECONDINFOBAR-->
 	<screen name="SecondInfobarButtons">
-		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="664,992" zPosition="4" size="330,29" font="RegularBold;20" backgroundColor="OE_Background" transparent="0">
+		<widget source="session.CurrentService" render="FixedLabel" text="Subservices" position="507,1008" zPosition="4" size="330,27" font="RegularBold;20" backgroundColor="OE_Background" transparent="0">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
