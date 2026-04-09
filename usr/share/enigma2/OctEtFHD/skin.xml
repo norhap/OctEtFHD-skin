@@ -595,13 +595,13 @@
 		</widget>
 		<!-- buttons -->
 		<ePixmap pixmap="buttons/key_red.png" position="320,893" size="40,40" objectTypes="key_red,Button,Label" alphaTest="blend"/>
-		<widget name="key_red" position="360,883" size="465,51" objectTypes="key_red,Label,Button" font="RegularBold;20" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="top" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="360,889" size="700,49" backgroundColor="OE_Background" font="RegularBold;20" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_green.png" position="320,1029" size="40,40" objectTypes="key_green,Button,Label" alphaTest="blend"/>
 		<widget name="key_green" position="360,1018" size="465,51" objectTypes="key_green,Label,Button" font="RegularBold;20" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="top" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_yellow.png" position="845,1029" size="40,40" objectTypes="key_yellow,Button,Label" alphaTest="blend"/>
-		<widget name="key_yellow" position="885,1024" size="465,51" objectTypes="key_yellow,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="885,1025" size="465,51" backgroundColor="OE_Background" font="RegularBold;20" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_blue.png" position="1355,1029" size="40,40" objectTypes="key_blue,Button,Label" alphaTest="blend"/>
-		<widget name="key_blue" position="1395,1024" size="465,51" objectTypes="key_blue,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_blue" position="1395,1025" size="465,51" backgroundColor="OE_Background" font="RegularBold;20" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<!-- Clock -->
 		<panel name="Clock"/>
 	</screen>
