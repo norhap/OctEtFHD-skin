@@ -493,9 +493,9 @@
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="buttons/key_red.png" objectTypes="key_red,Button,Label" alphaTest="blend" position="463,966" size="40,40"/>
+		<ePixmap pixmap="buttons/key_red.png" objectTypes="key_red,Button,Label" alphaTest="blend" position="463,963" size="40,40"/>
 		<widget name="key_red" backgroundColor="OE_Background" position="507,959" size="535,49" font="RegularBold;20" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="buttons/key_green.png" objectTypes="key_green,Button,Label" alphaTest="blend" position="463,1015" size="40,40"/>
+		<ePixmap pixmap="buttons/key_green.png" objectTypes="key_green,Button,Label" alphaTest="blend" position="463,1011" size="40,40"/>
 		<widget name="key_green" objectTypes="key_green,Label,Button" font="RegularBold;20" backgroundColor="OE_Background" position="507,1008" size="435,49" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_yellow.png" objectTypes="key_yellow,Button,Label" alphaTest="blend" position="945,1005" size="40,40"/>
 		<widget name="key_yellow" objectTypes="key_yellow,Label,Button" font="RegularBold;22" backgroundColor="OE_Background" position="988,1002" size="435,51" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
