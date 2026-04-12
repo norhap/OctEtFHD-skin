@@ -2275,6 +2275,10 @@
 		<widget backgroundColor="OE_NewBg3" font="RegularBold;30" horizontalAlignment="left" position="1705,990" render="Label" size="90,40" source="session.CurrentService" transparent="1" verticalAlignment="center">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
+		<widget name="key_red" position="360,889" size="0,0" backgroundColor="OE_Background" font="RegularBold;20" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="360,1018" size="0,0" objectTypes="key_green,Label,Button" font="RegularBold;20" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="top" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="885,1025" size="0,0" backgroundColor="OE_Background" font="RegularBold;20" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_blue" position="1395,1025" size="0,0" backgroundColor="OE_Background" font="RegularBold;20" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<!-- Clock -->
 		<panel name="Clock"/>
 	</screen>
