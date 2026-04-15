@@ -1679,6 +1679,7 @@
 		<widget name="OutLen" position="280,890" size="70,20" zPosition="3" horizontalAlignment="right" font="Regular;20" backgroundColor="#400000"/>
 		<widget name="SeekState" position="500,884" size="65,25" zPosition="1" horizontalAlignment="right" font="Regular;20" verticalAlignment="center"/>
 		<widget name="Video" position="500,86" size="1068,700" zPosition="1" backgroundColor="#df0b1300"/>
+		<widget name="status" position="500,920" size="1068,55" zPosition="3" font="Regular;26" backgroundColor="OE_NewBg2" foregroundColor="#00e5e619"/>
 		<widget name="Timeline" position="575,886" size="993,20" backgroundColor="un808888" foregroundColor="black" pointer="position_arrow.png:3,5" zPosition="3"/>
 		<widget source="session.CurrentService" position="500,795" size="1300,55" backgroundColor="OE_NewBg2" font="RegularBold; 26" horizontalAlignment="left" render="Label" transparent="1" verticalAlignment="center" zPosition="3">
 			<convert type="ServiceName">Name</convert>
