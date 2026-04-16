@@ -855,9 +855,9 @@
 		<panel name="HelpInformation"/>
 		<!-- widget name="information" conditional="information" position="410,140" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" noWrap="1" leftColAlign="left" rightColAlign="left" split="1" transparent="1"/> -->
 		<widget name="information" conditional="information" position="410,145" size="1490,805" backgroundColor="OE_Background" colPosition="420" divideChar="|" font="RegularBold;26" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" noWrap="1" split="1" transparent="1"/>
-		</screen>
+	</screen>
 		<!-- INFO IMAGES -->
-		<screen name="InformationImage" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="InformationImage" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="TemplateInformation"/>
 		<panel name="HelpInformation"/>
 		<widget name="name" position="405,60" size="1490,70" font="RegularBold;28" backgroundColor="OE_Background" horizontalAlignment="center" verticalAlignment="top" transparent="1"/>
@@ -2317,7 +2317,7 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="DescriptionBorder" position="0,0" size="0,0"/>
-		<widget name="waitingtext" position="465,175" size="1440,35" font="RegularBold;26" foregroundColor="#0000fafa" horizontalAlignment="center" backgroundColor="#002c445e" zPosition="1"/>
+		<widget name="waitingtext" position="465,160" size="1440,35" font="RegularBold;26" foregroundColor="#0000fafa" horizontalAlignment="center" backgroundColor="#002c445e" zPosition="1"/>
 		<!-- Button -->
 		<ePixmap alphaTest="blend" pixmap="buttons/key_menu.png" position="565,940" size="64,43"/>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_info.png" position="625,940" size="64,43"/>
@@ -3040,7 +3040,7 @@
 		<widget name="videofps" position="20,260" size="220,40" backgroundColor="OE_NewBg2" transparent="1" zPosition="1" font="Regular;24" verticalAlignment="center" horizontalAlignment="left" foregroundColor="#0000fafa"/>
 		<widget name="HelpWindow" position="445,260" size="0,0" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" transparent="1" zPosition="10" alphaTest="on"/>
 	</screen>
-		<screen name="QuickSubtitlesClearRests" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	<screen name="QuickSubtitlesClearRests" title="Subtitle settings" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<widget name="config" itemHeight="50" entryFont="RegularBold;26" valueFont="Regular;23" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="OE_Background" position="26,140" size="1250,800" transparent="1"/>
 	</screen>
@@ -3116,20 +3116,20 @@
 	<screen name="NimSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplatePip"/>
-		<widget source="nimlist" render="Listbox" enableWrapAround="1" position="26,140" size="1250,800" transparent="1" zPosition="3">
+		<widget source="nimlist" render="Listbox" position="26,140" size="1250,810" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" enableWrapAround="1" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryText(pos = (10,5),size = (1250,50),flags = RT_HALIGN_LEFT,text = 1),# index 1 is the nim name,
-				MultiContentEntryText(pos = (50,45),size = (1250,100),font = 1,flags = RT_HALIGN_LEFT,text = 2),# index 2 is a description of the nim settings,
+				MultiContentEntryText(pos = (10,0), size = (1250,50), flags = RT_HALIGN_LEFT, text = 1),  # index 1 is the nim name,
+				MultiContentEntryText(pos = (50,45), size = (1250,100), font = 1,flags = RT_HALIGN_LEFT, text = 2),  # index 2 is a description of the nim settings,
 				],
 				"fonts": [gFont("RegularBold",32),gFont("RegularBold",26)],
-				"itemHeight": 150
+				"itemHeight": 135
 				}
 			</convert>
 		</widget>
 		<ePixmap alphaTest="blend" pixmap="buttons/key_info.png" position="18,1035" size="64,43"/>
-		</screen>
-		<screen name="SatNimSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+	</screen>
+	<screen name="SatNimSelection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<eLabel backgroundColor="OE_Background" position="30,center" size="1460,940" zPosition="-15"/>
 		<eLabel backgroundColor="OE_NewBg2" position="70,center" size="80,1080" zPosition="-11" verticalAlignment="center"/>
 		<eLabel backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
