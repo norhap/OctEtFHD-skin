@@ -3081,31 +3081,21 @@
 		<widget name="RadioText" backgroundColor="#54111112" font="RegularBold;28" noWrap="1" position="20,100" shadowColor="transpBlack" shadowOffset="-2,-2" size="1000,45"/>
 		<widget name="RtpText" backgroundColor="#54111112" font="RegularBold;28" horizontalAlignment="left" noWrap="1" position="20,145" shadowColor="transpBlack" shadowOffset="-2,-2" size="1000,45"/>
 	</screen>
-	<screen name="RestorePlugins" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
-		<eLabel backgroundColor="OE_Background" position="30,center" size="1460,940" zPosition="-15"/>
-		<eLabel backgroundColor="OE_NewBg2" position="70,center" size="80,1080" zPosition="-11" verticalAlignment="center"/>
-		<eLabel backgroundColor="blue_light" position="170,130" size="1250,2" zPosition="-9"/>
-		<!-- Widget -->
-		<eLabel text="RestorePlugins" font="RegularBold;34" backgroundColor="OE_Background" position="170,73" size="1250,50" transparent="1"/>
-		<widget source="menu" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="OE_Background" position="170,160" size="1250,750" transparent="1">
+	<!-- RESTORE PLUGINS -->
+	<screen name="RestorePlugins" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
+		<panel name="TemplateInformation"/>
+		<ePixmap pixmap="buttons/key_exit.png" position="240,905" size="64,43" alphaTest="blend"/>
+		<widget source="menu" position="410,150" size="1490,800" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryText(pos = (50, 0), size = (1200, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-				MultiContentEntryPixmapAlphaBlend(pos = (5, 5), size = (24, 24), png = 1),
+				MultiContentEntryText(pos = (50, 5), size = (1200, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				MultiContentEntryPixmapAlphaBlend(pos = (5, 8), size = (35, 35), png = 1),
 				],
 				"fonts": [gFont("RegularBold", 30), gFont("Regular", 26)],
 				"itemHeight": 50
 				}
 			</convert>
 		</widget>
-		<!-- Buttons-->
-		<eLabel backgroundColor="white" position="170,945" size="1250,2" zPosition="-9"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_red.png" position="170,960" size="40,40"/>
-		<ePixmap alphaTest="blend" pixmap="buttons/key_green.png" position="500,960" size="40,40"/>
-		<widget source="key_red" render="Label" font="Regular;28" backgroundColor="OE_Background" position="220,960" size="270,40" transparent="1" zPosition="1"/>
-		<widget source="key_green" render="Label" font="Regular;28" backgroundColor="OE_Background" position="550,960" size="270,40" transparent="1" zPosition="1"/>
-		<!-- Clock -->
-		<panel name="Clock"/>
 	</screen>
 	<screen name="RestoreScreen" title="Restore is running" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
