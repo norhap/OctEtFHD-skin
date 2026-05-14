@@ -3085,10 +3085,10 @@
 	<screen name="RestorePlugins" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
 		<ePixmap pixmap="buttons/key_exit.png" position="240,905" size="64,43" alphaTest="blend"/>
-		<widget source="menu" position="410,150" size="1490,800" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" transparent="1">
+		<widget source="menu" position="410,150" size="1470,800" render="Listbox" scrollbarMode="showOnDemand" scrollbarForegroundColor="blue_light" scrollbarBorderColor="blue_light" backgroundColor="OE_Background" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template":[
-				MultiContentEntryText(pos = (50, 5), size = (1200, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				MultiContentEntryText(pos = (50, 5), size = (1060, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
 				MultiContentEntryPixmapAlphaBlend(pos = (5, 8), size = (35, 35), png = 1),
 				],
 				"fonts": [gFont("RegularBold", 30), gFont("Regular", 26)],
