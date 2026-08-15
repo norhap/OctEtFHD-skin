@@ -408,7 +408,7 @@
 	<panel name="Clock"/>
   </screen>
 	<!-- IMDB -->
-  <screen name="IMDB" title="Internet Movie Database Details Plugin" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
+  <screen name="IMDB" title="Search for details from the Internet Movie Database" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 	<ePixmap alphaTest="blend" pixmap="my_icons/norhap_logo.png" position="45,10" size="75,75" transparent="1" zPosition="1"/>
 	<eLabel backgroundColor="OE_NewBg2" foregroundColor="OE_Background" position="45,center" size="1830,940" zPosition="-15"/>
 	<eLabel backgroundColor="#002c445e" foregroundColor="OE_Background" position="0,0" size="1920,1080" zPosition="-16"/>
