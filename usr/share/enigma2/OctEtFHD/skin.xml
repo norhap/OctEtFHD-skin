@@ -350,7 +350,7 @@
 		<widget source="statusbar" render="Label" font="RegularBold;25" backgroundColor="OE_Background" position="585,420" size="720,150" transparent="1" horizontalAlignment="center" verticalAlignment="center"/>
 	</screen>
 		<!-- AUTO DISEQC -->
-	<screen name="AutoDiseqc" title="Auto DiSEqC" backgroundColor="transparent" position="center,center" size="1920,1080">
+	<screen name="AutoDiseqc" title="Auto DiSEqC" flags="wfNoBorder" backgroundColor="transparent" position="center,center" size="1920,1080">
 		<panel name="StanDardScreen"/>
 		<panel name="TemplateNoPip"/>
 		<widget source="statusbar" render="Label" font="RegularBold;26" backgroundColor="OE_Background" position="26,140" size="1250,70" transparent="1" verticalAlignment="top"/>
