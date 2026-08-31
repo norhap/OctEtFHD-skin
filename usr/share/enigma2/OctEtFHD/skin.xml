@@ -1846,6 +1846,7 @@
 	<!-- MULTI SELECTION EPG -->
 	<screen name="EPGSelectionMulti" title="EPG Selection" backgroundColor="transparent" flags="wfNoBorder" position="center,center" size="1920,1080">
 		<panel name="MultiEPGEventView"/>
+		<widget source="Title" render="Label" font="RegularBold;28" backgroundColor="OE_Background" foregroundColor="blue_light" horizontalAlignment="center" verticalAlignment="center" position="340,10" size="1025,45" transparent="1" zPosition="10"/>
 		<widget name="date" backgroundColor="OE_Background" font="RegularBold;30" foregroundColor="blue_light" horizontalAlignment="center" position="35,75" size="300,43" transparent="1" zPosition="2"/>
 		<widget source="Title" render="Label" font="RegularBold;30" backgroundColor="OE_NewBg2" position="35,15" size="300,50" horizontalAlignment="center" verticalAlignment="center" transparent="1"/>
 		<widget source="Service" render="Label" font="RegularBold;30" backgroundColor="OE_Background" position="350,90" size="830,50" transparent="1">
