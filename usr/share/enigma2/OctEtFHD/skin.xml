@@ -4641,7 +4641,7 @@
 		<eLabel position="0,0" size="1,39" backgroundColor="blue_light" zPosition="1"/>
 		<eLabel position="0,38" size="180,1" backgroundColor="blue_light" zPosition="1"/>
 		<eLabel position="179,0" size="1,39" backgroundColor="blue_light" zPosition="1"/>
-		<eLabel text="Zapear-PiP" position="30,8" size="250,39" backgroundColor="OE_NewBg2" transparent="1" font="RegularBold;21"/>
+		<eLabel text="PiPZap" position="30,8" size="250,39" backgroundColor="OE_NewBg2" transparent="1" font="RegularBold;21"/>
 	</screen>
 	<!-- ******************** MOVE	PIP ******************** -->
 	<screen name="PiPSetup" position="360,500" size="560,200" backgroundColor="OE_NewBg2" zPosition="1" flags="wfNoBorder">
