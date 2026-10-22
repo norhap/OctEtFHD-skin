@@ -498,9 +498,9 @@
 		<ePixmap pixmap="buttons/key_green.png" position="463,1011" size="40,40" objectTypes="key_green,Button,Label" alphaTest="blend"/>
 		<widget name="key_green" position="507,1008" size="435,49" objectTypes="key_green,Label,Button" font="RegularBold;20" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_yellow.png" position="945,1005" size="40,40" objectTypes="key_yellow,Button,Label" alphaTest="blend"/>
-		<widget name="key_yellow" position="988,1002" size="435,51" objectTypes="key_yellow,Label,Button" font="RegularBold;20" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="988,1002" size="435,50" objectTypes="key_yellow,Label,Button" font="RegularBold;20" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_blue.png" position="1424,1005" size="40,40" objectTypes="key_blue,Button,Label" alphaTest="blend"/>
-		<widget name="key_blue" position="1464,1002" size="435,51" objectTypes="key_blue,Label,Button" font="RegularBold;20" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
+		<widget name="key_blue" position="1464,1002" size="435,50" objectTypes="key_blue,Label,Button" font="RegularBold;20" backgroundColor="OE_Background" horizontalAlignment="left" verticalAlignment="center" transparent="1" zPosition="1"/>
 	</screen>
 		<!--  SOURCES AND NAMES KEYS ALL WITH CONDITION RED GREEN YELLOW BLUE SCREENS INFORMATION-->
 	<screen name="ButtonsInformation">
