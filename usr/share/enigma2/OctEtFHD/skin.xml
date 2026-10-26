@@ -219,7 +219,7 @@
 
 	<!-- WIZARD INIT -->
 	<!-- NETWORK WIZARD-->
-	<screen name="NetworkWizard" title="Network Wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+	<screen name="NetworkWizard" title="Network wizard" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
 		<panel name="TemplateWizard"/>
 		<panel name="TemplateRemoteControl"/>
 		<panel name="TemplateWizardLanguage"/>
