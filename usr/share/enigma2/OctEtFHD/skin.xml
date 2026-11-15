@@ -4402,6 +4402,7 @@
 		</widget>
 		<eLabel backgroundColor="blue_light" position="410,830" size="1490,2" zPosition="2"/>
 		<widget name="lab6" conditional="lab6" font="RegularBold;26" foregroundColor="blue_light" backgroundColor="OE_Background" position="410,848" size="1490,70" transparent="1" horizontalAlignment="center" verticalAlignment="center" zPosition="3"/>
+		<widget name="HelpWindow" conditional="HelpWindow" pixmap="skin_default/vkey_icon.png" position="410,635" size="0,0" transparent="1" zPosition="10" alphaTest="on"/>
 	</screen>
 	<screen name="DeviceMountSetup" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1920,1080">
 		<panel name="TemplateInformation"/>
