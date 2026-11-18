@@ -1463,6 +1463,9 @@
 		<widget source="RdsDecoder" render="Label" position="1320,750" size="560,135" font="RegularBold;27" horizontalAlignment="center" verticalAlignment="center" backgroundColor="OE_NewBg2" transparent="1">
 			<convert type="RdsInfo">RtpText</convert>
 		</widget>
+		<widget alphaTest="blend" position="1490,900" render="Picon" size="220,130" source="Service" transparent="1" zPosition="5">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
 	</screen>
 	<screen name="ChannelSelectionRadioDABList" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="DABRadioList"/>
